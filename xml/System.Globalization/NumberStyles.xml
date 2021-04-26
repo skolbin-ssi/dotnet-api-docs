@@ -1,10 +1,11 @@
 <Type Name="NumberStyles" FullName="System.Globalization.NumberStyles">
   <TypeSignature Language="C#" Value="public enum NumberStyles" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed NumberStyles extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NumberStyles extends System.Enum" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.NumberStyles" />
   <TypeSignature Language="VB.NET" Value="Public Enum NumberStyles" />
-  <TypeSignature Language="C++ CLI" Value="public enum class NumberStyles" />
   <TypeSignature Language="F#" Value="type NumberStyles = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class NumberStyles" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed NumberStyles extends System.Enum" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,8 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -27,18 +30,26 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-      <AttributeName>System.Flags</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.Flags]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Flags&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -78,10 +89,10 @@
 ## Examples  
  This example shows how to parse a string into a 32-bit integer by using various `NumberStyles` flags.  
   
- [!code-cpp[NumberStyles#1](~/samples/snippets/cpp/VS_Snippets_CLR/NumberStyles/cpp/NumberStyles.cpp#1)]
- [!code-csharp[NumberStyles#1](~/samples/snippets/csharp/VS_Snippets_CLR/NumberStyles/CS/NumberStyles.cs#1)]
- [!code-vb[NumberStyles#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberStyles/vb/numberstyles.vb#1)]  
-  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/NumberStyles/cpp/NumberStyles.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/NumberStyles/CS/NumberStyles.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberStyles/vb/numberstyles.vb" id="Snippet1":::
+
  ]]></format>
     </remarks>
     <altmember cref="T:System.Globalization.NumberFormatInfo" />
@@ -92,8 +103,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowCurrencySymbol = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowCurrencySymbol" />
       <MemberSignature Language="VB.NET" Value="AllowCurrencySymbol" />
-      <MemberSignature Language="C++ CLI" Value="AllowCurrencySymbol" />
       <MemberSignature Language="F#" Value="AllowCurrencySymbol = 256" Usage="System.Globalization.NumberStyles.AllowCurrencySymbol" />
+      <MemberSignature Language="C++ CLI" Value="AllowCurrencySymbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -104,6 +115,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,8 +143,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowDecimalPoint = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowDecimalPoint" />
       <MemberSignature Language="VB.NET" Value="AllowDecimalPoint" />
-      <MemberSignature Language="C++ CLI" Value="AllowDecimalPoint" />
       <MemberSignature Language="F#" Value="AllowDecimalPoint = 32" Usage="System.Globalization.NumberStyles.AllowDecimalPoint" />
+      <MemberSignature Language="C++ CLI" Value="AllowDecimalPoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -142,6 +155,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,8 +183,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowExponent = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowExponent" />
       <MemberSignature Language="VB.NET" Value="AllowExponent" />
-      <MemberSignature Language="C++ CLI" Value="AllowExponent" />
       <MemberSignature Language="F#" Value="AllowExponent = 128" Usage="System.Globalization.NumberStyles.AllowExponent" />
+      <MemberSignature Language="C++ CLI" Value="AllowExponent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -180,6 +195,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -206,8 +223,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowHexSpecifier = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowHexSpecifier" />
       <MemberSignature Language="VB.NET" Value="AllowHexSpecifier" />
-      <MemberSignature Language="C++ CLI" Value="AllowHexSpecifier" />
       <MemberSignature Language="F#" Value="AllowHexSpecifier = 512" Usage="System.Globalization.NumberStyles.AllowHexSpecifier" />
+      <MemberSignature Language="C++ CLI" Value="AllowHexSpecifier" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -218,6 +235,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -244,8 +263,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowLeadingSign = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowLeadingSign" />
       <MemberSignature Language="VB.NET" Value="AllowLeadingSign" />
-      <MemberSignature Language="C++ CLI" Value="AllowLeadingSign" />
       <MemberSignature Language="F#" Value="AllowLeadingSign = 4" Usage="System.Globalization.NumberStyles.AllowLeadingSign" />
+      <MemberSignature Language="C++ CLI" Value="AllowLeadingSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -256,6 +275,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -282,8 +303,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowLeadingWhite = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowLeadingWhite" />
       <MemberSignature Language="VB.NET" Value="AllowLeadingWhite" />
-      <MemberSignature Language="C++ CLI" Value="AllowLeadingWhite" />
       <MemberSignature Language="F#" Value="AllowLeadingWhite = 1" Usage="System.Globalization.NumberStyles.AllowLeadingWhite" />
+      <MemberSignature Language="C++ CLI" Value="AllowLeadingWhite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -294,6 +315,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -320,8 +343,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowParentheses = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowParentheses" />
       <MemberSignature Language="VB.NET" Value="AllowParentheses" />
-      <MemberSignature Language="C++ CLI" Value="AllowParentheses" />
       <MemberSignature Language="F#" Value="AllowParentheses = 16" Usage="System.Globalization.NumberStyles.AllowParentheses" />
+      <MemberSignature Language="C++ CLI" Value="AllowParentheses" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -332,6 +355,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -358,8 +383,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowThousands = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowThousands" />
       <MemberSignature Language="VB.NET" Value="AllowThousands" />
-      <MemberSignature Language="C++ CLI" Value="AllowThousands" />
       <MemberSignature Language="F#" Value="AllowThousands = 64" Usage="System.Globalization.NumberStyles.AllowThousands" />
+      <MemberSignature Language="C++ CLI" Value="AllowThousands" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -370,6 +395,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -396,8 +423,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowTrailingSign = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowTrailingSign" />
       <MemberSignature Language="VB.NET" Value="AllowTrailingSign" />
-      <MemberSignature Language="C++ CLI" Value="AllowTrailingSign" />
       <MemberSignature Language="F#" Value="AllowTrailingSign = 8" Usage="System.Globalization.NumberStyles.AllowTrailingSign" />
+      <MemberSignature Language="C++ CLI" Value="AllowTrailingSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -408,6 +435,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -434,8 +463,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles AllowTrailingWhite = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.AllowTrailingWhite" />
       <MemberSignature Language="VB.NET" Value="AllowTrailingWhite" />
-      <MemberSignature Language="C++ CLI" Value="AllowTrailingWhite" />
       <MemberSignature Language="F#" Value="AllowTrailingWhite = 2" Usage="System.Globalization.NumberStyles.AllowTrailingWhite" />
+      <MemberSignature Language="C++ CLI" Value="AllowTrailingWhite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -446,6 +475,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -472,8 +503,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Any = int32(511)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
-      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberSignature Language="F#" Value="Any = 511" Usage="System.Globalization.NumberStyles.Any" />
+      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -484,6 +515,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -510,8 +543,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Currency = int32(383)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Currency" />
       <MemberSignature Language="VB.NET" Value="Currency" />
-      <MemberSignature Language="C++ CLI" Value="Currency" />
       <MemberSignature Language="F#" Value="Currency = 383" Usage="System.Globalization.NumberStyles.Currency" />
+      <MemberSignature Language="C++ CLI" Value="Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -522,6 +555,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -548,8 +583,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Float = int32(167)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Float" />
       <MemberSignature Language="VB.NET" Value="Float" />
-      <MemberSignature Language="C++ CLI" Value="Float" />
       <MemberSignature Language="F#" Value="Float = 167" Usage="System.Globalization.NumberStyles.Float" />
+      <MemberSignature Language="C++ CLI" Value="Float" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -560,6 +595,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -586,8 +623,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles HexNumber = int32(515)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.HexNumber" />
       <MemberSignature Language="VB.NET" Value="HexNumber" />
-      <MemberSignature Language="C++ CLI" Value="HexNumber" />
       <MemberSignature Language="F#" Value="HexNumber = 515" Usage="System.Globalization.NumberStyles.HexNumber" />
+      <MemberSignature Language="C++ CLI" Value="HexNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -598,6 +635,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -624,8 +663,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Integer = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Integer" />
       <MemberSignature Language="VB.NET" Value="Integer" />
-      <MemberSignature Language="C++ CLI" Value="Integer" />
       <MemberSignature Language="F#" Value="Integer = 7" Usage="System.Globalization.NumberStyles.Integer" />
+      <MemberSignature Language="C++ CLI" Value="Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -636,6 +675,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -662,8 +703,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.None" />
       <MemberSignature Language="VB.NET" Value="None" />
-      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Globalization.NumberStyles.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -674,6 +715,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -700,8 +743,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.NumberStyles Number = int32(111)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.NumberStyles.Number" />
       <MemberSignature Language="VB.NET" Value="Number" />
-      <MemberSignature Language="C++ CLI" Value="Number" />
       <MemberSignature Language="F#" Value="Number = 111" Usage="System.Globalization.NumberStyles.Number" />
+      <MemberSignature Language="C++ CLI" Value="Number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -712,6 +755,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

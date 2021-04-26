@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUrlResolutionService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IUrlResolutionService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IUrlResolutionService" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IUrlResolutionService" />
   <TypeSignature Language="F#" Value="type IUrlResolutionService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IUrlResolutionService" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -23,7 +23,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd">ASP.NET Web Site Paths</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178116(v=vs.100)">ASP.NET Web Site Paths</related>
   </Docs>
   <Members>
     <Member MemberName="ResolveClientUrl">
@@ -31,8 +31,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveClientUrl(string relativeUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IUrlResolutionService.ResolveClientUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveClientUrl (relativeUrl As String) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveClientUrl(System::String ^ relativeUrl);" />
       <MemberSignature Language="F#" Value="abstract member ResolveClientUrl : string -&gt; string" Usage="iUrlResolutionService.ResolveClientUrl relativeUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveClientUrl(System::String ^ relativeUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,7 +57,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd">ASP.NET Web Site Paths</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178116(v=vs.100)">ASP.NET Web Site Paths</related>
       </Docs>
     </Member>
   </Members>

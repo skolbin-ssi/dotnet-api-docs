@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSerializerNamespaces extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializerNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSerializerNamespaces" />
-  <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerNamespaces" />
   <TypeSignature Language="F#" Value="type XmlSerializerNamespaces = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerNamespaces" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -26,10 +26,25 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml.Serialization</AssemblyName>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Xml" FromVersion="4.0.0.0" To="System.Xml.XmlSerializer" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="System.Xml.Serialization" FromVersion="4.0.0.0" To="System.Xml.XmlSerializer" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Xml.XmlSerializer" FromVersion="5.0.0.0" To="System.Xml.ReaderWriter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Xml.XmlSerializer" FromVersion="6.0.0.0" To="System.Xml.ReaderWriter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Xml.XmlSerializer" FromVersion="4.1.0.0" To="System.Xml.ReaderWriter" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.Xml.XmlSerializer" FromVersion="4.1.1.0" To="System.Xml.ReaderWriter" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.Xml.XmlSerializer" FromVersion="4.1.2.0" To="System.Xml.ReaderWriter" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+    <TypeForwarding From="System.Xml.Serialization" FromVersion="4.0.0.0" To="System.Xml" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+    <TypeForwarding From="System.Xml.Serialization" FromVersion="2.0.5.0" To="System.Xml" ToVersion="2.0.5.0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -88,18 +103,18 @@ ns.Add("", "")
 ## Examples  
  The following example creates an <xref:System.Xml.Serialization.XmlSerializerNamespaces> object, and adds two prefix and namespace pairs to it. The example then passes the <xref:System.Xml.Serialization.XmlSerializerNamespaces> to the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method, which serializes a `Books` object into an XML document. Using the <xref:System.Xml.Serialization.XmlSerializerNamespaces> object, the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method qualifies each XML element and attribute with one of the two namespaces.  
   
- [!code-cpp[Classic XmlSerializerNamespaces Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces Example/CPP/source.cpp#1)]
- [!code-csharp[Classic XmlSerializerNamespaces Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces Example/CS/source.cs#1)]
- [!code-vb[Classic XmlSerializerNamespaces Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
-    <related type="Article" href="~/docs/standard/serialization/introducing-xml-serialization.md">Introducing XML Serialization</related>
-    <related type="Article" href="~/docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md">How to: Specify an Alternate Element Name for an XML Stream</related>
-    <related type="Article" href="~/docs/standard/serialization/controlling-xml-serialization-using-attributes.md">Controlling XML Serialization Using Attributes</related>
-    <related type="Article" href="~/docs/standard/serialization/examples-of-xml-serialization.md">Examples of XML Serialization</related>
-    <related type="Article" href="~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md">XML Schema Definition Tool (Xsd.exe)</related>
+    <related type="Article" href="/dotnet/standard/serialization/introducing-xml-serialization">Introducing XML Serialization</related>
+    <related type="Article" href="/dotnet/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream">How to: Specify an Alternate Element Name for an XML Stream</related>
+    <related type="Article" href="/dotnet/standard/serialization/controlling-xml-serialization-using-attributes">Controlling XML Serialization Using Attributes</related>
+    <related type="Article" href="/dotnet/standard/serialization/examples-of-xml-serialization">Examples of XML Serialization</related>
+    <related type="Article" href="/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe">XML Schema Definition Tool (Xsd.exe)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -139,13 +154,16 @@ ns.Add("", "")
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Serialization</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -157,9 +175,9 @@ ns.Add("", "")
 ## Examples  
  The following example creates an instance of the <xref:System.Xml.Serialization.XmlSerializerNamespaces> class, and adds a prefix and namespace pair to the object.  
   
- [!code-cpp[XmlSerializerNameSpaces_Constructor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializerNameSpaces_Constructor/CPP/xmlserializernamespaces_constructor.cpp#1)]
- [!code-csharp[XmlSerializerNameSpaces_Constructor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializerNameSpaces_Constructor/CS/xmlserializernamespaces_constructor.cs#1)]
- [!code-vb[XmlSerializerNameSpaces_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializerNameSpaces_Constructor/VB/xmlserializernamespaces_constructor.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializerNameSpaces_Constructor/CPP/xmlserializernamespaces_constructor.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializerNameSpaces_Constructor/CS/xmlserializernamespaces_constructor.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializerNameSpaces_Constructor/VB/xmlserializernamespaces_constructor.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -170,8 +188,8 @@ ns.Add("", "")
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlSerializerNamespaces namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerNamespaces.#ctor(System.Xml.Serialization.XmlSerializerNamespaces)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (namespaces As XmlSerializerNamespaces)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerNamespaces(System::Xml::Serialization::XmlSerializerNamespaces ^ namespaces);" />
       <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializerNamespaces : System.Xml.Serialization.XmlSerializerNamespaces -&gt; System.Xml.Serialization.XmlSerializerNamespaces" Usage="new System.Xml.Serialization.XmlSerializerNamespaces namespaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerNamespaces(System::Xml::Serialization::XmlSerializerNamespaces ^ namespaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -194,12 +212,14 @@ ns.Add("", "")
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Serialization</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="namespaces" Type="System.Xml.Serialization.XmlSerializerNamespaces" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="namespaces" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
       </Parameters>
       <Docs>
         <param name="namespaces">An instance of the <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> containing the namespace and prefix pairs.</param>
@@ -210,9 +230,9 @@ ns.Add("", "")
 ## Examples  
  The following example creates two <xref:System.Xml.XmlQualifiedName> objects, and creates a new <xref:System.Xml.Serialization.XmlSerializerNamespaces> instance from them.  
   
- [!code-cpp[Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example/CS/source.cs#1)]
- [!code-vb[Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -223,8 +243,8 @@ ns.Add("", "")
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlQualifiedName[] namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerNamespaces.#ctor(System.Xml.XmlQualifiedName[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (namespaces As XmlQualifiedName())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerNamespaces(cli::array &lt;System::Xml::XmlQualifiedName ^&gt; ^ namespaces);" />
       <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializerNamespaces : System.Xml.XmlQualifiedName[] -&gt; System.Xml.Serialization.XmlSerializerNamespaces" Usage="new System.Xml.Serialization.XmlSerializerNamespaces namespaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerNamespaces(cli::array &lt;System::Xml::XmlQualifiedName ^&gt; ^ namespaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -247,12 +267,14 @@ ns.Add("", "")
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Serialization</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="namespaces" Type="System.Xml.XmlQualifiedName[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="namespaces" Type="System.Xml.XmlQualifiedName[]" />
       </Parameters>
       <Docs>
         <param name="namespaces">An array of <see cref="T:System.Xml.XmlQualifiedName" /> objects.</param>
@@ -261,12 +283,13 @@ ns.Add("", "")
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (string prefix, string ns);" />
+      <MemberSignature Language="C#" Value="public void Add (string prefix, string ns);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string prefix, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerNamespaces.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, ns As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ prefix, System::String ^ ns);" />
       <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; unit" Usage="xmlSerializerNamespaces.Add (prefix, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ prefix, System::String ^ ns);" />
+      <MemberSignature Language="C#" Value="public void Add (string prefix, string? ns);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -289,6 +312,8 @@ ns.Add("", "")
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Serialization</AssemblyName>
@@ -297,8 +322,8 @@ ns.Add("", "")
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="prefix" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="ns" Type="System.String" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="prefix">The prefix associated with an XML namespace.</param>
@@ -317,9 +342,9 @@ ns.Add("", "")
 ## Examples  
  The following example creates an <xref:System.Xml.Serialization.XmlSerializerNamespaces> object, and adds three prefix and namespace pairs to it by calling the <xref:System.Xml.Serialization.XmlSerializerNamespaces.Add%2A> method.  
   
- [!code-cpp[Classic XmlSerializerNamespaces.Add Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.Add Example/CPP/source.cpp#1)]
- [!code-csharp[Classic XmlSerializerNamespaces.Add Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.Add Example/CS/source.cs#1)]
- [!code-vb[Classic XmlSerializerNamespaces.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.Add Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.Add Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.Add Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.Add Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -330,8 +355,8 @@ ns.Add("", "")
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerNamespaces.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Xml.Serialization.XmlSerializerNamespaces.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -354,6 +379,8 @@ ns.Add("", "")
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Serialization</AssemblyName>
@@ -372,8 +399,8 @@ ns.Add("", "")
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlQualifiedName[] ToArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerNamespaces.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As XmlQualifiedName()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Xml::XmlQualifiedName ^&gt; ^ ToArray();" />
       <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; System.Xml.XmlQualifiedName[]" Usage="xmlSerializerNamespaces.ToArray " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Xml::XmlQualifiedName ^&gt; ^ ToArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -396,6 +423,8 @@ ns.Add("", "")
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Serialization</AssemblyName>
@@ -413,9 +442,9 @@ ns.Add("", "")
 ## Examples  
  The following example prints each <xref:System.Xml.XmlQualifiedName.Name%2A> and <xref:System.Xml.XmlQualifiedName.Namespace%2A> in an <xref:System.Xml.Serialization.XmlSerializerNamespaces> object.  
   
- [!code-cpp[Classic XmlSerializerNamespaces.ToArray Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.ToArray Example/CPP/source.cpp#1)]
- [!code-csharp[Classic XmlSerializerNamespaces.ToArray Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.ToArray Example/CS/source.cs#1)]
- [!code-vb[Classic XmlSerializerNamespaces.ToArray Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.ToArray Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.ToArray Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.ToArray Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.ToArray Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

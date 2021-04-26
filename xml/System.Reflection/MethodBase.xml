@@ -1,10 +1,15 @@
 <Type Name="MethodBase" FullName="System.Reflection.MethodBase">
-  <TypeSignature Language="C#" Value="public abstract class MethodBase : System.Reflection.MemberInfo, System.Runtime.InteropServices._MethodBase" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit MethodBase extends System.Reflection.MemberInfo implements class System.Runtime.InteropServices._MethodBase" />
+  <TypeSignature Language="C#" Value="public abstract class MethodBase : System.Reflection.MemberInfo" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MethodBase extends System.Reflection.MemberInfo" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodBase" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MethodBase&#xA;Inherits MemberInfo&#xA;Implements _MethodBase" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MethodBase abstract : System::Reflection::MemberInfo, System::Runtime::InteropServices::_MethodBase" />
-  <TypeSignature Language="F#" Value="type MethodBase = class&#xA;    inherit MemberInfo&#xA;    interface _MethodBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MethodBase&#xA;Inherits MemberInfo" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="F#" Value="type MethodBase = class&#xA;    inherit MemberInfo" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MethodBase abstract : System::Reflection::MemberInfo" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="C#" Value="public abstract class MethodBase : System.Reflection.MemberInfo, System.Runtime.InteropServices._MethodBase" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit MethodBase extends System.Reflection.MemberInfo implements class System.Runtime.InteropServices._MethodBase" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MethodBase&#xA;Inherits MemberInfo&#xA;Implements _MethodBase" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="F#" Value="type MethodBase = class&#xA;    inherit MemberInfo&#xA;    interface _MethodBase" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MethodBase abstract : System::Reflection::MemberInfo, System::Runtime::InteropServices::_MethodBase" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,27 +33,44 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Reflection" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Reflection" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Reflection" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Reflection" FromVersion="4.2.0.0" To="System.Runtime" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.Reflection" FromVersion="4.2.1.0" To="System.Runtime" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.Reflection" FromVersion="4.2.2.0" To="System.Runtime" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Reflection.MemberInfo</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Runtime.InteropServices._MethodBase</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComDefaultInterface(typeof(System.Runtime.InteropServices._MethodBase))</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComDefaultInterface(typeof(System.Runtime.InteropServices._MethodBase))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComDefaultInterface(typeof(System.Runtime.InteropServices._MethodBase))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -61,7 +83,6 @@
   
  ]]></format>
     </remarks>
-    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
     <threadsafe>This type is thread safe.</threadsafe>
     <block subset="none" type="overrides">
       <para>When you inherit from <see langword="MethodBase" />, you must override the following members: <see cref="M:System.Reflection.MethodBase.GetParameters" />, <see cref="M:System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />, <see cref="M:System.Reflection.MethodBase.GetMethodImplementationFlags" />, <see cref="P:System.Reflection.MethodBase.MethodHandle" />, <see cref="P:System.Reflection.MethodBase.Attributes" />, <see cref="P:System.Reflection.MemberInfo.Name" />, <see cref="P:System.Reflection.MemberInfo.DeclaringType" />, <see cref="P:System.Reflection.MemberInfo.MemberType" />, <see cref="P:System.Reflection.MemberInfo.ReflectedType" />, <see cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)" />, <see cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)" />, and <see cref="M:System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)" />.</para>
@@ -69,11 +90,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected MethodBase ();" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1" />
-      <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.#ctor" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MethodBase();" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1" />
+      <MemberSignature Language="C#" Value="protected MethodBase ();" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1;net-5.0;net-6.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1;net-5.0;net-6.0" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.#ctor" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1;net-5.0;net-6.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1;net-5.0;net-6.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MethodBase();" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.1;net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -92,6 +113,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -100,7 +123,6 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.MethodBase" /> class.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -108,11 +130,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MethodAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Attributes As MethodAttributes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::MethodAttributes Attributes { System::Reflection::MethodAttributes get(); };" />
       <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.MethodAttributes" Usage="System.Reflection.MethodBase.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::MethodAttributes Attributes { System::Reflection::MethodAttributes get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.Attributes</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">P:System.Runtime.InteropServices._MethodBase.Attributes</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -137,6 +159,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -157,9 +181,9 @@
 ## Examples  
  The following code example displays the attributes of the user-defined method Mymethod.  
   
- [!code-cpp[Classic MethodBase.Attributes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.Attributes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.Attributes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.Attributes Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.Attributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.Attributes Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.Attributes Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.Attributes Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.Attributes Example/VB/source.vb" id="Snippet1":::  
   
  This code produces the following output:  
   
@@ -192,11 +216,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.CallingConventions CallingConvention" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.CallingConvention" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CallingConvention As CallingConventions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::CallingConventions CallingConvention { System::Reflection::CallingConventions get(); };" />
       <MemberSignature Language="F#" Value="member this.CallingConvention : System.Reflection.CallingConventions" Usage="System.Reflection.MethodBase.CallingConvention" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::CallingConventions CallingConvention { System::Reflection::CallingConventions get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.CallingConvention</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">P:System.Runtime.InteropServices._MethodBase.CallingConvention</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -221,6 +245,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.CallingConventions</ReturnType>
@@ -237,8 +263,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ContainsGenericParameters" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.ContainsGenericParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContainsGenericParameters As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ContainsGenericParameters { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.ContainsGenericParameters : bool" Usage="System.Reflection.MethodBase.ContainsGenericParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ContainsGenericParameters { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -262,6 +288,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -290,15 +318,16 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="methodBase.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.Equals(System.Object)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">M:System.Runtime.InteropServices._MethodBase.Equals(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -321,12 +350,14 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="obj">An object to compare with this instance, or <see langword="null" />.</param>
@@ -337,12 +368,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetCurrentMethod">
-      <MemberSignature Language="C#" Value="public static System.Reflection.MethodBase GetCurrentMethod ();" />
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodBase? GetCurrentMethod ();" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodBase GetCurrentMethod() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetCurrentMethod" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrentMethod () As MethodBase" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetCurrentMethod();" />
       <MemberSignature Language="F#" Value="static member GetCurrentMethod : unit -&gt; System.Reflection.MethodBase" Usage="System.Reflection.MethodBase.GetCurrentMethod " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetCurrentMethod();" />
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodBase GetCurrentMethod ();" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -361,13 +393,16 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -393,13 +428,12 @@
 ## Examples  
  The following example defines two types. The first is a non-generic class, `TestClass`, includes a constructor, a method named `GetValue`, and a read-write property named `GetValue`. The second is a generic class named `TestClass<T>` that includes a constructor, a `GetValue` method, and a generic method, `ConvertValue<Y>`. Each constructor, method, and property accessor includes a call to the <xref:System.Reflection.MethodBase.GetCurrentMethod%2A> method.  
   
- [!code-csharp[System.Reflection.MethodBase.GetCurrentMethod#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Reflection.MethodBase.GetCurrentMethod/cs/GetCurentMethod1.cs#1)]
- [!code-vb[System.Reflection.MethodBase.GetCurrentMethod#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Reflection.MethodBase.GetCurrentMethod/vb/GetCurentMethod1.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Reflection.MethodBase.GetCurrentMethod/cs/GetCurentMethod1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Reflection.MethodBase.GetCurrentMethod/vb/GetCurentMethod1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.TargetException">This member was invoked with a late-binding mechanism.</exception>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetGenericArguments">
@@ -407,8 +441,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetGenericArguments() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetGenericArguments" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGenericArguments () As Type()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetGenericArguments();" />
       <MemberSignature Language="F#" Value="abstract member GetGenericArguments : unit -&gt; Type[]&#xA;override this.GetGenericArguments : unit -&gt; Type[]" Usage="methodBase.GetGenericArguments " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetGenericArguments();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -432,10 +466,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -475,11 +512,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="methodBase.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetHashCode</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">M:System.Runtime.InteropServices._MethodBase.GetHashCode</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -502,6 +539,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -514,12 +553,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetMethodBody">
-      <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodBody GetMethodBody ();" />
+      <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodBody? GetMethodBody ();" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodBody GetMethodBody() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetMethodBody" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMethodBody () As MethodBody" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodBody ^ GetMethodBody();" />
       <MemberSignature Language="F#" Value="abstract member GetMethodBody : unit -&gt; System.Reflection.MethodBody&#xA;override this.GetMethodBody : unit -&gt; System.Reflection.MethodBody" Usage="methodBase.GetMethodBody " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodBody ^ GetMethodBody();" />
+      <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodBody GetMethodBody ();" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -537,13 +577,20 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Trimming may change method bodies. For example it can change some instructions, remove branches or local variables.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Trimming may change method bodies. For example it can change some instructions, remove branches or local variables.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -569,14 +616,13 @@
 > [!NOTE]
 >  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
- [!code-cpp[MethodBody#1](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#1)]
- [!code-csharp[MethodBody#1](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#1)]
- [!code-vb[MethodBody#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This method is invalid unless overridden in a derived class.</exception>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">for the access to metadata for members. Permission value: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetMethodFromHandle">
@@ -591,12 +637,13 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetMethodFromHandle">
-      <MemberSignature Language="C#" Value="public static System.Reflection.MethodBase GetMethodFromHandle (RuntimeMethodHandle handle);" />
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodBase GetMethodFromHandle (RuntimeMethodHandle handle);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodBase GetMethodFromHandle(valuetype System.RuntimeMethodHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodFromHandle (handle As RuntimeMethodHandle) As MethodBase" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetMethodFromHandle(RuntimeMethodHandle handle);" />
       <MemberSignature Language="F#" Value="static member GetMethodFromHandle : RuntimeMethodHandle -&gt; System.Reflection.MethodBase" Usage="System.Reflection.MethodBase.GetMethodFromHandle handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetMethodFromHandle(RuntimeMethodHandle handle);" />
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodBase? GetMethodFromHandle (RuntimeMethodHandle handle);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -621,10 +668,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -647,16 +697,16 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="handle" /> is invalid.</exception>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetMethodFromHandle">
-      <MemberSignature Language="C#" Value="public static System.Reflection.MethodBase GetMethodFromHandle (RuntimeMethodHandle handle, RuntimeTypeHandle declaringType);" />
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodBase GetMethodFromHandle (RuntimeMethodHandle handle, RuntimeTypeHandle declaringType);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodBase GetMethodFromHandle(valuetype System.RuntimeMethodHandle handle, valuetype System.RuntimeTypeHandle declaringType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodFromHandle (handle As RuntimeMethodHandle, declaringType As RuntimeTypeHandle) As MethodBase" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetMethodFromHandle(RuntimeMethodHandle handle, RuntimeTypeHandle declaringType);" />
       <MemberSignature Language="F#" Value="static member GetMethodFromHandle : RuntimeMethodHandle * RuntimeTypeHandle -&gt; System.Reflection.MethodBase" Usage="System.Reflection.MethodBase.GetMethodFromHandle (handle, declaringType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::MethodBase ^ GetMethodFromHandle(RuntimeMethodHandle handle, RuntimeTypeHandle declaringType);" />
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodBase? GetMethodFromHandle (RuntimeMethodHandle handle, RuntimeTypeHandle declaringType);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -680,21 +730,25 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodBase</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="handle" Type="System.RuntimeMethodHandle" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="declaringType" Type="System.RuntimeTypeHandle" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="handle" Type="System.RuntimeMethodHandle" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="declaringType" Type="System.RuntimeTypeHandle" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="handle">A handle to the internal metadata representation of a constructor or method.</param>
@@ -713,7 +767,6 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="handle" /> is invalid.</exception>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetMethodImplementationFlags">
@@ -721,11 +774,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Reflection.MethodImplAttributes GetMethodImplementationFlags() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetMethodImplementationFlags" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMethodImplementationFlags () As MethodImplAttributes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::MethodImplAttributes GetMethodImplementationFlags();" />
       <MemberSignature Language="F#" Value="abstract member GetMethodImplementationFlags : unit -&gt; System.Reflection.MethodImplAttributes" Usage="methodBase.GetMethodImplementationFlags " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::MethodImplAttributes GetMethodImplementationFlags();" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetMethodImplementationFlags</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">M:System.Runtime.InteropServices._MethodBase.GetMethodImplementationFlags</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -748,6 +801,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
@@ -762,13 +817,12 @@
 ## Examples  
  The following example defines a constructor in a dynamic assembly and then uses the <xref:System.Reflection.MethodBase.GetMethodImplementationFlags%2A> method to display the method implementation flags that are set by default.  
   
- [!code-cpp[ConstructorBuilder_GetModule_4#3](~/samples/snippets/cpp/VS_Snippets_CLR/ConstructorBuilder_GetModule_4/CPP/constructorbuilder_getmodule_4.cpp#3)]
- [!code-csharp[ConstructorBuilder_GetModule_4#3](~/samples/snippets/csharp/VS_Snippets_CLR/ConstructorBuilder_GetModule_4/CS/constructorbuilder_getmodule_4.cs#3)]
- [!code-vb[ConstructorBuilder_GetModule_4#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ConstructorBuilder_GetModule_4/VB/constructorbuilder_getmodule_4.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/ConstructorBuilder_GetModule_4/CPP/constructorbuilder_getmodule_4.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/ConstructorBuilder_GetModule_4/CS/constructorbuilder_getmodule_4.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/ConstructorBuilder_GetModule_4/VB/constructorbuilder_getmodule_4.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <altmember cref="T:System.Reflection.MethodImplAttributes" />
       </Docs>
     </Member>
@@ -777,11 +831,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.ParameterInfo[] GetParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetParameters" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetParameters () As ParameterInfo()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetParameters();" />
       <MemberSignature Language="F#" Value="abstract member GetParameters : unit -&gt; System.Reflection.ParameterInfo[]" Usage="methodBase.GetParameters " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetParameters();" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetParameters</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">M:System.Runtime.InteropServices._MethodBase.GetParameters</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -806,6 +860,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.ParameterInfo[]</ReturnType>
@@ -822,13 +878,12 @@
   
  The example defines a delegate named `MyDelegate` and an event named `ev` of type `MyDelegate`. The code in the `Main` method discovers the event signature by getting the delegate type of the event, getting the `Invoke` method of the delegate type, and then retrieving and displaying the parameters.  
   
- [!code-cpp[eventarg#1](~/samples/snippets/cpp/VS_Snippets_CLR/EventArg/CPP/eventarg.cpp#1)]
- [!code-csharp[eventarg#1](~/samples/snippets/csharp/VS_Snippets_CLR/EventArg/CS/eventarg.cs#1)]
- [!code-vb[eventarg#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventArg/VB/eventarg.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/EventArg/CPP/eventarg.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/EventArg/CS/eventarg.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/EventArg/VB/eventarg.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
@@ -837,8 +892,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.GetType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType();" />
       <MemberSignature Language="F#" Value="override this.GetType : unit -&gt; Type" Usage="methodBase.GetType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.GetType</InterfaceMember>
@@ -882,16 +937,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(object obj, object[] parameters) cil managed" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.Invoke(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Invoke (obj As Object, parameters As Object()) As Object" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Invoke(System::Object ^ obj, cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="abstract member Invoke : obj * obj[] -&gt; obj&#xA;override this.Invoke : obj * obj[] -&gt; obj" Usage="methodBase.Invoke (obj, parameters)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C#" Value="public object Invoke (object obj, object[] parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(object obj, object[] parameters) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1" />
-      <MemberSignature Language="VB.NET" Value="Public Function Invoke (obj As Object, parameters As Object()) As Object" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(System::Object ^ obj, cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1" />
-      <MemberSignature Language="F#" Value="member this.Invoke : obj * obj[] -&gt; obj" Usage="methodBase.Invoke (obj, parameters)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Invoke(System::Object ^ obj, cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public object? Invoke (object? obj, object?[]? parameters);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(object obj, object[] parameters) cil managed" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Invoke (obj As Object, parameters As Object()) As Object" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Invoke : obj * obj[] -&gt; obj" Usage="methodBase.Invoke (obj, parameters)" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(System::Object ^ obj, cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C#" Value="public object Invoke (object obj, object[] parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.Invoke(System.Object,System.Object[])</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">M:System.Runtime.InteropServices._MethodBase.Invoke(System.Object,System.Object[])</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -916,10 +972,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Diagnostics.DebuggerStepThrough]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerStepThrough&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -950,9 +1009,9 @@
 >  If this method overload is used to invoke an instance constructor, the object supplied for `obj` is reinitialized; that is, all instance initializers are executed. The return value is `null`. If a class constructor is invoked, the class is reinitialized; that is, all class initializers are executed. The return value is `null`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller's grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the .NET Framework 2.0 Service Pack 1, this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller's grant set, or a subset thereof. (See [Security Considerations for Reflection](/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection).)  
 >   
->  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  To use this functionality, your application should target the .NET Framework 3.5 or later.  
   
  If a parameter of the current method is a value type, and the corresponding argument in `parameters` is `null`, the runtime passes a zero-initialized instance of the value type.  
   
@@ -961,9 +1020,9 @@
 ## Examples  
  The following code example demonstrates dynamic method lookup using reflection. Note that you cannot use the <xref:System.Reflection.MethodInfo> object from the base class to invoke the overridden method in the derived class, because late binding cannot resolve overrides.  
   
- [!code-cpp[Classic MethodBase.Invoke1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.Invoke1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.Invoke1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.Invoke1 Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.Invoke1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.Invoke1 Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.Invoke1 Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.Invoke1 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.Invoke1 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1002,21 +1061,22 @@
  The caller does not have permission to execute the method or constructor that is represented by the current instance.</exception>
         <exception cref="T:System.InvalidOperationException">The type that declares the method is an open generic type. That is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" /> for the declaring type.</exception>
         <exception cref="T:System.NotSupportedException">The current instance is a <see cref="T:System.Reflection.Emit.MethodBuilder" />.</exception>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <altmember cref="T:System.Reflection.BindingFlags" />
         <altmember cref="T:System.Reflection.Missing" />
         <altmember cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public abstract object Invoke (object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object[] parameters, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="C#" Value="public abstract object? Invoke (object? obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder? binder, object?[]? parameters, System.Globalization.CultureInfo? culture);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(object obj, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Invoke(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Invoke (obj As Object, invokeAttr As BindingFlags, binder As Binder, parameters As Object(), culture As CultureInfo) As Object" />
       <MemberSignature Language="F#" Value="abstract member Invoke : obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="methodBase.Invoke (obj, invokeAttr, binder, parameters, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Invoke(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="C#" Value="public abstract object Invoke (object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object[] parameters, System.Globalization.CultureInfo culture);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">M:System.Runtime.InteropServices._MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1035,6 +1095,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1043,11 +1105,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="invokeAttr" Type="System.Reflection.BindingFlags" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="binder" Type="System.Reflection.Binder" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="parameters" Type="System.Object[]" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="invokeAttr" Type="System.Reflection.BindingFlags" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="obj">The object on which to invoke the method or constructor. If a method is static, this argument is ignored. If a constructor is static, this argument must be <see langword="null" /> or an instance of the class that defines the constructor.</param>
@@ -1056,7 +1118,7 @@
         <param name="parameters">An argument list for the invoked method or constructor. This is an array of objects with the same number, order, and type as the parameters of the method or constructor to be invoked. If there are no parameters, this should be <see langword="null" />.  
   
  If the method or constructor represented by this instance takes a ByRef parameter, there is no special attribute required for that parameter in order to invoke the method or constructor using this function. Any object in this array that is not explicitly initialized with a value will contain the default value for that object type. For reference-type elements, this value is <see langword="null" />. For value-type elements, this value is 0, 0.0, or <see langword="false" />, depending on the specific element type.</param>
-        <param name="culture">An instance of <see langword="CultureInfo" /> used to govern the coercion of types. If this is <see langword="null" />, the <see langword="CultureInfo" /> for the current thread is used. (This is necessary to convert a <see langword="String" /> that represents 1000 to a <see langword="Double" /> value, for example, since 1000 is represented differently by different cultures.)</param>
+        <param name="culture">An instance of <see langword="CultureInfo" /> used to govern the coercion of types. If this is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used. (This is necessary to convert a string that represents 1000 to a <see cref="T:System.Double" /> value, for example, since 1000 is represented differently by different cultures.)</param>
         <summary>When overridden in a derived class, invokes the reflected method or constructor with the given parameters.</summary>
         <returns>An <see langword="Object" /> containing the return value of the invoked method, or <see langword="null" /> in the case of a constructor, or <see langword="null" /> if the method's return type is <see langword="void" />. Before calling the method or constructor, <see langword="Invoke" /> checks to see if the user has access permission and verifies that the parameters are valid.</returns>
         <remarks>
@@ -1085,18 +1147,18 @@
  If the invoked method throws an exception, `TargetInvocationException.GetException` returns the exception. This implementation throws a `NotSupportedException`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller's grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the .NET Framework 2.0 Service Pack 1, this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller's grant set, or a subset thereof. (See [Security Considerations for Reflection](/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection).)  
 >   
->  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  To use this functionality, your application should target the .NET Framework 3.5 or later.  
   
    
   
 ## Examples  
- The following example demonstrates all members of the <xref:System.Reflection.Binder?displayProperty=nameWithType> class using an overload of <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>. The private method `CanConvertFrom` finds compatible types for a given type. For another example of invoking members in a custom binding scenario, see [Dynamically Loading and Using Types](~/docs/framework/reflection-and-codedom/dynamically-loading-and-using-types.md).  
+ The following example demonstrates all members of the <xref:System.Reflection.Binder?displayProperty=nameWithType> class using an overload of <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>. The private method `CanConvertFrom` finds compatible types for a given type. For another example of invoking members in a custom binding scenario, see [Dynamically Loading and Using Types](/dotnet/framework/reflection-and-codedom/dynamically-loading-and-using-types).  
   
- [!code-cpp[Binder_1#1](~/samples/snippets/cpp/VS_Snippets_CLR/Binder_1/CPP/binder.cpp#1)]
- [!code-csharp[Binder_1#1](~/samples/snippets/csharp/VS_Snippets_CLR/Binder_1/CS/binder.cs#1)]
- [!code-vb[Binder_1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Binder_1/VB/binder.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/Binder_1/CPP/binder.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/Binder_1/CS/binder.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/Binder_1/VB/binder.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1114,9 +1176,8 @@
         <exception cref="T:System.Reflection.TargetInvocationException">The invoked method or constructor throws an exception.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have permission to execute the method or constructor that is represented by the current instance.</exception>
         <exception cref="T:System.InvalidOperationException">The type that declares the method is an open generic type. That is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" /> for the declaring type.</exception>
-        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
         <altmember cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
-        <related type="Article" href="~/docs/framework/reflection-and-codedom/dynamically-loading-and-using-types.md">Dynamically Loading and Using Types</related>
+        <related type="Article" href="/dotnet/framework/reflection-and-codedom/dynamically-loading-and-using-types">Dynamically Loading and Using Types</related>
       </Docs>
     </Member>
     <Member MemberName="IsAbstract">
@@ -1124,11 +1185,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbstract" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsAbstract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbstract As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbstract { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsAbstract : bool" Usage="System.Reflection.MethodBase.IsAbstract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbstract { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAbstract</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsAbstract</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1153,6 +1214,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1174,9 +1237,9 @@
 ## Examples  
  The following example determines whether specified the method is abstract and displays the result.  
   
- [!code-cpp[Classic MethodBase.IsAbstract Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAbstract Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.IsAbstract Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAbstract Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.IsAbstract Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAbstract Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAbstract Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAbstract Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAbstract Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1189,11 +1252,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAssembly As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssembly { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsAssembly : bool" Usage="System.Reflection.MethodBase.IsAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssembly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAssembly</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsAssembly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1218,6 +1281,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1238,13 +1303,10 @@
   
 ## Examples  
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
-  
-> [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
-  
- [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/VB/source.vb#1)]  
+
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1259,13 +1321,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsConstructedGenericMethod" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsConstructedGenericMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsConstructedGenericMethod As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsConstructedGenericMethod { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsConstructedGenericMethod : bool" Usage="System.Reflection.MethodBase.IsConstructedGenericMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsConstructedGenericMethod { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1291,11 +1355,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsConstructor" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsConstructor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConstructor As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConstructor { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsConstructor : bool" Usage="System.Reflection.MethodBase.IsConstructor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConstructor { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsConstructor</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsConstructor</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1320,10 +1384,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1351,11 +1418,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFamily" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsFamily" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamily As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamily { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsFamily : bool" Usage="System.Reflection.MethodBase.IsFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamily { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamily</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsFamily</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1380,6 +1447,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1398,13 +1467,10 @@
   
 ## Examples  
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
-  
-> [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
-  
- [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/VB/source.vb#1)]  
+
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1419,11 +1485,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFamilyAndAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsFamilyAndAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamilyAndAssembly As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyAndAssembly { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsFamilyAndAssembly : bool" Usage="System.Reflection.MethodBase.IsFamilyAndAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyAndAssembly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1448,6 +1514,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1460,19 +1528,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> if the visibility modifier is `protected private` in C++. Methods with this visibility cannot be defined in Visual Basic or C#.  
+ The visibility of a method or constructor is exactly described by <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> if the visibility modifier is `private protected` in C#, `Private Protected` in Visual Basic, or `protected private` in C++.
   
    
   
 ## Examples  
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
-  
-> [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
-  
- [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/VB/source.vb#1)]  
+
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1487,11 +1552,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFamilyOrAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsFamilyOrAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamilyOrAssembly As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyOrAssembly { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsFamilyOrAssembly : bool" Usage="System.Reflection.MethodBase.IsFamilyOrAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyOrAssembly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1516,6 +1581,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1538,13 +1605,10 @@
   
 ## Examples  
  The following code example defines methods with varying levels of visibility, and displays the values of their <xref:System.Reflection.MethodBase.IsAssembly%2A>, <xref:System.Reflection.MethodBase.IsFamily%2A>, <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.MethodBase.IsFamilyAndAssembly%2A> properties.  
-  
-> [!NOTE]
->  The Visual Basic and C# languages cannot define methods with <xref:System.Reflection.MethodAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
-  
- [!code-cpp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.IsAssembly Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/VB/source.vb#1)]  
+
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsAssembly Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1559,11 +1623,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFinal" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsFinal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFinal As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFinal { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsFinal : bool" Usage="System.Reflection.MethodBase.IsFinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFinal { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFinal</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsFinal</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1588,6 +1652,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1599,23 +1665,30 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- To determine if a method is overridable, it is not sufficient to check that <xref:System.Reflection.MethodBase.IsVirtual%2A> is `true`. For a method to be overridable, `IsVirtual` must be `true` and `IsFinal` must be `false`. For example, a method might be non-virtual, but it implements an interface method. The common language runtime requires that all methods that implement interface members must be marked as `virtual`; therefore, the compiler marks the method `virtual final`. So there are cases where a method is marked as `virtual` but is still not overridable.  
-  
- To establish with certainty whether a method is overridable, use code such as this:  
-  
- `if (MethodInfo.IsVirtual && !MethodInfo.IsFinal)`  
-  
- If `IsVirtual` is `false` or `IsFinal` is `true`, then the method cannot be overridden.  
+## Remarks
+
+If the virtual method is marked `final`, it can't be overridden in derived classes. The overridden virtual method can be marked `final` using the [sealed](/dotnet/csharp/language-reference/keywords/sealed) keyword in C#, [NotOverridable](/dotnet/visual-basic/language-reference/modifiers/notoverridable) keyword in Visual Basic, or [sealed](/cpp/extensions/sealed-cpp-component-extensions) keyword in C++/CLI. The method can also be marked `final` implicitly by the compiler. For example, a method might be defined as non-virtual in your code, but it implements an interface method. The Common Language Runtime requires that all methods that implement interface members must be marked as `virtual`; therefore, the compiler marks the method `virtual final`.
+
+You can use this property, in conjunction with the <xref:System.Reflection.MethodBase.IsVirtual%2A> property, to determine if a method is overridable. For a method to be overridable, <xref:System.Reflection.MethodBase.IsVirtual%2A> property must be `true` and `IsFinal` property must be `false`. To establish with certainty whether a method is overridable, use code such as this:
+
+```csharp
+if (MethodInfo.IsVirtual && !MethodInfo.IsFinal)
+```
+
+```vb
+If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
+```
+
+If `IsVirtual` is `false` or `IsFinal` is `true`, then the method cannot be overridden.  
   
    
   
 ## Examples  
  The following example displays `false` for `IsFinal`, which might lead you to think that MyMethod is overridable. The code prints `false` even though MyMethod is not marked `virtual` and thus cannot be overridden.  
   
- [!code-cpp[Classic MethodBase.IsVirtual Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.IsVirtual Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.IsVirtual Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1627,8 +1700,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGenericMethod" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsGenericMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsGenericMethod As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsGenericMethod { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsGenericMethod : bool" Usage="System.Reflection.MethodBase.IsGenericMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsGenericMethod { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1652,6 +1725,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1691,8 +1766,8 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGenericMethodDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsGenericMethodDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsGenericMethodDefinition As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsGenericMethodDefinition { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsGenericMethodDefinition : bool" Usage="System.Reflection.MethodBase.IsGenericMethodDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsGenericMethodDefinition { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1716,6 +1791,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1755,11 +1832,11 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsHideBySig" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsHideBySig" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHideBySig As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHideBySig { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsHideBySig : bool" Usage="System.Reflection.MethodBase.IsHideBySig" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHideBySig { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsHideBySig</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsHideBySig</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1784,6 +1861,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1806,9 +1885,9 @@ The following table summarizes the invariant conditions for terms specific to ge
 ## Examples  
  The following code example contains a base class with an overloaded method, and a derived class that hides one of the overloads. In the Visual Basic version of the code example, the <xref:System.Reflection.MethodBase.IsHideBySig%2A> property returns `false` for the member in the derived class. In the C# version of the code sample, the property returns `true` for the member in the derived class.  
   
- [!code-cpp[System.Reflection.MethodBase.IsHideBySig#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.MethodBase.IsHideBySig/cpp/hide.cpp#1)]
- [!code-csharp[System.Reflection.MethodBase.IsHideBySig#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.MethodBase.IsHideBySig/CS/hide.cs#1)]
- [!code-vb[System.Reflection.MethodBase.IsHideBySig#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.MethodBase.IsHideBySig/VB/hide.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.MethodBase.IsHideBySig/cpp/hide.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.MethodBase.IsHideBySig/CS/hide.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.MethodBase.IsHideBySig/VB/hide.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1819,11 +1898,11 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrivate" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsPrivate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrivate As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivate { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsPrivate : bool" Usage="System.Reflection.MethodBase.IsPrivate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivate { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPrivate</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsPrivate</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1848,6 +1927,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1872,11 +1953,11 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPublic" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsPublic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPublic As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsPublic : bool" Usage="System.Reflection.MethodBase.IsPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPublic</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsPublic</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1901,6 +1982,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1920,9 +2003,9 @@ The following table summarizes the invariant conditions for terms specific to ge
 ## Examples  
  The following example uses the <xref:System.Reflection.MethodBase.IsPublic%2A> property to display a message that indicates whether the specified method is public.  
   
- [!code-cpp[Classic MethodBase.IsPublic Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsPublic Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.IsPublic Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsPublic Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.IsPublic Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsPublic Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsPublic Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsPublic Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsPublic Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1935,8 +2018,8 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSecurityCritical" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsSecurityCritical" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecurityCritical As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityCritical { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSecurityCritical : bool" Usage="System.Reflection.MethodBase.IsSecurityCritical" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityCritical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1953,6 +2036,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1981,14 +2066,14 @@ The following table summarizes the invariant conditions for terms specific to ge
 > [!IMPORTANT]
 >  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType> properties.  
   
- For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
+ For more information about reflection and transparency, see [Security Considerations for Reflection](/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection). For information about transparency, see [Security Changes](/dotnet/framework/security/security-changes).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
         <altmember cref="P:System.Reflection.MethodBase.IsSecurityTransparent" />
-        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
-        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
+        <related type="Article" href="/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection">Security Considerations for Reflection</related>
+        <related type="Article" href="/dotnet/framework/security/security-changes">Security Changes in the .NET Framework Version 4.0</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -1996,8 +2081,8 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSecuritySafeCritical" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecuritySafeCritical As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecuritySafeCritical { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSecuritySafeCritical : bool" Usage="System.Reflection.MethodBase.IsSecuritySafeCritical" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecuritySafeCritical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2014,6 +2099,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2042,14 +2129,14 @@ The following table summarizes the invariant conditions for terms specific to ge
 > [!IMPORTANT]
 >  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType> properties.  
   
- For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
+ For more information about reflection and transparency, see [Security Considerations for Reflection](/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection). For information about transparency, see [Security Changes](/dotnet/framework/security/security-changes).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Reflection.MethodBase.IsSecurityCritical" />
         <altmember cref="P:System.Reflection.MethodBase.IsSecurityTransparent" />
-        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
-        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
+        <related type="Article" href="/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection">Security Considerations for Reflection</related>
+        <related type="Article" href="/dotnet/framework/security/security-changes">Security Changes in the .NET Framework Version 4.0</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -2057,8 +2144,8 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSecurityTransparent" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsSecurityTransparent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecurityTransparent As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityTransparent { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSecurityTransparent : bool" Usage="System.Reflection.MethodBase.IsSecurityTransparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityTransparent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2075,6 +2162,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2097,14 +2186,14 @@ The following table summarizes the invariant conditions for terms specific to ge
 > [!IMPORTANT]
 >  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=nameWithType> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=nameWithType> properties.  
   
- For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
+ For more information about reflection and transparency, see [Security Considerations for Reflection](/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection). For information about transparency, see [Security Changes](/dotnet/framework/security/security-changes).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Reflection.MethodBase.IsSecurityCritical" />
         <altmember cref="P:System.Reflection.MethodBase.IsSecuritySafeCritical" />
-        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
-        <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
+        <related type="Article" href="/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection">Security Considerations for Reflection</related>
+        <related type="Article" href="/dotnet/framework/security/security-changes">Security Changes in the .NET Framework Version 4.0</related>
       </Docs>
     </Member>
     <Member MemberName="IsSpecialName">
@@ -2112,11 +2201,11 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSpecialName" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsSpecialName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialName As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialName { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSpecialName : bool" Usage="System.Reflection.MethodBase.IsSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialName { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsSpecialName</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsSpecialName</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2141,6 +2230,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2160,9 +2251,9 @@ The following table summarizes the invariant conditions for terms specific to ge
 ## Examples  
  This example shows a use of <xref:System.Reflection.MethodBase.IsSpecialName%2A> to filter internal or private members out of a list.  
   
- [!code-cpp[Classic Type.IsSpecialName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Type.IsSpecialName Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Type.IsSpecialName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Type.IsSpecialName Example/CS/source.cs#1)]
- [!code-vb[Classic Type.IsSpecialName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Type.IsSpecialName Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Type.IsSpecialName Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Type.IsSpecialName Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Type.IsSpecialName Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2175,11 +2266,11 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStatic" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsStatic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStatic As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStatic { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsStatic : bool" Usage="System.Reflection.MethodBase.IsStatic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStatic { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsStatic</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsStatic</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2204,6 +2295,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2229,11 +2322,11 @@ The following table summarizes the invariant conditions for terms specific to ge
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVirtual" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.IsVirtual" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVirtual As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVirtual { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsVirtual : bool" Usage="System.Reflection.MethodBase.IsVirtual" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVirtual { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsVirtual</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1">P:System.Runtime.InteropServices._MethodBase.IsVirtual</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2258,6 +2351,8 @@ The following table summarizes the invariant conditions for terms specific to ge
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2288,17 +2383,17 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
   
  You can determine whether the current method overrides a method in a base class by calling the <xref:System.Reflection.MethodInfo.GetBaseDefinition%2A?displayProperty=nameWithType> method. The following example implements an `IsOverride` method that does this.  
   
- [!code-csharp[system.reflection.methodinfo.getbasedefinition#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.methodinfo.getbasedefinition/cs/IsOverride1.cs#2)]
- [!code-vb[system.reflection.methodinfo.getbasedefinition#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.methodinfo.getbasedefinition/vb/IsOverride1.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.methodinfo.getbasedefinition/cs/IsOverride1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.methodinfo.getbasedefinition/vb/IsOverride1.vb" id="Snippet2":::  
   
    
   
 ## Examples  
  The following example displays `false` for `IsFinal`, which might lead you to think that `MyMethod` is overridable. The code prints `false` even though `MyMethod` is not marked `virtual` and thus cannot be overridden.  
   
- [!code-cpp[Classic MethodBase.IsVirtual Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodBase.IsVirtual Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/CS/source.cs#1)]
- [!code-vb[Classic MethodBase.IsVirtual Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodBase.IsVirtual Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2309,11 +2404,11 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.RuntimeMethodHandle MethodHandle" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.MethodHandle" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MethodHandle As RuntimeMethodHandle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property RuntimeMethodHandle MethodHandle { RuntimeMethodHandle get(); };" />
       <MemberSignature Language="F#" Value="member this.MethodHandle : RuntimeMethodHandle" Usage="System.Reflection.MethodBase.MethodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property RuntimeMethodHandle MethodHandle { RuntimeMethodHandle get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.MethodHandle</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">P:System.Runtime.InteropServices._MethodBase.MethodHandle</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2332,6 +2427,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2357,11 +2454,11 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MethodImplAttributes MethodImplementationFlags" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.MethodImplementationFlags" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MethodImplementationFlags As MethodImplAttributes" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::MethodImplAttributes MethodImplementationFlags { System::Reflection::MethodImplAttributes get(); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6" />
       <MemberSignature Language="F#" Value="member this.MethodImplementationFlags : System.Reflection.MethodImplAttributes" Usage="System.Reflection.MethodBase.MethodImplementationFlags" />
-      <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodImplAttributes MethodImplementationFlags { get; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MethodImplementationFlags As MethodImplAttributes" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodImplAttributes MethodImplementationFlags { System::Reflection::MethodImplAttributes get(); };" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::MethodImplAttributes MethodImplementationFlags { System::Reflection::MethodImplAttributes get(); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6" />
+      <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodImplAttributes MethodImplementationFlags { get; }" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MethodImplementationFlags As MethodImplAttributes" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodImplAttributes MethodImplementationFlags { System::Reflection::MethodImplAttributes get(); };" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2384,6 +2481,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
@@ -2402,12 +2501,13 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.MethodBase left, System.Reflection.MethodBase right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.MethodBase? left, System.Reflection.MethodBase? right);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Reflection.MethodBase left, class System.Reflection.MethodBase right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.op_Equality(System.Reflection.MethodBase,System.Reflection.MethodBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As MethodBase, right As MethodBase) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::MethodBase ^ left, System::Reflection::MethodBase ^ right);" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.MethodBase * System.Reflection.MethodBase -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::MethodBase ^ left, System::Reflection::MethodBase ^ right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.MethodBase left, System.Reflection.MethodBase right);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2424,6 +2524,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2432,8 +2534,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Reflection.MethodBase" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="right" Type="System.Reflection.MethodBase" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="left" Type="System.Reflection.MethodBase" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="right" Type="System.Reflection.MethodBase" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="left">The first object to compare.</param>
@@ -2445,12 +2547,13 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.MethodBase left, System.Reflection.MethodBase right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.MethodBase? left, System.Reflection.MethodBase? right);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Reflection.MethodBase left, class System.Reflection.MethodBase right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.op_Inequality(System.Reflection.MethodBase,System.Reflection.MethodBase)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As MethodBase, right As MethodBase) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::MethodBase ^ left, System::Reflection::MethodBase ^ right);" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.MethodBase * System.Reflection.MethodBase -&gt; bool" Usage="System.Reflection.MethodBase.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::MethodBase ^ left, System::Reflection::MethodBase ^ right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.MethodBase left, System.Reflection.MethodBase right);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2467,6 +2570,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2475,8 +2580,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Reflection.MethodBase" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="right" Type="System.Reflection.MethodBase" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="left" Type="System.Reflection.MethodBase" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="right" Type="System.Reflection.MethodBase" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="left">The first object to compare.</param>
@@ -2492,6 +2597,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodBase.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _MethodBase.GetIDsOfNames" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.InteropServices._MethodBase.GetIDsOfNames : Guid * nativeint * uint32 * uint32 * nativeint -&gt; unit&#xA;override this.System.Runtime.InteropServices._MethodBase.GetIDsOfNames : Guid * nativeint * uint32 * uint32 * nativeint -&gt; unit" Usage="methodBase.System.Runtime.InteropServices._MethodBase.GetIDsOfNames (riid, rgszNames, cNames, lcid, rgDispId)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodBase.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_MethodBase::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2534,7 +2640,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information, see [IDispatch::GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames).
   
  ]]></format>
         </remarks>
@@ -2546,6 +2652,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type System.Runtime.InteropServices._MethodBase.GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#GetType" />
       <MemberSignature Language="VB.NET" Value="Function GetType () As Type Implements _MethodBase.GetType" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.InteropServices._MethodBase.GetType : unit -&gt; Type&#xA;override this.System.Runtime.InteropServices._MethodBase.GetType : unit -&gt; Type" Usage="methodBase.System.Runtime.InteropServices._MethodBase.GetType " />
       <MemberSignature Language="C++ CLI" Value=" virtual Type ^ System.Runtime.InteropServices._MethodBase.GetType() = System::Runtime::InteropServices::_MethodBase::GetType;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2588,6 +2695,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodBase.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _MethodBase.GetTypeInfo" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.InteropServices._MethodBase.GetTypeInfo : uint32 * uint32 * nativeint -&gt; unit&#xA;override this.System.Runtime.InteropServices._MethodBase.GetTypeInfo : uint32 * uint32 * nativeint -&gt; unit" Usage="methodBase.System.Runtime.InteropServices._MethodBase.GetTypeInfo (iTInfo, lcid, ppTInfo)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodBase.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_MethodBase::GetTypeInfo;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2626,7 +2734,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information, see [IDispatch::GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo).
   
  ]]></format>
         </remarks>
@@ -2638,6 +2746,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodBase.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _MethodBase.GetTypeInfoCount" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.InteropServices._MethodBase.GetTypeInfoCount : uint32 -&gt; unit&#xA;override this.System.Runtime.InteropServices._MethodBase.GetTypeInfoCount : uint32 -&gt; unit" Usage="methodBase.System.Runtime.InteropServices._MethodBase.GetTypeInfoCount pcTInfo" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodBase.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_MethodBase::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2672,7 +2781,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information, see [IDispatch::GetTypeInfoCount](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount).
   
  ]]></format>
         </remarks>
@@ -2684,6 +2793,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodBase.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _MethodBase.Invoke" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.InteropServices._MethodBase.Invoke : uint32 * Guid * uint32 * int16 * nativeint * nativeint * nativeint * nativeint -&gt; unit&#xA;override this.System.Runtime.InteropServices._MethodBase.Invoke : uint32 * Guid * uint32 * int16 * nativeint * nativeint * nativeint * nativeint -&gt; unit" Usage="methodBase.System.Runtime.InteropServices._MethodBase.Invoke (dispIdMember, riid, lcid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodBase.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_MethodBase::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2732,7 +2842,7 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information, see [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke).
   
  ]]></format>
         </remarks>
@@ -2744,8 +2854,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsAbstract" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsAbstract" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsAbstract As Boolean Implements _MethodBase.IsAbstract" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsAbstract : bool" Usage="System.Runtime.InteropServices._MethodBase.IsAbstract" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsAbstract { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsAbstract" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAbstract</InterfaceMember>
@@ -2786,8 +2896,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsAssembly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsAssembly As Boolean Implements _MethodBase.IsAssembly" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsAssembly : bool" Usage="System.Runtime.InteropServices._MethodBase.IsAssembly" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsAssembly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsAssembly</InterfaceMember>
@@ -2828,8 +2938,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsConstructor" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsConstructor" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsConstructor As Boolean Implements _MethodBase.IsConstructor" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsConstructor : bool" Usage="System.Runtime.InteropServices._MethodBase.IsConstructor" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsConstructor { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsConstructor" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsConstructor</InterfaceMember>
@@ -2870,8 +2980,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsFamily" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFamily" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFamily As Boolean Implements _MethodBase.IsFamily" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsFamily : bool" Usage="System.Runtime.InteropServices._MethodBase.IsFamily" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsFamily { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsFamily" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamily</InterfaceMember>
@@ -2912,8 +3022,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFamilyAndAssembly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFamilyAndAssembly As Boolean Implements _MethodBase.IsFamilyAndAssembly" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly : bool" Usage="System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsFamilyAndAssembly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyAndAssembly</InterfaceMember>
@@ -2954,8 +3064,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFamilyOrAssembly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFamilyOrAssembly As Boolean Implements _MethodBase.IsFamilyOrAssembly" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly : bool" Usage="System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsFamilyOrAssembly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFamilyOrAssembly</InterfaceMember>
@@ -2996,8 +3106,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsFinal" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsFinal" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFinal As Boolean Implements _MethodBase.IsFinal" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsFinal : bool" Usage="System.Runtime.InteropServices._MethodBase.IsFinal" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsFinal { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsFinal" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsFinal</InterfaceMember>
@@ -3038,8 +3148,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsHideBySig" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsHideBySig" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsHideBySig As Boolean Implements _MethodBase.IsHideBySig" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsHideBySig : bool" Usage="System.Runtime.InteropServices._MethodBase.IsHideBySig" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsHideBySig { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsHideBySig" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsHideBySig</InterfaceMember>
@@ -3080,8 +3190,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsPrivate" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsPrivate" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsPrivate As Boolean Implements _MethodBase.IsPrivate" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsPrivate : bool" Usage="System.Runtime.InteropServices._MethodBase.IsPrivate" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsPrivate { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsPrivate" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPrivate</InterfaceMember>
@@ -3122,8 +3232,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsPublic" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsPublic" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsPublic As Boolean Implements _MethodBase.IsPublic" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsPublic : bool" Usage="System.Runtime.InteropServices._MethodBase.IsPublic" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsPublic { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsPublic" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsPublic</InterfaceMember>
@@ -3164,8 +3274,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsSpecialName" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsSpecialName" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSpecialName As Boolean Implements _MethodBase.IsSpecialName" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsSpecialName : bool" Usage="System.Runtime.InteropServices._MethodBase.IsSpecialName" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsSpecialName { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsSpecialName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsSpecialName</InterfaceMember>
@@ -3206,8 +3316,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsStatic" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsStatic" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsStatic As Boolean Implements _MethodBase.IsStatic" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsStatic : bool" Usage="System.Runtime.InteropServices._MethodBase.IsStatic" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsStatic { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsStatic" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsStatic</InterfaceMember>
@@ -3248,8 +3358,8 @@ If MethodInfo.IsVirtual AndAlso Not MethodInfo.IsFinal Then
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Runtime.InteropServices._MethodBase.IsVirtual" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBase.System#Runtime#InteropServices#_MethodBase#IsVirtual" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsVirtual As Boolean Implements _MethodBase.IsVirtual" />
+      <MemberSignature Language="F#" Value="member this.System.Runtime.InteropServices._MethodBase.IsVirtual : bool" Usage="System.Runtime.InteropServices._MethodBase.IsVirtual" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Runtime::InteropServices::_MethodBase::IsVirtual { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Runtime.InteropServices._MethodBase.IsVirtual" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._MethodBase.IsVirtual</InterfaceMember>

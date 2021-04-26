@@ -1,10 +1,11 @@
 <Type Name="ClaimsIdentity" FullName="System.Security.Claims.ClaimsIdentity">
   <TypeSignature Language="C#" Value="public class ClaimsIdentity : System.Security.Principal.IIdentity" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ClaimsIdentity extends System.Object implements class System.Security.Principal.IIdentity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClaimsIdentity extends System.Object implements class System.Security.Principal.IIdentity" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimsIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimsIdentity&#xA;Implements IIdentity" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ClaimsIdentity : System::Security::Principal::IIdentity" />
   <TypeSignature Language="F#" Value="type ClaimsIdentity = class&#xA;    interface IIdentity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClaimsIdentity : System::Security::Principal::IIdentity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ClaimsIdentity extends System.Object implements class System.Security.Principal.IIdentity" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Claims</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -23,6 +26,11 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Security.Claims" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Claims" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Claims" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -32,11 +40,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -92,6 +102,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -129,12 +141,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (claims As IEnumerable(Of Claim))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : seq&lt;System.Security.Claims.Claim&gt; -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity claims" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;? claims);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -143,6 +156,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,8 +202,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.BinaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.IO.BinaryReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As BinaryReader)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::IO::BinaryReader ^ reader);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : System.IO.BinaryReader -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::IO::BinaryReader ^ reader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -197,6 +212,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -209,7 +226,7 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="reader" Type="System.IO.BinaryReader" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.IO.BinaryReader" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">A <see cref="T:System.IO.BinaryReader" /> pointing to a <see cref="T:System.Security.Claims.ClaimsIdentity" />.</param>
@@ -231,8 +248,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Runtime.Serialization.SerializationInfo)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClaimsIdentity(System::Runtime::Serialization::SerializationInfo ^ info);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : System.Runtime.Serialization.SerializationInfo -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity info" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClaimsIdentity(System::Runtime::Serialization::SerializationInfo ^ info);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,21 +266,22 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="info">The serialized data.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from a serialized stream created by using <see cref="T:System.Runtime.Serialization.ISerializable" />.</summary>
-        <remarks>
-        </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
       </Docs>
@@ -273,8 +291,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Security.Claims.ClaimsIdentity other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Claims.ClaimsIdentity)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (other As ClaimsIdentity)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClaimsIdentity(System::Security::Claims::ClaimsIdentity ^ other);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : System.Security.Claims.ClaimsIdentity -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity other" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClaimsIdentity(System::Security::Claims::ClaimsIdentity ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -283,6 +301,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -295,7 +315,7 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="other" Type="System.Security.Claims.ClaimsIdentity" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="other" Type="System.Security.Claims.ClaimsIdentity" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="other">The <see cref="T:System.Security.Claims.ClaimsIdentity" /> to copy.</param>
@@ -320,16 +340,17 @@
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="other" /> is **null**.</exception>
+          <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Security.Principal.IIdentity identity);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Security.Principal.IIdentity identity);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IIdentity)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Security::Principal::IIdentity ^ identity);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : System.Security.Principal.IIdentity -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Security::Principal::IIdentity ^ identity);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Security.Principal.IIdentity? identity);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -338,6 +359,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -378,12 +401,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClaimsIdentity (string authenticationType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (string authenticationType);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string authenticationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (authenticationType As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::String ^ authenticationType);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : string -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity authenticationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::String ^ authenticationType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (string? authenticationType);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -392,6 +416,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -432,12 +458,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims, string authenticationType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims, string authenticationType);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims, string authenticationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (claims As IEnumerable(Of Claim), authenticationType As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims, System::String ^ authenticationType);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : seq&lt;System.Security.Claims.Claim&gt; * string -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity (claims, authenticationType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims, System::String ^ authenticationType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;? claims, string? authenticationType);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -446,6 +473,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -492,8 +521,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClaimsIdentity(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClaimsIdentity(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -510,34 +539,36 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="info">The serialized data.</param>
         <param name="context">The context for serialization.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from a serialized stream created by using <see cref="T:System.Runtime.Serialization.ISerializable" />.</summary>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="info" /> is **null**.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+          <paramref name="info" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Security.Principal.IIdentity identity, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Security.Principal.IIdentity identity, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IIdentity identity, class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IIdentity, claims As IEnumerable(Of Claim))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Security::Principal::IIdentity ^ identity, System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : System.Security.Principal.IIdentity * seq&lt;System.Security.Claims.Claim&gt; -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity (identity, claims)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Security::Principal::IIdentity ^ identity, System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Security.Principal.IIdentity? identity, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;? claims);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -546,6 +577,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -588,12 +621,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClaimsIdentity (string authenticationType, string nameType, string roleType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (string authenticationType, string nameType, string roleType);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string authenticationType, string nameType, string roleType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (authenticationType As String, nameType As String, roleType As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::String ^ authenticationType, System::String ^ nameType, System::String ^ roleType);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : string * string * string -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity (authenticationType, nameType, roleType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::String ^ authenticationType, System::String ^ nameType, System::String ^ roleType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (string? authenticationType, string? nameType, string? roleType);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -602,6 +636,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -646,12 +682,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims, string authenticationType, string nameType, string roleType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims, string authenticationType, string nameType, string roleType);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims, string authenticationType, string nameType, string roleType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (claims As IEnumerable(Of Claim), authenticationType As String, nameType As String, roleType As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims, System::String ^ authenticationType, System::String ^ nameType, System::String ^ roleType);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : seq&lt;System.Security.Claims.Claim&gt; * string * string * string -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity (claims, authenticationType, nameType, roleType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims, System::String ^ authenticationType, System::String ^ nameType, System::String ^ roleType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;? claims, string? authenticationType, string? nameType, string? roleType);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -660,6 +697,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -706,12 +745,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Security.Principal.IIdentity identity, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims, string authenticationType, string nameType, string roleType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Security.Principal.IIdentity identity, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims, string authenticationType, string nameType, string roleType);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IIdentity identity, class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims, string authenticationType, string nameType, string roleType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.#ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IIdentity, claims As IEnumerable(Of Claim), authenticationType As String, nameType As String, roleType As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Security::Principal::IIdentity ^ identity, System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims, System::String ^ authenticationType, System::String ^ nameType, System::String ^ roleType);" />
       <MemberSignature Language="F#" Value="new System.Security.Claims.ClaimsIdentity : System.Security.Principal.IIdentity * seq&lt;System.Security.Claims.Claim&gt; * string * string * string -&gt; System.Security.Claims.ClaimsIdentity" Usage="new System.Security.Claims.ClaimsIdentity (identity, claims, authenticationType, nameType, roleType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsIdentity(System::Security::Principal::IIdentity ^ identity, System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims, System::String ^ authenticationType, System::String ^ nameType, System::String ^ roleType);" />
+      <MemberSignature Language="C#" Value="public ClaimsIdentity (System.Security.Principal.IIdentity? identity, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;? claims, string? authenticationType, string? nameType, string? roleType);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -720,6 +760,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -770,12 +812,13 @@
       </Docs>
     </Member>
     <Member MemberName="Actor">
-      <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsIdentity Actor { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsIdentity Actor { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Claims.ClaimsIdentity Actor" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.Actor" />
       <MemberSignature Language="VB.NET" Value="Public Property Actor As ClaimsIdentity" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsIdentity ^ Actor { System::Security::Claims::ClaimsIdentity ^ get(); void set(System::Security::Claims::ClaimsIdentity ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Actor : System.Security.Claims.ClaimsIdentity with get, set" Usage="System.Security.Claims.ClaimsIdentity.Actor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsIdentity ^ Actor { System::Security::Claims::ClaimsIdentity ^ get(); void set(System::Security::Claims::ClaimsIdentity ^ value); };" />
+      <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsIdentity? Actor { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -784,6 +827,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -809,15 +854,20 @@
 
           ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An attempt to set the property to the current instance occurs.</exception>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to set the property to the current instance.
+
+-or-
+
+<see langword="value" /> results in a circular reference back to <see langword="this" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddClaim">
       <MemberSignature Language="C#" Value="public virtual void AddClaim (System.Security.Claims.Claim claim);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddClaim(class System.Security.Claims.Claim claim) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.AddClaim(System.Security.Claims.Claim)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddClaim(System::Security::Claims::Claim ^ claim);" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddClaim (claim As Claim)" />
       <MemberSignature Language="F#" Value="abstract member AddClaim : System.Security.Claims.Claim -&gt; unit&#xA;override this.AddClaim : System.Security.Claims.Claim -&gt; unit" Usage="claimsIdentity.AddClaim claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddClaim(System::Security::Claims::Claim ^ claim);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -826,6 +876,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -838,8 +890,9 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0;dotnet-uwp-10.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -863,16 +916,16 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="claim" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="AddClaims">
-      <MemberSignature Language="C#" Value="public virtual void AddClaims (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="C#" Value="public virtual void AddClaims (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddClaims(class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.AddClaims(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddClaims (claims As IEnumerable(Of Claim))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddClaims(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims);" />
       <MemberSignature Language="F#" Value="abstract member AddClaims : seq&lt;System.Security.Claims.Claim&gt; -&gt; unit&#xA;override this.AddClaims : seq&lt;System.Security.Claims.Claim&gt; -&gt; unit" Usage="claimsIdentity.AddClaims claims" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddClaims(System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ claims);" />
+      <MemberSignature Language="C#" Value="public virtual void AddClaims (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim?&gt; claims);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -881,6 +934,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -893,8 +948,9 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0;dotnet-uwp-10.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -918,16 +974,16 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="claims" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationType">
-      <MemberSignature Language="C#" Value="public virtual string AuthenticationType { get; }" />
+      <MemberSignature Language="C#" Value="public virtual string AuthenticationType { get; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationType" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AuthenticationType As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AuthenticationType { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Security.Claims.ClaimsIdentity.AuthenticationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AuthenticationType { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public virtual string? AuthenticationType { get; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Security.Principal.IIdentity.AuthenticationType</InterfaceMember>
@@ -939,6 +995,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -959,20 +1017,19 @@
         <remarks>
           <format type="text/markdown"><![CDATA[
 
-## Remarks  
- Typically one of the values defined by the <xref:System.Security.Claims.AuthenticationTypes> class.
 
           ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="BootstrapContext">
-      <MemberSignature Language="C#" Value="public object BootstrapContext { get; set; }" />
+      <MemberSignature Language="C#" Value="public object BootstrapContext { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance object BootstrapContext" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.BootstrapContext" />
       <MemberSignature Language="VB.NET" Value="Public Property BootstrapContext As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BootstrapContext { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberSignature Language="F#" Value="member this.BootstrapContext : obj with get, set" Usage="System.Security.Claims.ClaimsIdentity.BootstrapContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BootstrapContext { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="C#" Value="public object? BootstrapContext { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -981,6 +1038,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -993,8 +1052,9 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0;dotnet-uwp-10.0">
-          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[set: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1009,13 +1069,12 @@
 ## Remarks  
  The underlying object is an instance of the <xref:System.IdentityModel.Tokens.BootstrapContext?displayProperty=nameWithType> class.  
   
- Set the `saveBootstrapContext` attribute on either the [&lt;identityConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) or the [&lt;securityTokenHandlerConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element in a configuration file to specify whether the token used to generate the <xref:System.Security.Claims.ClaimsIdentity> should be preserved in the <xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A> property.  
+ Set the `saveBootstrapContext` attribute on either the [&lt;identityConfiguration&gt;](/dotnet/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration) or the [&lt;securityTokenHandlerConfiguration&gt;](/dotnet/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration) element in a configuration file to specify whether the token used to generate the <xref:System.Security.Claims.ClaimsIdentity> should be preserved in the <xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A> property.  
   
  If the <xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A> property is not `null`, applications can access the original token and the claims it produced through the properties and methods of the <xref:System.IdentityModel.Tokens.BootstrapContext?displayProperty=nameWithType> class.
 
           ]]></format>
         </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Set operation requires full trust for the immediate caller. This member cannot be set by partially trusted or transparent code.</permission>
         <altmember cref="P:System.Security.Claims.ClaimsIdentity.Actor" />
       </Docs>
     </Member>
@@ -1024,8 +1083,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; Claims" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.Claims" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Claims As IEnumerable(Of Claim)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ Claims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Claims : seq&lt;System.Security.Claims.Claim&gt;" Usage="System.Security.Claims.ClaimsIdentity.Claims" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ Claims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1034,6 +1093,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1047,10 +1108,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.6">
-          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Claims.ClaimsIdentity/&lt;get_Claims&gt;d__1))</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Claims.ClaimsIdentity/&lt;get_Claims&gt;d__1))]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Claims.ClaimsIdentity/&lt;get_Claims&gt;d__1))&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Claims.ClaimsIdentity/&lt;get_Claims&gt;d__51))</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Claims.ClaimsIdentity/&lt;get_Claims&gt;d__51))]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Claims.ClaimsIdentity/&lt;get_Claims&gt;d__51))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1080,8 +1143,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Claims.ClaimsIdentity Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As ClaimsIdentity" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::ClaimsIdentity ^ Clone();" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Security.Claims.ClaimsIdentity&#xA;override this.Clone : unit -&gt; System.Security.Claims.ClaimsIdentity" Usage="claimsIdentity.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::ClaimsIdentity ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1090,6 +1153,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1108,8 +1173,7 @@
       <Docs>
         <summary>Returns a new <see cref="T:System.Security.Claims.ClaimsIdentity" /> copied from this claims identity.</summary>
         <returns>A copy of the current instance.</returns>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateClaim">
@@ -1117,8 +1181,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.Claims.Claim CreateClaim(class System.IO.BinaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.CreateClaim(System.IO.BinaryReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateClaim (reader As BinaryReader) As Claim" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::Claims::Claim ^ CreateClaim(System::IO::BinaryReader ^ reader);" />
       <MemberSignature Language="F#" Value="abstract member CreateClaim : System.IO.BinaryReader -&gt; System.Security.Claims.Claim&#xA;override this.CreateClaim : System.IO.BinaryReader -&gt; System.Security.Claims.Claim" Usage="claimsIdentity.CreateClaim reader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::Claims::Claim ^ CreateClaim(System::IO::BinaryReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1127,6 +1191,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1142,25 +1208,25 @@
         <ReturnType>System.Security.Claims.Claim</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.IO.BinaryReader" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.IO.BinaryReader" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">The <see cref="T:System.IO.BinaryReader" /> that points to the claim.</param>
         <summary>Provides an extensibility point for derived types to create a custom <see cref="T:System.Security.Claims.Claim" />.</summary>
         <returns>A new <see cref="T:System.Security.Claims.Claim" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CustomSerializationData">
-      <MemberSignature Language="C#" Value="protected virtual byte[] CustomSerializationData { get; }" />
+      <MemberSignature Language="C#" Value="protected virtual byte[] CustomSerializationData { get; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] CustomSerializationData" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.CustomSerializationData" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property CustomSerializationData As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ CustomSerializationData { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CustomSerializationData : byte[]" Usage="System.Security.Claims.ClaimsIdentity.CustomSerializationData" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ CustomSerializationData { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="C#" Value="protected virtual byte[]? CustomSerializationData { get; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1169,6 +1235,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1186,8 +1254,7 @@
       <Docs>
         <summary>Contains any additional data provided by a derived type. Typically set when calling <see cref="M:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])" />.</summary>
         <value>A <see cref="T:System.Byte" /> array representing the additional serialized data.</value>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultIssuer">
@@ -1195,8 +1262,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultIssuer" />
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimsIdentity.DefaultIssuer" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultIssuer As String " />
-      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultIssuer;" />
       <MemberSignature Language="F#" Value="val mutable DefaultIssuer : string" Usage="System.Security.Claims.ClaimsIdentity.DefaultIssuer" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultIssuer;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1205,6 +1272,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1221,8 +1290,7 @@
       </ReturnValue>
       <Docs>
         <summary>The default issuer; "LOCAL AUTHORITY".</summary>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultNameClaimType">
@@ -1230,8 +1298,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultNameClaimType" />
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimsIdentity.DefaultNameClaimType" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultNameClaimType As String " />
-      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultNameClaimType;" />
       <MemberSignature Language="F#" Value="val mutable DefaultNameClaimType : string" Usage="System.Security.Claims.ClaimsIdentity.DefaultNameClaimType" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultNameClaimType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1240,6 +1308,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1256,8 +1326,7 @@
       </ReturnValue>
       <Docs>
         <summary>The default name claim type; <see cref="F:System.Security.Claims.ClaimTypes.Name" />.</summary>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultRoleClaimType">
@@ -1265,8 +1334,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultRoleClaimType" />
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimsIdentity.DefaultRoleClaimType" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultRoleClaimType As String " />
-      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultRoleClaimType;" />
       <MemberSignature Language="F#" Value="val mutable DefaultRoleClaimType : string" Usage="System.Security.Claims.ClaimsIdentity.DefaultRoleClaimType" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultRoleClaimType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1275,6 +1344,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1291,8 +1362,7 @@
       </ReturnValue>
       <Docs>
         <summary>The default role claim type; <see cref="F:System.Security.Claims.ClaimTypes.Role" />.</summary>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindAll">
@@ -1310,8 +1380,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; FindAll(class System.Predicate`1&lt;class System.Security.Claims.Claim&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.FindAll(System.Predicate{System.Security.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindAll (match As Predicate(Of Claim)) As IEnumerable(Of Claim)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ FindAll(Predicate&lt;System::Security::Claims::Claim ^&gt; ^ match);" />
       <MemberSignature Language="F#" Value="abstract member FindAll : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; seq&lt;System.Security.Claims.Claim&gt;&#xA;override this.FindAll : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; seq&lt;System.Security.Claims.Claim&gt;" Usage="claimsIdentity.FindAll match" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ FindAll(Predicate&lt;System::Security::Claims::Claim ^&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1320,6 +1390,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1341,10 +1413,9 @@
         <param name="match">The function that performs the matching logic.</param>
         <summary>Retrieves all of the claims that are matched by the specified predicate.</summary>
         <returns>The matching claims. The list is read-only.</returns>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="match" /> is **null**.</exception>
+          <paramref name="match" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -1352,8 +1423,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; FindAll(string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.FindAll(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindAll (type As String) As IEnumerable(Of Claim)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ FindAll(System::String ^ type);" />
       <MemberSignature Language="F#" Value="abstract member FindAll : string -&gt; seq&lt;System.Security.Claims.Claim&gt;&#xA;override this.FindAll : string -&gt; seq&lt;System.Security.Claims.Claim&gt;" Usage="claimsIdentity.FindAll type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ FindAll(System::String ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1362,6 +1433,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1392,7 +1465,7 @@
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is **null**.</exception>
+          <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindFirst">
@@ -1406,12 +1479,13 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="FindFirst">
-      <MemberSignature Language="C#" Value="public virtual System.Security.Claims.Claim FindFirst (Predicate&lt;System.Security.Claims.Claim&gt; match);" />
+      <MemberSignature Language="C#" Value="public virtual System.Security.Claims.Claim FindFirst (Predicate&lt;System.Security.Claims.Claim&gt; match);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Claims.Claim FindFirst(class System.Predicate`1&lt;class System.Security.Claims.Claim&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate{System.Security.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindFirst (match As Predicate(Of Claim)) As Claim" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::Claim ^ FindFirst(Predicate&lt;System::Security::Claims::Claim ^&gt; ^ match);" />
       <MemberSignature Language="F#" Value="abstract member FindFirst : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; System.Security.Claims.Claim&#xA;override this.FindFirst : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; System.Security.Claims.Claim" Usage="claimsIdentity.FindFirst match" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::Claim ^ FindFirst(Predicate&lt;System::Security::Claims::Claim ^&gt; ^ match);" />
+      <MemberSignature Language="C#" Value="public virtual System.Security.Claims.Claim? FindFirst (Predicate&lt;System.Security.Claims.Claim&gt; match);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1420,6 +1494,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1441,19 +1517,19 @@
         <param name="match">The function that performs the matching logic.</param>
         <summary>Retrieves the first claim that is matched by the specified predicate.</summary>
         <returns>The first matching claim or <see langword="null" /> if no match is found.</returns>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="match" /> is **null**.</exception>
+          <paramref name="match" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindFirst">
-      <MemberSignature Language="C#" Value="public virtual System.Security.Claims.Claim FindFirst (string type);" />
+      <MemberSignature Language="C#" Value="public virtual System.Security.Claims.Claim FindFirst (string type);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Claims.Claim FindFirst(string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.FindFirst(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindFirst (type As String) As Claim" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::Claim ^ FindFirst(System::String ^ type);" />
       <MemberSignature Language="F#" Value="abstract member FindFirst : string -&gt; System.Security.Claims.Claim&#xA;override this.FindFirst : string -&gt; System.Security.Claims.Claim" Usage="claimsIdentity.FindFirst type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Claims::Claim ^ FindFirst(System::String ^ type);" />
+      <MemberSignature Language="C#" Value="public virtual System.Security.Claims.Claim? FindFirst (string type);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1462,6 +1538,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1491,7 +1569,7 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is **null**.</exception>
+          <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -1499,8 +1577,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="claimsIdentity.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1517,28 +1595,29 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="info">The object to populate with data.</param>
         <param name="context">The destination for this serialization. Can be <see langword="null" />.</param>
         <summary>Populates the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with data needed to serialize the current <see cref="T:System.Security.Claims.ClaimsIdentity" /> object.</summary>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <MemberGroup MemberName="HasClaim">
@@ -1556,8 +1635,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasClaim(class System.Predicate`1&lt;class System.Security.Claims.Claim&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.HasClaim(System.Predicate{System.Security.Claims.Claim})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HasClaim (match As Predicate(Of Claim)) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasClaim(Predicate&lt;System::Security::Claims::Claim ^&gt; ^ match);" />
       <MemberSignature Language="F#" Value="abstract member HasClaim : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; bool&#xA;override this.HasClaim : Predicate&lt;System.Security.Claims.Claim&gt; -&gt; bool" Usage="claimsIdentity.HasClaim match" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasClaim(Predicate&lt;System::Security::Claims::Claim ^&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1566,6 +1645,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1588,10 +1669,9 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <summary>Determines whether this claims identity has a claim that is matched by the specified predicate.</summary>
         <returns>
           <see langword="true" /> if a matching claim exists; otherwise, <see langword="false" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="match" /> is **null**.</exception>
+          <paramref name="match" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasClaim">
@@ -1599,8 +1679,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasClaim(string type, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.HasClaim(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HasClaim (type As String, value As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasClaim(System::String ^ type, System::String ^ value);" />
       <MemberSignature Language="F#" Value="abstract member HasClaim : string * string -&gt; bool&#xA;override this.HasClaim : string * string -&gt; bool" Usage="claimsIdentity.HasClaim (type, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasClaim(System::String ^ type, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1609,6 +1689,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1642,11 +1724,7 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is **null**.  
-  
- -or-  
-  
- <paramref name="value" /> is **null**.</exception>
+          <paramref name="type" /> or  <paramref name="value" /> is  <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsAuthenticated">
@@ -1654,8 +1732,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuthenticated" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsAuthenticated As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Security.Claims.ClaimsIdentity.IsAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Security.Principal.IIdentity.IsAuthenticated</InterfaceMember>
@@ -1667,6 +1745,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1696,12 +1776,13 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       </Docs>
     </Member>
     <Member MemberName="Label">
-      <MemberSignature Language="C#" Value="public string Label { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Label { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Security.Claims.ClaimsIdentity.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C#" Value="public string? Label { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1710,6 +1791,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1727,17 +1810,17 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       <Docs>
         <summary>Gets or sets the label for this claims identity.</summary>
         <value>The label.</value>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
-      <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
+      <MemberSignature Language="C#" Value="public virtual string Name { get; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Security.Claims.ClaimsIdentity.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public virtual string? Name { get; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Security.Principal.IIdentity.Name</InterfaceMember>
@@ -1749,6 +1832,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1782,8 +1867,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       <MemberSignature Language="ILAsm" Value=".property instance string NameClaimType" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.NameClaimType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameClaimType As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameClaimType { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.NameClaimType : string" Usage="System.Security.Claims.ClaimsIdentity.NameClaimType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameClaimType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1792,6 +1877,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1823,11 +1910,13 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       </Docs>
     </Member>
     <Member MemberName="RemoveClaim">
-      <MemberSignature Language="C#" Value="public virtual void RemoveClaim (System.Security.Claims.Claim claim);" />
+      <MemberSignature Language="C#" Value="public virtual void RemoveClaim (System.Security.Claims.Claim claim);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveClaim(class System.Security.Claims.Claim claim) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.RemoveClaim(System.Security.Claims.Claim)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveClaim(System::Security::Claims::Claim ^ claim);" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveClaim (claim As Claim)" />
       <MemberSignature Language="F#" Value="abstract member RemoveClaim : System.Security.Claims.Claim -&gt; unit&#xA;override this.RemoveClaim : System.Security.Claims.Claim -&gt; unit" Usage="claimsIdentity.RemoveClaim claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveClaim(System::Security::Claims::Claim ^ claim);" />
+      <MemberSignature Language="C#" Value="public virtual void RemoveClaim (System.Security.Claims.Claim? claim);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1836,6 +1925,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1848,8 +1939,9 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0;dotnet-uwp-10.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1874,7 +1966,6 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
           ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The claim cannot be removed.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="RoleClaimType">
@@ -1882,8 +1973,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       <MemberSignature Language="ILAsm" Value=".property instance string RoleClaimType" />
       <MemberSignature Language="DocId" Value="P:System.Security.Claims.ClaimsIdentity.RoleClaimType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RoleClaimType As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RoleClaimType { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.RoleClaimType : string" Usage="System.Security.Claims.ClaimsIdentity.RoleClaimType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RoleClaimType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1892,6 +1983,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1907,7 +2000,7 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the claim type that will be interpreted as a .NET Framework role among the claims in this claims identity.</summary>
+        <summary>Gets the claim type that will be interpreted as a .NET role among the claims in this claims identity.</summary>
         <value>The role claim type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
@@ -1921,11 +2014,13 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       </Docs>
     </Member>
     <Member MemberName="TryRemoveClaim">
-      <MemberSignature Language="C#" Value="public virtual bool TryRemoveClaim (System.Security.Claims.Claim claim);" />
+      <MemberSignature Language="C#" Value="public virtual bool TryRemoveClaim (System.Security.Claims.Claim claim);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryRemoveClaim(class System.Security.Claims.Claim claim) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.TryRemoveClaim(System.Security.Claims.Claim)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryRemoveClaim(System::Security::Claims::Claim ^ claim);" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryRemoveClaim (claim As Claim) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryRemoveClaim : System.Security.Claims.Claim -&gt; bool&#xA;override this.TryRemoveClaim : System.Security.Claims.Claim -&gt; bool" Usage="claimsIdentity.TryRemoveClaim claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryRemoveClaim(System::Security::Claims::Claim ^ claim);" />
+      <MemberSignature Language="C#" Value="public virtual bool TryRemoveClaim (System.Security.Claims.Claim? claim);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1934,6 +2029,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1946,8 +2043,9 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0;dotnet-uwp-10.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1973,7 +2071,6 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
 
           ]]></format>
         </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -1981,8 +2078,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteTo(class System.IO.BinaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteTo (writer As BinaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteTo(System::IO::BinaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member WriteTo : System.IO.BinaryWriter -&gt; unit&#xA;override this.WriteTo : System.IO.BinaryWriter -&gt; unit" Usage="claimsIdentity.WriteTo writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteTo(System::IO::BinaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -1991,6 +2088,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2006,24 +2105,24 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.IO.BinaryWriter" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="writer" Type="System.IO.BinaryWriter" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">The writer to use for data storage.</param>
         <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
-      <MemberSignature Language="C#" Value="protected virtual void WriteTo (System.IO.BinaryWriter writer, byte[] userData);" />
+      <MemberSignature Language="C#" Value="protected virtual void WriteTo (System.IO.BinaryWriter writer, byte[] userData);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteTo(class System.IO.BinaryWriter writer, unsigned int8[] userData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WriteTo (writer As BinaryWriter, userData As Byte())" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteTo(System::IO::BinaryWriter ^ writer, cli::array &lt;System::Byte&gt; ^ userData);" />
       <MemberSignature Language="F#" Value="abstract member WriteTo : System.IO.BinaryWriter * byte[] -&gt; unit&#xA;override this.WriteTo : System.IO.BinaryWriter * byte[] -&gt; unit" Usage="claimsIdentity.WriteTo (writer, userData)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WriteTo(System::IO::BinaryWriter ^ writer, cli::array &lt;System::Byte&gt; ^ userData);" />
+      <MemberSignature Language="C#" Value="protected virtual void WriteTo (System.IO.BinaryWriter writer, byte[]? userData);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -2032,6 +2131,8 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2047,15 +2148,14 @@ The comparison is done in <xref:System.StringComparison.OrdinalIgnoreCase?displa
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.IO.BinaryWriter" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="userData" Type="System.Byte[]" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="writer" Type="System.IO.BinaryWriter" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="userData" Type="System.Byte[]" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">The writer to use for data storage.</param>
         <param name="userData">Additional data provided by the derived type.</param>
         <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
-        <remarks>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>

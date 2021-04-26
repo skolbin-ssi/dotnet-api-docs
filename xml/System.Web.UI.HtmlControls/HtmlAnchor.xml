@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlAnchor extends System.Web.UI.HtmlControls.HtmlContainerControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlAnchor" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlAnchor&#xA;Inherits HtmlContainerControl&#xA;Implements IPostBackEventHandler" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HtmlAnchor : System::Web::UI::HtmlControls::HtmlContainerControl, System::Web::UI::IPostBackEventHandler" />
   <TypeSignature Language="F#" Value="type HtmlAnchor = class&#xA;    inherit HtmlContainerControl&#xA;    interface IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlAnchor : System::Web::UI::HtmlControls::HtmlContainerControl, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -21,10 +21,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultEvent("ServerClick")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultEvent("ServerClick")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultEvent("ServerClick")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+      <AttributeName Language="C#">[System.Web.UI.SupportsEventValidation]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.SupportsEventValidation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -36,7 +38,7 @@
  There are two ways to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor> class. The first is for navigation: using the <xref:System.Web.UI.HtmlControls.HtmlAnchor.HRef%2A> property to define the location of the page to link to. The second is for postback events: using the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event to programmatically handle the user's clicking a link.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e5a8xz39(v=vs.100)).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlAnchor>, see the <xref:System.Web.UI.HtmlControls.HtmlAnchor.%23ctor%2A> constructor.  
   
@@ -45,8 +47,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event to display a message when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked.  
   
- [!code-aspx-csharp[HtmlAnchor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchor/CS/htmlanchorcs.aspx#1)]
- [!code-aspx-vb[HtmlAnchor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchor/VB/htmlanchorvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchor/CS/htmlanchorcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchor/VB/htmlanchorvb.aspx" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -86,8 +88,8 @@
 ## Examples  
  The following code example demonstrates how to dynamically add an <xref:System.Web.UI.HtmlControls.HtmlAnchor> control to the Web Forms page.  
   
- [!code-aspx-csharp[HtmlAnchorConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorConstructor/CS/htmlanchorconstructorcs.aspx#1)]
- [!code-aspx-vb[HtmlAnchorConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorConstructor/VB/htmlanchorconstructorvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorConstructor/CS/htmlanchorconstructorcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorConstructor/VB/htmlanchorconstructorvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -98,8 +100,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.CausesValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.CausesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,7 +110,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -136,8 +139,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string HRef" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.HRef" />
       <MemberSignature Language="VB.NET" Value="Public Property HRef As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HRef { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.HRef : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.HRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HRef { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,13 +150,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.Web.UI.UrlProperty]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.UrlProperty&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -173,8 +179,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.HRef%2A> property to specify a Web page to navigate to when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked.  
   
- [!code-aspx-csharp[Classic HtmlAnchor.HRef Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.HRef Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic HtmlAnchor.HRef Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.HRef Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.HRef Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.HRef Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -185,8 +191,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,10 +202,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -221,8 +229,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Name%2A> property to mark different sections on the Web page, and link to them from a table of contents.  
   
- [!code-aspx-csharp[Classic HtmlAnchor.Name Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Name Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic HtmlAnchor.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Name Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Name Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Name Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -234,8 +242,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlAnchor.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -262,11 +270,11 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlAnchor.OnPreRender%2A> method so that it always displays a <xref:System.Web.UI.HtmlControls.HtmlAnchor.Title%2A> tag in a custom <xref:System.Web.UI.HtmlControls.HtmlAnchor> server control.  
   
- [!code-aspx-csharp[CustomHtmlAnchorOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/CS/custom_htmlanchor_onprerendercs.aspx#1)]
- [!code-aspx-vb[CustomHtmlAnchorOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/VB/custom_htmlanchor_onprerendervb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/CS/custom_htmlanchor_onprerendercs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/VB/custom_htmlanchor_onprerendervb.aspx" id="Snippet1":::  
   
- [!code-csharp[CustomHtmlAnchorOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/CS/custom_htmlanchor_onprerender.cs#2)]
- [!code-vb[CustomHtmlAnchorOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/VB/custom_htmlanchor_onprerender.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/CS/custom_htmlanchor_onprerender.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorOnPreRender/VB/custom_htmlanchor_onprerender.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -277,8 +285,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnServerClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.OnServerClick(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnServerClick (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnServerClick(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnServerClick : EventArgs -&gt; unit&#xA;override this.OnServerClick : EventArgs -&gt; unit" Usage="htmlAnchor.OnServerClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnServerClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,7 +309,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked. This server event causes a round trip to occur from the client to the server and back.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlAnchor.OnServerClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -310,13 +318,13 @@
 ## Examples  
  The following code example demonstrates how to declaratively specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event. When the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked, a message is displayed.  
   
- [!code-aspx-csharp[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/VB/sourcevb.aspx" id="Snippet1":::  
   
  The following code example modifies the preceding example to programmatically specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event.  
   
- [!code-aspx-csharp[HtmlAnchorServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClick/CS/htmlanchorserverclickcs.aspx#1)]
- [!code-aspx-vb[HtmlAnchorServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClick/VB/htmlanchorserverclickvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClick/CS/htmlanchorserverclickcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClick/VB/htmlanchorserverclickvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -332,12 +340,9 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="htmlAnchor.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -369,8 +374,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlAnchor.RenderAttributes writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -398,11 +403,11 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlAnchor.RenderAttributes%2A> method in a custom server control so that specific title text, accessible as a ToolTip, is always displayed for the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control.  
   
- [!code-aspx-csharp[CustomHtmlAnchorRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/CS/custom_htmlanchor_renderattributescs.aspx#1)]
- [!code-aspx-vb[CustomHtmlAnchorRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/VB/custom_htmlanchor_renderattributesvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/CS/custom_htmlanchor_renderattributescs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/VB/custom_htmlanchor_renderattributesvb.aspx" id="Snippet1":::  
   
- [!code-csharp[CustomHtmlAnchorRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/CS/custom_htmlanchor_renderattributes.cs#2)]
- [!code-vb[CustomHtmlAnchorRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/VB/custom_htmlanchor_renderattributes.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/CS/custom_htmlanchor_renderattributes.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlAnchorRenderAttributes/VB/custom_htmlanchor_renderattributes.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -416,8 +421,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ServerClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ServerClick As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ServerClick;" />
       <MemberSignature Language="F#" Value="member this.ServerClick : EventHandler " Usage="member this.ServerClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ServerClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -436,20 +441,20 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked. This server event causes a round trip to occur from the client to the server and back.  
   
- For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about how to handle events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example demonstrates how to declaratively specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event. When the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked, a message is displayed.  
   
- [!code-aspx-csharp[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[HtmlAnchorServerClickDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClickDeclarative/VB/sourcevb.aspx" id="Snippet1":::  
   
  The following code example modifies the previous example to programmatically specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event.  
   
- [!code-aspx-csharp[HtmlAnchorServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClick/CS/htmlanchorserverclickcs.aspx#1)]
- [!code-aspx-vb[HtmlAnchorServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClick/VB/htmlanchorserverclickvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlAnchorServerClick/CS/htmlanchorserverclickcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlAnchorServerClick/VB/htmlanchorserverclickvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -461,6 +466,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="F#" Value="abstract member System.Web.UI.IPostBackEventHandler.RaisePostBackEvent : string -&gt; unit&#xA;override this.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent : string -&gt; unit" Usage="htmlAnchor.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent eventArgument" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -474,7 +480,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -505,8 +512,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -516,10 +523,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -535,7 +544,7 @@
  Use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property to specify the target window or frame that displays the contents of the Web page that is linked to when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property renders as a `target` attribute. The `target` attribute on `a` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property if the rendered output for the <xref:System.Web.UI.HtmlControls.HtmlAnchor> must be compliant with XHTML 1.1. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property renders as a `target` attribute. The `target` attribute on `a` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property if the rendered output for the <xref:System.Web.UI.HtmlControls.HtmlAnchor> must be compliant with XHTML 1.1. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/exc57y7e(v=vs.100)).  
 >   
 >  When creating accessible Web pages, avoid using the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property to target another window. For more information, see [ASP.NET Accessibility](https://docs.microsoft.com/previous-versions/aspnet/ms228011(v=vs.100)).  
   
@@ -557,12 +566,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property to display the page that is navigated to when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked in a new, unframed window.  
   
- [!code-aspx-csharp[Classic HtmlAnchor.Target Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Target Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic HtmlAnchor.Target Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Target Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Target Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Target Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/exc57y7e(v=vs.100)">ASP.NET and XHTML Compliance</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -570,8 +579,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -581,13 +590,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -607,8 +619,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Title%2A> property to provide custom text for the ToolTip.  
   
- [!code-aspx-csharp[Classic HtmlAnchor.Title Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Title Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic HtmlAnchor.Title Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Title Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlAnchor.Title Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlAnchor.Title Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -619,8 +631,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.ValidationGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -629,7 +641,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

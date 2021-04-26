@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResourceService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IResourceService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IResourceService" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IResourceService" />
   <TypeSignature Language="F#" Value="type IResourceService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IResourceService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -22,7 +22,13 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Interfaces />
   <Docs>
     <summary>Provides an interface for designers to access resource readers and writers for specific <see cref="T:System.Globalization.CultureInfo" /> resource types.</summary>
@@ -37,9 +43,9 @@
 ## Examples  
  The following example demonstrates a designer that uses the <xref:System.ComponentModel.Design.IResourceService> to read from and write to resource files in order to configure a property of an associated control.  
   
- [!code-cpp[IResourceServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IResourceServiceExample/CPP/source.cpp#1)]
- [!code-csharp[IResourceServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IResourceServiceExample/CS/source.cs#1)]
- [!code-vb[IResourceServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IResourceServiceExample/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/IResourceServiceExample/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/IResourceServiceExample/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/IResourceServiceExample/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -51,8 +57,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Resources.IResourceReader GetResourceReader(class System.Globalization.CultureInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IResourceService.GetResourceReader(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResourceReader (info As CultureInfo) As IResourceReader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceReader ^ GetResourceReader(System::Globalization::CultureInfo ^ info);" />
       <MemberSignature Language="F#" Value="abstract member GetResourceReader : System.Globalization.CultureInfo -&gt; System.Resources.IResourceReader" Usage="iResourceService.GetResourceReader info" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceReader ^ GetResourceReader(System::Globalization::CultureInfo ^ info);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +77,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Resources.IResourceReader</ReturnType>
@@ -98,8 +106,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Resources.IResourceWriter GetResourceWriter(class System.Globalization.CultureInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IResourceService.GetResourceWriter(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResourceWriter (info As CultureInfo) As IResourceWriter" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceWriter ^ GetResourceWriter(System::Globalization::CultureInfo ^ info);" />
       <MemberSignature Language="F#" Value="abstract member GetResourceWriter : System.Globalization.CultureInfo -&gt; System.Resources.IResourceWriter" Usage="iResourceService.GetResourceWriter info" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceWriter ^ GetResourceWriter(System::Globalization::CultureInfo ^ info);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +126,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Resources.IResourceWriter</ReturnType>

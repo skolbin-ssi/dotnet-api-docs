@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventMetadata extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventMetadata" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventMetadata" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EventMetadata sealed" />
   <TypeSignature Language="F#" Value="type EventMetadata = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventMetadata sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -14,6 +14,8 @@
     <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,8 +31,8 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671205(v=vs.90)">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671204(v=vs.90)">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="Description">
@@ -38,8 +40,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Diagnostics.Eventing.Reader.EventMetadata.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -50,10 +52,13 @@
         <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -63,8 +68,8 @@
         <summary>Gets the description template associated with the event using the current thread locale for the description language.</summary>
         <value>A string that contains the description template associated with the event.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671205(v=vs.90)">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671204(v=vs.90)">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -72,8 +77,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 Id" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Id { long get(); };" />
       <MemberSignature Language="F#" Value="member this.Id : int64" Usage="System.Diagnostics.Eventing.Reader.EventMetadata.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Id { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -84,10 +89,13 @@
         <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -97,8 +105,8 @@
         <summary>Gets the identifier of the event that is defined in the event provider.</summary>
         <value>The event identifier.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671205(v=vs.90)">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671204(v=vs.90)">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Keywords">
@@ -106,8 +114,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Diagnostics.Eventing.Reader.EventKeyword&gt; Keywords" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Keywords" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keywords As IEnumerable(Of EventKeyword)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ Keywords { System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Keywords : seq&lt;System.Diagnostics.Eventing.Reader.EventKeyword&gt;" Usage="System.Diagnostics.Eventing.Reader.EventMetadata.Keywords" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ Keywords { System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -118,6 +126,8 @@
         <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Diagnostics.Eventing.Reader.EventKeyword&gt;</ReturnType>
@@ -144,8 +154,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventLevel Level" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As EventLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLevel ^ Level { System::Diagnostics::Eventing::Reader::EventLevel ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Level : System.Diagnostics.Eventing.Reader.EventLevel" Usage="System.Diagnostics.Eventing.Reader.EventMetadata.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLevel ^ Level { System::Diagnostics::Eventing::Reader::EventLevel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -156,6 +166,8 @@
         <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.EventLevel</ReturnType>
@@ -171,8 +183,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671205(v=vs.90)">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671204(v=vs.90)">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="LogLink">
@@ -180,8 +192,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventLogLink LogLink" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.LogLink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogLink As EventLogLink" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLogLink ^ LogLink { System::Diagnostics::Eventing::Reader::EventLogLink ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LogLink : System.Diagnostics.Eventing.Reader.EventLogLink" Usage="System.Diagnostics.Eventing.Reader.EventMetadata.LogLink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventLogLink ^ LogLink { System::Diagnostics::Eventing::Reader::EventLogLink ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -192,6 +204,8 @@
         <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.EventLogLink</ReturnType>
@@ -200,8 +214,8 @@
         <summary>Gets a link to the event log that receives this event when the provider publishes this event.</summary>
         <value>A link to the event log.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671205(v=vs.90)">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671204(v=vs.90)">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Opcode">
@@ -209,8 +223,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventOpcode Opcode" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Opcode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Opcode As EventOpcode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventOpcode ^ Opcode { System::Diagnostics::Eventing::Reader::EventOpcode ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Opcode : System.Diagnostics.Eventing.Reader.EventOpcode" Usage="System.Diagnostics.Eventing.Reader.EventMetadata.Opcode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventOpcode ^ Opcode { System::Diagnostics::Eventing::Reader::EventOpcode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -221,6 +235,8 @@
         <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.EventOpcode</ReturnType>
@@ -236,8 +252,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671205(v=vs.90)">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671204(v=vs.90)">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Task">
@@ -245,8 +261,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventTask Task" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Task" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As EventTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventTask ^ Task { System::Diagnostics::Eventing::Reader::EventTask ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Task : System.Diagnostics.Eventing.Reader.EventTask" Usage="System.Diagnostics.Eventing.Reader.EventMetadata.Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Eventing::Reader::EventTask ^ Task { System::Diagnostics::Eventing::Reader::EventTask ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -257,6 +273,8 @@
         <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.EventTask</ReturnType>
@@ -274,8 +292,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671205(v=vs.90)">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671204(v=vs.90)">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Template">
@@ -283,8 +301,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Template" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Template" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Template As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Template { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Template : string" Usage="System.Diagnostics.Eventing.Reader.EventMetadata.Template" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Template { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -295,10 +313,13 @@
         <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -308,8 +329,8 @@
         <summary>Gets the template string for the event. Templates are used to describe data that is used by a provider when an event is published. Templates optionally specify XML that provides the structure of an event. The XML allows values that the event publisher provides to be inserted during the rendering of an event.</summary>
         <value>A string that contains the template for the event.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671205(v=vs.90)">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671204(v=vs.90)">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -317,8 +338,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Version" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventMetadata.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Byte" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Version { System::Byte get(); };" />
       <MemberSignature Language="F#" Value="member this.Version : byte" Usage="System.Diagnostics.Eventing.Reader.EventMetadata.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Version { System::Byte get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -329,10 +350,13 @@
         <AssemblyName>System.Diagnostics.EventLog</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -342,8 +366,8 @@
         <summary>Gets the version of the event that qualifies the event identifier.</summary>
         <value>A byte value that contains the version of the event.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671205(v=vs.90)">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb671204(v=vs.90)">Event Log Scenarios</related>
       </Docs>
     </Member>
   </Members>

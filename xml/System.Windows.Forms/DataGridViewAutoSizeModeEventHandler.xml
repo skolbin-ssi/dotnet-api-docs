@@ -1,14 +1,17 @@
 <Type Name="DataGridViewAutoSizeModeEventHandler" FullName="System.Windows.Forms.DataGridViewAutoSizeModeEventHandler">
-  <TypeSignature Language="C#" Value="public delegate void DataGridViewAutoSizeModeEventHandler(object sender, DataGridViewAutoSizeModeEventArgs e);" />
+  <TypeSignature Language="C#" Value="public delegate void DataGridViewAutoSizeModeEventHandler(object sender, DataGridViewAutoSizeModeEventArgs e);" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewAutoSizeModeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeModeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewAutoSizeModeEventHandler(sender As Object, e As DataGridViewAutoSizeModeEventArgs)" />
-  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewAutoSizeModeEventHandler(System::Object ^ sender, DataGridViewAutoSizeModeEventArgs ^ e);" />
   <TypeSignature Language="F#" Value="type DataGridViewAutoSizeModeEventHandler = delegate of obj * DataGridViewAutoSizeModeEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewAutoSizeModeEventHandler(System::Object ^ sender, DataGridViewAutoSizeModeEventArgs ^ e);" />
+  <TypeSignature Language="C#" Value="public delegate void DataGridViewAutoSizeModeEventHandler(object? sender, DataGridViewAutoSizeModeEventArgs e);" FrameworkAlternate="net-6.0" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -30,16 +33,16 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control changes. The <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A> property changes.  
   
- When you create a <xref:System.Windows.Forms.DataGridViewAutoSizeModeEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, information about event-handler delegates, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ When you create a <xref:System.Windows.Forms.DataGridViewAutoSizeModeEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, information about event-handler delegates, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code demonstrates how to handle the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged> event.  
   
- [!code-cpp[System.Windows.Forms.DataGridView.AutoSizing#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CPP/autosizing.cpp#10)]
- [!code-csharp[System.Windows.Forms.DataGridView.AutoSizing#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CS/autosizing.cs#10)]
- [!code-vb[System.Windows.Forms.DataGridView.AutoSizing#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/VB/autosizing.vb#10)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CPP/autosizing.cpp" id="Snippet10":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CS/autosizing.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/VB/autosizing.vb" id="Snippet10":::  
   
  ]]></format>
     </remarks>
@@ -51,6 +54,6 @@
     <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode" />
     <altmember cref="T:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode" />
     <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeModeEventArgs" />
-    <related type="Article" href="https://msdn.microsoft.com/library/7532764d-e5c1-4943-a08b-6377a722d3b6">Resizing Columns and Rows in the Windows Forms DataGridView Control</related>
+    <related type="Article" href="/dotnet/framework/winforms/controls/resizing-columns-and-rows-in-the-windows-forms-datagridview-control">Resizing Columns and Rows in the Windows Forms DataGridView Control</related>
   </Docs>
 </Type>

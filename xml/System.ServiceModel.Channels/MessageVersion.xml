@@ -1,10 +1,11 @@
 <Type Name="MessageVersion" FullName="System.ServiceModel.Channels.MessageVersion">
   <TypeSignature Language="C#" Value="public sealed class MessageVersion" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageVersion extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageVersion extends System.Object" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageVersion" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageVersion" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MessageVersion sealed" />
   <TypeSignature Language="F#" Value="type MessageVersion = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageVersion sealed" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageVersion extends System.Object" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -16,19 +17,24 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
-    <AssemblyVersion>4.2.0.0</AssemblyVersion>
-    <AssemblyVersion>4.5.0.1</AssemblyVersion>
-    <AssemblyVersion>4.5.0.3</AssemblyVersion>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="4.6.0.0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="4.7.0.0" FrameworkAlternate="dotnet-plat-ext-3.1" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="5.0.0.0" FrameworkAlternate="dotnet-plat-ext-5.0;dotnet-plat-ext-6.0" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.MessageVersionConverter))</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.MessageVersionConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.MessageVersionConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -58,8 +64,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.AddressingVersion Addressing" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Addressing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Addressing As AddressingVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::AddressingVersion ^ Addressing { System::ServiceModel::Channels::AddressingVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Addressing : System.ServiceModel.Channels.AddressingVersion" Usage="System.ServiceModel.Channels.MessageVersion.Addressing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::AddressingVersion ^ Addressing { System::ServiceModel::Channels::AddressingVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,15 +78,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -98,8 +103,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#1)]
- [!code-vb[S_UE_MessageVersion#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -119,8 +124,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageVersion CreateVersion (System.ServiceModel.EnvelopeVersion envelopeVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageVersion CreateVersion(class System.ServiceModel.EnvelopeVersion envelopeVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageVersion ^ CreateVersion(System::ServiceModel::EnvelopeVersion ^ envelopeVersion);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateVersion (envelopeVersion As EnvelopeVersion) As MessageVersion" />
       <MemberSignature Language="F#" Value="static member CreateVersion : System.ServiceModel.EnvelopeVersion -&gt; System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.CreateVersion envelopeVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageVersion ^ CreateVersion(System::ServiceModel::EnvelopeVersion ^ envelopeVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,11 +139,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
@@ -158,8 +162,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#11)]
- [!code-vb[S_UE_MessageVersion#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#11)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet11":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet11":::  
   
  ]]></format>
         </remarks>
@@ -170,8 +174,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageVersion CreateVersion (System.ServiceModel.EnvelopeVersion envelopeVersion, System.ServiceModel.Channels.AddressingVersion addressingVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.MessageVersion CreateVersion(class System.ServiceModel.EnvelopeVersion envelopeVersion, class System.ServiceModel.Channels.AddressingVersion addressingVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion,System.ServiceModel.Channels.AddressingVersion)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageVersion ^ CreateVersion(System::ServiceModel::EnvelopeVersion ^ envelopeVersion, System::ServiceModel::Channels::AddressingVersion ^ addressingVersion);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateVersion (envelopeVersion As EnvelopeVersion, addressingVersion As AddressingVersion) As MessageVersion" />
       <MemberSignature Language="F#" Value="static member CreateVersion : System.ServiceModel.EnvelopeVersion * System.ServiceModel.Channels.AddressingVersion -&gt; System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.CreateVersion (envelopeVersion, addressingVersion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::MessageVersion ^ CreateVersion(System::ServiceModel::EnvelopeVersion ^ envelopeVersion, System::ServiceModel::Channels::AddressingVersion ^ addressingVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -184,11 +189,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
@@ -213,8 +216,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#12)]
- [!code-vb[S_UE_MessageVersion#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#12)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet12":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet12":::  
   
  ]]></format>
         </remarks>
@@ -227,8 +230,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Default" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Default { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Default : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Default { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -241,15 +244,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -267,8 +269,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#0)]
- [!code-vb[S_UE_MessageVersion#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#0)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet0":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet0":::  
   
  ]]></format>
         </remarks>
@@ -279,8 +281,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EnvelopeVersion Envelope" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Envelope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Envelope As EnvelopeVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EnvelopeVersion ^ Envelope { System::ServiceModel::EnvelopeVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Envelope : System.ServiceModel.EnvelopeVersion" Usage="System.ServiceModel.Channels.MessageVersion.Envelope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EnvelopeVersion ^ Envelope { System::ServiceModel::EnvelopeVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -293,15 +295,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -319,8 +320,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#2)]
- [!code-vb[S_UE_MessageVersion#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -331,8 +332,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageVersion.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="messageVersion.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -345,11 +346,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -366,8 +365,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#13)]
- [!code-vb[S_UE_MessageVersion#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#13)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet13":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet13":::  
   
  ]]></format>
         </remarks>
@@ -378,8 +377,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageVersion.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="messageVersion.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,11 +391,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -409,8 +406,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#14)]
- [!code-vb[S_UE_MessageVersion#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#14)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet14":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet14":::  
   
  ]]></format>
         </remarks>
@@ -421,8 +418,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion None" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.None" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property None As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ None { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.None : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.None" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ None { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -435,15 +432,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -463,8 +459,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#4)]
- [!code-vb[S_UE_MessageVersion#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#4)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -475,8 +471,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Soap11" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Soap11" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap11 As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap11 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Soap11 : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.Soap11" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap11 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -489,15 +485,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -510,8 +505,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#5)]
- [!code-vb[S_UE_MessageVersion#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#5)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -522,8 +517,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Soap11WSAddressing10" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressing10" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap11WSAddressing10 As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap11WSAddressing10 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Soap11WSAddressing10 : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.Soap11WSAddressing10" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap11WSAddressing10 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -536,7 +531,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -560,8 +556,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#6)]
- [!code-vb[S_UE_MessageVersion#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#6)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
@@ -572,8 +568,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Soap11WSAddressingAugust2004" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressingAugust2004" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap11WSAddressingAugust2004 As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap11WSAddressingAugust2004 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Soap11WSAddressingAugust2004 : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.Soap11WSAddressingAugust2004" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap11WSAddressingAugust2004 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -583,14 +579,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -614,8 +610,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#7)]
- [!code-vb[S_UE_MessageVersion#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#7)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet7":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -626,8 +622,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Soap12" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Soap12" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap12 As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap12 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Soap12 : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.Soap12" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap12 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -640,7 +636,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -653,8 +650,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#8)]
- [!code-vb[S_UE_MessageVersion#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#8)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet8":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
@@ -665,8 +662,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Soap12WSAddressing10" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressing10" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap12WSAddressing10 As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap12WSAddressing10 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Soap12WSAddressing10 : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.Soap12WSAddressing10" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap12WSAddressing10 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -679,15 +676,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -711,8 +707,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#9)]
- [!code-vb[S_UE_MessageVersion#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#9)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet9":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet9":::  
   
  ]]></format>
         </remarks>
@@ -723,8 +719,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Soap12WSAddressingAugust2004" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressingAugust2004" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap12WSAddressingAugust2004 As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap12WSAddressingAugust2004 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Soap12WSAddressingAugust2004 : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.Soap12WSAddressingAugust2004" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap12WSAddressingAugust2004 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -734,14 +730,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -765,8 +761,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#10)]
- [!code-vb[S_UE_MessageVersion#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -777,8 +773,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageVersion.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="messageVersion.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -791,11 +787,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -808,8 +802,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_MessageVersion#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#3)]
- [!code-vb[S_UE_MessageVersion#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>

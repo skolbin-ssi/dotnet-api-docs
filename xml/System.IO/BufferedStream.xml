@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BufferedStream extends System.IO.Stream" />
   <TypeSignature Language="DocId" Value="T:System.IO.BufferedStream" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BufferedStream&#xA;Inherits Stream" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BufferedStream sealed : System::IO::Stream" />
   <TypeSignature Language="F#" Value="type BufferedStream = class&#xA;    inherit Stream" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BufferedStream sealed : System::IO::Stream" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -27,13 +27,31 @@
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.IO" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.0.0" To="System.Runtime.Extensions" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.1.0" To="System.Runtime.Extensions" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.2.0" To="System.Runtime.Extensions" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.IO.Stream</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -58,24 +76,24 @@
   
  **Example 1: Code that runs on the client**  
   
- [!code-cpp[System.IO.BufferedStream1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp#1)]
- [!code-csharp[System.IO.BufferedStream1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs#1)]
- [!code-vb[System.IO.BufferedStream1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb" id="Snippet1":::  
   
  **Example 2: Code that runs on the server**  
   
- [!code-cpp[System.IO.BufferedStream2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream2/CPP/server.cpp#1)]
- [!code-csharp[System.IO.BufferedStream2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream2/CS/server.cs#1)]
- [!code-vb[System.IO.BufferedStream2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream2/VB/server.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream2/CPP/server.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream2/CS/server.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream2/VB/server.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.IO.FileStream" />
     <altmember cref="T:System.IO.MemoryStream" />
     <altmember cref="T:System.IO.Stream" />
-    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+    <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+    <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+    <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -91,8 +109,9 @@
       <MemberSignature Language="C#" Value="public BufferedStream (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.#ctor(System.IO.Stream)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BufferedStream(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream)" />
       <MemberSignature Language="F#" Value="new System.IO.BufferedStream : System.IO.Stream -&gt; System.IO.BufferedStream" Usage="new System.IO.BufferedStream stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BufferedStream(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -115,6 +134,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stream" Type="System.IO.Stream" />
@@ -132,17 +156,18 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BufferedStream (System.IO.Stream stream, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.#ctor(System.IO.Stream,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BufferedStream(System::IO::Stream ^ stream, int bufferSize);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream, bufferSize As Integer)" />
       <MemberSignature Language="F#" Value="new System.IO.BufferedStream : System.IO.Stream * int -&gt; System.IO.BufferedStream" Usage="new System.IO.BufferedStream (stream, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BufferedStream(System::IO::Stream ^ stream, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -165,6 +190,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stream" Type="System.IO.Stream" />
@@ -185,9 +215,9 @@
 ## Examples  
  This code example is part of a larger example provided for the <xref:System.IO.BufferedStream> class.  
   
- [!code-cpp[System.IO.BufferedStream1#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp#2)]
- [!code-csharp[System.IO.BufferedStream1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs#2)]
- [!code-vb[System.IO.BufferedStream1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -195,18 +225,20 @@
           <paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is negative.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="BeginRead">
-      <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback? callback, object? state);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="bufferedStream.BeginRead (buffer, offset, count, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object? state);" FrameworkAlternate="netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -225,17 +257,22 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to read the data into.</param>
@@ -249,7 +286,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginRead%2A> and <xref:System.IO.Stream.EndRead%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.BufferedStream.ReadAsync%2A>, <xref:System.IO.BufferedStream.WriteAsync%2A>, and <xref:System.IO.BufferedStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+ In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginRead%2A> and <xref:System.IO.Stream.EndRead%2A> to implement asynchronous file operations. These methods are still available in the .NET Framework 4.5 to support legacy code; however, the new async methods, such as <xref:System.IO.BufferedStream.ReadAsync%2A>, <xref:System.IO.BufferedStream.WriteAsync%2A>, and <xref:System.IO.BufferedStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
   
  <xref:System.IO.BufferedStream.EndWrite%2A> must be called exactly once for every call to <xref:System.IO.BufferedStream.BeginRead%2A>. Failing to end a read process before beginning another read can cause undesirable behavior such as deadlock.  
   
@@ -270,12 +307,14 @@
       </Docs>
     </Member>
     <Member MemberName="BeginWrite">
-      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback? callback, object? state);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="bufferedStream.BeginWrite (buffer, offset, count, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback callback, object? state);" FrameworkAlternate="netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -294,17 +333,22 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer containing data to write to the current stream.</param>
@@ -318,7 +362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginWrite%2A> and <xref:System.IO.Stream.EndWrite%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.BufferedStream.ReadAsync%2A>, <xref:System.IO.BufferedStream.WriteAsync%2A>, and <xref:System.IO.BufferedStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+ In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginWrite%2A> and <xref:System.IO.Stream.EndWrite%2A> to implement asynchronous file operations. These methods are still available in the .NET Framework 4.5 to support legacy code; however, the new async methods, such as <xref:System.IO.BufferedStream.ReadAsync%2A>, <xref:System.IO.BufferedStream.WriteAsync%2A>, and <xref:System.IO.BufferedStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
   
  <xref:System.IO.BufferedStream.EndWrite%2A> must be called exactly once on every <xref:System.IAsyncResult> from <xref:System.IO.BufferedStream.BeginWrite%2A>. <xref:System.IO.BufferedStream.EndWrite%2A> will block until the I/O operation has completed.  
   
@@ -338,8 +382,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 BufferSize" />
       <MemberSignature Language="DocId" Value="P:System.IO.BufferedStream.BufferSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BufferSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BufferSize { int get(); };" />
       <MemberSignature Language="F#" Value="member this.BufferSize : int" Usage="System.IO.BufferedStream.BufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BufferSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -348,11 +392,16 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -371,8 +420,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
       <MemberSignature Language="DocId" Value="P:System.IO.BufferedStream.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.IO.BufferedStream.CanRead" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -395,6 +444,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -416,16 +470,16 @@
 ## Examples  
  This code example is part of a larger example provided for the <xref:System.IO.BufferedStream> class.  
   
- [!code-cpp[System.IO.BufferedStream1#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp#5)]
- [!code-csharp[System.IO.BufferedStream1#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs#5)]
- [!code-vb[System.IO.BufferedStream1#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb#5)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CanSeek">
@@ -433,8 +487,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSeek" />
       <MemberSignature Language="DocId" Value="P:System.IO.BufferedStream.CanSeek" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanSeek : bool" Usage="System.IO.BufferedStream.CanSeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -457,6 +511,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -478,17 +537,17 @@
 ## Examples  
  This code example is part of a larger example provided for the <xref:System.IO.BufferedStream> class.  
   
- [!code-cpp[System.IO.BufferedStream1#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp#3)]
- [!code-csharp[System.IO.BufferedStream1#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs#3)]
- [!code-vb[System.IO.BufferedStream1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.IO.BufferedStream.SetLength(System.Int64)" />
         <altmember cref="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -496,8 +555,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
       <MemberSignature Language="DocId" Value="P:System.IO.BufferedStream.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.IO.BufferedStream.CanWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -521,6 +580,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -541,16 +605,16 @@
 ## Examples  
  This code example is part of a larger example provided for the <xref:System.IO.BufferedStream> class.  
   
- [!code-cpp[System.IO.BufferedStream1#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp#4)]
- [!code-csharp[System.IO.BufferedStream1#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs#4)]
- [!code-vb[System.IO.BufferedStream1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb#4)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -558,8 +622,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="bufferedStream.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -573,6 +637,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -622,9 +689,9 @@ bufStream->Close();
         </remarks>
         <exception cref="T:System.IO.IOException">An error occurred while trying to close the stream.</exception>
         <altmember cref="M:System.IO.BufferedStream.Flush" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -632,13 +699,18 @@ bufStream->Close();
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyTo(class System.IO.Stream destination, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.CopyTo(System.IO.Stream,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyTo (destination As Stream, bufferSize As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyTo(System::IO::Stream ^ destination, int bufferSize);" />
       <MemberSignature Language="F#" Value="override this.CopyTo : System.IO.Stream * int -&gt; unit" Usage="bufferedStream.CopyTo (destination, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyTo(System::IO::Stream ^ destination, int bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -653,8 +725,8 @@ bufStream->Close();
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.IO.Stream" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="bufferSize" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="destination" Type="System.IO.Stream" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
+        <Parameter Name="bufferSize" Type="System.Int32" Index="1" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="destination">The stream to which the contents of the current buffered stream will be copied.</param>
@@ -678,13 +750,19 @@ bufStream->Close();
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task CopyToAsync (System.IO.Stream destination, int bufferSize, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream destination, int32 bufferSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ CopyToAsync(System::IO::Stream ^ destination, int bufferSize, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CopyToAsync (destination As Stream, bufferSize As Integer, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="override this.CopyToAsync : System.IO.Stream * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="bufferedStream.CopyToAsync (destination, bufferSize, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ CopyToAsync(System::IO::Stream ^ destination, int bufferSize, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -699,9 +777,9 @@ bufStream->Close();
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.IO.Stream" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="bufferSize" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="destination" Type="System.IO.Stream" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
+        <Parameter Name="bufferSize" Type="System.Int32" Index="1" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="2" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="destination">The stream to which the contents of the current buffered stream will be copied.</param>
@@ -714,7 +792,7 @@ bufStream->Close();
 
 ## Remarks
 
-The `CopyToAsync` method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+The `CopyToAsync` method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a Windows 8.x Store app or desktop app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
 
 If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus.Canceled> value for the <xref:System.Threading.Tasks.Task.Status%2A> property.  
 
@@ -729,8 +807,8 @@ Copying begins at the current position in the current stream.
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="bufferedStream.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -753,11 +831,16 @@ Copying begins at the current position in the current stream.
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="disposing">
@@ -783,8 +866,8 @@ This method is called by the public <xref:System.ComponentModel.Component.Dispos
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask DisposeAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.DisposeAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DisposeAsync () As ValueTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::ValueTask DisposeAsync();" />
       <MemberSignature Language="F#" Value="override this.DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask" Usage="bufferedStream.DisposeAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::ValueTask DisposeAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -792,11 +875,16 @@ This method is called by the public <xref:System.ComponentModel.Component.Dispos
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -813,11 +901,11 @@ This method is called by the public <xref:System.ComponentModel.Component.Dispos
 
 ## Remarks
 
-The `DisposeAsync` method enables you to perform a resource-intensive dispose operation without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.
+The `DisposeAsync` method enables you to perform a resource-intensive dispose operation without blocking the main thread. This performance consideration is particularly important in a Windows 8.x Store app or desktop app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.
 
 This method disposes the stream by writing any changes to the backing store and closing the stream to release resources.
 
-Calling `DisposeAsync` allows the resources used by the <xref:System.IO.BufferedStream> to be reallocated for other purposes. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).
+Calling `DisposeAsync` allows the resources used by the <xref:System.IO.BufferedStream> to be reallocated for other purposes. For more information, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged).
 
           ]]></format>
         </remarks>
@@ -828,8 +916,8 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 EndRead(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.EndRead(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EndRead (asyncResult As IAsyncResult) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ asyncResult);" />
       <MemberSignature Language="F#" Value="override this.EndRead : IAsyncResult -&gt; int" Usage="bufferedStream.EndRead asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -848,13 +936,18 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="asyncResult">The reference to the pending asynchronous request to wait for.</param>
@@ -864,7 +957,7 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginRead%2A> and <xref:System.IO.Stream.EndRead%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.BufferedStream.ReadAsync%2A>, <xref:System.IO.BufferedStream.WriteAsync%2A>, and <xref:System.IO.BufferedStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+ In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginRead%2A> and <xref:System.IO.Stream.EndRead%2A> to implement asynchronous file operations. These methods are still available in the .NET Framework 4.5 to support legacy code; however, the new async methods, such as <xref:System.IO.BufferedStream.ReadAsync%2A>, <xref:System.IO.BufferedStream.WriteAsync%2A>, and <xref:System.IO.BufferedStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
   
  <xref:System.IO.BufferedStream.EndRead%2A> must be called with this <xref:System.IAsyncResult> to find out how many bytes were read.  
   
@@ -880,8 +973,8 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndWrite(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.EndWrite(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndWrite (asyncResult As IAsyncResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ asyncResult);" />
       <MemberSignature Language="F#" Value="override this.EndWrite : IAsyncResult -&gt; unit" Usage="bufferedStream.EndWrite asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -900,13 +993,18 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="asyncResult">The pending asynchronous request.</param>
@@ -915,7 +1013,7 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginWrite%2A> and <xref:System.IO.Stream.EndWrite%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.BufferedStream.ReadAsync%2A>, <xref:System.IO.BufferedStream.WriteAsync%2A>, and <xref:System.IO.BufferedStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+ In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.Stream.BeginWrite%2A> and <xref:System.IO.Stream.EndWrite%2A> to implement asynchronous file operations. These methods are still available in the .NET Framework 4.5 to support legacy code; however, the new async methods, such as <xref:System.IO.BufferedStream.ReadAsync%2A>, <xref:System.IO.BufferedStream.WriteAsync%2A>, and <xref:System.IO.BufferedStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
   
  <xref:System.IO.BufferedStream.EndWrite%2A> must be called exactly once for every call to <xref:System.IO.BufferedStream.BeginRead%2A>. Failing to end a read process before beginning another read operation can cause deadlock or other undesirable behavior.  
   
@@ -931,8 +1029,8 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="bufferedStream.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -955,6 +1053,11 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -977,26 +1080,27 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
 ## Examples  
  This code example is part of a larger example provided for the <xref:System.IO.BufferedStream> class.  
   
- [!code-cpp[System.IO.BufferedStream1#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp#6)]
- [!code-csharp[System.IO.BufferedStream1#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs#6)]
- [!code-vb[System.IO.BufferedStream1#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb#6)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp" id="Snippet6":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
         <exception cref="T:System.IO.IOException">The data source or repository is not open.</exception>
         <altmember cref="M:System.IO.Stream.Close" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task FlushAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.FlushAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FlushAsync (cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="override this.FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="bufferedStream.FlushAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1018,11 +1122,16 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="cancellationToken">The token to monitor for cancellation requests.</param>
@@ -1037,8 +1146,8 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
       <MemberSignature Language="DocId" Value="P:System.IO.BufferedStream.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
       <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.IO.BufferedStream.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1061,6 +1170,11 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -1072,9 +1186,9 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
         <exception cref="T:System.IO.IOException">The underlying stream is <see langword="null" /> or closed.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support seeking.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -1082,8 +1196,8 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
       <MemberSignature Language="ILAsm" Value=".property instance int64 Position" />
       <MemberSignature Language="DocId" Value="P:System.IO.BufferedStream.Position" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
       <MemberSignature Language="F#" Value="member this.Position : int64 with get, set" Usage="System.IO.BufferedStream.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1106,6 +1220,11 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -1131,9 +1250,9 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <altmember cref="P:System.IO.BufferedStream.CanSeek" />
         <altmember cref="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -1141,13 +1260,18 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.Read(System.Span{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (destination As Span(Of Byte)) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(Span&lt;System::Byte&gt; destination);" />
       <MemberSignature Language="F#" Value="override this.Read : Span&lt;byte&gt; -&gt; int" Usage="bufferedStream.Read destination" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(Span&lt;System::Byte&gt; destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1162,7 +1286,7 @@ Calling `DisposeAsync` allows the resources used by the <xref:System.IO.Buffered
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="destination">A region of memory. When this method returns, the contents of this region are replaced by the bytes read from the current source.</param>
@@ -1184,12 +1308,17 @@ Use <xref:System.IO.BinaryReader> for reading primitive data types.
       </Docs>
     </Member>
     <Member MemberName="Read">
-      <MemberSignature Language="C#" Value="public override int Read (byte[] array, int offset, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] array, int32 offset, int32 count) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C#" Value="public override int Read (byte[] array, int offset, int count);" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] array, int32 offset, int32 count) cil managed" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (array As Byte(), offset As Integer, count As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" />
-      <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="bufferedStream.Read (array, offset, count)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (array As Byte(), offset As Integer, count As Integer) As Integer" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="bufferedStream.Read (array, offset, count)" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public override int Read (byte[] buffer, int offset, int count);" FrameworkAlternate="net-6.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] buffer, int32 offset, int32 count) cil managed" FrameworkAlternate="net-6.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" FrameworkAlternate="net-6.0" />
+      <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="bufferedStream.Read (buffer, offset, count)" FrameworkAlternate="net-6.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" FrameworkAlternate="net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] unsigned int8[] array, int32 offset, int32 count) cil managed" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1214,21 +1343,29 @@ Use <xref:System.IO.BinaryReader> for reading primitive data types.
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" />
-        <Parameter Name="offset" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Byte[]" Index="0" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" />
+        <Parameter Name="count" Type="System.Int32" Index="2" />
       </Parameters>
       <Docs>
         <param name="array">The buffer to which bytes are to be copied.</param>
+        <param name="buffer">To be added.</param>
         <param name="offset">The byte offset in the buffer at which to begin reading bytes.</param>
         <param name="count">The number of bytes to be read.</param>
         <summary>Copies bytes from the current buffered stream to an array.</summary>
@@ -1246,9 +1383,9 @@ Use <xref:System.IO.BinaryReader> for reading primitive data types.
 ## Examples  
  This code example is part of a larger example provided for the <xref:System.IO.BufferedStream> class.  
   
- [!code-cpp[System.IO.BufferedStream1#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp#7)]
- [!code-csharp[System.IO.BufferedStream1#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs#7)]
- [!code-vb[System.IO.BufferedStream1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb#7)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp" id="Snippet7":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs" id="Snippet7":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -1263,21 +1400,27 @@ Use <xref:System.IO.BinaryReader> for reading primitive data types.
         <altmember cref="M:System.Buffer.BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
         <altmember cref="P:System.IO.BufferedStream.CanRead" />
         <altmember cref="M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;int&gt; ReadAsync (Memory&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;int&gt; ReadAsync (Memory&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;int32&gt; ReadAsync(valuetype System.Memory`1&lt;unsigned int8&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.ReadAsync(System.Memory{System.Byte},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadAsync (buffer As Memory(Of Byte), Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Integer)" />
       <MemberSignature Language="F#" Value="override this.ReadAsync : Memory&lt;byte&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;" Usage="bufferedStream.ReadAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1292,8 +1435,8 @@ Use <xref:System.IO.BinaryReader> for reading primitive data types.
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Memory&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.Memory&lt;System.Byte&gt;" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="buffer">The region of memory to write the data into.</param>
@@ -1305,7 +1448,7 @@ Use <xref:System.IO.BinaryReader> for reading primitive data types.
 
 ## Remarks
 
-The `ReadAsync` method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.
+The `ReadAsync` method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a Windows 8.x Store app or desktop app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.
 
 Use the <xref:System.IO.BufferedStream.CanRead%2A> property to determine whether the current instance supports reading.
 
@@ -1319,8 +1462,9 @@ If the operation is canceled before it completes, the returned task contains the
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadAsync (buffer As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task(Of Integer)" />
       <MemberSignature Language="F#" Value="override this.ReadAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="bufferedStream.ReadAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1342,14 +1486,19 @@ If the operation is canceled before it completes, the returned task contains the
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to write the data into.</param>
@@ -1381,8 +1530,8 @@ If the operation is canceled before it completes, the returned task contains the
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ReadByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.ReadByte" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadByte () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
       <MemberSignature Language="F#" Value="override this.ReadByte : unit -&gt; int" Usage="bufferedStream.ReadByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1405,6 +1554,11 @@ If the operation is canceled before it completes, the returned task contains the
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1420,9 +1574,9 @@ If the operation is canceled before it completes, the returned task contains the
         <block subset="none" type="overrides">
           <para>The default implementation on <see langword="Stream" /> creates a new single-byte array and then calls <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" />. While this is formally correct, it is inefficient. Any stream with an internal buffer should override this method and provide a much more efficient version that reads the buffer directly, avoiding the extra array allocation on every call.</para>
         </block>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -1430,8 +1584,8 @@ If the operation is canceled before it completes, the returned task contains the
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 Seek(int64 offset, valuetype System.IO.SeekOrigin origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, origin As SeekOrigin) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
       <MemberSignature Language="F#" Value="override this.Seek : int64 * System.IO.SeekOrigin -&gt; int64" Usage="bufferedStream.Seek (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1455,9 +1609,15 @@ If the operation is canceled before it completes, the returned task contains the
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1488,9 +1648,9 @@ If the operation is canceled before it completes, the returned task contains the
         <exception cref="T:System.NotSupportedException">The stream does not support seeking.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <altmember cref="T:System.IO.SeekOrigin" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="SetLength">
@@ -1498,8 +1658,8 @@ If the operation is canceled before it completes, the returned task contains the
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetLength(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
       <MemberSignature Language="F#" Value="override this.SetLength : int64 -&gt; unit" Usage="bufferedStream.SetLength value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1522,6 +1682,11 @@ If the operation is canceled before it completes, the returned task contains the
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1550,9 +1715,9 @@ If the operation is canceled before it completes, the returned task contains the
         <exception cref="T:System.NotSupportedException">The stream does not support both writing and seeking.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <altmember cref="M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="UnderlyingStream">
@@ -1560,8 +1725,8 @@ If the operation is canceled before it completes, the returned task contains the
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream UnderlyingStream" />
       <MemberSignature Language="DocId" Value="P:System.IO.BufferedStream.UnderlyingStream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlyingStream As Stream" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ UnderlyingStream { System::IO::Stream ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.UnderlyingStream : System.IO.Stream" Usage="System.IO.BufferedStream.UnderlyingStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ UnderlyingStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1570,11 +1735,16 @@ If the operation is canceled before it completes, the returned task contains the
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1593,13 +1763,18 @@ If the operation is canceled before it completes, the returned task contains the
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.Write(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As ReadOnlySpan(Of Byte))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
       <MemberSignature Language="F#" Value="override this.Write : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="bufferedStream.Write buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1614,7 +1789,7 @@ If the operation is canceled before it completes, the returned task contains the
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="buffer">A region of memory. This method copies the contents of this region to the current buffered stream.</param>
@@ -1633,12 +1808,17 @@ If the write operation is successful, the position within the buffered stream ad
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (byte[] array, int offset, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(unsigned int8[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="C#" Value="public override void Write (byte[] array, int offset, int count);" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(unsigned int8[] array, int32 offset, int32 count) cil managed" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (array As Byte(), offset As Integer, count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" />
-      <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="bufferedStream.Write (array, offset, count)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (array As Byte(), offset As Integer, count As Integer)" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="bufferedStream.Write (array, offset, count)" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public override void Write (byte[] buffer, int offset, int count);" FrameworkAlternate="net-6.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(unsigned int8[] buffer, int32 offset, int32 count) cil managed" FrameworkAlternate="net-6.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Byte(), offset As Integer, count As Integer)" FrameworkAlternate="net-6.0" />
+      <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="bufferedStream.Write (buffer, offset, count)" FrameworkAlternate="net-6.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" FrameworkAlternate="net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1662,21 +1842,29 @@ If the write operation is successful, the position within the buffered stream ad
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Byte[]" />
-        <Parameter Name="offset" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Byte[]" Index="0" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" />
+        <Parameter Name="count" Type="System.Int32" Index="2" />
       </Parameters>
       <Docs>
         <param name="array">The byte array from which to copy <paramref name="count" /> bytes to the current buffered stream.</param>
+        <param name="buffer">To be added.</param>
         <param name="offset">The offset in the buffer at which to begin copying bytes to the current buffered stream.</param>
         <param name="count">The number of bytes to be written to the current buffered stream.</param>
         <summary>Copies bytes to the buffered stream and advances the current position within the buffered stream by the number of bytes written.</summary>
@@ -1686,9 +1874,9 @@ If the write operation is successful, the position within the buffered stream ad
 ## Examples  
  This code example is part of a larger example provided for the <xref:System.IO.BufferedStream> class.  
   
- [!code-cpp[System.IO.BufferedStream1#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp#6)]
- [!code-csharp[System.IO.BufferedStream1#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs#6)]
- [!code-vb[System.IO.BufferedStream1#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb#6)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CPP/client.cpp" id="Snippet6":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BufferedStream1/CS/client.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BufferedStream1/VB/client.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
@@ -1702,21 +1890,27 @@ If the write operation is successful, the position within the buffered stream ad
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
         <altmember cref="P:System.IO.BufferedStream.CanWrite" />
         <altmember cref="M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask WriteAsync (ReadOnlyMemory&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask WriteAsync (ReadOnlyMemory&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask WriteAsync(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (buffer As ReadOnlyMemory(Of Byte), Optional cancellationToken As CancellationToken = Nothing) As ValueTask" />
       <MemberSignature Language="F#" Value="override this.WriteAsync : ReadOnlyMemory&lt;byte&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask" Usage="bufferedStream.WriteAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1731,8 +1925,8 @@ If the write operation is successful, the position within the buffered stream ad
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="buffer">The region of memory to write data from.</param>
@@ -1744,7 +1938,7 @@ If the write operation is successful, the position within the buffered stream ad
 
 ## Remarks
 
-The `WriteAsync` method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.
+The `WriteAsync` method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a Windows 8.x Store app or desktop app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.
 
 Use the <xref:System.IO.BufferedStream.CanWrite%2A> property to determine whether the current instance supports writing.
 
@@ -1758,8 +1952,9 @@ If the operation is canceled before it completes, the returned task contains the
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (buffer As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="override this.WriteAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="bufferedStream.WriteAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1781,14 +1976,19 @@ If the operation is canceled before it completes, the returned task contains the
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to write data from.</param>
@@ -1820,8 +2020,8 @@ If the operation is canceled before it completes, the returned task contains the
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteByte(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BufferedStream.WriteByte(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteByte (value As Byte)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteByte(System::Byte value);" />
       <MemberSignature Language="F#" Value="override this.WriteByte : byte -&gt; unit" Usage="bufferedStream.WriteByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteByte(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1845,6 +2045,11 @@ If the operation is canceled before it completes, the returned task contains the
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1867,9 +2072,9 @@ Use the <xref:System.IO.BufferedStream.CanWrite%2A> property to determine whethe
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
   </Members>

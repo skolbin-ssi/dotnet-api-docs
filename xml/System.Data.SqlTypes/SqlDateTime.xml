@@ -1,10 +1,16 @@
 <Type Name="SqlDateTime" FullName="System.Data.SqlTypes.SqlDateTime">
-  <TypeSignature Language="C#" Value="public struct SqlDateTime : IComparable, System.Data.SqlTypes.INullable, System.Xml.Serialization.IXmlSerializable" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SqlDateTime extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable, class System.Xml.Serialization.IXmlSerializable" />
+  <TypeSignature Language="C#" Value="public struct SqlDateTime : IComparable, System.Data.SqlTypes.INullable, System.Xml.Serialization.IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SqlDateTime extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable, class System.Xml.Serialization.IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlDateTime" />
-  <TypeSignature Language="VB.NET" Value="Public Structure SqlDateTime&#xA;Implements IComparable, INullable, IXmlSerializable" />
-  <TypeSignature Language="C++ CLI" Value="public value class SqlDateTime : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" />
-  <TypeSignature Language="F#" Value="type SqlDateTime = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SqlDateTime&#xA;Implements IComparable, INullable, IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="F#" Value="type SqlDateTime = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C++ CLI" Value="public value class SqlDateTime : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C#" Value="public struct SqlDateTime : IComparable, System.Data.SqlTypes.INullable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SqlDateTime extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SqlDateTime&#xA;Implements IComparable, INullable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="F#" Value="type SqlDateTime = struct&#xA;    interface INullable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="C++ CLI" Value="public value class SqlDateTime : IComparable, System::Data::SqlTypes::INullable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SqlDateTime extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable, class System.Xml.Serialization.IXmlSerializable" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -26,7 +32,18 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.4.0.0" To="System.Data.Common" ToVersion="4.2.1.0" FrameworkAlternate="dotnet-plat-ext-2.1" />
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.5.0.0" To="System.Data.Common" ToVersion="4.2.1.0" FrameworkAlternate="dotnet-plat-ext-2.2" />
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.6.0.0" To="System.Data.Common" ToVersion="4.2.1.0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.6.1.0" To="System.Data.Common" ToVersion="4.2.2.0" FrameworkAlternate="dotnet-plat-ext-3.1" />
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.6.1.1" To="System.Data.Common" ToVersion="4.2.1.0" FrameworkAlternate="dotnet-plat-ext-5.0;dotnet-plat-ext-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -37,22 +54,24 @@
     <Interface>
       <InterfaceName>System.IComparable</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Xml.Serialization.IXmlSerializable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netstandard-2.1;dotnet-plat-ext-3.1;netcore-3.1">
-      <AttributeName>System.Xml.Serialization.XmlSchemaProvider("GetXsdType")</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Xml.Serialization.XmlSchemaProvider("GetXsdType")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlSchemaProvider("GetXsdType")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the date and time data ranging in value from January 1, 1753 to December 31, 9999 to an accuracy of 3.33 milliseconds to be stored in or retrieved from a database. The <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure has a different underlying data structure from its corresponding .NET Framework type, <see cref="T:System.DateTime" />, which can represent any time between 12:00:00 AM 1/1/0001 and 11:59:59 PM 12/31/9999, to the accuracy of 100 nanoseconds. <see cref="T:System.Data.SqlTypes.SqlDateTime" /> actually stores the relative difference to 00:00:00 AM 1/1/1900. Therefore, a conversion from "00:00:00 AM 1/1/1900" to an integer will return 0.</summary>
+    <summary>Represents the date and time data ranging in value from January 1, 1753 to December 31, 9999 to an accuracy of 3.33 milliseconds to be stored in or retrieved from a database. The <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure has a different underlying data structure from its corresponding .NET type, <see cref="T:System.DateTime" />, which can represent any time between 12:00:00 AM 1/1/0001 and 11:59:59 PM 12/31/9999, to the accuracy of 100 nanoseconds. <see cref="T:System.Data.SqlTypes.SqlDateTime" /> actually stores the relative difference to 00:00:00 AM 1/1/1900. Therefore, a conversion from "00:00:00 AM 1/1/1900" to an integer will return 0.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+    <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -62,7 +81,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -70,8 +89,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.#ctor(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As DateTime)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(DateTime value);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDateTime : DateTime -&gt; System.Data.SqlTypes.SqlDateTime" Usage="new System.Data.SqlTypes.SqlDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(DateTime value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -94,6 +113,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.DateTime" />
@@ -102,7 +123,7 @@
         <param name="value">A <see langword="DateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the specified <see cref="T:System.DateTime" /> value.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -110,8 +131,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dayTicks, int32 timeTicks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dayTicks As Integer, timeTicks As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int dayTicks, int timeTicks);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDateTime : int * int -&gt; System.Data.SqlTypes.SqlDateTime" Usage="new System.Data.SqlTypes.SqlDateTime (dayTicks, timeTicks)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int dayTicks, int timeTicks);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -134,6 +155,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dayTicks" Type="System.Int32" />
@@ -144,7 +167,7 @@
         <param name="timeTicks">An integer value that represents the time as ticks.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -152,8 +175,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.#ctor(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int year, int month, int day);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDateTime : int * int * int -&gt; System.Data.SqlTypes.SqlDateTime" Usage="new System.Data.SqlTypes.SqlDateTime (year, month, day)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int year, int month, int day);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -176,6 +199,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="year" Type="System.Int32" />
@@ -188,7 +213,7 @@
         <param name="day">An integer value representing the day number of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -196,8 +221,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int year, int month, int day, int hour, int minute, int second);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDateTime : int * int * int * int * int * int -&gt; System.Data.SqlTypes.SqlDateTime" Usage="new System.Data.SqlTypes.SqlDateTime (year, month, day, hour, minute, second)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int year, int month, int day, int hour, int minute, int second);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -220,6 +245,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="year" Type="System.Int32" />
@@ -238,7 +265,7 @@
         <param name="second">An integer value representing the second of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, and second of the new structure.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -246,8 +273,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, float64 millisecond) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Double)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int year, int month, int day, int hour, int minute, int second, double millisecond);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDateTime : int * int * int * int * int * int * double -&gt; System.Data.SqlTypes.SqlDateTime" Usage="new System.Data.SqlTypes.SqlDateTime (year, month, day, hour, minute, second, millisecond)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int year, int month, int day, int hour, int minute, int second, double millisecond);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -270,6 +297,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="year" Type="System.Int32" />
@@ -290,7 +319,7 @@
         <param name="millisecond">An double value representing the millisecond of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and millisecond of the new structure.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -298,8 +327,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 bilisecond) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, bilisecond As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int year, int month, int day, int hour, int minute, int second, int bilisecond);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlDateTime : int * int * int * int * int * int * int -&gt; System.Data.SqlTypes.SqlDateTime" Usage="new System.Data.SqlTypes.SqlDateTime (year, month, day, hour, minute, second, bilisecond)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDateTime(int year, int month, int day, int hour, int minute, int second, int bilisecond);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -322,6 +351,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="year" Type="System.Int32" />
@@ -342,7 +373,7 @@
         <param name="bilisecond">An integer value representing the microsecond (thousandths of a millisecond) of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure using the supplied parameters to initialize the year, month, day, hour, minute, second, and microsecond of the new structure.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -350,8 +381,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDateTime Add(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.Add(System.Data.SqlTypes.SqlDateTime,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (x As SqlDateTime, t As TimeSpan) As SqlDateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime Add(System::Data::SqlTypes::SqlDateTime x, TimeSpan t);" />
       <MemberSignature Language="F#" Value="static member Add : System.Data.SqlTypes.SqlDateTime * TimeSpan -&gt; System.Data.SqlTypes.SqlDateTime" Usage="System.Data.SqlTypes.SqlDateTime.Add (x, t)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime Add(System::Data::SqlTypes::SqlDateTime x, TimeSpan t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -373,13 +404,15 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</param>
@@ -387,7 +420,7 @@
         <summary>Adds a <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to the specified <see langword="TimeSpan" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -397,7 +430,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Compares this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to the supplied parameter and returns an indication of their relative values.</summary>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CompareTo">
@@ -405,8 +438,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CompareTo(valuetype System.Data.SqlTypes.SqlDateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.CompareTo(System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As SqlDateTime) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlDateTime value);" />
       <MemberSignature Language="F#" Value="member this.CompareTo : System.Data.SqlTypes.SqlDateTime -&gt; int" Usage="sqlDateTime.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlDateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -428,12 +461,14 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to be compared.</param>
@@ -462,16 +497,17 @@
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
-      <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
+      <MemberSignature Language="C#" Value="public int CompareTo (object value);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="sqlDateTime.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public int CompareTo (object? value);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -497,6 +533,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -531,7 +569,7 @@
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="DayTicks">
@@ -539,8 +577,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 DayTicks" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDateTime.DayTicks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayTicks As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DayTicks { int get(); };" />
       <MemberSignature Language="F#" Value="member this.DayTicks : int" Usage="System.Data.SqlTypes.SqlDateTime.DayTicks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DayTicks { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -563,6 +601,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -581,16 +621,17 @@
       </AssemblyInfo>
       <Docs>
         <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structures to determine whether they are equal.</summary>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sqlDateTime.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? value);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -613,6 +654,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -626,7 +669,7 @@
         <returns>
           <see langword="true" /> if the object is an instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> and the two are equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -634,8 +677,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean Equals(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.Equals(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member Equals : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDateTime.Equals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -658,6 +701,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -673,7 +718,7 @@
         <returns>
           <see langword="true" /> if the two values are equal. Otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -681,8 +726,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sqlDateTime.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -705,6 +750,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -714,7 +761,7 @@
         <summary>Gets the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetXsdType">
@@ -722,8 +769,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlQualifiedName GetXsdType(class System.Xml.Schema.XmlSchemaSet schemaSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
       <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlDateTime.GetXsdType schemaSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -741,6 +788,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -749,7 +798,7 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="schemaSet">A <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</param>
@@ -763,8 +812,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean GreaterThan(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.GreaterThan(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDateTime.GreaterThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -787,6 +836,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -801,7 +852,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is greater than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEqual">
@@ -809,8 +860,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.GreaterThanOrEqual(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDateTime.GreaterThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -833,6 +884,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -847,7 +900,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is greater than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -855,8 +908,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNull" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDateTime.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlDateTime.IsNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -882,6 +935,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -894,11 +949,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ For more information, see [Handling Null Values](/dotnet/framework/data/adonet/sql/handling-null-values).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -906,8 +961,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean LessThan(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.LessThan(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member LessThan : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDateTime.LessThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -930,6 +985,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -944,7 +1001,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is less than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEqual">
@@ -952,8 +1009,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean LessThanOrEqual(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.LessThanOrEqual(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDateTime.LessThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -976,6 +1033,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -990,7 +1049,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether the first is less than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -998,8 +1057,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlDateTime MaxValue" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDateTime.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValue As SqlDateTime " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlDateTime MaxValue;" />
       <MemberSignature Language="F#" Value=" staticval mutable MaxValue : System.Data.SqlTypes.SqlDateTime" Usage="System.Data.SqlTypes.SqlDateTime.MaxValue" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlDateTime MaxValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1022,6 +1081,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -1036,7 +1097,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -1044,8 +1105,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlDateTime MinValue" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDateTime.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValue As SqlDateTime " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlDateTime MinValue;" />
       <MemberSignature Language="F#" Value=" staticval mutable MinValue : System.Data.SqlTypes.SqlDateTime" Usage="System.Data.SqlTypes.SqlDateTime.MinValue" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlDateTime MinValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1068,6 +1129,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -1082,7 +1145,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -1090,8 +1153,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean NotEquals(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.NotEquals(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member NotEquals : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDateTime.NotEquals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1114,6 +1177,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1128,7 +1193,7 @@
         <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -1136,8 +1201,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlDateTime Null" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDateTime.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As SqlDateTime " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlDateTime Null;" />
       <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.SqlTypes.SqlDateTime" Usage="System.Data.SqlTypes.SqlDateTime.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlDateTime Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1160,6 +1225,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -1170,11 +1237,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Null functions as a constant for the <xref:System.Data.SqlTypes.SqlDateTime> structure. For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ Null functions as a constant for the <xref:System.Data.SqlTypes.SqlDateTime> structure. For more information, see [Handling Null Values](/dotnet/framework/data/adonet/sql/handling-null-values).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -1182,8 +1249,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDateTime op_Addition(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Addition(System.Data.SqlTypes.SqlDateTime,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (x As SqlDateTime, t As TimeSpan) As SqlDateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime operator +(System::Data::SqlTypes::SqlDateTime x, TimeSpan t);" />
       <MemberSignature Language="F#" Value="static member ( + ) : System.Data.SqlTypes.SqlDateTime * TimeSpan -&gt; System.Data.SqlTypes.SqlDateTime" Usage="x + t" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime operator +(System::Data::SqlTypes::SqlDateTime x, TimeSpan t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1206,6 +1273,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -1220,7 +1289,7 @@
         <summary>Adds the period of time indicated by the supplied <see cref="T:System.TimeSpan" /> parameter, <paramref name="t" />, to the supplied <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDateTime" />. If either argument is <see cref="F:System.Data.SqlTypes.SqlDateTime.Null" />, the new <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> is <see cref="F:System.Data.SqlTypes.SqlDateTime.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1228,8 +1297,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Equality(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Equality(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x = y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1252,6 +1321,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1269,7 +1340,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.Equals%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="op_Explicit">
@@ -1279,7 +1350,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts a parameter to and from a <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Explicit">
@@ -1287,8 +1358,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTime op_Explicit(valuetype System.Data.SqlTypes.SqlDateTime x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Explicit(System.Data.SqlTypes.SqlDateTime)~System.DateTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDateTime) As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator DateTime(System::Data::SqlTypes::SqlDateTime x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDateTime -&gt; DateTime" Usage="System.Data.SqlTypes.SqlDateTime.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator DateTime(System::Data::SqlTypes::SqlDateTime x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1311,6 +1382,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -1325,7 +1398,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.Value?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1333,8 +1406,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDateTime op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlString) As SqlDateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlDateTime(System::Data::SqlTypes::SqlString x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlDateTime" Usage="System.Data.SqlTypes.SqlDateTime.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlDateTime(System::Data::SqlTypes::SqlString x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1357,6 +1430,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -1369,7 +1444,7 @@
         <summary>Converts the <see cref="T:System.Data.SqlTypes.SqlString" /> parameter to a <see cref="T:System.Data.SqlTypes.SqlDateTime" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> is equal to the date and time represented by the <see cref="T:System.Data.SqlTypes.SqlString" /> parameter. If the <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see langword="Value" /> of the newly created <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure will be null.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -1377,8 +1452,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_GreaterThan(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1401,6 +1476,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1417,7 +1494,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.GreaterThan%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -1425,8 +1502,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1449,6 +1526,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1465,7 +1544,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.GreaterThanOrEqual%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1473,8 +1552,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDateTime op_Implicit(valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Implicit(System.DateTime)~System.Data.SqlTypes.SqlDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As DateTime) As SqlDateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlDateTime(DateTime value);" />
       <MemberSignature Language="F#" Value="static member op_Implicit : DateTime -&gt; System.Data.SqlTypes.SqlDateTime" Usage="System.Data.SqlTypes.SqlDateTime.op_Implicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlDateTime(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1497,6 +1576,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -1509,7 +1590,7 @@
         <summary>Converts a <see cref="T:System.DateTime" /> structure to a <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> is equal to the combined <see cref="P:System.DateTime.Date" /> and <see cref="P:System.DateTime.TimeOfDay" /> properties of the supplied <see cref="T:System.DateTime" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -1517,8 +1598,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Inequality(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlDateTime.op_Inequality (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1541,6 +1622,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1555,7 +1638,7 @@
         <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDateTime" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -1563,8 +1646,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThan(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_LessThan(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1587,6 +1670,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1603,7 +1688,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.LessThan%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -1611,8 +1696,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_LessThanOrEqual(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As SqlDateTime, y As SqlDateTime) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.SqlTypes.SqlDateTime * System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlDateTime x, System::Data::SqlTypes::SqlDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1635,6 +1720,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1651,7 +1738,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.LessThanOrEqual%28System.Data.SqlTypes.SqlDateTime%2CSystem.Data.SqlTypes.SqlDateTime%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -1659,8 +1746,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDateTime op_Subtraction(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Subtraction(System.Data.SqlTypes.SqlDateTime,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (x As SqlDateTime, t As TimeSpan) As SqlDateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime operator -(System::Data::SqlTypes::SqlDateTime x, TimeSpan t);" />
       <MemberSignature Language="F#" Value="static member ( - ) : System.Data.SqlTypes.SqlDateTime * TimeSpan -&gt; System.Data.SqlTypes.SqlDateTime" Usage="x - t" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime operator -(System::Data::SqlTypes::SqlDateTime x, TimeSpan t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1683,6 +1770,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -1697,7 +1786,7 @@
         <summary>Subtracts the supplied <see cref="T:System.TimeSpan" /> structure, <paramref name="t" />, from the supplied <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure representing the results of the subtraction.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1705,8 +1794,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDateTime Parse(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As SqlDateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime Parse(System::String ^ s);" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Data.SqlTypes.SqlDateTime" Usage="System.Data.SqlTypes.SqlDateTime.Parse s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime Parse(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1729,6 +1818,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -1741,7 +1832,7 @@
         <summary>Converts the specified <see cref="T:System.String" /> representation of a date and time to its <see cref="T:System.Data.SqlTypes.SqlDateTime" /> equivalent.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure equal to the date and time represented by the specified <see langword="string" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="SQLTicksPerHour">
@@ -1749,8 +1840,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 SQLTicksPerHour" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDateTime.SQLTicksPerHour" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SQLTicksPerHour As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int SQLTicksPerHour;" />
       <MemberSignature Language="F#" Value=" staticval mutable SQLTicksPerHour : int" Usage="System.Data.SqlTypes.SqlDateTime.SQLTicksPerHour" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int SQLTicksPerHour;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1773,6 +1864,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1787,8 +1880,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 SQLTicksPerMinute" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDateTime.SQLTicksPerMinute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SQLTicksPerMinute As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int SQLTicksPerMinute;" />
       <MemberSignature Language="F#" Value=" staticval mutable SQLTicksPerMinute : int" Usage="System.Data.SqlTypes.SqlDateTime.SQLTicksPerMinute" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int SQLTicksPerMinute;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1811,6 +1904,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1825,8 +1920,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 SQLTicksPerSecond" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlDateTime.SQLTicksPerSecond" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SQLTicksPerSecond As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int SQLTicksPerSecond;" />
       <MemberSignature Language="F#" Value=" staticval mutable SQLTicksPerSecond : int" Usage="System.Data.SqlTypes.SqlDateTime.SQLTicksPerSecond" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int SQLTicksPerSecond;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1849,6 +1944,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1863,8 +1960,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlDateTime Subtract(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.Subtract(System.Data.SqlTypes.SqlDateTime,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (x As SqlDateTime, t As TimeSpan) As SqlDateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime Subtract(System::Data::SqlTypes::SqlDateTime x, TimeSpan t);" />
       <MemberSignature Language="F#" Value="static member Subtract : System.Data.SqlTypes.SqlDateTime * TimeSpan -&gt; System.Data.SqlTypes.SqlDateTime" Usage="System.Data.SqlTypes.SqlDateTime.Subtract (x, t)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlDateTime Subtract(System::Data::SqlTypes::SqlDateTime x, TimeSpan t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1886,13 +1983,15 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</param>
@@ -1900,7 +1999,7 @@
         <summary>Subtracts the specified <see langword="Timespan" /> from this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> instance.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -1908,6 +2007,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.System#Xml#Serialization#IXmlSerializable#GetSchema" />
       <MemberSignature Language="VB.NET" Value="Function GetSchema () As XmlSchema Implements IXmlSerializable.GetSchema" />
+      <MemberSignature Language="F#" Value="abstract member System.Xml.Serialization.IXmlSerializable.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.System.Xml.Serialization.IXmlSerializable.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="sqlDateTime.System.Xml.Serialization.IXmlSerializable.GetSchema " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Xml::Schema::XmlSchema ^ System.Xml.Serialization.IXmlSerializable.GetSchema() = System::Xml::Serialization::IXmlSerializable::GetSchema;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1929,6 +2029,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1948,6 +2050,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Sub ReadXml (reader As XmlReader) Implements IXmlSerializable.ReadXml" />
+      <MemberSignature Language="F#" Value="abstract member System.Xml.Serialization.IXmlSerializable.ReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.System.Xml.Serialization.IXmlSerializable.ReadXml : System.Xml.XmlReader -&gt; unit" Usage="sqlDateTime.System.Xml.Serialization.IXmlSerializable.ReadXml reader" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.ReadXml(System::Xml::XmlReader ^ reader) = System::Xml::Serialization::IXmlSerializable::ReadXml;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1969,6 +2072,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1977,7 +2082,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">
@@ -1992,6 +2097,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Sub WriteXml (writer As XmlWriter) Implements IXmlSerializable.WriteXml" />
+      <MemberSignature Language="F#" Value="abstract member System.Xml.Serialization.IXmlSerializable.WriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.System.Xml.Serialization.IXmlSerializable.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="sqlDateTime.System.Xml.Serialization.IXmlSerializable.WriteXml writer" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.WriteXml(System::Xml::XmlWriter ^ writer) = System::Xml::Serialization::IXmlSerializable::WriteXml;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2013,6 +2119,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2021,7 +2129,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">
@@ -2036,8 +2144,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 TimeTicks" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDateTime.TimeTicks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeTicks As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TimeTicks { int get(); };" />
       <MemberSignature Language="F#" Value="member this.TimeTicks : int" Usage="System.Data.SqlTypes.SqlDateTime.TimeTicks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TimeTicks { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2060,6 +2168,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2075,8 +2185,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlString ToSqlString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.ToSqlString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlString () As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString ToSqlString();" />
       <MemberSignature Language="F#" Value="member this.ToSqlString : unit -&gt; System.Data.SqlTypes.SqlString" Usage="sqlDateTime.ToSqlString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString ToSqlString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2099,6 +2209,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2108,7 +2220,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A <see langword="SqlString" /> structure whose value is a string representing the date and time that is contained in this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2116,8 +2228,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlDateTime.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2140,6 +2252,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2149,7 +2263,7 @@
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to a <see cref="T:System.String" />.</summary>
         <returns>A <see langword="String" /> representing the <see cref="P:System.Data.SqlTypes.SqlDateTime.Value" /> property of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -2157,8 +2271,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlDateTime.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Value { DateTime get(); };" />
       <MemberSignature Language="F#" Value="member this.Value : DateTime" Usage="System.Data.SqlTypes.SqlDateTime.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Value { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2181,6 +2295,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -2190,7 +2306,7 @@
         <value>The value of this <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The exception that is thrown when the <see langword="Value" /> property of a <see cref="N:System.Data.SqlTypes" /> structure is set to null.</exception>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
   </Members>

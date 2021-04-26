@@ -1,10 +1,11 @@
 <Type Name="ManagementClass" FullName="System.Management.ManagementClass">
   <TypeSignature Language="C#" Value="public class ManagementClass : System.Management.ManagementObject" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ManagementClass extends System.Management.ManagementObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagementClass extends System.Management.ManagementObject" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0" />
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementClass" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementClass&#xA;Inherits ManagementObject" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ManagementClass : System::Management::ManagementObject" />
   <TypeSignature Language="F#" Value="type ManagementClass = class&#xA;    inherit ManagementObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementClass : System::Management::ManagementObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ManagementClass extends System.Management.ManagementObject" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -17,11 +18,12 @@
   <Interfaces />
   <Attributes>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Common Information Model (CIM) management class. A management class is a WMI class such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. The members of this class enable you to access WMI data using a specific WMI class path. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</summary>
+    <summary>Represents a Common Information Model (CIM) management class. A management class is a WMI class such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. The members of this class enable you to access WMI data using a specific WMI class path.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +40,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -66,15 +68,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with the <xref:System.Management.ManagementClass> parameterless constructor. The example lists the methods, properties, and qualifiers for the created class.  
   
- [!code-csharp[wminet_ManagementClass#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass/cs/ManagementClass.cs#1)]
- [!code-vb[wminet_ManagementClass#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass/vb/ManagementClass.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass/cs/ManagementClass.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass/vb/ManagementClass.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -85,8 +87,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.Management.ManagementPath)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As ManagementPath)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::Management::ManagementPath ^ path);" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementClass : System.Management.ManagementPath -&gt; System.Management.ManagementClass" Usage="new System.Management.ManagementClass path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::Management::ManagementPath ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -98,8 +100,8 @@
         <Parameter Name="path" Type="System.Management.ManagementPath" />
       </Parameters>
       <Docs>
-        <param name="path">A <see cref="T:System.Management.ManagementPath" /> specifying the WMI class to which to bind. The parameter must specify a WMI class path. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see "Win32 classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</summary>
+        <param name="path">A <see cref="T:System.Management.ManagementPath" /> specifying the WMI class to which to bind. The parameter must specify a WMI class path. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see <see href="/windows/win32/wmisdk/cimclas">CIM Classes</see>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -107,15 +109,15 @@
  The `path` parameter must specify a WMI class path.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers for the created class.  
   
- [!code-csharp[wminet_ManagementClass-M#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-M/cs/ManagementClass-M.cs#1)]
- [!code-vb[wminet_ManagementClass-M#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-M/vb/ManagementClass-M.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-M/cs/ManagementClass-M.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-M/vb/ManagementClass-M.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -126,8 +128,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::String ^ path);" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementClass : string -&gt; System.Management.ManagementClass" Usage="new System.Management.ManagementClass path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -139,23 +141,23 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path to the WMI class. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see "Win32 classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class initialized to the given path. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</summary>
+        <param name="path">The path to the WMI class. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see <see href="/windows/win32/wmisdk/cimclas">CIM Classes</see>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class initialized to the given path. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers for the created class.  
   
- [!code-csharp[wminet_ManagementClass-S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-S/cs/ManagementClass-S.cs#1)]
- [!code-vb[wminet_ManagementClass-S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-S/vb/ManagementClass-S.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-S/cs/ManagementClass-S.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-S/vb/ManagementClass-S.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -166,8 +168,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementPath path, class System.Management.ObjectGetOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As ManagementPath, options As ObjectGetOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::Management::ManagementPath ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementClass : System.Management.ManagementPath * System.Management.ObjectGetOptions -&gt; System.Management.ManagementClass" Usage="new System.Management.ManagementClass (path, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::Management::ManagementPath ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -180,24 +182,24 @@
         <Parameter Name="options" Type="System.Management.ObjectGetOptions" />
       </Parameters>
       <Docs>
-        <param name="path">A <see cref="T:System.Management.ManagementPath" /> instance representing the WMI class path. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see "Win32 classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</param>
+        <param name="path">A <see cref="T:System.Management.ManagementPath" /> instance representing the WMI class path. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see <see href="/windows/win32/wmisdk/cimclas">CIM Classes</see>.</param>
         <param name="options">An <see cref="T:System.Management.ObjectGetOptions" /> representing the options to use when retrieving this class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class initialized to the given WMI class path using the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class initialized to the given WMI class path using the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class.  
   
- [!code-csharp[wminet_ManagementClass-M_O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-M_O/cs/ManagementClass-M_O.cs#1)]
- [!code-vb[wminet_ManagementClass-M_O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-M_O/vb/ManagementClass-M_O.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-M_O/cs/ManagementClass-M_O.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-M_O/vb/ManagementClass-M_O.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -208,8 +210,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ManagementClass(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementClass : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Management.ManagementClass" Usage="new System.Management.ManagementClass (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ManagementClass(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -217,8 +219,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="info">An instance of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> class containing the information required to serialize the new <see cref="T:System.Management.ManagementClass" />.</param>
@@ -230,7 +232,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -241,8 +243,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Management.ObjectGetOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.String,System.Management.ObjectGetOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, options As ObjectGetOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::String ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementClass : string * System.Management.ObjectGetOptions -&gt; System.Management.ManagementClass" Usage="new System.Management.ManagementClass (path, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::String ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -255,24 +257,24 @@
         <Parameter Name="options" Type="System.Management.ObjectGetOptions" />
       </Parameters>
       <Docs>
-        <param name="path">The path to the WMI class. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see "Win32 classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</param>
+        <param name="path">The path to the WMI class. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see <see href="/windows/win32/wmisdk/cimclas">CIM Classes</see>.</param>
         <param name="options">An <see cref="T:System.Management.ObjectGetOptions" /> representing the options to use when retrieving the WMI class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class initialized to the given WMI class path using the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class initialized to the given WMI class path using the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class.  
   
- [!code-csharp[wminet_ManagementClass-S_O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-S_O/cs/ManagementClass-S_O.cs#1)]
- [!code-vb[wminet_ManagementClass-S_O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-S_O/vb/ManagementClass-S_O.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-S_O/cs/ManagementClass-S_O.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-S_O/vb/ManagementClass-S_O.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -283,8 +285,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementScope scope, class System.Management.ManagementPath path, class System.Management.ObjectGetOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.Management.ManagementScope,System.Management.ManagementPath,System.Management.ObjectGetOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, path As ManagementPath, options As ObjectGetOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::Management::ManagementScope ^ scope, System::Management::ManagementPath ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementClass : System.Management.ManagementScope * System.Management.ManagementPath * System.Management.ObjectGetOptions -&gt; System.Management.ManagementClass" Usage="new System.Management.ManagementClass (scope, path, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::Management::ManagementScope ^ scope, System::Management::ManagementPath ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -299,9 +301,9 @@
       </Parameters>
       <Docs>
         <param name="scope">A <see cref="T:System.Management.ManagementScope" /> that specifies the scope (server and namespace) where the WMI class resides.</param>
-        <param name="path">A <see cref="T:System.Management.ManagementPath" /> that represents the path to the WMI class in the specified scope. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see "Win32 classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</param>
+        <param name="path">A <see cref="T:System.Management.ManagementPath" /> that represents the path to the WMI class in the specified scope. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see <see href="/windows/win32/wmisdk/cimclas">CIM Classes</see>.</param>
         <param name="options">An <see cref="T:System.Management.ObjectGetOptions" /> that specifies the options to use when retrieving the WMI class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class for the specified WMI class in the specified scope and with the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class for the specified WMI class in the specified scope and with the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -309,15 +311,15 @@
  The path can be specified as a full path (including server and namespace). However, if a scope is specified, it will override the first portion of the full path.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class. You must change the scope (namespace) in the code for the example to run correctly on your computer.  
   
- [!code-csharp[wminet_ManagementClass-M_M_O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-M_M_O/cs/ManagementClass-M_M_O.cs#1)]
- [!code-vb[wminet_ManagementClass-M_M_O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-M_M_O/vb/ManagementClass-M_M_O.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-M_M_O/cs/ManagementClass-M_M_O.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-M_M_O/vb/ManagementClass-M_M_O.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -328,8 +330,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scope, string path, class System.Management.ObjectGetOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.#ctor(System.String,System.String,System.Management.ObjectGetOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, path As String, options As ObjectGetOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::String ^ scope, System::String ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementClass : string * string * System.Management.ObjectGetOptions -&gt; System.Management.ManagementClass" Usage="new System.Management.ManagementClass (scope, path, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementClass(System::String ^ scope, System::String ^ path, System::Management::ObjectGetOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -344,9 +346,9 @@
       </Parameters>
       <Docs>
         <param name="scope">The scope in which the WMI class resides.</param>
-        <param name="path">The path to the WMI class within the specified scope. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see "Win32 classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</param>
+        <param name="path">The path to the WMI class within the specified scope. The class represents a CIM management class from WMI. CIM classes represent management information including hardware, software, processes, and so on. For more information about the CIM classes available in Windows, see <see href="/windows/win32/wmisdk/cimclas">CIM Classes</see>.</param>
         <param name="options">An <see cref="T:System.Management.ObjectGetOptions" /> that specifies the options to use when retrieving the WMI class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class for the specified WMI class, in the specified scope, and with the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class for the specified WMI class, in the specified scope, and with the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -354,15 +356,15 @@
  The path can be specified as a full path (including server and namespace). However, if a scope is specified, it will override the first portion of the full path.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class. You must change the scope (namespace) in the code for the example to run correctly on your computer.  
   
- [!code-csharp[wminet_ManagementClass-S_S_O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-S_S_O/cs/ManagementClass-S_S_O.cs#1)]
- [!code-vb[wminet_ManagementClass-S_S_O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-S_S_O/vb/ManagementClass-S_S_O.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-S_S_O/cs/ManagementClass-S_S_O.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-S_S_O/vb/ManagementClass-S_S_O.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -373,8 +375,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="managementClass.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -396,7 +398,7 @@
  Note that this does not create a copy of the WMI class; only an additional representation is created.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -407,8 +409,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObject CreateInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.CreateInstance" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateInstance () As ManagementObject" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObject ^ CreateInstance();" />
       <MemberSignature Language="F#" Value="member this.CreateInstance : unit -&gt; System.Management.ManagementObject" Usage="managementClass.CreateInstance " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObject ^ CreateInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -430,15 +432,15 @@
  Note that the new instance is not committed until the <xref:System.Management.ManagementObject.Put%2A>() method is called. Before committing it, the key properties must be specified.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then create a new instance of a WMI class.  
   
- [!code-csharp[wminet_ManagementClass_CreateInstance#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_CreateInstance/cs/ManagementClass_CreateInstance.cs#1)]
- [!code-vb[wminet_ManagementClass_CreateInstance#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_CreateInstance/vb/ManagementClass_CreateInstance.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_CreateInstance/cs/ManagementClass_CreateInstance.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_CreateInstance/vb/ManagementClass_CreateInstance.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -449,8 +451,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection Derivation" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementClass.Derivation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Derivation As StringCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Derivation { System::Collections::Specialized::StringCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Derivation : System.Collections.Specialized.StringCollection" Usage="System.Management.ManagementClass.Derivation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Derivation { System::Collections::Specialized::StringCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -471,15 +473,15 @@
  This property is read-only.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the classes in the inheritance hierarchy from the WMI class passed into the constructor, to the top of the hierarchy.  
   
- [!code-csharp[wminet_ManagementClass_Derivation#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Derivation/cs/ManagementClass_Derivation.cs#1)]
- [!code-vb[wminet_ManagementClass_Derivation#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Derivation/vb/ManagementClass_Derivation.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Derivation/cs/ManagementClass_Derivation.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Derivation/vb/ManagementClass_Derivation.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -490,8 +492,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementClass Derive(string newClassName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.Derive(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Derive (newClassName As String) As ManagementClass" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementClass ^ Derive(System::String ^ newClassName);" />
       <MemberSignature Language="F#" Value="member this.Derive : string -&gt; System.Management.ManagementClass" Usage="managementClass.Derive newClassName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementClass ^ Derive(System::String ^ newClassName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -516,15 +518,15 @@
  Note that the newly returned class has not been committed until the <xref:System.Management.ManagementObject.Put%2A>() method is explicitly called.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then create a derived instance of a WMI class.  
   
- [!code-csharp[wminet_ManagementClass_Derive#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Derive/cs/ManagementClass_Derive.cs#1)]
- [!code-vb[wminet_ManagementClass_Derive#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Derive/vb/ManagementClass_Derive.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Derive/cs/ManagementClass_Derive.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Derive/vb/ManagementClass_Derive.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -543,7 +545,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -554,8 +556,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetInstances() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetInstances" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInstances () As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetInstances();" />
       <MemberSignature Language="F#" Value="member this.GetInstances : unit -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetInstances " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetInstances();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -576,15 +578,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class.  
   
- [!code-csharp[wminet_ManagementClass_GetInstances#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances/cs/ManagementClass_GetInstances.cs#1)]
- [!code-vb[wminet_ManagementClass_GetInstances#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances/vb/ManagementClass_GetInstances.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances/cs/ManagementClass_GetInstances.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances/vb/ManagementClass_GetInstances.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -595,8 +597,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetInstances(class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetInstances(System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInstances (options As EnumerationOptions) As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetInstances(System::Management::EnumerationOptions ^ options);" />
       <MemberSignature Language="F#" Value="member this.GetInstances : System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetInstances options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetInstances(System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -620,15 +622,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class and its subclasses.  
   
- [!code-csharp[wminet_ManagementClass_GetInstances-E#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-E/cs/ManagementClass_GetInstances-E.cs#1)]
- [!code-vb[wminet_ManagementClass_GetInstances-E#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-E/vb/ManagementClass_GetInstances-E.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-E/cs/ManagementClass_GetInstances-E.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-E/vb/ManagementClass_GetInstances-E.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -639,8 +641,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetInstances(class System.Management.ManagementOperationObserver watcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetInstances (watcher As ManagementOperationObserver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetInstances(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberSignature Language="F#" Value="member this.GetInstances : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementClass.GetInstances watcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetInstances(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -663,15 +665,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class asynchronously.  
   
- [!code-csharp[wminet_ManagementClass_GetInstances-M#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-M/cs/ManagementClass_GetInstances-M.cs#1)]
- [!code-vb[wminet_ManagementClass_GetInstances-M#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-M/vb/ManagementClass_GetInstances-M.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-M/cs/ManagementClass_GetInstances-M.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-M/vb/ManagementClass_GetInstances-M.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -682,8 +684,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetInstances(class System.Management.ManagementOperationObserver watcher, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetInstances (watcher As ManagementOperationObserver, options As EnumerationOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetInstances(System::Management::ManagementOperationObserver ^ watcher, System::Management::EnumerationOptions ^ options);" />
       <MemberSignature Language="F#" Value="member this.GetInstances : System.Management.ManagementOperationObserver * System.Management.EnumerationOptions -&gt; unit" Usage="managementClass.GetInstances (watcher, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetInstances(System::Management::ManagementOperationObserver ^ watcher, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -708,7 +710,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -719,8 +721,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="managementClass.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -731,8 +733,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="info">The object to be populated with serialization information.</param>
@@ -744,7 +746,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -763,7 +765,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -774,8 +776,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelatedClasses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelatedClasses () As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelatedClasses();" />
       <MemberSignature Language="F#" Value="member this.GetRelatedClasses : unit -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetRelatedClasses " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelatedClasses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -794,18 +796,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method queries the WMI schema for all possible associations that the WMI class may have with other classes, or in rare cases, to instances. For more information about related classes, see " ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.  
+ The method queries the WMI schema for all possible associations that the WMI class may have with other classes, or in rare cases, to instances. For more information about related classes, see [ASSOCIATORS OF Statement](/windows/win32/wmisdk/associators-of-statement).  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then list all the classes related to the WMI class passed into the constructor.  
   
- [!code-csharp[wminet_ManagementClass_GetRelatedClasses#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses/cs/ManagementClass_GetRelatedClasses.cs#1)]
- [!code-vb[wminet_ManagementClass_GetRelatedClasses#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses/vb/ManagementClass_GetRelatedClasses.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses/cs/ManagementClass_GetRelatedClasses.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses/vb/ManagementClass_GetRelatedClasses.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -816,8 +818,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelatedClasses(class System.Management.ManagementOperationObserver watcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelatedClasses (watcher As ManagementOperationObserver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelatedClasses(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberSignature Language="F#" Value="member this.GetRelatedClasses : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementClass.GetRelatedClasses watcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelatedClasses(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -840,7 +842,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -851,8 +853,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelatedClasses(string relatedClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelatedClasses (relatedClass As String) As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelatedClasses(System::String ^ relatedClass);" />
       <MemberSignature Language="F#" Value="member this.GetRelatedClasses : string -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetRelatedClasses relatedClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelatedClasses(System::String ^ relatedClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -876,7 +878,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -887,8 +889,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelatedClasses(class System.Management.ManagementOperationObserver watcher, string relatedClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelatedClasses (watcher As ManagementOperationObserver, relatedClass As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelatedClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relatedClass);" />
       <MemberSignature Language="F#" Value="member this.GetRelatedClasses : System.Management.ManagementOperationObserver * string -&gt; unit" Usage="managementClass.GetRelatedClasses (watcher, relatedClass)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelatedClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relatedClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -913,7 +915,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -924,8 +926,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelatedClasses(string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelatedClasses (relatedClass As String, relationshipClass As String, relationshipQualifier As String, relatedQualifier As String, relatedRole As String, thisRole As String, options As EnumerationOptions) As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelatedClasses(System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ relatedQualifier, System::String ^ relatedRole, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberSignature Language="F#" Value="member this.GetRelatedClasses : string * string * string * string * string * string * System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetRelatedClasses (relatedClass, relationshipClass, relationshipQualifier, relatedQualifier, relatedRole, thisRole, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelatedClasses(System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ relatedQualifier, System::String ^ relatedRole, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -961,15 +963,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
- The following example uses the <xref:System.Management.ManagementClass.GetRelatedClasses%2A> method to list the related classes to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.  
+ The following example uses the <xref:System.Management.ManagementClass.GetRelatedClasses%2A> method to list the related classes to the **CIM_LogicalDisk** class. For more information, see [CIM_LogicalDisk](/windows/win32/cimwin32prov/cim-logicaldisk).
   
- [!code-csharp[wminet_ManagementClass_GetRelatedClasses-7#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses-7/cs/ManagementClass_GetRelatedClasses-7.cs#1)]
- [!code-vb[wminet_ManagementClass_GetRelatedClasses-7#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses-7/vb/ManagementClass_GetRelatedClasses-7.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses-7/cs/ManagementClass_GetRelatedClasses-7.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses-7/vb/ManagementClass_GetRelatedClasses-7.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -980,8 +982,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelatedClasses(class System.Management.ManagementOperationObserver watcher, string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelatedClasses (watcher As ManagementOperationObserver, relatedClass As String, relationshipClass As String, relationshipQualifier As String, relatedQualifier As String, relatedRole As String, thisRole As String, options As EnumerationOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelatedClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ relatedQualifier, System::String ^ relatedRole, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberSignature Language="F#" Value="member this.GetRelatedClasses : System.Management.ManagementOperationObserver * string * string * string * string * string * string * System.Management.EnumerationOptions -&gt; unit" Usage="managementClass.GetRelatedClasses (watcher, relatedClass, relationshipClass, relationshipQualifier, relatedQualifier, relatedRole, thisRole, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelatedClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relatedClass, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ relatedQualifier, System::String ^ relatedRole, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1018,7 +1020,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1037,7 +1039,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1048,8 +1050,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelationshipClasses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipClasses () As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationshipClasses();" />
       <MemberSignature Language="F#" Value="member this.GetRelationshipClasses : unit -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetRelationshipClasses " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationshipClasses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1070,15 +1072,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
- The following example uses the <xref:System.Management.ManagementClass.GetRelationshipClasses%2A> method to list the relationship classes to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.  
+ The following example uses the <xref:System.Management.ManagementClass.GetRelationshipClasses%2A> method to list the relationship classes to the **CIM_LogicalDisk** class. For more information, see [CIM_LogicalDisk](/windows/win32/cimwin32prov/cim-logicaldisk).
   
- [!code-csharp[wminet_ManagementClass_GetRelationshipClasses#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses/cs/ManagementClass_GetRelationshipClasses.cs#1)]
- [!code-vb[wminet_ManagementClass_GetRelationshipClasses#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses/vb/ManagementClass_GetRelationshipClasses.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses/cs/ManagementClass_GetRelationshipClasses.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses/vb/ManagementClass_GetRelationshipClasses.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1089,8 +1091,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelationshipClasses(class System.Management.ManagementOperationObserver watcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelationshipClasses (watcher As ManagementOperationObserver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationshipClasses(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberSignature Language="F#" Value="member this.GetRelationshipClasses : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementClass.GetRelationshipClasses watcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationshipClasses(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1113,7 +1115,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1124,8 +1126,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelationshipClasses(string relationshipClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipClasses (relationshipClass As String) As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationshipClasses(System::String ^ relationshipClass);" />
       <MemberSignature Language="F#" Value="member this.GetRelationshipClasses : string -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetRelationshipClasses relationshipClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationshipClasses(System::String ^ relationshipClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1142,14 +1144,14 @@
       <Docs>
         <param name="relationshipClass">The endpoint class for all relationship classes returned.</param>
         <summary>Retrieves relationship classes that relate the class to others, where the endpoint class is the specified class.</summary>
-        <returns>A collection of *association classes* that relate the class to the specified class. For more information about relationship classes, see "ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</returns>
+        <returns>A collection of *association classes* that relate the class to the specified class. For more information about relationship classes, <see href="/windows/win32/wmisdk/associators-of-statement">ASSOCIATORS OF Statement</see>.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1160,8 +1162,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelationshipClasses(class System.Management.ManagementOperationObserver watcher, string relationshipClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelationshipClasses (watcher As ManagementOperationObserver, relationshipClass As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationshipClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relationshipClass);" />
       <MemberSignature Language="F#" Value="member this.GetRelationshipClasses : System.Management.ManagementOperationObserver * string -&gt; unit" Usage="managementClass.GetRelationshipClasses (watcher, relationshipClass)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationshipClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relationshipClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1184,10 +1186,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about relationship classes, see " ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.  
+ For more information about relationship classes, see [ASSOCIATORS OF Statement](/windows/win32/wmisdk/associators-of-statement).  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1198,8 +1200,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetRelationshipClasses(string relationshipClass, string relationshipQualifier, string thisRole, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.String,System.String,System.String,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipClasses (relationshipClass As String, relationshipQualifier As String, thisRole As String, options As EnumerationOptions) As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationshipClasses(System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberSignature Language="F#" Value="member this.GetRelationshipClasses : string * string * string * System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetRelationshipClasses (relationshipClass, relationshipQualifier, thisRole, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetRelationshipClasses(System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1222,14 +1224,14 @@
         <param name="thisRole">The source class must have this role in the resulting relationship classes.</param>
         <param name="options">Specifies options for retrieving the results.</param>
         <summary>Retrieves relationship classes that relate this class to others, according to specified options.</summary>
-        <returns>A collection of *association classes* that relate this class to others, according to the specified options. For more information about relationship classes, see "ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.</returns>
+        <returns>A collection of *association classes* that relate this class to others, according to the specified options. For more information about relationship classes, <see href="/windows/win32/wmisdk/associators-of-statement">ASSOCIATORS OF Statement</see>.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1240,8 +1242,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetRelationshipClasses(class System.Management.ManagementOperationObserver watcher, string relationshipClass, string relationshipQualifier, string thisRole, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRelationshipClasses (watcher As ManagementOperationObserver, relationshipClass As String, relationshipQualifier As String, thisRole As String, options As EnumerationOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationshipClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberSignature Language="F#" Value="member this.GetRelationshipClasses : System.Management.ManagementOperationObserver * string * string * string * System.Management.EnumerationOptions -&gt; unit" Usage="managementClass.GetRelationshipClasses (watcher, relationshipClass, relationshipQualifier, thisRole, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRelationshipClasses(System::Management::ManagementOperationObserver ^ watcher, System::String ^ relationshipClass, System::String ^ relationshipQualifier, System::String ^ thisRole, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1272,7 +1274,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1291,7 +1293,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1302,8 +1304,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeTypeDeclaration GetStronglyTypedClassCode(bool includeSystemClassInClassDef, bool systemPropertyClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetStronglyTypedClassCode(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStronglyTypedClassCode (includeSystemClassInClassDef As Boolean, systemPropertyClass As Boolean) As CodeTypeDeclaration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeTypeDeclaration ^ GetStronglyTypedClassCode(bool includeSystemClassInClassDef, bool systemPropertyClass);" />
       <MemberSignature Language="F#" Value="member this.GetStronglyTypedClassCode : bool * bool -&gt; System.CodeDom.CodeTypeDeclaration" Usage="managementClass.GetStronglyTypedClassCode (includeSystemClassInClassDef, systemPropertyClass)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeTypeDeclaration ^ GetStronglyTypedClassCode(bool includeSystemClassInClassDef, bool systemPropertyClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1331,15 +1333,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example generates a strongly-typed class for the **Win32_LogicalDisk** class. The generated code is produced in C# or Visual Basic .NET.  
   
- [!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode-2#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-2/cs/ManagementClass_GetStronglyTypedClassCode-2.cs#1)]
- [!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode-2#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-2/vb/ManagementClass_GetStronglyTypedClassCode-2.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-2/cs/ManagementClass_GetStronglyTypedClassCode-2.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-2/vb/ManagementClass_GetStronglyTypedClassCode-2.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1350,8 +1352,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetStronglyTypedClassCode(valuetype System.Management.CodeLanguage lang, string filePath, string classNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetStronglyTypedClassCode(System.Management.CodeLanguage,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStronglyTypedClassCode (lang As CodeLanguage, filePath As String, classNamespace As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetStronglyTypedClassCode(System::Management::CodeLanguage lang, System::String ^ filePath, System::String ^ classNamespace);" />
       <MemberSignature Language="F#" Value="member this.GetStronglyTypedClassCode : System.Management.CodeLanguage * string * string -&gt; bool" Usage="managementClass.GetStronglyTypedClassCode (lang, filePath, classNamespace)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetStronglyTypedClassCode(System::Management::CodeLanguage lang, System::String ^ filePath, System::String ^ classNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1380,15 +1382,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example generates a strongly-typed class for the **Win32_LogicalDisk** class. The generated code is in C# for the C# example and Visual Basic .NET for the Visual Basic .NET example.  
   
- [!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode-3#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-3/cs/ManagementClass_GetStronglyTypedClassCode-3.cs#1)]
- [!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode-3#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-3/vb/ManagementClass_GetStronglyTypedClassCode-3.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-3/cs/ManagementClass_GetStronglyTypedClassCode-3.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-3/vb/ManagementClass_GetStronglyTypedClassCode-3.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1407,7 +1409,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1418,8 +1420,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetSubclasses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetSubclasses" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSubclasses () As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetSubclasses();" />
       <MemberSignature Language="F#" Value="member this.GetSubclasses : unit -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetSubclasses " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetSubclasses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1440,15 +1442,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
- The following example uses the <xref:System.Management.ManagementClass.GetSubclasses%2A> method to list the subclasses to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at https://msdn.microsoft.com/library.  
+ The following example uses the <xref:System.Management.ManagementClass.GetSubclasses%2A> method to list the subclasses to the **CIM_LogicalDisk** class. For more information, see [CIM_LogicalDisk](/windows/win32/cimwin32prov/cim-logicaldisk).
   
- [!code-csharp[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses/cs/ManagementClass_GetSubclasses.cs#1)]
- [!code-vb[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses/vb/ManagementClass_GetSubclasses.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses/cs/ManagementClass_GetSubclasses.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses/vb/ManagementClass_GetSubclasses.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1459,8 +1461,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementObjectCollection GetSubclasses(class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetSubclasses(System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSubclasses (options As EnumerationOptions) As ManagementObjectCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetSubclasses(System::Management::EnumerationOptions ^ options);" />
       <MemberSignature Language="F#" Value="member this.GetSubclasses : System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectCollection" Usage="managementClass.GetSubclasses options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ GetSubclasses(System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1484,15 +1486,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then receive the subclasses of the WMI class passed into the constructor.  
   
- [!code-csharp[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses-E/cs/ManagementClass_GetSubclasses-E.cs#1)]
- [!code-vb[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses-E/vb/ManagementClass_GetSubclasses-E.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses-E/cs/ManagementClass_GetSubclasses-E.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses-E/vb/ManagementClass_GetSubclasses-E.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1503,8 +1505,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetSubclasses(class System.Management.ManagementOperationObserver watcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetSubclasses (watcher As ManagementOperationObserver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSubclasses(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberSignature Language="F#" Value="member this.GetSubclasses : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementClass.GetSubclasses watcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSubclasses(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1527,7 +1529,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1538,8 +1540,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetSubclasses(class System.Management.ManagementOperationObserver watcher, class System.Management.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetSubclasses (watcher As ManagementOperationObserver, options As EnumerationOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSubclasses(System::Management::ManagementOperationObserver ^ watcher, System::Management::EnumerationOptions ^ options);" />
       <MemberSignature Language="F#" Value="member this.GetSubclasses : System.Management.ManagementOperationObserver * System.Management.EnumerationOptions -&gt; unit" Usage="managementClass.GetSubclasses (watcher, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSubclasses(System::Management::ManagementOperationObserver ^ watcher, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1564,7 +1566,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -1575,8 +1577,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.MethodDataCollection Methods" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementClass.Methods" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Methods As MethodDataCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::MethodDataCollection ^ Methods { System::Management::MethodDataCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Methods : System.Management.MethodDataCollection" Usage="System.Management.ManagementClass.Methods" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::MethodDataCollection ^ Methods { System::Management::MethodDataCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1596,15 +1598,15 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the methods in the WMI class passed into the constructor.  
   
- [!code-csharp[wminet_ManagementClass_Methods#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Methods/cs/ManagementClass_Methods.cs#1)]
- [!code-vb[wminet_ManagementClass_Methods#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Methods/vb/ManagementClass_Methods.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Methods/cs/ManagementClass_Methods.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Methods/vb/ManagementClass_Methods.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1615,8 +1617,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementPath Path" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementClass.Path" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Path As ManagementPath" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::ManagementPath ^ Path { System::Management::ManagementPath ^ get(); void set(System::Management::ManagementPath ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Path : System.Management.ManagementPath with get, set" Usage="System.Management.ManagementClass.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Management::ManagementPath ^ Path { System::Management::ManagementPath ^ get(); void set(System::Management::ManagementPath ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -1637,15 +1639,15 @@
  When the property is set to a new value, the <xref:System.Management.ManagementClass> will be disconnected from any previously-bound WMI class. Reconnect to the new WMI class path.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
    
   
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the methods in the WMI class passed into the constructor.  
   
- [!code-csharp[wminet_ManagementClass_Path#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Path/cs/ManagementClass_Path.cs#1)]
- [!code-vb[wminet_ManagementClass_Path#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Path/vb/ManagementClass_Path.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Path/cs/ManagementClass_Path.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Path/vb/ManagementClass_Path.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CountdownEvent extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.CountdownEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class CountdownEvent&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CountdownEvent : IDisposable" />
   <TypeSignature Language="F#" Value="type CountdownEvent = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CountdownEvent : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +12,8 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -23,6 +25,11 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Threading" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -32,11 +39,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Initial Count={InitialCount}, Current Count={CurrentCount}")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("Initial Count={InitialCount}, Current Count={CurrentCount}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("Initial Count={InitialCount}, Current Count={CurrentCount}")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -48,15 +57,15 @@
   
  The following example shows how to use a `CountdownEvent`:  
   
- [!code-csharp[System.Threading.CountdownEvent#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.countdownevent/cs/countdownevent.cs#01)]
- [!code-vb[System.Threading.CountdownEvent#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.countdownevent/vb/countdownevent.vb#01)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.countdownevent/cs/countdownevent.cs" id="Snippet01":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.countdownevent/vb/countdownevent.vb" id="Snippet01":::  
   
           ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.CountdownEvent" /> are thread-safe and may be used concurrently from multiple threads, with the exception of <see cref="M:System.Threading.CountdownEvent.Dispose" />, which must only be used when all other operations on the <see cref="T:System.Threading.CountdownEvent" /> have completed, and <see cref="M:System.Threading.CountdownEvent.Reset" />, which should only be used when no other threads are accessing the event.  
   
 </threadsafe>
-    <related type="Article" href="~/docs/standard/threading/countdownevent.md">CountdownEvent</related>
+    <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,8 +73,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CountdownEvent(int initialCount);" />
       <MemberSignature Language="F#" Value="new System.Threading.CountdownEvent : int -&gt; System.Threading.CountdownEvent" Usage="new System.Threading.CountdownEvent initialCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CountdownEvent(int initialCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -74,6 +83,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,7 +112,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="initialCount" /> is less than 0.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddCount">
@@ -113,7 +124,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Increments the <see cref="T:System.Threading.CountdownEvent" />'s current count.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddCount">
@@ -121,8 +132,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.AddCount" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCount ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCount();" />
       <MemberSignature Language="F#" Value="member this.AddCount : unit -&gt; unit" Usage="countdownEvent.AddCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -131,6 +142,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,7 +168,7 @@
  -or-  
   
  <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> is equal to or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="AddCount">
@@ -163,8 +176,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCount(int32 signalCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.AddCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCount (signalCount As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCount(int signalCount);" />
       <MemberSignature Language="F#" Value="member this.AddCount : int -&gt; unit" Usage="countdownEvent.AddCount signalCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCount(int signalCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -173,6 +186,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -201,8 +216,8 @@
   
  -or-  
   
- <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> is equal to or greater than <see cref="F:System.Int32.MaxValue" /> after count is incremented by <paramref name="signalCount." /></exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+ <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> is equal to or greater than <see cref="F:System.Int32.MaxValue" /> after count is incremented by <paramref name="signalCount" />.</exception>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentCount">
@@ -210,8 +225,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.CountdownEvent.CurrentCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentCount As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentCount { int get(); };" />
       <MemberSignature Language="F#" Value="member this.CurrentCount : int" Usage="System.Threading.CountdownEvent.CurrentCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -220,6 +235,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,7 +266,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.CountdownEvent" /> class.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -257,8 +274,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="countdownEvent.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -270,6 +287,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -293,14 +312,14 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.Threading.CountdownEvent>. The `Dispose` method leaves the <xref:System.Threading.CountdownEvent> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.CountdownEvent> so the garbage collector can reclaim the memory that the <xref:System.Threading.CountdownEvent> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged) and [Implementing a Dispose Method](/dotnet/standard/garbage-collection/implementing-dispose).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.CountdownEvent>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.CountdownEvent> object's `Finalize` method.  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -308,8 +327,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="countdownEvent.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -318,6 +337,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -353,8 +374,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 InitialCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.CountdownEvent.InitialCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitialCount As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InitialCount { int get(); };" />
       <MemberSignature Language="F#" Value="member this.InitialCount : int" Usage="System.Threading.CountdownEvent.InitialCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InitialCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -363,6 +384,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -381,7 +404,7 @@
         <summary>Gets the numbers of signals initially required to set the event.</summary>
         <value>The number of signals initially required to set the event.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="IsSet">
@@ -389,8 +412,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSet" />
       <MemberSignature Language="DocId" Value="P:System.Threading.CountdownEvent.IsSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSet As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSet { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSet : bool" Usage="System.Threading.CountdownEvent.IsSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSet { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -399,6 +422,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -436,7 +461,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Resets the <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> value.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Reset">
@@ -444,8 +469,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="countdownEvent.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -454,6 +479,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -487,8 +514,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset(int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Reset(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset (count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset(int count);" />
       <MemberSignature Language="F#" Value="member this.Reset : int -&gt; unit" Usage="countdownEvent.Reset count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset(int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -497,6 +524,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -528,7 +557,7 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than 0.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Signal">
@@ -547,8 +576,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Signal() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Signal" />
       <MemberSignature Language="VB.NET" Value="Public Function Signal () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Signal();" />
       <MemberSignature Language="F#" Value="member this.Signal : unit -&gt; bool" Usage="countdownEvent.Signal " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Signal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -557,6 +586,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -579,7 +610,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The current instance is already set.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Signal">
@@ -587,8 +618,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Signal(int32 signalCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Signal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Signal (signalCount As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Signal(int signalCount);" />
       <MemberSignature Language="F#" Value="member this.Signal : int -&gt; bool" Usage="countdownEvent.Signal signalCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Signal(int signalCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -597,6 +628,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -624,7 +657,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="signalCount" /> is less than 1.</exception>
         <exception cref="T:System.InvalidOperationException">The current instance is already set. -or- Or <paramref name="signalCount" /> is greater than <see cref="P:System.Threading.CountdownEvent.CurrentCount" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryAddCount">
@@ -636,7 +669,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Attempts to increment <see cref="P:System.Threading.CountdownEvent.CurrentCount" />.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="TryAddCount">
@@ -644,8 +677,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryAddCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.TryAddCount" />
       <MemberSignature Language="VB.NET" Value="Public Function TryAddCount () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAddCount();" />
       <MemberSignature Language="F#" Value="member this.TryAddCount : unit -&gt; bool" Usage="countdownEvent.TryAddCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAddCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -654,6 +687,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -678,7 +713,7 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> is equal to <see cref="F:System.Int32.MaxValue" />.
         </exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="TryAddCount">
@@ -686,8 +721,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryAddCount(int32 signalCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.TryAddCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryAddCount (signalCount As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAddCount(int signalCount);" />
       <MemberSignature Language="F#" Value="member this.TryAddCount : int -&gt; bool" Usage="countdownEvent.TryAddCount signalCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAddCount(int signalCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -696,6 +731,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -736,7 +773,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Blocks the current thread until the <see cref="T:System.Threading.CountdownEvent" /> is set.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Wait">
@@ -744,8 +781,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Wait() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait" />
       <MemberSignature Language="VB.NET" Value="Public Sub Wait ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait();" />
       <MemberSignature Language="F#" Value="member this.Wait : unit -&gt; unit" Usage="countdownEvent.Wait " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -754,6 +791,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -765,6 +804,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -780,7 +825,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -788,8 +833,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Wait (millisecondsTimeout As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout);" />
       <MemberSignature Language="F#" Value="member this.Wait : int -&gt; bool" Usage="countdownEvent.Wait millisecondsTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -798,6 +843,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -809,6 +856,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -824,15 +877,16 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
       <MemberSignature Language="C#" Value="public void Wait (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Wait(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Wait (cancellationToken As CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.Wait : System.Threading.CancellationToken -&gt; unit" Usage="countdownEvent.Wait cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -841,6 +895,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -852,6 +908,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -872,7 +934,7 @@
         <exception cref="T:System.OperationCanceledException">
           <paramref name="cancellationToken" /> has been canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed. -or- The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -880,8 +942,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Wait (timeout As TimeSpan) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout);" />
       <MemberSignature Language="F#" Value="member this.Wait : TimeSpan -&gt; bool" Usage="countdownEvent.Wait timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -890,6 +952,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -901,6 +965,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -916,15 +986,16 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
       <MemberSignature Language="C#" Value="public bool Wait (int millisecondsTimeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.Int32,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function Wait (millisecondsTimeout As Integer, cancellationToken As CancellationToken) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Wait : int * System.Threading.CancellationToken -&gt; bool" Usage="countdownEvent.Wait (millisecondsTimeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -933,6 +1004,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -944,6 +1017,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -963,15 +1042,16 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed. -or- The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
       <MemberSignature Language="C#" Value="public bool Wait (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.TimeSpan,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function Wait (timeout As TimeSpan, cancellationToken As CancellationToken) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Wait : TimeSpan * System.Threading.CancellationToken -&gt; bool" Usage="countdownEvent.Wait (timeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -980,6 +1060,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -991,6 +1073,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1010,7 +1098,7 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed. -or- The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="WaitHandle">
@@ -1018,8 +1106,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.WaitHandle WaitHandle" />
       <MemberSignature Language="DocId" Value="P:System.Threading.CountdownEvent.WaitHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitHandle As WaitHandle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ WaitHandle { System::Threading::WaitHandle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WaitHandle : System.Threading.WaitHandle" Usage="System.Threading.CountdownEvent.WaitHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ WaitHandle { System::Threading::WaitHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1028,6 +1116,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1054,7 +1144,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="/dotnet/standard/threading/countdownevent">CountdownEvent</related>
       </Docs>
     </Member>
   </Members>

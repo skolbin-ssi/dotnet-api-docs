@@ -1,10 +1,11 @@
 <Type Name="DataRow" FullName="System.Data.DataRow">
   <TypeSignature Language="C#" Value="public class DataRow" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataRow extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataRow extends System.Object" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataRow" />
   <TypeSignature Language="VB.NET" Value="Public Class DataRow" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DataRow" />
   <TypeSignature Language="F#" Value="type DataRow = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataRow" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DataRow extends System.Object" FrameworkAlternate="netframework-1.1" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -22,14 +23,21 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,17 +50,17 @@
   
  Use the <xref:System.Data.DataRow.HasVersion%2A> and <xref:System.Data.DataRow.IsNull%2A> properties to determine the status of a particular row value, and the <xref:System.Data.DataRow.RowState*> property to determine the state of the row relative to its parent <xref:System.Data.DataTable>.  
   
- To create a new <xref:System.Data.DataRow>, use the <xref:System.Data.DataTable.NewRow%2A> method of the <xref:System.Data.DataTable> object. After creating a new <xref:System.Data.DataRow>, use the <xref:System.Data.DataRowCollection.Add%2A> method to add the new <xref:System.Data.DataRow> to the <xref:System.Data.DataRowCollection>. Finally, call the <xref:System.Data.DataRow.AcceptChanges%2A> method of the <xref:System.Data.DataTable> object to confirm the addition. For more information about adding data to a <xref:System.Data.DataTable>, see [Adding Data to a DataTable](~/docs/framework/data/adonet/dataset-datatable-dataview/adding-data-to-a-datatable.md).  
+ To create a new <xref:System.Data.DataRow>, use the <xref:System.Data.DataTable.NewRow%2A> method of the <xref:System.Data.DataTable> object. After creating a new <xref:System.Data.DataRow>, use the <xref:System.Data.DataRowCollection.Add%2A> method to add the new <xref:System.Data.DataRow> to the <xref:System.Data.DataRowCollection>. Finally, call the <xref:System.Data.DataRow.AcceptChanges%2A> method of the <xref:System.Data.DataTable> object to confirm the addition. For more information about adding data to a <xref:System.Data.DataTable>, see [Adding Data to a DataTable](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-data-to-a-datatable).  
   
- You can delete a <xref:System.Data.DataRow> from the <xref:System.Data.DataRowCollection> by calling the <xref:System.Data.DataRowCollection.Remove%2A> method of the <xref:System.Data.DataRowCollection>, or by calling the <xref:System.Data.DataRow.Delete%2A> method of the <xref:System.Data.DataRow> object. The <xref:System.Data.DataRowCollection.Remove%2A> method removes the row from the collection. In contrast, <xref:System.Data.DataRow.Delete%2A> marks the <xref:System.Data.DataRow> for removal. The actual removal occurs when you call <xref:System.Data.DataRow.AcceptChanges%2A> method. By calling <xref:System.Data.DataRow.Delete%2A>, you can programmatically check which rows are marked for removal before actually deleting them. For more information, see [DataRow Deletion](~/docs/framework/data/adonet/dataset-datatable-dataview/datarow-deletion.md).  
+ You can delete a <xref:System.Data.DataRow> from the <xref:System.Data.DataRowCollection> by calling the <xref:System.Data.DataRowCollection.Remove%2A> method of the <xref:System.Data.DataRowCollection>, or by calling the <xref:System.Data.DataRow.Delete%2A> method of the <xref:System.Data.DataRow> object. The <xref:System.Data.DataRowCollection.Remove%2A> method removes the row from the collection. In contrast, <xref:System.Data.DataRow.Delete%2A> marks the <xref:System.Data.DataRow> for removal. The actual removal occurs when you call <xref:System.Data.DataRow.AcceptChanges%2A> method. By calling <xref:System.Data.DataRow.Delete%2A>, you can programmatically check which rows are marked for removal before actually deleting them. For more information, see [DataRow Deletion](/dotnet/framework/data/adonet/dataset-datatable-dataview/datarow-deletion).  
   
    
   
 ## Examples  
  The following example creates a new <xref:System.Data.DataRow> by calling the <xref:System.Data.DataTable.NewRow%2A> method of the <xref:System.Data.DataTable> object.  
   
- [!code-csharp[Classic WebData DataRow Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -68,7 +76,7 @@
     <altmember cref="P:System.Data.DataRow.Item(System.Int32)" />
     <altmember cref="M:System.Data.DataTable.NewRow" />
     <altmember cref="T:System.Data.DataRowCollection" />
-    <related type="Article" href="~/docs/framework/data/adonet/dataset-datatable-dataview/index.md">Using DataSets in ADO.NET</related>
+    <related type="Article" href="/dotnet/framework/data/adonet/dataset-datatable-dataview/">Using DataSets in ADO.NET</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,8 +84,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRowBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.#ctor(System.Data.DataRowBuilder)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (builder As DataRowBuilder)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; DataRow(System::Data::DataRowBuilder ^ builder);" />
       <MemberSignature Language="F#" Value="new System.Data.DataRow : System.Data.DataRowBuilder -&gt; System.Data.DataRow" Usage="new System.Data.DataRow builder" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; DataRow(System::Data::DataRowBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -96,6 +104,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="builder" Type="System.Data.DataRowBuilder" />
@@ -111,8 +121,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AcceptChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.AcceptChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcceptChanges ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcceptChanges();" />
       <MemberSignature Language="F#" Value="member this.AcceptChanges : unit -&gt; unit" Usage="dataRow.AcceptChanges " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcceptChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -131,6 +141,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -146,15 +158,15 @@
   
  See the <xref:System.Data.DataRow.BeginEdit%2A> method for more information.  
   
- The <xref:System.Data.DataTable> class also has an <xref:System.Data.DataTable.AcceptChanges%2A> method which affects changes made to the whole table. For more information and a code example that demonstrates how to accept and reject changes to individual data rows, see [AcceptChanges and RejectChanges](~/docs/framework/data/adonet/dataset-datatable-dataview/acceptchanges-and-rejectchanges.md).  
+ The <xref:System.Data.DataTable> class also has an <xref:System.Data.DataTable.AcceptChanges%2A> method which affects changes made to the whole table. For more information and a code example that demonstrates how to accept and reject changes to individual data rows, see [AcceptChanges and RejectChanges](/dotnet/framework/data/adonet/dataset-datatable-dataview/acceptchanges-and-rejectchanges).  
   
    
   
 ## Examples  
  The following example first creates a new <xref:System.Data.DataTable> with one column, and then creates a single <xref:System.Data.DataRow>. As the <xref:System.Data.DataRow> is created, added, modified, and deleted, its <xref:System.Data.DataRow.RowState*> is printed.  
   
- [!code-csharp[Classic WebData DataRow.AcceptChanges Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.AcceptChanges Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.AcceptChanges Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.AcceptChanges Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.AcceptChanges Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.AcceptChanges Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -168,7 +180,7 @@
         <altmember cref="M:System.Data.DataRow.HasVersion(System.Data.DataRowVersion)" />
         <altmember cref="P:System.Data.DataRow.Item(System.Int32)" />
         <altmember cref="P:System.Data.DataRow.RowState" />
-        <related type="Article" href="~/docs/framework/data/adonet/dataset-datatable-dataview/index.md">Using DataSets in ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/dataset-datatable-dataview/">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="BeginEdit">
@@ -176,8 +188,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.BeginEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginEdit ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginEdit();" />
       <MemberSignature Language="F#" Value="member this.BeginEdit : unit -&gt; unit" Usage="dataRow.BeginEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -196,10 +208,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -226,8 +241,8 @@
 ## Examples  
  The example creates a simple <xref:System.Data.DataTable> with one <xref:System.Data.DataColumn> and five <xref:System.Data.DataRow> objects, and a <xref:System.Data.UniqueConstraint>. A <xref:System.Data.DataTable.RowChanged> event handler is also added to monitor when the row's value is changing. After invoking <xref:System.Data.DataRow.BeginEdit%2A> on the existing rows, the constraint and event are temporarily disabled and the original and proposed values are printed. The <xref:System.Data.DataRow.BeginEdit%2A> is again invoked to set two rows to the same value. When <xref:System.Data.DataRow.EndEdit%2A> is called, the <xref:System.Data.UniqueConstraint> is enforced on the identical values.  
   
- [!code-csharp[Classic WebData DataRow.BeginEdit Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.BeginEdit Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.BeginEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.BeginEdit Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.BeginEdit Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.BeginEdit Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -239,7 +254,7 @@
         <altmember cref="M:System.Data.DataRow.HasVersion(System.Data.DataRowVersion)" />
         <altmember cref="P:System.Data.DataRow.Item(System.Int32)" />
         <altmember cref="P:System.Data.DataRow.RowState" />
-        <related type="Article" href="~/docs/framework/data/adonet/dataset-datatable-dataview/index.md">Using DataSets in ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/dataset-datatable-dataview/">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CancelEdit">
@@ -247,8 +262,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.CancelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelEdit ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelEdit();" />
       <MemberSignature Language="F#" Value="member this.CancelEdit : unit -&gt; unit" Usage="dataRow.CancelEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -267,10 +282,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -290,8 +308,8 @@
 ## Examples  
  The following example edits the value of one column in the last row of a <xref:System.Windows.Forms.DataGrid> control. The example uses the <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, methods to edit the column's value and commit the change to the row.  
   
- [!code-csharp[Classic WebData DataRow.CancelEdit Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.CancelEdit Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.CancelEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.CancelEdit Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.CancelEdit Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.CancelEdit Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -303,7 +321,7 @@
         <altmember cref="M:System.Data.DataRow.HasVersion(System.Data.DataRowVersion)" />
         <altmember cref="P:System.Data.DataRow.Item(System.Int32)" />
         <altmember cref="P:System.Data.DataRow.RowState" />
-        <related type="Article" href="~/docs/framework/data/adonet/dataset-datatable-dataview/index.md">Using DataSets in ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/dataset-datatable-dataview/">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ClearErrors">
@@ -311,8 +329,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearErrors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.ClearErrors" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearErrors ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearErrors();" />
       <MemberSignature Language="F#" Value="member this.ClearErrors : unit -&gt; unit" Usage="dataRow.ClearErrors " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearErrors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -331,6 +349,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -353,8 +373,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.HasErrors%2A> to look for errors. If the row has errors, the <xref:System.Data.DataRow.GetColumnsInError%2A> method returns the array of columns with errors that can then be resolved. The <xref:System.Data.DataRow.ClearErrors%2A> method is then called to clear all errors.  
   
- [!code-csharp[Classic WebData DataRow.ClearErrors Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.ClearErrors Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.ClearErrors Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.ClearErrors Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.ClearErrors Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.ClearErrors Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -364,7 +384,7 @@
         <altmember cref="P:System.Data.DataRow.HasErrors" />
         <altmember cref="M:System.Data.DataRow.SetColumnError(System.Int32,System.String)" />
         <altmember cref="P:System.Data.DataRow.RowError" />
-        <related type="Article" href="~/docs/framework/data/adonet/dataset-datatable-dataview/index.md">Using DataSets in ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/dataset-datatable-dataview/">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -372,8 +392,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
       <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; unit" Usage="dataRow.Delete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -392,6 +412,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -419,8 +441,8 @@
 ## Examples  
  The following example creates a simple <xref:System.Data.DataTable> with two columns and ten rows. After deleting several <xref:System.Data.DataRow> items with the <xref:System.Data.DataRow.Delete%2A> method, one of the rows is undeleted by invoking <xref:System.Data.DataRow.RejectChanges%2A>.  
   
- [!code-csharp[Classic WebData DataRow.Delete Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.Delete Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.Delete Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.Delete Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.Delete Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.Delete Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -428,7 +450,7 @@
         <altmember cref="T:System.Data.DataRowState" />
         <altmember cref="T:System.Data.DataViewRowState" />
         <altmember cref="P:System.Data.DataRow.RowState" />
-        <related type="Article" href="~/docs/framework/data/adonet/dataset-datatable-dataview/index.md">Using DataSets in ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/dataset-datatable-dataview/">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="EndEdit">
@@ -436,8 +458,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.EndEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndEdit ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndEdit();" />
       <MemberSignature Language="F#" Value="member this.EndEdit : unit -&gt; unit" Usage="dataRow.EndEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -456,10 +478,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -479,8 +504,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.EndEdit%2A> method to end the edit of a <xref:System.Data.DataRow> value if the validation function returns true.  
   
- [!code-csharp[Classic WebData DataRow.CancelEdit Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.CancelEdit Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.CancelEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.CancelEdit Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.CancelEdit Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.CancelEdit Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -495,7 +520,7 @@
         <altmember cref="M:System.Data.DataRow.HasVersion(System.Data.DataRowVersion)" />
         <altmember cref="P:System.Data.DataRow.Item(System.Int32)" />
         <altmember cref="P:System.Data.DataRow.RowState" />
-        <related type="Article" href="~/docs/framework/data/adonet/dataset-datatable-dataview/index.md">Using DataSets in ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/dataset-datatable-dataview/">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetChildRows">
@@ -509,12 +534,13 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetChildRows">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (System.Data.DataRelation relation);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (System.Data.DataRelation? relation);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetChildRows(class System.Data.DataRelation relation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetChildRows(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildRows (relation As DataRelation) As DataRow()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::Data::DataRelation ^ relation);" />
       <MemberSignature Language="F#" Value="member this.GetChildRows : System.Data.DataRelation -&gt; System.Data.DataRow[]" Usage="dataRow.GetChildRows relation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (System.Data.DataRelation relation);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -533,6 +559,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -555,8 +583,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.GetChildRows%2A> to return the child <xref:System.Data.DataRow> objects for every child <xref:System.Data.DataRelation> in a <xref:System.Data.DataTable>. The value of each column in the row is then printed.  
   
- [!code-csharp[Classic WebData DataRow.GetChildRows2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetChildRows2 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.GetChildRows2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetChildRows2 Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetChildRows2 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetChildRows2 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -568,16 +596,17 @@
         <altmember cref="T:System.Data.DataRelation" />
         <altmember cref="M:System.Data.DataRow.GetParentRows(System.String)" />
         <altmember cref="P:System.Data.DataSet.Relations" />
-        <related type="Article" href="~/docs/framework/data/adonet/dataset-datatable-dataview/index.md">Using DataSets in ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/dataset-datatable-dataview/">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildRows">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (string relationName);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (string? relationName);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetChildRows(string relationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetChildRows(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildRows (relationName As String) As DataRow()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::String ^ relationName);" />
       <MemberSignature Language="F#" Value="member this.GetChildRows : string -&gt; System.Data.DataRow[]" Usage="dataRow.GetChildRows relationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::String ^ relationName);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (string relationName);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -596,6 +625,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -620,12 +651,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetChildRows">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (System.Data.DataRelation relation, System.Data.DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (System.Data.DataRelation? relation, System.Data.DataRowVersion version);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetChildRows(class System.Data.DataRelation relation, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetChildRows(System.Data.DataRelation,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildRows (relation As DataRelation, version As DataRowVersion) As DataRow()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::Data::DataRelation ^ relation, System::Data::DataRowVersion version);" />
       <MemberSignature Language="F#" Value="member this.GetChildRows : System.Data.DataRelation * System.Data.DataRowVersion -&gt; System.Data.DataRow[]" Usage="dataRow.GetChildRows (relation, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::Data::DataRelation ^ relation, System::Data::DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (System.Data.DataRelation relation, System.Data.DataRowVersion version);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -644,6 +676,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -672,8 +706,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.GetChildRows%2A> to return the child <xref:System.Data.DataRow> objects for every child <xref:System.Data.DataRelation> in a <xref:System.Data.DataTable>. The value of each column with the specified version in the row is then printed.  
   
- [!code-csharp[Classic WebData DataRow.GetChildRows3 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetChildRows3 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.GetChildRows3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetChildRows3 Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetChildRows3 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetChildRows3 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -687,16 +721,17 @@
         <altmember cref="M:System.Data.DataRow.GetParentRow(System.String)" />
         <altmember cref="M:System.Data.DataRow.GetParentRows(System.String)" />
         <altmember cref="P:System.Data.DataSet.Relations" />
-        <related type="Article" href="~/docs/framework/data/adonet/dataset-datatable-dataview/index.md">Using DataSets in ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/dataset-datatable-dataview/">Using DataSets in ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildRows">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (string relationName, System.Data.DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (string? relationName, System.Data.DataRowVersion version);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetChildRows(string relationName, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetChildRows(System.String,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildRows (relationName As String, version As DataRowVersion) As DataRow()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::String ^ relationName, System::Data::DataRowVersion version);" />
       <MemberSignature Language="F#" Value="member this.GetChildRows : string * System.Data.DataRowVersion -&gt; System.Data.DataRow[]" Usage="dataRow.GetChildRows (relationName, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::String ^ relationName, System::Data::DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (string relationName, System.Data.DataRowVersion version);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -715,6 +750,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -761,8 +798,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetColumnError(class System.Data.DataColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetColumnError(System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnError (column As DataColumn) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetColumnError(System::Data::DataColumn ^ column);" />
       <MemberSignature Language="F#" Value="member this.GetColumnError : System.Data.DataColumn -&gt; string" Usage="dataRow.GetColumnError column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetColumnError(System::Data::DataColumn ^ column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -781,6 +818,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -807,8 +846,8 @@
 ## Examples  
  The following example sets an error description for a specified <xref:System.Data.DataRow>.  
   
- [!code-csharp[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -828,8 +867,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetColumnError(int32 columnIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetColumnError(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnError (columnIndex As Integer) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetColumnError(int columnIndex);" />
       <MemberSignature Language="F#" Value="member this.GetColumnError : int -&gt; string" Usage="dataRow.GetColumnError columnIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetColumnError(int columnIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -848,6 +887,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -874,8 +915,8 @@
 ## Examples  
  The following example sets an error description for a specified <xref:System.Data.DataRow>.  
   
- [!code-csharp[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -895,8 +936,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetColumnError(string columnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetColumnError(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnError (columnName As String) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetColumnError(System::String ^ columnName);" />
       <MemberSignature Language="F#" Value="member this.GetColumnError : string -&gt; string" Usage="dataRow.GetColumnError columnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetColumnError(System::String ^ columnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -915,6 +956,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -941,8 +984,8 @@
 ## Examples  
  The following example sets an error description for a specified <xref:System.Data.DataRow>.  
   
- [!code-csharp[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -961,8 +1004,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn[] GetColumnsInError() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetColumnsInError" />
       <MemberSignature Language="VB.NET" Value="Public Function GetColumnsInError () As DataColumn()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataColumn ^&gt; ^ GetColumnsInError();" />
       <MemberSignature Language="F#" Value="member this.GetColumnsInError : unit -&gt; System.Data.DataColumn[]" Usage="dataRow.GetColumnsInError " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataColumn ^&gt; ^ GetColumnsInError();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -981,6 +1024,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataColumn[]</ReturnType>
@@ -1002,8 +1047,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.HasErrors%2A> to look for errors. If the row has errors, the <xref:System.Data.DataRow.GetColumnsInError%2A> method returns the array of columns with errors that can then be resolved. The <xref:System.Data.DataRow.ClearErrors%2A> method is then called to clear all errors.  
   
- [!code-csharp[Classic WebData DataRow.ClearErrors Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.ClearErrors Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.ClearErrors Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.ClearErrors Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.ClearErrors Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.ClearErrors Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1026,12 +1071,13 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetParentRow">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (System.Data.DataRelation relation);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow? GetParentRow (System.Data.DataRelation? relation);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow GetParentRow(class System.Data.DataRelation relation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRow(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentRow (relation As DataRelation) As DataRow" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::Data::DataRelation ^ relation);" />
       <MemberSignature Language="F#" Value="member this.GetParentRow : System.Data.DataRelation -&gt; System.Data.DataRow" Usage="dataRow.GetParentRow relation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (System.Data.DataRelation relation);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1050,6 +1096,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow</ReturnType>
@@ -1074,8 +1122,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.GetParentRow%2A> to return the child <xref:System.Data.DataRow> objects for every child <xref:System.Data.DataRelation> in a <xref:System.Data.DataTable>. The value of each column in the row is then printed.  
   
- [!code-csharp[Classic WebData DataRow.GetParentRow2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow2 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.GetParentRow2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow2 Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow2 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow2 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1095,12 +1143,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetParentRow">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (string relationName);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow? GetParentRow (string? relationName);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow GetParentRow(string relationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRow(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentRow (relationName As String) As DataRow" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::String ^ relationName);" />
       <MemberSignature Language="F#" Value="member this.GetParentRow : string -&gt; System.Data.DataRow" Usage="dataRow.GetParentRow relationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::String ^ relationName);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (string relationName);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1119,6 +1168,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow</ReturnType>
@@ -1143,8 +1194,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.GetParentRow%2A> to print a value from each parent row of each <xref:System.Data.DataRow> in a <xref:System.Data.DataTable>.  
   
- [!code-csharp[Classic WebData DataRow.GetParentRow Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.GetParentRow Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1154,12 +1205,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetParentRow">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (System.Data.DataRelation relation, System.Data.DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow? GetParentRow (System.Data.DataRelation? relation, System.Data.DataRowVersion version);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow GetParentRow(class System.Data.DataRelation relation, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRow(System.Data.DataRelation,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentRow (relation As DataRelation, version As DataRowVersion) As DataRow" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::Data::DataRelation ^ relation, System::Data::DataRowVersion version);" />
       <MemberSignature Language="F#" Value="member this.GetParentRow : System.Data.DataRelation * System.Data.DataRowVersion -&gt; System.Data.DataRow" Usage="dataRow.GetParentRow (relation, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::Data::DataRelation ^ relation, System::Data::DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (System.Data.DataRelation relation, System.Data.DataRowVersion version);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1178,6 +1230,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow</ReturnType>
@@ -1206,8 +1260,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.GetParentRow%2A> to return the child <xref:System.Data.DataRow> objects for every child <xref:System.Data.DataRelation> in a <xref:System.Data.DataTable>. The value of each column in the row is then printed.  
   
- [!code-csharp[Classic WebData DataRow.GetParentRow3 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow3 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.GetParentRow3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow3 Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow3 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow3 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1229,12 +1283,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetParentRow">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (string relationName, System.Data.DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow? GetParentRow (string? relationName, System.Data.DataRowVersion version);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow GetParentRow(string relationName, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRow(System.String,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentRow (relationName As String, version As DataRowVersion) As DataRow" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::String ^ relationName, System::Data::DataRowVersion version);" />
       <MemberSignature Language="F#" Value="member this.GetParentRow : string * System.Data.DataRowVersion -&gt; System.Data.DataRow" Usage="dataRow.GetParentRow (relationName, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::String ^ relationName, System::Data::DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (string relationName, System.Data.DataRowVersion version);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1253,6 +1308,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow</ReturnType>
@@ -1281,8 +1338,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.GetParentRow%2A> to print a value from each parent row of each <xref:System.Data.DataRow> in a <xref:System.Data.DataTable>.  
   
- [!code-csharp[Classic WebData DataRow.GetParentRow1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.GetParentRow1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow1 Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow1 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRow1 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1304,12 +1361,13 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetParentRows">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (System.Data.DataRelation relation);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (System.Data.DataRelation? relation);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetParentRows(class System.Data.DataRelation relation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRows(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentRows (relation As DataRelation) As DataRow()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::Data::DataRelation ^ relation);" />
       <MemberSignature Language="F#" Value="member this.GetParentRows : System.Data.DataRelation -&gt; System.Data.DataRow[]" Usage="dataRow.GetParentRows relation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (System.Data.DataRelation relation);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1328,6 +1386,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -1352,7 +1412,7 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.GetParentRows%2A> to return the child <xref:System.Data.DataRow> objects for every child <xref:System.Data.DataRelation> in a <xref:System.Data.DataTable>. The value of each column in the row is then printed.  
   
- [!code-vb[Classic WebData DataRow.GetParentRows2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRows2 Example/VB/source.vb#1)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRows2 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1368,12 +1428,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetParentRows">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (string relationName);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (string? relationName);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetParentRows(string relationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRows(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentRows (relationName As String) As DataRow()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::String ^ relationName);" />
       <MemberSignature Language="F#" Value="member this.GetParentRows : string -&gt; System.Data.DataRow[]" Usage="dataRow.GetParentRows relationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::String ^ relationName);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (string relationName);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1392,6 +1453,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -1418,12 +1481,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetParentRows">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (System.Data.DataRelation relation, System.Data.DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (System.Data.DataRelation? relation, System.Data.DataRowVersion version);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetParentRows(class System.Data.DataRelation relation, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRows(System.Data.DataRelation,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentRows (relation As DataRelation, version As DataRowVersion) As DataRow()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::Data::DataRelation ^ relation, System::Data::DataRowVersion version);" />
       <MemberSignature Language="F#" Value="member this.GetParentRows : System.Data.DataRelation * System.Data.DataRowVersion -&gt; System.Data.DataRow[]" Usage="dataRow.GetParentRows (relation, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::Data::DataRelation ^ relation, System::Data::DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (System.Data.DataRelation relation, System.Data.DataRowVersion version);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1442,6 +1506,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -1470,7 +1536,7 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.GetParentRows%2A> to return the child <xref:System.Data.DataRow> objects for every child <xref:System.Data.DataRelation> in a <xref:System.Data.DataTable>. The value of each column in the row is then printed.  
   
- [!code-vb[Classic WebData DataRow.GetParentRows3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRows3 Example/VB/source.vb#1)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.GetParentRows3 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1487,12 +1553,13 @@
       </Docs>
     </Member>
     <Member MemberName="GetParentRows">
-      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (string relationName, System.Data.DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (string? relationName, System.Data.DataRowVersion version);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetParentRows(string relationName, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRows(System.String,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParentRows (relationName As String, version As DataRowVersion) As DataRow()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::String ^ relationName, System::Data::DataRowVersion version);" />
       <MemberSignature Language="F#" Value="member this.GetParentRows : string * System.Data.DataRowVersion -&gt; System.Data.DataRow[]" Usage="dataRow.GetParentRows (relationName, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::String ^ relationName, System::Data::DataRowVersion version);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (string relationName, System.Data.DataRowVersion version);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1511,6 +1578,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -1547,8 +1616,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool HasErrors" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.HasErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasErrors As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrors { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.HasErrors : bool" Usage="System.Data.DataRow.HasErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrors { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1567,6 +1636,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1594,8 +1665,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.HasErrors%2A> to look for errors. If the row has errors, the <xref:System.Data.DataRow.GetColumnsInError%2A> method returns the array of columns with errors that can then be resolved. The <xref:System.Data.DataRow.ClearErrors%2A> method is then called to clear all errors.  
   
- [!code-csharp[Classic WebData DataRow.HasErrors Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.HasErrors Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.HasErrors Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.HasErrors Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.HasErrors Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.HasErrors Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1611,8 +1682,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasVersion(valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.HasVersion(System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Function HasVersion (version As DataRowVersion) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasVersion(System::Data::DataRowVersion version);" />
       <MemberSignature Language="F#" Value="member this.HasVersion : System.Data.DataRowVersion -&gt; bool" Usage="dataRow.HasVersion version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasVersion(System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1631,6 +1702,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1654,7 +1727,7 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.HasVersion%2A> method to determine whether the current value of a column and the proposed value are the same. If so, the edit is canceled. Otherwise, the <xref:System.Data.DataRow.AcceptChanges%2A> method is called to end the edit.  
   
- [!code-vb[Classic WebData DataRow.HasVersion Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.HasVersion Example/VB/source.vb#1)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.HasVersion Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1683,8 +1756,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNull(class System.Data.DataColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.IsNull(System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsNull (column As DataColumn) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(System::Data::DataColumn ^ column);" />
       <MemberSignature Language="F#" Value="member this.IsNull : System.Data.DataColumn -&gt; bool" Usage="dataRow.IsNull column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(System::Data::DataColumn ^ column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1703,6 +1776,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1721,7 +1796,7 @@
 ## Examples  
  The following example prints each column of each row in each table of a <xref:System.Data.DataSet>. If the row is set to a null value, the value is not printed.  
   
- [!code-vb[Classic WebData DataRow.IsNull2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.IsNull2 Example/VB/source.vb#1)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.IsNull2 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1735,8 +1810,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNull(int32 columnIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.IsNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsNull (columnIndex As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(int columnIndex);" />
       <MemberSignature Language="F#" Value="member this.IsNull : int -&gt; bool" Usage="dataRow.IsNull columnIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(int columnIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1755,6 +1830,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1773,7 +1850,7 @@
 ## Examples  
  The following example changes the value of a column to a null value, and then uses the <xref:System.Data.DataRow.IsNull%2A> method to determine whether the value is null.  
   
- [!code-vb[Classic WebData DataRow.IsNull Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.IsNull Example/VB/source.vb#1)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.IsNull Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1786,8 +1863,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNull(string columnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.IsNull(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsNull (columnName As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(System::String ^ columnName);" />
       <MemberSignature Language="F#" Value="member this.IsNull : string -&gt; bool" Usage="dataRow.IsNull columnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(System::String ^ columnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1806,6 +1883,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1824,7 +1903,7 @@
 ## Examples  
  The following example changes the value of a column to a null value, and then uses the <xref:System.Data.DataRow.IsNull%2A> method to determine whether the value is null.  
   
- [!code-vb[Classic WebData DataRow.IsNull1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.IsNull1 Example/VB/source.vb#1)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.IsNull1 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1839,8 +1918,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNull(class System.Data.DataColumn column, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.IsNull(System.Data.DataColumn,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsNull (column As DataColumn, version As DataRowVersion) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(System::Data::DataColumn ^ column, System::Data::DataRowVersion version);" />
       <MemberSignature Language="F#" Value="member this.IsNull : System.Data.DataColumn * System.Data.DataRowVersion -&gt; bool" Usage="dataRow.IsNull (column, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(System::Data::DataColumn ^ column, System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1859,6 +1938,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1895,8 +1976,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Item(class System.Data.DataColumn)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(column As DataColumn) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Data::DataColumn ^] { System::Object ^ get(System::Data::DataColumn ^ column); void set(System::Data::DataColumn ^ column, System::Object ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Item(System.Data.DataColumn) : obj with get, set" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Data::DataColumn ^] { System::Object ^ get(System::Data::DataColumn ^ column); void set(System::Data::DataColumn ^ column, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1915,6 +1996,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1939,7 +2022,7 @@
 ## Examples  
  The following examples demonstrate the use of the <xref:System.Data.DataRow.Item%2A> property to get and set the value of a specific column index. The first example gets the value of the first column in any row that a user clicks in a <xref:System.Windows.Forms.DataGrid> control. The second sets a value passed as an argument to the method.  
   
- [!code-vb[Classic WebData DataRow.this2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this2 Example/VB/source.vb#1)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this2 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1954,8 +2037,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(columnIndex As Integer) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int columnIndex); void set(int columnIndex, System::Object ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int columnIndex); void set(int columnIndex, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1974,6 +2057,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1998,8 +2083,8 @@
 ## Examples  
  The following examples demonstrate the use of the <xref:System.Data.DataRow.Item%2A> property to get and set the value of a specific column index. The first example gets the value of the first column in any row that a user clicks in a <xref:System.Windows.Forms.DataGrid> control.  
   
- [!code-csharp[Classic WebData DataRow.this Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.this Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.this Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2013,8 +2098,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(columnName As String) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ columnName); void set(System::String ^ columnName, System::Object ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ columnName); void set(System::String ^ columnName, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2033,6 +2118,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -2057,8 +2144,8 @@
 ## Examples  
  The following examples demonstrate the use of the <xref:System.Data.DataRow.Item%2A> property to get and set the value of a specific column index. The first example gets the value of the first column in any row that a user clicks in a <xref:System.Windows.Forms.DataGrid> control. The second sets a value passed as an argument to the method.  
   
- [!code-csharp[Classic WebData DataRow.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.this1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this1 Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.this1 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this1 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2073,8 +2160,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Item(class System.Data.DataColumn, valuetype System.Data.DataRowVersion)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.Data.DataColumn,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(column As DataColumn, version As DataRowVersion) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Data::DataColumn ^, System::Data::DataRowVersion] { System::Object ^ get(System::Data::DataColumn ^ column, System::Data::DataRowVersion version); };" />
       <MemberSignature Language="F#" Value="member this.Item(System.Data.DataColumn * System.Data.DataRowVersion) : obj" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Data::DataColumn ^, System::Data::DataRowVersion] { System::Object ^ get(System::Data::DataColumn ^ column, System::Data::DataRowVersion version); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2093,6 +2180,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -2121,8 +2210,8 @@
 ## Examples  
  The following example gets the current value of a clicked cell in the <xref:System.Windows.Forms.DataGrid> control.  
   
- [!code-csharp[Classic WebData DataRow.this5 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.this5 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.this5 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this5 Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.this5 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this5 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2137,8 +2226,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32, valuetype System.Data.DataRowVersion)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.Int32,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(columnIndex As Integer, version As DataRowVersion) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int, System::Data::DataRowVersion] { System::Object ^ get(int columnIndex, System::Data::DataRowVersion version); };" />
       <MemberSignature Language="F#" Value="member this.Item(int * System.Data.DataRowVersion) : obj" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int, System::Data::DataRowVersion] { System::Object ^ get(int columnIndex, System::Data::DataRowVersion version); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2157,6 +2246,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -2192,7 +2283,7 @@
 ## Examples  
  The following example gets the current value of a column through the <xref:System.Data.DataRow.Item%2A> property of the <xref:System.Data.DataRow> object.  
   
- [!code-vb[Classic WebData DataRow.this3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this3 Example/VB/source.vb#1)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this3 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2207,8 +2298,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string, valuetype System.Data.DataRowVersion)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.String,System.Data.DataRowVersion)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(columnName As String, version As DataRowVersion) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^, System::Data::DataRowVersion] { System::Object ^ get(System::String ^ columnName, System::Data::DataRowVersion version); };" />
       <MemberSignature Language="F#" Value="member this.Item(string * System.Data.DataRowVersion) : obj" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^, System::Data::DataRowVersion] { System::Object ^ get(System::String ^ columnName, System::Data::DataRowVersion version); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2227,6 +2318,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -2255,8 +2348,8 @@
 ## Examples  
  The following example gets the current version of data at a clicked cell of a <xref:System.Windows.Forms.DataGrid> control.  
   
- [!code-csharp[Classic WebData DataRow.this4 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.this4 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.this4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this4 Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.this4 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.this4 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2268,12 +2361,13 @@
       </Docs>
     </Member>
     <Member MemberName="ItemArray">
-      <MemberSignature Language="C#" Value="public object[] ItemArray { get; set; }" />
+      <MemberSignature Language="C#" Value="public object?[] ItemArray { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".property instance object[] ItemArray" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.ItemArray" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemArray As Object()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ ItemArray { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ItemArray : obj[] with get, set" Usage="System.Data.DataRow.ItemArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ ItemArray { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
+      <MemberSignature Language="C#" Value="public object[] ItemArray { get; set; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2292,6 +2386,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
@@ -2312,8 +2408,8 @@
 ## Examples  
  The following examples show how to get and set values using the <xref:System.Data.DataRow.ItemArray%2A> property.  
   
- [!code-csharp[Classic WebData DataRow.ItemArray Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.ItemArray Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.ItemArray Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.ItemArray Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.ItemArray Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.ItemArray Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2333,8 +2429,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RejectChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.RejectChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub RejectChanges ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RejectChanges();" />
       <MemberSignature Language="F#" Value="member this.RejectChanges : unit -&gt; unit" Usage="dataRow.RejectChanges " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RejectChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2353,6 +2449,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2371,8 +2469,8 @@
 ## Examples  
  The following example creates a simple <xref:System.Data.DataTable> with 2 columns and 10 rows. After several <xref:System.Data.DataRow> items are deleted with the <xref:System.Data.DataRow.Delete%2A> method, one of the rows is undeleted by invoking <xref:System.Data.DataRow.RejectChanges%2A>.  
   
- [!code-csharp[Classic WebData DataRow.Delete Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.Delete Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.Delete Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.Delete Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.Delete Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.Delete Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2386,8 +2484,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string RowError" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.RowError" />
       <MemberSignature Language="VB.NET" Value="Public Property RowError As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RowError { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.RowError : string with get, set" Usage="System.Data.DataRow.RowError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RowError { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2406,6 +2504,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2424,8 +2524,8 @@
 ## Examples  
  The following example sets error text for ten rows of a table displayed in a <xref:System.Windows.Forms.DataGrid> control.  
   
- [!code-csharp[Classic WebData DataRow.RowError Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.RowError Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.RowError Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.RowError Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.RowError Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.RowError Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2438,8 +2538,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataRowState RowState" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.RowState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowState As DataRowState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRowState RowState { System::Data::DataRowState get(); };" />
       <MemberSignature Language="F#" Value="member this.RowState : System.Data.DataRowState" Usage="System.Data.DataRow.RowState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRowState RowState { System::Data::DataRowState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2458,6 +2558,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowState</ReturnType>
@@ -2476,8 +2578,8 @@
 ## Examples  
  The following example first creates a new <xref:System.Data.DataTable> with one column, and then creates a single <xref:System.Data.DataRow>. As the <xref:System.Data.DataRow> is created, added, modified, and deleted, its <xref:System.Data.DataRow.RowState*> is printed.  
   
- [!code-csharp[Classic WebData DataRow.RowState Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.RowState Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.RowState Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.RowState Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.RowState Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.RowState Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2499,8 +2601,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAdded() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetAdded" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAdded ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAdded();" />
       <MemberSignature Language="F#" Value="member this.SetAdded : unit -&gt; unit" Usage="dataRow.SetAdded " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAdded();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2518,6 +2620,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2548,12 +2652,13 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="SetColumnError">
-      <MemberSignature Language="C#" Value="public void SetColumnError (System.Data.DataColumn column, string error);" />
+      <MemberSignature Language="C#" Value="public void SetColumnError (System.Data.DataColumn column, string? error);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumnError(class System.Data.DataColumn column, string error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetColumnError(System.Data.DataColumn,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetColumnError (column As DataColumn, error As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnError(System::Data::DataColumn ^ column, System::String ^ error);" />
       <MemberSignature Language="F#" Value="member this.SetColumnError : System.Data.DataColumn * string -&gt; unit" Usage="dataRow.SetColumnError (column, error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnError(System::Data::DataColumn ^ column, System::String ^ error);" />
+      <MemberSignature Language="C#" Value="public void SetColumnError (System.Data.DataColumn column, string error);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2572,6 +2677,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2605,8 +2712,8 @@
 ## Examples  
  The following example sets an error description for a specified <xref:System.Data.DataRow>.  
   
- [!code-csharp[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2620,12 +2727,13 @@
       </Docs>
     </Member>
     <Member MemberName="SetColumnError">
-      <MemberSignature Language="C#" Value="public void SetColumnError (int columnIndex, string error);" />
+      <MemberSignature Language="C#" Value="public void SetColumnError (int columnIndex, string? error);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumnError(int32 columnIndex, string error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetColumnError(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetColumnError (columnIndex As Integer, error As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnError(int columnIndex, System::String ^ error);" />
       <MemberSignature Language="F#" Value="member this.SetColumnError : int * string -&gt; unit" Usage="dataRow.SetColumnError (columnIndex, error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnError(int columnIndex, System::String ^ error);" />
+      <MemberSignature Language="C#" Value="public void SetColumnError (int columnIndex, string error);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2644,6 +2752,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2679,8 +2789,8 @@
 ## Examples  
  The following example sets an error description for a specified <xref:System.Data.DataRow>.  
   
- [!code-csharp[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2695,12 +2805,13 @@
       </Docs>
     </Member>
     <Member MemberName="SetColumnError">
-      <MemberSignature Language="C#" Value="public void SetColumnError (string columnName, string error);" />
+      <MemberSignature Language="C#" Value="public void SetColumnError (string columnName, string? error);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumnError(string columnName, string error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetColumnError(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetColumnError (columnName As String, error As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnError(System::String ^ columnName, System::String ^ error);" />
       <MemberSignature Language="F#" Value="member this.SetColumnError : string * string -&gt; unit" Usage="dataRow.SetColumnError (columnName, error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnError(System::String ^ columnName, System::String ^ error);" />
+      <MemberSignature Language="C#" Value="public void SetColumnError (string columnName, string error);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2719,6 +2830,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2754,8 +2867,8 @@
 ## Examples  
  The following example sets an error description for a specified <xref:System.Data.DataRow>.  
   
- [!code-csharp[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.SetColumnError Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetColumnError Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2773,8 +2886,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetModified() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetModified" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetModified ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetModified();" />
       <MemberSignature Language="F#" Value="member this.SetModified : unit -&gt; unit" Usage="dataRow.SetModified " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2792,6 +2905,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2816,8 +2931,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetNull(class System.Data.DataColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetNull(System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetNull (column As DataColumn)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetNull(System::Data::DataColumn ^ column);" />
       <MemberSignature Language="F#" Value="member this.SetNull : System.Data.DataColumn -&gt; unit" Usage="dataRow.SetNull column" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetNull(System::Data::DataColumn ^ column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2836,6 +2951,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2867,12 +2984,13 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="SetParentRow">
-      <MemberSignature Language="C#" Value="public void SetParentRow (System.Data.DataRow parentRow);" />
+      <MemberSignature Language="C#" Value="public void SetParentRow (System.Data.DataRow? parentRow);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParentRow(class System.Data.DataRow parentRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetParentRow(System.Data.DataRow)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetParentRow (parentRow As DataRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParentRow(System::Data::DataRow ^ parentRow);" />
       <MemberSignature Language="F#" Value="member this.SetParentRow : System.Data.DataRow -&gt; unit" Usage="dataRow.SetParentRow parentRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParentRow(System::Data::DataRow ^ parentRow);" />
+      <MemberSignature Language="C#" Value="public void SetParentRow (System.Data.DataRow parentRow);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2891,6 +3009,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2905,12 +3025,13 @@
       </Docs>
     </Member>
     <Member MemberName="SetParentRow">
-      <MemberSignature Language="C#" Value="public void SetParentRow (System.Data.DataRow parentRow, System.Data.DataRelation relation);" />
+      <MemberSignature Language="C#" Value="public void SetParentRow (System.Data.DataRow? parentRow, System.Data.DataRelation? relation);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParentRow(class System.Data.DataRow parentRow, class System.Data.DataRelation relation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetParentRow(System.Data.DataRow,System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetParentRow (parentRow As DataRow, relation As DataRelation)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParentRow(System::Data::DataRow ^ parentRow, System::Data::DataRelation ^ relation);" />
       <MemberSignature Language="F#" Value="member this.SetParentRow : System.Data.DataRow * System.Data.DataRelation -&gt; unit" Usage="dataRow.SetParentRow (parentRow, relation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParentRow(System::Data::DataRow ^ parentRow, System::Data::DataRelation ^ relation);" />
+      <MemberSignature Language="C#" Value="public void SetParentRow (System.Data.DataRow parentRow, System.Data.DataRelation relation);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2929,6 +3050,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2947,7 +3070,7 @@
 ## Examples  
  The following example sets the parent row of a specific child row.  
   
- [!code-vb[Classic WebData DataRow.SetParentRow1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetParentRow1 Example/VB/source.vb#1)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.SetParentRow1 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2962,8 +3085,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataTable Table" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Table" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As DataTable" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Table : System.Data.DataTable" Usage="System.Data.DataRow.Table" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2982,6 +3105,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -3000,8 +3125,8 @@
 ## Examples  
  The following example uses the <xref:System.Data.DataRow.Table%2A> property to return a reference to the columns collection of the <xref:System.Data.DataTable>.  
   
- [!code-csharp[Classic WebData DataRow.Table Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.Table Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRow.Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.Table Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.Table Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.Table Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

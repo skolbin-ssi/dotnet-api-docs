@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPageableItemContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IPageableItemContainer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPageableItemContainer" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IPageableItemContainer" />
   <TypeSignature Language="F#" Value="type IPageableItemContainer = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPageableItemContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -28,7 +28,7 @@
     <altmember cref="T:System.Web.UI.WebControls.DataPager" />
     <altmember cref="M:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable(System.Object,System.Web.UI.WebControls.PageEventArgs)" />
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
-    <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb398790(v=vs.100)">ListView Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName="MaximumRows">
@@ -36,8 +36,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumRows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumRows As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumRows { int get(); };" />
       <MemberSignature Language="F#" Value="member this.MaximumRows : int" Usage="System.Web.UI.WebControls.IPageableItemContainer.MaximumRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumRows { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -51,7 +51,7 @@
         <summary>Gets the maximum number of items to display on a single page of data.</summary>
         <value>The maximum number of items to display on a single page of data.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb398790(v=vs.100)">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SetPageProperties">
@@ -59,8 +59,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPageProperties(int32 startRowIndex, int32 maximumRows, bool databind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPageProperties (startRowIndex As Integer, maximumRows As Integer, databind As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPageProperties(int startRowIndex, int maximumRows, bool databind);" />
       <MemberSignature Language="F#" Value="abstract member SetPageProperties : int * int * bool -&gt; unit" Usage="iPageableItemContainer.SetPageProperties (startRowIndex, maximumRows, databind)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPageProperties(int startRowIndex, int maximumRows, bool databind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -92,7 +92,7 @@
         <altmember cref="P:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows" />
         <altmember cref="P:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex" />
         <altmember cref="T:System.Web.UI.WebControls.DataPager" />
-        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb398790(v=vs.100)">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartRowIndex">
@@ -100,8 +100,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartRowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartRowIndex As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartRowIndex { int get(); };" />
       <MemberSignature Language="F#" Value="member this.StartRowIndex : int" Usage="System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartRowIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -115,7 +115,7 @@
         <summary>Gets the index of the first record that is displayed on a page of data.</summary>
         <value>The index of the first record that is displayed on a page of data.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb398790(v=vs.100)">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="TotalRowCountAvailable">
@@ -123,8 +123,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.PageEventArgs&gt; TotalRowCountAvailable" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable" />
       <MemberSignature Language="VB.NET" Value="Event TotalRowCountAvailable As EventHandler(Of PageEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::PageEventArgs ^&gt; ^ TotalRowCountAvailable;" />
       <MemberSignature Language="F#" Value="member this.TotalRowCountAvailable : EventHandler&lt;System.Web.UI.WebControls.PageEventArgs&gt; " Usage="member this.TotalRowCountAvailable : System.EventHandler&lt;System.Web.UI.WebControls.PageEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::PageEventArgs ^&gt; ^ TotalRowCountAvailable;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -145,7 +145,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataPager" />
-        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb398790(v=vs.100)">ListView Web Server Control</related>
       </Docs>
     </Member>
   </Members>

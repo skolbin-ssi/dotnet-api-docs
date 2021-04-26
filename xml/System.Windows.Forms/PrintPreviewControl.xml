@@ -3,13 +3,15 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintPreviewControl extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintPreviewControl" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintPreviewControl&#xA;Inherits Control" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PrintPreviewControl : System::Windows::Forms::Control" />
   <TypeSignature Language="F#" Value="type PrintPreviewControl = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintPreviewControl : System::Windows::Forms::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Forms.Control</BaseTypeName>
@@ -17,13 +19,16 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultProperty("Document")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultProperty("Document")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultProperty("Document")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1">
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    <Attribute FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,9 +46,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -62,6 +67,8 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -87,9 +94,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -100,21 +107,25 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoZoom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.AutoZoom" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoZoom As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoZoom { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AutoZoom : bool with get, set" Usage="System.Windows.Forms.PrintPreviewControl.AutoZoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoZoom { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -133,21 +144,25 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Columns" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Columns" />
       <MemberSignature Language="VB.NET" Value="Public Property Columns As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Columns { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Columns : int with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Columns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Columns { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(1)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -166,14 +181,16 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.PrintPreviewControl.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
@@ -190,21 +207,25 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrintDocument Document" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Document" />
       <MemberSignature Language="VB.NET" Value="Public Property Document As PrintDocument" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintDocument ^ Document { System::Drawing::Printing::PrintDocument ^ get(); void set(System::Drawing::Printing::PrintDocument ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Document : System.Drawing.Printing.PrintDocument with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintDocument ^ Document { System::Drawing::Printing::PrintDocument ^ get(); void set(System::Drawing::Printing::PrintDocument ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -219,9 +240,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -233,14 +254,16 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InvalidatePreview() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.InvalidatePreview" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvalidatePreview ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidatePreview();" />
       <MemberSignature Language="F#" Value="member this.InvalidatePreview : unit -&gt; unit" Usage="printPreviewControl.InvalidatePreview " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidatePreview();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -263,14 +286,16 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs pevent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (pevent As PaintEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ pevent);" />
       <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="printPreviewControl.OnPaint pevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ pevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -288,14 +313,17 @@
       <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs eventargs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs eventargs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.OnResize(System.EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ eventargs);" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (eventargs As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="printPreviewControl.OnResize eventargs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ eventargs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -321,14 +349,16 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStartPageChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.OnStartPageChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStartPageChanged (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStartPageChanged(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnStartPageChanged : EventArgs -&gt; unit&#xA;override this.OnStartPageChanged : EventArgs -&gt; unit" Usage="printPreviewControl.OnStartPageChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStartPageChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -343,7 +373,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.PrintPreviewControl.OnStartPageChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -359,18 +389,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.ResetBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetBackColor ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetBackColor();" />
       <MemberSignature Language="F#" Value="override this.ResetBackColor : unit -&gt; unit" Usage="printPreviewControl.ResetBackColor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -394,18 +427,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetForeColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.ResetForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetForeColor ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetForeColor();" />
       <MemberSignature Language="F#" Value="override this.ResetForeColor : unit -&gt; unit" Usage="printPreviewControl.ResetForeColor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -429,20 +465,24 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RightToLeft RightToLeft" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property RightToLeft As RightToLeft" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::RightToLeft RightToLeft { System::Windows::Forms::RightToLeft get(); void set(System::Windows::Forms::RightToLeft value); };" />
       <MemberSignature Language="F#" Value="member this.RightToLeft : System.Windows.Forms.RightToLeft with get, set" Usage="System.Windows.Forms.PrintPreviewControl.RightToLeft" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::RightToLeft RightToLeft { System::Windows::Forms::RightToLeft get(); void set(System::Windows::Forms::RightToLeft value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1">
-          <AttributeName>System.ComponentModel.AmbientValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.AmbientValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.AmbientValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1">
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -460,21 +500,25 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Rows" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Rows" />
       <MemberSignature Language="VB.NET" Value="Public Property Rows As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rows { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Rows : int with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Rows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rows { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(1)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -492,18 +536,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartPage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.StartPage" />
       <MemberSignature Language="VB.NET" Value="Public Property StartPage As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartPage { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.StartPage : int with get, set" Usage="System.Windows.Forms.PrintPreviewControl.StartPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartPage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -521,14 +568,16 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StartPageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewControl.StartPageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event StartPageChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StartPageChanged;" />
       <MemberSignature Language="F#" Value="member this.StartPageChanged : EventHandler " Usage="member this.StartPageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StartPageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -539,7 +588,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
@@ -548,8 +597,8 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PrintPreviewControl> named `PrintPreviewControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PrintPreviewControl.StartPageChanged> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#654](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#654)]
- [!code-vb[System.Windows.Forms.EventExamples#654](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#654)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs" id="Snippet654":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet654":::  
   
  ]]></format>
         </remarks>
@@ -560,27 +609,33 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -598,21 +653,25 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewControl.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -628,24 +687,29 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool UseAntiAlias" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.UseAntiAlias" />
       <MemberSignature Language="VB.NET" Value="Public Property UseAntiAlias As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAntiAlias { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.UseAntiAlias : bool with get, set" Usage="System.Windows.Forms.PrintPreviewControl.UseAntiAlias" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAntiAlias { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -666,9 +730,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -679,14 +743,16 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberSignature Language="F#" Value="override this.WndProc : Message -&gt; unit" Usage="printPreviewControl.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -705,21 +771,25 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 Zoom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Zoom" />
       <MemberSignature Language="VB.NET" Value="Public Property Zoom As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Zoom { double get(); void set(double value); };" />
       <MemberSignature Language="F#" Value="member this.Zoom : double with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Zoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Zoom { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1">
-          <AttributeName>System.ComponentModel.DefaultValue(0.3)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(0.3)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(0.3)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -734,9 +804,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
- [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/VB/form1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

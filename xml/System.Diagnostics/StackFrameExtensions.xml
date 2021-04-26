@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StackFrameExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.StackFrameExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module StackFrameExtensions" />
-  <TypeSignature Language="C++ CLI" Value="public ref class StackFrameExtensions abstract sealed" />
   <TypeSignature Language="F#" Value="type StackFrameExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StackFrameExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +12,8 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
@@ -22,13 +24,18 @@
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.StackTrace" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.StackTrace" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0">
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,8 +47,9 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetNativeImageBase (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetNativeImageBase(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.GetNativeImageBase(System.Diagnostics.StackFrame)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IntPtr GetNativeImageBase(System::Diagnostics::StackFrame ^ stackFrame);" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNativeImageBase (stackFrame As StackFrame) As IntPtr" />
       <MemberSignature Language="F#" Value="static member GetNativeImageBase : System.Diagnostics.StackFrame -&gt; nativeint" Usage="System.Diagnostics.StackFrameExtensions.GetNativeImageBase stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IntPtr GetNativeImageBase(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -50,6 +58,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -62,7 +72,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -83,8 +94,9 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetNativeIP (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetNativeIP(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.GetNativeIP(System.Diagnostics.StackFrame)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IntPtr GetNativeIP(System::Diagnostics::StackFrame ^ stackFrame);" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetNativeIP (stackFrame As StackFrame) As IntPtr" />
       <MemberSignature Language="F#" Value="static member GetNativeIP : System.Diagnostics.StackFrame -&gt; nativeint" Usage="System.Diagnostics.StackFrameExtensions.GetNativeIP stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IntPtr GetNativeIP(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -93,6 +105,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -105,7 +119,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -125,8 +140,9 @@
       <MemberSignature Language="C#" Value="public static bool HasILOffset (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasILOffset(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasILOffset(System.Diagnostics.StackFrame)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasILOffset(System::Diagnostics::StackFrame ^ stackFrame);" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HasILOffset (stackFrame As StackFrame) As Boolean" />
       <MemberSignature Language="F#" Value="static member HasILOffset : System.Diagnostics.StackFrame -&gt; bool" Usage="System.Diagnostics.StackFrameExtensions.HasILOffset stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasILOffset(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -135,6 +151,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -147,7 +165,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -169,8 +188,9 @@
       <MemberSignature Language="C#" Value="public static bool HasMethod (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasMethod(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasMethod(System.Diagnostics.StackFrame)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasMethod(System::Diagnostics::StackFrame ^ stackFrame);" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HasMethod (stackFrame As StackFrame) As Boolean" />
       <MemberSignature Language="F#" Value="static member HasMethod : System.Diagnostics.StackFrame -&gt; bool" Usage="System.Diagnostics.StackFrameExtensions.HasMethod stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasMethod(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -179,6 +199,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -191,7 +213,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -213,8 +236,9 @@
       <MemberSignature Language="C#" Value="public static bool HasNativeImage (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasNativeImage(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasNativeImage(System.Diagnostics.StackFrame)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasNativeImage(System::Diagnostics::StackFrame ^ stackFrame);" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HasNativeImage (stackFrame As StackFrame) As Boolean" />
       <MemberSignature Language="F#" Value="static member HasNativeImage : System.Diagnostics.StackFrame -&gt; bool" Usage="System.Diagnostics.StackFrameExtensions.HasNativeImage stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasNativeImage(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -223,6 +247,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -235,7 +261,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -257,8 +284,9 @@
       <MemberSignature Language="C#" Value="public static bool HasSource (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasSource(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasSource(System.Diagnostics.StackFrame)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasSource(System::Diagnostics::StackFrame ^ stackFrame);" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HasSource (stackFrame As StackFrame) As Boolean" />
       <MemberSignature Language="F#" Value="static member HasSource : System.Diagnostics.StackFrame -&gt; bool" Usage="System.Diagnostics.StackFrameExtensions.HasSource stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasSource(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -267,6 +295,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -279,7 +309,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

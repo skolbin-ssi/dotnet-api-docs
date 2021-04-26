@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDataSource extends System.Web.UI.HierarchicalDataSourceControl implements class System.ComponentModel.IListSource, class System.Web.UI.IDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.XmlDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDataSource&#xA;Inherits HierarchicalDataSourceControl&#xA;Implements IDataSource, IListSource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class XmlDataSource : System::Web::UI::HierarchicalDataSourceControl, System::ComponentModel::IListSource, System::Web::UI::IDataSource" />
   <TypeSignature Language="F#" Value="type XmlDataSource = class&#xA;    inherit HierarchicalDataSourceControl&#xA;    interface IDataSource&#xA;    interface IListSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDataSource : System::Web::UI::HierarchicalDataSourceControl, System::ComponentModel::IListSource, System::Web::UI::IDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -23,25 +23,32 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultEvent("Transforming")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultEvent("Transforming")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultEvent("Transforming")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultProperty("DataFile")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.XmlDataSourceDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.XmlDataSource))</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultProperty("DataFile")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultProperty("DataFile")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.XmlDataSourceDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.XmlDataSourceDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.XmlDataSourceDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.XmlDataSource))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.XmlDataSource))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Web.UI.ParseChildren(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.ParseChildren(true)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Web.UI.PersistChildren(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.PersistChildren(false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.XmlDataSourceDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.XmlDataSourceDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -167,8 +174,8 @@
   
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control with a <xref:System.Web.UI.WebControls.TreeView> control to display XML data. The <xref:System.Web.UI.WebControls.XmlDataSource> loads XML data from the XML file identified by the <xref:System.Web.UI.WebControls.XmlDataSource.DataFile%2A> property.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_1/CS/xmlds1cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_1/VB/xmlds1vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_1/CS/xmlds1cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_1/VB/xmlds1vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -187,8 +194,8 @@
   
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control with a templated <xref:System.Web.UI.WebControls.Repeater> control to display XML data. The <xref:System.Web.UI.WebControls.Repeater> control uses an XPath data-binding expression to bind to data items within the XML document that the <xref:System.Web.UI.WebControls.XmlDataSource> represents. For more information about `XPath` and `XPathSelect` data-binding syntax, see the <xref:System.Web.UI.XPathBinder> class.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/CS/xmlds14cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_14#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/VB/xmlds14vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/CS/xmlds14cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_14/VB/xmlds14vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -236,7 +243,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -250,8 +258,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 CacheDuration" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.CacheDuration" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheDuration As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CacheDuration { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.CacheDuration : int with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.CacheDuration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CacheDuration { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -260,10 +268,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(0)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataSourceCacheDurationConverter))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataSourceCacheDurationConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataSourceCacheDurationConverter))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -293,8 +303,8 @@
 ## Examples  
  The following code example demonstrates how to enable caching when using the <xref:System.Web.UI.WebControls.XmlDataSource> control to display data contained in an XML file. Caching is enabled when the <xref:System.Web.UI.WebControls.XmlDataSource.EnableCaching%2A> property is set to `true` and the <xref:System.Web.UI.WebControls.XmlDataSource.CacheDuration%2A> is set to the number of seconds that the data is cached by the data source control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/CS/xmlds16cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/VB/xmlds16vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/CS/xmlds16cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/VB/xmlds16vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -323,8 +333,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataSourceCacheExpiry CacheExpirationPolicy" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.CacheExpirationPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheExpirationPolicy As DataSourceCacheExpiry" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::DataSourceCacheExpiry CacheExpirationPolicy { System::Web::UI::DataSourceCacheExpiry get(); void set(System::Web::UI::DataSourceCacheExpiry value); };" />
       <MemberSignature Language="F#" Value="member this.CacheExpirationPolicy : System.Web.UI.DataSourceCacheExpiry with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.CacheExpirationPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::DataSourceCacheExpiry CacheExpirationPolicy { System::Web::UI::DataSourceCacheExpiry get(); void set(System::Web::UI::DataSourceCacheExpiry value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -333,7 +343,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -353,8 +364,8 @@
 ## Examples  
  The following code example demonstrates how to enable caching when using the <xref:System.Web.UI.WebControls.XmlDataSource> control to display data contained in an XML file. Caching is enabled when the <xref:System.Web.UI.WebControls.XmlDataSource.EnableCaching%2A> property is set to `true` and the <xref:System.Web.UI.WebControls.XmlDataSource.CacheDuration%2A> is set to the number of seconds that the data is cached by the data source control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/CS/xmlds16cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/VB/xmlds16vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/CS/xmlds16cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/VB/xmlds16vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -383,8 +394,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CacheKeyContext" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyContext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheKeyContext As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CacheKeyContext { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CacheKeyContext : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.CacheKeyContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CacheKeyContext { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -392,7 +403,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -416,8 +428,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CacheKeyDependency" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CacheKeyDependency As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CacheKeyDependency { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CacheKeyDependency : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.CacheKeyDependency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CacheKeyDependency { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,7 +438,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -455,8 +468,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Data" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.Data" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Data As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Data { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Data : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Data { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -465,22 +478,28 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -504,8 +523,8 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control to display inline XML data contained by the <xref:System.Web.UI.WebControls.XmlDataSource.Data%2A> property with a <xref:System.Web.UI.WebControls.TreeView> control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_10#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_10/CS/xmlds10cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_10#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_10/VB/xmlds10vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_10/CS/xmlds10cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_10/VB/xmlds10vb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -519,8 +538,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DataFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.DataFile" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataFile As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.DataFile : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.DataFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -529,13 +548,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.XmlDataFileEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.XmlDataFileEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.XmlDataFileEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.XmlDataFileEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.XmlDataFileEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.XmlDataFileEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -557,8 +579,8 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control to display XML data contained in a file with a <xref:System.Web.UI.WebControls.TreeView> control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_1/CS/xmlds1cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_1/VB/xmlds1vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_1/CS/xmlds1cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_1/VB/xmlds1vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -587,8 +609,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableCaching" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.EnableCaching" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableCaching As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableCaching { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.EnableCaching : bool with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.EnableCaching" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableCaching { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -597,7 +619,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -620,8 +643,8 @@
 ## Examples  
  The following code example demonstrates how to enable caching when using the <xref:System.Web.UI.WebControls.XmlDataSource> control to display data contained in an XML file. Caching is enabled when the <xref:System.Web.UI.WebControls.XmlDataSource.EnableCaching%2A> property is set to `true` and the <xref:System.Web.UI.WebControls.XmlDataSource.CacheDuration%2A> is set to the number of seconds that the data is cached by the data source control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/CS/xmlds16cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/VB/xmlds16vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/CS/xmlds16cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_16/VB/xmlds16vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -649,8 +672,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.HierarchicalDataSourceView GetHierarchicalView(string viewPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.GetHierarchicalView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHierarchicalView (viewPath As String) As HierarchicalDataSourceView" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::HierarchicalDataSourceView ^ GetHierarchicalView(System::String ^ viewPath);" />
       <MemberSignature Language="F#" Value="override this.GetHierarchicalView : string -&gt; System.Web.UI.HierarchicalDataSourceView" Usage="xmlDataSource.GetHierarchicalView viewPath" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::HierarchicalDataSourceView ^ GetHierarchicalView(System::String ^ viewPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -682,8 +705,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDocument GetXmlDocument() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.GetXmlDocument" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXmlDocument () As XmlDocument" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDocument ^ GetXmlDocument();" />
       <MemberSignature Language="F#" Value="member this.GetXmlDocument : unit -&gt; System.Xml.XmlDocument" Usage="xmlDataSource.GetXmlDocument " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDocument ^ GetXmlDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -712,13 +735,13 @@
   
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control with a <xref:System.Web.UI.WebControls.TreeView> control to display and edit XML data contained in an XML file. The data is manipulated in memory using the <xref:System.Web.UI.WebControls.XmlDataSource.GetXmlDocument%2A> method every time you select a <xref:System.Web.UI.WebControls.TreeView> node, and is then saved to the XML file. Finally, <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> is called on the <xref:System.Web.UI.WebControls.TreeView> control to refresh the data that it displays.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_17/CS/xmlds17cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_17/VB/xmlds17vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_17/CS/xmlds17cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_17/VB/xmlds17vb.aspx" id="Snippet1":::  
   
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control with a templated <xref:System.Web.UI.WebControls.Repeater> control to display and edit XML data contained in an XML file. As with the previous example, the data is manipulated in memory using the <xref:System.Xml.XmlDataDocument> retrieved by the <xref:System.Web.UI.WebControls.XmlDataSource.GetXmlDocument%2A> method. Finally, <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> is called on the <xref:System.Web.UI.WebControls.TreeView> control to refresh the data that it displays.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_18#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_18/CS/xmlds18cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_18#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_18/VB/xmlds18vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_18/CS/xmlds18cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_18/VB/xmlds18vb.aspx" id="Snippet1":::  
   
  The XML file in the code examples has the following data:  
   
@@ -766,8 +789,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTransforming(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.OnTransforming(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTransforming (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTransforming(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnTransforming : EventArgs -&gt; unit&#xA;override this.OnTransforming : EventArgs -&gt; unit" Usage="xmlDataSource.OnTransforming e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTransforming(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -787,7 +810,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Web.UI.WebControls.XmlDataSource.OnTransforming%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -796,8 +819,8 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control with a <xref:System.Web.UI.WebControls.TreeView> control to display transformed XML data. The XML transformation is performed using the style sheet indicated by the <xref:System.Web.UI.WebControls.XmlDataSource.TransformFile%2A> property. Additionally, the style sheet uses transform arguments that are passed to the data source control in an <xref:System.Xml.Xsl.XsltArgumentList> object at runtime. The code example demonstrates how to pass the <xref:System.Xml.Xsl.XsltArgumentList> object to the data source control by handling the <xref:System.Web.UI.WebControls.XmlDataSource.Transforming> event with a custom event handler, which is identified by name of the method set for the <xref:System.Web.UI.WebControls.XmlDataSource.OnTransforming%2A> method.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/CS/xmlds9cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/VB/xmlds9vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/CS/xmlds9cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/VB/xmlds9vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -888,8 +911,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
       <MemberSignature Language="F#" Value="member this.Save : unit -&gt; unit" Usage="xmlDataSource.Save " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -921,13 +944,13 @@
   
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control with a <xref:System.Web.UI.WebControls.TreeView> control to display and edit XML data contained in an XML file. The data is manipulated in memory using the <xref:System.Web.UI.WebControls.XmlDataSource.GetXmlDocument%2A> method every time you select a <xref:System.Web.UI.WebControls.TreeView> node, and is then saved to the XML file. Finally, <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> is called on the <xref:System.Web.UI.WebControls.TreeView> control to refresh the data that it displays.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_17#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_17/CS/xmlds17cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_17#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_17/VB/xmlds17vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_17/CS/xmlds17cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_17/VB/xmlds17vb.aspx" id="Snippet1":::  
   
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control with a templated <xref:System.Web.UI.WebControls.Repeater> control to display and edit XML data contained in an XML file. As with the previous example, the data is manipulated in memory using the <xref:System.Xml.XmlDataDocument> object retrieved by the <xref:System.Web.UI.WebControls.XmlDataSource.GetXmlDocument%2A> method. Finally, <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> is called on the <xref:System.Web.UI.WebControls.TreeView> control to refresh the data that it displays.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_18#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_18/CS/xmlds18cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_18#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_18/VB/xmlds18vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_18/CS/xmlds18cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_18/VB/xmlds18vb.aspx" id="Snippet1":::  
   
  The XML file in the code examples has the following data:  
   
@@ -975,8 +998,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.System#ComponentModel#IListSource#ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
+      <MemberSignature Language="F#" Value="member this.System.ComponentModel.IListSource.ContainsListCollection : bool" Usage="System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IListSource::ContainsListCollection { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
@@ -1009,6 +1032,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IList System.ComponentModel.IListSource.GetList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.System#ComponentModel#IListSource#GetList" />
       <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
+      <MemberSignature Language="F#" Value="abstract member System.ComponentModel.IListSource.GetList : unit -&gt; System.Collections.IList&#xA;override this.System.ComponentModel.IListSource.GetList : unit -&gt; System.Collections.IList" Usage="xmlDataSource.System.ComponentModel.IListSource.GetList " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IList ^ System.ComponentModel.IListSource.GetList() = System::ComponentModel::IListSource::GetList;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1042,6 +1066,7 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.Web.UI.IDataSource.DataSourceChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.XmlDataSource.System#Web#UI#IDataSource#DataSourceChanged" />
       <MemberSignature Language="VB.NET" Value="Custom Event DataSourceChanged As EventHandler Implements System.Web.UI.IDataSource" />
+      <MemberSignature Language="F#" Value="member this.System.Web.UI.IDataSource.DataSourceChanged : EventHandler " Usage="member this.System.Web.UI.IDataSource.DataSourceChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Web.UI.IDataSource.DataSourceChanged</InterfaceMember>
@@ -1072,6 +1097,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Web.UI.DataSourceView System.Web.UI.IDataSource.GetView(string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.System#Web#UI#IDataSource#GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function GetView (viewName As String) As DataSourceView Implements IDataSource.GetView" />
+      <MemberSignature Language="F#" Value="abstract member System.Web.UI.IDataSource.GetView : string -&gt; System.Web.UI.DataSourceView&#xA;override this.System.Web.UI.IDataSource.GetView : string -&gt; System.Web.UI.DataSourceView" Usage="xmlDataSource.System.Web.UI.IDataSource.GetView viewName" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Web::UI::DataSourceView ^ System.Web.UI.IDataSource.GetView(System::String ^ viewName) = System::Web::UI::IDataSource::GetView;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1101,6 +1127,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ICollection System.Web.UI.IDataSource.GetViewNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlDataSource.System#Web#UI#IDataSource#GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Function GetViewNames () As ICollection Implements IDataSource.GetViewNames" />
+      <MemberSignature Language="F#" Value="abstract member System.Web.UI.IDataSource.GetViewNames : unit -&gt; System.Collections.ICollection&#xA;override this.System.Web.UI.IDataSource.GetViewNames : unit -&gt; System.Collections.ICollection" Usage="xmlDataSource.System.Web.UI.IDataSource.GetViewNames " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::ICollection ^ System.Web.UI.IDataSource.GetViewNames() = System::Web::UI::IDataSource::GetViewNames;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1134,8 +1161,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Transform" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.Transform" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Transform As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Transform { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Transform : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.Transform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Transform { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1144,22 +1171,28 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter("System.ComponentModel.MultilineStringConverter,System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1227,8 +1260,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Xsl.XsltArgumentList TransformArgumentList" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.TransformArgumentList" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TransformArgumentList As XsltArgumentList" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Xsl::XsltArgumentList ^ TransformArgumentList { System::Xml::Xsl::XsltArgumentList ^ get(); void set(System::Xml::Xsl::XsltArgumentList ^ value); };" />
       <MemberSignature Language="F#" Value="member this.TransformArgumentList : System.Xml.Xsl.XsltArgumentList with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.TransformArgumentList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Xsl::XsltArgumentList ^ TransformArgumentList { System::Xml::Xsl::XsltArgumentList ^ get(); void set(System::Xml::Xsl::XsltArgumentList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1237,13 +1270,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1265,8 +1301,8 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> with a <xref:System.Web.UI.WebControls.TreeView> control to display transformed XML data. The XML transformation is performed using the style sheet indicated by the <xref:System.Web.UI.WebControls.XmlDataSource.TransformFile%2A> property. Additionally, the style sheet uses transform arguments that are passed to the data source control in an <xref:System.Xml.Xsl.XsltArgumentList> object at run time. The code example demonstrates how to pass the <xref:System.Xml.Xsl.XsltArgumentList> to the data source control by handling the <xref:System.Web.UI.WebControls.XmlDataSource.Transforming> event with a custom event handler.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/CS/xmlds9cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/VB/xmlds9vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/CS/xmlds9cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/VB/xmlds9vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -1354,8 +1390,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string TransformFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.TransformFile" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TransformFile As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TransformFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.TransformFile : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.TransformFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TransformFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1364,13 +1400,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.XslTransformFileEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.XslTransformFileEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.XslTransformFileEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.XslTransformFileEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.XslTransformFileEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.XslTransformFileEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1395,8 +1434,8 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control and a <xref:System.Web.UI.WebControls.TreeView> control to display transformed XML data on a Web form. The transformation is performed using the style sheet indicated by the <xref:System.Web.UI.WebControls.XmlDataSource.TransformFile%2A> property. You can optionally supply transformation arguments for the style sheet using an <xref:System.Xml.Xsl.XsltArgumentList>. For more information, see the <xref:System.Web.UI.WebControls.XmlDataSource.TransformArgumentList%2A> property.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_5/CS/xmlds5cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_5/VB/xmlds5vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_5/CS/xmlds5cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_5/VB/xmlds5vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -1484,8 +1523,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Transforming" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.XmlDataSource.Transforming" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Transforming As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Transforming;" />
       <MemberSignature Language="F#" Value="member this.Transforming : EventHandler " Usage="member this.Transforming : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Transforming;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1503,15 +1542,15 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.XmlDataSource.Transforming> event to set the <xref:System.Web.UI.WebControls.XmlDataSource.TransformArgumentList%2A> property with an <xref:System.Xml.Xsl.XsltArgumentList> object before the <xref:System.Web.UI.WebControls.XmlDataSource> control performs an XML transformation.  
   
- For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about how to handle events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control with a <xref:System.Web.UI.WebControls.TreeView> control to display transformed XML data. The XML transformation is performed using the style sheet indicated by the <xref:System.Web.UI.WebControls.XmlDataSource.TransformFile%2A> property. Additionally, the style sheet uses transform arguments that are passed to the data source control in an <xref:System.Xml.Xsl.XsltArgumentList> at run time. The code example demonstrates how to pass the <xref:System.Xml.Xsl.XsltArgumentList> object to the data source control by handling the <xref:System.Web.UI.WebControls.XmlDataSource.Transforming> event with a custom event handler.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/CS/xmlds9cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/VB/xmlds9vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/CS/xmlds9cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_9/VB/xmlds9vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   
@@ -1597,8 +1636,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string XPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.XmlDataSource.XPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property XPath As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.XPath : string with get, set" Usage="System.Web.UI.WebControls.XmlDataSource.XPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1607,7 +1646,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1627,8 +1667,8 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.XmlDataSource> control with a templated <xref:System.Web.UI.WebControls.Repeater> control to display XML data that has been filtered using an XPath expression. In this example, XPath syntax is used to filter the XML data when the <xref:System.Web.UI.WebControls.XmlDataSource.XPath%2A> property of the data source control is set, and also binds elements of the <xref:System.Web.UI.WebControls.Repeater> control template to the XML data.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.XmlDataSource_8#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_8/CS/xmlds8cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.XmlDataSource_8#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_8/VB/xmlds8vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_8/CS/xmlds8cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.XmlDataSource_8/VB/xmlds8vb.aspx" id="Snippet1":::  
   
  The XML file in the code example has the following data:  
   

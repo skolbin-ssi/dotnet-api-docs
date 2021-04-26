@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityContextKeyIdentifierClause extends System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityContextKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SecurityContextKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
   <TypeSignature Language="F#" Value="type SecurityContextKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityContextKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,13 +14,17 @@
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.IdentityModel" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,8 +46,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.UniqueId contextId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.#ctor(System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextKeyIdentifierClause(System::Xml::UniqueId ^ contextId);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause : System.Xml.UniqueId -&gt; System.ServiceModel.Security.SecurityContextKeyIdentifierClause" Usage="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause contextId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextKeyIdentifierClause(System::Xml::UniqueId ^ contextId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -56,11 +60,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="contextId" Type="System.Xml.UniqueId" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
         <param name="contextId">The unique ID of the security context.</param>
@@ -80,8 +85,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.UniqueId contextId, class System.Xml.UniqueId generation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.#ctor(System.Xml.UniqueId,System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId, generation As UniqueId)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextKeyIdentifierClause(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause : System.Xml.UniqueId * System.Xml.UniqueId -&gt; System.ServiceModel.Security.SecurityContextKeyIdentifierClause" Usage="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause (contextId, generation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextKeyIdentifierClause(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -94,12 +99,13 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="contextId" Type="System.Xml.UniqueId" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="generation" Type="System.Xml.UniqueId" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
+        <Parameter Name="generation" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
         <param name="contextId">A <see cref="T:System.Xml.UniqueId" /> that represents the Context ID of the security context.</param>
@@ -122,8 +128,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.UniqueId contextId, class System.Xml.UniqueId generation, unsigned int8[] derivationNonce, int32 derivationLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.#ctor(System.Xml.UniqueId,System.Xml.UniqueId,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId, generation As UniqueId, derivationNonce As Byte(), derivationLength As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextKeyIdentifierClause(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation, cli::array &lt;System::Byte&gt; ^ derivationNonce, int derivationLength);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause : System.Xml.UniqueId * System.Xml.UniqueId * byte[] * int -&gt; System.ServiceModel.Security.SecurityContextKeyIdentifierClause" Usage="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause (contextId, generation, derivationNonce, derivationLength)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextKeyIdentifierClause(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation, cli::array &lt;System::Byte&gt; ^ derivationNonce, int derivationLength);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -135,10 +141,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="contextId" Type="System.Xml.UniqueId" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="generation" Type="System.Xml.UniqueId" Index="1" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="derivationNonce" Type="System.Byte[]" Index="2" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="derivationLength" Type="System.Int32" Index="3" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
+        <Parameter Name="generation" Type="System.Xml.UniqueId" />
+        <Parameter Name="derivationNonce" Type="System.Byte[]" />
+        <Parameter Name="derivationLength" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="contextId">The context ID part of the identifier clause.</param>
@@ -161,8 +167,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.UniqueId ContextId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.ContextId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextId As UniqueId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ ContextId { System::Xml::UniqueId ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ContextId : System.Xml.UniqueId" Usage="System.ServiceModel.Security.SecurityContextKeyIdentifierClause.ContextId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ ContextId { System::Xml::UniqueId ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -175,7 +181,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,8 +199,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.UniqueId Generation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.Generation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Generation As UniqueId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ Generation { System::Xml::UniqueId ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Generation : System.Xml.UniqueId" Usage="System.ServiceModel.Security.SecurityContextKeyIdentifierClause.Generation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ Generation { System::Xml::UniqueId ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -206,7 +213,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -232,8 +240,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
       <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="securityContextKeyIdentifierClause.Matches keyIdentifierClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -248,7 +256,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
         <param name="keyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to be compared.</param>
@@ -263,8 +271,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Xml.UniqueId contextId, class System.Xml.UniqueId generation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.Matches(System.Xml.UniqueId,System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (contextId As UniqueId, generation As UniqueId) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation);" />
       <MemberSignature Language="F#" Value="override this.Matches : System.Xml.UniqueId * System.Xml.UniqueId -&gt; bool" Usage="securityContextKeyIdentifierClause.Matches (contextId, generation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -279,8 +287,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contextId" Type="System.Xml.UniqueId" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="generation" Type="System.Xml.UniqueId" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="contextId" Type="System.Xml.UniqueId" />
+        <Parameter Name="generation" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
         <param name="contextId">The context ID part of the identifier clause.</param>
@@ -296,8 +304,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="securityContextKeyIdentifierClause.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -1,10 +1,12 @@
 <Type Name="RegionInfo" FullName="System.Globalization.RegionInfo">
   <TypeSignature Language="C#" Value="public class RegionInfo" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable beforefieldinit RegionInfo extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegionInfo extends System.Object" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.RegionInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class RegionInfo" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RegionInfo" />
   <TypeSignature Language="F#" Value="type RegionInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegionInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RegionInfo extends System.Object" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable beforefieldinit RegionInfo extends System.Object" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,17 +29,32 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Globalization" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Globalization" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Globalization" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Globalization" FromVersion="4.1.0.0" To="System.Runtime" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.Globalization" FromVersion="4.1.1.0" To="System.Runtime" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.Globalization" FromVersion="4.1.2.0" To="System.Runtime" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,8 +73,8 @@
   
  The following example illustrates the difference in <xref:System.Globalization.RegionInfo> property values for three objects that represent Belgium. The first is instantiated from a region name (BE) only, while the second and third are instantiated from culture names (fr-BE for French (Belgium) and nl-BE for Dutch (Belgium), respectively). The example uses reflection to retrieve the property values of each <xref:System.Globalization.RegionInfo> object.  
   
- [!code-csharp[System.Globalization.RegionInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo/CS/propertyvalues1.cs#2)]
- [!code-vb[System.Globalization.RegionInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo/VB/propertyvalues1.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo/CS/propertyvalues1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo/VB/propertyvalues1.vb" id="Snippet2":::  
   
  In scenarios such as the following, use culture names instead of country/region names when you instantiate a <xref:System.Globalization.RegionInfo> object:  
   
@@ -79,10 +96,10 @@
 ## Examples  
  The following example demonstrates several members of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo/CPP/regioninfo.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo/CS/regioninfo.cs#1)]
- [!code-vb[System.Globalization.RegionInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo/VB/regioninfo.vb#1)]  
-  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo/CPP/regioninfo.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo/CS/regioninfo.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo/VB/regioninfo.vb" id="Snippet1":::
+
  ]]></format>
     </remarks>
     <altmember cref="T:System.Globalization.CultureInfo" />
@@ -103,8 +120,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (culture As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegionInfo(int culture);" />
       <MemberSignature Language="F#" Value="new System.Globalization.RegionInfo : int -&gt; System.Globalization.RegionInfo" Usage="new System.Globalization.RegionInfo culture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegionInfo(int culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -123,17 +140,20 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="culture" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="culture" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="culture">A culture identifier.</param>
@@ -153,9 +173,9 @@
 ## Examples  
  The following code example compares two instances of <xref:System.Globalization.RegionInfo> that were created differently.  
   
- [!code-cpp[System.Globalization.RegionInfo_Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CPP/regioninfo_equals.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CS/regioninfo_equals.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/VB/regioninfo_equals.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CPP/regioninfo_equals.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CS/regioninfo_equals.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/VB/regioninfo_equals.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -169,8 +189,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegionInfo(System::String ^ name);" />
       <MemberSignature Language="F#" Value="new System.Globalization.RegionInfo : string -&gt; System.Globalization.RegionInfo" Usage="new System.Globalization.RegionInfo name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegionInfo(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -194,10 +214,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -225,15 +248,15 @@
 ## Examples  
  The following code example compares two instances of <xref:System.Globalization.RegionInfo> that were created differently.  
   
- [!code-cpp[System.Globalization.RegionInfo_Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CPP/regioninfo_equals.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CS/regioninfo_equals.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/VB/regioninfo_equals.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CPP/regioninfo_equals.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CS/regioninfo_equals.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/VB/regioninfo_equals.vb" id="Snippet1":::  
   
  The following code example creates instances of <xref:System.Globalization.RegionInfo> using culture names.  
   
- [!code-cpp[System.Globalization.RegionInfo.ctorCultureName#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo.ctorCultureName/CPP/regioninfo_ctorculturename.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo.ctorCultureName#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo.ctorCultureName/CS/regioninfo_ctorculturename.cs#1)]
- [!code-vb[System.Globalization.RegionInfo.ctorCultureName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo.ctorCultureName/VB/regioninfo_ctorculturename.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo.ctorCultureName/CPP/regioninfo_ctorculturename.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo.ctorCultureName/CS/regioninfo_ctorculturename.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo.ctorCultureName/VB/regioninfo_ctorculturename.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -251,8 +274,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CurrencyEnglishName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.CurrencyEnglishName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrencyEnglishName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrencyEnglishName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CurrencyEnglishName : string" Usage="System.Globalization.RegionInfo.CurrencyEnglishName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrencyEnglishName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -270,16 +293,20 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -294,9 +321,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Globalization.RegionInfo.CurrencyEnglishName%2A> property.  
   
- [!code-cpp[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/cpp/rgn5props.cpp#1)]
- [!code-csharp[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/CS/rgn5props.cs#1)]
- [!code-vb[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/VB/rgn5props.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/cpp/rgn5props.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/CS/rgn5props.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/VB/rgn5props.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -307,8 +334,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CurrencyNativeName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.CurrencyNativeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrencyNativeName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrencyNativeName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CurrencyNativeName : string" Usage="System.Globalization.RegionInfo.CurrencyNativeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrencyNativeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -326,16 +353,20 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -357,9 +388,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Globalization.RegionInfo.CurrencyNativeName%2A> property.  
   
- [!code-cpp[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/cpp/rgn5props.cpp#1)]
- [!code-csharp[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/CS/rgn5props.cs#1)]
- [!code-vb[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/VB/rgn5props.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/cpp/rgn5props.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/CS/rgn5props.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/VB/rgn5props.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -370,8 +401,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CurrencySymbol" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.CurrencySymbol" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrencySymbol As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrencySymbol { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CurrencySymbol : string" Usage="System.Globalization.RegionInfo.CurrencySymbol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrencySymbol { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -395,10 +426,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -420,9 +454,9 @@
 ## Examples  
  The following code example displays the properties of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -434,8 +468,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Globalization.RegionInfo CurrentRegion" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.CurrentRegion" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentRegion As RegionInfo" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::RegionInfo ^ CurrentRegion { System::Globalization::RegionInfo ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CurrentRegion : System.Globalization.RegionInfo" Usage="System.Globalization.RegionInfo.CurrentRegion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::RegionInfo ^ CurrentRegion { System::Globalization::RegionInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -459,10 +493,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -486,8 +523,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Globalization.RegionInfo.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -511,34 +548,35 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the full name of the country/region in the language of the localized version of .NET Framework.</summary>
-        <value>The full name of the country/region in the language of the localized version of .NET Framework.</value>
+        <summary>Gets the full name of the country/region in the language of the localized version of .NET.</summary>
+        <value>The full name of the country/region in the language of the localized version of .NET.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.RegionInfo.DisplayName%2A> property displays the country/region name in the language of the localized version of .NET Framework. For example, the <xref:System.Globalization.RegionInfo.DisplayName%2A> property displays the country/region in English on the English version of the .NET Framework, and in Spanish on the Spanish version of the .NET Framework.  
+ The <xref:System.Globalization.RegionInfo.DisplayName%2A> property displays the country/region name in the language of the localized version of .NET. For example, the <xref:System.Globalization.RegionInfo.DisplayName%2A> property displays the country/region in English on the English version of .NET, and in Spanish on the Spanish version of .NET.  
   
- The value of the <xref:System.Globalization.RegionInfo.DisplayName%2A> property is taken from the resource files in the language of the current user interface culture, represented by <xref:System.Globalization.CultureInfo.CurrentUICulture%2A>. Custom regions or those synthesized from the operating system might not have resource information, in which case the value for <xref:System.Globalization.RegionInfo.DisplayName%2A> is the same as the value of the <xref:System.Globalization.RegionInfo.NativeName%2A> property.  
-  
-   
+ The value of the <xref:System.Globalization.RegionInfo.DisplayName%2A> property is taken from the resource files in the language of the current user interface culture, represented by <xref:System.Globalization.CultureInfo.CurrentUICulture%2A>. Custom regions or those synthesized from the operating system might not have resource information, in which case the value for <xref:System.Globalization.RegionInfo.DisplayName%2A> is the same as the value of the <xref:System.Globalization.RegionInfo.NativeName%2A> property.
   
 ## Examples  
  The following code example displays the properties of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -554,8 +592,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string EnglishName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.EnglishName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EnglishName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EnglishName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.EnglishName : string" Usage="System.Globalization.RegionInfo.EnglishName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EnglishName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -579,10 +617,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -602,9 +643,9 @@
 ## Examples  
  The following code example displays the properties of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -616,12 +657,13 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="regionInfo.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? value);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -645,6 +687,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -668,9 +712,9 @@
 ## Examples  
  The following code example compares two instances of <xref:System.Globalization.RegionInfo> that were created differently.  
   
- [!code-cpp[System.Globalization.RegionInfo_Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CPP/regioninfo_equals.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CS/regioninfo_equals.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/VB/regioninfo_equals.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CPP/regioninfo_equals.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/CS/regioninfo_equals.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Equals/VB/regioninfo_equals.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -682,8 +726,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 GeoId" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.GeoId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GeoId As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int GeoId { int get(); };" />
       <MemberSignature Language="F#" Value="member this.GeoId : int" Usage="System.Globalization.RegionInfo.GeoId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int GeoId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -701,13 +745,16 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -722,16 +769,16 @@
 ## Remarks  
  The application should use the <xref:System.Globalization.RegionInfo.GeoId%2A> property to provide culture-specific services to customers. For example, the <xref:System.Globalization.RegionInfo.GeoId%2A> property can be used as a key to access a database record that contains specific information about a country/region.  
   
- This property value corresponds to the Windows `GetUserGeoID` function. For a list of geographical identifiers, see [Table of Geographical Locations](https://go.microsoft.com/fwlink/?LinkId=191287) in the MSDN Library.  
+ This property value corresponds to the Windows `GetUserGeoID` function. For a list of geographical identifiers, see [Table of Geographical Locations](https://go.microsoft.com/fwlink/?LinkId=191287).
   
    
   
 ## Examples  
  The following code example demonstrates the <xref:System.Globalization.RegionInfo.GeoId%2A> property.  
   
- [!code-cpp[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/cpp/rgn5props.cpp#1)]
- [!code-csharp[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/CS/rgn5props.cs#1)]
- [!code-vb[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/VB/rgn5props.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/cpp/rgn5props.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/CS/rgn5props.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/VB/rgn5props.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -742,8 +789,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="regionInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -767,6 +814,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -795,8 +844,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMetric" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.IsMetric" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsMetric As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMetric { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsMetric : bool" Usage="System.Globalization.RegionInfo.IsMetric" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMetric { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -820,10 +869,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -839,9 +891,9 @@
 ## Examples  
  The following code example displays the properties of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -852,8 +904,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ISOCurrencySymbol" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.ISOCurrencySymbol" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ISOCurrencySymbol As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ISOCurrencySymbol { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ISOCurrencySymbol : string" Usage="System.Globalization.RegionInfo.ISOCurrencySymbol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ISOCurrencySymbol { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -877,10 +929,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1014,9 +1069,9 @@
 ## Examples  
  The following code example displays the properties of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb" id="Snippet1":::
   
  ]]></format>
         </remarks>
@@ -1028,8 +1083,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Globalization.RegionInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1053,6 +1108,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1070,16 +1127,16 @@
 ## Remarks  
  If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.Int32%29?displayProperty=nameWithType> constructor that takes a culture identifier parameter, the <xref:System.Globalization.RegionInfo.Name%2A> property value is one of the two-letter codes defined in ISO 3166 for the country/region and is formatted in uppercase. For example, the two-letter code for the United States is "US".  
   
- If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.String%29?displayProperty=nameWithType> constructor and is passed a full culture name such as "en-US", the <xref:System.Globalization.RegionInfo.Name%2A> property value is a full culture name and not just the region name.  
+ If the current <xref:System.Globalization.RegionInfo> object is created with the <xref:System.Globalization.RegionInfo.%23ctor%28System.String%29?displayProperty=nameWithType> constructor and is passed a full culture name such as "en-US", the <xref:System.Globalization.RegionInfo.Name%2A> property value is a full culture name in .NET Framework and just the region name in .NET Core.  
   
    
   
 ## Examples  
  The following code example displays the properties of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1095,8 +1152,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string NativeName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.NativeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NativeName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NativeName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.NativeName : string" Usage="System.Globalization.RegionInfo.NativeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NativeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1119,13 +1176,17 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1149,9 +1210,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Globalization.RegionInfo.NativeName%2A> property.  
   
- [!code-cpp[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/cpp/rgn5props.cpp#1)]
- [!code-csharp[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/CS/rgn5props.cs#1)]
- [!code-vb[sys.glob.regioninfo.rgn5props#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/VB/rgn5props.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/cpp/rgn5props.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/CS/rgn5props.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.regioninfo.rgn5props/VB/rgn5props.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1162,8 +1223,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ThreeLetterISORegionName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ThreeLetterISORegionName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ThreeLetterISORegionName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ThreeLetterISORegionName : string" Usage="System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ThreeLetterISORegionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1182,13 +1243,16 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1210,9 +1274,9 @@
 ## Examples  
  The following code example displays the properties of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1228,8 +1292,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ThreeLetterWindowsRegionName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ThreeLetterWindowsRegionName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ThreeLetterWindowsRegionName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ThreeLetterWindowsRegionName : string" Usage="System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ThreeLetterWindowsRegionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1248,13 +1312,16 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1274,9 +1341,9 @@
 ## Examples  
  The following code example displays the properties of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1292,8 +1359,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="regionInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1317,6 +1384,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1348,8 +1417,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string TwoLetterISORegionName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TwoLetterISORegionName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TwoLetterISORegionName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.TwoLetterISORegionName : string" Usage="System.Globalization.RegionInfo.TwoLetterISORegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TwoLetterISORegionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1373,10 +1442,13 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1406,10 +1478,10 @@
 ## Examples  
  The following code example displays the properties of the <xref:System.Globalization.RegionInfo> class.  
   
- [!code-cpp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp#1)]
- [!code-csharp[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs#1)]
- [!code-vb[System.Globalization.RegionInfo_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb#1)]  
-  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CPP/regioninfo_properties.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/CS/regioninfo_properties.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.RegionInfo_Properties/VB/regioninfo_properties.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <altmember cref="P:System.Globalization.RegionInfo.Name" />

@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceContextEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.TraceContextEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TraceContextEventArgs&#xA;Inherits EventArgs" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TraceContextEventArgs sealed : EventArgs" />
   <TypeSignature Language="F#" Value="type TraceContextEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TraceContextEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -27,15 +27,15 @@
 ## Examples  
  The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> delegate to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the `OnTraceFinished` method accesses the collection of <xref:System.Web.TraceContextRecord> objects through the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> property, iterates through them, and writes them to the response stream.  
   
- [!code-aspx-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]
- [!code-aspx-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx" id="Snippet1":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.TraceContextEventHandler" />
     <altmember cref="E:System.Web.TraceContext.TraceFinished" />
     <altmember cref="T:System.Web.TraceContext" />
-    <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb386420(v=vs.100)">ASP.NET Tracing Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +43,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection records) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContextEventArgs.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (records As ICollection)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceContextEventArgs(System::Collections::ICollection ^ records);" />
       <MemberSignature Language="F#" Value="new System.Web.TraceContextEventArgs : System.Collections.ICollection -&gt; System.Web.TraceContextEventArgs" Usage="new System.Web.TraceContextEventArgs records" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceContextEventArgs(System::Collections::ICollection ^ records);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,7 +53,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -63,7 +64,7 @@
         <param name="records">A collection of <see cref="T:System.Web.TraceContextRecord" /> objects that represent all the trace records logged for the current request.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContextEventArgs" /> class, using the provided collection of trace records.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb386420(v=vs.100)">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TraceRecords">
@@ -71,8 +72,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection TraceRecords" />
       <MemberSignature Language="DocId" Value="P:System.Web.TraceContextEventArgs.TraceRecords" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceRecords As ICollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ TraceRecords { System::Collections::ICollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.TraceRecords : System.Collections.ICollection" Usage="System.Web.TraceContextEventArgs.TraceRecords" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ TraceRecords { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,7 +82,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,15 +105,15 @@
 ## Examples  
  The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> delegate to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the `OnTraceFinished` method accesses the collection of <xref:System.Web.TraceContextRecord> objects through the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> property, iterates through them, and writes them to the response stream.  
   
- [!code-aspx-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]
- [!code-aspx-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.TraceContextRecord" />
         <altmember cref="T:System.Web.TraceContextEventHandler" />
         <altmember cref="T:System.Web.TraceContext" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb386420(v=vs.100)">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
   </Members>

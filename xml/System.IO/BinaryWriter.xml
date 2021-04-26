@@ -1,10 +1,16 @@
 <Type Name="BinaryWriter" FullName="System.IO.BinaryWriter">
-  <TypeSignature Language="C#" Value="public class BinaryWriter : IDisposable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BinaryWriter extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="C#" Value="public class BinaryWriter : IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BinaryWriter extends System.Object implements class System.IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0" />
   <TypeSignature Language="DocId" Value="T:System.IO.BinaryWriter" />
-  <TypeSignature Language="VB.NET" Value="Public Class BinaryWriter&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BinaryWriter : IDisposable" />
-  <TypeSignature Language="F#" Value="type BinaryWriter = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="VB.NET" Value="Public Class BinaryWriter&#xA;Implements IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="F#" Value="type BinaryWriter = class&#xA;    interface IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BinaryWriter : IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C#" Value="public class BinaryWriter : IAsyncDisposable, IDisposable" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BinaryWriter extends System.Object implements class System.IAsyncDisposable, class System.IDisposable" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
+  <TypeSignature Language="VB.NET" Value="Public Class BinaryWriter&#xA;Implements IAsyncDisposable, IDisposable" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
+  <TypeSignature Language="F#" Value="type BinaryWriter = class&#xA;    interface IAsyncDisposable&#xA;    interface IDisposable" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BinaryWriter : IAsyncDisposable, IDisposable" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BinaryWriter extends System.Object implements class System.IDisposable" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +35,24 @@
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.IO" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.IO" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.0.0" To="System.Runtime.Extensions" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.1.0" To="System.Runtime.Extensions" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.2.0" To="System.Runtime.Extensions" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -36,13 +60,18 @@
     <Interface>
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
+    <Interface FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1">
+      <InterfaceName>System.IAsyncDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -65,16 +94,16 @@
 ## Examples  
  The following code example demonstrates how to store and retrieve application settings in a file.  
   
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Text.Encoding" />
-    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
-    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+    <related type="Article" href="/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file">How to: Read and Write to a Newly Created Data File</related>
+    <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+    <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+    <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -119,6 +148,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryWriter" /> class that writes to a stream.</summary>
@@ -126,13 +160,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,8 +174,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (output As Stream)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output);" />
       <MemberSignature Language="F#" Value="new System.IO.BinaryWriter : System.IO.Stream -&gt; System.IO.BinaryWriter" Usage="new System.IO.BinaryWriter output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -167,9 +201,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -182,15 +222,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example demonstrates how to store and retrieve application settings in a file.  
   
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -198,17 +238,18 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="output" /> is <see langword="null" />.</exception>
         <altmember cref="P:System.Text.Encoding.UTF8" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BinaryWriter (System.IO.Stream output, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream output, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (output As Stream, encoding As Encoding)" />
       <MemberSignature Language="F#" Value="new System.IO.BinaryWriter : System.IO.Stream * System.Text.Encoding -&gt; System.IO.BinaryWriter" Usage="new System.IO.BinaryWriter (output, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -233,6 +274,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="output" Type="System.IO.Stream" />
@@ -246,7 +292,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
@@ -254,17 +300,18 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="output" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BinaryWriter (System.IO.Stream output, System.Text.Encoding encoding, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream output, class System.Text.Encoding encoding, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output, System::Text::Encoding ^ encoding, bool leaveOpen);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (output As Stream, encoding As Encoding, leaveOpen As Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.BinaryWriter : System.IO.Stream * System.Text.Encoding * bool -&gt; System.IO.BinaryWriter" Usage="new System.IO.BinaryWriter (output, encoding, leaveOpen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output, System::Text::Encoding ^ encoding, bool leaveOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -288,10 +335,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="output" Type="System.IO.Stream" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="encoding" Type="System.Text.Encoding" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="leaveOpen" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="output" Type="System.IO.Stream" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="leaveOpen" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="output">The output stream.</param>
@@ -304,9 +356,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="output" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="BaseStream">
@@ -314,8 +366,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream BaseStream" />
       <MemberSignature Language="DocId" Value="P:System.IO.BinaryWriter.BaseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseStream As Stream" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.BinaryWriter.BaseStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -341,6 +393,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -351,22 +408,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example shows how to read and write `Double` data to memory by using the <xref:System.IO.BinaryReader> and `BinaryWriter` classes on top of the <xref:System.IO.MemoryStream> class. `MemoryStream` only reads and writes `Byte` data.  
   
- [!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -374,8 +431,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="binaryWriter.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -398,6 +455,11 @@
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -414,9 +476,9 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -435,8 +497,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="binaryWriter.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -463,9 +525,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -482,8 +550,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="binaryWriter.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -509,6 +577,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -520,9 +593,9 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.BinaryWriter" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="DisposeAsync">
@@ -530,8 +603,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask DisposeAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.DisposeAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DisposeAsync () As ValueTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::ValueTask DisposeAsync();" />
       <MemberSignature Language="F#" Value="abstract member DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask&#xA;override this.DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask" Usage="binaryWriter.DisposeAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::ValueTask DisposeAsync();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IAsyncDisposable.DisposeAsync</InterfaceMember>
@@ -551,6 +624,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
       </ReturnValue>
@@ -566,8 +644,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Flush ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Flush();" />
       <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="binaryWriter.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -592,6 +670,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -607,13 +690,13 @@
   
  Flushing the stream will not flush its underlying encoder unless you explicitly call `Flush` or <xref:System.IO.BinaryWriter.Close%2A>. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -621,8 +704,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IO.BinaryWriter Null" />
       <MemberSignature Language="DocId" Value="F:System.IO.BinaryWriter.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As BinaryWriter " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::BinaryWriter ^ Null;" />
       <MemberSignature Language="F#" Value=" staticval mutable Null : System.IO.BinaryWriter" Usage="System.IO.BinaryWriter.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::BinaryWriter ^ Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -647,6 +730,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.BinaryWriter</ReturnType>
@@ -657,13 +745,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="OutStream">
@@ -671,8 +759,8 @@
       <MemberSignature Language="ILAsm" Value=".field family class System.IO.Stream OutStream" />
       <MemberSignature Language="DocId" Value="F:System.IO.BinaryWriter.OutStream" />
       <MemberSignature Language="VB.NET" Value="Protected OutStream As Stream " />
-      <MemberSignature Language="C++ CLI" Value="protected: System::IO::Stream ^ OutStream;" />
       <MemberSignature Language="F#" Value="val mutable OutStream : System.IO.Stream" Usage="System.IO.BinaryWriter.OutStream" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::IO::Stream ^ OutStream;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -698,6 +786,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -707,13 +800,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -721,8 +814,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 Seek(int32 offset, valuetype System.IO.SeekOrigin origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Seek(System.Int32,System.IO.SeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Seek (offset As Integer, origin As SeekOrigin) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long Seek(int offset, System::IO::SeekOrigin origin);" />
       <MemberSignature Language="F#" Value="abstract member Seek : int * System.IO.SeekOrigin -&gt; int64&#xA;override this.Seek : int * System.IO.SeekOrigin -&gt; int64" Usage="binaryWriter.Seek (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long Seek(int offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -747,6 +840,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -764,24 +862,24 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following example writes a series of byte values to a file. The example uses <xref:System.IO.BinaryWriter.Seek%2A> to move to various locations in the file, and then writes marker bytes by using the <xref:System.IO.BinaryWriter.Write%2A> method.  
   
- [!code-cpp[System.IO.BinaryReaderWriter#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CPP/source3.cpp#5)]
- [!code-csharp[System.IO.BinaryReaderWriter#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source3.cs#5)]
- [!code-vb[System.IO.BinaryReaderWriter#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source3.vb#5)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CPP/source3.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source3.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source3.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">The file pointer was moved to an invalid location.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.IO.SeekOrigin" /> value is invalid.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -789,6 +887,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="F#" Value="abstract member System.IDisposable.Dispose : unit -&gt; unit&#xA;override this.System.IDisposable.Dispose : unit -&gt; unit" Usage="binaryWriter.System.IDisposable.Dispose " />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -808,16 +907,27 @@
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.BinaryWriter" /> and optionally releases the managed resources.</summary>
-        <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.IO.BinaryWriter> instance is cast to an <xref:System.IDisposable> interface.
+
+          ]]></format>
+        </remarks>
+        <related type="Article" href="/dotnet/standard/io/index">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Write">
@@ -836,8 +946,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(bool value);" />
       <MemberSignature Language="F#" Value="abstract member Write : bool -&gt; unit&#xA;override this.Write : bool -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -862,6 +972,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -876,23 +991,23 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example demonstrates how to store and retrieve application settings in a file.  
   
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -900,8 +1015,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Byte)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Byte value);" />
       <MemberSignature Language="F#" Value="abstract member Write : byte -&gt; unit&#xA;override this.Write : byte -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -927,9 +1042,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -953,24 +1074,24 @@
   
 -   ISCII  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
   
- [!code-cpp[System.IO.BinaryReaderWriter.RWByte#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/CPP/rwbyte.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWByte#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/CS/rwbyte.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWByte#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/VB/rwbyte.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/CPP/rwbyte.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/CS/rwbyte.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWByte/VB/rwbyte.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -978,8 +1099,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (buffer As Byte())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberSignature Language="F#" Value="abstract member Write : byte[] -&gt; unit&#xA;override this.Write : byte[] -&gt; unit" Usage="binaryWriter.Write buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1004,6 +1125,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1018,16 +1144,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
   
- [!code-cpp[System.IO.BinaryReaderWriter.RWBytes1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/CPP/rwbytes.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWBytes1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/CS/rwbytes.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWBytes1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/VB/rwbytes.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/CPP/rwbytes.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/CS/rwbytes.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes1/VB/rwbytes.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1035,9 +1161,9 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1045,8 +1171,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(char ch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (ch As Char)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(char ch);" />
       <MemberSignature Language="F#" Value="abstract member Write : char -&gt; unit&#xA;override this.Write : char -&gt; unit" Usage="binaryWriter.Write ch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1072,9 +1198,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1098,7 +1230,7 @@
   
 -   ISCII  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  Unicode surrogate characters must be written out as pairs together in the same call, not individually. If you require support for surrogate pairs in your application, consider using a character array and the <xref:System.IO.BinaryWriter.Write%2A> method overload.  
   
@@ -1107,9 +1239,9 @@
 ## Examples  
  The following code example shows how to read and write data using memory as a backing store.  
   
- [!code-cpp[System.IO.BinaryReaderWriter.RWChar1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/CPP/rwchar.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWChar1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/CS/rwchar.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChar1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/VB/rwchar.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/CPP/rwchar.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/CS/rwchar.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChar1/VB/rwchar.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1118,9 +1250,9 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="ch" /> is a single surrogate character.</exception>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1128,8 +1260,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(char[] chars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (chars As Char())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;char&gt; ^ chars);" />
       <MemberSignature Language="F#" Value="abstract member Write : char[] -&gt; unit&#xA;override this.Write : char[] -&gt; unit" Usage="binaryWriter.Write chars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;char&gt; ^ chars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1154,6 +1286,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1172,25 +1309,25 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
-|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
-|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
+|Create a text file.|[How to: Write Text to a File](/dotnet/standard/io/how-to-write-text-to-a-file)|  
+|Write to a text file.|[How to: Write Text to a File](/dotnet/standard/io/how-to-write-text-to-a-file)|  
+|Read from a text file.|[How to: Read Text from a File](/dotnet/standard/io/how-to-read-text-from-a-file)|  
+|Append text to a file.|[How to: Open and Append to a Log File](/dotnet/standard/io/how-to-open-and-append-to-a-log-file)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=nameWithType>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file)|  
   
    
   
 ## Examples  
  The following code example shows how to read and write data using memory as a backing store.  
   
- [!code-cpp[System.IO.BinaryReaderWriter.RWChars1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/CPP/rwchars.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWChars1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/CS/rwchars.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChars1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/VB/rwchars.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/CPP/rwchars.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/CS/rwchars.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars1/VB/rwchars.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1199,9 +1336,9 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1209,8 +1346,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Decimal)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Decimal value);" />
       <MemberSignature Language="F#" Value="abstract member Write : decimal -&gt; unit&#xA;override this.Write : decimal -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1235,6 +1372,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1253,24 +1395,24 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
-|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
-|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
+|Create a text file.|[How to: Write Text to a File](/dotnet/standard/io/how-to-write-text-to-a-file)|  
+|Write to a text file.|[How to: Write Text to a File](/dotnet/standard/io/how-to-write-text-to-a-file)|  
+|Read from a text file.|[How to: Read Text from a File](/dotnet/standard/io/how-to-read-text-from-a-file)|  
+|Append text to a file.|[How to: Open and Append to a Log File](/dotnet/standard/io/how-to-open-and-append-to-a-log-file)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=nameWithType>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file)|  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1278,8 +1420,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Double)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(double value);" />
       <MemberSignature Language="F#" Value="abstract member Write : double -&gt; unit&#xA;override this.Write : double -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1305,9 +1447,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1323,24 +1471,60 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example shows how to read and write `Double` data to memory by using the <xref:System.IO.BinaryReader> and `BinaryWriter` classes on top of the <xref:System.IO.MemoryStream> class. `MemoryStream` only reads and writes `Byte` data.  
   
- [!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public virtual void Write (Half value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(valuetype System.Half value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Half)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Half)" />
+      <MemberSignature Language="F#" Value="abstract member Write : Half -&gt; unit&#xA;override this.Write : Half -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(Half value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Half" Index="0" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1348,8 +1532,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Short)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(short value);" />
       <MemberSignature Language="F#" Value="abstract member Write : int16 -&gt; unit&#xA;override this.Write : int16 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1374,6 +1558,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1394,24 +1583,24 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
-|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
-|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
+|Create a text file.|[How to: Write Text to a File](/dotnet/standard/io/how-to-write-text-to-a-file)|  
+|Write to a text file.|[How to: Write Text to a File](/dotnet/standard/io/how-to-write-text-to-a-file)|  
+|Read from a text file.|[How to: Read Text from a File](/dotnet/standard/io/how-to-read-text-from-a-file)|  
+|Append text to a file.|[How to: Open and Append to a Log File](/dotnet/standard/io/how-to-open-and-append-to-a-log-file)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=nameWithType>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file)|  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1419,8 +1608,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(int value);" />
       <MemberSignature Language="F#" Value="abstract member Write : int -&gt; unit&#xA;override this.Write : int -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1445,6 +1634,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1461,23 +1655,23 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example demonstrates how to store and retrieve application settings in a file.  
   
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1485,8 +1679,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Long)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(long value);" />
       <MemberSignature Language="F#" Value="abstract member Write : int64 -&gt; unit&#xA;override this.Write : int64 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1511,6 +1705,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1527,15 +1726,15 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1543,8 +1742,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (buffer As ReadOnlySpan(Of Byte))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
       <MemberSignature Language="F#" Value="abstract member Write : ReadOnlySpan&lt;byte&gt; -&gt; unit&#xA;override this.Write : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="binaryWriter.Write buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1561,11 +1760,16 @@
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The span of bytes to write.</param>
@@ -1578,8 +1782,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(valuetype System.ReadOnlySpan`1&lt;char&gt; chars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (chars As ReadOnlySpan(Of Char))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(ReadOnlySpan&lt;char&gt; chars);" />
       <MemberSignature Language="F#" Value="abstract member Write : ReadOnlySpan&lt;char&gt; -&gt; unit&#xA;override this.Write : ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="binaryWriter.Write chars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(ReadOnlySpan&lt;char&gt; chars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1596,11 +1800,16 @@
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="chars" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="chars" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="chars">A span of chars to write.</param>
@@ -1613,8 +1822,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As SByte)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::SByte value);" />
       <MemberSignature Language="F#" Value="abstract member Write : sbyte -&gt; unit&#xA;override this.Write : sbyte -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1640,9 +1849,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1658,15 +1873,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1674,8 +1889,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Single)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(float value);" />
       <MemberSignature Language="F#" Value="abstract member Write : single -&gt; unit&#xA;override this.Write : single -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1701,9 +1916,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1721,23 +1942,23 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example demonstrates how to store and retrieve application settings in a file.  
   
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1745,8 +1966,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::String ^ value);" />
       <MemberSignature Language="F#" Value="abstract member Write : string -&gt; unit&#xA;override this.Write : string -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1772,9 +1993,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1794,15 +2021,15 @@
   
  For example, the string "A" has a length of 1, but when encoded with UTF-16; the length is 2 bytes, so the value written in the prefix is 2, and 3 bytes are written to the stream, including the prefix.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example demonstrates how to store and retrieve application settings in a file.  
   
- [!code-csharp[System.IO.BinaryReaderWriter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1811,9 +2038,9 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1821,8 +2048,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As UShort)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt16 value);" />
       <MemberSignature Language="F#" Value="abstract member Write : uint16 -&gt; unit&#xA;override this.Write : uint16 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1848,9 +2075,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1868,15 +2101,15 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1884,8 +2117,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As UInteger)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt32 value);" />
       <MemberSignature Language="F#" Value="abstract member Write : uint32 -&gt; unit&#xA;override this.Write : uint32 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1911,9 +2144,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1931,15 +2170,15 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1947,8 +2186,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As ULong)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt64 value);" />
       <MemberSignature Language="F#" Value="abstract member Write : uint64 -&gt; unit&#xA;override this.Write : uint64 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1974,9 +2213,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1994,15 +2239,15 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2010,8 +2255,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int8[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (buffer As Byte(), index As Integer, count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberSignature Language="F#" Value="abstract member Write : byte[] * int * int -&gt; unit&#xA;override this.Write : byte[] * int * int -&gt; unit" Usage="binaryWriter.Write (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2036,6 +2281,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2054,15 +2304,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example shows how to write binary data using memory as a backing store, and then verify that the data was written correctly.  
   
- [!code-csharp[System.IO.BinaryReaderWriter.RWBytes2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/CS/rwreadbytes.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWBytes2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/VB/rwreadbytes.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/CS/rwreadbytes.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWBytes2/VB/rwreadbytes.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2073,9 +2323,9 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2083,8 +2333,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(char[] chars, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (chars As Char(), index As Integer, count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;char&gt; ^ chars, int index, int count);" />
       <MemberSignature Language="F#" Value="abstract member Write : char[] * int * int -&gt; unit&#xA;override this.Write : char[] * int * int -&gt; unit" Usage="binaryWriter.Write (chars, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;char&gt; ^ chars, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2109,6 +2359,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2127,16 +2382,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example shows how to read and write data using memory as a backing store.  
   
- [!code-cpp[System.IO.BinaryReaderWriter.RWChars2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/CPP/rwreadchars.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWChars2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/CS/rwreadchars.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWChars2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/VB/rwreadchars.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/CPP/rwreadchars.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/CS/rwreadchars.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWChars2/VB/rwreadchars.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2148,18 +2403,22 @@
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write7BitEncodedInt">
-      <MemberSignature Language="C#" Value="protected void Write7BitEncodedInt (int value);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Write7BitEncodedInt(int32 value) cil managed" />
+      <MemberSignature Language="C#" Value="protected void Write7BitEncodedInt (int value);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Write7BitEncodedInt(int32 value) cil managed" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write7BitEncodedInt(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub Write7BitEncodedInt (value As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Write7BitEncodedInt(int value);" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Write7BitEncodedInt (value As Integer)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.Write7BitEncodedInt : int -&gt; unit" Usage="binaryWriter.Write7BitEncodedInt value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Write7BitEncodedInt(int value);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public void Write7BitEncodedInt (int value);" FrameworkAlternate="net-5.0;net-6.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write7BitEncodedInt(int32 value) cil managed" FrameworkAlternate="net-5.0;net-6.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write7BitEncodedInt (value As Integer)" FrameworkAlternate="net-5.0;net-6.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write7BitEncodedInt(int value);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2185,6 +2444,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2202,13 +2466,50 @@
   
  If `value` will fit in seven bits, it takes only one byte of space. If `value` will not fit in seven bits, the high bit is set on the first byte and written out. `value` is then shifted by seven bits and the next byte is written. This process is repeated until the entire integer has been written.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.EndOfStreamException">The end of the stream is reached.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.IO.IOException">The stream is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write7BitEncodedInt64">
+      <MemberSignature Language="C#" Value="public void Write7BitEncodedInt64 (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write7BitEncodedInt64(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write7BitEncodedInt64(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write7BitEncodedInt64 (value As Long)" />
+      <MemberSignature Language="F#" Value="member this.Write7BitEncodedInt64 : int64 -&gt; unit" Usage="binaryWriter.Write7BitEncodedInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write7BitEncodedInt64(long value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to write.</param>
+        <summary>Writes out a number 7 bits at a time.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

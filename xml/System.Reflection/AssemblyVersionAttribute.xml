@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyVersionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyVersionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyVersionAttribute&#xA;Inherits Attribute" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyVersionAttribute sealed : Attribute" />
   <TypeSignature Language="F#" Value="type AssemblyVersionAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyVersionAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +14,8 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -27,19 +29,27 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=false)</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=false)&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false)</AttributeName>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -50,7 +60,7 @@
 ## Remarks  
  The <xref:System.Reflection.AssemblyVersionAttribute> attribute is used to assign a version number to an assembly. That version number is then stored with the assembly's metadata.  
   
- The assembly version number is part of an assembly's identity and plays a key part in binding to the assembly and in version policy. The default version policy for the runtime is that applications run only with the versions they were built and tested with, unless overridden by explicit version policy in configuration files (the application configuration file, the publisher policy file, and the computer's administrator configuration file). See [Assemblies in the Common Language Runtime](~/docs/standard/assembly/index.md#assemblies-in-the-common-language-runtime) for more information.  
+ The assembly version number is part of an assembly's identity and plays a key part in binding to the assembly and in version policy. The default version policy for the runtime is that applications run only with the versions they were built and tested with, unless overridden by explicit version policy in configuration files (the application configuration file, the publisher policy file, and the computer's administrator configuration file). See [Assemblies in .NET](/dotnet/standard/assembly/#assemblies-in-the-common-language-runtime) for more information.  
   
 > [!NOTE]
 >  Version checking only occurs with strong-named assemblies.  
@@ -67,7 +77,7 @@
 > [!NOTE]
 >  If you specify an asterisk for the build number, you cannot specify a revision number.  
   
- The assembly major and minor versions are used as the type library version number when the assembly is exported. Some COM hosts do not accept type libraries with the version number 0.0. Therefore, if you want to expose an assembly to COM clients, set the assembly version explicitly to 1.0 in the `AssemblyVersionAttribute` page for projects created outside [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] and with no `AssemblyVersionAttribute` specified. Do this even when the assembly version is 0.0. All projects created in [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] have a default assembly version of 1.0.*.  
+ The assembly major and minor versions are used as the type library version number when the assembly is exported. Some COM hosts do not accept type libraries with the version number 0.0. Therefore, if you want to expose an assembly to COM clients, set the assembly version explicitly to 1.0 in the `AssemblyVersionAttribute` page for projects created outside Visual Studio 2005 and with no `AssemblyVersionAttribute` specified. Do this even when the assembly version is 0.0. All projects created in Visual Studio 2005 have a default assembly version of 1.0.*.  
   
  To get the name of an assembly you have loaded, call <xref:System.Reflection.Assembly.GetName%2A> on the assembly to get an <xref:System.Reflection.AssemblyName>, and then get the <xref:System.Reflection.AssemblyName.Version%2A> property. To get the name of an assembly you have not loaded, call <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> from your client application to check the assembly version that your application uses.  
   
@@ -78,17 +88,17 @@
 ## Examples  
  The following example uses the <xref:System.Reflection.AssemblyVersionAttribute> attribute to assign a version number to an assembly. At compile time, this version information is stored with the assembly's metadata. At run time, the example retrieves the value of the <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property on a type found in the assembly to get a reference to the executing assembly, and it retrieves the assembly's version information from the <xref:System.Reflection.AssemblyName.Version%2A> property of the <xref:System.Reflection.AssemblyName> object returned by the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=nameWithType> method.  
   
- [!code-csharp[System.Version.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/example1.cs#6)]
- [!code-vb[System.Version.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/example1.vb#6)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Version.Class/cs/example1.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Version.Class/vb/example1.vb" id="Snippet6":::  
   
  ]]></format>
     </remarks>
     <altmember cref="P:System.Reflection.AssemblyName.Version" />
-    <related type="Article" href="https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e">Setting Assembly Attributes</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903">Assembly Versioning</related>
-    <related type="Article" href="~/docs/standard/metadata-and-self-describing-components.md">Metadata and Self-Describing Components</related>
-    <related type="Article" href="~/docs/standard/managed-execution-process.md">Managed Execution Process</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/2cfebe19-7436-49f1-bd99-3c4019f0b676">Assemblies in the Common Language Runtime</related>
+    <related type="Article" href="/dotnet/standard/assembly/set-attributes">Set assembly attributes</related>
+    <related type="Article" href="/dotnet/standard/assembly/versioning">Assembly versioning</related>
+    <related type="Article" href="/dotnet/standard/metadata-and-self-describing-components">Metadata and Self-Describing Components</related>
+    <related type="Article" href="/dotnet/standard/managed-execution-process">Managed Execution Process</related>
+    <related type="Article" href="/dotnet/standard/assembly/">Assemblies in .NET</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,8 +106,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyVersionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (version As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyVersionAttribute(System::String ^ version);" />
       <MemberSignature Language="F#" Value="new System.Reflection.AssemblyVersionAttribute : string -&gt; System.Reflection.AssemblyVersionAttribute" Usage="new System.Reflection.AssemblyVersionAttribute version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyVersionAttribute(System::String ^ version);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -108,6 +118,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -153,8 +165,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e">Setting Assembly Attributes</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903">Assembly Versioning</related>
+        <related type="Article" href="/dotnet/standard/assembly/set-attributes">Set assembly attributes</related>
+        <related type="Article" href="/dotnet/standard/assembly/versioning">Assembly versioning</related>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -162,8 +174,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Version" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyVersionAttribute.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.Reflection.AssemblyVersionAttribute.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -174,6 +186,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

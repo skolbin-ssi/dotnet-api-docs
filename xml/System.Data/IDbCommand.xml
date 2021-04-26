@@ -3,14 +3,16 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDbCommand implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.IDbCommand" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDbCommand&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IDbCommand : IDisposable" />
   <TypeSignature Language="F#" Value="type IDbCommand = interface&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDbCommand : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
@@ -24,18 +26,22 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Interfaces>
     <Interface>
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an SQL statement that is executed while connected to a data source, and is implemented by .NET Framework data providers that access relational databases.</summary>
+    <summary>Represents an SQL statement that is executed while connected to a data source, and is implemented by .NET data providers that access relational databases.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.IDbCommand> interface enables an inheriting class to implement a Command class, which represents an SQL statement that is executed at a data source. For more information about Command classes, see [Executing a Command](~/docs/framework/data/adonet/executing-a-command.md).  
+ The <xref:System.Data.IDbCommand> interface enables an inheriting class to implement a Command class, which represents an SQL statement that is executed at a data source. For more information about Command classes, see [Executing a Command](/dotnet/framework/data/adonet/executing-a-command).  
   
  An application does not create an instance of the <xref:System.Data.IDbCommand> interface directly, but creates an instance of a class that implements the <xref:System.Data.IDbCommand> interface.  
   
@@ -46,8 +52,8 @@
 ## Examples  
  The following example creates instances of the derived classes, <xref:System.Data.SqlClient.SqlConnection>, <xref:System.Data.SqlClient.SqlCommand>, and <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it to the console. Finally, the example closes the <xref:System.Data.SqlClient.SqlDataReader>, then the <xref:System.Data.SqlClient.SqlConnection>.  
   
- [!code-csharp[Classic WebData SqlCommand Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlCommand Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlCommand Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlCommand Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlCommand Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -89,8 +95,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
       <MemberSignature Language="F#" Value="abstract member Cancel : unit -&gt; unit" Usage="iDbCommand.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -98,6 +104,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -132,8 +140,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CommandText" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.CommandText" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CommandText : string with get, set" Usage="System.Data.IDbCommand.CommandText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -141,6 +149,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -171,8 +181,8 @@
 ## Examples  
  The following example creates an instance of a derived class, <xref:System.Data.OleDb.OleDbCommand> and sets some of its properties.  
   
- [!code-csharp[Classic WebData IDbCommand.CommandText Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandText Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbCommand.CommandText Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandText Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandText Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandText Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -185,8 +195,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 CommandTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.CommandTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandTimeout As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CommandTimeout { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.CommandTimeout : int with get, set" Usage="System.Data.IDbCommand.CommandTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CommandTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -194,6 +204,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -219,8 +231,8 @@
 ## Examples  
  The following example creates an instance of a derived class, <xref:System.Data.SqlClient.SqlCommand> and sets some of its properties.  
   
- [!code-csharp[Classic WebData IDbCommand.CommandTimeout Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandTimeout Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbCommand.CommandTimeout Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandTimeout Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandTimeout Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.CommandTimeout Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -235,8 +247,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.CommandType CommandType" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.CommandType" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandType As CommandType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::CommandType CommandType { System::Data::CommandType get(); void set(System::Data::CommandType value); };" />
       <MemberSignature Language="F#" Value="member this.CommandType : System.Data.CommandType with get, set" Usage="System.Data.IDbCommand.CommandType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::CommandType CommandType { System::Data::CommandType get(); void set(System::Data::CommandType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -244,6 +256,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -274,12 +288,13 @@
       </Docs>
     </Member>
     <Member MemberName="Connection">
-      <MemberSignature Language="C#" Value="public System.Data.IDbConnection Connection { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Data.IDbConnection? Connection { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbConnection Connection" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.Connection" />
       <MemberSignature Language="VB.NET" Value="Public Property Connection As IDbConnection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbConnection ^ Connection { System::Data::IDbConnection ^ get(); void set(System::Data::IDbConnection ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Connection : System.Data.IDbConnection with get, set" Usage="System.Data.IDbCommand.Connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbConnection ^ Connection { System::Data::IDbConnection ^ get(); void set(System::Data::IDbConnection ^ value); };" />
+      <MemberSignature Language="C#" Value="public System.Data.IDbConnection Connection { get; set; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -287,6 +302,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -314,8 +331,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IDbDataParameter CreateParameter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.CreateParameter" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateParameter () As IDbDataParameter" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbDataParameter ^ CreateParameter();" />
       <MemberSignature Language="F#" Value="abstract member CreateParameter : unit -&gt; System.Data.IDbDataParameter" Usage="iDbCommand.CreateParameter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbDataParameter ^ CreateParameter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -323,6 +340,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -358,8 +377,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ExecuteNonQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.ExecuteNonQuery" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteNonQuery () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteNonQuery();" />
       <MemberSignature Language="F#" Value="abstract member ExecuteNonQuery : unit -&gt; int" Usage="iDbCommand.ExecuteNonQuery " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ExecuteNonQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -367,6 +386,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -385,7 +406,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Executes an SQL statement against the <see langword="Connection" /> object of a .NET Framework data provider, and returns the number of rows affected.</summary>
+        <summary>Executes an SQL statement against the <see langword="Connection" /> object of a .NET data provider, and returns the number of rows affected.</summary>
         <returns>The number of rows affected.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -402,8 +423,8 @@
 ## Examples  
  The following example creates an instance of the derived class, <xref:System.Data.OleDb.OleDbCommand>, and then executes it. To accomplish this, the method is passed a string that is a SQL SELECT statement and a string to use to connect to the data source.  
   
- [!code-csharp[Classic WebData OleDbCommand.ExecuteNonQuery Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteNonQuery Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbCommand.ExecuteNonQuery Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteNonQuery Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteNonQuery Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteNonQuery Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -429,8 +450,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IDataReader ExecuteReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.ExecuteReader" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader () As IDataReader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDataReader ^ ExecuteReader();" />
       <MemberSignature Language="F#" Value="abstract member ExecuteReader : unit -&gt; System.Data.IDataReader" Usage="iDbCommand.ExecuteReader " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDataReader ^ ExecuteReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -438,6 +459,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -466,8 +489,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IDataReader ExecuteReader(valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader (behavior As CommandBehavior) As IDataReader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDataReader ^ ExecuteReader(System::Data::CommandBehavior behavior);" />
       <MemberSignature Language="F#" Value="abstract member ExecuteReader : System.Data.CommandBehavior -&gt; System.Data.IDataReader" Usage="iDbCommand.ExecuteReader behavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDataReader ^ ExecuteReader(System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -475,6 +498,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -516,12 +541,13 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteScalar">
-      <MemberSignature Language="C#" Value="public object ExecuteScalar ();" />
+      <MemberSignature Language="C#" Value="public object? ExecuteScalar ();" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ExecuteScalar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.ExecuteScalar" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteScalar () As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ExecuteScalar();" />
       <MemberSignature Language="F#" Value="abstract member ExecuteScalar : unit -&gt; obj" Usage="iDbCommand.ExecuteScalar " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ExecuteScalar();" />
+      <MemberSignature Language="C#" Value="public object ExecuteScalar ();" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -529,6 +555,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -569,8 +597,8 @@ Int32 count = (int) ExecuteScalar();
 ## Examples  
  The following example creates an instance of the derived class, <xref:System.Data.SqlClient.SqlCommand>, and then executes it using <xref:System.Data.SqlClient.SqlCommand.ExecuteScalar%2A>. The example is passed a string that is a Transact-SQL statement that returns an aggregate result, and a string to use to connect to the data source.  
   
- [!code-csharp[Classic WebData SqlCommand.ExecuteScalar#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlCommand.ExecuteScalar/CS/mysample.cs#1)]
- [!code-vb[Classic WebData SqlCommand.ExecuteScalar#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlCommand.ExecuteScalar/VB/mysample.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlCommand.ExecuteScalar/CS/mysample.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlCommand.ExecuteScalar/VB/mysample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -581,8 +609,8 @@ Int32 count = (int) ExecuteScalar();
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDataParameterCollection Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As IDataParameterCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDataParameterCollection ^ Parameters { System::Data::IDataParameterCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Parameters : System.Data.IDataParameterCollection" Usage="System.Data.IDbCommand.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDataParameterCollection ^ Parameters { System::Data::IDataParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -590,6 +618,8 @@ Int32 count = (int) ExecuteScalar();
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -615,8 +645,8 @@ Int32 count = (int) ExecuteScalar();
 ## Examples  
  The following example creates an instance of the derived class, <xref:System.Data.SqlClient.SqlCommand>, and displays its parameters. In the example, the application passes a <xref:System.Data.SqlClient.SqlConnection>, a query string that is a Transact-SQL SELECT statement, and an array of <xref:System.Data.SqlClient.SqlParameter> objects.  
   
- [!code-csharp[Classic WebData IDbCommand.Parameters Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.Parameters Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbCommand.Parameters Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.Parameters Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbCommand.Parameters Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbCommand.Parameters Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -628,8 +658,8 @@ Int32 count = (int) ExecuteScalar();
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Prepare() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbCommand.Prepare" />
       <MemberSignature Language="VB.NET" Value="Public Sub Prepare ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Prepare();" />
       <MemberSignature Language="F#" Value="abstract member Prepare : unit -&gt; unit" Usage="iDbCommand.Prepare " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Prepare();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -637,6 +667,8 @@ Int32 count = (int) ExecuteScalar();
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -667,8 +699,8 @@ Int32 count = (int) ExecuteScalar();
 ## Examples  
  The following example creates an instance of the derived class, <xref:System.Data.OleDb.OleDbCommand>, and opens the connection. The example then prepares a stored procedure on the data source by passing a string that is a SQL Select statement and a string to use to connect to the data source.  
   
- [!code-csharp[Classic WebData OleDbCommand.Prepare Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.Prepare Example/CS/source.cs#1)]
- [!code-vb[Classic WebData OleDbCommand.Prepare Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.Prepare Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.Prepare Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.Prepare Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -680,12 +712,13 @@ Int32 count = (int) ExecuteScalar();
       </Docs>
     </Member>
     <Member MemberName="Transaction">
-      <MemberSignature Language="C#" Value="public System.Data.IDbTransaction Transaction { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Data.IDbTransaction? Transaction { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbTransaction Transaction" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.Transaction" />
       <MemberSignature Language="VB.NET" Value="Public Property Transaction As IDbTransaction" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbTransaction ^ Transaction { System::Data::IDbTransaction ^ get(); void set(System::Data::IDbTransaction ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Transaction : System.Data.IDbTransaction with get, set" Usage="System.Data.IDbCommand.Transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbTransaction ^ Transaction { System::Data::IDbTransaction ^ get(); void set(System::Data::IDbTransaction ^ value); };" />
+      <MemberSignature Language="C#" Value="public System.Data.IDbTransaction Transaction { get; set; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -693,6 +726,8 @@ Int32 count = (int) ExecuteScalar();
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -710,7 +745,7 @@ Int32 count = (int) ExecuteScalar();
         <ReturnType>System.Data.IDbTransaction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the transaction within which the <see langword="Command" /> object of a .NET Framework data provider executes.</summary>
+        <summary>Gets or sets the transaction within which the <see langword="Command" /> object of a .NET data provider executes.</summary>
         <value>the <see langword="Command" /> object of a .NET Framework data provider executes. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -720,8 +755,8 @@ Int32 count = (int) ExecuteScalar();
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.UpdateRowSource UpdatedRowSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbCommand.UpdatedRowSource" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdatedRowSource As UpdateRowSource" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::UpdateRowSource UpdatedRowSource { System::Data::UpdateRowSource get(); void set(System::Data::UpdateRowSource value); };" />
       <MemberSignature Language="F#" Value="member this.UpdatedRowSource : System.Data.UpdateRowSource with get, set" Usage="System.Data.IDbCommand.UpdatedRowSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::UpdateRowSource UpdatedRowSource { System::Data::UpdateRowSource get(); void set(System::Data::UpdateRowSource value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -729,6 +764,8 @@ Int32 count = (int) ExecuteScalar();
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

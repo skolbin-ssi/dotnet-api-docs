@@ -3,12 +3,14 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OpenFileDialog extends Microsoft.Win32.FileDialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.OpenFileDialog" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OpenFileDialog&#xA;Inherits FileDialog" />
-  <TypeSignature Language="C++ CLI" Value="public ref class OpenFileDialog sealed : Microsoft::Win32::FileDialog" />
   <TypeSignature Language="F#" Value="type OpenFileDialog = class&#xA;    inherit FileDialog" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OpenFileDialog sealed : Microsoft::Win32::FileDialog" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Win32.FileDialog</BaseTypeName>
@@ -20,23 +22,23 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following figure shows an <xref:Microsoft.Win32.OpenFileDialog> for [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)].  
+ The following figure shows an <xref:Microsoft.Win32.OpenFileDialog> for Windows Vista.  
   
  ![Open dialog box](~/add/media/dialogboxesoverviewfigure2.png "Open dialog box")  
   
- Starting in [!INCLUDE[TLA2#tla_winvista](~/includes/tla2sharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. Use the <xref:Microsoft.Win32.FileDialog.CustomPlaces%2A> property to set this list of links.  
+ Starting in Windows Vista, open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. Use the <xref:Microsoft.Win32.FileDialog.CustomPlaces%2A> property to set this list of links.  
   
 <a name="xamlTextUsage_OpenFileDialog"></a>   
 ## XAML Text Usage  
- You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ You cannot declare this managed class in XAML.  
   
    
   
 ## Examples  
  The following example shows how to create an <xref:Microsoft.Win32.OpenFileDialog> that contains a default file name and extension type.  
   
- [!code-csharp[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#openfiledialogboxcodebehind)]
- [!code-vb[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#openfiledialogboxcodebehind)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs" id="Snippetopenfiledialogboxcodebehind":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb" id="Snippetopenfiledialogboxcodebehind":::  
   
  ]]></format>
     </remarks>
@@ -54,10 +56,13 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -71,20 +76,24 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CheckPermissionsToShowDialog() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.CheckPermissionsToShowDialog" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CheckPermissionsToShowDialog ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CheckPermissionsToShowDialog();" />
       <MemberSignature Language="F#" Value="override this.CheckPermissionsToShowDialog : unit -&gt; unit" Usage="openFileDialog.CheckPermissionsToShowDialog " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CheckPermissionsToShowDialog();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityTreatAsSafe]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityTreatAsSafe&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -101,17 +110,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Multiselect" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.OpenFileDialog.Multiselect" />
       <MemberSignature Language="VB.NET" Value="Public Property Multiselect As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Multiselect { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.Multiselect : bool with get, set" Usage="Microsoft.Win32.OpenFileDialog.Multiselect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Multiselect { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[set: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -122,7 +134,6 @@
         <value>
           <see langword="true" /> if multiple selections are allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">to change the dialog user interface behavior. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -130,17 +141,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream OpenFile() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.OpenFile" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFile () As Stream" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenFile();" />
       <MemberSignature Language="F#" Value="member this.OpenFile : unit -&gt; System.IO.Stream" Usage="openFileDialog.OpenFile " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenFile();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,7 +175,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No files were selected in the dialog.</exception>
-        <permission cref="T:System.Security.Permissions.FileDialogPermission">to create a file stream. Associated enumeration:  <see cref="F:System.Security.Permissions.FileDialogPermissionAccess.Open" /></permission>
         <altmember cref="P:Microsoft.Win32.FileDialog.SafeFileName" />
       </Docs>
     </Member>
@@ -170,17 +183,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream[] OpenFiles() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.OpenFiles" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenFiles () As Stream()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::Stream ^&gt; ^ OpenFiles();" />
       <MemberSignature Language="F#" Value="member this.OpenFiles : unit -&gt; System.IO.Stream[]" Usage="openFileDialog.OpenFiles " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::Stream ^&gt; ^ OpenFiles();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -199,7 +215,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No files were selected in the dialog.</exception>
-        <permission cref="T:System.Security.Permissions.FileDialogPermission">to create a file stream array. Associated enumeration:  <see cref="F:System.Security.Permissions.FileDialogPermissionAccess.Open" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyChecked">
@@ -207,17 +222,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnlyChecked" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.OpenFileDialog.ReadOnlyChecked" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnlyChecked As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnlyChecked { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ReadOnlyChecked : bool with get, set" Usage="Microsoft.Win32.OpenFileDialog.ReadOnlyChecked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnlyChecked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[set: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -235,17 +253,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.OpenFileDialog.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="openFileDialog.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -255,7 +276,6 @@
       <Docs>
         <summary>Resets all <see cref="T:Microsoft.Win32.OpenFileDialog" /> properties to their default values.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">to reset the dialog. Associated enumeration:<see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
         <block subset="none" type="overrides">
           <para>This class is sealed, so you cannot override this method.</para>
         </block>
@@ -266,17 +286,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowReadOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.OpenFileDialog.ShowReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowReadOnly As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowReadOnly { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ShowReadOnly : bool with get, set" Usage="Microsoft.Win32.OpenFileDialog.ShowReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[set: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

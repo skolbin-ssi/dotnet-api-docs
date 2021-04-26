@@ -1,10 +1,19 @@
 <Type Name="ArraySegment&lt;T&gt;" FullName="System.ArraySegment&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public struct ArraySegment&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit ArraySegment`1&lt;T&gt; extends System.ValueType implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="C#" Value="public struct ArraySegment&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ArraySegment`1&lt;T&gt; extends System.ValueType implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.IEnumerable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.ArraySegment`1" />
-  <TypeSignature Language="VB.NET" Value="Public Structure ArraySegment(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IList(Of T), IReadOnlyCollection(Of T), IReadOnlyList(Of T)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ArraySegment : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IList&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::IReadOnlyList&lt;T&gt;" />
-  <TypeSignature Language="F#" Value="type ArraySegment&lt;'T&gt; = struct&#xA;    interface IList&lt;'T&gt;&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;'T&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ArraySegment(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IList(Of T), IReadOnlyCollection(Of T), IReadOnlyList(Of T)" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="F#" Value="type ArraySegment&lt;'T&gt; = struct&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IList&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface IReadOnlyList&lt;'T&gt;" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ArraySegment : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IList&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::IReadOnlyList&lt;T&gt;" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C#" Value="public struct ArraySegment&lt;T&gt;" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit ArraySegment`1&lt;T&gt; extends System.ValueType" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ArraySegment(Of T)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+  <TypeSignature Language="F#" Value="type ArraySegment&lt;'T&gt; = struct" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ArraySegment" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit ArraySegment`1&lt;T&gt; extends System.ValueType implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.IEnumerable" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="F#" Value="type ArraySegment&lt;'T&gt; = struct&#xA;    interface IList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netstandard-1.0;netstandard-1.1;netstandard-1.2" />
+  <TypeSignature Language="F#" Value="type ArraySegment&lt;'T&gt; = struct&#xA;    interface IList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="F#" Value="type ArraySegment&lt;'T&gt; = struct&#xA;    interface IList&lt;'T&gt;&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IReadOnlyCollection&lt;'T&gt;" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +23,8 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -26,6 +37,11 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <TypeParameters>
     <TypeParameter Name="T" />
   </TypeParameters>
@@ -33,31 +49,33 @@
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Collections.Generic.ICollection&lt;T&gt;</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Collections.Generic.IList&lt;T&gt;</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;T&gt;</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
-      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -70,7 +88,7 @@
  <xref:System.ArraySegment%601> is a wrapper around an array that delimits a range of elements in that array. Multiple <xref:System.ArraySegment%601> instances can refer to the same original array and can overlap. The original array must be one-dimensional and must have zero-based indexing.  
   
 > [!NOTE]
->  <xref:System.ArraySegment%601> implements the <xref:System.Collections.Generic.IReadOnlyCollection%601> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.ArraySegment%601> structure did not implement this interface.  
+>  <xref:System.ArraySegment%601> implements the <xref:System.Collections.Generic.IReadOnlyCollection%601> interface starting with the .NET Framework 4.6; in previous versions of the .NET Framework, the <xref:System.ArraySegment%601> structure did not implement this interface.  
   
  The <xref:System.ArraySegment%601> structure is useful whenever the elements of an array will be manipulated in distinct segments. For example:  
   
@@ -80,8 +98,8 @@
   
 -   For task-based asynchronous operations, you can use an <xref:System.ArraySegment%601> object to ensure that each task operates on a distinct segment of the array. The following example divides an array into individual segments with up to ten elements. Each element in the segment is multiplied by its segment number. The result shows that using the <xref:System.ArraySegment%601> class to manipulate elements in this way changes the values of its underlying array.  
   
-     [!code-csharp[System.ArraySegment#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/segmentexample.cs#2)]
-     [!code-vb[System.ArraySegment#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/segmentexample.vb#2)]  
+     :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/segmentexample.cs" id="Snippet2":::
+     :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/segmentexample.vb" id="Snippet2":::  
   
  Note, however, that although the <xref:System.ArraySegment%601> structure can be used to divide an array into distinct segments, the segments are not completely independent of one another. The <xref:System.ArraySegment%601.Array%2A> property returns the entire original array, not a copy of the array; therefore, changes made to the array returned by the <xref:System.ArraySegment%601.Array%2A> property are made to the original array. If this is undesirable, you should perform operations on a copy of the array, rather than an <xref:System.ArraySegment%601> object that represents a portion of the array.  
   
@@ -95,18 +113,18 @@
   
  If you want to retrieve an element by its index in the <xref:System.ArraySegment%601> object, you must cast it to an <xref:System.Collections.Generic.IList%601> object and retrieve it or modify it by using the <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=nameWithType> property. The following example retrieves the element in an <xref:System.ArraySegment%601> object that delimits a section of a string array.  
   
- [!code-csharp[System.ArraySegment.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs#1)]
- [!code-vb[System.ArraySegment.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb#1)]  
-  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb" id="Snippet1"::: 
+
    
   
 ## Examples  
  The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
   
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
-  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb" id="Snippet1":::
+
  ]]></format>
     </remarks>
     <altmember cref="T:System.Array" />
@@ -123,6 +141,18 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ArraySegment`1" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+ 
+## Examples  
+ The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
+  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb" id="Snippet1":::  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -130,8 +160,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.#ctor(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment(cli::array &lt;T&gt; ^ array);" />
       <MemberSignature Language="F#" Value="new ArraySegment&lt;'T&gt; : 'T[] -&gt; ArraySegment&lt;'T&gt;" Usage="new System.ArraySegment&lt;'T&gt; array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment(cli::array &lt;T&gt; ^ array);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -142,6 +172,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,16 +201,7 @@
  The original array must be one-dimensional and must have zero-based indexing.  
   
  Multiple <xref:System.ArraySegment%601> instances can refer to the same original array and can overlap.  
-  
-   
-  
-## Examples  
- The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
-  
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -191,8 +214,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.#ctor(`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), offset As Integer, count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment(cli::array &lt;T&gt; ^ array, int offset, int count);" />
       <MemberSignature Language="F#" Value="new ArraySegment&lt;'T&gt; : 'T[] * int * int -&gt; ArraySegment&lt;'T&gt;" Usage="new System.ArraySegment&lt;'T&gt; (array, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment(cli::array &lt;T&gt; ^ array, int offset, int count);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -203,6 +226,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,16 +257,7 @@
  The original array must be one-dimensional and must have zero-based indexing.  
   
  Multiple <xref:System.ArraySegment%601> instances can refer to the same original array and can overlap.  
-  
-   
-  
-## Examples  
- The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
-  
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
-  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -254,12 +270,13 @@
       </Docs>
     </Member>
     <Member MemberName="Array">
-      <MemberSignature Language="C#" Value="public T[] Array { get; }" />
+      <MemberSignature Language="C#" Value="public T[] Array { get; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance !T[] Array" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Array" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Array As T()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;T&gt; ^ Array { cli::array &lt;T&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Array : 'T[]" Usage="System.ArraySegment&lt;'T&gt;.Array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;T&gt; ^ Array { cli::array &lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="C#" Value="public T[]? Array { get; }" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -270,6 +287,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -299,9 +318,9 @@
 ## Examples  
  The following code example passes an <xref:System.ArraySegment%601> to a method.  
   
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -313,14 +332,16 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(valuetype System.ArraySegment`1&lt;!T&gt; destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.CopyTo(System.ArraySegment{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As ArraySegment(Of T))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(ArraySegment&lt;T&gt; destination);" />
       <MemberSignature Language="F#" Value="member this.CopyTo : ArraySegment&lt;'T&gt; -&gt; unit" Usage="arraySegment.CopyTo destination" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(ArraySegment&lt;T&gt; destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -333,7 +354,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="destination" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="destination">The array segment into which the contents of this instance will be copied.</param>
@@ -353,14 +374,16 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.CopyTo(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As T())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ destination);" />
       <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] -&gt; unit" Usage="arraySegment.CopyTo destination" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -373,7 +396,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="T[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="destination" Type="T[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="destination">The array of type <paramref name="T" /> into which the contents of this instance will be copied.</param>
@@ -384,14 +407,14 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (T[] destination, int destinationIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] destination, int32 destinationIndex) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!T[] destination, int32 destinationIndex) cil managed" FrameworkAlternate="net-5.0;net-6.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As T(), destinationIndex As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ destination, int destinationIndex);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="arraySegment.CopyTo (destination, destinationIndex)" FrameworkAlternate="net-5.0;net-6.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ destination, int destinationIndex);" FrameworkAlternate="net-5.0;net-6.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] destination, int32 destinationIndex) cil managed" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] * int -&gt; unit" Usage="arraySegment.CopyTo (destination, destinationIndex)" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!T[] destination, int32 destinationIndex) cil managed" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ destination, int destinationIndex);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
-      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="arraySegment.CopyTo (destination, destinationIndex)" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ destination, int destinationIndex);" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
@@ -401,6 +424,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -413,8 +438,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="T[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="destinationIndex" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="destination" Type="T[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="destinationIndex" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="destination">The array of type <paramref name="T" /> into which the contents of this instance will be copied.</param>
@@ -429,12 +454,12 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ArraySegment&lt;'T&gt;.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
-        <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -445,6 +470,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -469,9 +496,9 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
 ## Examples  
  The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
   
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -484,14 +511,16 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".property valuetype System.ArraySegment`1&lt;!T&gt; Empty" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As ArraySegment(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property ArraySegment&lt;T&gt; Empty { ArraySegment&lt;T&gt; get(); };" />
       <MemberSignature Language="F#" Value="member this.Empty : ArraySegment&lt;'T&gt;" Usage="System.ArraySegment&lt;'T&gt;.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property ArraySegment&lt;T&gt; Empty { ArraySegment&lt;T&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -527,8 +556,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.ArraySegment`1&lt;!T&gt; obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Equals(System.ArraySegment{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As ArraySegment(Of T)) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ArraySegment&lt;T&gt; obj);" />
       <MemberSignature Language="F#" Value="override this.Equals : ArraySegment&lt;'T&gt; -&gt; bool" Usage="arraySegment.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ArraySegment&lt;T&gt; obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -539,6 +568,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -579,12 +610,13 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="arraySegment.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -595,6 +627,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -639,14 +673,16 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ArraySegment`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ArraySegment(Of T).Enumerator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt;::Enumerator GetEnumerator();" />
       <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; ArraySegment&lt;'T&gt;.Enumerator" Usage="arraySegment.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt;::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -671,8 +707,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="arraySegment.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -683,6 +719,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -710,8 +748,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".property instance !T Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As T" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T default[int] { T get(int index); void set(int index, T value); };" />
       <MemberSignature Language="F#" Value="member this.Item(int) : 'T with get, set" Usage="System.ArraySegment&lt;'T&gt;.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T default[int] { T get(int index); void set(int index, T value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -721,6 +759,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -733,7 +773,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get or set.</param>
@@ -749,8 +789,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.Offset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Offset : int" Usage="System.ArraySegment&lt;'T&gt;.Offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -761,6 +801,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -785,9 +827,9 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
 ## Examples  
  The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
   
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -800,8 +842,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ArraySegment`1&lt;!T&gt; a, valuetype System.ArraySegment`1&lt;!T&gt; b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Equality(System.ArraySegment{`0},System.ArraySegment{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As ArraySegment(Of T), b As ArraySegment(Of T)) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberSignature Language="F#" Value="static member ( = ) : ArraySegment&lt;'T&gt; * ArraySegment&lt;'T&gt; -&gt; bool" Usage="a = b" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -812,6 +854,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -858,14 +902,16 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.ArraySegment`1&lt;!T&gt; op_Implicit(!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Implicit(`0[])~System.ArraySegment{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (array As T()) As ArraySegment(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ArraySegment&lt;T&gt;(cli::array &lt;T&gt; ^ array);" />
       <MemberSignature Language="F#" Value="static member op_Implicit : 'T[] -&gt; ArraySegment&lt;'T&gt;" Usage="System.ArraySegment&lt;'T&gt;.op_Implicit array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ArraySegment&lt;T&gt;(cli::array &lt;T&gt; ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -878,7 +924,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.ArraySegment&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="array">The array to convert.</param>
@@ -892,8 +938,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ArraySegment`1&lt;!T&gt; a, valuetype System.ArraySegment`1&lt;!T&gt; b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.op_Inequality(System.ArraySegment{`0},System.ArraySegment{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As ArraySegment(Of T), b As ArraySegment(Of T)) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberSignature Language="F#" Value="static member op_Inequality : ArraySegment&lt;'T&gt; * ArraySegment&lt;'T&gt; -&gt; bool" Usage="System.ArraySegment&lt;'T&gt;.op_Inequality (a, b)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(ArraySegment&lt;T&gt; a, ArraySegment&lt;T&gt; b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -904,6 +950,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -950,14 +998,16 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ArraySegment`1&lt;!T&gt; Slice(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Slice(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (index As Integer) As ArraySegment(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt; Slice(int index);" />
       <MemberSignature Language="F#" Value="member this.Slice : int -&gt; ArraySegment&lt;'T&gt;" Usage="arraySegment.Slice index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt; Slice(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -970,7 +1020,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.ArraySegment&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="index">The index at which to begin the slice.</param>
@@ -987,14 +1037,16 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ArraySegment`1&lt;!T&gt; Slice(int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.Slice(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (index As Integer, count As Integer) As ArraySegment(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt; Slice(int index, int count);" />
       <MemberSignature Language="F#" Value="member this.Slice : int * int -&gt; ArraySegment&lt;'T&gt;" Usage="arraySegment.Slice (index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;T&gt; Slice(int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1007,8 +1059,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.ArraySegment&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="index">The index at which to begin the slice.</param>
@@ -1030,6 +1082,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.Add(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Sub Add (item As T) Implements ICollection(Of T).Add" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;T&gt;.Add : 'T -&gt; unit&#xA;override this.System.Collections.Generic.ICollection&lt;T&gt;.Add : 'T -&gt; unit" Usage="arraySegment.System.Collections.Generic.ICollection&lt;T&gt;.Add item" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.Add(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1044,6 +1097,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1059,7 +1114,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="T" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="item" Type="T" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="item">The object to add to the array segment.</param>
@@ -1073,6 +1128,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Clear" />
       <MemberSignature Language="VB.NET" Value="Sub Clear () Implements ICollection(Of T).Clear" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;T&gt;.Clear : unit -&gt; unit&#xA;override this.System.Collections.Generic.ICollection&lt;T&gt;.Clear : unit -&gt; unit" Usage="arraySegment.System.Collections.Generic.ICollection&lt;T&gt;.Clear " />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.Clear() = System::Collections::Generic::ICollection&lt;T&gt;::Clear;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1087,6 +1143,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1113,6 +1171,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;T&gt;.Contains(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (item As T) As Boolean Implements ICollection(Of T).Contains" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;T&gt;.Contains : 'T -&gt; bool&#xA;override this.System.Collections.Generic.ICollection&lt;T&gt;.Contains : 'T -&gt; bool" Usage="arraySegment.System.Collections.Generic.ICollection&lt;T&gt;.Contains item" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;T&gt;.Contains(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1127,6 +1186,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1142,7 +1203,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="T" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="item" Type="T" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="item">The object to locate in the array segment.</param>
@@ -1165,6 +1226,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.CopyTo(!T[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As T(), arrayIndex As Integer) Implements ICollection(Of T).CopyTo" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;T&gt;.CopyTo : 'T[] * int -&gt; unit&#xA;override this.System.Collections.Generic.ICollection&lt;T&gt;.CopyTo : 'T[] * int -&gt; unit" Usage="arraySegment.System.Collections.Generic.ICollection&lt;T&gt;.CopyTo (array, arrayIndex)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex) = System::Collections::Generic::ICollection&lt;T&gt;::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1228,8 +1290,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly : bool" Usage="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;T&gt;::IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1243,6 +1305,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1276,6 +1340,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;T&gt;.Remove(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#ICollection&lt;T&gt;#Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Function Remove (item As T) As Boolean Implements ICollection(Of T).Remove" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;T&gt;.Remove : 'T -&gt; bool&#xA;override this.System.Collections.Generic.ICollection&lt;T&gt;.Remove : 'T -&gt; bool" Usage="arraySegment.System.Collections.Generic.ICollection&lt;T&gt;.Remove item" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;T&gt;.Remove(T item) = System::Collections::Generic::ICollection&lt;T&gt;::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1290,6 +1355,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1305,7 +1372,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="T" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="item" Type="T" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="item">The object to remove from the array segment.</param>
@@ -1320,6 +1387,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T&gt;&#xA;override this.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T&gt;" Usage="arraySegment.System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;T&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1334,6 +1402,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1368,6 +1438,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IList&lt;T&gt;.IndexOf(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#IndexOf(`0)" />
       <MemberSignature Language="VB.NET" Value="Function IndexOf (item As T) As Integer Implements IList(Of T).IndexOf" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IList&lt;T&gt;.IndexOf : 'T -&gt; int&#xA;override this.System.Collections.Generic.IList&lt;T&gt;.IndexOf : 'T -&gt; int" Usage="arraySegment.System.Collections.Generic.IList&lt;T&gt;.IndexOf item" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.Generic.IList&lt;T&gt;.IndexOf(T item) = System::Collections::Generic::IList&lt;T&gt;::IndexOf;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1382,6 +1453,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1397,7 +1470,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="T" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="item" Type="T" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="item">The object to locate in the array segment.</param>
@@ -1419,6 +1492,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;T&gt;.Insert(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Insert(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, item As T) Implements IList(Of T).Insert" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IList&lt;T&gt;.Insert : int * 'T -&gt; unit&#xA;override this.System.Collections.Generic.IList&lt;T&gt;.Insert : int * 'T -&gt; unit" Usage="arraySegment.System.Collections.Generic.IList&lt;T&gt;.Insert (index, item)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IList&lt;T&gt;.Insert(int index, T item) = System::Collections::Generic::IList&lt;T&gt;::Insert;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1433,6 +1507,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1448,8 +1524,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="item" Type="T" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="item" Type="T" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
@@ -1464,8 +1540,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".property instance !T System.Collections.Generic.IList&lt;T&gt;.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As T Implements IList(Of T).Item" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.IList&lt;T&gt;.Item(int) : 'T with get, set" Usage="System.Collections.Generic.IList&lt;T&gt;.Item" />
       <MemberSignature Language="C++ CLI" Value="property T System::Collections::Generic::IList&lt;T&gt;::Item[int] { T get(int index); void set(int index, T value); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.IList&lt;T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -1479,6 +1555,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1494,7 +1572,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get or set.</param>
@@ -1506,8 +1584,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface, as the following example shows.  
   
- [!code-csharp[System.ArraySegment.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs#1)]
- [!code-vb[System.ArraySegment.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1521,6 +1599,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;T&gt;.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#Generic#IList&lt;T&gt;#RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList(Of T).RemoveAt" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IList&lt;T&gt;.RemoveAt : int -&gt; unit&#xA;override this.System.Collections.Generic.IList&lt;T&gt;.RemoveAt : int -&gt; unit" Usage="arraySegment.System.Collections.Generic.IList&lt;T&gt;.RemoveAt index" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IList&lt;T&gt;.RemoveAt(int index) = System::Collections::Generic::IList&lt;T&gt;::RemoveAt;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1535,6 +1614,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1550,7 +1631,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the item to remove.</param>
@@ -1564,8 +1645,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".property instance !T System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ArraySegment`1.System#Collections#Generic#IReadOnlyList&lt;T&gt;#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As T Implements IReadOnlyList(Of T).Item" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item(int) : 'T" Usage="System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item" />
       <MemberSignature Language="C++ CLI" Value="property T System::Collections::Generic::IReadOnlyList&lt;T&gt;::Item[int] { T get(int index); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.IReadOnlyList&lt;T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)</InterfaceMember>
@@ -1579,6 +1660,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1594,7 +1677,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get.</param>
@@ -1619,6 +1702,7 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="arraySegment.System.Collections.IEnumerable.GetEnumerator " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1633,6 +1717,8 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1667,14 +1753,16 @@ The underlying array of <paramref name="destination" /> is <paramref name="null"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T[] ToArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ArraySegment`1.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
       <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; 'T[]" Usage="arraySegment.ToArray " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NotifyCollectionChangedAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NotifyCollectionChangedAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum NotifyCollectionChangedAction" />
-  <TypeSignature Language="C++ CLI" Value="public enum class NotifyCollectionChangedAction" />
   <TypeSignature Language="F#" Value="type NotifyCollectionChangedAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class NotifyCollectionChangedAction" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +12,8 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -30,12 +32,25 @@
   <AssemblyInfo>
     <AssemblyName>System.Windows</AssemblyName>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System" FromVersion="4.0.0.0" To="System.ObjectModel" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="System.Windows" FromVersion="4.0.0.0" To="System.ObjectModel" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ObjectModel" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="WindowsBase" FromVersion="5.0.0.0" To="System.ObjectModel" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ObjectModel" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="WindowsBase" FromVersion="6.0.0.0" To="System.ObjectModel" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="WindowsBase" FromVersion="4.0.0.0" To="System.ObjectModel" ToVersion="4.1.2.0" FrameworkAlternate="netcore-3.1" />
+    <TypeForwarding From="WindowsBase" FromVersion="4.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+    <TypeForwarding From="System.Windows" FromVersion="4.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+    <TypeForwarding From="System.Windows" FromVersion="2.0.5.0" To="System" ToVersion="2.0.5.0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=3.0.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=3.0.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=3.0.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -51,8 +66,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Add = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
-      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberSignature Language="F#" Value="Add = 0" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -61,6 +76,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -92,8 +109,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Move = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />
       <MemberSignature Language="VB.NET" Value="Move" />
-      <MemberSignature Language="C++ CLI" Value="Move" />
       <MemberSignature Language="F#" Value="Move = 3" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Move" />
+      <MemberSignature Language="C++ CLI" Value="Move" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -102,6 +119,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,8 +152,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Remove = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />
       <MemberSignature Language="VB.NET" Value="Remove" />
-      <MemberSignature Language="C++ CLI" Value="Remove" />
       <MemberSignature Language="F#" Value="Remove = 1" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />
+      <MemberSignature Language="C++ CLI" Value="Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -143,6 +162,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,8 +195,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Replace = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />
       <MemberSignature Language="VB.NET" Value="Replace" />
-      <MemberSignature Language="C++ CLI" Value="Replace" />
       <MemberSignature Language="F#" Value="Replace = 2" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />
+      <MemberSignature Language="C++ CLI" Value="Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -184,6 +205,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -215,8 +238,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Reset = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />
       <MemberSignature Language="VB.NET" Value="Reset" />
-      <MemberSignature Language="C++ CLI" Value="Reset" />
       <MemberSignature Language="F#" Value="Reset = 4" Usage="System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />
+      <MemberSignature Language="C++ CLI" Value="Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -225,6 +248,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

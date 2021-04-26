@@ -1,10 +1,11 @@
 <Type Name="WebPermissionAttribute" FullName="System.Net.WebPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class WebPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WebPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WebPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <TypeSignature Language="F#" Value="type WebPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WebPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -14,21 +15,28 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Permissions</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Permissions.CodeAccessSecurityAttribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;dotnet-plat-ext-3.1;netcore-3.1">
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0">
+      <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -49,9 +57,9 @@
 ## Examples  
  The following example demonstrates how to apply <xref:System.Net.WebPermissionAttribute> to a method.  
   
- [!code-cpp[WebPermissionAttribute_AcceptConnect#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_AcceptConnect/CPP/webpermissionattribute_acceptconnect.cpp#1)]
- [!code-csharp[WebPermissionAttribute_AcceptConnect#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_AcceptConnect/CS/webpermissionattribute_acceptconnect.cs#1)]
- [!code-vb[WebPermissionAttribute_AcceptConnect#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_AcceptConnect/VB/webpermissionattribute_acceptconnect.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_AcceptConnect/CPP/webpermissionattribute_acceptconnect.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_AcceptConnect/CS/webpermissionattribute_acceptconnect.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_AcceptConnect/VB/webpermissionattribute_acceptconnect.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -62,8 +70,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberSignature Language="F#" Value="new System.Net.WebPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Net.WebPermissionAttribute" Usage="new System.Net.WebPermissionAttribute action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,14 +82,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -101,9 +111,9 @@
 ## Examples  
  The following example demonstrates how to apply <xref:System.Net.WebPermissionAttribute> to a method.  
   
- [!code-cpp[WebPermissionAttribute_Constructor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_Constructor/CPP/source.cpp#1)]
- [!code-csharp[WebPermissionAttribute_Constructor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_Constructor/CS/source.cs#1)]
- [!code-vb[WebPermissionAttribute_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_Constructor/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_Constructor/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_Constructor/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_Constructor/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -116,8 +126,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Accept" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermissionAttribute.Accept" />
       <MemberSignature Language="VB.NET" Value="Public Property Accept As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Accept { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Accept : string with get, set" Usage="System.Net.WebPermissionAttribute.Accept" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Accept { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,10 +138,11 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -150,15 +161,15 @@
 ## Examples  
  The following example demonstrates how to use <xref:System.Net.WebPermissionAttribute> to specify an allowable <xref:System.Net.WebPermissionAttribute.Accept%2A> string.  
   
- [!code-cpp[WebPermissionAttribute_Accept#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_Accept/CPP/source.cpp#1)]
- [!code-csharp[WebPermissionAttribute_Accept#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_Accept/CS/source.cs#1)]
- [!code-vb[WebPermissionAttribute_Accept#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_Accept/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_Accept/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_Accept/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_Accept/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Net.WebPermissionAttribute.Accept" /> is not <see langword="null" /> when you attempt to set the value. If you wish to specify more than one Accept URI, use an additional attribute declaration statement.</exception>
-        <related type="Article" href="~/docs/framework/network-programming/introducing-pluggable-protocols.md">Introducing Pluggable Protocols</related>
+        <related type="Article" href="/dotnet/framework/network-programming/introducing-pluggable-protocols">Introducing Pluggable Protocols</related>
       </Docs>
     </Member>
     <Member MemberName="AcceptPattern">
@@ -166,8 +177,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string AcceptPattern" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermissionAttribute.AcceptPattern" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptPattern As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceptPattern { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.AcceptPattern : string with get, set" Usage="System.Net.WebPermissionAttribute.AcceptPattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceptPattern { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,10 +189,11 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -200,15 +212,15 @@
 ## Examples  
  The following example demonstrates how to use <xref:System.Net.WebPermissionAttribute> to specify an allowable <xref:System.Net.WebPermissionAttribute.AcceptPattern%2A>.  
   
- [!code-cpp[WebPermissionAttribute_AcceptPattern#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_AcceptPattern/CPP/source.cpp#1)]
- [!code-csharp[WebPermissionAttribute_AcceptPattern#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_AcceptPattern/CS/source.cs#1)]
- [!code-vb[WebPermissionAttribute_AcceptPattern#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_AcceptPattern/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_AcceptPattern/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_AcceptPattern/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_AcceptPattern/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Net.WebPermissionAttribute.AcceptPattern" /> is not <see langword="null" /> when you attempt to set the value. If you wish to specify more than one Accept URI, use an additional attribute declaration statement.</exception>
-        <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
+        <related type="Article" href="/dotnet/standard/base-types/regular-expression-language-quick-reference">Regular Expression Language - Quick Reference</related>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -216,8 +228,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Connect" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermissionAttribute.Connect" />
       <MemberSignature Language="VB.NET" Value="Public Property Connect As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Connect { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Connect : string with get, set" Usage="System.Net.WebPermissionAttribute.Connect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Connect { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -228,10 +240,11 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -250,15 +263,15 @@
 ## Examples  
  The following example demonstrates how to use WebPermissionAttribute to specify an allowable <xref:System.Net.WebPermissionAttribute.Connect%2A> string.  
   
- [!code-cpp[WebPermissionAttribute_Connect#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_Connect/CPP/source.cpp#1)]
- [!code-csharp[WebPermissionAttribute_Connect#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_Connect/CS/source.cs#1)]
- [!code-vb[WebPermissionAttribute_Connect#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_Connect/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_Connect/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_Connect/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_Connect/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Net.WebPermissionAttribute.Connect" /> is not <see langword="null" /> when you attempt to set the value. If you wish to specify more than one Connect URI, use an additional attribute declaration statement.</exception>
-        <related type="Article" href="~/docs/framework/network-programming/introducing-pluggable-protocols.md">Introducing Pluggable Protocols</related>
+        <related type="Article" href="/dotnet/framework/network-programming/introducing-pluggable-protocols">Introducing Pluggable Protocols</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectPattern">
@@ -266,8 +279,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectPattern" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermissionAttribute.ConnectPattern" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectPattern As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectPattern { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ConnectPattern : string with get, set" Usage="System.Net.WebPermissionAttribute.ConnectPattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectPattern { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -278,10 +291,11 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -300,15 +314,15 @@
 ## Examples  
  The following example demonstrates how to use <xref:System.Net.WebPermissionAttribute> to specify an allowable <xref:System.Net.WebPermissionAttribute.ConnectPattern%2A>.  
   
- [!code-cpp[WebPermissionAttribute_ConnectPattern#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_ConnectPattern/CPP/source.cpp#1)]
- [!code-csharp[WebPermissionAttribute_ConnectPattern#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_ConnectPattern/CS/source.cs#1)]
- [!code-vb[WebPermissionAttribute_ConnectPattern#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_ConnectPattern/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebPermissionAttribute_ConnectPattern/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebPermissionAttribute_ConnectPattern/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebPermissionAttribute_ConnectPattern/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Net.WebPermissionAttribute.ConnectPattern" /> is not <see langword="null" /> when you attempt to set the value. If you wish to specify more than one connect URI, use an additional attribute declaration statement.</exception>
-        <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
+        <related type="Article" href="/dotnet/standard/base-types/regular-expression-language-quick-reference">Regular Expression Language - Quick Reference</related>
       </Docs>
     </Member>
     <Member MemberName="CreatePermission">
@@ -316,8 +330,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="webPermissionAttribute.CreatePermission " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -328,10 +342,11 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>

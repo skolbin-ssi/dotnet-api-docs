@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SpecialDirectoriesProxy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy" />
   <TypeSignature Language="VB.NET" Value="Public Class SpecialDirectoriesProxy" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SpecialDirectoriesProxy" />
   <TypeSignature Language="F#" Value="type SpecialDirectoriesProxy = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SpecialDirectoriesProxy" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>8.0.0.0</AssemblyVersion>
@@ -14,13 +14,19 @@
     <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
     <AssemblyVersion>10.0.4.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,7 +43,7 @@
   
 |To|See|  
 |--------|---------|  
-|Read from the MyDocuments directory|[How to: Retrieve the Contents of the My Documents Directory](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-retrieve-the-contents-of-the-my-documents-directory.md)|  
+|Read from the MyDocuments directory|[How to: Retrieve the Contents of the My Documents Directory](/dotnet/visual-basic/developing-apps/programming/drives-directories-files/how-to-retrieve-the-contents-of-the-my-documents-directory)|  
   
 ## Availability by Project Type  
   
@@ -56,13 +62,13 @@
 ## Examples  
  This example returns the `filePath` for the user's Desktop directory and displays it.  
   
- [!code-vb[VbVbcnMyFileSystem#80](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#80)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet80":::  
   
  ]]></format>
     </remarks>
     <forInternalUseOnly />
     <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+    <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="AllUsersApplicationData">
@@ -70,8 +76,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string AllUsersApplicationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.AllUsersApplicationData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllUsersApplicationData As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AllUsersApplicationData { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AllUsersApplicationData : string" Usage="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.AllUsersApplicationData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AllUsersApplicationData { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -81,6 +87,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -99,16 +110,14 @@
 ## Examples  
  This example displays the path to the Application Data directory for the all users in a <xref:System.Windows.Forms.MessageBox>.  
   
- [!code-vb[VbVbcnMyFileSystem#79](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#79)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet79":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentUserApplicationData">
@@ -116,8 +125,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CurrentUserApplicationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.CurrentUserApplicationData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentUserApplicationData As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentUserApplicationData { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CurrentUserApplicationData : string" Usage="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.CurrentUserApplicationData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentUserApplicationData { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -127,6 +136,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -145,16 +159,14 @@
 ## Examples  
  This example displays the path to the Application Data directory for the current user in a <xref:System.Windows.Forms.MessageBox>.  
   
- [!code-vb[VbVbcnMyFileSystem#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#48)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet48":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Desktop">
@@ -162,8 +174,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Desktop" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.Desktop" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Desktop As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Desktop { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Desktop : string" Usage="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.Desktop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Desktop { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -173,6 +185,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -191,16 +208,14 @@
 ## Examples  
  This example displays the path for the Desktop directory in a <xref:System.Windows.Forms.MessageBox>.  
   
- [!code-vb[VbVbcnMyFileSystem#60](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#60)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet60":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MyDocuments">
@@ -208,8 +223,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MyDocuments" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.MyDocuments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MyDocuments As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MyDocuments { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MyDocuments : string" Usage="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.MyDocuments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MyDocuments { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -219,6 +234,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -237,16 +257,14 @@
 ## Examples  
  This example displays the path for the My Documents directory in a <xref:System.Windows.Forms.MessageBox>.  
   
- [!code-vb[VbVbcnMyFileSystem#53](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#53)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet53":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MyMusic">
@@ -254,8 +272,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MyMusic" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.MyMusic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MyMusic As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MyMusic { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MyMusic : string" Usage="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.MyMusic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MyMusic { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -265,6 +283,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -283,16 +306,14 @@
 ## Examples  
  This example displays the path for the My Music directory in a <xref:System.Windows.Forms.MessageBox>.  
   
- [!code-vb[VbVbcnMyFileSystem#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#26)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet26":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MyPictures">
@@ -300,8 +321,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MyPictures" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.MyPictures" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MyPictures As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MyPictures { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MyPictures : string" Usage="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.MyPictures" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MyPictures { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -311,6 +332,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -329,16 +355,14 @@
 ## Examples  
  This example displays the path for the MyPictures directory in a <xref:System.Windows.Forms.MessageBox>.  
   
- [!code-vb[VbVbcnMyFileSystem#77](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#77)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet77":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ProgramFiles">
@@ -346,8 +370,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ProgramFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.ProgramFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProgramFiles As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProgramFiles { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ProgramFiles : string" Usage="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.ProgramFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProgramFiles { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -357,6 +381,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -375,16 +404,14 @@
 ## Examples  
  This example displays the path for the **Program Files** directory in a <xref:System.Windows.Forms.MessageBox>.  
   
- [!code-vb[VbVbcnMyFileSystem#90](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#90)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet90":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Programs">
@@ -392,8 +419,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Programs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.Programs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Programs As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Programs { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Programs : string" Usage="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.Programs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Programs { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -403,6 +430,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -421,16 +453,14 @@
 ## Examples  
  This example displays the path for the Programs directory in a <xref:System.Windows.Forms.MessageBox>.  
   
- [!code-vb[VbVbcnMyFileSystem#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#61)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet61":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Temp">
@@ -438,8 +468,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Temp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.Temp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Temp As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Temp { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Temp : string" Usage="Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy.Temp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Temp { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -449,6 +479,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -467,16 +502,14 @@
 ## Examples  
  This example displays the path for the Temp directory in a <xref:System.Windows.Forms.MessageBox>.  
   
- [!code-vb[VbVbcnMyFileSystem#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#31)]  
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb" id="Snippet31":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <forInternalUseOnly />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

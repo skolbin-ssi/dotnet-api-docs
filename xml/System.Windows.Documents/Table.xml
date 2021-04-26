@@ -1,14 +1,17 @@
 <Type Name="Table" FullName="System.Windows.Documents.Table">
   <TypeSignature Language="C#" Value="public class Table : System.Windows.Documents.Block, System.Windows.Markup.IAddChild" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi Table extends System.Windows.Documents.Block implements class System.Windows.Markup.IAddChild" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Table extends System.Windows.Documents.Block implements class System.Windows.Markup.IAddChild" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Table" />
   <TypeSignature Language="VB.NET" Value="Public Class Table&#xA;Inherits Block&#xA;Implements IAddChild" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Table : System::Windows::Documents::Block, System::Windows::Markup::IAddChild" />
   <TypeSignature Language="F#" Value="type Table = class&#xA;    inherit Block&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Table : System::Windows::Documents::Block, System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Table extends System.Windows.Documents.Block implements class System.Windows.Markup.IAddChild" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Documents.Block</BaseTypeName>
@@ -20,7 +23,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Windows.Markup.ContentProperty("RowGroups")</AttributeName>
+      <AttributeName Language="C#">[System.Windows.Markup.ContentProperty("RowGroups")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Windows.Markup.ContentProperty("RowGroups")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -64,6 +68,8 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -76,13 +82,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginInit ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginInit();" />
       <MemberSignature Language="F#" Value="override this.BeginInit : unit -&gt; unit" Usage="table.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -98,17 +106,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 CellSpacing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Table.CellSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Property CellSpacing As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CellSpacing { double get(); void set(double value); };" />
       <MemberSignature Language="F#" Value="member this.CellSpacing : double with get, set" Usage="System.Windows.Documents.Table.CellSpacing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CellSpacing { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -143,7 +154,7 @@
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
   
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ `px` (default) is device-independent units (1/96th inch per unit)  
   
  `in` is inches; 1in==96px  
   
@@ -164,7 +175,7 @@
 ## Examples  
  The following example defines a simple 2 x 3 table with a <xref:System.Windows.Documents.Table.CellSpacing%2A> of 0.35 centimeters.  
   
- [!code-xaml[TableSnippets2#_Table_ColumnSpacing](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml#_table_columnspacing)]  
+ :::code language="xaml" source="~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml" id="Snippet_table_columnspacing":::  
   
  The following figure shows how this example renders.  
   
@@ -183,13 +194,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CellSpacingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Table.CellSpacingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CellSpacingProperty As DependencyProperty " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CellSpacingProperty;" />
       <MemberSignature Language="F#" Value=" staticval mutable CellSpacingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Table.CellSpacingProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CellSpacingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
@@ -204,20 +217,24 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TableColumnCollection Columns" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Table.Columns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As TableColumnCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TableColumnCollection ^ Columns { System::Windows::Documents::TableColumnCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Columns : System.Windows.Documents.TableColumnCollection" Usage="System.Windows.Documents.Table.Columns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TableColumnCollection ^ Columns { System::Windows::Documents::TableColumnCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -243,13 +260,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndInit ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndInit();" />
       <MemberSignature Language="F#" Value="override this.EndInit : unit -&gt; unit" Usage="table.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -265,13 +284,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Table.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Documents.Table.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -298,13 +319,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="table.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
@@ -328,20 +351,24 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TableRowGroupCollection RowGroups" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Table.RowGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowGroups As TableRowGroupCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TableRowGroupCollection ^ RowGroups { System::Windows::Documents::TableRowGroupCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.RowGroups : System.Windows.Documents.TableRowGroupCollection" Usage="System.Windows.Documents.Table.RowGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TableRowGroupCollection ^ RowGroups { System::Windows::Documents::TableRowGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -360,17 +387,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeColumns() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.ShouldSerializeColumns" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeColumns () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeColumns();" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeColumns : unit -&gt; bool" Usage="table.ShouldSerializeColumns " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeColumns();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -389,6 +419,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="F#" Value="override this.System.Windows.Markup.IAddChild.AddChild : obj -&gt; unit" Usage="table.System.Windows.Markup.IAddChild.AddChild value" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -398,6 +429,8 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -416,6 +449,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Table.System#Windows#Markup#IAddChild#AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="F#" Value="override this.System.Windows.Markup.IAddChild.AddText : string -&gt; unit" Usage="table.System.Windows.Markup.IAddChild.AddText text" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -425,6 +459,8 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

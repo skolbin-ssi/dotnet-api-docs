@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebPartZoneBase extends System.Web.UI.WebControls.WebParts.WebZone implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebPartZoneBase&#xA;Inherits WebZone&#xA;Implements IPostBackEventHandler" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WebPartZoneBase abstract : System::Web::UI::WebControls::WebParts::WebZone, System::Web::UI::IPostBackEventHandler" />
   <TypeSignature Language="F#" Value="type WebPartZoneBase = class&#xA;    inherit WebZone&#xA;    interface IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartZoneBase abstract : System::Web::UI::WebControls::WebParts::WebZone, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -19,11 +19,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.WebPartZoneBaseDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.WebPartZoneBaseDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.WebPartZoneBaseDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.WebPartZoneBaseDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.WebPartZoneBaseDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.WebPartZoneBaseDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -60,18 +62,18 @@
   
  The first part of the code example is a user control that enables users to switch the page into different display modes. For more information on Web Parts display modes and a description of the code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/displaymodemenucs.ascx#10)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/displaymodemenuvb.ascx#10)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/displaymodemenucs.ascx" id="Snippet10":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/displaymodemenuvb.ascx" id="Snippet10":::  
   
  The second part of the code example is a code-beside file that contains the code to handle events for the main Web page. The code in this file shows how to work with some of the key <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> members programmatically.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview.cs#4)]
- [!code-vb[WebParts_WebPartZoneBase_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview.vb#4)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview.vb" id="Snippet4":::  
   
  The third part of the code example is the Web page that contains the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls that exhibit behavior from the base <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class, and <xref:System.Web.UI.WebControls.WebParts.WebPart> controls contained in the zones.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#1)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet1":::  
   
  Load the Web page in a browser. Use the **Display Mode** drop-down list control to switch the page into design mode, click the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and try dragging them between the visible zones. Click some of the buttons on the page to see the effect of using various members of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class. Next, switch the page to edit mode. Make sure a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is positioned in `WebPartZone2`, click the verbs menu on the control's title bar, and click **Edit** to edit the control. Finish editing that control, and then edit one of the controls in the other zone. As you carry out these steps, notice the differences in the UI styles of the controls and the zones, which are the effect of using the various members of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class.  
   
@@ -96,7 +98,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -111,8 +114,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowLayoutChange" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowLayoutChange As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowLayoutChange { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AllowLayoutChange : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowLayoutChange { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,10 +124,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.Themeable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.Themeable(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,7 +157,7 @@
   
  Although the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> property affects end users' ability to change the layout of a zone through the UI, it does not affect the ability to change the layout programmatically. For example, if <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> is set to `false`, users cannot close controls in the zone, but a developer could still call the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart%2A> method to close controls programmatically.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://docs.microsoft.com/previous-versions/aspnet/ykzx33wh(v=vs.100)).  
   
    
   
@@ -161,8 +166,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> property is set to `true`, which is the default. If you change the value to `false`, after you load the page into a browser and switch the page into design display mode, you will not be able to drag controls within or into the `WebPartZone2` zone.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -175,8 +180,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderColor As Color" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,7 +190,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Gray")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Gray")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Gray")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -209,8 +215,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderColor%2A> attribute is set to a specific named color. After you load the page into a browser and switch the page into design display mode, you can see the effect of the property.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -222,8 +228,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.BorderStyle BorderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderStyle As BorderStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::BorderStyle BorderStyle { System::Web::UI::WebControls::BorderStyle get(); void set(System::Web::UI::WebControls::BorderStyle value); };" />
       <MemberSignature Language="F#" Value="member this.BorderStyle : System.Web.UI.WebControls.BorderStyle with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::BorderStyle BorderStyle { System::Web::UI::WebControls::BorderStyle get(); void set(System::Web::UI::WebControls::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,7 +238,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -256,8 +263,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderStyle%2A> attribute is set to a specific kind of border. After you load the page into a browser and switch the page into design display mode, you can see the effect of the property.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -270,8 +277,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderWidth As Unit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit BorderWidth { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberSignature Language="F#" Value="member this.BorderWidth : System.Web.UI.WebControls.Unit with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit BorderWidth { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,7 +287,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Web.UI.WebControls.Unit), "1")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(typeof(System.Web.UI.WebControls.Unit), "1")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(typeof(System.Web.UI.WebControls.Unit), "1")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -304,8 +312,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderWidth%2A> attribute value is set to a specific width in pixels. After you load the page into a browser and switch the page into design display mode, you can see the effect of the property.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -317,8 +325,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb CloseVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CloseVerb As WebPartVerb" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ CloseVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CloseVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ CloseVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -327,16 +335,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -360,18 +372,18 @@
   
  The following part of the code example is from the partial class, and contains the code that toggles whether the help verb is enabled or disabled.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs#5)]
- [!code-vb[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb#5)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb" id="Snippet5":::  
   
  The other part of the code example is the Web page that hosts the custom control and contains the UI. Notice that the declarative `<CloseVerb>` element in the zone sets the specific text that represents the close verb in the verbs menu for the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet2":::  
   
  Notice also that, because the underlying custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control--named `TextDisplayWebPart`-- used in the code example sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A> property to `false` in its constructor, the `<aspSample:TextDisplayPart>` element in the catalog must set the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A> property to `true`, so that the control can be closed in the following code example.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet3":::  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page. You can use the check boxes to enable and disable the close verb, and you can click the **Close WebPart** verb in the verbs menu to close the control. After you close the control, if you return the page to catalog display mode, you can click the **Page Catalog**, select the original instance of the `TextDisplayWebPart` control that you closed, and reopen it on the page.  
   
@@ -386,8 +398,9 @@
       <MemberSignature Language="C#" Value="protected virtual void CloseWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CloseWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloseWebPart (webPart As WebPart)" />
       <MemberSignature Language="F#" Value="abstract member CloseWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.CloseWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.CloseWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -430,8 +443,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb ConnectVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.ConnectVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConnectVerb As WebPartVerb" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ ConnectVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ConnectVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.ConnectVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ ConnectVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -440,16 +453,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -466,8 +483,9 @@
       <MemberSignature Language="C#" Value="protected virtual void ConnectWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConnectWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.ConnectWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConnectWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConnectWebPart (webPart As WebPart)" />
       <MemberSignature Language="F#" Value="abstract member ConnectWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.ConnectWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.ConnectWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConnectWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -501,8 +519,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="webPartZoneBase.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -532,8 +550,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="webPartZoneBase.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,8 +575,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Style CreateControlStyle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateControlStyle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
       <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="webPartZoneBase.CreateControlStyle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -591,8 +609,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler CreateVerbs" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CreateVerbs As WebPartVerbsEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartVerbsEventHandler ^ CreateVerbs;" />
       <MemberSignature Language="F#" Value="member this.CreateVerbs : System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler " Usage="member this.CreateVerbs : System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartVerbsEventHandler ^ CreateVerbs;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -621,18 +639,18 @@
   
  The first part of the code example is the source code for a simple control derived from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class.  
   
- [!code-csharp[WebParts_WebPartVerb2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/SimpleControl.cs#2)]
- [!code-vb[WebParts_WebPartVerb2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/SimpleControl.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/SimpleControl.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/SimpleControl.vb" id="Snippet2":::  
   
  The second part of the code example is the source code for a derived <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone that overrides the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method to add a custom verb to the zone. The code also creates a custom verb that appears in the verbs menu of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls contained in the zone, and the verb creates another copy of the current <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- [!code-csharp[WebParts_WebPartVerb2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/ZoneWithAddedVerb.cs#3)]
- [!code-vb[WebParts_WebPartVerb2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/ZoneWithAddedVerb.vb#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/ZoneWithAddedVerb.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/ZoneWithAddedVerb.vb" id="Snippet3":::  
   
  The third part of the code example is a Web page that hosts the derived zone and <xref:System.Web.UI.WebControls.WebParts.WebPart> control. Near the top of the page is a `Register` directive to reference the derived zone component. If you load the page in a browser, the <xref:System.Web.UI.WebControls.WebParts.WebPart> control appears in the zone. Click the verbs menu, then click the **CopyWebPart** verb, and it creates a copy of the control.  
   
- [!code-aspx-csharp[WebParts_WebPartVerb2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx#1)]
- [!code-aspx-vb[WebParts_WebPartVerb2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -645,8 +663,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPartChrome CreateWebPartChrome() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateWebPartChrome" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWebPartChrome () As WebPartChrome" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPartChrome ^ CreateWebPartChrome();" />
       <MemberSignature Language="F#" Value="abstract member CreateWebPartChrome : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartChrome&#xA;override this.CreateWebPartChrome : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartChrome" Usage="webPartZoneBase.CreateWebPartChrome " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPartChrome ^ CreateWebPartChrome();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -682,8 +700,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb DeleteVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeleteVerb As WebPartVerb" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ DeleteVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DeleteVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ DeleteVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -692,16 +710,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -725,13 +747,13 @@
   
  The following part of the code example is from the partial class, and contains the code that toggles whether the delete verb is enabled or disabled.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs#5)]
- [!code-vb[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb#5)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb" id="Snippet5":::  
   
  The other part of the code example is the Web page that hosts the custom control and contains the user interface (UI). Notice that the declarative `<DeleteVerb>` element in the zone sets the specific text that represents the delete verb in the verbs drop-down menu for the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet2":::  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page. You can use the check boxes to enable and disable the delete verb on the `TextDisplayWebPart` control, but the verb appears on the menu only while the page is in catalog or design display mode. If you click the **Delete WebPart** verb on the menu, the control is permanently deleted, and the deleted instance cannot be added back to the page. However, you can return the page to catalog display mode, and add a new instance of the `TextDisplayWebPart` control.  
   
@@ -745,8 +767,9 @@
       <MemberSignature Language="C#" Value="protected virtual void DeleteWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DeleteWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DeleteWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DeleteWebPart (webPart As WebPart)" />
       <MemberSignature Language="F#" Value="abstract member DeleteWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.DeleteWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.DeleteWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DeleteWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -782,8 +805,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayTitle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DisplayTitle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayTitle As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayTitle { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DisplayTitle : string" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.DisplayTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayTitle { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -792,10 +815,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -817,8 +842,8 @@
   
  Notice that in the following code example, the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DisplayTitle%2A> property value is retrieved from the partial class.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview.cs#9)]
- [!code-vb[WebParts_WebPartZoneBase_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview.vb#9)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview.cs" id="Snippet9":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview.vb" id="Snippet9":::  
   
  ]]></format>
         </remarks>
@@ -831,8 +856,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool DragDropEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragDropEnabled" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property DragDropEnabled As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool DragDropEnabled { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.DragDropEnabled : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragDropEnabled" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool DragDropEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -863,8 +888,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color DragHighlightColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragHighlightColor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DragHighlightColor As Color" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color DragHighlightColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberSignature Language="F#" Value="member this.DragHighlightColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragHighlightColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color DragHighlightColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -873,10 +898,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Blue")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Blue")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Blue")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.WebColorConverter))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.WebColorConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.WebColorConverter))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -900,8 +927,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragHighlightColor%2A> property value is set to a specific color. After you load the page into a browser and switch the page into design display mode, you can see the effect of the property when you select and drag the control within its zone, or drag another control into the zone.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -913,8 +940,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb EditVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EditVerb As WebPartVerb" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ EditVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.EditVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ EditVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -923,16 +950,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -954,8 +985,8 @@
 ## Examples  
  The following code example demonstrates the declarative use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb%2A> property on a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control. Note that the property is accessed declaratively by using the `<EditVerb>` element with the `WebPartZone1` control. An edit verb would be present on this control in edit mode even if you did not use the `<EditVerb>` element here, but by using it, you can set some of its attributes, such as the text that represents the verb in the user interface (UI). For the full code example, including the code-behind source file and the .aspx page that contains the zone in this code, see the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class overview.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#2)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -966,8 +997,9 @@
       <MemberSignature Language="C#" Value="protected virtual void EditWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EditWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EditWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EditWebPart (webPart As WebPart)" />
       <MemberSignature Language="F#" Value="abstract member EditWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.EditWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.EditWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EditWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1003,8 +1035,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string EmptyZoneText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EmptyZoneText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EmptyZoneText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.EmptyZoneText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EmptyZoneText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1032,8 +1064,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText%2A> property has a value assigned to it in the declarative markup. This value will appear in `WebPartZone2`, after you load the page into a browser, switch the page into design display mode, and drag the control that displays the date from `WebPartZone2` into `WebPartZone1`. For more information on changing display modes in a Web Parts page, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1046,8 +1078,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb ExportVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.ExportVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ExportVerb As WebPartVerb" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ ExportVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ExportVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.ExportVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ ExportVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1056,16 +1088,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1089,18 +1125,18 @@
   
  The following part of the code example is from the partial class, and contains the code that toggles whether the export verb is enabled or disabled.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs#5)]
- [!code-vb[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb#5)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb" id="Snippet5":::  
   
  The other part of the code example is the Web page that hosts the custom control and contains the user interface (UI). Notice that the declarative `<ExportVerb>` element in the zone sets the specific text that represents the export verb in the verbs drop-down menu for the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet2":::  
   
  Finally, notice that in the following code example, the declarative <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property value on the `<asp:TextDisplayWebPart>` element is set to the value `All`, meaning that all exportable property values on the control will be exported.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet3":::  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page. You can use the check boxes to enable and disable the export verb on the `TextDisplayWebPart` control. If you click the export verb, you are prompted for a local path to save a definition file for the control.  
   
@@ -1114,8 +1150,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WebParts.PartChromeType GetEffectiveChromeType (System.Web.UI.WebControls.WebParts.Part part);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Web.UI.WebControls.WebParts.PartChromeType GetEffectiveChromeType(class System.Web.UI.WebControls.WebParts.Part part) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.GetEffectiveChromeType(System.Web.UI.WebControls.WebParts.Part)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::PartChromeType GetEffectiveChromeType(System::Web::UI::WebControls::WebParts::Part ^ part);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEffectiveChromeType (part As Part) As PartChromeType" />
       <MemberSignature Language="F#" Value="override this.GetEffectiveChromeType : System.Web.UI.WebControls.WebParts.Part -&gt; System.Web.UI.WebControls.WebParts.PartChromeType" Usage="webPartZoneBase.GetEffectiveChromeType part" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::PartChromeType GetEffectiveChromeType(System::Web::UI::WebControls::WebParts::Part ^ part);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1141,8 +1178,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPartCollection GetInitialWebParts() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.GetInitialWebParts" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetInitialWebParts () As WebPartCollection" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Web::UI::WebControls::WebParts::WebPartCollection ^ GetInitialWebParts();" />
       <MemberSignature Language="F#" Value="abstract member GetInitialWebParts : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartCollection" Usage="webPartZoneBase.GetInitialWebParts " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Web::UI::WebControls::WebParts::WebPartCollection ^ GetInitialWebParts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1179,8 +1216,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool HasFooter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasFooter" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property HasFooter As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool HasFooter { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.HasFooter : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasFooter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool HasFooter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1211,8 +1248,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool HasHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasHeader" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property HasHeader As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool HasHeader { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.HasHeader : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasHeader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool HasHeader { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1245,8 +1282,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb HelpVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HelpVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HelpVerb As WebPartVerb" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ HelpVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.HelpVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.HelpVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ HelpVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1255,16 +1292,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1288,8 +1329,8 @@
   
  This code example includes a user control to enable you to change display modes on a Web page. For more information about display modes and the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/displaymodemenucs.ascx#10)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/displaymodemenuvb.ascx#10)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/displaymodemenucs.ascx" id="Snippet10":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/displaymodemenuvb.ascx" id="Snippet10":::  
   
  This code example also includes an HTML page that could contain Help content for the `TextDisplayWebPart` control. For this example to work, you must save the following code in a file named Textwebparthelp.htm and place it in the same directory of your site as the .aspx page that hosts the `TextDisplayWebPart` control.  
   
@@ -1309,23 +1350,23 @@
   
  The code example also includes the following partial class that contains the code to handle the events in the .aspx page.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Verbs#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs#4)]
- [!code-vb[WebParts_WebPartZoneBase_Verbs#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb#4)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb" id="Snippet4":::  
   
  The other part of the code example is the .aspx page that hosts the `TextDisplayWebPart` control and demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HelpVerb%2A> property. Notice that near the top of the page, an `<@ Register %>` declaration is used to reference the compiled `TextDisplayWebPart` control, which should be placed in a subfolder named Bin.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#1)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet1":::  
   
  Also note that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HelpVerb%2A> property is used declaratively on the `<asp:WebPartZone>` element to set the text for the verb, as shown in the following code example.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet2":::  
   
  Finally, note in the following code example that the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property is set on the `<aspSample:TextDisplayPart>` element to provide the URL to the Help file.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet3":::  
   
  After you load the page in a browser, click the **Catalog Mode** menu item in the **Display Mode** drop-down list control to switch the page into catalog display mode. Add the `TextDisplayWebPart` control to the page, close the catalog, and return the page to normal browse mode. If you click the verbs drop-down menu in the title bar of the `TextDisplayWebPart` control, you can access the help verb to open the Help page.  
   
@@ -1341,8 +1382,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Orientation LayoutOrientation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LayoutOrientation As Orientation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Orientation LayoutOrientation { System::Web::UI::WebControls::Orientation get(); void set(System::Web::UI::WebControls::Orientation value); };" />
       <MemberSignature Language="F#" Value="member this.LayoutOrientation : System.Web.UI.WebControls.Orientation with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Orientation LayoutOrientation { System::Web::UI::WebControls::Orientation get(); void set(System::Web::UI::WebControls::Orientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1351,7 +1392,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1383,13 +1425,13 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone1`, after you load the page into a browser. The Web Parts controls in the zone are rendered horizontally.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#2)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet2":::  
   
  You can click the **Toggle Layout Orientation** button to change the orientation of the zone. The code to toggle the orientation occurs in the following code example from the partial class.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview.cs#7)]
- [!code-vb[WebParts_WebPartZoneBase_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview.vb#7)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview.cs" id="Snippet7":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -1404,8 +1446,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="webPartZoneBase.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1425,7 +1467,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, you can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, you can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://docs.microsoft.com/previous-versions/aspnet/75x4ha6s(v=vs.100)).  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LoadViewState%2A> method overrides the base <xref:System.Web.UI.WebControls.WebParts.WebZone.LoadViewState%2A?displayProperty=nameWithType> method to load state for the verbs and the verbs menu in a zone derived from the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class.  
   
@@ -1441,8 +1483,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuCheckImageStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuCheckImageStyle As Style" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuCheckImageStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MenuCheckImageStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuCheckImageStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1451,16 +1493,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1493,8 +1539,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MenuCheckImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MenuCheckImageUrl As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MenuCheckImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.MenuCheckImageUrl : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MenuCheckImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1503,16 +1549,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Web.UI.UrlProperty]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.UrlProperty&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1531,8 +1581,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuLabelHoverStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelHoverStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuLabelHoverStyle As Style" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuLabelHoverStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MenuLabelHoverStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelHoverStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuLabelHoverStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1541,16 +1591,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1572,8 +1626,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelHoverStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode, and position your mouse pointer over the verbs menu of the Web Parts control. Notice that the text of the label turns bold.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1586,8 +1640,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuLabelStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuLabelStyle As Style" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuLabelStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MenuLabelStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuLabelStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1596,16 +1650,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1627,8 +1685,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode, and notice that the color for the verbs menu label in `WebPartZone2` is the color assigned to it in the declarative markup.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1641,8 +1699,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MenuLabelText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MenuLabelText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MenuLabelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.MenuLabelText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MenuLabelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1651,10 +1709,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1669,7 +1729,7 @@
 ## Remarks  
  If the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText%2A> property is assigned a value, the label appears alongside an image that represents the verbs drop-down menu in the title bar of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in a zone. If no value is assigned to the property, only the image appears on the menu.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://docs.microsoft.com/previous-versions/aspnet/c6zyy3s9(v=vs.100)).  
   
    
   
@@ -1678,8 +1738,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode, and notice that the text for the verbs menu label in `WebPartZone2` is the value assigned to it in the declarative markup.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1692,8 +1752,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MenuPopupImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MenuPopupImageUrl As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MenuPopupImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.MenuPopupImageUrl : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MenuPopupImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1702,16 +1762,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Web.UI.UrlProperty]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.UrlProperty&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1733,8 +1797,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupImageUrl%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode, and notice that an image placeholder (or an actual image if you assigned the path to one) appears in the verbs menu label for the control in `WebPartZone2`.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1747,12 +1811,9 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartMenuStyle MenuPopupStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuPopupStyle As WebPartMenuStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartMenuStyle ^ MenuPopupStyle { System::Web::UI::WebControls::WebParts::WebPartMenuStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MenuPopupStyle : System.Web.UI.WebControls.WebParts.WebPartMenuStyle" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartMenuStyle ^ MenuPopupStyle { System::Web::UI::WebControls::WebParts::WebPartMenuStyle ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.WebParts.IWebPartMenuUser.MenuPopupStyle</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1760,16 +1821,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1797,8 +1862,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuVerbHoverStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbHoverStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuVerbHoverStyle As Style" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuVerbHoverStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MenuVerbHoverStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbHoverStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuVerbHoverStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1807,16 +1872,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1851,8 +1920,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbHoverStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode. Click the verbs menu, and notice that the background color for the verbs menu on the control in `WebPartZone2` is the color assigned to it in the declarative markup.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1866,8 +1935,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuVerbStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuVerbStyle As Style" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuVerbStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MenuVerbStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuVerbStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1876,16 +1945,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1909,8 +1982,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone2`. After you load the page into a browser, switch the page into edit mode. Click the verbs menu, and notice that the font style for the verbs menu on the control in `WebPartZone2` is the style assigned to it in the declarative markup.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1923,8 +1996,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb MinimizeVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MinimizeVerb As WebPartVerb" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ MinimizeVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MinimizeVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ MinimizeVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1933,16 +2006,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1966,13 +2043,13 @@
   
  The following part of the code example is from the partial class, and contains the code that toggles whether the minimize verb is enabled or disabled.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs#5)]
- [!code-vb[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb#5)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb" id="Snippet5":::  
   
  The other part of the code example is the Web page that hosts the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control and contains the user interface (UI). Notice that the declarative `<MinimizeVerb>` element in the zone sets the value for the `Description` attribute text, which appears as a ToolTip when a user positions the mouse pointer over the verb in the verbs menu.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet2":::  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page, if it has not been added. You can use the check boxes to enable and disable the minimize verb on the `TextDisplayWebPart` control. When the verb is enabled, you can also click it to minimize the control.  
   
@@ -1986,8 +2063,9 @@
       <MemberSignature Language="C#" Value="protected virtual void MinimizeWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MinimizeWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void MinimizeWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub MinimizeWebPart (webPart As WebPart)" />
       <MemberSignature Language="F#" Value="abstract member MinimizeWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.MinimizeWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.MinimizeWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void MinimizeWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2026,8 +2104,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCreateVerbs(class System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs(System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateVerbs (e As WebPartVerbsEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateVerbs(System::Web::UI::WebControls::WebParts::WebPartVerbsEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnCreateVerbs : System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs -&gt; unit&#xA;override this.OnCreateVerbs : System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs -&gt; unit" Usage="webPartZoneBase.OnCreateVerbs e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateVerbs(System::Web::UI::WebControls::WebParts::WebPartVerbsEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2058,18 +2136,18 @@
   
  The first part of the code example is the source code for a simple control derived from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class.  
   
- [!code-csharp[WebParts_WebPartVerb2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/SimpleControl.cs#2)]
- [!code-vb[WebParts_WebPartVerb2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/SimpleControl.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/SimpleControl.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/SimpleControl.vb" id="Snippet2":::  
   
  The second part of the code example is the source code for a derived <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone that overrides the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method to add a custom verb to the zone. The code also creates a custom verb that appears in the verbs menu of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls contained in the zone, and the verb creates another copy of the current <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- [!code-csharp[WebParts_WebPartVerb2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/ZoneWithAddedVerb.cs#3)]
- [!code-vb[WebParts_WebPartVerb2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/ZoneWithAddedVerb.vb#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/ZoneWithAddedVerb.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/ZoneWithAddedVerb.vb" id="Snippet3":::  
   
  The third part of the code example is a Web page that hosts the derived zone and <xref:System.Web.UI.WebControls.WebParts.WebPart> control. Near the top of the page is a `Register` directive to reference the derived zone component. If you load the page in a browser, the <xref:System.Web.UI.WebControls.WebParts.WebPart> control appears in the zone. Click the verbs menu, then click the **CopyWebPart** verb, and it creates a copy of the control.  
   
- [!code-aspx-csharp[WebParts_WebPartVerb2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx#1)]
- [!code-aspx-vb[WebParts_WebPartVerb2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/Defaultcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/Defaultvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2082,8 +2160,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="webPartZoneBase.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2116,12 +2194,9 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="webPartZoneBase.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2146,8 +2221,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webPartZoneBase.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2180,8 +2255,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderBody(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RenderBody(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderBody (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderBody(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="override this.RenderBody : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webPartZoneBase.RenderBody writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderBody(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2216,8 +2291,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderDropCue(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RenderDropCue(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderDropCue (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderDropCue(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member RenderDropCue : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderDropCue : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webPartZoneBase.RenderDropCue writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderDropCue(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2249,8 +2324,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderHeader(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RenderHeader(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderHeader (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderHeader(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="override this.RenderHeader : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webPartZoneBase.RenderHeader writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderHeader(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2284,8 +2359,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb RestoreVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RestoreVerb As WebPartVerb" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ RestoreVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.RestoreVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ RestoreVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2294,16 +2369,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2327,13 +2406,13 @@
   
  The following part of the code example is from the partial class, and contains the code that toggles whether the restore verb is enabled or disabled.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs#5)]
- [!code-vb[WebParts_WebPartZoneBase_Verbs#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb#5)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs.vb" id="Snippet5":::  
   
  The other part of the code example is the Web page that hosts the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control and contains the user interface (UI). Notice that the declarative `<RestoreVerb>` element in the zone sets the value for the `Description` attribute text, which appears as a ToolTip when a user positions the mouse pointer over the verb in the verbs menu.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx#2)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/webpartzonebase_verbs_cs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/webpartzonebase_verbs_vb.aspx" id="Snippet2":::  
   
  After you load the page in a browser, switch the page into catalog display mode, and add the `TextDisplayWebPart` control to the page, if it has not been added. Use the minimize verb to minimize the control, and note that the restore verb becomes visible. You can use the check boxes to enable and disable the restore verb.  
   
@@ -2347,8 +2426,9 @@
       <MemberSignature Language="C#" Value="protected virtual void RestoreWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RestoreWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RestoreWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RestoreWebPart (webPart As WebPart)" />
       <MemberSignature Language="F#" Value="abstract member RestoreWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.RestoreWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.RestoreWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RestoreWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2387,8 +2467,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="webPartZoneBase.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2420,8 +2500,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style SelectedPartChromeStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.SelectedPartChromeStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedPartChromeStyle As Style" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ SelectedPartChromeStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SelectedPartChromeStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.SelectedPartChromeStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ SelectedPartChromeStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2430,16 +2510,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2461,8 +2545,8 @@
   
  Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.SelectedPartChromeStyle%2A> property has a value assigned to it in the declarative markup. This value impacts `WebPartZone1`. After you load the page into a browser, switch the page into edit mode. On the verbs menu for one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, click the verb to edit the control, and note that the background color of the control changes to the color assigned to it in the declarative markup.  
   
- [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#2)]
- [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -2474,8 +2558,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowTitleIcons" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.ShowTitleIcons" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowTitleIcons As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowTitleIcons { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ShowTitleIcons : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.ShowTitleIcons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowTitleIcons { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2484,7 +2568,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2511,6 +2596,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="F#" Value="abstract member System.Web.UI.IPostBackEventHandler.RaisePostBackEvent : string -&gt; unit&#xA;override this.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent : string -&gt; unit" Usage="webPartZoneBase.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent eventArgument" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2523,7 +2609,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2551,8 +2638,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType TitleBarVerbButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TitleBarVerbButtonType As ButtonType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType TitleBarVerbButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberSignature Language="F#" Value="member this.TitleBarVerbButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType TitleBarVerbButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2561,7 +2648,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2589,8 +2677,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style TitleBarVerbStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleBarVerbStyle As Style" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ TitleBarVerbStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.TitleBarVerbStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ TitleBarVerbStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2599,16 +2687,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2637,8 +2729,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="webPartZoneBase.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2669,8 +2761,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType VerbButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property VerbButtonType As ButtonType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType VerbButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberSignature Language="F#" Value="member this.VerbButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType VerbButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2679,13 +2771,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.Themeable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.Themeable(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2704,7 +2799,7 @@
   
  You must assign a value to the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ImageUrl%2A> property for each specific verb to cause an image to appear for that verb in its zone. If you do not provide the URL to an image, the verb's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType%2A> property defaults to <xref:System.Web.UI.WebControls.ButtonType.Link>.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://docs.microsoft.com/previous-versions/aspnet/ykzx33wh(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -2717,8 +2812,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartChrome WebPartChrome" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartChrome" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebPartChrome As WebPartChrome" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartChrome ^ WebPartChrome { System::Web::UI::WebControls::WebParts::WebPartChrome ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WebPartChrome : System.Web.UI.WebControls.WebParts.WebPartChrome" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartChrome" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartChrome ^ WebPartChrome { System::Web::UI::WebControls::WebParts::WebPartChrome ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2727,10 +2822,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2749,8 +2846,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartCollection WebParts" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebParts As WebPartCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartCollection ^ WebParts { System::Web::UI::WebControls::WebParts::WebPartCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WebParts : System.Web.UI.WebControls.WebParts.WebPartCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartCollection ^ WebParts { System::Web::UI::WebControls::WebParts::WebPartCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2759,10 +2856,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2784,8 +2883,8 @@
   
  The following code example accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts%2A> property programmatically and displays a list of the controls contained in `WebPartZone1`. After you load the page into a browser, click the button labeled **List WebPartZone1 WebParts**. The IDs and types of the controls are displayed.  
   
- [!code-csharp[WebParts_WebPartZoneBase_Overview#8](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview.cs#8)]
- [!code-vb[WebParts_WebPartZoneBase_Overview#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview.vb#8)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview.cs" id="Snippet8":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
@@ -2798,8 +2897,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode WebPartVerbRenderMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property WebPartVerbRenderMode As WebPartVerbRenderMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerbRenderMode WebPartVerbRenderMode { System::Web::UI::WebControls::WebParts::WebPartVerbRenderMode get(); void set(System::Web::UI::WebControls::WebParts::WebPartVerbRenderMode value); };" />
       <MemberSignature Language="F#" Value="member this.WebPartVerbRenderMode : System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerbRenderMode WebPartVerbRenderMode { System::Web::UI::WebControls::WebParts::WebPartVerbRenderMode get(); void set(System::Web::UI::WebControls::WebParts::WebPartVerbRenderMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2808,7 +2907,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

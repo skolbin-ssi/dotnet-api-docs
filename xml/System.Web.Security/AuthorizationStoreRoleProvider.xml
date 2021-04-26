@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthorizationStoreRoleProvider extends System.Web.Security.RoleProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AuthorizationStoreRoleProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class AuthorizationStoreRoleProvider&#xA;Inherits RoleProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationStoreRoleProvider : System::Web::Security::RoleProvider" />
   <TypeSignature Language="F#" Value="type AuthorizationStoreRoleProvider = class&#xA;    inherit RoleProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationStoreRoleProvider : System::Web::Security::RoleProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -95,7 +95,7 @@ msxml://<path to xml file>
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,7 +112,8 @@ msxml://<path to xml file>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -126,7 +127,7 @@ msxml://<path to xml file>
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="AddUsersToRoles">
@@ -134,8 +135,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddUsersToRoles(string[] usernames, string[] roleNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.AddUsersToRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddUsersToRoles (usernames As String(), roleNames As String())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddUsersToRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
       <MemberSignature Language="F#" Value="override this.AddUsersToRoles : string[] * string[] -&gt; unit" Usage="authorizationStoreRoleProvider.AddUsersToRoles (usernames, roleNames)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddUsersToRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,8 +165,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example adds one or more users to a role or removes a user from a role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]
- [!code-aspx-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -206,7 +207,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -214,8 +215,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,7 +225,8 @@ msxml://<path to xml file>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -276,7 +278,7 @@ msxml://<path to xml file>
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">An attempt was made to set the <see cref="P:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName" /> to a string that is longer than 256 characters.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="CacheRefreshInterval">
@@ -284,8 +286,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".property instance int32 CacheRefreshInterval" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.AuthorizationStoreRoleProvider.CacheRefreshInterval" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheRefreshInterval As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CacheRefreshInterval { int get(); };" />
       <MemberSignature Language="F#" Value="member this.CacheRefreshInterval : int" Usage="System.Web.Security.AuthorizationStoreRoleProvider.CacheRefreshInterval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CacheRefreshInterval { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -294,7 +296,8 @@ msxml://<path to xml file>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -304,7 +307,7 @@ msxml://<path to xml file>
         <summary>Gets the number of minutes between refreshes of the cache of the policy-store data.</summary>
         <value>The number of minutes between refreshes of cached policy-store data. The default is 60.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="CreateRole">
@@ -312,8 +315,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CreateRole(string roleName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.CreateRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateRole (roleName As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateRole(System::String ^ roleName);" />
       <MemberSignature Language="F#" Value="override this.CreateRole : string -&gt; unit" Usage="authorizationStoreRoleProvider.CreateRole roleName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateRole(System::String ^ roleName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -342,8 +345,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example creates a new role in the authorization-manager policy store. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
- [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -366,7 +369,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteRole">
@@ -374,8 +377,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool DeleteRole(string roleName, bool throwOnPopulatedRole) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.DeleteRole(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteRole (roleName As String, throwOnPopulatedRole As Boolean) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeleteRole(System::String ^ roleName, bool throwOnPopulatedRole);" />
       <MemberSignature Language="F#" Value="override this.DeleteRole : string * bool -&gt; bool" Usage="authorizationStoreRoleProvider.DeleteRole (roleName, throwOnPopulatedRole)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeleteRole(System::String ^ roleName, bool throwOnPopulatedRole);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -408,8 +411,8 @@ msxml://<path to xml file>
 ## Examples  
  The following example deletes a role from the authorization-manager policy store. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/deleterolecs.aspx#2)]
- [!code-aspx-vb[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/deleterolevb.aspx#2)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/deleterolecs.aspx" id="Snippet2":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/deleterolevb.aspx" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -437,7 +440,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersInRole">
@@ -445,8 +448,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] FindUsersInRole(string roleName, string usernameToMatch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.FindUsersInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindUsersInRole (roleName As String, usernameToMatch As String) As String()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ FindUsersInRole(System::String ^ roleName, System::String ^ usernameToMatch);" />
       <MemberSignature Language="F#" Value="override this.FindUsersInRole : string * string -&gt; string[]" Usage="authorizationStoreRoleProvider.FindUsersInRole (roleName, usernameToMatch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ FindUsersInRole(System::String ^ roleName, System::String ^ usernameToMatch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -467,7 +470,7 @@ msxml://<path to xml file>
         <returns>A string array containing the names of all the users whose user name matches <paramref name="usernameToMatch" /> and who are members of the specified role.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">An unsupported method was called.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllRoles">
@@ -475,8 +478,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetAllRoles() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.GetAllRoles" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllRoles () As String()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetAllRoles();" />
       <MemberSignature Language="F#" Value="override this.GetAllRoles : unit -&gt; string[]" Usage="authorizationStoreRoleProvider.GetAllRoles " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetAllRoles();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -501,8 +504,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.GetAllRoles%2A> method to get the list of roles for an application and bind the results to a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
- [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -517,7 +520,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetRolesForUser">
@@ -525,8 +528,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetRolesForUser(string username) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.GetRolesForUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRolesForUser (username As String) As String()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetRolesForUser(System::String ^ username);" />
       <MemberSignature Language="F#" Value="override this.GetRolesForUser : string -&gt; string[]" Usage="authorizationStoreRoleProvider.GetRolesForUser username" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetRolesForUser(System::String ^ username);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -554,8 +557,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.GetRolesForUser%2A> method to retrieve a list of roles for a specified user and binds them to a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]
- [!code-aspx-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx" id="Snippet4":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -574,7 +577,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetUsersInRole">
@@ -582,8 +585,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetUsersInRole(string roleName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.GetUsersInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUsersInRole (roleName As String) As String()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetUsersInRole(System::String ^ roleName);" />
       <MemberSignature Language="F#" Value="override this.GetUsersInRole : string -&gt; string[]" Usage="authorizationStoreRoleProvider.GetUsersInRole roleName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetUsersInRole(System::String ^ roleName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -613,8 +616,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.GetUsersInRole%2A> method to get a list of the users in a particular role and bind the results to a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]
- [!code-aspx-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -637,7 +640,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -645,8 +648,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
       <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="authorizationStoreRoleProvider.Initialize (name, config)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -674,7 +677,7 @@ msxml://<path to xml file>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="config" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="connectionStringName" /> attribute is empty or does not exist in the [connectionStrings Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration section.  
+        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="connectionStringName" /> attribute is empty or does not exist in the [connectionStrings Element (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bf7sd233(v=vs.100)) configuration section.  
   
  -or-  
   
@@ -684,7 +687,7 @@ msxml://<path to xml file>
   
  The configuration for this <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance contains an unrecognized attribute.</exception>
         <exception cref="T:System.Web.HttpException">The ASP.NET application is not running at <see cref="F:System.Web.AspNetHostingPermissionLevel.Low" /> trust or higher.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="IsUserInRole">
@@ -692,8 +695,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsUserInRole(string username, string roleName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.IsUserInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsUserInRole (username As String, roleName As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsUserInRole(System::String ^ username, System::String ^ roleName);" />
       <MemberSignature Language="F#" Value="override this.IsUserInRole : string * string -&gt; bool" Usage="authorizationStoreRoleProvider.IsUserInRole (username, roleName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsUserInRole(System::String ^ username, System::String ^ roleName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -724,8 +727,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example programmatically checks to see whether the logged-on user is in the Administrators role before allowing the user to view user roles. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]
- [!code-aspx-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx" id="Snippet4":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -756,7 +759,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveUsersFromRoles">
@@ -764,8 +767,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveUsersFromRoles(string[] userNames, string[] roleNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveUsersFromRoles (userNames As String(), roleNames As String())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveUsersFromRoles(cli::array &lt;System::String ^&gt; ^ userNames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
       <MemberSignature Language="F#" Value="override this.RemoveUsersFromRoles : string[] * string[] -&gt; unit" Usage="authorizationStoreRoleProvider.RemoveUsersFromRoles (userNames, roleNames)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveUsersFromRoles(cli::array &lt;System::String ^&gt; ^ userNames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -794,8 +797,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example adds one or more users to a role or removes a user from a role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]
- [!code-aspx-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx" id="Snippet3":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -836,7 +839,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="RoleExists">
@@ -844,8 +847,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool RoleExists(string roleName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AuthorizationStoreRoleProvider.RoleExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function RoleExists (roleName As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool RoleExists(System::String ^ roleName);" />
       <MemberSignature Language="F#" Value="override this.RoleExists : string -&gt; bool" Usage="authorizationStoreRoleProvider.RoleExists roleName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool RoleExists(System::String ^ roleName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -874,8 +877,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.RoleExists%2A> method to determine whether a role name already exists before creating the role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
- [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -898,7 +901,7 @@ msxml://<path to xml file>
  The authorization-manager runtime is not installed on the server.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The <see langword="connectionStringName" /> attribute references a connection string to a file that does not exist.</exception>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.Security.AuthorizationStoreRoleProvider" /> instance is configured with a file-based policy store, and read access to the file is not allowed at the current trust level.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="ScopeName">
@@ -906,8 +909,8 @@ msxml://<path to xml file>
       <MemberSignature Language="ILAsm" Value=".property instance string ScopeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.AuthorizationStoreRoleProvider.ScopeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ScopeName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScopeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ScopeName : string with get, set" Usage="System.Web.Security.AuthorizationStoreRoleProvider.ScopeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScopeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -916,7 +919,8 @@ msxml://<path to xml file>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -936,7 +940,7 @@ msxml://<path to xml file>
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/5k850zwb(v=vs.100)">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
   </Members>

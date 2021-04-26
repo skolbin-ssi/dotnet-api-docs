@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UriTemplateMatch extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.UriTemplateMatch" />
   <TypeSignature Language="VB.NET" Value="Public Class UriTemplateMatch" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UriTemplateMatch" />
   <TypeSignature Language="F#" Value="type UriTemplateMatch = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UriTemplateMatch" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +15,17 @@
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel.Web" FromVersion="4.0.0.0" To="System.ServiceModel" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,8 +41,8 @@
 ## Examples  
  The following code shows how to use the <xref:System.UriTemplateMatch> class.  
   
- [!code-csharp[UriTemplateMatch#0](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/program.cs#0)]
- [!code-vb[UriTemplateMatch#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/program.vb#0)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/program.cs" id="Snippet0":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/program.vb" id="Snippet0":::  
   
  ]]></format>
     </remarks>
@@ -79,8 +83,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.UriTemplateMatch.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,8 +108,8 @@
 ## Examples  
  The following code shows how to access the <xref:System.UriTemplateMatch.BaseUri%2A> property.  
   
- [!code-csharp[UriTemplateMatch#1](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs#1)]
- [!code-vb[UriTemplateMatch#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -116,8 +120,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection BoundVariables" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.BoundVariables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundVariables As NameValueCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ BoundVariables { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.BoundVariables : System.Collections.Specialized.NameValueCollection" Usage="System.UriTemplateMatch.BoundVariables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ BoundVariables { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,8 +150,8 @@
 ## Examples  
  The following code shows how to access the <xref:System.UriTemplateMatch.BoundVariables%2A> property.  
   
- [!code-csharp[UriTemplateMatch#2](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs#2)]
- [!code-vb[UriTemplateMatch#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -158,8 +162,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Data" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Data { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Data : obj with get, set" Usage="System.UriTemplateMatch.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Data { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,10 +177,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -196,8 +202,8 @@
 ## Examples  
  The following code shows how to access the <xref:System.UriTemplateMatch.Data%2A> property.  
   
- [!code-csharp[UriTemplateMatch#3](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs#3)]
- [!code-vb[UriTemplateMatch#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -208,8 +214,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection QueryParameters" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.QueryParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryParameters As NameValueCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ QueryParameters { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.QueryParameters : System.Collections.Specialized.NameValueCollection" Usage="System.UriTemplateMatch.QueryParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ QueryParameters { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -238,8 +244,8 @@
 ## Examples  
  The following code shows how to access the <xref:System.UriTemplateMatch.QueryParameters%2A> property.  
   
- [!code-csharp[UriTemplateMatch#4](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs#4)]
- [!code-vb[UriTemplateMatch#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb#4)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -250,8 +256,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; RelativePathSegments" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.RelativePathSegments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelativePathSegments As Collection(Of String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ RelativePathSegments { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.RelativePathSegments : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.UriTemplateMatch.RelativePathSegments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ RelativePathSegments { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -280,8 +286,8 @@
 ## Examples  
  The following code shows how to access the <xref:System.UriTemplateMatch.RelativePathSegments%2A> property.  
   
- [!code-csharp[UriTemplateMatch#5](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs#5)]
- [!code-vb[UriTemplateMatch#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb#5)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -292,8 +298,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RequestUri" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestUri As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ RequestUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberSignature Language="F#" Value="member this.RequestUri : Uri with get, set" Usage="System.UriTemplateMatch.RequestUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ RequestUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,10 +313,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -325,8 +333,8 @@
 ## Examples  
  The following code shows how to access the <xref:System.UriTemplateMatch.RequestUri%2A> property.  
   
- [!code-csharp[UriTemplateMatch#6](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs#6)]
- [!code-vb[UriTemplateMatch#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb#6)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
@@ -337,8 +345,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.UriTemplate Template" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.Template" />
       <MemberSignature Language="VB.NET" Value="Public Property Template As UriTemplate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property UriTemplate ^ Template { UriTemplate ^ get(); void set(UriTemplate ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Template : UriTemplate with get, set" Usage="System.UriTemplateMatch.Template" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property UriTemplate ^ Template { UriTemplate ^ get(); void set(UriTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -352,10 +360,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -375,8 +385,8 @@
 ## Examples  
  The following code shows how to access the <xref:System.UriTemplateMatch.Template%2A> property.  
   
- [!code-csharp[UriTemplateMatch#7](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs#7)]
- [!code-vb[UriTemplateMatch#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb#7)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs" id="Snippet7":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatematch/vb/snippets.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -387,8 +397,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; WildcardPathSegments" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplateMatch.WildcardPathSegments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WildcardPathSegments As Collection(Of String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ WildcardPathSegments { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WildcardPathSegments : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.UriTemplateMatch.WildcardPathSegments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ WildcardPathSegments { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -412,7 +422,7 @@
 ## Examples  
  The following code shows how to access the <xref:System.UriTemplateMatch.WildcardPathSegments%2A> property.  
   
- [!code-csharp[UriTemplateMatch#8](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs#8)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatematch/cs/snippets.cs" id="Snippet8":::  
   
  ]]></format>
         </remarks>

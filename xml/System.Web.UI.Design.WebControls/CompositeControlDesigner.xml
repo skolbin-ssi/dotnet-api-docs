@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeControlDesigner extends System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.CompositeControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositeControlDesigner&#xA;Inherits ControlDesigner" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CompositeControlDesigner : System::Web::UI::Design::ControlDesigner" />
   <TypeSignature Language="F#" Value="type CompositeControlDesigner = class&#xA;    inherit ControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositeControlDesigner : System::Web::UI::Design::ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -25,7 +25,7 @@
  ]]></format>
     </remarks>
     <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">Introduction to ASP.NET Control Designers</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/12yydcke(v=vs.100)">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,7 +42,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -50,7 +51,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.CompositeControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">Introduction to ASP.NET Control Designers</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/12yydcke(v=vs.100)">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -58,8 +59,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CompositeControlDesigner.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateChildControls ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateChildControls();" />
       <MemberSignature Language="F#" Value="abstract member CreateChildControls : unit -&gt; unit&#xA;override this.CreateChildControls : unit -&gt; unit" Usage="compositeControlDesigner.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -81,7 +82,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">Introduction to ASP.NET Control Designers</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/12yydcke(v=vs.100)">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -89,8 +90,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CompositeControlDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="compositeControlDesigner.GetDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -115,7 +116,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">Introduction to ASP.NET Control Designers</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/12yydcke(v=vs.100)">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -123,8 +124,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CompositeControlDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="compositeControlDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -152,7 +153,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">Introduction to ASP.NET Control Designers</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/12yydcke(v=vs.100)">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
   </Members>

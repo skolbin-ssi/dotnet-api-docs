@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionStringsExpressionBuilder extends System.Web.Compilation.ExpressionBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ConnectionStringsExpressionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class ConnectionStringsExpressionBuilder&#xA;Inherits ExpressionBuilder" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ConnectionStringsExpressionBuilder : System::Web::Compilation::ExpressionBuilder" />
   <TypeSignature Language="F#" Value="type ConnectionStringsExpressionBuilder = class&#xA;    inherit ExpressionBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConnectionStringsExpressionBuilder : System::Web::Compilation::ExpressionBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -15,14 +15,17 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.ConnectionStringsExpressionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName Language="C#">[System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.ConnectionStringsExpressionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.ConnectionStringsExpressionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Web.Compilation.ExpressionPrefix("ConnectionStrings")</AttributeName>
+      <AttributeName Language="C#">[System.Web.Compilation.ExpressionPrefix("ConnectionStrings")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.Compilation.ExpressionPrefix("ConnectionStrings")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.ConnectionStringsExpressionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.ConnectionStringsExpressionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.ConnectionStringsExpressionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -58,8 +61,8 @@
 ## Examples  
  The following code example demonstrates how to declaratively use a <xref:System.Web.UI.WebControls.SqlDataSource> control to retrieve data from a computer running Microsoft SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/CS/sql3cs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_3sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/VB/sql3vb.aspx#1)]
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/CS/sql3cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_3sql/VB/sql3vb.aspx" id="Snippet1":::
   
  The code retrieves the following connection string from the Web.config file.  
   
@@ -83,7 +86,7 @@
     <altmember cref="P:System.Configuration.ConfigurationManager.ConnectionStrings" />
     <altmember cref="T:System.Configuration.ConfigurationManager" />
     <altmember cref="T:System.Web.UI.Design.ConnectionStringsExpressionEditor" />
-    <related type="Article" href="https://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/d5bd1tad(v=vs.100)">ASP.NET Expressions Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,14 +103,15 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ConnectionStringsExpressionBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/d5bd1tad(v=vs.100)">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EvaluateExpression">
@@ -115,8 +119,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EvaluateExpression(object target, class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (target As Object, entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::Object ^ target, System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberSignature Language="F#" Value="override this.EvaluateExpression : obj * System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; obj" Usage="connectionStringsExpressionBuilder.EvaluateExpression (target, entry, parsedData, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::Object ^ target, System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,7 +154,7 @@
         <exception cref="T:System.InvalidOperationException">The connection string name could not be found in the Web.config file.</exception>
         <altmember cref="P:System.Configuration.ConfigurationManager.ConnectionStrings" />
         <altmember cref="T:System.Web.UI.CompilationMode" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/d5bd1tad(v=vs.100)">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetCodeExpression">
@@ -158,8 +162,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.CodeExpression GetCodeExpression(class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCodeExpression (entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As CodeExpression" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::CodeExpression ^ GetCodeExpression(System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberSignature Language="F#" Value="override this.GetCodeExpression : System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; System.CodeDom.CodeExpression" Usage="connectionStringsExpressionBuilder.GetCodeExpression (entry, parsedData, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::CodeExpression ^ GetCodeExpression(System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,7 +193,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Configuration.ConfigurationManager.ConnectionStrings" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/d5bd1tad(v=vs.100)">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetConnectionString">
@@ -197,8 +201,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetConnectionString(string connectionStringName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetConnectionString (connectionStringName As String) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetConnectionString(System::String ^ connectionStringName);" />
       <MemberSignature Language="F#" Value="static member GetConnectionString : string -&gt; string" Usage="System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionString connectionStringName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetConnectionString(System::String ^ connectionStringName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,7 +230,7 @@
         <exception cref="T:System.InvalidOperationException">The connection string name could not be found in the Web.config file.</exception>
         <altmember cref="P:System.Configuration.ConfigurationManager.ConnectionStrings" />
         <altmember cref="T:System.Web.UI.CompilationMode" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/d5bd1tad(v=vs.100)">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetConnectionStringProviderName">
@@ -234,8 +238,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetConnectionStringProviderName(string connectionStringName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionStringProviderName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetConnectionStringProviderName (connectionStringName As String) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetConnectionStringProviderName(System::String ^ connectionStringName);" />
       <MemberSignature Language="F#" Value="static member GetConnectionStringProviderName : string -&gt; string" Usage="System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionStringProviderName connectionStringName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetConnectionStringProviderName(System::String ^ connectionStringName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -263,7 +267,7 @@
         <exception cref="T:System.InvalidOperationException">The connection string name could not be found in the Web.config file.</exception>
         <altmember cref="P:System.Configuration.ConfigurationManager.ConnectionStrings" />
         <altmember cref="T:System.Web.UI.CompilationMode" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/d5bd1tad(v=vs.100)">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExpression">
@@ -271,8 +275,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ParseExpression(string expression, class System.Type propertyType, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ParseExpression (expression As String, propertyType As Type, context As ExpressionBuilderContext) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ParseExpression(System::String ^ expression, Type ^ propertyType, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberSignature Language="F#" Value="override this.ParseExpression : string * Type * System.Web.Compilation.ExpressionBuilderContext -&gt; obj" Usage="connectionStringsExpressionBuilder.ParseExpression (expression, propertyType, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ParseExpression(System::String ^ expression, Type ^ propertyType, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,7 +306,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Configuration.ConfigurationManager.ConnectionStrings" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/d5bd1tad(v=vs.100)">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsEvaluate">
@@ -310,8 +314,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsEvaluate" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ConnectionStringsExpressionBuilder.SupportsEvaluate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsEvaluate As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsEvaluate { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsEvaluate : bool" Usage="System.Web.Compilation.ConnectionStringsExpressionBuilder.SupportsEvaluate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsEvaluate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -335,7 +339,7 @@
         </remarks>
         <altmember cref="P:System.Configuration.ConfigurationManager.ConnectionStrings" />
         <altmember cref="T:System.Web.UI.CompilationMode" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9ae6373a-853a-4d6e-8639-8c173dacb59f">ASP.NET Expressions Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/d5bd1tad(v=vs.100)">ASP.NET Expressions Overview</related>
       </Docs>
     </Member>
   </Members>

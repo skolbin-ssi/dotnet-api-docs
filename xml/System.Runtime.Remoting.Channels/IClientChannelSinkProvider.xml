@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientChannelSinkProvider" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IClientChannelSinkProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IClientChannelSinkProvider" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IClientChannelSinkProvider" />
   <TypeSignature Language="F#" Value="type IClientChannelSinkProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IClientChannelSinkProvider" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -14,8 +14,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,8 +36,8 @@
 ## Examples  
  The following code example illustrates an implementation of this interface.  
   
- [!code-cpp[Remoting_Sinks#30](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#30)]
- [!code-csharp[Remoting_Sinks#30](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#30)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp" id="Snippet30":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs" id="Snippet30":::  
   
  See the <xref:System.Runtime.Remoting.Channels.IClientChannelSink> interface documentation for an example of the corresponding client sink implementation.  
   
@@ -49,8 +50,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Channels.IClientChannelSink CreateSink(class System.Runtime.Remoting.Channels.IChannelSender channel, string url, object remoteChannelData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IClientChannelSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelSender,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSink (channel As IChannelSender, url As String, remoteChannelData As Object) As IClientChannelSink" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::Channels::IClientChannelSink ^ CreateSink(System::Runtime::Remoting::Channels::IChannelSender ^ channel, System::String ^ url, System::Object ^ remoteChannelData);" />
       <MemberSignature Language="F#" Value="abstract member CreateSink : System.Runtime.Remoting.Channels.IChannelSender * string * obj -&gt; System.Runtime.Remoting.Channels.IClientChannelSink" Usage="iClientChannelSinkProvider.CreateSink (channel, url, remoteChannelData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::Channels::IClientChannelSink ^ CreateSink(System::Runtime::Remoting::Channels::IChannelSender ^ channel, System::String ^ url, System::Object ^ remoteChannelData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -61,7 +62,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -89,13 +91,12 @@
 ## Examples  
  The following code example illustrates an implementation of this method.  
   
- [!code-cpp[Remoting_Sinks#33](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#33)]
- [!code-csharp[Remoting_Sinks#33](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#33)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp" id="Snippet33":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs" id="Snippet33":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -103,8 +104,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Channels.IClientChannelSinkProvider Next" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IClientChannelSinkProvider.Next" />
       <MemberSignature Language="VB.NET" Value="Public Property Next As IClientChannelSinkProvider" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ Next { System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ get(); void set(System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Next : System.Runtime.Remoting.Channels.IClientChannelSinkProvider with get, set" Usage="System.Runtime.Remoting.Channels.IClientChannelSinkProvider.Next" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ Next { System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ get(); void set(System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,10 +116,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[get: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[set: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -133,13 +136,12 @@
 ## Examples  
  The following code example illustrates an implementation of this property.  
   
- [!code-cpp[Remoting_Sinks#32](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#32)]
- [!code-csharp[Remoting_Sinks#32](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#32)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp" id="Snippet32":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs" id="Snippet32":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
   </Members>

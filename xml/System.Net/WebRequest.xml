@@ -1,16 +1,24 @@
 <Type Name="WebRequest" FullName="System.Net.WebRequest">
-  <TypeSignature Language="C#" Value="public abstract class WebRequest : MarshalByRefObject, System.Runtime.Serialization.ISerializable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit WebRequest extends System.MarshalByRefObject implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="C#" Value="public abstract class WebRequest" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebRequest extends System.Object" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebRequest" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebRequest&#xA;Inherits MarshalByRefObject&#xA;Implements ISerializable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WebRequest abstract : MarshalByRefObject, System::Runtime::Serialization::ISerializable" />
-  <TypeSignature Language="F#" Value="type WebRequest = class&#xA;    inherit MarshalByRefObject&#xA;    interface ISerializable" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebRequest" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="F#" Value="type WebRequest = class" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebRequest abstract" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="C#" Value="public abstract class WebRequest : MarshalByRefObject, System.Runtime.Serialization.ISerializable" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebRequest extends System.MarshalByRefObject implements class System.Runtime.Serialization.ISerializable" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebRequest&#xA;Inherits MarshalByRefObject&#xA;Implements ISerializable" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="F#" Value="type WebRequest = class&#xA;    inherit MarshalByRefObject&#xA;    interface ISerializable" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebRequest abstract : MarshalByRefObject, System::Runtime::Serialization::ISerializable" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit WebRequest extends System.MarshalByRefObject implements class System.Runtime.Serialization.ISerializable" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -27,18 +35,27 @@
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System" FromVersion="4.0.0.0" To="System.Net.Requests" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="System.Net" FromVersion="4.0.0.0" To="System.Net.Requests" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Net" FromVersion="4.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+    <TypeForwarding From="System.Net" FromVersion="2.0.5.0" To="System" ToVersion="2.0.5.0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="netframework-4.5">System.MarshalByRefObject</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">System.MarshalByRefObject</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -70,19 +87,18 @@
 ## Examples  
  The following example shows how to create a <xref:System.Net.WebRequest> instance and return the response.  
   
- [!code-cpp[NclWebRequestSimple#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebRequestSimple/CPP/webrequestget.cpp#1)]
- [!code-csharp[NclWebRequestSimple#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebRequestSimple/CS/webrequestget.cs#1)]
- [!code-vb[NclWebRequestSimple#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebRequestSimple/VB/webrequestget.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebRequestSimple/CPP/webrequestget.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebRequestSimple/CS/webrequestget.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebRequestSimple/VB/webrequestget.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
-    <permission cref="T:System.Net.WebPermission">To access the requested URI or any URI that the request is redirected to. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" />.</permission>
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Net.WebRequest" />, you must override the following members: <see cref="P:System.Net.WebRequest.Method" />, <see cref="P:System.Net.WebRequest.RequestUri" />, <see cref="P:System.Net.WebRequest.Headers" />, <see cref="P:System.Net.WebRequest.ContentLength" />, <see cref="P:System.Net.WebRequest.ContentType" />, <see cref="P:System.Net.WebRequest.Credentials" />, <see cref="P:System.Net.WebRequest.PreAuthenticate" />, <see cref="M:System.Net.WebRequest.GetRequestStream" />, <see cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />, <see cref="M:System.Net.WebRequest.EndGetRequestStream(System.IAsyncResult)" />, <see cref="M:System.Net.WebRequest.GetResponse" />, <see cref="M:System.Net.WebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />, and <see cref="M:System.Net.WebRequest.EndGetResponse(System.IAsyncResult)" />. In addition, you must provide an implementation of the <see cref="T:System.Net.IWebRequestCreate" /> interface, which defines the <see cref="M:System.Net.IWebRequestCreate.Create(System.Uri)" /> method used when you call <see cref="M:System.Net.WebRequest.Create(System.Uri)" />. You must register the class that implements the <see cref="T:System.Net.IWebRequestCreate" /> interface, using the <see cref="M:System.Net.WebRequest.RegisterPrefix(System.String,System.Net.IWebRequestCreate)" /> method or the configuration file.</para>
     </block>
     <altmember cref="T:System.Net.HttpWebRequest" />
-    <related type="Article" href="~/docs/framework/network-programming/requesting-data.md">Requesting Data</related>
-    <related type="Article" href="~/docs/framework/network-programming/programming-pluggable-protocols.md">Programming Pluggable Protocols</related>
+    <related type="Article" href="/dotnet/framework/network-programming/requesting-data">Requesting Data</related>
+    <related type="Article" href="/dotnet/framework/network-programming/programming-pluggable-protocols">Programming Pluggable Protocols</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -108,6 +124,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +142,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.WebRequest" /> class.</summary>
@@ -138,9 +162,9 @@
 ## Examples  
  The following example shows how to create a <xref:System.Net.WebRequest> instance by calling the <xref:System.Net.WebRequest.Create%2A> method on the <xref:System.Net.WebRequest> class.  
   
- [!code-cpp[Classic WebRequest.WebRequest Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic WebRequest.WebRequest Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebRequest.WebRequest Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebRequest.WebRequest Example/CS/source.cs#1)]
- [!code-vb[Classic WebRequest.WebRequest Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebRequest.WebRequest Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Classic WebRequest.WebRequest Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebRequest.WebRequest Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebRequest.WebRequest Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -150,8 +174,9 @@
       <MemberSignature Language="C#" Value="protected WebRequest (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebRequest(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (serializationInfo As SerializationInfo, streamingContext As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Net.WebRequest : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.WebRequest" Usage="new System.Net.WebRequest (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebRequest(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,18 +195,25 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains the information required to serialize the new <see cref="T:System.Net.WebRequest" /> instance.</param>
@@ -198,7 +230,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the constructor, when the constructor is not overridden in a descendant class.</exception>
-        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
+        <related type="Article" href="/dotnet/standard/serialization/xml-and-soap-serialization">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -206,12 +238,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.Abort" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Abort ()" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Abort();" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit" Usage="webRequest.Abort " FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C#" Value="public virtual void Abort ();" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Abort ()" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abort();" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit&#xA;override this.Abort : unit -&gt; unit" Usage="webRequest.Abort " FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Abort();" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public virtual void Abort ();" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Abort ()" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit&#xA;override this.Abort : unit -&gt; unit" Usage="webRequest.Abort " FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abort();" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -219,6 +251,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -260,8 +294,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.AuthenticationLevel AuthenticationLevel" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.AuthenticationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationLevel As AuthenticationLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::AuthenticationLevel AuthenticationLevel { System::Net::Security::AuthenticationLevel get(); void set(System::Net::Security::AuthenticationLevel value); };" />
       <MemberSignature Language="F#" Value="member this.AuthenticationLevel : System.Net.Security.AuthenticationLevel with get, set" Usage="System.Net.WebRequest.AuthenticationLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::AuthenticationLevel AuthenticationLevel { System::Net::Security::AuthenticationLevel get(); void set(System::Net::Security::AuthenticationLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -279,16 +313,20 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -298,7 +336,7 @@
         <summary>Gets or sets values indicating the level of authentication and impersonation used for this request.</summary>
         <value>A bitwise combination of the <see cref="T:System.Net.Security.AuthenticationLevel" /> values. The default value is <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" />.  
   
- In mutual authentication, both the client and server present credentials to establish their identity. The <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequired" /> and <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" /> values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](https://msdn.microsoft.com/library/d342e87c-f672-4660-a513-41a2f2b80c4a).  
+ In mutual authentication, both the client and server present credentials to establish their identity. The <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequired" /> and <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" /> values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](/dotnet/framework/network-programming/internet-authentication).  
   
  To determine whether mutual authentication occurred, check the <see cref="P:System.Net.WebResponse.IsMutuallyAuthenticated" /> property.  
   
@@ -309,8 +347,8 @@
 ## Examples  
  The following code example sets the value of this property.  
   
- [!code-cpp[NclCredPolicy#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCredPolicy/CPP/NCLCredPolicy.cpp#1)]
- [!code-csharp[NclCredPolicy#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCredPolicy/CS/websample.cs#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCredPolicy/CPP/NCLCredPolicy.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCredPolicy/CS/websample.cs" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -321,12 +359,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginGetRequestStream(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginGetRequestStream (callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginGetRequestStream(AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="abstract member BeginGetRequestStream : AsyncCallback * obj -&gt; IAsyncResult" Usage="webRequest.BeginGetRequestStream (callback, state)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginGetRequestStream(AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginGetRequestStream (AsyncCallback? callback, object? state);" FrameworkAlternate="net-5.0;net-6.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginGetRequestStream (callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member BeginGetRequestStream : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginGetRequestStream : AsyncCallback * obj -&gt; IAsyncResult" Usage="webRequest.BeginGetRequestStream (callback, state)" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginGetRequestStream(AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginGetRequestStream (AsyncCallback callback, object state);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginGetRequestStream (callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginGetRequestStream(AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member BeginGetRequestStream : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginGetRequestStream : AsyncCallback * obj -&gt; IAsyncResult" Usage="webRequest.BeginGetRequestStream (callback, state)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -334,6 +373,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -354,8 +395,8 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="state" Type="System.Object" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
@@ -376,15 +417,15 @@
 ## Examples  
  The following example uses the <xref:System.Net.WebRequest.BeginGetRequestStream%2A> to asynchronously obtain the request stream.  
   
- [!code-cpp[WebRequest_BeginGetRequest#3](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CPP/webrequest_begingetrequest.cpp#3)]
- [!code-csharp[WebRequest_BeginGetRequest#3](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CS/webrequest_begingetrequest.cs#3)]
- [!code-vb[WebRequest_BeginGetRequest#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetRequest/VB/webrequest_begingetrequest.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CPP/webrequest_begingetrequest.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CS/webrequest_begingetrequest.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetRequest/VB/webrequest_begingetrequest.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.EndGetRequestStream(System.IAsyncResult)" />
-        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
+        <related type="Article" href="/dotnet/framework/network-programming/making-asynchronous-requests">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="BeginGetResponse">
@@ -392,12 +433,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginGetResponse(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginGetResponse (callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginGetResponse(AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="abstract member BeginGetResponse : AsyncCallback * obj -&gt; IAsyncResult" Usage="webRequest.BeginGetResponse (callback, state)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginGetResponse(AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginGetResponse (AsyncCallback? callback, object? state);" FrameworkAlternate="net-5.0;net-6.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginGetResponse (callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member BeginGetResponse : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginGetResponse : AsyncCallback * obj -&gt; IAsyncResult" Usage="webRequest.BeginGetResponse (callback, state)" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginGetResponse(AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginGetResponse (AsyncCallback callback, object state);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginGetResponse (callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginGetResponse(AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member BeginGetResponse : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginGetResponse : AsyncCallback * obj -&gt; IAsyncResult" Usage="webRequest.BeginGetResponse (callback, state)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -405,6 +447,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -425,8 +469,8 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="state" Type="System.Object" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
@@ -450,25 +494,26 @@
 ## Examples  
  The following example uses <xref:System.Net.WebRequest.BeginGetResponse%2A> to asynchronously request the target resource. When the resource has been obtained, the specified callback method will be executed.  
   
- [!code-cpp[WebRequest_BeginGetResponse#2](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetResponse/CPP/webrequest_begingetresponse.cpp#2)]
- [!code-csharp[WebRequest_BeginGetResponse#2](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetResponse/CS/webrequest_begingetresponse.cs#2)]
- [!code-vb[WebRequest_BeginGetResponse#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetResponse/VB/webrequest_begingetresponse.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetResponse/CPP/webrequest_begingetresponse.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetResponse/CS/webrequest_begingetresponse.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetResponse/VB/webrequest_begingetresponse.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.EndGetResponse(System.IAsyncResult)" />
         <altmember cref="M:System.Net.WebRequest.GetResponse" />
-        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
+        <related type="Article" href="/dotnet/framework/network-programming/making-asynchronous-requests">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="CachePolicy">
-      <MemberSignature Language="C#" Value="public virtual System.Net.Cache.RequestCachePolicy CachePolicy { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual System.Net.Cache.RequestCachePolicy? CachePolicy { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Cache.RequestCachePolicy CachePolicy" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.CachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CachePolicy As RequestCachePolicy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Cache::RequestCachePolicy ^ CachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CachePolicy : System.Net.Cache.RequestCachePolicy with get, set" Usage="System.Net.WebRequest.CachePolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Cache::RequestCachePolicy ^ CachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
+      <MemberSignature Language="C#" Value="public virtual System.Net.Cache.RequestCachePolicy CachePolicy { get; set; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -486,16 +531,20 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -519,8 +568,8 @@
 ## Examples  
  The following code example demonstrates setting the cache policy for a Web request.  
   
- [!code-cpp[NCLSimpleCache#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#2)]
- [!code-csharp[NCLSimpleCache#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -532,12 +581,13 @@
       </Docs>
     </Member>
     <Member MemberName="ConnectionGroupName">
-      <MemberSignature Language="C#" Value="public virtual string ConnectionGroupName { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual string? ConnectionGroupName { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionGroupName" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.ConnectionGroupName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConnectionGroupName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionGroupName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ConnectionGroupName : string with get, set" Usage="System.Net.WebRequest.ConnectionGroupName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionGroupName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C#" Value="public virtual string ConnectionGroupName { get; set; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -556,6 +606,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -583,7 +635,7 @@
         </block>
         <altmember cref="P:System.Net.Configuration.ConnectionManagementElement.MaxConnection" />
         <altmember cref="P:System.Net.HttpWebRequest.ConnectionGroupName" />
-        <related type="Article" href="~/docs/framework/network-programming/connection-grouping.md">Connection Grouping</related>
+        <related type="Article" href="/dotnet/framework/network-programming/connection-grouping">Connection Grouping</related>
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
@@ -591,8 +643,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentLength As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); void set(long value); };" />
       <MemberSignature Language="F#" Value="member this.ContentLength : int64 with get, set" Usage="System.Net.WebRequest.ContentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -611,6 +663,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -635,9 +689,9 @@
 ## Examples  
  The following example sets the <xref:System.Net.WebRequest.ContentLength%2A> property to the amount of bytes in the outgoing byte buffer.  
   
- [!code-cpp[WebRequest_ContentType#4](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_ContentType/CPP/webrequest_contenttype.cpp#4)]
- [!code-csharp[WebRequest_ContentType#4](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_ContentType/CS/webrequest_contenttype.cs#4)]
- [!code-vb[WebRequest_ContentType#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_ContentType/VB/webrequest_contenttype.vb#4)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_ContentType/CPP/webrequest_contenttype.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_ContentType/CS/webrequest_contenttype.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_ContentType/VB/webrequest_contenttype.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -650,11 +704,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property ContentType As String" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Net.WebRequest.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public virtual string? ContentType { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentType As String" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C#" Value="public virtual string ContentType { get; set; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentType As String" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -662,6 +717,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -698,9 +755,9 @@
 ## Examples  
  The following example sets the <xref:System.Net.WebRequest.ContentType%2A> property to the appropriate media type.  
   
- [!code-cpp[WebRequest_ContentType#4](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_ContentType/CPP/webrequest_contenttype.cpp#4)]
- [!code-csharp[WebRequest_ContentType#4](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_ContentType/CS/webrequest_contenttype.cs#4)]
- [!code-vb[WebRequest_ContentType#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_ContentType/VB/webrequest_contenttype.vb#4)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_ContentType/CPP/webrequest_contenttype.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_ContentType/CS/webrequest_contenttype.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_ContentType/VB/webrequest_contenttype.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -723,8 +780,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.WebRequest Create(string requestUriString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (requestUriString As String) As WebRequest" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebRequest ^ Create(System::String ^ requestUriString);" />
       <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Net.WebRequest" Usage="System.Net.WebRequest.Create requestUriString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebRequest ^ Create(System::String ^ requestUriString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -732,6 +789,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -748,11 +807,17 @@
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.WebRequest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestUriString" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="requestUriString" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="requestUriString">The URI that identifies the Internet resource.</param>
@@ -781,16 +846,16 @@
  The <xref:System.Net.WebRequest.Create%2A> method uses the `requestUriString` parameter to create a <xref:System.Uri> instance that it passes to the new <xref:System.Net.WebRequest>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](/dotnet/framework/network-programming/network-tracing).
   
    
   
 ## Examples  
  The following example uses <xref:System.Net.WebRequest.Create%2A> to instantiate an <xref:System.Net.HttpWebRequest> instance. A string representing the target URL is used as the constructor parameter.  
   
- [!code-cpp[WebResponse_ResponseUri#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_ResponseUri/CPP/webresponse_responseuri.cpp#1)]
- [!code-csharp[WebResponse_ResponseUri#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_ResponseUri/CS/webresponse_responseuri.cs#1)]
- [!code-vb[WebResponse_ResponseUri#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_ResponseUri/VB/webresponse_responseuri.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_ResponseUri/CPP/webresponse_responseuri.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_ResponseUri/CS/webresponse_responseuri.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_ResponseUri/VB/webresponse_responseuri.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -807,7 +872,7 @@
           </block>  
   
  The URI specified in <paramref name="requestUriString" /> is not a valid URI.</exception>
-        <related type="Article" href="~/docs/framework/network-programming/programming-pluggable-protocols.md">Programming Pluggable Protocols</related>
+        <related type="Article" href="/dotnet/framework/network-programming/programming-pluggable-protocols">Programming Pluggable Protocols</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -815,8 +880,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.WebRequest Create(class System.Uri requestUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.Create(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (requestUri As Uri) As WebRequest" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebRequest ^ Create(Uri ^ requestUri);" />
       <MemberSignature Language="F#" Value="static member Create : Uri -&gt; System.Net.WebRequest" Usage="System.Net.WebRequest.Create requestUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebRequest ^ Create(Uri ^ requestUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -824,6 +889,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -840,11 +907,17 @@
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.WebRequest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestUri" Type="System.Uri" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="requestUri" Type="System.Uri" />
       </Parameters>
       <Docs>
         <param name="requestUri">A <see cref="T:System.Uri" /> containing the URI of the requested resource.</param>
@@ -875,16 +948,16 @@
  .NET includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](/dotnet/framework/network-programming/network-tracing).  
   
    
   
 ## Examples  
  The following example uses <xref:System.Net.WebRequest.Create%2A> to instantiate an <xref:System.Net.HttpWebRequest> instance. A Uri representing the target URL is used as the constructor parameter.  
   
- [!code-cpp[WebRequest_Create#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Create/CPP/webrequest_create.cpp#1)]
- [!code-csharp[WebRequest_Create#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Create/CS/webrequest_create.cs#1)]
- [!code-vb[WebRequest_Create#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Create/VB/webrequest_create.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Create/CPP/webrequest_create.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Create/CS/webrequest_create.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Create/VB/webrequest_create.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -899,8 +972,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.WebRequest CreateDefault(class System.Uri requestUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.CreateDefault(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefault (requestUri As Uri) As WebRequest" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebRequest ^ CreateDefault(Uri ^ requestUri);" />
       <MemberSignature Language="F#" Value="static member CreateDefault : Uri -&gt; System.Net.WebRequest" Usage="System.Net.WebRequest.CreateDefault requestUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::WebRequest ^ CreateDefault(Uri ^ requestUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -919,15 +992,23 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.WebRequest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestUri" Type="System.Uri" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="requestUri" Type="System.Uri" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="requestUri">A <see cref="T:System.Uri" /> containing the URI of the requested resource.</param>
@@ -942,7 +1023,7 @@
  For example, when a URI beginning with `http://` is passed in `requestUri`, an <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.CreateDefault%2A>. If a URI beginning with `file://` is passed instead, the <xref:System.Net.WebRequest.CreateDefault%2A> method will return a <xref:System.Net.FileWebRequest>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in .NET](~/docs/framework/network-programming/network-tracing.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in .NET](/dotnet/framework/network-programming/network-tracing).  
   
  ]]></format>
         </remarks>
@@ -967,8 +1048,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.HttpWebRequest CreateHttp(string requestUriString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.CreateHttp(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHttp (requestUriString As String) As HttpWebRequest" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::HttpWebRequest ^ CreateHttp(System::String ^ requestUriString);" />
       <MemberSignature Language="F#" Value="static member CreateHttp : string -&gt; System.Net.HttpWebRequest" Usage="System.Net.WebRequest.CreateHttp requestUriString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::HttpWebRequest ^ CreateHttp(System::String ^ requestUriString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -976,6 +1057,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -990,11 +1073,17 @@
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.HttpWebRequest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestUriString" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="requestUriString" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="requestUriString">A URI string that identifies the Internet resource.</param>
@@ -1026,8 +1115,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.HttpWebRequest CreateHttp(class System.Uri requestUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.CreateHttp(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHttp (requestUri As Uri) As HttpWebRequest" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::HttpWebRequest ^ CreateHttp(Uri ^ requestUri);" />
       <MemberSignature Language="F#" Value="static member CreateHttp : Uri -&gt; System.Net.HttpWebRequest" Usage="System.Net.WebRequest.CreateHttp requestUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::HttpWebRequest ^ CreateHttp(Uri ^ requestUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1035,6 +1124,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1049,11 +1140,17 @@
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use HttpClient instead.", DiagnosticId="SYSLIB0014", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.HttpWebRequest</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="requestUri" Type="System.Uri" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="requestUri" Type="System.Uri" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="requestUri">A URI that identifies the Internet resource.</param>
@@ -1085,8 +1182,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebRequestCreate CreatorInstance" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.CreatorInstance" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CreatorInstance As IWebRequestCreate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::IWebRequestCreate ^ CreatorInstance { System::Net::IWebRequestCreate ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CreatorInstance : System.Net.IWebRequestCreate" Usage="System.Net.WebRequest.CreatorInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::IWebRequestCreate ^ CreatorInstance { System::Net::IWebRequestCreate ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1103,11 +1200,13 @@
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1120,19 +1219,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-This property allows an application to determine which <xref:System.Net.IWebRequestCreate> derived factory object was used to create the request. This object may be [System.Net.Browser.WebRequestCreator.BrowserHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.browserhttp(v=vs.95)) or [System.Net.Browser.WebRequestCreator.ClientHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.clienthttp(v=vs.95)), but it may also be a custom instance derived from <xref:System.Net.IWebRequestCreate>. This allows an application to determine whether the browser hosting [!INCLUDE[silverlight](~/includes/silverlight-md.md)], the [!INCLUDE[silverlight](~/includes/silverlight-md.md)] client, or some custom object handles HTTP requests and responses for the <xref:System.Net.WebRequest> instance. The <xref:System.Net.WebRequest.RegisterPrefix%2A> method allows an application to configure which derived <xref:System.Net.WebRequest> type will be instantiated when making a request to a specific URI. <xref:System.Net.WebRequest> creators are typically registered to handle a specific protocol, such HTTP or HTTPS, but can be registered to handle a request to a specific server or path on a server. This is useful when more than one derived <xref:System.Net.WebRequest> type can process requests for the same protocol. The [!INCLUDE[sil3_first](~/includes/sil3-first-md.md)] and later runtime supports multiple HTTP handlers each having different capabilities. For example, a web service that uses Representational State Transfer (REST) might require the [System.Net.Browser.WebRequestCreator.ClientHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.clienthttp(v=vs.95)) handler while a SOAP web service might be able to use the default [System.Net.Browser.WebRequestCreator.BrowserHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.browserhttp(v=vs.95)) handler.
+This property allows an application to determine which <xref:System.Net.IWebRequestCreate> derived factory object was used to create the request. This object may be [System.Net.Browser.WebRequestCreator.BrowserHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.browserhttp(v=vs.95)) or [System.Net.Browser.WebRequestCreator.ClientHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.clienthttp(v=vs.95)), but it may also be a custom instance derived from <xref:System.Net.IWebRequestCreate>. This allows an application to determine whether the browser hosting Silverlight, the Silverlight client, or some custom object handles HTTP requests and responses for the <xref:System.Net.WebRequest> instance. The <xref:System.Net.WebRequest.RegisterPrefix%2A> method allows an application to configure which derived <xref:System.Net.WebRequest> type will be instantiated when making a request to a specific URI. <xref:System.Net.WebRequest> creators are typically registered to handle a specific protocol, such HTTP or HTTPS, but can be registered to handle a request to a specific server or path on a server. This is useful when more than one derived <xref:System.Net.WebRequest> type can process requests for the same protocol. The Microsoft Silverlight 3 and later runtime supports multiple HTTP handlers each having different capabilities. For example, a web service that uses Representational State Transfer (REST) might require the [System.Net.Browser.WebRequestCreator.ClientHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.clienthttp(v=vs.95)) handler while a SOAP web service might be able to use the default [System.Net.Browser.WebRequestCreator.BrowserHttp](https://msdn.microsoft.com/library/system.net.browser.webrequestcreator.browserhttp(v=vs.95)) handler.
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Credentials">
-      <MemberSignature Language="C#" Value="public virtual System.Net.ICredentials Credentials { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual System.Net.ICredentials Credentials { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Credentials As ICredentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.Net.WebRequest.Credentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
+      <MemberSignature Language="C#" Value="public virtual System.Net.ICredentials? Credentials { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1140,6 +1240,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1176,9 +1278,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example sets the <xref:System.Net.WebRequest.Credentials%2A> property using the default credentials of the current user. When the request is made, credentials stored in this property are used to validate the client. This is identical to setting the <xref:System.Net.WebRequest.UseDefaultCredentials%2A> property to `true`.  
   
- [!code-cpp[NclWebRequestSimple#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebRequestSimple/CPP/webrequestget.cpp#2)]
- [!code-csharp[NclWebRequestSimple#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebRequestSimple/CS/webrequestget.cs#2)]
- [!code-vb[NclWebRequestSimple#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebRequestSimple/VB/webrequestget.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebRequestSimple/CPP/webrequestget.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebRequestSimple/CS/webrequestget.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebRequestSimple/VB/webrequestget.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -1189,12 +1291,13 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       </Docs>
     </Member>
     <Member MemberName="DefaultCachePolicy">
-      <MemberSignature Language="C#" Value="public static System.Net.Cache.RequestCachePolicy DefaultCachePolicy { get; set; }" />
+      <MemberSignature Language="C#" Value="public static System.Net.Cache.RequestCachePolicy? DefaultCachePolicy { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".property class System.Net.Cache.RequestCachePolicy DefaultCachePolicy" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.DefaultCachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultCachePolicy As RequestCachePolicy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::Cache::RequestCachePolicy ^ DefaultCachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
       <MemberSignature Language="F#" Value="member this.DefaultCachePolicy : System.Net.Cache.RequestCachePolicy with get, set" Usage="System.Net.WebRequest.DefaultCachePolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::Cache::RequestCachePolicy ^ DefaultCachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
+      <MemberSignature Language="C#" Value="public static System.Net.Cache.RequestCachePolicy DefaultCachePolicy { get; set; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1212,6 +1315,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1241,12 +1346,11 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following code example demonstrates setting the default cache policy for Web requests.  
   
- [!code-cpp[NCLSimpleCache#15](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#15)]
- [!code-csharp[NCLSimpleCache#15](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#15)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet15":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs" id="Snippet15":::  
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Net.WebPermission">For unrestricted access to network resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
         <altmember cref="T:System.Net.Cache.RequestCachePolicy" />
         <altmember cref="T:System.Net.Cache.HttpRequestCacheLevel" />
         <altmember cref="T:System.Net.Cache.RequestCacheLevel" />
@@ -1255,12 +1359,13 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       </Docs>
     </Member>
     <Member MemberName="DefaultWebProxy">
-      <MemberSignature Language="C#" Value="public static System.Net.IWebProxy DefaultWebProxy { get; set; }" />
+      <MemberSignature Language="C#" Value="public static System.Net.IWebProxy DefaultWebProxy { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property class System.Net.IWebProxy DefaultWebProxy" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.DefaultWebProxy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultWebProxy As IWebProxy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::IWebProxy ^ DefaultWebProxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
       <MemberSignature Language="F#" Value="member this.DefaultWebProxy : System.Net.IWebProxy with get, set" Usage="System.Net.WebRequest.DefaultWebProxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::IWebProxy ^ DefaultWebProxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="C#" Value="public static System.Net.IWebProxy? DefaultWebProxy { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1268,6 +1373,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1301,7 +1408,6 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Net.WebPermission">To get or set the global HTTP proxy. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
     <Member MemberName="EndGetRequestStream">
@@ -1309,12 +1415,12 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream EndGetRequestStream(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.EndGetRequestStream(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function EndGetRequestStream (asyncResult As IAsyncResult) As Stream" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::Stream ^ EndGetRequestStream(IAsyncResult ^ asyncResult);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="abstract member EndGetRequestStream : IAsyncResult -&gt; System.IO.Stream" Usage="webRequest.EndGetRequestStream asyncResult" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C#" Value="public virtual System.IO.Stream EndGetRequestStream (IAsyncResult asyncResult);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function EndGetRequestStream (asyncResult As IAsyncResult) As Stream" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ EndGetRequestStream(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member EndGetRequestStream : IAsyncResult -&gt; System.IO.Stream&#xA;override this.EndGetRequestStream : IAsyncResult -&gt; System.IO.Stream" Usage="webRequest.EndGetRequestStream asyncResult" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::Stream ^ EndGetRequestStream(IAsyncResult ^ asyncResult);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public virtual System.IO.Stream EndGetRequestStream (IAsyncResult asyncResult);" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EndGetRequestStream (asyncResult As IAsyncResult) As Stream" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member EndGetRequestStream : IAsyncResult -&gt; System.IO.Stream&#xA;override this.EndGetRequestStream : IAsyncResult -&gt; System.IO.Stream" Usage="webRequest.EndGetRequestStream asyncResult" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ EndGetRequestStream(IAsyncResult ^ asyncResult);" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1322,6 +1428,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1342,7 +1450,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that references a pending request for a stream.</param>
@@ -1365,15 +1473,15 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example obtains and uses the request stream by calling the <xref:System.Net.WebRequest.EndGetRequestStream%2A>. The <xref:System.Net.WebRequest.EndGetRequestStream%2A> method completes the asynchronous call to <xref:System.Net.WebRequest.BeginGetRequestStream%2A>.  
   
- [!code-cpp[WebRequest_BeginGetRequest#3](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CPP/webrequest_begingetrequest.cpp#3)]
- [!code-csharp[WebRequest_BeginGetRequest#3](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CS/webrequest_begingetrequest.cs#3)]
- [!code-vb[WebRequest_BeginGetRequest#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetRequest/VB/webrequest_begingetrequest.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CPP/webrequest_begingetrequest.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CS/webrequest_begingetrequest.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetRequest/VB/webrequest_begingetrequest.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
-        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
+        <related type="Article" href="/dotnet/framework/network-programming/making-asynchronous-requests">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="EndGetResponse">
@@ -1381,12 +1489,12 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebResponse EndGetResponse(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.EndGetResponse(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function EndGetResponse (asyncResult As IAsyncResult) As WebResponse" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Net::WebResponse ^ EndGetResponse(IAsyncResult ^ asyncResult);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="abstract member EndGetResponse : IAsyncResult -&gt; System.Net.WebResponse" Usage="webRequest.EndGetResponse asyncResult" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C#" Value="public virtual System.Net.WebResponse EndGetResponse (IAsyncResult asyncResult);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function EndGetResponse (asyncResult As IAsyncResult) As WebResponse" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::WebResponse ^ EndGetResponse(IAsyncResult ^ asyncResult);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member EndGetResponse : IAsyncResult -&gt; System.Net.WebResponse&#xA;override this.EndGetResponse : IAsyncResult -&gt; System.Net.WebResponse" Usage="webRequest.EndGetResponse asyncResult" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Net::WebResponse ^ EndGetResponse(IAsyncResult ^ asyncResult);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public virtual System.Net.WebResponse EndGetResponse (IAsyncResult asyncResult);" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EndGetResponse (asyncResult As IAsyncResult) As WebResponse" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member EndGetResponse : IAsyncResult -&gt; System.Net.WebResponse&#xA;override this.EndGetResponse : IAsyncResult -&gt; System.Net.WebResponse" Usage="webRequest.EndGetResponse asyncResult" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::WebResponse ^ EndGetResponse(IAsyncResult ^ asyncResult);" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1394,6 +1502,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1414,7 +1524,7 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <ReturnType>System.Net.WebResponse</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that references a pending request for a response.</param>
@@ -1434,27 +1544,25 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example calls the <xref:System.Net.WebRequest.EndGetResponse%2A> to retrieve the target resource.  
   
- [!code-cpp[WebRequest_BeginGetResponse#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetResponse/CPP/webrequest_begingetresponse.cpp#1)]
- [!code-csharp[WebRequest_BeginGetResponse#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetResponse/CS/webrequest_begingetresponse.cs#1)]
- [!code-vb[WebRequest_BeginGetResponse#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetResponse/VB/webrequest_begingetresponse.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetResponse/CPP/webrequest_begingetresponse.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetResponse/CS/webrequest_begingetresponse.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetResponse/VB/webrequest_begingetresponse.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
-        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
+        <related type="Article" href="/dotnet/framework/network-programming/making-asynchronous-requests">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
       <MemberSignature Language="C#" Value="protected virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetObjectData (serializationInfo As SerializationInfo, streamingContext As StreamingContext)" />
       <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webRequest.GetObjectData (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1471,6 +1579,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1479,8 +1589,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
@@ -1501,8 +1611,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetRequestStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetRequestStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRequestStream () As Stream" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetRequestStream();" />
       <MemberSignature Language="F#" Value="abstract member GetRequestStream : unit -&gt; System.IO.Stream&#xA;override this.GetRequestStream : unit -&gt; System.IO.Stream" Usage="webRequest.GetRequestStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetRequestStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1521,6 +1631,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1548,15 +1660,15 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example uses the <xref:System.Net.WebRequest.GetRequestStream%2A> method to obtain a stream and then writes data that stream.  
   
- [!code-cpp[WebRequest_ContentType#4](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_ContentType/CPP/webrequest_contenttype.cpp#4)]
- [!code-csharp[WebRequest_ContentType#4](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_ContentType/CS/webrequest_contenttype.cs#4)]
- [!code-vb[WebRequest_ContentType#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_ContentType/VB/webrequest_contenttype.vb#4)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_ContentType/CPP/webrequest_contenttype.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_ContentType/CS/webrequest_contenttype.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_ContentType/VB/webrequest_contenttype.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
         <altmember cref="M:System.Net.WebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
-        <related type="Article" href="~/docs/framework/network-programming/using-streams-on-the-network.md">Using Streams on the Network</related>
+        <related type="Article" href="/dotnet/framework/network-programming/using-streams-on-the-network">Using Streams on the Network</related>
       </Docs>
     </Member>
     <Member MemberName="GetRequestStreamAsync">
@@ -1564,8 +1676,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetRequestStreamAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetRequestStreamAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRequestStreamAsync () As Task(Of Stream)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ GetRequestStreamAsync();" />
       <MemberSignature Language="F#" Value="abstract member GetRequestStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.GetRequestStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="webRequest.GetRequestStreamAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ GetRequestStreamAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1573,6 +1685,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1611,8 +1725,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebResponse GetResponse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetResponse" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResponse () As WebResponse" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::WebResponse ^ GetResponse();" />
       <MemberSignature Language="F#" Value="abstract member GetResponse : unit -&gt; System.Net.WebResponse&#xA;override this.GetResponse : unit -&gt; System.Net.WebResponse" Usage="webRequest.GetResponse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Net::WebResponse ^ GetResponse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1631,6 +1745,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1661,9 +1777,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example sets the <xref:System.Net.WebRequest.Timeout%2A> property to 10000 milliseconds. If the timeout period expires before the resource can be returned, a <xref:System.Net.WebException> is thrown.  
   
- [!code-cpp[WebRequest_Timeout#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Timeout/CPP/webrequest_timeout.cpp#1)]
- [!code-csharp[WebRequest_Timeout#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Timeout/CS/webrequest_timeout.cs#1)]
- [!code-vb[WebRequest_Timeout#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Timeout/VB/webrequest_timeout.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Timeout/CPP/webrequest_timeout.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Timeout/CS/webrequest_timeout.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Timeout/VB/webrequest_timeout.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1677,8 +1793,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Net.WebResponse&gt; GetResponseAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetResponseAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResponseAsync () As Task(Of WebResponse)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Net::WebResponse ^&gt; ^ GetResponseAsync();" />
       <MemberSignature Language="F#" Value="abstract member GetResponseAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Net.WebResponse&gt;&#xA;override this.GetResponseAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Net.WebResponse&gt;" Usage="webRequest.GetResponseAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Net::WebResponse ^&gt; ^ GetResponseAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1686,6 +1802,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1722,8 +1840,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IWebProxy GetSystemWebProxy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.GetSystemWebProxy" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSystemWebProxy () As IWebProxy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IWebProxy ^ GetSystemWebProxy();" />
       <MemberSignature Language="F#" Value="static member GetSystemWebProxy : unit -&gt; System.Net.IWebProxy" Usage="System.Net.WebRequest.GetSystemWebProxy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IWebProxy ^ GetSystemWebProxy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1741,6 +1859,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1762,7 +1882,6 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Net.WebPermission">To get or set the global HTTP proxy. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -1770,11 +1889,11 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Headers" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Headers As WebHeaderCollection" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); void set(System::Net::WebHeaderCollection ^ value); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection with get, set" Usage="System.Net.WebRequest.Headers" />
-      <MemberSignature Language="C#" Value="public virtual System.Net.WebHeaderCollection Headers { get; set; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Property Headers As WebHeaderCollection" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); void set(System::Net::WebHeaderCollection ^ value); };" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); void set(System::Net::WebHeaderCollection ^ value); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public virtual System.Net.WebHeaderCollection Headers { get; set; }" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Headers As WebHeaderCollection" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); void set(System::Net::WebHeaderCollection ^ value); };" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1782,6 +1901,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1818,9 +1939,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example displays the header name/value pairs associated with this request.  
   
- [!code-cpp[WebRequest_Headers#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Headers/CPP/webrequest_headers.cpp#1)]
- [!code-csharp[WebRequest_Headers#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Headers/CS/webrequest_headers.cs#1)]
- [!code-vb[WebRequest_Headers#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Headers/VB/webrequest_headers.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Headers/CPP/webrequest_headers.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Headers/CS/webrequest_headers.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Headers/VB/webrequest_headers.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1834,8 +1955,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Principal.TokenImpersonationLevel ImpersonationLevel" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.ImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ImpersonationLevel As TokenImpersonationLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::TokenImpersonationLevel ImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); void set(System::Security::Principal::TokenImpersonationLevel value); };" />
       <MemberSignature Language="F#" Value="member this.ImpersonationLevel : System.Security.Principal.TokenImpersonationLevel with get, set" Usage="System.Net.WebRequest.ImpersonationLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::TokenImpersonationLevel ImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); void set(System::Security::Principal::TokenImpersonationLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1853,16 +1974,20 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1886,11 +2011,11 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".property instance string Method" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Method" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Method As String" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="member this.Method : string with get, set" Usage="System.Net.WebRequest.Method" />
-      <MemberSignature Language="C#" Value="public virtual string Method { get; set; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Property Method As String" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public virtual string Method { get; set; }" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Method As String" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -1898,6 +2023,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1934,9 +2061,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example sets the <xref:System.Net.WebRequest.Method%2A> property to POST to indicate that the request will post data to the target host.  
   
- [!code-cpp[WebRequest_BeginGetRequest#3](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CPP/webrequest_begingetrequest.cpp#3)]
- [!code-csharp[WebRequest_BeginGetRequest#3](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CS/webrequest_begingetrequest.cs#3)]
- [!code-vb[WebRequest_BeginGetRequest#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetRequest/VB/webrequest_begingetrequest.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CPP/webrequest_begingetrequest.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_BeginGetRequest/CS/webrequest_begingetrequest.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_BeginGetRequest/VB/webrequest_begingetrequest.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1952,8 +2079,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".property instance bool PreAuthenticate" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.PreAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PreAuthenticate As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool PreAuthenticate { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.PreAuthenticate : bool with get, set" Usage="System.Net.WebRequest.PreAuthenticate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool PreAuthenticate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1972,6 +2099,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1997,9 +2126,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example sets the <xref:System.Net.WebRequest.PreAuthenticate%2A> property to `true` so that the <xref:System.Net.NetworkCredential> stored in the <xref:System.Net.WebRequest.Credentials%2A> property will be sent to along with the resource request.  
   
- [!code-cpp[WebRequest_PreAuthenticate#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_PreAuthenticate/CPP/webrequest_preauthenticate.cpp#1)]
- [!code-csharp[WebRequest_PreAuthenticate#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_PreAuthenticate/CS/webrequest_preauthenticate.cs#1)]
- [!code-vb[WebRequest_PreAuthenticate#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_PreAuthenticate/VB/webrequest_preauthenticate.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_PreAuthenticate/CPP/webrequest_preauthenticate.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_PreAuthenticate/CS/webrequest_preauthenticate.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_PreAuthenticate/VB/webrequest_preauthenticate.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2008,12 +2137,13 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       </Docs>
     </Member>
     <Member MemberName="Proxy">
-      <MemberSignature Language="C#" Value="public virtual System.Net.IWebProxy Proxy { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual System.Net.IWebProxy Proxy { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Proxy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Proxy As IWebProxy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Proxy : System.Net.IWebProxy with get, set" Usage="System.Net.WebRequest.Proxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="C#" Value="public virtual System.Net.IWebProxy? Proxy { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -2021,6 +2151,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2057,9 +2189,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example displays the current network proxy address and allows the user to assign a new network proxy address and port number.  
   
- [!code-cpp[WebRequest_Proxy#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Proxy/CPP/webrequest_proxy.cpp#1)]
- [!code-csharp[WebRequest_Proxy#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Proxy/CS/webrequest_proxy.cs#1)]
- [!code-vb[WebRequest_Proxy#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Proxy/VB/webrequest_proxy.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Proxy/CPP/webrequest_proxy.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Proxy/CS/webrequest_proxy.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Proxy/VB/webrequest_proxy.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2074,8 +2206,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterPortableWebRequestCreator(class System.Net.IWebRequestCreate creator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.RegisterPortableWebRequestCreator(System.Net.IWebRequestCreate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterPortableWebRequestCreator (creator As IWebRequestCreate)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterPortableWebRequestCreator(System::Net::IWebRequestCreate ^ creator);" />
       <MemberSignature Language="F#" Value="static member RegisterPortableWebRequestCreator : System.Net.IWebRequestCreate -&gt; unit" Usage="System.Net.WebRequest.RegisterPortableWebRequestCreator creator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterPortableWebRequestCreator(System::Net::IWebRequestCreate ^ creator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2092,11 +2224,13 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2116,8 +2250,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RegisterPrefix(string prefix, class System.Net.IWebRequestCreate creator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.RegisterPrefix(System.String,System.Net.IWebRequestCreate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterPrefix (prefix As String, creator As IWebRequestCreate) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RegisterPrefix(System::String ^ prefix, System::Net::IWebRequestCreate ^ creator);" />
       <MemberSignature Language="F#" Value="static member RegisterPrefix : string * System.Net.IWebRequestCreate -&gt; bool" Usage="System.Net.WebRequest.RegisterPrefix (prefix, creator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool RegisterPrefix(System::String ^ prefix, System::Net::IWebRequestCreate ^ creator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -2125,6 +2259,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2145,8 +2281,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="prefix" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="creator" Type="System.Net.IWebRequestCreate" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="creator" Type="System.Net.IWebRequestCreate" />
       </Parameters>
       <Docs>
         <param name="prefix">The complete URI or URI prefix that the <see cref="T:System.Net.WebRequest" /> descendant services.</param>
@@ -2192,11 +2328,11 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RequestUri" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RequestUri As Uri" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Uri ^ RequestUri { Uri ^ get(); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="member this.RequestUri : Uri" Usage="System.Net.WebRequest.RequestUri" />
-      <MemberSignature Language="C#" Value="public virtual Uri RequestUri { get; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequestUri As Uri" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ RequestUri { Uri ^ get(); };" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Uri ^ RequestUri { Uri ^ get(); };" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public virtual Uri RequestUri { get; }" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequestUri As Uri" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ RequestUri { Uri ^ get(); };" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -2204,6 +2340,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2240,9 +2378,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example checks the <xref:System.Net.WebRequest.RequestUri%2A> property to determine the site originally requested.  
   
- [!code-cpp[WebRequest_RequestUri1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_RequestUri1/CPP/webrequest_requesturi.cpp#1)]
- [!code-csharp[WebRequest_RequestUri1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_RequestUri1/CS/webrequest_requesturi.cs#1)]
- [!code-vb[WebRequest_RequestUri1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_RequestUri1/VB/webrequest_requesturi.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_RequestUri1/CPP/webrequest_requesturi.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_RequestUri1/CS/webrequest_requesturi.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_RequestUri1/VB/webrequest_requesturi.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2259,6 +2397,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebRequest.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (serializationInfo As SerializationInfo, streamingContext As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.Serialization.ISerializable.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.System.Runtime.Serialization.ISerializable.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webRequest.System.Runtime.Serialization.ISerializable.GetObjectData (serializationInfo, streamingContext)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2281,21 +2421,24 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" />, which holds the serialized data for the <see cref="T:System.Net.WebRequest" />.</param>
@@ -2310,8 +2453,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Timeout As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Timeout { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.Net.WebRequest.Timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Timeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2330,6 +2473,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2354,9 +2499,9 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
 ## Examples  
  The following example sets the <xref:System.Net.WebRequest.Timeout%2A> property to 10000 milliseconds. If the timeout period expires before the resource can be returned, a <xref:System.Net.WebException> is thrown.  
   
- [!code-cpp[WebRequest_Timeout#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Timeout/CPP/webrequest_timeout.cpp#1)]
- [!code-csharp[WebRequest_Timeout#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Timeout/CS/webrequest_timeout.cs#1)]
- [!code-vb[WebRequest_Timeout#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Timeout/VB/webrequest_timeout.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/WebRequest_Timeout/CPP/webrequest_timeout.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/WebRequest_Timeout/CS/webrequest_timeout.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebRequest_Timeout/VB/webrequest_timeout.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2372,8 +2517,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
       <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultCredentials" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebRequest.UseDefaultCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UseDefaultCredentials As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.UseDefaultCredentials : bool with get, set" Usage="System.Net.WebRequest.UseDefaultCredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -2381,6 +2526,8 @@ This property allows an application to determine which <xref:System.Net.IWebRequ
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

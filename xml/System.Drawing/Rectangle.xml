@@ -1,16 +1,23 @@
 <Type Name="Rectangle" FullName="System.Drawing.Rectangle">
-  <TypeSignature Language="C#" Value="public struct Rectangle : IEquatable&lt;System.Drawing.Rectangle&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Rectangle extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Drawing.Rectangle&gt;" />
+  <TypeSignature Language="C#" Value="public struct Rectangle : IEquatable&lt;System.Drawing.Rectangle&gt;" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Rectangle extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Drawing.Rectangle&gt;" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Rectangle" />
-  <TypeSignature Language="VB.NET" Value="Public Structure Rectangle&#xA;Implements IEquatable(Of Rectangle)" />
-  <TypeSignature Language="C++ CLI" Value="public value class Rectangle : IEquatable&lt;System::Drawing::Rectangle&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Rectangle&#xA;Implements IEquatable(Of Rectangle)" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
   <TypeSignature Language="F#" Value="type Rectangle = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class Rectangle : IEquatable&lt;System::Drawing::Rectangle&gt;" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
+  <TypeSignature Language="C#" Value="public struct Rectangle" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Rectangle extends System.ValueType" FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-2.0" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Rectangle" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+  <TypeSignature Language="C++ CLI" Value="public value class Rectangle" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Rectangle extends System.ValueType" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
@@ -23,23 +30,34 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Drawing.Primitives" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Drawing.Primitives" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1">
       <InterfaceName>System.IEquatable&lt;System.Drawing.Rectangle&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.RectangleConverter))</AttributeName>
+    <Attribute FrameworkAlternate="net-5.0;net-6.0">
+      <AttributeName Language="C#">[System.ComponentModel.TypeConverter("System.Drawing.RectangleConverter, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter("System.Drawing.RectangleConverter, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(System.Drawing.RectangleConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(System.Drawing.RectangleConverter))&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -61,7 +79,7 @@
 ## Examples  
  The following example draws a rectangle with its upper-left corner at (10, 10). The rectangle has a width of 100 and a height of 50. The second argument passed to the <xref:System.Drawing.Pen.%23ctor%2A> constructor indicates that the pen width is 5 pixels.  
   
- When the rectangle is drawn, the pen is centered on the rectangle's boundary. Because the pen width is 5, the sides of the rectangle are drawn 5 pixels wide, such that 1 pixel is drawn on the boundary itself, 2 pixels are drawn on the inside, and 2 pixels are drawn on the outside. For more details on pen alignment, see [How to: Set Pen Width and Alignment](~/docs/framework/winforms/advanced/how-to-set-pen-width-and-alignment.md).  
+ When the rectangle is drawn, the pen is centered on the rectangle's boundary. Because the pen width is 5, the sides of the rectangle are drawn 5 pixels wide, such that 1 pixel is drawn on the boundary itself, 2 pixels are drawn on the inside, and 2 pixels are drawn on the outside. For more details on pen alignment, see [How to: Set Pen Width and Alignment](/dotnet/framework/winforms/advanced/how-to-set-pen-width-and-alignment).  
   
  The following illustration shows the resulting rectangle. The dotted lines show where the rectangle would have been drawn if the pen width had been one pixel. The enlarged view of the upper-left corner of the rectangle shows that the thick black lines are centered on those dotted lines.  
   
@@ -69,8 +87,8 @@
   
  The example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
- [!code-csharp[System.Drawing.UsingAPen#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#21)]
- [!code-vb[System.Drawing.UsingAPen#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#21)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs" id="Snippet21":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb" id="Snippet21":::  
   
  ]]></format>
     </remarks>
@@ -90,8 +108,9 @@
       <MemberSignature Language="C#" Value="public Rectangle (System.Drawing.Point location, System.Drawing.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Point location, valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.#ctor(System.Drawing.Point,System.Drawing.Size)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rectangle(System::Drawing::Point location, System::Drawing::Size size);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As Point, size As Size)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Rectangle : System.Drawing.Point * System.Drawing.Size -&gt; System.Drawing.Rectangle" Usage="new System.Drawing.Rectangle (location, size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rectangle(System::Drawing::Point location, System::Drawing::Size size);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -99,6 +118,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -127,8 +148,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 x, int32 y, int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Integer, y As Integer, width As Integer, height As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rectangle(int x, int y, int width, int height);" />
       <MemberSignature Language="F#" Value="new System.Drawing.Rectangle : int * int * int * int -&gt; System.Drawing.Rectangle" Usage="new System.Drawing.Rectangle (x, y, width, height)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rectangle(int x, int y, int width, int height);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -136,6 +157,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -150,7 +173,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -171,9 +195,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Drawing.Rectangle.%23ctor%2A>, <xref:System.Drawing.Rectangle.Intersect%2A>, <xref:System.Drawing.Rectangle.IsEmpty%2A>, and <xref:System.Drawing.Rectangle.IntersectsWith%2A> members. This example should be used with a Windows Form. Paste this code into a form and call this method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#2)]
- [!code-vb[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -184,8 +208,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Bottom" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bottom As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Bottom : int" Usage="System.Drawing.Rectangle.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -193,6 +217,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -206,11 +232,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1">
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -234,8 +266,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Ceiling(valuetype System.Drawing.RectangleF value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Ceiling(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling (value As RectangleF) As Rectangle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Ceiling(System::Drawing::RectangleF value);" />
       <MemberSignature Language="F#" Value="static member Ceiling : System.Drawing.RectangleF -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Ceiling value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Ceiling(System::Drawing::RectangleF value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -243,6 +275,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -283,8 +317,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype System.Drawing.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Contains(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (pt As Point) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Point pt);" />
       <MemberSignature Language="F#" Value="member this.Contains : System.Drawing.Point -&gt; bool" Usage="rectangle.Contains pt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Point pt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -292,6 +326,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -304,6 +340,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -329,8 +371,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Contains(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (rect As Rectangle) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Rectangle rect);" />
       <MemberSignature Language="F#" Value="member this.Contains : System.Drawing.Rectangle -&gt; bool" Usage="rectangle.Contains rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -338,6 +380,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -350,6 +394,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -371,9 +421,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Drawing.Rectangle.Contains%2A> method and the <xref:System.Drawing.SystemPens> class. This example is designed for use with a Windows Form. Paste this code into a form that contains a button named `Button1`, call `DrawFirstRectangle` from the form's constructor or <xref:System.Windows.Forms.Form.Load> method, and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#3)]
- [!code-vb[System.Drawing.RectanglesAndPoints#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -384,8 +434,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Contains(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (x As Integer, y As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(int x, int y);" />
       <MemberSignature Language="F#" Value="member this.Contains : int * int -&gt; bool" Usage="rectangle.Contains (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -393,6 +443,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -405,6 +457,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -432,8 +490,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Drawing.Rectangle Empty" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Rectangle.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As Rectangle " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Drawing::Rectangle Empty;" />
       <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Drawing::Rectangle Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -441,6 +499,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -473,8 +533,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Drawing.Rectangle other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Equals(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Rectangle) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Drawing::Rectangle other);" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Drawing.Rectangle -&gt; bool" Usage="rectangle.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Drawing::Rectangle other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -484,34 +544,41 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Drawing.Rectangle" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="other" Type="System.Drawing.Rectangle" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rectangle.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -519,6 +586,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -531,6 +600,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -549,8 +624,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle FromLTRB(int32 left, int32 top, int32 right, int32 bottom) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.FromLTRB(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromLTRB (left As Integer, top As Integer, right As Integer, bottom As Integer) As Rectangle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle FromLTRB(int left, int top, int right, int bottom);" />
       <MemberSignature Language="F#" Value="static member FromLTRB : int * int * int * int -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.FromLTRB (left, top, right, bottom)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle FromLTRB(int left, int top, int right, int bottom);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -558,6 +633,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -572,7 +649,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -602,9 +680,9 @@
 ## Examples  
  The following code example demonstrates how to create a rectangle using the <xref:System.Drawing.Rectangle.FromLTRB%2A> method. This example is designed to be used with a Windows Form. Paste this code into a form and call the `CreateARectangleFromLTRB` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#7)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#7)]
- [!code-vb[System.Drawing.RectanglesAndPoints#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#7)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet7":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet7":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -615,8 +693,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rectangle.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -624,6 +702,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -636,6 +716,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -651,8 +737,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Drawing.Rectangle.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -660,6 +746,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -673,11 +761,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -710,8 +804,9 @@
       <MemberSignature Language="C#" Value="public void Inflate (System.Drawing.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Inflate(valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Inflate(System.Drawing.Size)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(System::Drawing::Size size);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Inflate (size As Size)" />
       <MemberSignature Language="F#" Value="member this.Inflate : System.Drawing.Size -&gt; unit" Usage="rectangle.Inflate size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(System::Drawing::Size size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -719,6 +814,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -751,9 +848,9 @@
 ## Examples  
  The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code creates a <xref:System.Drawing.Rectangle> and enlarges it by 50 units in both axes. The rectangle is drawn to screen before inflation (black) and after inflation (red).  
   
- [!code-cpp[System.Drawing.ClassicRectangleExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.ClassicRectangleExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CS/form1.cs#2)]
- [!code-vb[System.Drawing.ClassicRectangleExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/VB/form1.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CPP/form1.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CS/form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/VB/form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -764,8 +861,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Inflate(int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Inflate(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Inflate (width As Integer, height As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(int width, int height);" />
       <MemberSignature Language="F#" Value="member this.Inflate : int * int -&gt; unit" Usage="rectangle.Inflate (width, height)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inflate(int width, int height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -773,6 +870,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -787,7 +886,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -814,9 +914,9 @@
 ## Examples  
  The following example creates a <xref:System.Drawing.Rectangle> structure and enlarges it by 100 units in the x-axis direction:  
   
- [!code-cpp[System.Drawing.ClassicRectangleExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.ClassicRectangleExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CS/form1.cs#3)]
- [!code-vb[System.Drawing.ClassicRectangleExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/VB/form1.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CPP/form1.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CS/form1.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/VB/form1.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -827,8 +927,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Inflate(valuetype System.Drawing.Rectangle rect, int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Inflate(System.Drawing.Rectangle,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Inflate (rect As Rectangle, x As Integer, y As Integer) As Rectangle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Inflate(System::Drawing::Rectangle rect, int x, int y);" />
       <MemberSignature Language="F#" Value="static member Inflate : System.Drawing.Rectangle * int * int -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Inflate (rect, x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Inflate(System::Drawing::Rectangle rect, int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -836,6 +936,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -873,9 +975,9 @@
 ## Examples  
  The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code creates a <xref:System.Drawing.Rectangle> and enlarges it by 50 units in both axes. Notice that the resulting rectangle (red) is 150 units in both axes.  
   
- [!code-cpp[System.Drawing.ClassicRectangleExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.ClassicRectangleExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CS/form1.cs#1)]
- [!code-vb[System.Drawing.ClassicRectangleExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/VB/form1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CPP/form1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/CS/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleExamples/VB/form1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -896,8 +998,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Intersect(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Intersect(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Intersect (rect As Rectangle)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Drawing::Rectangle rect);" />
       <MemberSignature Language="F#" Value="member this.Intersect : System.Drawing.Rectangle -&gt; unit" Usage="rectangle.Intersect rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Intersect(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -905,6 +1007,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -932,9 +1036,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Drawing.Rectangle.Intersect%2A>, <xref:System.Drawing.Rectangle.IsEmpty%2A> and the <xref:System.Drawing.Rectangle.IntersectsWith%2A> members. This example should be used with a Windows Form. Paste this code into a form and call this method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#2)]
- [!code-vb[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -945,8 +1049,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Intersect(valuetype System.Drawing.Rectangle a, valuetype System.Drawing.Rectangle b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Intersect(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Intersect (a As Rectangle, b As Rectangle) As Rectangle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Intersect(System::Drawing::Rectangle a, System::Drawing::Rectangle b);" />
       <MemberSignature Language="F#" Value="static member Intersect : System.Drawing.Rectangle * System.Drawing.Rectangle -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Intersect (a, b)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Intersect(System::Drawing::Rectangle a, System::Drawing::Rectangle b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -954,6 +1058,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -984,9 +1090,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Drawing.Rectangle.Intersect%2A>, <xref:System.Drawing.Rectangle.IsEmpty%2A> and the <xref:System.Drawing.Rectangle.IntersectsWith%2A> members. This example should be used with a Windows Form. Paste this code into a form and call this method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#1)]
- [!code-vb[System.Drawing.RectanglesAndPoints#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -997,8 +1103,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IntersectsWith(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.IntersectsWith(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function IntersectsWith (rect As Rectangle) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IntersectsWith(System::Drawing::Rectangle rect);" />
       <MemberSignature Language="F#" Value="member this.IntersectsWith : System.Drawing.Rectangle -&gt; bool" Usage="rectangle.IntersectsWith rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IntersectsWith(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1006,6 +1112,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1018,6 +1126,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1034,9 +1148,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Drawing.Rectangle.Intersect%2A>, <xref:System.Drawing.Rectangle.IsEmpty%2A> and the <xref:System.Drawing.Rectangle.IntersectsWith%2A> members. This example should be used with a Windows Form. Paste this code into a form and call this method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#2)]
- [!code-vb[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -1047,8 +1161,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Drawing.Rectangle.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1056,6 +1170,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1069,8 +1185,13 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1">
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1085,9 +1206,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Drawing.Rectangle.Intersect%2A>, <xref:System.Drawing.Rectangle.IsEmpty%2A> and the <xref:System.Drawing.Rectangle.IntersectsWith%2A> members. This example should be used with a Windows Form. Paste this code into a form and call this method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#2)]
- [!code-vb[System.Drawing.RectanglesAndPoints#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -1098,8 +1219,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Left" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Left : int" Usage="System.Drawing.Rectangle.Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1107,6 +1228,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1120,11 +1243,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1">
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1141,8 +1270,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Location" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As Point" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberSignature Language="F#" Value="member this.Location : System.Drawing.Point with get, set" Usage="System.Drawing.Rectangle.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1150,6 +1279,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1163,14 +1294,21 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1">
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1197,8 +1335,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Offset(valuetype System.Drawing.Point pos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Offset(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Offset (pos As Point)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(System::Drawing::Point pos);" />
       <MemberSignature Language="F#" Value="member this.Offset : System.Drawing.Point -&gt; unit" Usage="rectangle.Offset pos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(System::Drawing::Point pos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1206,6 +1344,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1238,9 +1378,9 @@
 ## Examples  
  The following code example demonstrates the <xref:System.Drawing.Rectangle.Contains%2A>, and <xref:System.Drawing.Rectangle.Offset%2A> methods and the <xref:System.Drawing.SystemPens> class. This example is designed for use with a Windows Form. Paste this code into a form that contains a button named `Button1`, call `DrawFirstRectangle` from the form's constructor or <xref:System.Windows.Forms.Form.Load> method, and associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#3)]
- [!code-vb[System.Drawing.RectanglesAndPoints#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1251,8 +1391,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Offset(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Offset(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Offset (x As Integer, y As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(int x, int y);" />
       <MemberSignature Language="F#" Value="member this.Offset : int * int -&gt; unit" Usage="rectangle.Offset (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1260,6 +1400,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1274,7 +1416,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1296,8 +1439,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.Rectangle left, valuetype System.Drawing.Rectangle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.op_Equality(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Rectangle, right As Rectangle) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::Rectangle left, System::Drawing::Rectangle right);" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Drawing.Rectangle * System.Drawing.Rectangle -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::Rectangle left, System::Drawing::Rectangle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1305,6 +1448,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1337,8 +1482,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.Rectangle left, valuetype System.Drawing.Rectangle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.op_Inequality(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Rectangle, right As Rectangle) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::Rectangle left, System::Drawing::Rectangle right);" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Drawing.Rectangle * System.Drawing.Rectangle -&gt; bool" Usage="System.Drawing.Rectangle.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::Rectangle left, System::Drawing::Rectangle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1346,6 +1491,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1360,7 +1507,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1383,8 +1531,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Right" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Right" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Right As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Right : int" Usage="System.Drawing.Rectangle.Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1392,6 +1540,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1405,11 +1555,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1">
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1433,8 +1589,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Round(valuetype System.Drawing.RectangleF value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Round(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Round (value As RectangleF) As Rectangle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Round(System::Drawing::RectangleF value);" />
       <MemberSignature Language="F#" Value="static member Round : System.Drawing.RectangleF -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Round value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Round(System::Drawing::RectangleF value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1442,6 +1598,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1470,9 +1628,9 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Drawing.Rectangle.Round%2A> and <xref:System.Drawing.Rectangle.Truncate%2A> methods. This example is designed for use with a Windows Form.  Paste this code into a form and call the `RoundingAndTruncatingRectangles` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#5)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#5)]
- [!code-vb[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#5)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -1483,8 +1641,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size Size" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size with get, set" Usage="System.Drawing.Rectangle.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1492,6 +1650,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1505,14 +1665,21 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1">
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1529,8 +1696,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Top : int" Usage="System.Drawing.Rectangle.Top" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1538,6 +1705,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1551,11 +1720,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1">
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1572,8 +1747,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rectangle.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1581,6 +1756,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1593,6 +1770,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1608,8 +1791,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Truncate(valuetype System.Drawing.RectangleF value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Truncate(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate (value As RectangleF) As Rectangle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Truncate(System::Drawing::RectangleF value);" />
       <MemberSignature Language="F#" Value="static member Truncate : System.Drawing.RectangleF -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Truncate value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Truncate(System::Drawing::RectangleF value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1617,6 +1800,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1645,9 +1830,9 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Drawing.Rectangle.Round%2A> and <xref:System.Drawing.Rectangle.Truncate%2A> methods. This example is designed for use with a Windows Form. Paste this code into a form and call the `RoundingAndTruncatingRectangles` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#5)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#5)]
- [!code-vb[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#5)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -1658,8 +1843,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Union(valuetype System.Drawing.Rectangle a, valuetype System.Drawing.Rectangle b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Union(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Union (a As Rectangle, b As Rectangle) As Rectangle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Union(System::Drawing::Rectangle a, System::Drawing::Rectangle b);" />
       <MemberSignature Language="F#" Value="static member Union : System.Drawing.Rectangle * System.Drawing.Rectangle -&gt; System.Drawing.Rectangle" Usage="System.Drawing.Rectangle.Union (a, b)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Rectangle Union(System::Drawing::Rectangle a, System::Drawing::Rectangle b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1667,6 +1852,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1702,9 +1889,9 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Drawing.Rectangle.Union%2A> method. This example is designed for use with a Windows Form. Paste this code into a form and call the `ShowRectangleUnion` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
- [!code-cpp[System.Drawing.RectanglesAndPoints#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#4)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#4)]
- [!code-vb[System.Drawing.RectanglesAndPoints#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#4)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -1715,8 +1902,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Drawing.Rectangle.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1724,6 +1911,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1737,11 +1926,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1765,8 +1960,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 X" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.X : int with get, set" Usage="System.Drawing.Rectangle.X" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1774,6 +1969,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1787,11 +1984,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1815,8 +2018,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Rectangle.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Y : int with get, set" Usage="System.Drawing.Rectangle.Y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -1824,6 +2027,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1837,11 +2042,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

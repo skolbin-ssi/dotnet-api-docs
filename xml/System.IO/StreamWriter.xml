@@ -1,10 +1,11 @@
 <Type Name="StreamWriter" FullName="System.IO.StreamWriter">
   <TypeSignature Language="C#" Value="public class StreamWriter : System.IO.TextWriter" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StreamWriter extends System.IO.TextWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StreamWriter extends System.IO.TextWriter" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.IO.StreamWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class StreamWriter&#xA;Inherits TextWriter" />
-  <TypeSignature Language="C++ CLI" Value="public ref class StreamWriter : System::IO::TextWriter" />
   <TypeSignature Language="F#" Value="type StreamWriter = class&#xA;    inherit TextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamWriter : System::IO::TextWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StreamWriter extends System.IO.TextWriter" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,16 +30,36 @@
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.IO" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.IO" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.0.0" To="System.Runtime.Extensions" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.1.0" To="System.Runtime.Extensions" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.2.0" To="System.Runtime.Extensions" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.IO.TextWriter</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,15 +77,15 @@
   
  By default, a <xref:System.IO.StreamWriter> is not thread safe. See <xref:System.IO.TextWriter.Synchronized%2A?displayProperty=nameWithType> for a thread-safe wrapper.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
- The following example shows how to use a <xref:System.IO.StreamWriter> object to write a file that lists the directories on the C drive, and then uses a <xref:System.IO.StreamReader> object to read and display each directory name. A good practice is to use these objects in a `using` statement so that the unmanaged resources are correctly disposed. The `using` statement automatically calls <xref:System.IDisposable.Dispose%2A> on the object when the code that is using it has completed. The constructor used in this example is not supported for use in [!INCLUDE[win8_appstore_long](~/includes/win8-appstore-long-md.md)] Apps.  
+ The following example shows how to use a <xref:System.IO.StreamWriter> object to write a file that lists the directories on the C drive, and then uses a <xref:System.IO.StreamReader> object to read and display each directory name. A good practice is to use these objects in a `using` statement so that the unmanaged resources are correctly disposed. The `using` statement automatically calls <xref:System.IDisposable.Dispose%2A> on the object when the code that is using it has completed. The constructor used in this example is not supported for use in Windows Store Apps.  
   
- [!code-csharp[StreamReadWrite#1](~/samples/snippets/csharp/VS_Snippets_CLR/streamreadwrite/cs/program.cs#1)]
- [!code-vb[StreamReadWrite#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/streamreadwrite/vb/module1.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/streamreadwrite/cs/program.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/streamreadwrite/vb/module1.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -72,10 +93,10 @@
     <altmember cref="T:System.IO.StreamReader" />
     <altmember cref="T:System.Text.Encoder" />
     <altmember cref="T:System.Text.Encoding" />
-    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
-    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
+    <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+    <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+    <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
+    <related type="Article" href="/dotnet/standard/io/how-to-read-and-write-to-a-newly-created-data-file">How to: Read and Write to a Newly Created Data File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -93,8 +114,9 @@
       <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.IO.Stream)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamWriter : System.IO.Stream -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -120,9 +142,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -142,15 +170,15 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example demonstrates this constructor.  
   
- [!code-csharp[System.IO.StreamWriter.ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program1.cs#1)]
- [!code-vb[System.IO.StreamWriter.ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program1.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -158,9 +186,9 @@
           <paramref name="stream" /> is not writable.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -168,8 +196,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::String ^ path);" />
       <MemberSignature Language="F#" Value="new System.IO.StreamWriter : string -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -192,13 +220,19 @@
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="path">The complete file path to write to. <paramref name="path" /> can be a file name.</param>
@@ -216,15 +250,15 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example demonstrates this constructor.  
   
- [!code-csharp[System.IO.StreamWriter.ctor#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program5.cs#5)]
- [!code-vb[System.IO.StreamWriter.ctor#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program5.vb#5)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program5.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program5.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -242,18 +276,18 @@
         <exception cref="T:System.IO.IOException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label syntax.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream, encoding As Encoding)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamWriter : System.IO.Stream * System.Text.Encoding -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (stream, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -279,9 +313,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -303,15 +343,15 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following example demonstrates this constructor.  
   
- [!code-csharp[System.IO.StreamWriter.ctor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program2.cs#2)]
- [!code-vb[System.IO.StreamWriter.ctor#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program2.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program2.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program2.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -320,9 +360,9 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> is not writable.</exception>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -330,8 +370,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool append) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, append As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::String ^ path, bool append);" />
       <MemberSignature Language="F#" Value="new System.IO.StreamWriter : string * bool -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (path, append)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::String ^ path, bool append);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -354,14 +394,20 @@
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="append" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="append" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="path">The complete file path to write to.</param>
@@ -381,15 +427,15 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following code example demonstrates this constructor.  
   
- [!code-csharp[System.IO.StreamWriter.ctor#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program6.cs#6)]
- [!code-vb[System.IO.StreamWriter.ctor#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program6.vb#6)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program6.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program6.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
@@ -407,18 +453,18 @@
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label syntax.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream, System.Text.Encoding encoding, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, int bufferSize);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream, encoding As Encoding, bufferSize As Integer)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamWriter : System.IO.Stream * System.Text.Encoding * int -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (stream, encoding, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -444,9 +490,15 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -470,15 +522,15 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following example demonstrates this constructor.  
   
- [!code-csharp[System.IO.StreamWriter.ctor#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program3.cs#3)]
- [!code-vb[System.IO.StreamWriter.ctor#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program3.vb#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program3.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program3.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -489,17 +541,18 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="stream" /> is not writable.</exception>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StreamWriter (string path, bool append, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool append, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.String,System.Boolean,System.Text.Encoding)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::String ^ path, bool append, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, append As Boolean, encoding As Encoding)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamWriter : string * bool * System.Text.Encoding -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (path, append, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::String ^ path, bool append, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -522,15 +575,21 @@
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="append" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="encoding" Type="System.Text.Encoding" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="append" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="path">The complete file path to write to.</param>
@@ -551,15 +610,15 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following example demonstrates this constructor.  
   
- [!code-csharp[System.IO.StreamWriter.ctor#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program7.cs#7)]
- [!code-vb[System.IO.StreamWriter.ctor#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program7.vb#7)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program7.cs" id="Snippet7":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program7.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -577,20 +636,21 @@
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label syntax.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream, System.Text.Encoding encoding, int bufferSize, bool leaveOpen);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 bufferSize, bool leaveOpen) cil managed" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Int32,System.Boolean)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 bufferSize, bool leaveOpen) cil managed" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Int32,System.Boolean)" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream, encoding As Encoding, bufferSize As Integer, leaveOpen As Boolean)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : System.IO.Stream * System.Text.Encoding * int * bool -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (stream, encoding, bufferSize, leaveOpen)" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, int bufferSize, bool leaveOpen);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.IO.StreamWriter : System.IO.Stream * System.Text.Encoding * int * bool -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (stream, encoding, bufferSize, leaveOpen)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream, System.Text.Encoding encoding = null, int bufferSize = -1, bool leaveOpen = false);" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="C#" Value="public StreamWriter (System.IO.Stream stream, System.Text.Encoding? encoding = default, int bufferSize = -1, bool leaveOpen = false);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream, Optional encoding As Encoding = Nothing, Optional bufferSize As Integer = -1, Optional leaveOpen As Boolean = false)" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -614,11 +674,16 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="encoding" Type="System.Text.Encoding" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="bufferSize" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="leaveOpen" Type="System.Boolean" Index="3" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="bufferSize" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="leaveOpen" Type="System.Boolean" Index="3" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="stream">The stream to write to.</param>
@@ -643,8 +708,8 @@
 ## Examples  
  The following example demonstrates this constructor.  
   
- [!code-csharp[System.IO.StreamWriter.ctor#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program4.cs#4)]
- [!code-vb[System.IO.StreamWriter.ctor#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program4.vb#4)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program4.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program4.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -660,8 +725,9 @@
       <MemberSignature Language="C#" Value="public StreamWriter (string path, bool append, System.Text.Encoding encoding, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool append, class System.Text.Encoding encoding, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.#ctor(System.String,System.Boolean,System.Text.Encoding,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::String ^ path, bool append, System::Text::Encoding ^ encoding, int bufferSize);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, append As Boolean, encoding As Encoding, bufferSize As Integer)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamWriter : string * bool * System.Text.Encoding * int -&gt; System.IO.StreamWriter" Usage="new System.IO.StreamWriter (path, append, encoding, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamWriter(System::String ^ path, bool append, System::Text::Encoding ^ encoding, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -684,16 +750,22 @@
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="append" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="encoding" Type="System.Text.Encoding" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="bufferSize" Type="System.Int32" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="append" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="bufferSize" Type="System.Int32" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="path">The complete file path to write to.</param>
@@ -715,15 +787,15 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following example demonstrates this constructor.  
   
- [!code-csharp[System.IO.StreamWriter.ctor#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program8.cs#8)]
- [!code-vb[System.IO.StreamWriter.ctor#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program8.vb#8)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.streamwriter.ctor/cs/program8.cs" id="Snippet8":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.streamwriter.ctor/vb/program8.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
@@ -743,11 +815,10 @@
         <exception cref="T:System.UnauthorizedAccessException">Access is denied.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.Text.Encoding" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="AutoFlush">
@@ -755,8 +826,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoFlush" />
       <MemberSignature Language="DocId" Value="P:System.IO.StreamWriter.AutoFlush" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoFlush As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoFlush { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AutoFlush : bool with get, set" Usage="System.IO.StreamWriter.AutoFlush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoFlush { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -781,6 +852,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -799,22 +875,22 @@
   
  For example, set `AutoFlush` to `true` when you are writing to a device where the user expects immediate feedback. `Console.Out` is one of these cases: The `StreamWriter` used internally for writing to `Console` flushes all its internal state except the encoder state after every call to <xref:System.IO.StreamWriter.Write%2A?displayProperty=nameWithType>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following example shows the syntax for using the `AutoFlush` property.  
   
- [!code-cpp[System.IO.StreamWriter#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamWriter/CPP/logger.cpp#5)]
- [!code-csharp[System.IO.StreamWriter#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/logger.cs#5)]
- [!code-vb[System.IO.StreamWriter#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/logger.vb#5)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamWriter/CPP/logger.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/logger.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/logger.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="BaseStream">
@@ -822,8 +898,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream BaseStream" />
       <MemberSignature Language="DocId" Value="P:System.IO.StreamWriter.BaseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseStream As Stream" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.StreamWriter.BaseStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -849,6 +925,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -859,13 +940,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -873,8 +954,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="streamWriter.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -896,6 +977,11 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -920,16 +1006,16 @@
 ## Examples  
  The following code example demonstrates the `Close` method.  
   
- [!code-cpp[System.IO.StreamWriter#17](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamWriter/CPP/logger.cpp#17)]
- [!code-csharp[System.IO.StreamWriter#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/logger.cs#17)]
- [!code-vb[System.IO.StreamWriter#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/logger.vb#17)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamWriter/CPP/logger.cpp" id="Snippet17":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/logger.cs" id="Snippet17":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/logger.vb" id="Snippet17":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Text.EncoderFallbackException">The current encoding does not support displaying half of a Unicode surrogate pair.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -937,8 +1023,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="streamWriter.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -963,6 +1049,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -989,9 +1080,9 @@
   
  This method calls the dispose method of the base class, <see cref="M:System.IO.TextWriter.Dispose(System.Boolean)" />.</para>
         </block>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="DisposeAsync">
@@ -999,8 +1090,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask DisposeAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.DisposeAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DisposeAsync () As ValueTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::ValueTask DisposeAsync();" />
       <MemberSignature Language="F#" Value="override this.DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask" Usage="streamWriter.DisposeAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::ValueTask DisposeAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1017,6 +1108,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
       </ReturnValue>
@@ -1032,8 +1128,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding Encoding" />
       <MemberSignature Language="DocId" Value="P:System.IO.StreamWriter.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Encoding As Encoding" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding" Usage="System.IO.StreamWriter.Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1059,6 +1155,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
@@ -1071,22 +1172,22 @@
 ## Remarks  
  This property is necessary for some XML scenarios where a header must be written containing the encoding used by the <xref:System.IO.StreamWriter>. This allows the XML code to consume an arbitrary <xref:System.IO.StreamWriter> and generate the correct XML header.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following example retrieves the encoding of the specified <xref:System.IO.StreamWriter> instance.  
   
- [!code-cpp[System.IO.StreamWriter#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamWriter/CPP/logger.cpp#11)]
- [!code-csharp[System.IO.StreamWriter#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/logger.cs#11)]
- [!code-vb[System.IO.StreamWriter#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/logger.vb#11)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamWriter/CPP/logger.cpp" id="Snippet11":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/logger.cs" id="Snippet11":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/logger.vb" id="Snippet11":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -1094,8 +1195,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
-      <MemberSignature Language="C++ CLI" Value="!StreamWriter ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="streamWriter.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!StreamWriter ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1110,6 +1211,9 @@
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1120,13 +1224,13 @@
           <format type="text/markdown"><![CDATA[
 
 ## Examples  
-For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).
+For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).
 
 ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -1134,8 +1238,8 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="streamWriter.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1160,6 +1264,11 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1175,7 +1284,7 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
   
  Flushing the stream will not flush its underlying encoder unless you explicitly call `Flush` or <xref:System.IO.StreamWriter.Close%2A>. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream after each write operation, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
@@ -1183,9 +1292,9 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
         <exception cref="T:System.IO.IOException">An I/O error has occurred.</exception>
         <exception cref="T:System.Text.EncoderFallbackException">The current encoding does not support displaying half of a Unicode surrogate pair.</exception>
         <altmember cref="M:System.IO.Stream.Close" />
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -1193,8 +1302,8 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.FlushAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FlushAsync () As Task" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync();" />
       <MemberSignature Language="F#" Value="override this.FlushAsync : unit -&gt; System.Threading.Tasks.Task" Usage="streamWriter.FlushAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1218,9 +1327,15 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1239,8 +1354,8 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IO.StreamWriter Null" />
       <MemberSignature Language="DocId" Value="F:System.IO.StreamWriter.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As StreamWriter " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::StreamWriter ^ Null;" />
       <MemberSignature Language="F#" Value=" staticval mutable Null : System.IO.StreamWriter" Usage="System.IO.StreamWriter.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::StreamWriter ^ Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1266,6 +1381,11 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.StreamWriter</ReturnType>
       </ReturnValue>
@@ -1279,22 +1399,22 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
   
  When the `StreamWriter.Write` methods are invoked on `Null`, the call simply returns, and no data is actually written to any backing store.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  The following example demonstrates a use of the `Null` field.  
   
- [!code-cpp[System.IO.StreamWriter#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamWriter/CPP/logger.cpp#6)]
- [!code-csharp[System.IO.StreamWriter#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/logger.cs#6)]
- [!code-vb[System.IO.StreamWriter#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/logger.vb#6)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamWriter/CPP/logger.cpp" id="Snippet6":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/logger.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/logger.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Write">
@@ -1313,8 +1433,8 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Char)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char value);" />
       <MemberSignature Language="F#" Value="override this.Write : char -&gt; unit" Usage="streamWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1339,6 +1459,11 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1357,7 +1482,7 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
   
  The specified character is written to the underlying stream unless the end of the stream is reached prematurely. If <xref:System.IO.StreamWriter.AutoFlush%2A> is `true`, <xref:System.IO.StreamWriter.Flush%2A> is invoked automatically.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
@@ -1366,18 +1491,19 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and current writer is closed.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and the contents of the buffer cannot be written to the underlying fixed size stream because the <see cref="T:System.IO.StreamWriter" /> is at the end the stream.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (char[] buffer);" />
+      <MemberSignature Language="C#" Value="public override void Write (char[] buffer);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer);" />
       <MemberSignature Language="F#" Value="override this.Write : char[] -&gt; unit" Usage="streamWriter.Write buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer);" />
+      <MemberSignature Language="C#" Value="public override void Write (char[]? buffer);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1403,9 +1529,15 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1427,7 +1559,7 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
   
  This method might provide faster performance than `Write` (`char[],``int,``int`) because it has fewer arguments to check.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
@@ -1436,9 +1568,9 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and current writer is closed.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and the contents of the buffer cannot be written to the underlying fixed size stream because the <see cref="T:System.IO.StreamWriter" /> is at the end the stream.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1446,8 +1578,8 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(valuetype System.ReadOnlySpan`1&lt;char&gt; buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As ReadOnlySpan(Of Char))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(ReadOnlySpan&lt;char&gt; buffer);" />
       <MemberSignature Language="F#" Value="override this.Write : ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="streamWriter.Write buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(ReadOnlySpan&lt;char&gt; buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1464,11 +1596,16 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The character span to write.</param>
@@ -1477,12 +1614,13 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string value);" />
+      <MemberSignature Language="C#" Value="public override void Write (string value);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ value);" />
       <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="streamWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ value);" />
+      <MemberSignature Language="C#" Value="public override void Write (string? value);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1508,9 +1646,15 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1532,7 +1676,7 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
   
  <xref:System.IO.StreamWriter.Flush%2A> is invoked automatically if <xref:System.IO.StreamWriter.AutoFlush%2A> is `true`. If `value` is `null`, no entries are written.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
  ]]></format>
         </remarks>
@@ -1541,18 +1685,18 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and the contents of the buffer cannot be written to the underlying fixed size stream because the <see cref="T:System.IO.StreamWriter" /> is at the end the stream.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, object? arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0);" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="streamWriter.Write (format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1568,12 +1712,17 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
@@ -1591,12 +1740,12 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object)> for a descrip
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, params object?[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, ParamArray arg As Object())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj[] -&gt; unit" Usage="streamWriter.Write (format, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1612,12 +1761,17 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object)> for a descrip
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg" Type="System.Object[]" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1">
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg" Type="System.Object[]" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0">
           <Attributes>
             <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
@@ -1645,8 +1799,8 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object[])> for a descr
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char(), index As Integer, count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberSignature Language="F#" Value="override this.Write : char[] * int * int -&gt; unit" Usage="streamWriter.Write (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1672,9 +1826,15 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object[])> for a descr
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1698,16 +1858,16 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object[])> for a descr
   
  The characters are read from `buffer` beginning at `index` and continuing through `index` + (`count` - 1). All characters are written to the underlying stream unless the end of the underlying stream is reached prematurely. <xref:System.IO.StreamWriter.Flush%2A> is invoked automatically if <xref:System.IO.StreamWriter.AutoFlush%2A> is `true`.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).  
   
    
   
 ## Examples  
  This example writes eight characters from a 13-element array to a file, beginning at the third element of the array.  
   
- [!code-cpp[Classic StreamWriter.Write2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic StreamWriter.Write2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic StreamWriter.Write2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic StreamWriter.Write2 Example/CS/source.cs#1)]
- [!code-vb[Classic StreamWriter.Write2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic StreamWriter.Write2 Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic StreamWriter.Write2 Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic StreamWriter.Write2 Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic StreamWriter.Write2 Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1721,18 +1881,18 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object[])> for a descr
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and current writer is closed.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.IO.StreamWriter.AutoFlush" /> is true or the <see cref="T:System.IO.StreamWriter" /> buffer is full, and the contents of the buffer cannot be written to the underlying fixed size stream because the <see cref="T:System.IO.StreamWriter" /> is at the end the stream.</exception>
-        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <related type="Article" href="/dotnet/standard/io/">File and Stream I/O</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-read-text-from-a-file">How to: Read Text from a File</related>
+        <related type="Article" href="/dotnet/standard/io/how-to-write-text-to-a-file">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, object? arg0, object? arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj * obj -&gt; unit" Usage="streamWriter.Write (format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1748,13 +1908,18 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object[])> for a descr
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
@@ -1773,12 +1938,12 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object)>
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1, object arg2);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, object? arg0, object? arg1, object? arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object, arg2 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj * obj * obj -&gt; unit" Usage="streamWriter.Write (format, arg0, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1794,14 +1959,19 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object)>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg2" Type="System.Object" Index="3" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg2" Type="System.Object" Index="3" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
@@ -1836,8 +2006,8 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteAsync(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (value As Char) As Task" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(char value);" />
       <MemberSignature Language="F#" Value="override this.WriteAsync : char -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteAsync value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1861,16 +2031,22 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Char" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Char" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The character to write to the stream.</param>
@@ -1882,8 +2058,8 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
 ## Examples  
  The following example shows how to write a single character (the letter "a") to a text file by using the <xref:System.IO.StreamWriter.WriteAsync%28System.Char%29> method.  
   
- [!code-csharp[System.IO.StreamWriter#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example20.cs#20)]
- [!code-vb[System.IO.StreamWriter#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example20.vb#20)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example20.cs" id="Snippet20":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example20.vb" id="Snippet20":::  
   
  ]]></format>
         </remarks>
@@ -1892,12 +2068,13 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (string value);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (string value);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (value As String) As Task" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(System::String ^ value);" />
       <MemberSignature Language="F#" Value="override this.WriteAsync : string -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteAsync value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(System::String ^ value);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (string? value);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1921,16 +2098,22 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The string to write to the stream. If <paramref name="value" /> is <see langword="null" />, nothing is written.</param>
@@ -1942,8 +2125,8 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
 ## Examples  
  The following example shows how to write a string to a text file by using the <xref:System.IO.StreamWriter.WriteAsync%28System.String%29> method.  
   
- [!code-csharp[System.IO.StreamWriter#21](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example21.cs#21)]
- [!code-vb[System.IO.StreamWriter#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example21.vb#21)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example21.cs" id="Snippet21":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example21.vb" id="Snippet21":::  
   
  ]]></format>
         </remarks>
@@ -1952,9 +2135,10 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (ReadOnlyMemory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (ReadOnlyMemory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(valuetype System.ReadOnlyMemory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (buffer As ReadOnlyMemory(Of Char), Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="override this.WriteAsync : ReadOnlyMemory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1972,12 +2156,17 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The character memory region to write to the stream.</param>
@@ -1992,8 +2181,8 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberSignature Language="F#" Value="override this.WriteAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteAsync (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2017,18 +2206,24 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Char[]" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="buffer" Type="System.Char[]" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">A character array that contains the data to write.</param>
@@ -2042,8 +2237,8 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
 ## Examples  
  The following example shows how to write multiple characters to a text file by using the <xref:System.IO.StreamWriter.WriteAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method.  
   
- [!code-csharp[System.IO.StreamWriter#24](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example24.cs#24)]
- [!code-vb[System.IO.StreamWriter#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example24.vb#24)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example24.cs" id="Snippet24":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example24.vb" id="Snippet24":::  
   
  ]]></format>
         </remarks>
@@ -2061,8 +2256,8 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(valuetype System.ReadOnlySpan`1&lt;char&gt; buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As ReadOnlySpan(Of Char))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(ReadOnlySpan&lt;char&gt; buffer);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="streamWriter.WriteLine buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(ReadOnlySpan&lt;char&gt; buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2079,11 +2274,16 @@ See <xref:System.IO.TextWriter.Write(System.String,System.Object,System.Object,S
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The character span to write to the stream.</param>
@@ -2097,19 +2297,20 @@ The text representation of the specified value is produced by calling the [ReadO
 
 The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.
 
-For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).
+For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).
 
           ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string value);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string? value);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ value);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="streamWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ value);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string value);" FrameworkAlternate="netcore-2.1;netcore-2.2;netstandard-2.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2126,11 +2327,16 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="value">The string to write. If <paramref name="value" /> is <see langword="null" />, only the line terminator is written.</param>
@@ -2146,19 +2352,19 @@ The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> fi
 
 This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A>.
 
-For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).
+For a list of common I/O tasks, see [Common I/O Tasks](/dotnet/standard/io/common-i-o-tasks).
 
           ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object? arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj -&gt; unit" Usage="streamWriter.WriteLine (format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2174,12 +2380,17 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
@@ -2197,12 +2408,12 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object)> for a des
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object?[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, ParamArray arg As Object())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj[] -&gt; unit" Usage="streamWriter.WriteLine (format, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2218,12 +2429,17 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object)> for a des
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg" Type="System.Object[]" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1">
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg" Type="System.Object[]" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0">
           <Attributes>
             <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
@@ -2247,12 +2463,12 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object[])> for a d
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object? arg0, object? arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj * obj -&gt; unit" Usage="streamWriter.WriteLine (format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2268,13 +2484,18 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object[])> for a d
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
@@ -2293,12 +2514,12 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1, object arg2);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object? arg0, object? arg1, object? arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object, arg2 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj * obj * obj -&gt; unit" Usage="streamWriter.WriteLine (format, arg0, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2314,14 +2535,19 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-        <Parameter Name="arg2" Type="System.Object" Index="3" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="arg2" Type="System.Object" Index="3" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
@@ -2356,8 +2582,8 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLineAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync () As Task" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync();" />
       <MemberSignature Language="F#" Value="override this.WriteLineAsync : unit -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteLineAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2381,9 +2607,15 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2410,8 +2642,8 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLineAsync(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (value As Char) As Task" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(char value);" />
       <MemberSignature Language="F#" Value="override this.WriteLineAsync : char -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteLineAsync value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2435,16 +2667,22 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Char" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Char" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The character to write to the stream.</param>
@@ -2461,8 +2699,8 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
 ## Examples  
  The following example shows how to write a single character (the letter "a") to a line in a text file, followed by another line that contains a single character (the letter "b"), by using the <xref:System.IO.StreamWriter.WriteLineAsync%28System.Char%29> method.  
   
- [!code-csharp[System.IO.StreamWriter#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example22.cs#22)]
- [!code-vb[System.IO.StreamWriter#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example22.vb#22)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example22.cs" id="Snippet22":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example22.vb" id="Snippet22":::  
   
  ]]></format>
         </remarks>
@@ -2471,12 +2709,13 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (string value);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (string value);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLineAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (value As String) As Task" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(System::String ^ value);" />
       <MemberSignature Language="F#" Value="override this.WriteLineAsync : string -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteLineAsync value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(System::String ^ value);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (string? value);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2500,16 +2739,22 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The string to write. If the value is <see langword="null" />, only a line terminator is written.</param>
@@ -2526,8 +2771,8 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
 ## Examples  
  The following example shows how to write two lines that consist of string values to a text file by using the <xref:System.IO.StreamWriter.WriteLineAsync%28System.String%29> method.  
   
- [!code-csharp[System.IO.StreamWriter#23](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example23.cs#23)]
- [!code-vb[System.IO.StreamWriter#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example23.vb#23)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example23.cs" id="Snippet23":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example23.vb" id="Snippet23":::  
   
  ]]></format>
         </remarks>
@@ -2536,9 +2781,10 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (ReadOnlyMemory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (ReadOnlyMemory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(valuetype System.ReadOnlyMemory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLineAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (buffer As ReadOnlyMemory(Of Char), Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="override this.WriteLineAsync : ReadOnlyMemory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteLineAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2556,12 +2802,17 @@ See <xref:System.IO.TextWriter.WriteLine(System.String,System.Object,System.Obje
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The character memory region to write to the stream.</param>
@@ -2584,8 +2835,8 @@ The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> fi
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberSignature Language="F#" Value="override this.WriteLineAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="streamWriter.WriteLineAsync (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2609,18 +2860,24 @@ The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> fi
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Char[]" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="buffer" Type="System.Char[]" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The character array to write data from.</param>
@@ -2639,8 +2896,8 @@ The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> fi
 ## Examples  
  The following example shows how to write characters to two separate lines in a text file by using the <xref:System.IO.StreamWriter.WriteLineAsync%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method. The first line contains the first 11 characters from the string (the letters "First line" followed by a space). The second line contains the remaining characters from the string (the letters "and second line").  
   
- [!code-csharp[System.IO.StreamWriter#25](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example25.cs#25)]
- [!code-vb[System.IO.StreamWriter#25](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example25.vb#25)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamWriter/CS/example25.cs" id="Snippet25":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamWriter/VB/example25.vb" id="Snippet25":::  
   
  ]]></format>
         </remarks>

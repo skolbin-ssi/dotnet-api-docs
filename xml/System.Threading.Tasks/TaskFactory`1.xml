@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskFactory`1&lt;TResult&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskFactory(Of TResult)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class TaskFactory" />
   <TypeSignature Language="F#" Value="type TaskFactory&lt;'Result&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class TaskFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,7 +25,20 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Threading.Tasks" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Threading.Tasks" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Threading.Tasks" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Threading.Tasks" FromVersion="4.1.0.0" To="System.Runtime" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.Threading.Tasks" FromVersion="4.1.1.0" To="System.Runtime" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.Threading.Tasks" FromVersion="4.1.2.0" To="System.Runtime" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <TypeParameters>
     <TypeParameter Name="TResult" />
   </TypeParameters>
@@ -51,7 +64,7 @@
 -   Create a task and start it immediately by calling the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method. You can call the overloads of this method to create and execute a task that requires non-default arguments.  
   
     > [!WARNING]
-    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method provides the easiest way to create a task with default configuration values and start it immediately.  
+    >  Starting with the .NET Framework 4.5, the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method provides the easiest way to create a task with default configuration values and start it immediately.  
   
 -   Create a task that starts when any one of the tasks in an array has completed by calling the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> or   <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> method.  
   
@@ -59,8 +72,8 @@
   
  The static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=nameWithType> property returns a default <xref:System.Threading.Tasks.TaskFactory%601> object. You can also call one of the <xref:System.Threading.Tasks.TaskFactory%601> class constructors to configure the <xref:System.Threading.Tasks.Task%601> objects that  the <xref:System.Threading.Tasks.TaskFactory%601> class creates. The following example configures a new <xref:System.Threading.Tasks.TaskFactory%601> object to create tasks that have a specified cancellation token, task creation options, continuation options, and a customized task scheduler.  
   
- [!code-csharp[TPL_Factories#2](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_factories/cs/factoriestresult.cs#2)]
- [!code-vb[TPL_Factories#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_factories/vb/factoriestresult.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Misc/tpl_factories/cs/factoriestresult.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_factories/vb/factoriestresult.vb" id="Snippet2":::  
   
  In most cases, you do not have to instantiate a new <xref:System.Threading.Tasks.TaskFactory%601> instance. Instead, you can use the static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=nameWithType> property, which returns a factory object that uses default values. You can then call its methods to start new tasks or define task continuations. For an illustration, see the example.  
   
@@ -69,13 +82,13 @@
 ## Examples  
  The following example uses the static <xref:System.Threading.Tasks.Task%601.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=nameWithType> method. The first task returns a string array that is populated with the names of files in the user's MyDocuments directory, while the second returns a string array that is populated with the names of subdirectories of the user's MyDocuments directory. It then calls the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=nameWithType> method, which displays information about the number of files and directories in the arrays returned by the two tasks after they have completed execution.  
   
- [!code-csharp[System.Threading.Tasks.Task.Factory#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.factory/cs/factory2.cs#2)]
- [!code-vb[System.Threading.Tasks.Task.Factory#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.factory/vb/factory2.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.factory/cs/factory2.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.factory/vb/factory2.vb" id="Snippet2":::  
   
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.Tasks.TaskFactory`1" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
-    <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+    <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -86,7 +99,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory`1" /> instance.</summary>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -116,6 +129,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -128,15 +143,16 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TaskFactory (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.#ctor(System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFactory(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cancellationToken As CancellationToken)" />
       <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskFactory&lt;'Result&gt; : System.Threading.CancellationToken -&gt; System.Threading.Tasks.TaskFactory&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskFactory&lt;'Result&gt; cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFactory(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -158,6 +174,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -173,16 +191,17 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskFactory (System.Threading.Tasks.TaskScheduler scheduler);" />
+      <MemberSignature Language="C#" Value="public TaskFactory (System.Threading.Tasks.TaskScheduler scheduler);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.#ctor(System.Threading.Tasks.TaskScheduler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scheduler As TaskScheduler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFactory(System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskFactory&lt;'Result&gt; : System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.TaskFactory&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskFactory&lt;'Result&gt; scheduler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFactory(System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="C#" Value="public TaskFactory (System.Threading.Tasks.TaskScheduler? scheduler);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -204,6 +223,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
@@ -220,9 +241,9 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -230,8 +251,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Threading.Tasks.TaskCreationOptions creationOptions, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.#ctor(System.Threading.Tasks.TaskCreationOptions,System.Threading.Tasks.TaskContinuationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (creationOptions As TaskCreationOptions, continuationOptions As TaskContinuationOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFactory(System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskFactory&lt;'Result&gt; : System.Threading.Tasks.TaskCreationOptions * System.Threading.Tasks.TaskContinuationOptions -&gt; System.Threading.Tasks.TaskFactory&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskFactory&lt;'Result&gt; (creationOptions, continuationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFactory(System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -253,6 +274,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
@@ -272,17 +295,19 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="creationOptions" /> or <paramref name="continuationOptions" /> specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskFactory (System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
+      <MemberSignature Language="C#" Value="public TaskFactory (System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.#ctor(System.Threading.CancellationToken,System.Threading.Tasks.TaskCreationOptions,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFactory(System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cancellationToken As CancellationToken, creationOptions As TaskCreationOptions, continuationOptions As TaskContinuationOptions, scheduler As TaskScheduler)" />
       <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskFactory&lt;'Result&gt; : System.Threading.CancellationToken * System.Threading.Tasks.TaskCreationOptions * System.Threading.Tasks.TaskContinuationOptions * System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.TaskFactory&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskFactory&lt;'Result&gt; (cancellationToken, creationOptions, continuationOptions, scheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFactory(System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="C#" Value="public TaskFactory (System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler? scheduler);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -304,6 +329,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -327,9 +354,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="creationOptions" /> or <paramref name="continuationOptions" /> specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="CancellationToken">
@@ -337,8 +364,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken CancellationToken" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.TaskFactory`1.CancellationToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancellationToken As CancellationToken" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::CancellationToken CancellationToken { System::Threading::CancellationToken get(); };" />
       <MemberSignature Language="F#" Value="member this.CancellationToken : System.Threading.CancellationToken" Usage="System.Threading.Tasks.TaskFactory&lt;'Result&gt;.CancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::CancellationToken CancellationToken { System::Threading::CancellationToken get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -360,6 +387,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.CancellationToken</ReturnType>
@@ -375,8 +404,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="ContinuationOptions">
@@ -384,8 +413,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.Tasks.TaskContinuationOptions ContinuationOptions" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.TaskFactory`1.ContinuationOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuationOptions As TaskContinuationOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::TaskContinuationOptions ContinuationOptions { System::Threading::Tasks::TaskContinuationOptions get(); };" />
       <MemberSignature Language="F#" Value="member this.ContinuationOptions : System.Threading.Tasks.TaskContinuationOptions" Usage="System.Threading.Tasks.TaskFactory&lt;'Result&gt;.ContinuationOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::TaskContinuationOptions ContinuationOptions { System::Threading::Tasks::TaskContinuationOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -407,6 +436,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskContinuationOptions</ReturnType>
@@ -422,8 +453,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ContinueWhenAll">
@@ -434,9 +465,9 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ContinueWhenAll">
@@ -444,8 +475,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAll(class System.Threading.Tasks.Task[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task[], !TResult&gt; continuationFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAll(System.Threading.Tasks.Task[],System.Func{System.Threading.Tasks.Task[],`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAll (tasks As Task(), continuationFunction As Func(Of Task(), TResult)) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task ^&gt; ^, TResult&gt; ^ continuationFunction);" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAll : System.Threading.Tasks.Task[] * Func&lt;System.Threading.Tasks.Task[], 'Result&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAll (tasks, continuationFunction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task ^&gt; ^, TResult&gt; ^ continuationFunction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -467,6 +498,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -496,17 +529,18 @@
   
  The <paramref name="continuationFunction" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; ContinueWhenAll (System.Threading.Tasks.Task[] tasks, Func&lt;System.Threading.Tasks.Task[],TResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAll(class System.Threading.Tasks.Task[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task[], !TResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAll(System.Threading.Tasks.Task[],System.Func{System.Threading.Tasks.Task[],`0},System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAll (tasks As Task(), continuationFunction As Func(Of Task(), TResult), cancellationToken As CancellationToken) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAll : System.Threading.Tasks.Task[] * Func&lt;System.Threading.Tasks.Task[], 'Result&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAll (tasks, continuationFunction, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -528,6 +562,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -562,9 +598,9 @@
   
  <paramref name="continuationFunction" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
@@ -572,8 +608,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAll(class System.Threading.Tasks.Task[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task[], !TResult&gt; continuationFunction, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAll(System.Threading.Tasks.Task[],System.Func{System.Threading.Tasks.Task[],`0},System.Threading.Tasks.TaskContinuationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAll (tasks As Task(), continuationFunction As Func(Of Task(), TResult), continuationOptions As TaskContinuationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAll : System.Threading.Tasks.Task[] * Func&lt;System.Threading.Tasks.Task[], 'Result&gt; * System.Threading.Tasks.TaskContinuationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAll (tasks, continuationFunction, continuationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -595,6 +631,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -626,17 +664,18 @@
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; ContinueWhenAll (System.Threading.Tasks.Task[] tasks, Func&lt;System.Threading.Tasks.Task[],TResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAll(class System.Threading.Tasks.Task[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task[], !TResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAll(System.Threading.Tasks.Task[],System.Func{System.Threading.Tasks.Task[],`0},System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAll (tasks As Task(), continuationFunction As Func(Of Task(), TResult), cancellationToken As CancellationToken, continuationOptions As TaskContinuationOptions, scheduler As TaskScheduler) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAll : System.Threading.Tasks.Task[] * Func&lt;System.Threading.Tasks.Task[], 'Result&gt; * System.Threading.CancellationToken * System.Threading.Tasks.TaskContinuationOptions * System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAll (tasks, continuationFunction, cancellationToken, continuationOptions, scheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -658,6 +697,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -702,9 +743,9 @@
  -or-  
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -712,8 +753,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAll&lt;TAntecedentResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[], !TResult&gt; continuationFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAll``1(System.Threading.Tasks.Task{``0}[],System.Func{System.Threading.Tasks.Task{``0}[],`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAll(Of TAntecedentResult) (tasks As Task(Of TAntecedentResult)(), continuationFunction As Func(Of Task(Of TAntecedentResult)(), TResult)) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^, TResult&gt; ^ continuationFunction);" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAll : System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[] * Func&lt;System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[], 'Result&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAll (tasks, continuationFunction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^, TResult&gt; ^ continuationFunction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -735,6 +776,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -767,17 +810,18 @@
   
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; ContinueWhenAll&lt;TAntecedentResult&gt; (System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[] tasks, Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[],TResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAll&lt;TAntecedentResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[], !TResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAll``1(System.Threading.Tasks.Task{``0}[],System.Func{System.Threading.Tasks.Task{``0}[],`0},System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAll(Of TAntecedentResult) (tasks As Task(Of TAntecedentResult)(), continuationFunction As Func(Of Task(Of TAntecedentResult)(), TResult), cancellationToken As CancellationToken) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAll : System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[] * Func&lt;System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[], 'Result&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAll (tasks, continuationFunction, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -799,6 +843,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -837,9 +883,9 @@
   
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -847,8 +893,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAll&lt;TAntecedentResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[], !TResult&gt; continuationFunction, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAll``1(System.Threading.Tasks.Task{``0}[],System.Func{System.Threading.Tasks.Task{``0}[],`0},System.Threading.Tasks.TaskContinuationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAll(Of TAntecedentResult) (tasks As Task(Of TAntecedentResult)(), continuationFunction As Func(Of Task(Of TAntecedentResult)(), TResult), continuationOptions As TaskContinuationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAll : System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[] * Func&lt;System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[], 'Result&gt; * System.Threading.Tasks.TaskContinuationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAll (tasks, continuationFunction, continuationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -870,6 +916,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -905,17 +953,18 @@
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; ContinueWhenAll&lt;TAntecedentResult&gt; (System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[] tasks, Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[],TResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAll&lt;TAntecedentResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[], !TResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAll``1(System.Threading.Tasks.Task{``0}[],System.Func{System.Threading.Tasks.Task{``0}[],`0},System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAll(Of TAntecedentResult) (tasks As Task(Of TAntecedentResult)(), continuationFunction As Func(Of Task(Of TAntecedentResult)(), TResult), cancellationToken As CancellationToken, continuationOptions As TaskContinuationOptions, scheduler As TaskScheduler) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAll : System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[] * Func&lt;System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[], 'Result&gt; * System.Threading.CancellationToken * System.Threading.Tasks.TaskContinuationOptions * System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAll (tasks, continuationFunction, cancellationToken, continuationOptions, scheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAll(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -937,6 +986,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -984,9 +1035,9 @@
  -or-  
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ContinueWhenAny">
@@ -997,9 +1048,9 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ContinueWhenAny">
@@ -1007,8 +1058,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAny(class System.Threading.Tasks.Task[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task, !TResult&gt; continuationFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAny(System.Threading.Tasks.Task[],System.Func{System.Threading.Tasks.Task,`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAny (tasks As Task(), continuationFunction As Func(Of Task, TResult)) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task ^, TResult&gt; ^ continuationFunction);" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAny : System.Threading.Tasks.Task[] * Func&lt;System.Threading.Tasks.Task, 'Result&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAny (tasks, continuationFunction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task ^, TResult&gt; ^ continuationFunction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1030,6 +1081,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1058,17 +1111,18 @@
   
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; ContinueWhenAny (System.Threading.Tasks.Task[] tasks, Func&lt;System.Threading.Tasks.Task,TResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAny(class System.Threading.Tasks.Task[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task, !TResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAny(System.Threading.Tasks.Task[],System.Func{System.Threading.Tasks.Task,`0},System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAny (tasks As Task(), continuationFunction As Func(Of Task, TResult), cancellationToken As CancellationToken) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAny : System.Threading.Tasks.Task[] * Func&lt;System.Threading.Tasks.Task, 'Result&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAny (tasks, continuationFunction, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1090,6 +1144,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1128,9 +1184,9 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
@@ -1138,8 +1194,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAny(class System.Threading.Tasks.Task[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task, !TResult&gt; continuationFunction, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAny(System.Threading.Tasks.Task[],System.Func{System.Threading.Tasks.Task,`0},System.Threading.Tasks.TaskContinuationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAny (tasks As Task(), continuationFunction As Func(Of Task, TResult), continuationOptions As TaskContinuationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task ^, TResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAny : System.Threading.Tasks.Task[] * Func&lt;System.Threading.Tasks.Task, 'Result&gt; * System.Threading.Tasks.TaskContinuationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAny (tasks, continuationFunction, continuationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task ^, TResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1161,6 +1217,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1196,17 +1254,18 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; ContinueWhenAny (System.Threading.Tasks.Task[] tasks, Func&lt;System.Threading.Tasks.Task,TResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAny(class System.Threading.Tasks.Task[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task, !TResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAny(System.Threading.Tasks.Task[],System.Func{System.Threading.Tasks.Task,`0},System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAny (tasks As Task(), continuationFunction As Func(Of Task, TResult), cancellationToken As CancellationToken, continuationOptions As TaskContinuationOptions, scheduler As TaskScheduler) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAny : System.Threading.Tasks.Task[] * Func&lt;System.Threading.Tasks.Task, 'Result&gt; * System.Threading.CancellationToken * System.Threading.Tasks.TaskContinuationOptions * System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAny (tasks, continuationFunction, cancellationToken, continuationOptions, scheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1228,6 +1287,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1276,9 +1337,9 @@
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1286,8 +1347,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAny&lt;TAntecedentResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;, !TResult&gt; continuationFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAny``1(System.Threading.Tasks.Task{``0}[],System.Func{System.Threading.Tasks.Task{``0},`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAny(Of TAntecedentResult) (tasks As Task(Of TAntecedentResult)(), continuationFunction As Func(Of Task(Of TAntecedentResult), TResult)) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^, TResult&gt; ^ continuationFunction);" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAny : System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[] * Func&lt;System.Threading.Tasks.Task&lt;'AntecedentResult&gt;, 'Result&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAny (tasks, continuationFunction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^, TResult&gt; ^ continuationFunction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1309,6 +1370,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1345,17 +1408,18 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; ContinueWhenAny&lt;TAntecedentResult&gt; (System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[] tasks, Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;,TResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAny&lt;TAntecedentResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;, !TResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAny``1(System.Threading.Tasks.Task{``0}[],System.Func{System.Threading.Tasks.Task{``0},`0},System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAny(Of TAntecedentResult) (tasks As Task(Of TAntecedentResult)(), continuationFunction As Func(Of Task(Of TAntecedentResult), TResult), cancellationToken As CancellationToken) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAny : System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[] * Func&lt;System.Threading.Tasks.Task&lt;'AntecedentResult&gt;, 'Result&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAny (tasks, continuationFunction, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1377,6 +1441,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1419,9 +1485,9 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1429,8 +1495,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAny&lt;TAntecedentResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;, !TResult&gt; continuationFunction, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAny``1(System.Threading.Tasks.Task{``0}[],System.Func{System.Threading.Tasks.Task{``0},`0},System.Threading.Tasks.TaskContinuationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAny(Of TAntecedentResult) (tasks As Task(Of TAntecedentResult)(), continuationFunction As Func(Of Task(Of TAntecedentResult), TResult), continuationOptions As TaskContinuationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAny : System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[] * Func&lt;System.Threading.Tasks.Task&lt;'AntecedentResult&gt;, 'Result&gt; * System.Threading.Tasks.TaskContinuationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAny (tasks, continuationFunction, continuationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::Tasks::TaskContinuationOptions continuationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1452,6 +1518,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1491,17 +1559,18 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; ContinueWhenAny&lt;TAntecedentResult&gt; (System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[] tasks, Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;,TResult&gt; continuationFunction, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskContinuationOptions continuationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; ContinueWhenAny&lt;TAntecedentResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;[] tasks, class System.Func`2&lt;class System.Threading.Tasks.Task`1&lt;!!TAntecedentResult&gt;, !TResult&gt; continuationFunction, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskContinuationOptions continuationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.ContinueWhenAny``1(System.Threading.Tasks.Task{``0}[],System.Func{System.Threading.Tasks.Task{``0},`0},System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions,System.Threading.Tasks.TaskScheduler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueWhenAny(Of TAntecedentResult) (tasks As Task(Of TAntecedentResult)(), continuationFunction As Func(Of Task(Of TAntecedentResult), TResult), cancellationToken As CancellationToken, continuationOptions As TaskContinuationOptions, scheduler As TaskScheduler) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.ContinueWhenAny : System.Threading.Tasks.Task&lt;'AntecedentResult&gt;[] * Func&lt;System.Threading.Tasks.Task&lt;'AntecedentResult&gt;, 'Result&gt; * System.Threading.CancellationToken * System.Threading.Tasks.TaskContinuationOptions * System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.ContinueWhenAny (tasks, continuationFunction, cancellationToken, continuationOptions, scheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAntecedentResult&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ ContinueWhenAny(cli::array &lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^&gt; ^ tasks, Func&lt;System::Threading::Tasks::Task&lt;TAntecedentResult&gt; ^, TResult&gt; ^ continuationFunction, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskContinuationOptions continuationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1523,6 +1592,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1574,9 +1645,9 @@
  -or-  
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-cancellation">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="CreationOptions">
@@ -1584,8 +1655,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.Tasks.TaskCreationOptions CreationOptions" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.TaskFactory`1.CreationOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationOptions As TaskCreationOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::TaskCreationOptions CreationOptions { System::Threading::Tasks::TaskCreationOptions get(); };" />
       <MemberSignature Language="F#" Value="member this.CreationOptions : System.Threading.Tasks.TaskCreationOptions" Usage="System.Threading.Tasks.TaskFactory&lt;'Result&gt;.CreationOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::TaskCreationOptions CreationOptions { System::Threading::Tasks::TaskCreationOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1607,6 +1678,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
@@ -1622,8 +1695,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FromAsync">
@@ -1634,8 +1707,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a task instance.</summary>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FromAsync">
@@ -1643,8 +1716,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync(class System.IAsyncResult asyncResult, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync(System.IAsyncResult,System.Func{System.IAsyncResult,`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync (asyncResult As IAsyncResult, endMethod As Func(Of IAsyncResult, TResult)) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(IAsyncResult ^ asyncResult, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : IAsyncResult * Func&lt;IAsyncResult, 'Result&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (asyncResult, endMethod)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(IAsyncResult ^ asyncResult, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1666,6 +1739,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1685,17 +1760,18 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync (Func&lt;AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, object state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync (Func&lt;AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, object state);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync(class System.Func`3&lt;class System.AsyncCallback, object, class System.IAsyncResult&gt; beginMethod, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,`0},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync (beginMethod As Func(Of AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), state As Object) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : Func&lt;AsyncCallback, obj, IAsyncResult&gt; * Func&lt;IAsyncResult, 'Result&gt; * obj -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (beginMethod, endMethod, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, System::Object ^ state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync (Func&lt;AsyncCallback,object?,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, object? state);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1717,6 +1793,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1745,8 +1823,8 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1754,8 +1832,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync(class System.IAsyncResult asyncResult, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync(System.IAsyncResult,System.Func{System.IAsyncResult,`0},System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync (asyncResult As IAsyncResult, endMethod As Func(Of IAsyncResult, TResult), creationOptions As TaskCreationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(IAsyncResult ^ asyncResult, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : IAsyncResult * Func&lt;IAsyncResult, 'Result&gt; * System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (asyncResult, endMethod, creationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(IAsyncResult ^ asyncResult, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1777,6 +1855,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1799,17 +1879,18 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync (Func&lt;AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync (Func&lt;AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync(class System.Func`3&lt;class System.AsyncCallback, object, class System.IAsyncResult&gt; beginMethod, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, object state, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,`0},System.Object,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync (beginMethod As Func(Of AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), state As Object, creationOptions As TaskCreationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : Func&lt;AsyncCallback, obj, IAsyncResult&gt; * Func&lt;IAsyncResult, 'Result&gt; * obj * System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (beginMethod, endMethod, state, creationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync (Func&lt;AsyncCallback,object?,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, object? state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1831,6 +1912,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1862,8 +1945,8 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1871,8 +1954,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync(class System.IAsyncResult asyncResult, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync(System.IAsyncResult,System.Func{System.IAsyncResult,`0},System.Threading.Tasks.TaskCreationOptions,System.Threading.Tasks.TaskScheduler)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync (asyncResult As IAsyncResult, endMethod As Func(Of IAsyncResult, TResult), creationOptions As TaskCreationOptions, scheduler As TaskScheduler) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(IAsyncResult ^ asyncResult, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : IAsyncResult * Func&lt;IAsyncResult, 'Result&gt; * System.Threading.Tasks.TaskCreationOptions * System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (asyncResult, endMethod, creationOptions, scheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(IAsyncResult ^ asyncResult, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1894,6 +1977,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1922,17 +2007,18 @@
   
  The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1&gt; (Func&lt;TArg1,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, object state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1&gt; (Func&lt;TArg1,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, object state);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync&lt;TArg1&gt;(class System.Func`4&lt;!!TArg1, class System.AsyncCallback, object, class System.IAsyncResult&gt; beginMethod, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, !!TArg1 arg1, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync``1(System.Func{``0,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,`0},``0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync(Of TArg1) (beginMethod As Func(Of TArg1, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, state As Object) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : Func&lt;'TArg1, AsyncCallback, obj, IAsyncResult&gt; * Func&lt;IAsyncResult, 'Result&gt; * 'TArg1 * obj -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (beginMethod, endMethod, arg1, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, System::Object ^ state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1&gt; (Func&lt;TArg1,AsyncCallback,object?,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, object? state);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -1954,6 +2040,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1988,17 +2076,18 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1&gt; (Func&lt;TArg1,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1&gt; (Func&lt;TArg1,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync&lt;TArg1&gt;(class System.Func`4&lt;!!TArg1, class System.AsyncCallback, object, class System.IAsyncResult&gt; beginMethod, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, !!TArg1 arg1, object state, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync``1(System.Func{``0,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,`0},``0,System.Object,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync(Of TArg1) (beginMethod As Func(Of TArg1, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, state As Object, creationOptions As TaskCreationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : Func&lt;'TArg1, AsyncCallback, obj, IAsyncResult&gt; * Func&lt;IAsyncResult, 'Result&gt; * 'TArg1 * obj * System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (beginMethod, endMethod, arg1, state, creationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1&gt; (Func&lt;TArg1,AsyncCallback,object?,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, object? state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2020,6 +2109,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2057,17 +2148,18 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2&gt; (Func&lt;TArg1,TArg2,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, object state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2&gt; (Func&lt;TArg1,TArg2,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, object state);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync&lt;TArg1, TArg2&gt;(class System.Func`5&lt;!!TArg1, !!TArg2, class System.AsyncCallback, object, class System.IAsyncResult&gt; beginMethod, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, !!TArg1 arg1, !!TArg2 arg2, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync``2(System.Func{``0,``1,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,`0},``0,``1,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync(Of TArg1, TArg2) (beginMethod As Func(Of TArg1, TArg2, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, arg2 As TArg2, state As Object) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1, typename TArg2&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, TArg2, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, TArg2 arg2, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : Func&lt;'TArg1, 'TArg2, AsyncCallback, obj, IAsyncResult&gt; * Func&lt;IAsyncResult, 'Result&gt; * 'TArg1 * 'TArg2 * obj -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (beginMethod, endMethod, arg1, arg2, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1, typename TArg2&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, TArg2, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, TArg2 arg2, System::Object ^ state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2&gt; (Func&lt;TArg1,TArg2,AsyncCallback,object?,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, object? state);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2089,6 +2181,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2127,17 +2221,18 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2&gt; (Func&lt;TArg1,TArg2,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2&gt; (Func&lt;TArg1,TArg2,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync&lt;TArg1, TArg2&gt;(class System.Func`5&lt;!!TArg1, !!TArg2, class System.AsyncCallback, object, class System.IAsyncResult&gt; beginMethod, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, !!TArg1 arg1, !!TArg2 arg2, object state, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync``2(System.Func{``0,``1,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,`0},``0,``1,System.Object,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync(Of TArg1, TArg2) (beginMethod As Func(Of TArg1, TArg2, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, arg2 As TArg2, state As Object, creationOptions As TaskCreationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1, typename TArg2&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, TArg2, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, TArg2 arg2, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : Func&lt;'TArg1, 'TArg2, AsyncCallback, obj, IAsyncResult&gt; * Func&lt;IAsyncResult, 'Result&gt; * 'TArg1 * 'TArg2 * obj * System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (beginMethod, endMethod, arg1, arg2, state, creationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1, typename TArg2&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, TArg2, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, TArg2 arg2, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2&gt; (Func&lt;TArg1,TArg2,AsyncCallback,object?,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, object? state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2159,6 +2254,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2200,17 +2297,18 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TArg3&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2,TArg3&gt; (Func&lt;TArg1,TArg2,TArg3,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, object state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2,TArg3&gt; (Func&lt;TArg1,TArg2,TArg3,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, object state);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync&lt;TArg1, TArg2, TArg3&gt;(class System.Func`6&lt;!!TArg1, !!TArg2, !!TArg3, class System.AsyncCallback, object, class System.IAsyncResult&gt; beginMethod, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, !!TArg1 arg1, !!TArg2 arg2, !!TArg3 arg3, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync``3(System.Func{``0,``1,``2,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,`0},``0,``1,``2,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync(Of TArg1, TArg2, TArg3) (beginMethod As Func(Of TArg1, TArg2, TArg3, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, arg2 As TArg2, arg3 As TArg3, state As Object) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1, typename TArg2, typename TArg3&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, TArg2, TArg3, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : Func&lt;'TArg1, 'TArg2, 'TArg3, AsyncCallback, obj, IAsyncResult&gt; * Func&lt;IAsyncResult, 'Result&gt; * 'TArg1 * 'TArg2 * 'TArg3 * obj -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (beginMethod, endMethod, arg1, arg2, arg3, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1, typename TArg2, typename TArg3&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, TArg2, TArg3, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, System::Object ^ state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2,TArg3&gt; (Func&lt;TArg1,TArg2,TArg3,AsyncCallback,object?,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, object? state);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2232,6 +2330,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2274,17 +2374,18 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TArg3&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2,TArg3&gt; (Func&lt;TArg1,TArg2,TArg3,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2,TArg3&gt; (Func&lt;TArg1,TArg2,TArg3,AsyncCallback,object,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; FromAsync&lt;TArg1, TArg2, TArg3&gt;(class System.Func`6&lt;!!TArg1, !!TArg2, !!TArg3, class System.AsyncCallback, object, class System.IAsyncResult&gt; beginMethod, class System.Func`2&lt;class System.IAsyncResult, !TResult&gt; endMethod, !!TArg1 arg1, !!TArg2 arg2, !!TArg3 arg3, object state, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.FromAsync``3(System.Func{``0,``1,``2,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,`0},``0,``1,``2,System.Object,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function FromAsync(Of TArg1, TArg2, TArg3) (beginMethod As Func(Of TArg1, TArg2, TArg3, AsyncCallback, Object, IAsyncResult), endMethod As Func(Of IAsyncResult, TResult), arg1 As TArg1, arg2 As TArg2, arg3 As TArg3, state As Object, creationOptions As TaskCreationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1, typename TArg2, typename TArg3&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, TArg2, TArg3, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberSignature Language="F#" Value="member this.FromAsync : Func&lt;'TArg1, 'TArg2, 'TArg3, AsyncCallback, obj, IAsyncResult&gt; * Func&lt;IAsyncResult, 'Result&gt; * 'TArg1 * 'TArg2 * 'TArg3 * obj * System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.FromAsync (beginMethod, endMethod, arg1, arg2, arg3, state, creationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg1, typename TArg2, typename TArg3&gt;&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ FromAsync(Func&lt;TArg1, TArg2, TArg3, AsyncCallback ^, System::Object ^, IAsyncResult ^&gt; ^ beginMethod, Func&lt;IAsyncResult ^, TResult&gt; ^ endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; FromAsync&lt;TArg1,TArg2,TArg3&gt; (Func&lt;TArg1,TArg2,TArg3,AsyncCallback,object?,IAsyncResult&gt; beginMethod, Func&lt;IAsyncResult,TResult&gt; endMethod, TArg1 arg1, TArg2 arg2, TArg3 arg3, object? state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2306,6 +2407,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2351,17 +2454,18 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="Scheduler">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.TaskScheduler Scheduler { get; }" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.TaskScheduler Scheduler { get; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.TaskScheduler Scheduler" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.TaskFactory`1.Scheduler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scheduler As TaskScheduler" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::TaskScheduler ^ Scheduler { System::Threading::Tasks::TaskScheduler ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Scheduler : System.Threading.Tasks.TaskScheduler" Usage="System.Threading.Tasks.TaskFactory&lt;'Result&gt;.Scheduler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::TaskScheduler ^ Scheduler { System::Threading::Tasks::TaskScheduler ^ get(); };" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.TaskScheduler? Scheduler { get; }" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2383,6 +2487,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskScheduler</ReturnType>
@@ -2400,8 +2506,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="StartNew">
@@ -2412,8 +2518,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates and starts a task.</summary>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="StartNew">
@@ -2421,8 +2527,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; StartNew(class System.Func`1&lt;!TResult&gt; function) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function StartNew (function As Func(Of TResult)) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;TResult&gt; ^ function);" />
       <MemberSignature Language="F#" Value="member this.StartNew : Func&lt;'Result&gt; -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.StartNew function" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;TResult&gt; ^ function);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2444,6 +2550,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2466,17 +2574,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object,TResult&gt; function, object state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object,TResult&gt; function, object state);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; StartNew(class System.Func`2&lt;object, !TResult&gt; function, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{System.Object,`0},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartNew (function As Func(Of Object, TResult), state As Object) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="member this.StartNew : Func&lt;obj, 'Result&gt; * obj -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.StartNew (function, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object?,TResult&gt; function, object? state);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2498,6 +2607,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2522,16 +2633,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;TResult&gt; function, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; StartNew(class System.Func`1&lt;!TResult&gt; function, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{`0},System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;TResult&gt; ^ function, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartNew (function As Func(Of TResult), cancellationToken As CancellationToken) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.StartNew : Func&lt;'Result&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.StartNew (function, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;TResult&gt; ^ function, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2553,6 +2665,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2578,8 +2692,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The cancellation token source that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2587,8 +2701,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; StartNew(class System.Func`1&lt;!TResult&gt; function, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{`0},System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartNew (function As Func(Of TResult), creationOptions As TaskCreationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;TResult&gt; ^ function, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberSignature Language="F#" Value="member this.StartNew : Func&lt;'Result&gt; * System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.StartNew (function, creationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;TResult&gt; ^ function, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2610,6 +2724,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2635,16 +2751,18 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object,TResult&gt; function, object state, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object,TResult&gt; function, object state, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; StartNew(class System.Func`2&lt;object, !TResult&gt; function, object state, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{System.Object,`0},System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartNew (function As Func(Of Object, TResult), state As Object, cancellationToken As CancellationToken) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.StartNew : Func&lt;obj, 'Result&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.StartNew (function, state, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object?,TResult&gt; function, object? state, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2666,6 +2784,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2693,17 +2813,18 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The cancellation token source that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object,TResult&gt; function, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object,TResult&gt; function, object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; StartNew(class System.Func`2&lt;object, !TResult&gt; function, object state, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{System.Object,`0},System.Object,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartNew (function As Func(Of Object, TResult), state As Object, creationOptions As TaskCreationOptions) As Task(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberSignature Language="F#" Value="member this.StartNew : Func&lt;obj, 'Result&gt; * obj * System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.StartNew (function, state, creationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object?,TResult&gt; function, object? state, System.Threading.Tasks.TaskCreationOptions creationOptions);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2725,6 +2846,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2752,16 +2875,17 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;TResult&gt; function, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; StartNew(class System.Func`1&lt;!TResult&gt; function, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{`0},System.Threading.CancellationToken,System.Threading.Tasks.TaskCreationOptions,System.Threading.Tasks.TaskScheduler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;TResult&gt; ^ function, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartNew (function As Func(Of TResult), cancellationToken As CancellationToken, creationOptions As TaskCreationOptions, scheduler As TaskScheduler) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.StartNew : Func&lt;'Result&gt; * System.Threading.CancellationToken * System.Threading.Tasks.TaskCreationOptions * System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.StartNew (function, cancellationToken, creationOptions, scheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;TResult&gt; ^ function, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2783,6 +2907,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2817,16 +2943,18 @@
   
  The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object,TResult&gt; function, object state, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.TaskScheduler scheduler);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object,TResult&gt; function, object state, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.TaskScheduler scheduler);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; StartNew(class System.Func`2&lt;object, !TResult&gt; function, object state, valuetype System.Threading.CancellationToken cancellationToken, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions, class System.Threading.Tasks.TaskScheduler scheduler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskFactory`1.StartNew(System.Func{System.Object,`0},System.Object,System.Threading.CancellationToken,System.Threading.Tasks.TaskCreationOptions,System.Threading.Tasks.TaskScheduler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartNew (function As Func(Of Object, TResult), state As Object, cancellationToken As CancellationToken, creationOptions As TaskCreationOptions, scheduler As TaskScheduler) As Task(Of TResult)" />
       <MemberSignature Language="F#" Value="member this.StartNew : Func&lt;obj, 'Result&gt; * obj * System.Threading.CancellationToken * System.Threading.Tasks.TaskCreationOptions * System.Threading.Tasks.TaskScheduler -&gt; System.Threading.Tasks.Task&lt;'Result&gt;" Usage="taskFactory.StartNew (function, state, cancellationToken, creationOptions, scheduler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;TResult&gt; ^ StartNew(Func&lt;System::Object ^, TResult&gt; ^ function, System::Object ^ state, System::Threading::CancellationToken cancellationToken, System::Threading::Tasks::TaskCreationOptions creationOptions, System::Threading::Tasks::TaskScheduler ^ scheduler);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; StartNew (Func&lt;object?,TResult&gt; function, object? state, System.Threading.CancellationToken cancellationToken, System.Threading.Tasks.TaskCreationOptions creationOptions, System.Threading.Tasks.TaskScheduler scheduler);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -2848,6 +2976,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2884,8 +3014,8 @@
   
  The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
-        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
-        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/task-parallel-library-tpl">Task Parallel Library (TPL)</related>
+        <related type="Article" href="/dotnet/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
   </Members>

@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XsltSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XsltSettings" />
-  <TypeSignature Language="C++ CLI" Value="public ref class XsltSettings sealed" />
   <TypeSignature Language="F#" Value="type XsltSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XsltSettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -21,7 +21,13 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -42,13 +48,13 @@
 ## Examples  
  The following example loads a style sheet and enables XSLT script support.  
   
- [!code-csharp[XslCompiledTransform.Load#6](~/samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#6)]
- [!code-vb[XslCompiledTransform.Load#6](~/samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb#6)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb" id="Snippet6":::  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/fde6f43f-c594-486f-abcb-2211197fae20">Script Blocks Using msxsl:script</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+    <related type="Article" href="/dotnet/standard/data/xml/script-blocks-using-msxsl-script">Script Blocks Using msxsl:script</related>
+    <related type="Article" href="/dotnet/standard/data/xml/using-the-xslcompiledtransform-class">Using the XslCompiledTransform Class</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -59,7 +65,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XsltSettings" /> class.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="/dotnet/standard/data/xml/using-the-xslcompiledtransform-class">Using the XslCompiledTransform Class</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -85,6 +91,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -100,7 +108,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="/dotnet/standard/data/xml/using-the-xslcompiledtransform-class">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,8 +116,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enableDocumentFunction, bool enableScript) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltSettings.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enableDocumentFunction As Boolean, enableScript As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; XsltSettings(bool enableDocumentFunction, bool enableScript);" />
       <MemberSignature Language="F#" Value="new System.Xml.Xsl.XsltSettings : bool * bool -&gt; System.Xml.Xsl.XsltSettings" Usage="new System.Xml.Xsl.XsltSettings (enableDocumentFunction, enableScript)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XsltSettings(bool enableDocumentFunction, bool enableScript);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -127,6 +135,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="enableDocumentFunction" Type="System.Boolean" />
@@ -151,12 +161,12 @@
 ## Examples  
  The following example loads a style sheet and enables XSLT script support.  
   
- [!code-csharp[XslCompiledTransform.Load#6](~/samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#6)]
- [!code-vb[XslCompiledTransform.Load#6](~/samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb#6)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="/dotnet/standard/data/xml/using-the-xslcompiledtransform-class">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -164,8 +174,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Xsl.XsltSettings Default" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As XsltSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Xsl::XsltSettings ^ Default { System::Xml::Xsl::XsltSettings ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Default : System.Xml.Xsl.XsltSettings" Usage="System.Xml.Xsl.XsltSettings.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Xsl::XsltSettings ^ Default { System::Xml::Xsl::XsltSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -183,6 +193,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.XsltSettings</ReturnType>
@@ -196,12 +208,12 @@
 ## Examples  
  The following example loads a style sheet with default XSLT settings.  
   
- [!code-csharp[XslCompiledTransform.Load#7](~/samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#7)]
- [!code-vb[XslCompiledTransform.Load#7](~/samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb#7)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs" id="Snippet7":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="/dotnet/standard/data/xml/using-the-xslcompiledtransform-class">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="EnableDocumentFunction">
@@ -209,8 +221,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableDocumentFunction" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.EnableDocumentFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableDocumentFunction As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDocumentFunction { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.EnableDocumentFunction : bool with get, set" Usage="System.Xml.Xsl.XsltSettings.EnableDocumentFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDocumentFunction { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -228,13 +240,17 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -254,7 +270,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="/dotnet/standard/data/xml/using-the-xslcompiledtransform-class">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="EnableScript">
@@ -262,8 +278,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableScript" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.EnableScript" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableScript As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableScript { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.EnableScript : bool with get, set" Usage="System.Xml.Xsl.XsltSettings.EnableScript" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableScript { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -281,13 +297,17 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -307,8 +327,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/fde6f43f-c594-486f-abcb-2211197fae20">Script Blocks Using msxsl:script</related>
+        <related type="Article" href="/dotnet/standard/data/xml/using-the-xslcompiledtransform-class">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="/dotnet/standard/data/xml/script-blocks-using-msxsl-script">Script Blocks Using msxsl:script</related>
       </Docs>
     </Member>
     <Member MemberName="TrustedXslt">
@@ -316,8 +336,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Xsl.XsltSettings TrustedXslt" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.TrustedXslt" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TrustedXslt As XsltSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Xsl::XsltSettings ^ TrustedXslt { System::Xml::Xsl::XsltSettings ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.TrustedXslt : System.Xml.Xsl.XsltSettings" Usage="System.Xml.Xsl.XsltSettings.TrustedXslt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Xsl::XsltSettings ^ TrustedXslt { System::Xml::Xsl::XsltSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -335,6 +355,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Xsl.XsltSettings</ReturnType>
@@ -355,12 +377,12 @@
 ## Examples  
  The following example loads a style sheet with support for the XSLT `document()` function and embedded script blocks features enabled.  
   
- [!code-csharp[XslCompiledTransform.Load#8](~/samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#8)]
- [!code-vb[XslCompiledTransform.Load#8](~/samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb#8)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs" id="Snippet8":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="/dotnet/standard/data/xml/using-the-xslcompiledtransform-class">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
   </Members>

@@ -3,8 +3,9 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImmutableSortedDictionary`2&lt;TKey, TValue&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;!TKey, !TValue&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.Generic.IReadOnlyDictionary`2&lt;!TKey, !TValue&gt;, class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable, class System.Collections.Immutable.IImmutableDictionary`2&lt;!TKey, !TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableSortedDictionary`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImmutableSortedDictionary(Of TKey, TValue)&#xA;Implements ICollection(Of KeyValuePair(Of TKey, TValue)), IDictionary, IDictionary(Of TKey, TValue), IEnumerable(Of KeyValuePair(Of TKey, TValue)), IImmutableDictionary(Of TKey, TValue), IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue)), IReadOnlyDictionary(Of TKey, TValue)" />
+  <TypeSignature Language="F#" Value="type ImmutableSortedDictionary&lt;'Key, 'Value&gt; = class&#xA;    interface IImmutableDictionary&lt;'Key, 'Value&gt;&#xA;    interface IReadOnlyDictionary&lt;'Key, 'Value&gt;&#xA;    interface IReadOnlyCollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface IDictionary&lt;'Key, 'Value&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IDictionary&#xA;    interface ICollection" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public ref class ImmutableSortedDictionary sealed : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IDictionary&lt;TKey, TValue&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyCollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyDictionary&lt;TKey, TValue&gt;, System::Collections::IDictionary, System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt;" />
-  <TypeSignature Language="F#" Value="type ImmutableSortedDictionary&lt;'Key, 'Value&gt; = class&#xA;    interface ICollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface IDictionary&lt;'Key, 'Value&gt;&#xA;    interface IReadOnlyCollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IReadOnlyDictionary&lt;'Key, 'Value&gt;&#xA;    interface ICollection&#xA;    interface IDictionary&#xA;    interface IImmutableDictionary&lt;'Key, 'Value&gt;" />
+  <TypeSignature Language="F#" Value="type ImmutableSortedDictionary&lt;'Key, 'Value&gt; = class&#xA;    interface ICollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface IDictionary&lt;'Key, 'Value&gt;&#xA;    interface IReadOnlyCollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IReadOnlyDictionary&lt;'Key, 'Value&gt;&#xA;    interface ICollection&#xA;    interface IDictionary&#xA;    interface IImmutableDictionary&lt;'Key, 'Value&gt;" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.1.37.0</AssemblyVersion>
@@ -14,6 +15,8 @@
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
     <AssemblyVersion>1.2.4.0</AssemblyVersion>
     <AssemblyVersion>1.2.5.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TKey" />
@@ -55,11 +58,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("Count = {Count}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("Count = {Count}")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableSortedDictionaryDebuggerProxy`2))</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableSortedDictionaryDebuggerProxy`2))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableSortedDictionaryDebuggerProxy`2))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -77,8 +82,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; Add(!TKey key, !TValue value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.Add(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (key As TKey, value As TValue) As ImmutableSortedDictionary(Of TKey, TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Add(TKey key, TValue value);" />
       <MemberSignature Language="F#" Value="member this.Add : 'Key * 'Value -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.Add (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Add(TKey key, TValue value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -89,6 +94,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -118,8 +125,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; AddRange(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.AddRange(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddRange (items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableSortedDictionary(Of TKey, TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ AddRange(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
       <MemberSignature Language="F#" Value="member this.AddRange : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.AddRange items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ AddRange(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -130,6 +137,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -150,8 +159,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Function Clear () As ImmutableSortedDictionary(Of TKey, TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Clear();" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -162,6 +171,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -178,12 +189,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt; pair) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (pair As KeyValuePair(Of TKey, TValue)) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; pair);" />
       <MemberSignature Language="F#" Value="abstract member Contains : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; bool&#xA;override this.Contains : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; bool" Usage="immutableSortedDictionary.Contains pair" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; pair);" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
         <InterfaceMember>M:System.Collections.Immutable.IImmutableDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -194,6 +205,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -214,12 +227,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(!TKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.ContainsKey(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As TKey) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(TKey key);" />
       <MemberSignature Language="F#" Value="abstract member ContainsKey : 'Key -&gt; bool&#xA;override this.ContainsKey : 'Key -&gt; bool" Usage="immutableSortedDictionary.ContainsKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(TKey key);" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
         <InterfaceMember>M:System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -230,6 +243,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -250,8 +265,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsValue(!TValue value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.ContainsValue(`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsValue (value As TValue) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsValue(TValue value);" />
       <MemberSignature Language="F#" Value="member this.ContainsValue : 'Value -&gt; bool" Usage="immutableSortedDictionary.ContainsValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsValue(TValue value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -262,6 +277,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -282,13 +299,13 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
-        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -299,6 +316,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -314,8 +333,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; Empty" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Immutable.ImmutableSortedDictionary`2.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As ImmutableSortedDictionary(Of TKey, TValue) " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Empty;" />
       <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -326,6 +345,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -340,8 +361,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableSortedDictionary`2/Enumerator&lt;!TKey, !TValue&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ImmutableSortedDictionary(Of TKey, TValue).Enumerator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt;::Enumerator GetEnumerator();" />
       <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Enumerator" Usage="immutableSortedDictionary.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt;::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -352,6 +373,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;+Enumerator</ReturnType>
@@ -368,8 +391,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -380,6 +403,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -396,8 +421,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance !TValue Item(!TKey)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.Item(`0)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As TKey) As TValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue default[TKey] { TValue get(TKey key); };" />
       <MemberSignature Language="F#" Value="member this.Item('Key) : 'Value" Usage="System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue default[TKey] { TValue get(TKey key); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Item(`0)</InterfaceMember>
@@ -411,6 +436,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -430,8 +457,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IComparer`1&lt;!TKey&gt; KeyComparer" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.KeyComparer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyComparer As IComparer(Of TKey)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IComparer&lt;TKey&gt; ^ KeyComparer { System::Collections::Generic::IComparer&lt;TKey&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.KeyComparer : System.Collections.Generic.IComparer&lt;'Key&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.KeyComparer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IComparer&lt;TKey&gt; ^ KeyComparer { System::Collections::Generic::IComparer&lt;TKey&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -442,6 +469,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IComparer&lt;TKey&gt;</ReturnType>
@@ -457,8 +486,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;!TKey&gt; Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IEnumerable(Of TKey)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ Keys { System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Keys : seq&lt;'Key&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ Keys { System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Keys</InterfaceMember>
@@ -472,6 +501,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TKey&gt;</ReturnType>
@@ -487,8 +518,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; Remove(!TKey value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (value As TKey) As ImmutableSortedDictionary(Of TKey, TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Remove(TKey value);" />
       <MemberSignature Language="F#" Value="member this.Remove : 'Key -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ Remove(TKey value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -499,6 +530,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -518,8 +551,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; RemoveRange(class System.Collections.Generic.IEnumerable`1&lt;!TKey&gt; keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.RemoveRange(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveRange (keys As IEnumerable(Of TKey)) As ImmutableSortedDictionary(Of TKey, TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ RemoveRange(System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ keys);" />
       <MemberSignature Language="F#" Value="member this.RemoveRange : seq&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.RemoveRange keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ RemoveRange(System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ keys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -530,6 +563,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -549,8 +584,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; SetItem(!TKey key, !TValue value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.SetItem(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetItem (key As TKey, value As TValue) As ImmutableSortedDictionary(Of TKey, TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ SetItem(TKey key, TValue value);" />
       <MemberSignature Language="F#" Value="member this.SetItem : 'Key * 'Value -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.SetItem (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ SetItem(TKey key, TValue value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -561,6 +596,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -589,8 +626,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; SetItems(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.SetItems(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Function SetItems (items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As ImmutableSortedDictionary(Of TKey, TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ SetItems(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
       <MemberSignature Language="F#" Value="member this.SetItems : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.SetItems items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ SetItems(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -601,6 +638,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -620,6 +659,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Sub Add (item As KeyValuePair(Of TKey, TValue)) Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Add" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; unit&#xA;override this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; unit" Usage="immutableSortedDictionary.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add item" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add(System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; item) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -634,6 +674,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -642,8 +684,8 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+        <summary>Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -652,6 +694,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Clear" />
       <MemberSignature Language="VB.NET" Value="Sub Clear () Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Clear" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Clear : unit -&gt; unit&#xA;override this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Clear : unit -&gt; unit" Usage="immutableSortedDictionary.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Clear " />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Clear() = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;::Clear;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -666,13 +709,15 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -681,8 +726,12 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As KeyValuePair(Of TKey, TValue)(), arrayIndex As Integer) Implements ICollection(Of KeyValuePair(Of TKey, TValue)).CopyTo" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;[] * int -&gt; unit&#xA;override this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;[] * int -&gt; unit" Usage="immutableSortedDictionary.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo (array, arrayIndex)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ array, int arrayIndex) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.1.37.0</AssemblyVersion>
@@ -692,6 +741,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -701,9 +752,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.Generic.ICollection`1" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -712,8 +763,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).IsReadOnly" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly : bool" Usage="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey,TValue&gt;&gt;::IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -727,13 +778,16 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -742,6 +796,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Function Remove (item As KeyValuePair(Of TKey, TValue)) As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).Remove" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; bool&#xA;override this.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; bool" Usage="immutableSortedDictionary.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove item" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove(System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; item) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -756,6 +811,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -764,9 +821,10 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+        <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -775,6 +833,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add(!TKey key, !TValue value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Add(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Sub Add (key As TKey, value As TValue) Implements IDictionary(Of TKey, TValue).Add" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add : 'Key * 'Value -&gt; unit&#xA;override this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add : 'Key * 'Value -&gt; unit" Usage="immutableSortedDictionary.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add (key, value)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add(TKey key, TValue value) = System::Collections::Generic::IDictionary&lt;TKey, TValue&gt;::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -789,6 +848,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -798,10 +859,14 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The object to use as the key of the element to add.</param>
+        <param name="value">The object to use as the value of the element to add.</param>
+        <summary>Adds an element with the provided key and value to the generic dictionary.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Item">
@@ -809,8 +874,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance !TValue System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Item(!TKey)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Item(`0)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As TKey) As TValue Implements IDictionary(Of TKey, TValue).Item" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Item('Key) : 'Value with get, set" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Item" />
       <MemberSignature Language="C++ CLI" Value="property TValue System::Collections::Generic::IDictionary&lt;TKey,TValue&gt;::Item[TKey] { TValue get(TKey key); void set(TKey key, TValue value); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -824,6 +889,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -832,9 +899,9 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The object to use as the key of the element to access.</param>
+        <summary>Gets or sets the <typeparamref name="TValue" /> with the specified key.</summary>
+        <value>An object of type <typeparamref name="TValue" /> associated with the <paramref name="key" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -843,8 +910,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;!TKey&gt; System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of TKey) Implements IDictionary(Of TKey, TValue).Keys" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys : System.Collections.Generic.ICollection&lt;'Key&gt;" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TKey&gt; ^ System::Collections::Generic::IDictionary&lt;TKey,TValue&gt;::Keys { System::Collections::Generic::ICollection&lt;TKey&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -858,13 +925,15 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;TKey&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the keys.</summary>
+        <value>A collection containing the keys.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -873,6 +942,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove(!TKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Function Remove (key As TKey) As Boolean Implements IDictionary(Of TKey, TValue).Remove" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove : 'Key -&gt; bool&#xA;override this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove : 'Key -&gt; bool" Usage="immutableSortedDictionary.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove key" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove(TKey key) = System::Collections::Generic::IDictionary&lt;TKey, TValue&gt;::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -887,6 +957,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -895,10 +967,14 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the element with the specified key from the generic dictionary.</summary>
+        <returns>
+          <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />.  This method also returns <see langword="false" /> if <paramref name="key" /> was not found in the original generic dictionary.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values">
@@ -906,8 +982,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;!TValue&gt; System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#IDictionary&lt;TKey,TValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of TValue) Implements IDictionary(Of TKey, TValue).Values" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values : System.Collections.Generic.ICollection&lt;'Value&gt;" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;TValue&gt; ^ System::Collections::Generic::IDictionary&lt;TKey,TValue&gt;::Values { System::Collections::Generic::ICollection&lt;TValue&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -921,13 +997,15 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;TValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the values.</summary>
+        <value>A collection containing the values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -936,6 +1014,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt; System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of TKey, TValue)) Implements IEnumerable(Of KeyValuePair(Of TKey, TValue)).GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;override this.System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt;" Usage="immutableSortedDictionary.System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.GetEnumerator " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -950,14 +1029,16 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -965,6 +1046,8 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As Array, index As Integer) Implements ICollection.CopyTo" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.ICollection.CopyTo : Array * int -&gt; unit&#xA;override this.System.Collections.ICollection.CopyTo : Array * int -&gt; unit" Usage="immutableSortedDictionary.System.Collections.ICollection.CopyTo (array, index)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -979,6 +1062,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1006,8 +1091,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.IsSynchronized : bool" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1021,10 +1106,13 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1">
+          <AttributeName Language="C#">[System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1034,7 +1122,15 @@
         <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
         <value>
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary`2> instance is cast to an <xref:System.Collections.ICollection> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -1042,8 +1138,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.SyncRoot : obj" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1057,10 +1153,13 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1">
+          <AttributeName Language="C#">[System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1069,7 +1168,15 @@
       <Docs>
         <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary`2> instance is cast to an <xref:System.Collections.ICollection> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Add">
@@ -1077,6 +1184,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Add(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#Add(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Add (key As Object, value As Object) Implements IDictionary.Add" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.Add : obj * obj -&gt; unit&#xA;override this.System.Collections.IDictionary.Add : obj * obj -&gt; unit" Usage="immutableSortedDictionary.System.Collections.IDictionary.Add (key, value)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Add(System::Object ^ key, System::Object ^ value) = System::Collections::IDictionary::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1091,6 +1199,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1118,6 +1228,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#Clear" />
       <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IDictionary.Clear" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.Clear : unit -&gt; unit&#xA;override this.System.Collections.IDictionary.Clear : unit -&gt; unit" Usage="immutableSortedDictionary.System.Collections.IDictionary.Clear " />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Clear() = System::Collections::IDictionary::Clear;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1132,6 +1243,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1155,6 +1268,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IDictionary.Contains(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (key As Object) As Boolean Implements IDictionary.Contains" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.Contains : obj -&gt; bool&#xA;override this.System.Collections.IDictionary.Contains : obj -&gt; bool" Usage="immutableSortedDictionary.System.Collections.IDictionary.Contains key" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IDictionary.Contains(System::Object ^ key) = System::Collections::IDictionary::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1169,6 +1283,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1196,6 +1312,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator System.Collections.IDictionary.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IDictionaryEnumerator Implements IDictionary.GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator&#xA;override this.System.Collections.IDictionary.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="immutableSortedDictionary.System.Collections.IDictionary.GetEnumerator " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IDictionaryEnumerator ^ System.Collections.IDictionary.GetEnumerator() = System::Collections::IDictionary::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1210,6 +1327,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IDictionaryEnumerator</ReturnType>
@@ -1233,8 +1352,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.IsFixedSize : bool" Usage="System.Collections.IDictionary.IsFixedSize" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsFixedSize { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -1248,6 +1367,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1256,7 +1377,15 @@
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.IDictionary" /> object has a fixed size.</summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> object has a fixed size; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary`2> instance is cast to an <xref:System.Collections.IDictionary> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsReadOnly">
@@ -1264,8 +1393,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.IsReadOnly : bool" Usage="System.Collections.IDictionary.IsReadOnly" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -1279,6 +1408,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1287,16 +1418,25 @@
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary`2> instance is cast to an <xref:System.Collections.IDictionary> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Item">
-      <MemberSignature Language="C#" Value="object System.Collections.IDictionary.Item[object key] { get; set; }" />
+      <MemberSignature Language="C#" Value="object System.Collections.IDictionary.Item[object key] { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionary.Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.Item(obj) : obj with get, set" Usage="System.Collections.IDictionary.Item" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IDictionary::Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Item" />
+      <MemberSignature Language="C#" Value="object? System.Collections.IDictionary.Item[object key] { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -1310,6 +1450,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1318,9 +1460,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">The key.</param>
+        <param name="key">The key of the element to be accessed.</param>
         <summary>Gets or sets the element with the specified key.</summary>
-        <value>To be added.</value>
+        <value>Value stored under the specified key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1329,8 +1471,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.Keys : System.Collections.ICollection" Usage="System.Collections.IDictionary.Keys" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Keys { System::Collections::ICollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -1344,6 +1486,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
@@ -1351,7 +1495,15 @@
       <Docs>
         <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
         <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the keys of the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary`2> instance is cast to an <xref:System.Collections.IDictionary> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -1359,6 +1511,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Remove(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (key As Object) Implements IDictionary.Remove" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IDictionary.Remove : obj -&gt; unit&#xA;override this.System.Collections.IDictionary.Remove : obj -&gt; unit" Usage="immutableSortedDictionary.System.Collections.IDictionary.Remove key" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Remove(System::Object ^ key) = System::Collections::IDictionary::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1373,6 +1526,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1398,8 +1553,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IDictionary#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IDictionary.Values : System.Collections.ICollection" Usage="System.Collections.IDictionary.Values" />
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Values { System::Collections::ICollection ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
@@ -1413,6 +1568,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
@@ -1420,7 +1577,15 @@
       <Docs>
         <summary>Gets an <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
         <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> containing the values in the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedDictionary`2> instance is cast to an <xref:System.Collections.IDictionary> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1428,6 +1593,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="immutableSortedDictionary.System.Collections.IEnumerable.GetEnumerator " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1442,6 +1608,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -1465,6 +1633,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableDictionary`2&lt;!TKey, !TValue&gt; System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Add(!TKey key, !TValue value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Immutable#IImmutableDictionary&lt;TKey,TValue&gt;#Add(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Function Add (key As TKey, value As TValue) As IImmutableDictionary(Of TKey, TValue) Implements IImmutableDictionary(Of TKey, TValue).Add" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Add : 'Key * 'Value -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;&#xA;override this.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Add : 'Key * 'Value -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Add (key, value)" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Add(TKey key, TValue value) = System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt;::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1479,6 +1648,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -1488,10 +1659,10 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">Key of the entry to be added.</param>
+        <param name="value">Value of the entry to be added.</param>
+        <summary>See the <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> interface.</summary>
+        <returns>The <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1500,6 +1671,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableDictionary`2&lt;!TKey, !TValue&gt; System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.AddRange(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt; pairs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Immutable#IImmutableDictionary&lt;TKey,TValue&gt;#AddRange(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Function AddRange (pairs As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As IImmutableDictionary(Of TKey, TValue) Implements IImmutableDictionary(Of TKey, TValue).AddRange" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.AddRange : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;&#xA;override this.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.AddRange : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.AddRange pairs" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.AddRange(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ pairs) = System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt;::AddRange;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1514,6 +1686,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -1522,9 +1696,9 @@
         <Parameter Name="pairs" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="pairs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pairs">Sequence of key/value pairs to be added.</param>
+        <summary>See the <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> interface.</summary>
+        <returns>The <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1533,6 +1707,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableDictionary`2&lt;!TKey, !TValue&gt; System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Immutable#IImmutableDictionary&lt;TKey,TValue&gt;#Clear" />
       <MemberSignature Language="VB.NET" Value="Function Clear () As IImmutableDictionary(Of TKey, TValue) Implements IImmutableDictionary(Of TKey, TValue).Clear" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Clear : unit -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;&#xA;override this.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Clear : unit -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Clear " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Clear() = System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt;::Clear;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1547,14 +1722,16 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>See the <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> interface.</summary>
+        <returns>The <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1563,6 +1740,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableDictionary`2&lt;!TKey, !TValue&gt; System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Remove(!TKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Immutable#IImmutableDictionary&lt;TKey,TValue&gt;#Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Function Remove (key As TKey) As IImmutableDictionary(Of TKey, TValue) Implements IImmutableDictionary(Of TKey, TValue).Remove" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Remove : 'Key -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;&#xA;override this.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Remove : 'Key -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Remove key" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.Remove(TKey key) = System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt;::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1577,6 +1755,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -1585,9 +1765,9 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">Key of entry to be removed.</param>
+        <summary>See the <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> interface.</summary>
+        <returns>The <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1596,6 +1776,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableDictionary`2&lt;!TKey, !TValue&gt; System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.RemoveRange(class System.Collections.Generic.IEnumerable`1&lt;!TKey&gt; keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Immutable#IImmutableDictionary&lt;TKey,TValue&gt;#RemoveRange(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Function RemoveRange (keys As IEnumerable(Of TKey)) As IImmutableDictionary(Of TKey, TValue) Implements IImmutableDictionary(Of TKey, TValue).RemoveRange" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.RemoveRange : seq&lt;'Key&gt; -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;&#xA;override this.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.RemoveRange : seq&lt;'Key&gt; -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.RemoveRange keys" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.RemoveRange(System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ keys) = System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt;::RemoveRange;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1610,6 +1791,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -1618,9 +1801,9 @@
         <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <param name="keys">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keys">Sequence of keys to be removed.</param>
+        <summary>See the <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> interface.</summary>
+        <returns>The <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1629,6 +1812,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableDictionary`2&lt;!TKey, !TValue&gt; System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItem(!TKey key, !TValue value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Immutable#IImmutableDictionary&lt;TKey,TValue&gt;#SetItem(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Function SetItem (key As TKey, value As TValue) As IImmutableDictionary(Of TKey, TValue) Implements IImmutableDictionary(Of TKey, TValue).SetItem" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItem : 'Key * 'Value -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;&#xA;override this.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItem : 'Key * 'Value -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItem (key, value)" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItem(TKey key, TValue value) = System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt;::SetItem;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1643,6 +1827,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -1652,10 +1838,10 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">Key of entry to be updated.</param>
+        <param name="value">Value of entry to be updated.</param>
+        <summary>See the <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> interface.</summary>
+        <returns>The <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1664,6 +1850,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableDictionary`2&lt;!TKey, !TValue&gt; System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItems(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.System#Collections#Immutable#IImmutableDictionary&lt;TKey,TValue&gt;#SetItems(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Function SetItems (items As IEnumerable(Of KeyValuePair(Of TKey, TValue))) As IImmutableDictionary(Of TKey, TValue) Implements IImmutableDictionary(Of TKey, TValue).SetItems" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItems : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;&#xA;override this.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItems : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Immutable.IImmutableDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItems items" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt; ^ System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;.SetItems(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ items) = System::Collections::Immutable::IImmutableDictionary&lt;TKey, TValue&gt;::SetItems;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1678,6 +1865,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -1686,9 +1875,9 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="items">A set of key-value pairs to set on the map.</param>
+        <summary>Applies a given set of key-value pairs to an immutable dictionary, replacing any conflicting keys in the resulting dictionary.</summary>
+        <returns>The <see cref="T:System.Collections.Immutable.IImmutableDictionary`2" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1697,8 +1886,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2/Builder&lt;!TKey, !TValue&gt; ToBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.ToBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Function ToBuilder () As ImmutableSortedDictionary(Of TKey, TValue).Builder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt;::Builder ^ ToBuilder();" />
       <MemberSignature Language="F#" Value="member this.ToBuilder : unit -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Builder" Usage="immutableSortedDictionary.ToBuilder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt;::Builder ^ ToBuilder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1709,6 +1898,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;+Builder</ReturnType>
@@ -1732,8 +1923,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetKey(!TKey equalKey, [out] !TKey&amp; actualKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.TryGetKey(`0,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetKey (equalKey As TKey, ByRef actualKey As TKey) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetKey(TKey equalKey, [Runtime::InteropServices::Out] TKey % actualKey);" />
       <MemberSignature Language="F#" Value="abstract member TryGetKey : 'Key * 'Key -&gt; bool&#xA;override this.TryGetKey : 'Key * 'Key -&gt; bool" Usage="immutableSortedDictionary.TryGetKey (equalKey, actualKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetKey(TKey equalKey, [Runtime::InteropServices::Out] TKey % actualKey);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Immutable.IImmutableDictionary`2.TryGetKey(`0,`0@)</InterfaceMember>
@@ -1747,6 +1938,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1782,12 +1975,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.TryGetValue(`0,`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As TKey, ByRef value As TValue) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(TKey key, [Runtime::InteropServices::Out] TValue % value);" />
       <MemberSignature Language="F#" Value="abstract member TryGetValue : 'Key * 'Value -&gt; bool&#xA;override this.TryGetValue : 'Key * 'Value -&gt; bool" Usage="immutableSortedDictionary.TryGetValue (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(TKey key, [Runtime::InteropServices::Out] TValue % value);" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
         <InterfaceMember>M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1798,6 +1991,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1820,8 +2015,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEqualityComparer`1&lt;!TValue&gt; ValueComparer" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.ValueComparer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueComparer As IEqualityComparer(Of TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ ValueComparer { System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ValueComparer : System.Collections.Generic.IEqualityComparer&lt;'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.ValueComparer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ ValueComparer { System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1832,6 +2027,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEqualityComparer&lt;TValue&gt;</ReturnType>
@@ -1847,30 +2044,33 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TValue ValueRef(!TKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.ValueRef(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValueRef (key As TKey) As TValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue&amp; ^ ValueRef(TKey key);" />
       <MemberSignature Language="F#" Value="member this.ValueRef : 'Key -&gt; 'Value" Usage="immutableSortedDictionary.ValueRef key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue&amp; ^ ValueRef(TKey key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Readonly">
         <ReturnType>TValue</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
-            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+          <Attribute FrameworkAlternate="net-5.0">
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="TKey" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
+        <Parameter Name="key" Type="TKey" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
+        <param name="key">Key of the entry to be looked up.</param>
         <summary>Returns a read-only reference to the value associated with the provided <paramref name="key" />.</summary>
-        <returns>To be added.</returns>
+        <returns>A read-only reference to the value associated with the provided <paramref name="key" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The <paramref name="key" /> is not present.</exception>
       </Docs>
@@ -1880,8 +2080,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;!TValue&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Immutable.ImmutableSortedDictionary`2.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IEnumerable(Of TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ Values { System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Values : seq&lt;'Value&gt;" Usage="System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ Values { System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Values</InterfaceMember>
@@ -1895,6 +2095,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TValue&gt;</ReturnType>
@@ -1906,12 +2108,13 @@
       </Docs>
     </Member>
     <Member MemberName="WithComparers">
-      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt; WithComparers (System.Collections.Generic.IComparer&lt;TKey&gt; keyComparer);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt; WithComparers (System.Collections.Generic.IComparer&lt;TKey&gt; keyComparer);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; WithComparers(class System.Collections.Generic.IComparer`1&lt;!TKey&gt; keyComparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.WithComparers(System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function WithComparers (keyComparer As IComparer(Of TKey)) As ImmutableSortedDictionary(Of TKey, TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ WithComparers(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer);" />
       <MemberSignature Language="F#" Value="member this.WithComparers : System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.WithComparers keyComparer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ WithComparers(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt; WithComparers (System.Collections.Generic.IComparer&lt;TKey&gt;? keyComparer);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1922,6 +2125,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>
@@ -1937,12 +2142,13 @@
       </Docs>
     </Member>
     <Member MemberName="WithComparers">
-      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt; WithComparers (System.Collections.Generic.IComparer&lt;TKey&gt; keyComparer, System.Collections.Generic.IEqualityComparer&lt;TValue&gt; valueComparer);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt; WithComparers (System.Collections.Generic.IComparer&lt;TKey&gt; keyComparer, System.Collections.Generic.IEqualityComparer&lt;TValue&gt; valueComparer);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableSortedDictionary`2&lt;!TKey, !TValue&gt; WithComparers(class System.Collections.Generic.IComparer`1&lt;!TKey&gt; keyComparer, class System.Collections.Generic.IEqualityComparer`1&lt;!TValue&gt; valueComparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.WithComparers(System.Collections.Generic.IComparer{`0},System.Collections.Generic.IEqualityComparer{`1})" />
       <MemberSignature Language="VB.NET" Value="Public Function WithComparers (keyComparer As IComparer(Of TKey), valueComparer As IEqualityComparer(Of TValue)) As ImmutableSortedDictionary(Of TKey, TValue)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ WithComparers(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
       <MemberSignature Language="F#" Value="member this.WithComparers : System.Collections.Generic.IComparer&lt;'Key&gt; * System.Collections.Generic.IEqualityComparer&lt;'Value&gt; -&gt; System.Collections.Immutable.ImmutableSortedDictionary&lt;'Key, 'Value&gt;" Usage="immutableSortedDictionary.WithComparers (keyComparer, valueComparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedDictionary&lt;TKey, TValue&gt; ^ WithComparers(System::Collections::Generic::IComparer&lt;TKey&gt; ^ keyComparer, System::Collections::Generic::IEqualityComparer&lt;TValue&gt; ^ valueComparer);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt; WithComparers (System.Collections.Generic.IComparer&lt;TKey&gt;? keyComparer, System.Collections.Generic.IEqualityComparer&lt;TValue&gt;? valueComparer);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1953,6 +2159,8 @@
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
         <AssemblyVersion>1.2.4.0</AssemblyVersion>
         <AssemblyVersion>1.2.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue&gt;</ReturnType>

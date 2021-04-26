@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlButton extends System.Web.UI.HtmlControls.HtmlContainerControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlButton" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlButton&#xA;Inherits HtmlContainerControl&#xA;Implements IPostBackEventHandler" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HtmlButton : System::Web::UI::HtmlControls::HtmlContainerControl, System::Web::UI::IPostBackEventHandler" />
   <TypeSignature Language="F#" Value="type HtmlButton = class&#xA;    inherit HtmlContainerControl&#xA;    interface IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlButton : System::Web::UI::HtmlControls::HtmlContainerControl, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -21,10 +21,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultEvent("ServerClick")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultEvent("ServerClick")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultEvent("ServerClick")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+      <AttributeName Language="C#">[System.Web.UI.SupportsEventValidation]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.SupportsEventValidation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,7 +43,7 @@
  To perform a set of custom instructions when the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked, provide a custom event handler for the <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.HtmlControls.HtmlButton> control renders ECMAScript to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
+>  The <xref:System.Web.UI.HtmlControls.HtmlButton> control renders ECMAScript to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](https://docs.microsoft.com/previous-versions/aspnet/3hc29e2a(v=vs.100)).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlButton>, see the <xref:System.Web.UI.HtmlControls.HtmlButton.%23ctor%2A> constructor.  
   
@@ -53,14 +55,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event to display the name entered in the text box.  
   
- [!code-aspx-csharp[Classic HtmlButton Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlButton Example/cs/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic HtmlButton Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlButton Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlButton Example/cs/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlButton Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
     <altmember cref="E:System.Web.UI.HtmlControls.HtmlButton.ServerClick" />
-    <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/3hc29e2a(v=vs.100)">Client Script in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,8 +98,8 @@
 ## Examples  
  The following code example demonstrates how to dynamically add an <xref:System.Web.UI.HtmlControls.HtmlButton> control to the Web Forms page.  
   
- [!code-aspx-csharp[HtmlButtonConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonConstructor/CS/htmlbuttonconstructorcs.aspx#1)]
- [!code-aspx-vb[HtmlButtonConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonConstructor/VB/htmlbuttonconstructorvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonConstructor/CS/htmlbuttonconstructorcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonConstructor/VB/htmlbuttonconstructorvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -108,8 +110,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlButton.CausesValidation" />
       <MemberSignature Language="VB.NET" Value="Public Property CausesValidation As Boolean" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CausesValidation { bool get(); void set(bool value); };" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.HtmlControls.HtmlButton.CausesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CausesValidation { bool get(); void set(bool value); };" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -122,7 +124,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -147,8 +150,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlButton.CausesValidation%2A> property to prevent page validation from occurring. Note that the <xref:System.Web.UI.WebControls.BaseValidator.Validate%2A> method activates each validation control independently.  
   
- [!code-aspx-csharp[HtmlButtonCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonCausesValidation/CS/htmlbuttoncausesvalidationcs.aspx#1)]
- [!code-aspx-vb[HtmlButtonCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonCausesValidation/VB/htmlbuttoncausesvalidationvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonCausesValidation/CS/htmlbuttoncausesvalidationcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonCausesValidation/VB/htmlbuttoncausesvalidationvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -161,8 +164,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlButton.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlButton.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -194,11 +197,11 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlButton.OnPreRender%2A> method in a custom server control so that it always displays the <xref:System.Web.UI.HtmlControls.HtmlButton> with bold text.  
   
- [!code-aspx-csharp[CustomHtmlButtonOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlButtonOnPreRender/CS/custom_htmlbutton_onprerendercs.aspx#1)]
- [!code-aspx-vb[CustomHtmlButtonOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlButtonOnPreRender/VB/custom_htmlbutton_onprerendervb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlButtonOnPreRender/CS/custom_htmlbutton_onprerendercs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlButtonOnPreRender/VB/custom_htmlbutton_onprerendervb.aspx" id="Snippet1":::  
   
- [!code-csharp[CustomHtmlButtonOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlButtonOnPreRender/CS/custom_htmlbutton_onprerender.cs#2)]
- [!code-vb[CustomHtmlButtonOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlButtonOnPreRender/VB/custom_htmlbutton_onprerender.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlButtonOnPreRender/CS/custom_htmlbutton_onprerender.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlButtonOnPreRender/VB/custom_htmlbutton_onprerender.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -209,8 +212,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnServerClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlButton.OnServerClick(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnServerClick (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnServerClick(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnServerClick : EventArgs -&gt; unit&#xA;override this.OnServerClick : EventArgs -&gt; unit" Usage="htmlButton.OnServerClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnServerClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -233,7 +236,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked. This event causes a round trip to occur from the client to the server and back. It is deliberately different from the client-side `OnClick` event. If a conflict exists between code run with a <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event and code run by a client-side `OnClick` event, the server-side event instructions will override the client-side code.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlButton.OnServerClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -242,13 +245,13 @@
 ## Examples  
  The following code example demonstrates how to declaratively specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event. When the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked, the value entered in the text box is displayed.  
   
- [!code-aspx-csharp[Classic HtmlButton Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlButton Example/cs/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic HtmlButton Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlButton Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlButton Example/cs/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlButton Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  The following code example demonstrates how to programmatically specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event.  
   
- [!code-aspx-csharp[HtmlButtonConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonConstructor/CS/htmlbuttonconstructorcs.aspx#1)]
- [!code-aspx-vb[HtmlButtonConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonConstructor/VB/htmlbuttonconstructorvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonConstructor/CS/htmlbuttonconstructorcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonConstructor/VB/htmlbuttonconstructorvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -263,12 +266,9 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlButton.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="htmlButton.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -304,8 +304,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlButton.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlButton.RenderAttributes writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -335,11 +335,11 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlButton.RenderAttributes%2A> method in a custom server control so that a title is always displayed for the <xref:System.Web.UI.HtmlControls.HtmlButton> control.  
   
- [!code-aspx-csharp[CustomHtmlButtonRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlButtonRenderAttributes/CS/custom_htmlbutton_renderattributescs.aspx#1)]
- [!code-aspx-vb[CustomHtmlButtonRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlButtonRenderAttributes/VB/custom_htmlbutton_renderattributesvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlButtonRenderAttributes/CS/custom_htmlbutton_renderattributescs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlButtonRenderAttributes/VB/custom_htmlbutton_renderattributesvb.aspx" id="Snippet1":::  
   
- [!code-csharp[CustomHtmlButtonRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlButtonRenderAttributes/CS/custom_htmlbutton_renderattributes.cs#2)]
- [!code-vb[CustomHtmlButtonRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlButtonRenderAttributes/VB/custom_htmlbutton_renderattributes.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlButtonRenderAttributes/CS/custom_htmlbutton_renderattributes.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlButtonRenderAttributes/VB/custom_htmlbutton_renderattributes.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -351,8 +351,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ServerClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.HtmlControls.HtmlButton.ServerClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ServerClick As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ServerClick;" />
       <MemberSignature Language="F#" Value="member this.ServerClick : EventHandler " Usage="member this.ServerClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ServerClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -371,20 +371,20 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked. This server event causes a round trip to occur from the client to the server and back. It is deliberately different from the client-side `OnClick` event. If a conflict exists between code run with a <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event and code run by a client-side `OnClick` event, the server-side event instructions will override the client-side code.  
   
- For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about how to handle events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example demonstrates how to declaratively specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event. When the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked, the value entered in the text box is displayed.  
   
- [!code-aspx-csharp[Classic HtmlButton Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlButton Example/cs/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic HtmlButton Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlButton Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlButton Example/cs/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlButton Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  The following code example demonstrates how to programmatically specify and code an event handler for the <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event.  
   
- [!code-aspx-csharp[HtmlButtonConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonConstructor/CS/htmlbuttonconstructorcs.aspx#1)]
- [!code-aspx-vb[HtmlButtonConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonConstructor/VB/htmlbuttonconstructorvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonConstructor/CS/htmlbuttonconstructorcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonConstructor/VB/htmlbuttonconstructorvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -396,6 +396,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlButton.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="F#" Value="abstract member System.Web.UI.IPostBackEventHandler.RaisePostBackEvent : string -&gt; unit&#xA;override this.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent : string -&gt; unit" Usage="htmlButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent eventArgument" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -409,7 +410,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -429,8 +431,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlButton.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlButton.ValidationGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -439,7 +441,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -461,8 +464,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlButton.ValidationGroup%2A> property to specify the controls to validate when an <xref:System.Web.UI.HtmlControls.HtmlButton> control posts back to the server. The page contains two text boxes to capture data from the user and two <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls to ensure that the user does not leave a text box blank. The <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the first text box is in the `CityInfoGroup` validation group and the <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the second box is in the `StateInfoGroup` validation group. When the `CityQueryButton` is clicked, only the control in the `CityInfoGroup` validation group is validated. When the `StateQueryButton` is clicked, only the control in the `StateInfoGroup` validation group is validated.  
   
- [!code-aspx-csharp[HtmlButtonValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonValidationGroup/CS/htmlbuttonvalidationgroupcs.aspx#1)]
- [!code-aspx-vb[HtmlButtonValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonValidationGroup/VB/htmlbuttonvalidationgroupvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlButtonValidationGroup/CS/htmlbuttonvalidationgroupcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlButtonValidationGroup/VB/htmlbuttonvalidationgroupvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>

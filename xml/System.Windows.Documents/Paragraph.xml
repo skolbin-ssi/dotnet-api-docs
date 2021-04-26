@@ -1,14 +1,17 @@
 <Type Name="Paragraph" FullName="System.Windows.Documents.Paragraph">
   <TypeSignature Language="C#" Value="public class Paragraph : System.Windows.Documents.Block" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi Paragraph extends System.Windows.Documents.Block" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Paragraph extends System.Windows.Documents.Block" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Paragraph" />
   <TypeSignature Language="VB.NET" Value="Public Class Paragraph&#xA;Inherits Block" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Paragraph : System::Windows::Documents::Block" />
   <TypeSignature Language="F#" Value="type Paragraph = class&#xA;    inherit Block" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Paragraph : System::Windows::Documents::Block" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Paragraph extends System.Windows.Documents.Block" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Documents.Block</BaseTypeName>
@@ -16,7 +19,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Windows.Markup.ContentProperty("Inlines")</AttributeName>
+      <AttributeName Language="C#">[System.Windows.Markup.ContentProperty("Inlines")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Windows.Markup.ContentProperty("Inlines")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -25,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Documents.Paragraph> enforces a strong content model for child content. See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information about the <xref:System.Windows.Documents.Paragraph> content model.  
+ <xref:System.Windows.Documents.Paragraph> enforces a strong content model for child content. See [TextElement Content Model Overview](/dotnet/framework/wpf/advanced/textelement-content-model-overview) for more information about the <xref:System.Windows.Documents.Paragraph> content model.  
   
  In addition to plain text, a <xref:System.Windows.Documents.Paragraph> element can host other <xref:System.Windows.Documents.Inline> elements.  Valid child elements include:  
   
@@ -49,7 +53,7 @@
   
 -   <xref:System.Windows.Documents.Underline>  
   
- See [Flow Document Overview](~/docs/framework/wpf/advanced/flow-document-overview.md) for more information on what this object can contain and what can contain it.  
+ See [Flow Document Overview](/dotnet/framework/wpf/advanced/flow-document-overview) for more information on what this object can contain and what can contain it.  
   
  ]]></format>
     </remarks>
@@ -75,10 +79,13 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -91,13 +98,16 @@
       <MemberSignature Language="C#" Value="public Paragraph (System.Windows.Documents.Inline inline);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.Inline inline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Paragraph.#ctor(System.Windows.Documents.Inline)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Paragraph(System::Windows::Documents::Inline ^ inline);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inline As Inline)" />
       <MemberSignature Language="F#" Value="new System.Windows.Documents.Paragraph : System.Windows.Documents.Inline -&gt; System.Windows.Documents.Paragraph" Usage="new System.Windows.Documents.Paragraph inline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Paragraph(System::Windows::Documents::Inline ^ inline);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inline" Type="System.Windows.Documents.Inline" />
@@ -111,8 +121,8 @@
 ## Examples  
  The following example demonstrates usage of this constructor.  
   
- [!code-csharp[SpanSnippets#_Paragraph_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_paragraph_const1)]
- [!code-vb[SpanSnippets#_Paragraph_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_paragraph_const1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs" id="Snippet_paragraph_const1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb" id="Snippet_paragraph_const1":::  
   
  ]]></format>
         </remarks>
@@ -123,17 +133,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.InlineCollection Inlines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.Inlines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Inlines As InlineCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::InlineCollection ^ Inlines { System::Windows::Documents::InlineCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Inlines : System.Windows.Documents.InlineCollection" Usage="System.Windows.Documents.Paragraph.Inlines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::InlineCollection ^ Inlines { System::Windows::Documents::InlineCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -159,13 +172,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepTogether" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.KeepTogether" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepTogether As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepTogether { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.KeepTogether : bool with get, set" Usage="System.Windows.Documents.Paragraph.KeepTogether" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepTogether { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -199,13 +214,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeepTogetherProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.KeepTogetherProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeepTogetherProperty As DependencyProperty " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeepTogetherProperty;" />
       <MemberSignature Language="F#" Value=" staticval mutable KeepTogetherProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.KeepTogetherProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeepTogetherProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
@@ -220,13 +237,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepWithNext" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.KeepWithNext" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepWithNext As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepWithNext { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.KeepWithNext : bool with get, set" Usage="System.Windows.Documents.Paragraph.KeepWithNext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepWithNext { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -260,13 +279,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeepWithNextProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.KeepWithNextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeepWithNextProperty As DependencyProperty " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeepWithNextProperty;" />
       <MemberSignature Language="F#" Value=" staticval mutable KeepWithNextProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.KeepWithNextProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeepWithNextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
@@ -281,13 +302,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinOrphanLines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.MinOrphanLines" />
       <MemberSignature Language="VB.NET" Value="Public Property MinOrphanLines As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinOrphanLines { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.MinOrphanLines : int with get, set" Usage="System.Windows.Documents.Paragraph.MinOrphanLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinOrphanLines { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -322,13 +345,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MinOrphanLinesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.MinOrphanLinesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinOrphanLinesProperty As DependencyProperty " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinOrphanLinesProperty;" />
       <MemberSignature Language="F#" Value=" staticval mutable MinOrphanLinesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.MinOrphanLinesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinOrphanLinesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
@@ -343,13 +368,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinWidowLines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.MinWidowLines" />
       <MemberSignature Language="VB.NET" Value="Public Property MinWidowLines As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinWidowLines { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.MinWidowLines : int with get, set" Usage="System.Windows.Documents.Paragraph.MinWidowLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinWidowLines { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -384,13 +411,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MinWidowLinesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.MinWidowLinesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinWidowLinesProperty As DependencyProperty " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinWidowLinesProperty;" />
       <MemberSignature Language="F#" Value=" staticval mutable MinWidowLinesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.MinWidowLinesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinWidowLinesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
@@ -405,17 +434,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeInlines(class System.Windows.Markup.XamlDesignerSerializationManager manager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Paragraph.ShouldSerializeInlines(System.Windows.Markup.XamlDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeInlines (manager As XamlDesignerSerializationManager) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeInlines(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeInlines : System.Windows.Markup.XamlDesignerSerializationManager -&gt; bool" Usage="paragraph.ShouldSerializeInlines manager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeInlines(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -446,13 +478,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TextDecorationCollection TextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.TextDecorations" />
       <MemberSignature Language="VB.NET" Value="Public Property TextDecorations As TextDecorationCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecorationCollection ^ TextDecorations { System::Windows::TextDecorationCollection ^ get(); void set(System::Windows::TextDecorationCollection ^ value); };" />
       <MemberSignature Language="F#" Value="member this.TextDecorations : System.Windows.TextDecorationCollection with get, set" Usage="System.Windows.Documents.Paragraph.TextDecorations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecorationCollection ^ TextDecorations { System::Windows::TextDecorationCollection ^ get(); void set(System::Windows::TextDecorationCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
@@ -464,7 +498,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline.  For more information about text decorations, see [How to: Create a Text Decoration](~/docs/framework/wpf/advanced/how-to-create-a-text-decoration.md).  
+ A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline.  For more information about text decorations, see [How to: Create a Text Decoration](/dotnet/framework/wpf/advanced/how-to-create-a-text-decoration).  
   
 <a name="dependencyPropertyInfo_TextDecorations"></a>   
 ## Dependency Property Information  
@@ -479,10 +513,10 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Documents.Paragraph.TextDecorations%2A> property of a <xref:System.Windows.Documents.Paragraph>.  
   
- [!code-xaml[InlineSnippets#_Paragraph_TextDecXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_paragraph_textdecxaml)]  
+ :::code language="xaml" source="~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml" id="Snippet_paragraph_textdecxaml":::  
   
- [!code-csharp[InlineSnippets#_Paragraph_TextDec](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_paragraph_textdec)]
- [!code-vb[InlineSnippets#_Paragraph_TextDec](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_paragraph_textdec)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs" id="Snippet_paragraph_textdec":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb" id="Snippet_paragraph_textdec":::  
   
  The following figure shows how this example renders.  
   
@@ -505,13 +539,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextDecorationsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.TextDecorationsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextDecorationsProperty As DependencyProperty " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextDecorationsProperty;" />
       <MemberSignature Language="F#" Value=" staticval mutable TextDecorationsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.TextDecorationsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextDecorationsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
@@ -526,17 +562,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 TextIndent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.TextIndent" />
       <MemberSignature Language="VB.NET" Value="Public Property TextIndent As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TextIndent { double get(); void set(double value); };" />
       <MemberSignature Language="F#" Value="member this.TextIndent : double with get, set" Usage="System.Windows.Documents.Paragraph.TextIndent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TextIndent { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -569,7 +608,7 @@
  *qualifiedDouble*  
  A `double` value as described above, (except `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
   
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ `px` (default) is device-independent units (1/96th inch per unit)  
   
  `in` is inches; 1in==96px  
   
@@ -594,13 +633,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextIndentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.TextIndentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextIndentProperty As DependencyProperty " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextIndentProperty;" />
       <MemberSignature Language="F#" Value=" staticval mutable TextIndentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.TextIndentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextIndentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>

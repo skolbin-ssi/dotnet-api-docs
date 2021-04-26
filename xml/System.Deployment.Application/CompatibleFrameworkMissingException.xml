@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CompatibleFrameworkMissingException extends System.Deployment.Application.DependentPlatformMissingException" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.CompatibleFrameworkMissingException" />
   <TypeSignature Language="VB.NET" Value="Public Class CompatibleFrameworkMissingException&#xA;Inherits DependentPlatformMissingException" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CompatibleFrameworkMissingException : System::Deployment::Application::DependentPlatformMissingException" />
   <TypeSignature Language="F#" Value="type CompatibleFrameworkMissingException = class&#xA;    inherit DependentPlatformMissingException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompatibleFrameworkMissingException : System::Deployment::Application::DependentPlatformMissingException" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +15,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>This exception is thrown when a version of the .NET Framework that is compatible with this application cannot be found.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/f6c3ee55-9e65-403d-8664-3ebde872c7d4">&lt;compatibleFrameworks&gt; Element</related>
+    <related type="Article" href="/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment">&lt;compatibleFrameworks&gt; Element</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -62,7 +63,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="/dotnet/standard/exceptions/">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,8 +71,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.CompatibleFrameworkMissingException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompatibleFrameworkMissingException(System::String ^ message);" />
       <MemberSignature Language="F#" Value="new System.Deployment.Application.CompatibleFrameworkMissingException : string -&gt; System.Deployment.Application.CompatibleFrameworkMissingException" Usage="new System.Deployment.Application.CompatibleFrameworkMissingException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompatibleFrameworkMissingException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -96,15 +97,16 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="/dotnet/standard/exceptions/">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected CompatibleFrameworkMissingException (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.CompatibleFrameworkMissingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CompatibleFrameworkMissingException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (serializationInfo As SerializationInfo, streamingContext As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Deployment.Application.CompatibleFrameworkMissingException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Deployment.Application.CompatibleFrameworkMissingException" Usage="new System.Deployment.Application.CompatibleFrameworkMissingException (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CompatibleFrameworkMissingException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -133,8 +135,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.CompatibleFrameworkMissingException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompatibleFrameworkMissingException(System::String ^ message, Exception ^ innerException);" />
       <MemberSignature Language="F#" Value="new System.Deployment.Application.CompatibleFrameworkMissingException : string * Exception -&gt; System.Deployment.Application.CompatibleFrameworkMissingException" Usage="new System.Deployment.Application.CompatibleFrameworkMissingException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompatibleFrameworkMissingException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -163,7 +165,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="/dotnet/standard/exceptions/">Handling and Throwing Exceptions</related>
       </Docs>
     </Member>
     <Member MemberName="CompatibleFrameworks">
@@ -171,8 +173,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Deployment.Application.CompatibleFrameworks CompatibleFrameworks" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.CompatibleFrameworkMissingException.CompatibleFrameworks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompatibleFrameworks As CompatibleFrameworks" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Deployment::Application::CompatibleFrameworks ^ CompatibleFrameworks { System::Deployment::Application::CompatibleFrameworks ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CompatibleFrameworks : System.Deployment.Application.CompatibleFrameworks" Usage="System.Deployment.Application.CompatibleFrameworkMissingException.CompatibleFrameworks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Deployment::Application::CompatibleFrameworks ^ CompatibleFrameworks { System::Deployment::Application::CompatibleFrameworks ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -185,7 +187,7 @@
         <summary>Gets a list of .NET Framework versions where this application can install and run.</summary>
         <value>A list of .NET Framework versions where this application can install and run.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f6c3ee55-9e65-403d-8664-3ebde872c7d4">&lt;compatibleFrameworks&gt; Element</related>
+        <related type="Article" href="/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment">&lt;compatibleFrameworks&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -193,8 +195,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.CompatibleFrameworkMissingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="compatibleFrameworkMissingException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

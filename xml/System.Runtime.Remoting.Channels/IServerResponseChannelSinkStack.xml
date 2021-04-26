@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServerResponseChannelSinkStack" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack" />
   <TypeSignature Language="VB.NET" Value="Public Interface IServerResponseChannelSinkStack" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IServerResponseChannelSinkStack" />
   <TypeSignature Language="F#" Value="type IServerResponseChannelSinkStack = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IServerResponseChannelSinkStack" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -14,22 +14,23 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Provides the stack functionality for a stack of server response channel sinks.</summary>
     <remarks>To be added.</remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
   </Docs>
   <Members>
     <Member MemberName="AsyncProcessResponse">
       <MemberSignature Language="C#" Value="public void AsyncProcessResponse (System.Runtime.Remoting.Messaging.IMessage msg, System.Runtime.Remoting.Channels.ITransportHeaders headers, System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AsyncProcessResponse(class System.Runtime.Remoting.Messaging.IMessage msg, class System.Runtime.Remoting.Channels.ITransportHeaders headers, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack.AsyncProcessResponse(System.Runtime.Remoting.Messaging.IMessage,System.Runtime.Remoting.Channels.ITransportHeaders,System.IO.Stream)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AsyncProcessResponse(System::Runtime::Remoting::Messaging::IMessage ^ msg, System::Runtime::Remoting::Channels::ITransportHeaders ^ headers, System::IO::Stream ^ stream);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AsyncProcessResponse (msg As IMessage, headers As ITransportHeaders, stream As Stream)" />
       <MemberSignature Language="F#" Value="abstract member AsyncProcessResponse : System.Runtime.Remoting.Messaging.IMessage * System.Runtime.Remoting.Channels.ITransportHeaders * System.IO.Stream -&gt; unit" Usage="iServerResponseChannelSinkStack.AsyncProcessResponse (msg, headers, stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AsyncProcessResponse(System::Runtime::Remoting::Messaging::IMessage ^ msg, System::Runtime::Remoting::Channels::ITransportHeaders ^ headers, System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -40,7 +41,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -64,7 +66,6 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetResponseStream">
@@ -72,8 +73,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetResponseStream(class System.Runtime.Remoting.Messaging.IMessage msg, class System.Runtime.Remoting.Channels.ITransportHeaders headers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack.GetResponseStream(System.Runtime.Remoting.Messaging.IMessage,System.Runtime.Remoting.Channels.ITransportHeaders)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResponseStream (msg As IMessage, headers As ITransportHeaders) As Stream" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetResponseStream(System::Runtime::Remoting::Messaging::IMessage ^ msg, System::Runtime::Remoting::Channels::ITransportHeaders ^ headers);" />
       <MemberSignature Language="F#" Value="abstract member GetResponseStream : System.Runtime.Remoting.Messaging.IMessage * System.Runtime.Remoting.Channels.ITransportHeaders -&gt; System.IO.Stream" Usage="iServerResponseChannelSinkStack.GetResponseStream (msg, headers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetResponseStream(System::Runtime::Remoting::Messaging::IMessage ^ msg, System::Runtime::Remoting::Channels::ITransportHeaders ^ headers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,7 +85,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -101,7 +103,6 @@
         <returns>The <see cref="T:System.IO.Stream" /> onto which the specified message is to be serialized.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
   </Members>

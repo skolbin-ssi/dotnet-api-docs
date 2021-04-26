@@ -3,13 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrincipalSearcher extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
   <TypeSignature Language="VB.NET" Value="Public Class PrincipalSearcher&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PrincipalSearcher : IDisposable" />
   <TypeSignature Language="F#" Value="type PrincipalSearcher = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrincipalSearcher : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,18 +28,17 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> class. The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property must be set before the Principal searcher object can be used to perform a search.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -54,18 +52,18 @@
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> class. The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property must be set before the Principal searcher object can be used to perform a search.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,18 +71,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.Principal queryFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.#ctor(System.DirectoryServices.AccountManagement.Principal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (queryFilter As Principal)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalSearcher(System::DirectoryServices::AccountManagement::Principal ^ queryFilter);" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalSearcher : System.DirectoryServices.AccountManagement.Principal -&gt; System.DirectoryServices.AccountManagement.PrincipalSearcher" Usage="new System.DirectoryServices.AccountManagement.PrincipalSearcher queryFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalSearcher(System::DirectoryServices::AccountManagement::Principal ^ queryFilter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -97,7 +95,7 @@
         <exception cref="T:System.ArgumentException">Persisted principal objects can not be used as the <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />.  
   
  The <paramref name="queryFilter" /> parameter cannot be <see langword="null" /> or empty.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -105,24 +103,26 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.PrincipalContext Context" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As PrincipalContext" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::PrincipalContext ^ Context { System::DirectoryServices::AccountManagement::PrincipalContext ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Context : System.DirectoryServices.AccountManagement.PrincipalContext" Usage="System.DirectoryServices.AccountManagement.PrincipalSearcher.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::PrincipalContext ^ Context { System::DirectoryServices::AccountManagement::PrincipalContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName Language="C#">[get: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5">
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[get: System.Security.SecurityTreatAsSafe]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecurityTreatAsSafe&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
-          <AttributeName>get: System.Security.SecurityTreatAsSafe</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -139,7 +139,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -147,8 +147,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="principalSearcher.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -157,11 +157,11 @@
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -171,7 +171,7 @@
       <Docs>
         <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> object.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -179,18 +179,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt; FindAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.FindAll" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll () As PrincipalSearchResult(Of Principal)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::Principal ^&gt; ^ FindAll();" />
       <MemberSignature Language="F#" Value="member this.FindAll : unit -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;" Usage="principalSearcher.FindAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::Principal ^&gt; ^ FindAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -212,7 +212,7 @@
   
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
         <exception cref="T:System.ArgumentException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -220,18 +220,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.Principal FindOne() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.FindOne" />
       <MemberSignature Language="VB.NET" Value="Public Function FindOne () As Principal" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::Principal ^ FindOne();" />
       <MemberSignature Language="F#" Value="member this.FindOne : unit -&gt; System.DirectoryServices.AccountManagement.Principal" Usage="principalSearcher.FindOne " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::Principal ^ FindOne();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -247,15 +247,15 @@
 ## Remarks  
  If there is exactly one match of the object specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A>, this method returns that object. If there are multiple matches of the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> object, this method arbitrarily returns one of the matching principals.  
   
- The <xref:System.DirectoryServices.AccountManagement.Principal> object returned from this method matches the type of object contained in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> property. The search is conducted in the context specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.Context%2A> property. For more information, see the [Query by Example](https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
+ The <xref:System.DirectoryServices.AccountManagement.Principal> object returned from this method matches the type of object contained in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> property. The search is conducted in the context specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.Context%2A> property. For more information, see the [Query by Example](https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)) overview topic.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)) overview topic.  
   
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
         <exception cref="T:System.ArgumentException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingSearcher">
@@ -263,18 +263,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetUnderlyingSearcher() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcher" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnderlyingSearcher () As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetUnderlyingSearcher();" />
       <MemberSignature Language="F#" Value="member this.GetUnderlyingSearcher : unit -&gt; obj" Usage="principalSearcher.GetUnderlyingSearcher " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetUnderlyingSearcher();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -294,10 +294,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.  
   
- The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
+ The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)) overview topic.  
   
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingSearcherType">
@@ -305,18 +305,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetUnderlyingSearcherType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcherType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnderlyingSearcherType () As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetUnderlyingSearcherType();" />
       <MemberSignature Language="F#" Value="member this.GetUnderlyingSearcherType : unit -&gt; Type" Usage="principalSearcher.GetUnderlyingSearcherType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetUnderlyingSearcherType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -328,7 +328,7 @@
         <returns>A <see cref="T:System.Type" /> that specifies the type of object returned from the <see cref="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcher" /> method.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </Member>
     <Member MemberName="QueryFilter">
@@ -336,21 +336,22 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.Principal QueryFilter" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property QueryFilter As Principal" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::Principal ^ QueryFilter { System::DirectoryServices::AccountManagement::Principal ^ get(); void set(System::DirectoryServices::AccountManagement::Principal ^ value); };" />
       <MemberSignature Language="F#" Value="member this.QueryFilter : System.DirectoryServices.AccountManagement.Principal with get, set" Usage="System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::Principal ^ QueryFilter { System::DirectoryServices::AccountManagement::Principal ^ get(); void set(System::DirectoryServices::AccountManagement::Principal ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[get: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[set: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -363,14 +364,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The principal object contained in this property can be any type of object derived from the principal class: computer, user, or group. The <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> can also be an extended principal type that is defined by extending either <xref:System.DirectoryServices.AccountManagement.Principal>, <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal> or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal>. The type of the derived class object that is passed to this property determines the type of object that is queried. The resulting query contains a logical AND of all the properties set on the specified principal object. For more information, see the [Query by Example](https://msdn.microsoft.com/library/bb384378) overview topic. For more information on the extended classes, see the [Principal Extensions](https://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ The principal object contained in this property can be any type of object derived from the principal class: computer, user, or group. The <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> can also be an extended principal type that is defined by extending either <xref:System.DirectoryServices.AccountManagement.Principal>, <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal> or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal>. The type of the derived class object that is passed to this property determines the type of object that is queried. The resulting query contains a logical AND of all the properties set on the specified principal object. For more information, see the [Query by Example](https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)) overview topic. For more information on the extended classes, see the [Principal Extensions](https://docs.microsoft.com/previous-versions/bb384372(v=vs.90)) overview topic.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Persisted Principal objects can not be used as the <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />.  
   
  The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> cannot be <see langword="null" /> or empty.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/bb384378(v=vs.90)">Query by Example</related>
       </Docs>
     </Member>
   </Members>

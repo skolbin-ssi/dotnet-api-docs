@@ -3,12 +3,14 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewRowHeadersWidthSizeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewRowHeadersWidthSizeMode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewRowHeadersWidthSizeMode" />
   <TypeSignature Language="F#" Value="type DataGridViewRowHeadersWidthSizeMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewRowHeadersWidthSizeMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -25,22 +27,22 @@
   
  This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A> property and <xref:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth%2A> method.  
   
- For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
+ For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](/dotnet/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control).  
   
    
   
 ## Examples  
  The following code example illustrates the use of this enumeration in a display-only, non-interactive <xref:System.Windows.Forms.DataGridView> control.  
   
- [!code-csharp[System.Windows.Forms.DataGridViewStyleDemo#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/CS/form1.cs#20)]
- [!code-vb[System.Windows.Forms.DataGridViewStyleDemo#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/VB/form1.vb#20)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/CS/form1.cs" id="Snippet20":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/VB/form1.vb" id="Snippet20":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Forms.DataGridView" />
     <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode" />
     <altmember cref="Overload:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth" />
-    <related type="Article" href="https://msdn.microsoft.com/library/a5620a9c-0d06-41e3-8934-c25ddb16c9e6">Sizing Options in the Windows Forms DataGridView Control</related>
+    <related type="Article" href="/dotnet/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control">Sizing Options in the Windows Forms DataGridView Control</related>
   </Docs>
   <Members>
     <Member MemberName="AutoSizeToAllHeaders">
@@ -48,13 +50,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode AutoSizeToAllHeaders = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders" />
       <MemberSignature Language="VB.NET" Value="AutoSizeToAllHeaders" />
-      <MemberSignature Language="C++ CLI" Value="AutoSizeToAllHeaders" />
       <MemberSignature Language="F#" Value="AutoSizeToAllHeaders = 2" Usage="System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders" />
+      <MemberSignature Language="C++ CLI" Value="AutoSizeToAllHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>
@@ -69,13 +73,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode AutoSizeToDisplayedHeaders = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders" />
       <MemberSignature Language="VB.NET" Value="AutoSizeToDisplayedHeaders" />
-      <MemberSignature Language="C++ CLI" Value="AutoSizeToDisplayedHeaders" />
       <MemberSignature Language="F#" Value="AutoSizeToDisplayedHeaders = 3" Usage="System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders" />
+      <MemberSignature Language="C++ CLI" Value="AutoSizeToDisplayedHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>
@@ -90,13 +96,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode AutoSizeToFirstHeader = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader" />
       <MemberSignature Language="VB.NET" Value="AutoSizeToFirstHeader" />
-      <MemberSignature Language="C++ CLI" Value="AutoSizeToFirstHeader" />
       <MemberSignature Language="F#" Value="AutoSizeToFirstHeader = 4" Usage="System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader" />
+      <MemberSignature Language="C++ CLI" Value="AutoSizeToFirstHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>
@@ -111,13 +119,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode DisableResizing = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing" />
       <MemberSignature Language="VB.NET" Value="DisableResizing" />
-      <MemberSignature Language="C++ CLI" Value="DisableResizing" />
       <MemberSignature Language="F#" Value="DisableResizing = 1" Usage="System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing" />
+      <MemberSignature Language="C++ CLI" Value="DisableResizing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>
@@ -132,13 +142,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode EnableResizing = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.EnableResizing" />
       <MemberSignature Language="VB.NET" Value="EnableResizing" />
-      <MemberSignature Language="C++ CLI" Value="EnableResizing" />
       <MemberSignature Language="F#" Value="EnableResizing = 0" Usage="System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.EnableResizing" />
+      <MemberSignature Language="C++ CLI" Value="EnableResizing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode</ReturnType>

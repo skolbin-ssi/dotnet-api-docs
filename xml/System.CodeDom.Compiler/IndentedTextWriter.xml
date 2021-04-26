@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IndentedTextWriter extends System.IO.TextWriter" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.IndentedTextWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class IndentedTextWriter&#xA;Inherits TextWriter" />
-  <TypeSignature Language="C++ CLI" Value="public ref class IndentedTextWriter : System::IO::TextWriter" />
   <TypeSignature Language="F#" Value="type IndentedTextWriter = class&#xA;    inherit TextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IndentedTextWriter : System::IO::TextWriter" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -24,8 +24,24 @@
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.IO" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.0.0" To="System.Runtime.Extensions" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.1.0" To="System.Runtime.Extensions" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.IO" FromVersion="4.2.2.0" To="System.Runtime.Extensions" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.IO.TextWriter</BaseTypeName>
   </Base>
@@ -41,21 +57,19 @@
  The tab string is the string that each indentation consists of. Typically the tab string contains white space.  
   
 > [!NOTE]
->  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x4yx82e6(v=vs.100)).  
+>  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](/dotnet/framework/misc/link-demands) and [Inheritance Demands](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x4yx82e6(v=vs.100)).  
   
    
   
 ## Examples  
  The following code example demonstrates using an <xref:System.CodeDom.Compiler.IndentedTextWriter> to write text at different levels of indentation.  
   
- [!code-cpp[IndentedTextWriterExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#1)]
- [!code-csharp[IndentedTextWriterExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#1)]
- [!code-vb[IndentedTextWriterExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
-    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
-    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -73,8 +87,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.#ctor(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndentedTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.IndentedTextWriter : System.IO.TextWriter -&gt; System.CodeDom.Compiler.IndentedTextWriter" Usage="new System.CodeDom.Compiler.IndentedTextWriter writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndentedTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,11 +109,17 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -109,7 +129,6 @@
         <param name="writer">The <see cref="T:System.IO.TextWriter" /> to use for output.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.IndentedTextWriter" /> class using the specified text writer and default tab string.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
@@ -118,8 +137,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer, string tabString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.#ctor(System.IO.TextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, tabString As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndentedTextWriter(System::IO::TextWriter ^ writer, System::String ^ tabString);" />
       <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.IndentedTextWriter : System.IO.TextWriter * string -&gt; System.CodeDom.Compiler.IndentedTextWriter" Usage="new System.CodeDom.Compiler.IndentedTextWriter (writer, tabString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndentedTextWriter(System::IO::TextWriter ^ writer, System::String ^ tabString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +157,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -156,13 +180,12 @@
 ## Examples  
  The following code example demonstrates creating an <xref:System.CodeDom.Compiler.IndentedTextWriter> using a specified tab string.  
   
- [!code-cpp[IndentedTextWriterExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#3)]
- [!code-csharp[IndentedTextWriterExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#3)]
- [!code-vb[IndentedTextWriterExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
@@ -171,8 +194,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="indentedTextWriter.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -193,6 +216,11 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,8 +237,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultTabString" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.IndentedTextWriter.DefaultTabString" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultTabString As String " />
-      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultTabString;" />
       <MemberSignature Language="F#" Value="val mutable DefaultTabString : string" Usage="System.CodeDom.Compiler.IndentedTextWriter.DefaultTabString" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultTabString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +259,11 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,7 +279,37 @@
   
  ]]></format>
         </remarks>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DisposeAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask DisposeAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask DisposeAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.DisposeAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function DisposeAsync () As ValueTask" />
+      <MemberSignature Language="F#" Value="override this.DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask" Usage="indentedTextWriter.DisposeAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::ValueTask DisposeAsync();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -254,8 +317,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding Encoding" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Encoding As Encoding" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding" Usage="System.CodeDom.Compiler.IndentedTextWriter.Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -276,6 +339,11 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
@@ -292,8 +360,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="indentedTextWriter.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -312,6 +380,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -332,13 +405,44 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="FlushAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task FlushAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.FlushAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FlushAsync () As Task" />
+      <MemberSignature Language="F#" Value="override this.FlushAsync : unit -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.FlushAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Indent">
       <MemberSignature Language="C#" Value="public int Indent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Indent" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.Indent" />
       <MemberSignature Language="VB.NET" Value="Public Property Indent As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Indent { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Indent : int with get, set" Usage="System.CodeDom.Compiler.IndentedTextWriter.Indent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Indent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -359,11 +463,17 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -378,9 +488,9 @@
 ## Examples  
  The following code example demonstrates setting the indentation level of an <xref:System.CodeDom.Compiler.IndentedTextWriter>. The indentation level is the number of tab strings to prefix each line with.  
   
- [!code-cpp[IndentedTextWriterExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#3)]
- [!code-csharp[IndentedTextWriterExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#3)]
- [!code-vb[IndentedTextWriterExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -391,8 +501,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.TextWriter InnerWriter" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.InnerWriter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerWriter As TextWriter" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::TextWriter ^ InnerWriter { System::IO::TextWriter ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.InnerWriter : System.IO.TextWriter" Usage="System.CodeDom.Compiler.IndentedTextWriter.InnerWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::TextWriter ^ InnerWriter { System::IO::TextWriter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -413,11 +523,17 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -434,8 +550,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string NewLine" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.NewLine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property NewLine As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewLine { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.NewLine : string with get, set" Usage="System.CodeDom.Compiler.IndentedTextWriter.NewLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewLine { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -454,6 +570,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -472,8 +593,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OutputTabs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.OutputTabs" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputTabs ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputTabs();" />
       <MemberSignature Language="F#" Value="abstract member OutputTabs : unit -&gt; unit&#xA;override this.OutputTabs : unit -&gt; unit" Usage="indentedTextWriter.OutputTabs " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputTabs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -494,6 +615,11 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
@@ -502,6 +628,37 @@
       <Parameters />
       <Docs>
         <summary>Outputs the tab string once for each level of indentation according to the <see cref="P:System.CodeDom.Compiler.IndentedTextWriter.Indent" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputTabsAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OutputTabsAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OutputTabsAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.OutputTabsAsync" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OutputTabsAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member OutputTabsAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.OutputTabsAsync : unit -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.OutputTabsAsync " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Threading::Tasks::Task ^ OutputTabsAsync();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,8 +677,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(bool value);" />
       <MemberSignature Language="F#" Value="override this.Write : bool -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -540,6 +697,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -561,8 +723,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Char)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char value);" />
       <MemberSignature Language="F#" Value="override this.Write : char -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -581,6 +743,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -598,12 +765,13 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (char[] buffer);" />
+      <MemberSignature Language="C#" Value="public override void Write (char[]? buffer);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer);" />
       <MemberSignature Language="F#" Value="override this.Write : char[] -&gt; unit" Usage="indentedTextWriter.Write buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer);" />
+      <MemberSignature Language="C#" Value="public override void Write (char[] buffer);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -622,6 +790,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -643,8 +816,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Double)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(double value);" />
       <MemberSignature Language="F#" Value="override this.Write : double -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -663,6 +836,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -684,8 +862,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(int value);" />
       <MemberSignature Language="F#" Value="override this.Write : int -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -704,6 +882,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -725,8 +908,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Long)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(long value);" />
       <MemberSignature Language="F#" Value="override this.Write : int64 -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -745,6 +928,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -762,12 +950,13 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (object value);" />
+      <MemberSignature Language="C#" Value="public override void Write (object? value);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="override this.Write : obj -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public override void Write (object value);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -786,6 +975,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -807,8 +1001,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Single)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(float value);" />
       <MemberSignature Language="F#" Value="override this.Write : single -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -827,6 +1021,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -844,12 +1043,13 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string s);" />
+      <MemberSignature Language="C#" Value="public override void Write (string? s);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (s As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ s);" />
       <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="indentedTextWriter.Write s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ s);" />
+      <MemberSignature Language="C#" Value="public override void Write (string s);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -868,6 +1068,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -885,12 +1090,13 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, object? arg0);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0);" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="indentedTextWriter.Write (format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -909,6 +1115,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -928,12 +1139,13 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, params object?[] arg);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, ParamArray arg As Object())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj[] -&gt; unit" Usage="indentedTextWriter.Write (format, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -954,6 +1166,11 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
@@ -963,8 +1180,9 @@
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="arg" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-2.0">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute FrameworkAlternate="net-5.0">
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -981,8 +1199,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char(), index As Integer, count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberSignature Language="F#" Value="override this.Write : char[] * int * int -&gt; unit" Usage="indentedTextWriter.Write (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1001,6 +1219,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1022,12 +1245,13 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, object? arg0, object? arg1);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj * obj -&gt; unit" Usage="indentedTextWriter.Write (format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1046,6 +1270,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1066,6 +1295,182 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (char value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(char value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteAsync(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (value As Char) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : char -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteAsync value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(char value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Char" Index="0" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (string? value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (value As String) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : string -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteAsync value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(System::String ^ value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (ReadOnlyMemory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(valuetype System.ReadOnlyMemory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (buffer As ReadOnlyMemory(Of Char), Optional cancellationToken As CancellationToken = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : ReadOnlyMemory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteAsync (buffer, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Char&gt;" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (System.Text.StringBuilder? value, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(class System.Text.StringBuilder value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteAsync(System.Text.StringBuilder,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (value As StringBuilder, Optional cancellationToken As CancellationToken = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : System.Text.StringBuilder * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteAsync (value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.StringBuilder" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (char[] buffer, int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(char[] buffer, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteAsync (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Char[]" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="net-6.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="WriteLine">
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1081,8 +1486,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine();" />
       <MemberSignature Language="F#" Value="override this.WriteLine : unit -&gt; unit" Usage="indentedTextWriter.WriteLine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1101,6 +1506,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1119,8 +1529,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(bool value);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : bool -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1139,6 +1549,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1160,8 +1575,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Char)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(char value);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : char -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1180,6 +1595,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1197,12 +1617,13 @@
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (char[] buffer);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (char[]? buffer);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As Char())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : char[] -&gt; unit" Usage="indentedTextWriter.WriteLine buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (char[] buffer);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1221,6 +1642,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1242,8 +1668,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Double)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(double value);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : double -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1262,6 +1688,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1283,8 +1714,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(int value);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : int -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1303,6 +1734,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1324,8 +1760,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Long)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(long value);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : int64 -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1344,6 +1780,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1361,12 +1802,13 @@
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (object value);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (object? value);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : obj -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (object value);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1385,6 +1827,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1406,8 +1853,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Single)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(float value);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : single -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1426,6 +1873,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1443,12 +1895,13 @@
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string s);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string? s);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (s As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ s);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="indentedTextWriter.WriteLine s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ s);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string s);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1467,6 +1920,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1488,8 +1946,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As UInteger)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::UInt32 value);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : uint32 -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1510,11 +1968,17 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1530,12 +1994,13 @@
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object? arg0);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj -&gt; unit" Usage="indentedTextWriter.WriteLine (format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1554,6 +2019,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1573,12 +2043,13 @@
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object?[] arg);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, ParamArray arg As Object())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj[] -&gt; unit" Usage="indentedTextWriter.WriteLine (format, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1599,6 +2070,11 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
@@ -1608,8 +2084,9 @@
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="arg" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-2.0">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute FrameworkAlternate="net-5.0">
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1626,8 +2103,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As Char(), index As Integer, count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : char[] * int * int -&gt; unit" Usage="indentedTextWriter.WriteLine (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1646,6 +2123,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1667,12 +2149,13 @@
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object? arg0, object? arg1);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj * obj -&gt; unit" Usage="indentedTextWriter.WriteLine (format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1691,6 +2174,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1711,13 +2199,221 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="WriteLineAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync () As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : unit -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteLineAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLineAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (char value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(char value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineAsync(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (value As Char) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : char -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteLineAsync value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(char value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Char" Index="0" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLineAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (string? value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (value As String) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : string -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteLineAsync value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(System::String ^ value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLineAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (ReadOnlyMemory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(valuetype System.ReadOnlyMemory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (buffer As ReadOnlyMemory(Of Char), Optional cancellationToken As CancellationToken = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : ReadOnlyMemory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteLineAsync (buffer, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Char&gt;" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLineAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (System.Text.StringBuilder? value, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(class System.Text.StringBuilder value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineAsync(System.Text.StringBuilder,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (value As StringBuilder, Optional cancellationToken As CancellationToken = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : System.Text.StringBuilder * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteLineAsync (value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.StringBuilder" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLineAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (char[] buffer, int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(char[] buffer, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function WriteLineAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteLineAsync (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteLineAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Char[]" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="net-6.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="WriteLineNoTabs">
-      <MemberSignature Language="C#" Value="public void WriteLineNoTabs (string s);" />
+      <MemberSignature Language="C#" Value="public void WriteLineNoTabs (string? s);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteLineNoTabs(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineNoTabs(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteLineNoTabs (s As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteLineNoTabs(System::String ^ s);" />
       <MemberSignature Language="F#" Value="member this.WriteLineNoTabs : string -&gt; unit" Usage="indentedTextWriter.WriteLineNoTabs s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteLineNoTabs(System::String ^ s);" />
+      <MemberSignature Language="C#" Value="public void WriteLineNoTabs (string s);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1738,6 +2434,11 @@
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
@@ -1755,12 +2456,46 @@
 ## Examples  
  The following code example demonstrates writing a line without tab string indentations.  
   
- [!code-cpp[IndentedTextWriterExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#6)]
- [!code-csharp[IndentedTextWriterExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#6)]
- [!code-vb[IndentedTextWriterExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#6)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp" id="Snippet6":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLineNoTabsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteLineNoTabsAsync (string? s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteLineNoTabsAsync(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineNoTabsAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteLineNoTabsAsync (s As String) As Task" />
+      <MemberSignature Language="F#" Value="member this.WriteLineNoTabsAsync : string -&gt; System.Threading.Tasks.Task" Usage="indentedTextWriter.WriteLineNoTabsAsync s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteLineNoTabsAsync(System::String ^ s);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

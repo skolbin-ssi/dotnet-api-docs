@@ -3,11 +3,14 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonGalleryCategoriesPanel extends System.Windows.Controls.Panel implements class System.Windows.Controls.Primitives.IScrollInfo, class System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonGalleryCategoriesPanel&#xA;Inherits Panel&#xA;Implements IProvideStarLayoutInfoBase, IScrollInfo" />
+  <TypeSignature Language="F#" Value="type RibbonGalleryCategoriesPanel = class&#xA;    inherit Panel&#xA;    interface IScrollInfo&#xA;    interface IProvideStarLayoutInfoBase" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="C++ CLI" Value="public ref class RibbonGalleryCategoriesPanel : System::Windows::Controls::Panel, System::Windows::Controls::Primitives::IScrollInfo, System::Windows::Controls::Ribbon::Primitives::IProvideStarLayoutInfoBase" />
-  <TypeSignature Language="F#" Value="type RibbonGalleryCategoriesPanel = class&#xA;    inherit Panel&#xA;    interface IProvideStarLayoutInfoBase&#xA;    interface IScrollInfo" />
+  <TypeSignature Language="F#" Value="type RibbonGalleryCategoriesPanel = class&#xA;    inherit Panel&#xA;    interface IProvideStarLayoutInfoBase&#xA;    interface IScrollInfo" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Controls.Panel</BaseTypeName>
@@ -35,6 +38,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,12 +52,14 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
       <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="ribbonGalleryCategoriesPanel.ArrangeOverride finalSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Size</ReturnType>
@@ -72,8 +79,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CanHorizontallyScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.CanHorizontallyScroll" />
       <MemberSignature Language="VB.NET" Value="Public Property CanHorizontallyScroll As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanHorizontallyScroll { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.CanHorizontallyScroll : bool with get, set" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.CanHorizontallyScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanHorizontallyScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.CanHorizontallyScroll</InterfaceMember>
@@ -81,10 +88,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -109,8 +119,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CanVerticallyScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.CanVerticallyScroll" />
       <MemberSignature Language="VB.NET" Value="Public Property CanVerticallyScroll As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanVerticallyScroll { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.CanVerticallyScroll : bool with get, set" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.CanVerticallyScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanVerticallyScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.CanVerticallyScroll</InterfaceMember>
@@ -118,10 +128,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -146,8 +159,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ExtentHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeight As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
       <MemberSignature Language="F#" Value="member this.ExtentHeight : double" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ExtentHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ExtentHeight</InterfaceMember>
@@ -155,13 +168,15 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vertical size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The vertical size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>Gets the vertical size of the scrolled content in device-independent units (1/96th inch per unit).</summary>
+        <value>The vertical size of the scrolled content in device-independent units (1/96th inch per unit).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +185,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ExtentWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidth As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
       <MemberSignature Language="F#" Value="member this.ExtentWidth : double" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ExtentWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ExtentWidth</InterfaceMember>
@@ -179,13 +194,15 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the horizontal size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The horizontal size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>Gets the horizontal size of the scrolled content in device-independent units (1/96th inch per unit).</summary>
+        <value>The horizontal size of the scrolled content in device-independent units (1/96th inch per unit).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,8 +211,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.HorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalOffset As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); };" />
       <MemberSignature Language="F#" Value="member this.HorizontalOffset : double" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.HorizontalOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.HorizontalOffset</InterfaceMember>
@@ -203,18 +220,21 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the horizontal offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The horizontal offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>Gets the horizontal offset of the scrolled content in device-independent units (1/96th inch per unit).</summary>
+        <value>The horizontal offset of the scrolled content in device-independent units (1/96th inch per unit).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,8 +243,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.LineDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineDown ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineDown();" />
       <MemberSignature Language="F#" Value="abstract member LineDown : unit -&gt; unit&#xA;override this.LineDown : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.LineDown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineDown();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineDown</InterfaceMember>
@@ -232,6 +252,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -247,8 +269,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineLeft() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.LineLeft" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineLeft ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineLeft();" />
       <MemberSignature Language="F#" Value="abstract member LineLeft : unit -&gt; unit&#xA;override this.LineLeft : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.LineLeft " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineLeft();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineLeft</InterfaceMember>
@@ -256,6 +278,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -271,8 +295,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineRight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.LineRight" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineRight ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineRight();" />
       <MemberSignature Language="F#" Value="abstract member LineRight : unit -&gt; unit&#xA;override this.LineRight : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.LineRight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineRight();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineRight</InterfaceMember>
@@ -280,6 +304,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -295,8 +321,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.LineUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineUp ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineUp();" />
       <MemberSignature Language="F#" Value="abstract member LineUp : unit -&gt; unit&#xA;override this.LineUp : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.LineUp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineUp();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineUp</InterfaceMember>
@@ -304,6 +330,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -318,8 +346,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect MakeVisible (System.Windows.Media.Visual visual, System.Windows.Rect rectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Rect MakeVisible(class System.Windows.Media.Visual visual, valuetype System.Windows.Rect rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Rect MakeVisible(System::Windows::Media::Visual ^ visual, System::Windows::Rect rectangle);" />
+      <MemberSignature Language="VB.NET" Value="Public Function MakeVisible (visual As Visual, rectangle As Rect) As Rect" />
       <MemberSignature Language="F#" Value="abstract member MakeVisible : System.Windows.Media.Visual * System.Windows.Rect -&gt; System.Windows.Rect&#xA;override this.MakeVisible : System.Windows.Media.Visual * System.Windows.Rect -&gt; System.Windows.Rect" Usage="ribbonGalleryCategoriesPanel.MakeVisible (visual, rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Rect MakeVisible(System::Windows::Media::Visual ^ visual, System::Windows::Rect rectangle);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)</InterfaceMember>
@@ -327,6 +356,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Rect</ReturnType>
@@ -348,12 +379,14 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="ribbonGalleryCategoriesPanel.MeasureOverride availableSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Size</ReturnType>
@@ -373,8 +406,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.MouseWheelDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelDown ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelDown();" />
       <MemberSignature Language="F#" Value="abstract member MouseWheelDown : unit -&gt; unit&#xA;override this.MouseWheelDown : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.MouseWheelDown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelDown();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelDown</InterfaceMember>
@@ -382,6 +415,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -397,8 +432,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelLeft() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.MouseWheelLeft" />
       <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelLeft ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelLeft();" />
       <MemberSignature Language="F#" Value="abstract member MouseWheelLeft : unit -&gt; unit&#xA;override this.MouseWheelLeft : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.MouseWheelLeft " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelLeft();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelLeft</InterfaceMember>
@@ -406,6 +441,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -421,8 +458,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelRight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.MouseWheelRight" />
       <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelRight ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelRight();" />
       <MemberSignature Language="F#" Value="abstract member MouseWheelRight : unit -&gt; unit&#xA;override this.MouseWheelRight : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.MouseWheelRight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelRight();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelRight</InterfaceMember>
@@ -430,6 +467,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -445,8 +484,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.MouseWheelUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelUp ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelUp();" />
       <MemberSignature Language="F#" Value="abstract member MouseWheelUp : unit -&gt; unit&#xA;override this.MouseWheelUp : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.MouseWheelUp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelUp();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelUp</InterfaceMember>
@@ -454,6 +493,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -469,8 +510,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnInitializeLayout() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.OnInitializeLayout" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnInitializeLayout ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnInitializeLayout();" />
       <MemberSignature Language="F#" Value="abstract member OnInitializeLayout : unit -&gt; unit&#xA;override this.OnInitializeLayout : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.OnInitializeLayout " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnInitializeLayout();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase.OnInitializeLayout</InterfaceMember>
@@ -478,6 +519,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -500,8 +543,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.PageDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageDown ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageDown();" />
       <MemberSignature Language="F#" Value="abstract member PageDown : unit -&gt; unit&#xA;override this.PageDown : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.PageDown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageDown();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageDown</InterfaceMember>
@@ -509,6 +552,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -524,8 +569,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageLeft() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.PageLeft" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageLeft ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageLeft();" />
       <MemberSignature Language="F#" Value="abstract member PageLeft : unit -&gt; unit&#xA;override this.PageLeft : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.PageLeft " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageLeft();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageLeft</InterfaceMember>
@@ -533,6 +578,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -548,8 +595,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageRight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.PageRight" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageRight ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageRight();" />
       <MemberSignature Language="F#" Value="abstract member PageRight : unit -&gt; unit&#xA;override this.PageRight : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.PageRight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageRight();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageRight</InterfaceMember>
@@ -557,6 +604,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -572,8 +621,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.PageUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageUp ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageUp();" />
       <MemberSignature Language="F#" Value="abstract member PageUp : unit -&gt; unit&#xA;override this.PageUp : unit -&gt; unit" Usage="ribbonGalleryCategoriesPanel.PageUp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageUp();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageUp</InterfaceMember>
@@ -581,6 +630,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -596,8 +647,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ScrollViewer ScrollOwner" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ScrollOwner" />
       <MemberSignature Language="VB.NET" Value="Public Property ScrollOwner As ScrollViewer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollViewer ^ ScrollOwner { System::Windows::Controls::ScrollViewer ^ get(); void set(System::Windows::Controls::ScrollViewer ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ScrollOwner : System.Windows.Controls.ScrollViewer with get, set" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ScrollOwner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollViewer ^ ScrollOwner { System::Windows::Controls::ScrollViewer ^ get(); void set(System::Windows::Controls::ScrollViewer ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ScrollOwner</InterfaceMember>
@@ -605,10 +656,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -625,8 +679,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHorizontalOffset(float64 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.SetHorizontalOffset(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetHorizontalOffset (offset As Double)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHorizontalOffset(double offset);" />
       <MemberSignature Language="F#" Value="abstract member SetHorizontalOffset : double -&gt; unit&#xA;override this.SetHorizontalOffset : double -&gt; unit" Usage="ribbonGalleryCategoriesPanel.SetHorizontalOffset offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHorizontalOffset(double offset);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.SetHorizontalOffset(System.Double)</InterfaceMember>
@@ -634,6 +688,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -642,8 +698,8 @@
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offset">The amount that content is horizontally offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
-        <summary>Sets the amount that content is horizontal offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <param name="offset">The amount that content is horizontally offset in the containing viewport in device-independent units (1/96th inch per unit).</param>
+        <summary>Sets the amount that content is horizontal offset in the containing viewport in device-independent units (1/96th inch per unit).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -652,8 +708,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetVerticalOffset(float64 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.SetVerticalOffset(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetVerticalOffset (offset As Double)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetVerticalOffset(double offset);" />
       <MemberSignature Language="F#" Value="abstract member SetVerticalOffset : double -&gt; unit&#xA;override this.SetVerticalOffset : double -&gt; unit" Usage="ribbonGalleryCategoriesPanel.SetVerticalOffset offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetVerticalOffset(double offset);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.SetVerticalOffset(System.Double)</InterfaceMember>
@@ -661,6 +717,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -669,8 +727,8 @@
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offset">The amount that content is vertically offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
-        <summary>Sets the amount that content is vertical offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <param name="offset">The amount that content is vertically offset in the containing viewport in device-independent units (1/96th inch per unit).</param>
+        <summary>Sets the amount that content is vertical offset in the containing viewport in device-independent units (1/96th inch per unit).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -679,8 +737,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement TargetElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.TargetElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetElement As UIElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ TargetElement { System::Windows::UIElement ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.TargetElement : System.Windows.UIElement" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.TargetElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ TargetElement { System::Windows::UIElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase.TargetElement</InterfaceMember>
@@ -688,6 +746,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.UIElement</ReturnType>
@@ -703,8 +763,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.VerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalOffset As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); };" />
       <MemberSignature Language="F#" Value="member this.VerticalOffset : double" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.VerticalOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.VerticalOffset</InterfaceMember>
@@ -712,18 +772,21 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vertical offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The vertical offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>Gets the vertical offset of the scrolled content in device-independent units (1/96th inch per unit).</summary>
+        <value>The vertical offset of the scrolled content in device-independent units (1/96th inch per unit).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -732,8 +795,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 ViewportHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ViewportHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportHeight As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportHeight { double get(); };" />
       <MemberSignature Language="F#" Value="member this.ViewportHeight : double" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ViewportHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ViewportHeight</InterfaceMember>
@@ -741,13 +804,15 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vertical size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The vertical size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>Gets the vertical size of the content's visible range in device-independent units (1/96th inch per unit).</summary>
+        <value>The vertical size of the content's visible range in device-independent units (1/96th inch per unit).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -756,8 +821,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 ViewportWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ViewportWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportWidth As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportWidth { double get(); };" />
       <MemberSignature Language="F#" Value="member this.ViewportWidth : double" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGalleryCategoriesPanel.ViewportWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ViewportWidth</InterfaceMember>
@@ -765,13 +830,15 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the horizontal size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
-        <value>The horizontal size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <summary>Gets the horizontal size of the content's visible range in device-independent units (1/96th inch per unit).</summary>
+        <value>The horizontal size of the content's visible range in device-independent units (1/96th inch per unit).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

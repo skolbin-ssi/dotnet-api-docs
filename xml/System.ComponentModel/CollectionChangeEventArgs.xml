@@ -3,14 +3,16 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionChangeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CollectionChangeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CollectionChangeEventArgs&#xA;Inherits EventArgs" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CollectionChangeEventArgs : EventArgs" />
   <TypeSignature Language="F#" Value="type CollectionChangeEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CollectionChangeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -24,6 +26,10 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
@@ -43,8 +49,8 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.AutoCompleteStringCollection> named `AutoCompleteStringCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#76](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#76)]
- [!code-vb[System.Windows.Forms.EventExamples#76](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#76)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs" id="Snippet76":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet76":::  
   
  ]]></format>
     </remarks>
@@ -58,8 +64,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.CollectionChangeAction action, object element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CollectionChangeEventArgs.#ctor(System.ComponentModel.CollectionChangeAction,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As CollectionChangeAction, element As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionChangeEventArgs(System::ComponentModel::CollectionChangeAction action, System::Object ^ element);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.CollectionChangeEventArgs : System.ComponentModel.CollectionChangeAction * obj -&gt; System.ComponentModel.CollectionChangeEventArgs" Usage="new System.ComponentModel.CollectionChangeEventArgs (action, element)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionChangeEventArgs(System::ComponentModel::CollectionChangeAction action, System::Object ^ element);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -67,6 +73,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,7 +90,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -103,8 +112,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.CollectionChangeAction Action" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CollectionChangeEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Action As CollectionChangeAction" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::CollectionChangeAction Action { System::ComponentModel::CollectionChangeAction get(); };" />
       <MemberSignature Language="F#" Value="member this.Action : System.ComponentModel.CollectionChangeAction" Usage="System.ComponentModel.CollectionChangeEventArgs.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::CollectionChangeAction Action { System::ComponentModel::CollectionChangeAction get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -112,6 +121,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,7 +138,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -155,8 +167,8 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.AutoCompleteStringCollection> named `AutoCompleteStringCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#76](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#76)]
- [!code-vb[System.Windows.Forms.EventExamples#76](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#76)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs" id="Snippet76":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet76":::  
   
  ]]></format>
         </remarks>
@@ -169,8 +181,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Element" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CollectionChangeEventArgs.Element" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Element As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Element { System::Object ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Element : obj" Usage="System.ComponentModel.CollectionChangeEventArgs.Element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Element { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -178,6 +190,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -193,7 +207,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -210,8 +225,8 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.AutoCompleteStringCollection> named `AutoCompleteStringCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.AutoCompleteStringCollection.CollectionChanged?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#76](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#76)]
- [!code-vb[System.Windows.Forms.EventExamples#76](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#76)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs" id="Snippet76":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet76":::  
   
  ]]></format>
         </remarks>

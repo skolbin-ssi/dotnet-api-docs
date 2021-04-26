@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RequestContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.RequestContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RequestContext&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RequestContext abstract : IDisposable" />
   <TypeSignature Language="F#" Value="type RequestContext = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RequestContext abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -16,12 +16,16 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
-    <AssemblyVersion>4.2.0.0</AssemblyVersion>
-    <AssemblyVersion>4.5.0.1</AssemblyVersion>
-    <AssemblyVersion>4.5.0.3</AssemblyVersion>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="4.6.0.0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="4.7.0.0" FrameworkAlternate="dotnet-plat-ext-3.1" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="5.0.0.0" FrameworkAlternate="dotnet-plat-ext-5.0;dotnet-plat-ext-6.0" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -74,15 +78,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -96,8 +99,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.Abort" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Abort ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Abort();" />
       <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit" Usage="requestContext.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,11 +113,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -147,8 +148,9 @@
       <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginReply (System.ServiceModel.Channels.Message message, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginReply(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.BeginReply(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginReply(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginReply (message As Message, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="abstract member BeginReply : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="requestContext.BeginReply (message, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginReply(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -161,11 +163,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -200,8 +200,9 @@
       <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginReply (System.ServiceModel.Channels.Message message, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginReply(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.BeginReply(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginReply(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginReply (message As Message, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="abstract member BeginReply : System.ServiceModel.Channels.Message * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="requestContext.BeginReply (message, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginReply(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,11 +215,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -266,8 +265,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.Close" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Close ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close();" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="requestContext.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -280,11 +279,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -300,8 +297,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.Close(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Close (timeout As TimeSpan)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close(TimeSpan timeout);" />
       <MemberSignature Language="F#" Value="abstract member Close : TimeSpan -&gt; unit" Usage="requestContext.Close timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -314,11 +311,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -340,8 +335,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="requestContext.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -354,11 +349,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -378,8 +371,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndReply(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.EndReply(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndReply (result As IAsyncResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndReply(IAsyncResult ^ result);" />
       <MemberSignature Language="F#" Value="abstract member EndReply : IAsyncResult -&gt; unit" Usage="requestContext.EndReply result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndReply(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,11 +385,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -424,8 +415,9 @@
       <MemberSignature Language="C#" Value="public abstract void Reply (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reply(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.Reply(System.ServiceModel.Channels.Message)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Reply(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Reply (message As Message)" />
       <MemberSignature Language="F#" Value="abstract member Reply : System.ServiceModel.Channels.Message -&gt; unit" Usage="requestContext.Reply message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Reply(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -438,11 +430,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -469,8 +459,9 @@
       <MemberSignature Language="C#" Value="public abstract void Reply (System.ServiceModel.Channels.Message message, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reply(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.Reply(System.ServiceModel.Channels.Message,System.TimeSpan)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Reply(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout);" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Reply (message As Message, timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="abstract member Reply : System.ServiceModel.Channels.Message * TimeSpan -&gt; unit" Usage="requestContext.Reply (message, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Reply(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -483,11 +474,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -517,8 +506,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Message RequestMessage" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RequestContext.RequestMessage" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RequestMessage As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::Message ^ RequestMessage { System::ServiceModel::Channels::Message ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.RequestMessage : System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.RequestContext.RequestMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::Message ^ RequestMessage { System::ServiceModel::Channels::Message ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -531,11 +520,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
@@ -551,6 +538,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RequestContext.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="F#" Value="abstract member System.IDisposable.Dispose : unit -&gt; unit&#xA;override this.System.IDisposable.Dispose : unit -&gt; unit" Usage="requestContext.System.IDisposable.Dispose " />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -567,15 +555,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -584,7 +571,15 @@
       <Parameters />
       <Docs>
         <summary>Releases both managed and unmanaged resources associated with the context.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ServiceModel.Channels.RequestContext> instance is cast to an <xref:System.IDisposable> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

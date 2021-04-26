@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContractDescription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ContractDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class ContractDescription" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ContractDescription" />
   <TypeSignature Language="F#" Value="type ContractDescription = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractDescription" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -16,19 +16,24 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
-    <AssemblyVersion>4.2.0.0</AssemblyVersion>
-    <AssemblyVersion>4.5.0.1</AssemblyVersion>
-    <AssemblyVersion>4.5.0.3</AssemblyVersion>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="4.6.0.0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="4.7.0.0" FrameworkAlternate="dotnet-plat-ext-3.1" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="5.0.0.0" FrameworkAlternate="dotnet-plat-ext-5.0;dotnet-plat-ext-6.0" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Name={name}, Namespace={ns}, ContractType={contractType}")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("Name={name}, Namespace={ns}, ContractType={contractType}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("Name={name}, Namespace={ns}, ContractType={contractType}")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,8 +61,8 @@
 ## Examples  
  The following example shows a number of ways to create or retrieve a <xref:System.ServiceModel.Description.ContractDescription> object. It then displays the various pieces of information that are stored in the <xref:System.ServiceModel.Description.ContractDescription> object.  
   
- [!code-csharp[S_UE_ContractDescription#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#0)]
- [!code-vb[S_UE_ContractDescription#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#0)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet0":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet0":::  
   
  ]]></format>
     </remarks>
@@ -78,8 +83,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractDescription(System::String ^ name);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ContractDescription : string -&gt; System.ServiceModel.Description.ContractDescription" Usage="new System.ServiceModel.Description.ContractDescription name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractDescription(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,15 +97,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -113,8 +117,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#1)]
- [!code-vb[S_UE_ContractDescription#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -129,8 +133,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractDescription(System::String ^ name, System::String ^ ns);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ContractDescription : string * string -&gt; System.ServiceModel.Description.ContractDescription" Usage="new System.ServiceModel.Description.ContractDescription (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractDescription(System::String ^ name, System::String ^ ns);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,11 +147,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -166,8 +168,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#2)]
- [!code-vb[S_UE_ContractDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -182,8 +184,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.KeyedByTypeCollection`1&lt;class System.ServiceModel.Description.IContractBehavior&gt; Behaviors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Behaviors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Behaviors As KeyedByTypeCollection(Of IContractBehavior)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IContractBehavior ^&gt; ^ Behaviors { System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IContractBehavior ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Behaviors : System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IContractBehavior&gt;" Usage="System.ServiceModel.Description.ContractDescription.Behaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IContractBehavior ^&gt; ^ Behaviors { System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IContractBehavior ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -196,10 +198,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -212,8 +216,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#3)]
- [!code-vb[S_UE_ContractDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -224,8 +228,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CallbackContractType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.CallbackContractType" />
       <MemberSignature Language="VB.NET" Value="Public Property CallbackContractType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CallbackContractType { Type ^ get(); void set(Type ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CallbackContractType : Type with get, set" Usage="System.ServiceModel.Description.ContractDescription.CallbackContractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CallbackContractType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -238,18 +242,18 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -267,8 +271,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#4)]
- [!code-vb[S_UE_ContractDescription#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#4)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -279,8 +283,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ConfigurationName" />
       <MemberSignature Language="VB.NET" Value="Public Property ConfigurationName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigurationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ConfigurationName : string with get, set" Usage="System.ServiceModel.Description.ContractDescription.ConfigurationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigurationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -293,21 +297,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-uwp-10.0;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1">
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -320,8 +325,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#2)]
- [!code-vb[S_UE_ContractDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -332,8 +337,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.KeyedCollection`2&lt;class System.Type, class System.ServiceModel.Description.IContractBehavior&gt; ContractBehaviors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ContractBehaviors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractBehaviors As KeyedCollection(Of Type, IContractBehavior)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::KeyedCollection&lt;Type ^, System::ServiceModel::Description::IContractBehavior ^&gt; ^ ContractBehaviors { System::Collections::ObjectModel::KeyedCollection&lt;Type ^, System::ServiceModel::Description::IContractBehavior ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ContractBehaviors : System.Collections.ObjectModel.KeyedCollection&lt;Type, System.ServiceModel.Description.IContractBehavior&gt;" Usage="System.ServiceModel.Description.ContractDescription.ContractBehaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::KeyedCollection&lt;Type ^, System::ServiceModel::Description::IContractBehavior ^&gt; ^ ContractBehaviors { System::Collections::ObjectModel::KeyedCollection&lt;Type ^, System::ServiceModel::Description::IContractBehavior ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -345,11 +350,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.KeyedCollection&lt;System.Type,System.ServiceModel.Description.IContractBehavior&gt;</ReturnType>
@@ -365,8 +368,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContractType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ContractType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContractType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContractType { Type ^ get(); void set(Type ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ContractType : Type with get, set" Usage="System.ServiceModel.Description.ContractDescription.ContractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContractType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -379,18 +382,18 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -408,8 +411,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#6)]
- [!code-vb[S_UE_ContractDescription#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#6)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
@@ -438,8 +441,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetContract(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetContract (contractType As Type) As ContractDescription" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ContractDescription ^ GetContract(Type ^ contractType);" />
       <MemberSignature Language="F#" Value="static member GetContract : Type -&gt; System.ServiceModel.Description.ContractDescription" Usage="System.ServiceModel.Description.ContractDescription.GetContract contractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ContractDescription ^ GetContract(Type ^ contractType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -449,17 +452,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="contractType" Type="System.Type" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="contractType" Type="System.Type" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="contractType">The <see cref="T:System.Type" /> of contract.</param>
@@ -474,8 +475,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#13)]
- [!code-vb[S_UE_ContractDescription#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#13)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet13":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet13":::  
   
  ]]></format>
         </remarks>
@@ -486,8 +487,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType, object serviceImplementation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetContract(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetContract (contractType As Type, serviceImplementation As Object) As ContractDescription" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ContractDescription ^ GetContract(Type ^ contractType, System::Object ^ serviceImplementation);" />
       <MemberSignature Language="F#" Value="static member GetContract : Type * obj -&gt; System.ServiceModel.Description.ContractDescription" Usage="System.ServiceModel.Description.ContractDescription.GetContract (contractType, serviceImplementation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ContractDescription ^ GetContract(Type ^ contractType, System::Object ^ serviceImplementation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -519,8 +520,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#14)]
- [!code-vb[S_UE_ContractDescription#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#14)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet14":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet14":::  
   
  ]]></format>
         </remarks>
@@ -531,8 +532,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType, class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetContract(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetContract (contractType As Type, serviceType As Type) As ContractDescription" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ContractDescription ^ GetContract(Type ^ contractType, Type ^ serviceType);" />
       <MemberSignature Language="F#" Value="static member GetContract : Type * Type -&gt; System.ServiceModel.Description.ContractDescription" Usage="System.ServiceModel.Description.ContractDescription.GetContract (contractType, serviceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ContractDescription ^ GetContract(Type ^ contractType, Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -564,8 +565,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#15](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#15)]
- [!code-vb[S_UE_ContractDescription#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#15)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet15":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet15":::  
   
  ]]></format>
         </remarks>
@@ -576,8 +577,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ContractDescription&gt; GetInheritedContracts() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetInheritedContracts" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInheritedContracts () As Collection(Of ContractDescription)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ GetInheritedContracts();" />
       <MemberSignature Language="F#" Value="member this.GetInheritedContracts : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ContractDescription&gt;" Usage="contractDescription.GetInheritedContracts " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ GetInheritedContracts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -599,8 +600,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#16](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#16)]
- [!code-vb[S_UE_ContractDescription#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#16)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet16":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet16":::  
   
  ]]></format>
         </remarks>
@@ -611,8 +612,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool HasProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.HasProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasProtectionLevel As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasProtectionLevel { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.HasProtectionLevel : bool" Usage="System.ServiceModel.Description.ContractDescription.HasProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasProtectionLevel { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -625,7 +626,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -644,8 +646,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#7)]
- [!code-vb[S_UE_ContractDescription#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#7)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet7":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -656,8 +658,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Description.ContractDescription.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -670,11 +672,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -686,8 +686,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#8)]
- [!code-vb[S_UE_ContractDescription#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#8)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet8":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
@@ -698,8 +698,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.ServiceModel.Description.ContractDescription.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -712,15 +712,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -738,8 +737,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#9)]
- [!code-vb[S_UE_ContractDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#9)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet9":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet9":::  
   
  ]]></format>
         </remarks>
@@ -751,8 +750,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.OperationDescriptionCollection Operations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Operations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As OperationDescriptionCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::OperationDescriptionCollection ^ Operations { System::ServiceModel::Description::OperationDescriptionCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Operations : System.ServiceModel.Description.OperationDescriptionCollection" Usage="System.ServiceModel.Description.ContractDescription.Operations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::OperationDescriptionCollection ^ Operations { System::ServiceModel::Description::OperationDescriptionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -765,15 +764,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.1</AssemblyVersion>
-        <AssemblyVersion>4.5.0.3</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -786,8 +784,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#10)]
- [!code-vb[S_UE_ContractDescription#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -798,8 +796,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.Description.ContractDescription.ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -812,7 +810,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -830,8 +829,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#11)]
- [!code-vb[S_UE_ContractDescription#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#11)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet11":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet11":::  
   
  ]]></format>
         </remarks>
@@ -842,8 +841,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.SessionMode SessionMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.SessionMode" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionMode As SessionMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::SessionMode SessionMode { System::ServiceModel::SessionMode get(); void set(System::ServiceModel::SessionMode value); };" />
       <MemberSignature Language="F#" Value="member this.SessionMode : System.ServiceModel.SessionMode with get, set" Usage="System.ServiceModel.Description.ContractDescription.SessionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::SessionMode SessionMode { System::ServiceModel::SessionMode get(); void set(System::ServiceModel::SessionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -856,10 +855,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -877,8 +878,8 @@
    
   
 ## Examples  
- [!code-csharp[S_UE_ContractDescription#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#12)]
- [!code-vb[S_UE_ContractDescription#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#12)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs" id="Snippet12":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb" id="Snippet12":::  
   
  ]]></format>
         </remarks>
@@ -889,8 +890,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeProtectionLevel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.ShouldSerializeProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeProtectionLevel () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeProtectionLevel();" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeProtectionLevel : unit -&gt; bool" Usage="contractDescription.ShouldSerializeProtectionLevel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeProtectionLevel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -901,7 +902,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PatternMatcher extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.PatternMatcher" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PatternMatcher" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PatternMatcher sealed" />
   <TypeSignature Language="F#" Value="type PatternMatcher = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PatternMatcher sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Web.Services.Protocols.PatternMatcher> class performs pattern matching using regular expressions to find Web method return values in text encoded in the body of an HTTP response. The <xref:System.Web.Services.Protocols.PatternMatcher> class is called by the client-side <xref:System.Web.Services.Protocols.TextReturnReader> class, which deserializes Web service return values.  
   
- Text pattern matching provides a way for Web services to retrieve HTML content without converting it to XML documents that must be bound to XML Schema definitions. Regular expression search targets are specified in a Web Services Description Language (WSDL) document via `match` XML elements within `text` elements. Both elements belong to the namespace http://microsoft.com/wsdl/mime/textMatching/.  
+ Text pattern matching provides a way for Web services to retrieve HTML content without converting it to XML documents that must be bound to XML Schema definitions. Regular expression search targets are specified in a Web Services Description Language (WSDL) document via `match` XML elements within `text` elements. Both elements belong to the namespace `http://microsoft.com/wsdl/mime/textMatching/`.  
   
  When `match` elements are specified in a WSDL document, the Wsdl.exe tool applies <xref:System.Web.Services.Protocols.MatchAttribute> attributes to the corresponding Web methods in the client proxy class that is generated. A <xref:System.Web.Services.Protocols.MatchAttribute> attribute's properties establish the search criteria for a <xref:System.Web.Services.Protocols.PatternMatcher> instance.  
   
@@ -39,8 +39,9 @@
       <MemberSignature Language="C#" Value="public PatternMatcher (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.PatternMatcher.#ctor(System.Type)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PatternMatcher(Type ^ type);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As Type)" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.PatternMatcher : Type -&gt; System.Web.Services.Protocols.PatternMatcher" Usage="new System.Web.Services.Protocols.PatternMatcher type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PatternMatcher(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -69,8 +70,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Match(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.PatternMatcher.Match(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Match (text As String) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Match(System::String ^ text);" />
       <MemberSignature Language="F#" Value="member this.Match : string -&gt; obj" Usage="patternMatcher.Match text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Match(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

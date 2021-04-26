@@ -3,14 +3,16 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOControlCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.IOControlCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum IOControlCode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class IOControlCode" />
   <TypeSignature Language="F#" Value="type IOControlCode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IOControlCode" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -23,6 +25,10 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -39,8 +45,8 @@
 ## Examples  
  The following code example calls the <xref:System.Net.Sockets.Socket.IOControl%28System.Net.Sockets.IOControlCode%2CSystem.Byte%5B%5D%2CSystem.Byte%5B%5D%29> method with a DataToRead parameter value and compares the result with accessing the.<xref:System.Net.Sockets.Socket.Available%2A> property.  
   
- [!code-cpp[NCLSocketIoControl1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSocketIoControl1/CPP/iocontrolcode.cpp#1)]
- [!code-csharp[NCLSocketIoControl1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSocketIoControl1/CS/iocontrolcode.cs#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSocketIoControl1/CPP/iocontrolcode.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSocketIoControl1/CS/iocontrolcode.cs" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -51,8 +57,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AbsorbRouterAlert = int64(2550136837)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AbsorbRouterAlert" />
       <MemberSignature Language="VB.NET" Value="AbsorbRouterAlert" />
-      <MemberSignature Language="C++ CLI" Value="AbsorbRouterAlert" />
       <MemberSignature Language="F#" Value="AbsorbRouterAlert = 2550136837" Usage="System.Net.Sockets.IOControlCode.AbsorbRouterAlert" />
+      <MemberSignature Language="C++ CLI" Value="AbsorbRouterAlert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -60,6 +66,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +80,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -85,8 +99,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AddMulticastGroupOnInterface = int64(2550136842)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AddMulticastGroupOnInterface" />
       <MemberSignature Language="VB.NET" Value="AddMulticastGroupOnInterface" />
-      <MemberSignature Language="C++ CLI" Value="AddMulticastGroupOnInterface" />
       <MemberSignature Language="F#" Value="AddMulticastGroupOnInterface = 2550136842" Usage="System.Net.Sockets.IOControlCode.AddMulticastGroupOnInterface" />
+      <MemberSignature Language="C++ CLI" Value="AddMulticastGroupOnInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -94,6 +108,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,12 +122,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>2550136842</MemberValue>
       <Docs>
-        <summary>Join a multicast group using an interface identified by its index. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_INDEX_ADD_MCAST constant.</summary>
+        <summary>Join a multicast group using an interface identified by its index. This value is equal to the Winsock 2 SIO_INDEX_ADD_MCAST constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressListChange">
@@ -119,8 +141,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AddressListChange = int64(671088663)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AddressListChange" />
       <MemberSignature Language="VB.NET" Value="AddressListChange" />
-      <MemberSignature Language="C++ CLI" Value="AddressListChange" />
       <MemberSignature Language="F#" Value="AddressListChange = 671088663" Usage="System.Net.Sockets.IOControlCode.AddressListChange" />
+      <MemberSignature Language="C++ CLI" Value="AddressListChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -128,6 +150,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,12 +164,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>671088663</MemberValue>
       <Docs>
-        <summary>Enable receiving notification when the list of local interfaces for the socket's protocol family changes. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_ADDRESS_LIST_CHANGE constant.</summary>
+        <summary>Enable receiving notification when the list of local interfaces for the socket's protocol family changes. This value is equal to the Winsock 2 SIO_ADDRESS_LIST_CHANGE constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressListQuery">
@@ -153,8 +183,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AddressListQuery = int64(1207959574)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AddressListQuery" />
       <MemberSignature Language="VB.NET" Value="AddressListQuery" />
-      <MemberSignature Language="C++ CLI" Value="AddressListQuery" />
       <MemberSignature Language="F#" Value="AddressListQuery = 1207959574" Usage="System.Net.Sockets.IOControlCode.AddressListQuery" />
+      <MemberSignature Language="C++ CLI" Value="AddressListQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -162,6 +192,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,12 +206,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>1207959574</MemberValue>
       <Docs>
-        <summary>Return the list of local interfaces that the socket can bind to. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_ADDRESS_LIST_QUERY constant.</summary>
+        <summary>Return the list of local interfaces that the socket can bind to. This value is equal to the Winsock 2 SIO_ADDRESS_LIST_QUERY constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressListSort">
@@ -187,8 +225,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AddressListSort = int64(3355443225)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AddressListSort" />
       <MemberSignature Language="VB.NET" Value="AddressListSort" />
-      <MemberSignature Language="C++ CLI" Value="AddressListSort" />
       <MemberSignature Language="F#" Value="AddressListSort = 3355443225" Usage="System.Net.Sockets.IOControlCode.AddressListSort" />
+      <MemberSignature Language="C++ CLI" Value="AddressListSort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -196,6 +234,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -208,6 +248,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -221,8 +267,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AssociateHandle = int64(2281701377)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AssociateHandle" />
       <MemberSignature Language="VB.NET" Value="AssociateHandle" />
-      <MemberSignature Language="C++ CLI" Value="AssociateHandle" />
       <MemberSignature Language="F#" Value="AssociateHandle = 2281701377" Usage="System.Net.Sockets.IOControlCode.AssociateHandle" />
+      <MemberSignature Language="C++ CLI" Value="AssociateHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -230,6 +276,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -242,6 +290,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -255,8 +309,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AsyncIO = int64(2147772029)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AsyncIO" />
       <MemberSignature Language="VB.NET" Value="AsyncIO" />
-      <MemberSignature Language="C++ CLI" Value="AsyncIO" />
       <MemberSignature Language="F#" Value="AsyncIO = 2147772029" Usage="System.Net.Sockets.IOControlCode.AsyncIO" />
+      <MemberSignature Language="C++ CLI" Value="AsyncIO" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -264,6 +318,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -276,6 +332,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -289,8 +351,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode BindToInterface = int64(2550136840)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.BindToInterface" />
       <MemberSignature Language="VB.NET" Value="BindToInterface" />
-      <MemberSignature Language="C++ CLI" Value="BindToInterface" />
       <MemberSignature Language="F#" Value="BindToInterface = 2550136840" Usage="System.Net.Sockets.IOControlCode.BindToInterface" />
+      <MemberSignature Language="C++ CLI" Value="BindToInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -298,6 +360,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -310,12 +374,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>2550136840</MemberValue>
       <Docs>
-        <summary>Bind the socket to a specified interface index. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_INDEX_BIND constant.</summary>
+        <summary>Bind the socket to a specified interface index. This value is equal to the Winsock 2 SIO_INDEX_BIND constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataToRead">
@@ -323,8 +393,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode DataToRead = int64(1074030207)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.DataToRead" />
       <MemberSignature Language="VB.NET" Value="DataToRead" />
-      <MemberSignature Language="C++ CLI" Value="DataToRead" />
       <MemberSignature Language="F#" Value="DataToRead = 1074030207" Usage="System.Net.Sockets.IOControlCode.DataToRead" />
+      <MemberSignature Language="C++ CLI" Value="DataToRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -332,6 +402,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -357,8 +429,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode DeleteMulticastGroupFromInterface = int64(2550136843)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.DeleteMulticastGroupFromInterface" />
       <MemberSignature Language="VB.NET" Value="DeleteMulticastGroupFromInterface" />
-      <MemberSignature Language="C++ CLI" Value="DeleteMulticastGroupFromInterface" />
       <MemberSignature Language="F#" Value="DeleteMulticastGroupFromInterface = 2550136843" Usage="System.Net.Sockets.IOControlCode.DeleteMulticastGroupFromInterface" />
+      <MemberSignature Language="C++ CLI" Value="DeleteMulticastGroupFromInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -366,6 +438,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -378,12 +452,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>2550136843</MemberValue>
       <Docs>
-        <summary>Remove the socket from a multicast group. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_INDEX_ADD_MCAST constant.</summary>
+        <summary>Remove the socket from a multicast group. This value is equal to the Winsock 2 SIO_INDEX_ADD_MCAST constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableCircularQueuing">
@@ -391,8 +471,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode EnableCircularQueuing = int64(671088642)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.EnableCircularQueuing" />
       <MemberSignature Language="VB.NET" Value="EnableCircularQueuing" />
-      <MemberSignature Language="C++ CLI" Value="EnableCircularQueuing" />
       <MemberSignature Language="F#" Value="EnableCircularQueuing = 671088642" Usage="System.Net.Sockets.IOControlCode.EnableCircularQueuing" />
+      <MemberSignature Language="C++ CLI" Value="EnableCircularQueuing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -400,6 +480,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -412,6 +494,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -425,8 +513,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode Flush = int64(671088644)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.Flush" />
       <MemberSignature Language="VB.NET" Value="Flush" />
-      <MemberSignature Language="C++ CLI" Value="Flush" />
       <MemberSignature Language="F#" Value="Flush = 671088644" Usage="System.Net.Sockets.IOControlCode.Flush" />
+      <MemberSignature Language="C++ CLI" Value="Flush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -434,6 +522,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -446,6 +536,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -459,8 +555,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode GetBroadcastAddress = int64(1207959557)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.GetBroadcastAddress" />
       <MemberSignature Language="VB.NET" Value="GetBroadcastAddress" />
-      <MemberSignature Language="C++ CLI" Value="GetBroadcastAddress" />
       <MemberSignature Language="F#" Value="GetBroadcastAddress = 1207959557" Usage="System.Net.Sockets.IOControlCode.GetBroadcastAddress" />
+      <MemberSignature Language="C++ CLI" Value="GetBroadcastAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -468,6 +564,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -480,6 +578,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -493,8 +597,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode GetExtensionFunctionPointer = int64(3355443206)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.GetExtensionFunctionPointer" />
       <MemberSignature Language="VB.NET" Value="GetExtensionFunctionPointer" />
-      <MemberSignature Language="C++ CLI" Value="GetExtensionFunctionPointer" />
       <MemberSignature Language="F#" Value="GetExtensionFunctionPointer = 3355443206" Usage="System.Net.Sockets.IOControlCode.GetExtensionFunctionPointer" />
+      <MemberSignature Language="C++ CLI" Value="GetExtensionFunctionPointer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -502,6 +606,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -514,6 +620,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -527,8 +639,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode GetGroupQos = int64(3355443208)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.GetGroupQos" />
       <MemberSignature Language="VB.NET" Value="GetGroupQos" />
-      <MemberSignature Language="C++ CLI" Value="GetGroupQos" />
       <MemberSignature Language="F#" Value="GetGroupQos = 3355443208" Usage="System.Net.Sockets.IOControlCode.GetGroupQos" />
+      <MemberSignature Language="C++ CLI" Value="GetGroupQos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -536,6 +648,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -548,6 +662,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -561,8 +681,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode GetQos = int64(3355443207)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.GetQos" />
       <MemberSignature Language="VB.NET" Value="GetQos" />
-      <MemberSignature Language="C++ CLI" Value="GetQos" />
       <MemberSignature Language="F#" Value="GetQos = 3355443207" Usage="System.Net.Sockets.IOControlCode.GetQos" />
+      <MemberSignature Language="C++ CLI" Value="GetQos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -570,6 +690,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -582,12 +704,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>3355443207</MemberValue>
       <Docs>
-        <summary>Retrieve the QOS structure associated with the socket. This control is only supported on platforms that provide a QOS capable transport (Windows Me, Windows 2000, and later.) This value is equal to the Winsock 2 SIO_GET_QOS constant.</summary>
+        <summary>Retrieve the QOS structure associated with the socket. This value is equal to the Winsock 2 SIO_GET_QOS constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeepAliveValues">
@@ -595,8 +723,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode KeepAliveValues = int64(2550136836)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.KeepAliveValues" />
       <MemberSignature Language="VB.NET" Value="KeepAliveValues" />
-      <MemberSignature Language="C++ CLI" Value="KeepAliveValues" />
       <MemberSignature Language="F#" Value="KeepAliveValues = 2550136836" Usage="System.Net.Sockets.IOControlCode.KeepAliveValues" />
+      <MemberSignature Language="C++ CLI" Value="KeepAliveValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -604,6 +732,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -616,12 +746,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>2550136836</MemberValue>
       <Docs>
-        <summary>Control sending TCP keep-alive packets and the interval at which they are sent. This control code is supported on Windows 2000 and later operating systems. For additional information, see RFC 1122 section 4.2.3.6. This value is equal to the Winsock 2 SIO_KEEPALIVE_VALS constant.</summary>
+        <summary>Control sending TCP keep-alive packets and the interval at which they are sent. For additional information, see RFC 1122 section 4.2.3.6. This value is equal to the Winsock 2 SIO_KEEPALIVE_VALS constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="LimitBroadcasts">
@@ -629,8 +765,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode LimitBroadcasts = int64(2550136839)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.LimitBroadcasts" />
       <MemberSignature Language="VB.NET" Value="LimitBroadcasts" />
-      <MemberSignature Language="C++ CLI" Value="LimitBroadcasts" />
       <MemberSignature Language="F#" Value="LimitBroadcasts = 2550136839" Usage="System.Net.Sockets.IOControlCode.LimitBroadcasts" />
+      <MemberSignature Language="C++ CLI" Value="LimitBroadcasts" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -638,6 +774,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -650,6 +788,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -663,8 +807,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode MulticastInterface = int64(2550136841)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.MulticastInterface" />
       <MemberSignature Language="VB.NET" Value="MulticastInterface" />
-      <MemberSignature Language="C++ CLI" Value="MulticastInterface" />
       <MemberSignature Language="F#" Value="MulticastInterface = 2550136841" Usage="System.Net.Sockets.IOControlCode.MulticastInterface" />
+      <MemberSignature Language="C++ CLI" Value="MulticastInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -672,6 +816,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -684,12 +830,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>2550136841</MemberValue>
       <Docs>
-        <summary>Set the interface used for outgoing multicast packets. The interface is identified by its index. This control code is supported on Windows 2000 and later operating systems.  This value is equal to the Winsock 2 SIO_INDEX_MCASTIF constant.</summary>
+        <summary>Set the interface used for outgoing multicast packets. The interface is identified by its index.  This value is equal to the Winsock 2 SIO_INDEX_MCASTIF constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="MulticastScope">
@@ -697,8 +849,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode MulticastScope = int64(2281701386)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.MulticastScope" />
       <MemberSignature Language="VB.NET" Value="MulticastScope" />
-      <MemberSignature Language="C++ CLI" Value="MulticastScope" />
       <MemberSignature Language="F#" Value="MulticastScope = 2281701386" Usage="System.Net.Sockets.IOControlCode.MulticastScope" />
+      <MemberSignature Language="C++ CLI" Value="MulticastScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -706,6 +858,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -718,6 +872,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -731,8 +891,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode MultipointLoopback = int64(2281701385)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.MultipointLoopback" />
       <MemberSignature Language="VB.NET" Value="MultipointLoopback" />
-      <MemberSignature Language="C++ CLI" Value="MultipointLoopback" />
       <MemberSignature Language="F#" Value="MultipointLoopback = 2281701385" Usage="System.Net.Sockets.IOControlCode.MultipointLoopback" />
+      <MemberSignature Language="C++ CLI" Value="MultipointLoopback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -740,6 +900,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -752,6 +914,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -765,8 +933,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode NamespaceChange = int64(2281701401)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.NamespaceChange" />
       <MemberSignature Language="VB.NET" Value="NamespaceChange" />
-      <MemberSignature Language="C++ CLI" Value="NamespaceChange" />
       <MemberSignature Language="F#" Value="NamespaceChange = 2281701401" Usage="System.Net.Sockets.IOControlCode.NamespaceChange" />
+      <MemberSignature Language="C++ CLI" Value="NamespaceChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -774,6 +942,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -786,6 +956,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -799,8 +975,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode NonBlockingIO = int64(2147772030)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.NonBlockingIO" />
       <MemberSignature Language="VB.NET" Value="NonBlockingIO" />
-      <MemberSignature Language="C++ CLI" Value="NonBlockingIO" />
       <MemberSignature Language="F#" Value="NonBlockingIO = 2147772030" Usage="System.Net.Sockets.IOControlCode.NonBlockingIO" />
+      <MemberSignature Language="C++ CLI" Value="NonBlockingIO" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -808,6 +984,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -833,8 +1011,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode OobDataRead = int64(1074033415)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.OobDataRead" />
       <MemberSignature Language="VB.NET" Value="OobDataRead" />
-      <MemberSignature Language="C++ CLI" Value="OobDataRead" />
       <MemberSignature Language="F#" Value="OobDataRead = 1074033415" Usage="System.Net.Sockets.IOControlCode.OobDataRead" />
+      <MemberSignature Language="C++ CLI" Value="OobDataRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -842,6 +1020,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -867,8 +1047,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode QueryTargetPnpHandle = int64(1207959576)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.QueryTargetPnpHandle" />
       <MemberSignature Language="VB.NET" Value="QueryTargetPnpHandle" />
-      <MemberSignature Language="C++ CLI" Value="QueryTargetPnpHandle" />
       <MemberSignature Language="F#" Value="QueryTargetPnpHandle = 1207959576" Usage="System.Net.Sockets.IOControlCode.QueryTargetPnpHandle" />
+      <MemberSignature Language="C++ CLI" Value="QueryTargetPnpHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -876,6 +1056,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -888,12 +1070,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>1207959576</MemberValue>
       <Docs>
-        <summary>Retrieve the underlying provider's SOCKET handle. This handle can be used to receive plug-and-play event notification. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_QUERY_TARGET_PNP_HANDLE constant.</summary>
+        <summary>Retrieve the underlying provider's SOCKET handle. This handle can be used to receive plug-and-play event notification. This value is equal to the Winsock 2 SIO_QUERY_TARGET_PNP_HANDLE constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReceiveAll">
@@ -901,8 +1089,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode ReceiveAll = int64(2550136833)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.ReceiveAll" />
       <MemberSignature Language="VB.NET" Value="ReceiveAll" />
-      <MemberSignature Language="C++ CLI" Value="ReceiveAll" />
       <MemberSignature Language="F#" Value="ReceiveAll = 2550136833" Usage="System.Net.Sockets.IOControlCode.ReceiveAll" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -910,6 +1098,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -922,12 +1112,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>2550136833</MemberValue>
       <Docs>
-        <summary>Enable receiving all IPv4 packets on the network. The socket must have address family <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />, the socket type must be <see cref="F:System.Net.Sockets.SocketType.Raw" />, and the protocol type must be <see cref="F:System.Net.Sockets.ProtocolType.IP" />. The current user must belong to the Administrators group on the local computer, and the socket must be bound to a specific port. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_RCVALL constant.</summary>
+        <summary>Enable receiving all IPv4 packets on the network. The socket must have address family <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />, the socket type must be <see cref="F:System.Net.Sockets.SocketType.Raw" />, and the protocol type must be <see cref="F:System.Net.Sockets.ProtocolType.IP" />. The current user must belong to the Administrators group on the local computer, and the socket must be bound to a specific port. This value is equal to the Winsock 2 SIO_RCVALL constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReceiveAllIgmpMulticast">
@@ -935,8 +1131,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode ReceiveAllIgmpMulticast = int64(2550136835)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.ReceiveAllIgmpMulticast" />
       <MemberSignature Language="VB.NET" Value="ReceiveAllIgmpMulticast" />
-      <MemberSignature Language="C++ CLI" Value="ReceiveAllIgmpMulticast" />
       <MemberSignature Language="F#" Value="ReceiveAllIgmpMulticast = 2550136835" Usage="System.Net.Sockets.IOControlCode.ReceiveAllIgmpMulticast" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveAllIgmpMulticast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -944,6 +1140,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -956,12 +1154,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>2550136835</MemberValue>
       <Docs>
-        <summary>Enable receiving all Internet Group Management Protocol (IGMP) packets on the network. The socket must have address family <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />, the socket type must be <see cref="F:System.Net.Sockets.SocketType.Raw" />, and the protocol type must be <see cref="F:System.Net.Sockets.ProtocolType.Igmp" />. The current user must belong to the Administrators group on the local computer, and the socket must be bound to a specific port. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_RCVALL_IGMPMCAST constant.</summary>
+        <summary>Enable receiving all Internet Group Management Protocol (IGMP) packets on the network. The socket must have address family <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />, the socket type must be <see cref="F:System.Net.Sockets.SocketType.Raw" />, and the protocol type must be <see cref="F:System.Net.Sockets.ProtocolType.Igmp" />. The current user must belong to the Administrators group on the local computer, and the socket must be bound to a specific port. This value is equal to the Winsock 2 SIO_RCVALL_IGMPMCAST constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReceiveAllMulticast">
@@ -969,8 +1173,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode ReceiveAllMulticast = int64(2550136834)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.ReceiveAllMulticast" />
       <MemberSignature Language="VB.NET" Value="ReceiveAllMulticast" />
-      <MemberSignature Language="C++ CLI" Value="ReceiveAllMulticast" />
       <MemberSignature Language="F#" Value="ReceiveAllMulticast = 2550136834" Usage="System.Net.Sockets.IOControlCode.ReceiveAllMulticast" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveAllMulticast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -978,6 +1182,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -990,12 +1196,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>2550136834</MemberValue>
       <Docs>
-        <summary>Enable receiving all multicast IPv4 packets on the network. These are packets with destination addresses in the range 224.0.0.0 through 239.255.255.255. The socket must have address family <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />, the socket type must be <see cref="F:System.Net.Sockets.SocketType.Raw" />, and the protocol type must be <see cref="F:System.Net.Sockets.ProtocolType.Udp" />. The current user must belong to the Administrators group on the local computer, and the socket must be bound to a specific port. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_RCVALL_MCAST constant.</summary>
+        <summary>Enable receiving all multicast IPv4 packets on the network. These are packets with destination addresses in the range 224.0.0.0 through 239.255.255.255. The socket must have address family <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />, the socket type must be <see cref="F:System.Net.Sockets.SocketType.Raw" />, and the protocol type must be <see cref="F:System.Net.Sockets.ProtocolType.Udp" />. The current user must belong to the Administrators group on the local computer, and the socket must be bound to a specific port. This value is equal to the Winsock 2 SIO_RCVALL_MCAST constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoutingInterfaceChange">
@@ -1003,8 +1215,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode RoutingInterfaceChange = int64(2281701397)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.RoutingInterfaceChange" />
       <MemberSignature Language="VB.NET" Value="RoutingInterfaceChange" />
-      <MemberSignature Language="C++ CLI" Value="RoutingInterfaceChange" />
       <MemberSignature Language="F#" Value="RoutingInterfaceChange = 2281701397" Usage="System.Net.Sockets.IOControlCode.RoutingInterfaceChange" />
+      <MemberSignature Language="C++ CLI" Value="RoutingInterfaceChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1012,6 +1224,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1024,6 +1238,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -1037,8 +1257,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode RoutingInterfaceQuery = int64(3355443220)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.RoutingInterfaceQuery" />
       <MemberSignature Language="VB.NET" Value="RoutingInterfaceQuery" />
-      <MemberSignature Language="C++ CLI" Value="RoutingInterfaceQuery" />
       <MemberSignature Language="F#" Value="RoutingInterfaceQuery = 3355443220" Usage="System.Net.Sockets.IOControlCode.RoutingInterfaceQuery" />
+      <MemberSignature Language="C++ CLI" Value="RoutingInterfaceQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1046,6 +1266,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1058,6 +1280,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -1071,8 +1299,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode SetGroupQos = int64(2281701388)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.SetGroupQos" />
       <MemberSignature Language="VB.NET" Value="SetGroupQos" />
-      <MemberSignature Language="C++ CLI" Value="SetGroupQos" />
       <MemberSignature Language="F#" Value="SetGroupQos = 2281701388" Usage="System.Net.Sockets.IOControlCode.SetGroupQos" />
+      <MemberSignature Language="C++ CLI" Value="SetGroupQos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1080,6 +1308,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1092,6 +1322,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -1105,8 +1341,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode SetQos = int64(2281701387)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.SetQos" />
       <MemberSignature Language="VB.NET" Value="SetQos" />
-      <MemberSignature Language="C++ CLI" Value="SetQos" />
       <MemberSignature Language="F#" Value="SetQos = 2281701387" Usage="System.Net.Sockets.IOControlCode.SetQos" />
+      <MemberSignature Language="C++ CLI" Value="SetQos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1114,6 +1350,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1126,12 +1364,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
       <MemberValue>2281701387</MemberValue>
       <Docs>
-        <summary>Set the Quality of Service (QOS) attributes for the socket. QOS defines the bandwidth requirements for the socket. This control code is supported on Windows Me, Windows 2000, and later operating systems. This value is equal to the Winsock 2 SIO_SET_QOS constant.</summary>
+        <summary>Set the Quality of Service (QOS) attributes for the socket. QOS defines the bandwidth requirements for the socket. This value is equal to the Winsock 2 SIO_SET_QOS constant.</summary>
       </Docs>
     </Member>
     <Member MemberName="TranslateHandle">
@@ -1139,8 +1383,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode TranslateHandle = int64(3355443213)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.TranslateHandle" />
       <MemberSignature Language="VB.NET" Value="TranslateHandle" />
-      <MemberSignature Language="C++ CLI" Value="TranslateHandle" />
       <MemberSignature Language="F#" Value="TranslateHandle = 3355443213" Usage="System.Net.Sockets.IOControlCode.TranslateHandle" />
+      <MemberSignature Language="C++ CLI" Value="TranslateHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1148,6 +1392,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1160,6 +1406,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
@@ -1173,8 +1425,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode UnicastInterface = int64(2550136838)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.UnicastInterface" />
       <MemberSignature Language="VB.NET" Value="UnicastInterface" />
-      <MemberSignature Language="C++ CLI" Value="UnicastInterface" />
       <MemberSignature Language="F#" Value="UnicastInterface = 2550136838" Usage="System.Net.Sockets.IOControlCode.UnicastInterface" />
+      <MemberSignature Language="C++ CLI" Value="UnicastInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1182,6 +1434,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1194,6 +1448,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>

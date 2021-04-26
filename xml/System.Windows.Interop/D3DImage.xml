@@ -1,14 +1,17 @@
 <Type Name="D3DImage" FullName="System.Windows.Interop.D3DImage">
   <TypeSignature Language="C#" Value="public class D3DImage : System.Windows.Media.ImageSource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi D3DImage extends System.Windows.Media.ImageSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit D3DImage extends System.Windows.Media.ImageSource" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.D3DImage" />
   <TypeSignature Language="VB.NET" Value="Public Class D3DImage&#xA;Inherits ImageSource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class D3DImage : System::Windows::Media::ImageSource" />
   <TypeSignature Language="F#" Value="type D3DImage = class&#xA;    inherit ImageSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class D3DImage : System::Windows::Media::ImageSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi D3DImage extends System.Windows.Media.ImageSource" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Media.ImageSource</BaseTypeName>
@@ -33,7 +36,7 @@
  When you call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> overload with the `enableSoftwareFallback` parameter set to `true`, the rendering system retains its reference to the back buffer when the front buffer becomes unavailable, so there is no need to call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> when the front buffer is available again.  There may be situations where the user's device becomes unavailable.  When that occurs, call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> to release WPF's reference to the back buffer.  If you need to reset your device, call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> with the `backBuffer` parameter set to `null`, and then call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> again with `backBuffer` set to a valid Direct3D surface.  
   
 > [!NOTE]
->  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](~/docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md).  
+>  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](/dotnet/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Interop.D3DImage> class does not display Direct3D content when WPF renders in software, such as over a Remote Desktop connection, unless you call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> and specify `true` for the `enableSoftwareFallback` parameter.  
@@ -41,13 +44,12 @@
    
   
 ## Examples  
- The following code example shows how to declare a <xref:System.Windows.Interop.D3DImage> in XAML. You must map the <xref:System.Windows.Interop> namespace, because it is not included in the default XAML namespaces. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+ The following code example shows how to declare a <xref:System.Windows.Interop.D3DImage> in XAML. You must map the <xref:System.Windows.Interop> namespace, because it is not included in the default XAML namespaces. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf).  
   
- [!code-xaml[System.Windows.Interop.D3DImage#10](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml#10)]  
+ :::code language="xaml" source="~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml" id="Snippet10":::  
   
  ]]></format>
     </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -70,10 +72,13 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -87,7 +92,6 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,17 +99,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 dpiX, float64 dpiY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dpiX As Double, dpiY As Double)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; D3DImage(double dpiX, double dpiY);" />
       <MemberSignature Language="F#" Value="new System.Windows.Interop.D3DImage : double * double -&gt; System.Windows.Interop.D3DImage" Usage="new System.Windows.Interop.D3DImage (dpiX, dpiY)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; D3DImage(double dpiX, double dpiY);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -126,7 +133,6 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="dpiX" /> or <paramref name="dpiY" /> is less than zero.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <altmember cref="P:System.Windows.Interop.D3DImage.Height" />
         <altmember cref="P:System.Windows.Interop.D3DImage.Width" />
       </Docs>
@@ -136,17 +142,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDirtyRect(valuetype System.Windows.Int32Rect dirtyRect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.AddDirtyRect(System.Windows.Int32Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDirtyRect (dirtyRect As Int32Rect)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDirtyRect(System::Windows::Int32Rect dirtyRect);" />
       <MemberSignature Language="F#" Value="member this.AddDirtyRect : System.Windows.Int32Rect -&gt; unit" Usage="d3DImage.AddDirtyRect dirtyRect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDirtyRect(System::Windows::Int32Rect dirtyRect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,9 +183,9 @@
    
   
 ## Examples  
- The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf).  
   
- [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -192,7 +201,6 @@
  <paramref name="dirtyRect.Y" /> &lt; 0  
   
  <paramref name="dirtyRect.Width" /> &lt; 0 or <paramref name="dirtyRect.Width" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelWidth" /><paramref name="dirtyRect.Height" /> &lt; 0 or <paramref name="dirtyRect.Height" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelHeight" /></exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <altmember cref="M:System.Windows.Interop.D3DImage.Unlock" />
         <altmember cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
       </Docs>
@@ -202,13 +210,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Interop.D3DImage Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As D3DImage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Interop::D3DImage ^ Clone();" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Interop.D3DImage" Usage="d3DImage.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Interop::D3DImage ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Interop.D3DImage</ReturnType>
@@ -216,7 +226,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Interop.D3DImage" /> object, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (which may no longer resolve), but not animations or their current values.</summary>
-        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -234,13 +244,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="d3DImage.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -260,13 +272,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Interop.D3DImage CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As D3DImage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Interop::D3DImage ^ CloneCurrentValue();" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Interop.D3DImage" Usage="d3DImage.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Interop::D3DImage ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Interop.D3DImage</ReturnType>
@@ -292,13 +306,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="d3DImage.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -318,20 +334,24 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Windows.Media.Imaging.BitmapSource CopyBackBuffer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CopyBackBuffer" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CopyBackBuffer () As BitmapSource" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Windows::Media::Imaging::BitmapSource ^ CopyBackBuffer();" />
       <MemberSignature Language="F#" Value="abstract member CopyBackBuffer : unit -&gt; System.Windows.Media.Imaging.BitmapSource&#xA;override this.CopyBackBuffer : unit -&gt; System.Windows.Media.Imaging.BitmapSource" Usage="d3DImage.CopyBackBuffer " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Windows::Media::Imaging::BitmapSource ^ CopyBackBuffer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityTreatAsSafe]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityTreatAsSafe&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -351,7 +371,6 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
       </Docs>
     </Member>
@@ -360,13 +379,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="d3DImage.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Freezable</ReturnType>
@@ -390,20 +411,24 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
-      <MemberSignature Language="C++ CLI" Value="!D3DImage ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="d3DImage.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!D3DImage ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityTreatAsSafe]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityTreatAsSafe&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -418,11 +443,10 @@
 ## Remarks  
  This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   
- For more information, see [Finalize Methods and Destructors](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0s71x931(v%3dvs.100)), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).  
+ For more information, see [Finalize Methods and Destructors](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0s71x931(v%3dvs.100)), [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged), and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).  
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="FreezeCore">
@@ -430,13 +454,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function FreezeCore (isChecking As Boolean) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="d3DImage.FreezeCore isChecking" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -465,13 +491,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="d3DImage.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -491,13 +519,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="d3DImage.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -517,13 +547,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.Height" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Height As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
       <MemberSignature Language="F#" Value="member this.Height : double" Usage="System.Windows.Interop.D3DImage.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -548,13 +580,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFrontBufferAvailable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.IsFrontBufferAvailable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFrontBufferAvailable As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFrontBufferAvailable { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsFrontBufferAvailable : bool" Usage="System.Windows.Interop.D3DImage.IsFrontBufferAvailable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFrontBufferAvailable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -580,9 +614,9 @@
    
   
 ## Examples  
- The following code example shows how to check the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailable%2A> property when rendering the composition target. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+ The following code example shows how to check the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailable%2A> property when rendering the composition target. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf).  
   
- [!code-csharp[System.Windows.Interop.D3DImage#2](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -595,13 +629,15 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.DependencyPropertyChangedEventHandler IsFrontBufferAvailableChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event IsFrontBufferAvailableChanged As DependencyPropertyChangedEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::DependencyPropertyChangedEventHandler ^ IsFrontBufferAvailableChanged;" />
       <MemberSignature Language="F#" Value="member this.IsFrontBufferAvailableChanged : System.Windows.DependencyPropertyChangedEventHandler " Usage="member this.IsFrontBufferAvailableChanged : System.Windows.DependencyPropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::DependencyPropertyChangedEventHandler ^ IsFrontBufferAvailableChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyPropertyChangedEventHandler</ReturnType>
@@ -625,13 +661,15 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsFrontBufferAvailableProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Interop.D3DImage.IsFrontBufferAvailableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsFrontBufferAvailableProperty As DependencyProperty " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsFrontBufferAvailableProperty;" />
       <MemberSignature Language="F#" Value=" staticval mutable IsFrontBufferAvailableProperty : System.Windows.DependencyProperty" Usage="System.Windows.Interop.D3DImage.IsFrontBufferAvailableProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsFrontBufferAvailableProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
@@ -646,13 +684,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Lock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Lock" />
       <MemberSignature Language="VB.NET" Value="Public Sub Lock ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Lock();" />
       <MemberSignature Language="F#" Value="member this.Lock : unit -&gt; unit" Usage="d3DImage.Lock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Lock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -672,9 +712,9 @@
    
   
 ## Examples  
- The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Lock%2A> method to enable updates to the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Lock%2A> method to enable updates to the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf).  
   
- [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -688,13 +728,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageMetadata Metadata" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Metadata As ImageMetadata" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageMetadata ^ Metadata { System::Windows::Media::ImageMetadata ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Metadata : System.Windows.Media.ImageMetadata" Usage="System.Windows.Interop.D3DImage.Metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageMetadata ^ Metadata { System::Windows::Media::ImageMetadata ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.ImageMetadata</ReturnType>
@@ -711,13 +753,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 PixelHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.PixelHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelHeight As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelHeight { int get(); };" />
       <MemberSignature Language="F#" Value="member this.PixelHeight : int" Usage="System.Windows.Interop.D3DImage.PixelHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -734,9 +778,9 @@
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelHeight%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+ The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelHeight%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf).  
   
- [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -749,13 +793,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 PixelWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.PixelWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelWidth As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelWidth { int get(); };" />
       <MemberSignature Language="F#" Value="member this.PixelWidth : int" Usage="System.Windows.Interop.D3DImage.PixelWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelWidth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -772,9 +818,9 @@
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelWidth%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+ The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelWidth%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf).  
   
- [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -796,17 +842,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBackBuffer(valuetype System.Windows.Interop.D3DResourceType backBufferType, native int backBuffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBackBuffer (backBufferType As D3DResourceType, backBuffer As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBackBuffer(System::Windows::Interop::D3DResourceType backBufferType, IntPtr backBuffer);" />
       <MemberSignature Language="F#" Value="member this.SetBackBuffer : System.Windows.Interop.D3DResourceType * nativeint -&gt; unit" Usage="d3DImage.SetBackBuffer (backBufferType, backBuffer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBackBuffer(System::Windows::Interop::D3DResourceType backBufferType, IntPtr backBuffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -827,7 +876,7 @@
  Call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method to assign a Direct3D surface to the back buffer.  
   
 > [!NOTE]
->  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](~/docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md).  
+>  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](/dotnet/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability).  
   
  Calling the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%29> overload is identical to calling the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> overload with the `enableSoftwareFallback` parameter set to `false`. When you call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%29> or call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> with the `enableSoftwareFallback` parameter set to `false`, the rendering system releases its reference to the back buffer when front buffer becomes unavailable and nothing is displayed. When the front buffer is available again, the rendering system raises the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to notify your WPF application.  You can create an event handler for the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to restart rendering again with a valid Direct3D surface. To restart rendering, you must call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A>.  
   
@@ -844,9 +893,9 @@
    
   
 ## Examples  
- The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method to assign a Direct3D surface. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method to assign a Direct3D surface. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf).  
   
- [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -854,7 +903,6 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="backBufferType" /> is not a valid <see cref="T:System.Windows.Interop.D3DResourceType" />.</exception>
         <exception cref="T:System.ArgumentException">The creation parameters for <paramref name="backBuffer" /> do not meet the requirements for the <paramref name="backBufferType" />-or-The <paramref name="backBuffer" /> device is not valid.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <altmember cref="M:System.Windows.Interop.D3DImage.Lock" />
         <altmember cref="M:System.Windows.Interop.D3DImage.Unlock" />
       </Docs>
@@ -864,25 +912,28 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBackBuffer(valuetype System.Windows.Interop.D3DResourceType backBufferType, native int backBuffer, bool enableSoftwareFallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBackBuffer (backBufferType As D3DResourceType, backBuffer As IntPtr, enableSoftwareFallback As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBackBuffer(System::Windows::Interop::D3DResourceType backBufferType, IntPtr backBuffer, bool enableSoftwareFallback);" />
       <MemberSignature Language="F#" Value="member this.SetBackBuffer : System.Windows.Interop.D3DResourceType * nativeint * bool -&gt; unit" Usage="d3DImage.SetBackBuffer (backBufferType, backBuffer, enableSoftwareFallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBackBuffer(System::Windows::Interop::D3DResourceType backBufferType, IntPtr backBuffer, bool enableSoftwareFallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="backBufferType" Type="System.Windows.Interop.D3DResourceType" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="backBuffer" Type="System.IntPtr" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="enableSoftwareFallback" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="backBufferType" Type="System.Windows.Interop.D3DResourceType" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="backBuffer" Type="System.IntPtr" Index="1" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="enableSoftwareFallback" Type="System.Boolean" Index="2" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="backBufferType">The type of Direct3D surface. Must be a valid <see cref="T:System.Windows.Interop.D3DResourceType" />.</param>
@@ -917,13 +968,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryLock(valuetype System.Windows.Duration timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.TryLock(System.Windows.Duration)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLock (timeout As Duration) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryLock(System::Windows::Duration timeout);" />
       <MemberSignature Language="F#" Value="member this.TryLock : System.Windows.Duration -&gt; bool" Usage="d3DImage.TryLock timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryLock(System::Windows::Duration timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -949,13 +1002,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unlock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Unlock" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unlock ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unlock();" />
       <MemberSignature Language="F#" Value="member this.Unlock : unit -&gt; unit" Usage="d3DImage.Unlock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unlock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -977,9 +1032,9 @@
    
   
 ## Examples  
- The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Unlock%2A> method to copy the updated back buffer to the front buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Unlock%2A> method to copy the updated back buffer to the front buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf).  
   
- [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -992,13 +1047,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.Width" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Width As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
       <MemberSignature Language="F#" Value="member this.Width : double" Usage="System.Windows.Interop.D3DImage.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>

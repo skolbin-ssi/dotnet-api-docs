@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoginCancelEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginCancelEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LoginCancelEventArgs&#xA;Inherits EventArgs" />
-  <TypeSignature Language="C++ CLI" Value="public ref class LoginCancelEventArgs : EventArgs" />
   <TypeSignature Language="F#" Value="type LoginCancelEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LoginCancelEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -29,13 +29,13 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler cancels the logon attempt by setting the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> object to `true`.Then the error message specified in the <xref:System.Web.UI.WebControls.Login.InstructionText%2A> property is displayed.  
   
- [!code-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargs.cs#2)]
- [!code-vb[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargs.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargs.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargs.vb" id="Snippet2":::  
   
  The following is the .aspx file that can be used to run the preceding example.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargscs.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.LoginCancelEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargsvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargscs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargsvb.aspx" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -43,8 +43,8 @@
     <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
     <altmember cref="T:System.Web.UI.WebControls.PasswordRecovery" />
     <altmember cref="E:System.Web.UI.WebControls.Login.LoggingIn" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/d85075bc-9c1a-4453-8a0c-539b10853c9c">Securing Login Controls</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178329(v=vs.100)">ASP.NET Login Controls Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178346(v=vs.100)">Securing Login Controls</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -70,14 +70,15 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LoginCancelEventArgs" /> class with the <see cref="P:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel" /> property set to <see langword="false" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178329(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,8 +86,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LoginCancelEventArgs.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cancel As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; LoginCancelEventArgs(bool cancel);" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LoginCancelEventArgs : bool -&gt; System.Web.UI.WebControls.LoginCancelEventArgs" Usage="new System.Web.UI.WebControls.LoginCancelEventArgs cancel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LoginCancelEventArgs(bool cancel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,7 +96,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -106,7 +108,7 @@
           <see langword="true" /> to cancel the event; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LoginCancelEventArgs" /> class with the <see cref="P:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel" /> property set to the specified value.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178329(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -114,8 +116,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.Web.UI.WebControls.LoginCancelEventArgs.Cancel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,10 +126,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -148,14 +152,14 @@
 ## Examples  
  The following code example uses the <xref:System.Web.UI.WebControls.Login.LoggingIn> event to ensure that the user has entered a well-formed email address in the <xref:System.Web.UI.WebControls.Login.UserName%2A> property. If not, the <xref:System.Web.UI.WebControls.Login.LoggingIn> event handler sets the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property to `true`, and an error message is displayed. For an .aspx file that can be used to run the example, see the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> topic.  
   
- [!code-csharp[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargs.cs#2)]
- [!code-vb[System.Web.UI.WebControls.LoginCancelEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargs.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/CS/logincanceleventargs.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LoginCancelEventArgs/VB/logincanceleventargs.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Login" />
         <altmember cref="E:System.Web.UI.WebControls.Login.LoggingIn" />
-        <related type="Article" href="https://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d(v=vs.100)">ASP.NET Login Controls Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178329(v=vs.100)">ASP.NET Login Controls Overview</related>
       </Docs>
     </Member>
   </Members>

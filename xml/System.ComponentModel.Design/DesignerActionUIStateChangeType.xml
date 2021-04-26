@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerActionUIStateChangeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionUIStateChangeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DesignerActionUIStateChangeType" />
-  <TypeSignature Language="C++ CLI" Value="public enum class DesignerActionUIStateChangeType" />
   <TypeSignature Language="F#" Value="type DesignerActionUIStateChangeType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DesignerActionUIStateChangeType" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -13,7 +13,14 @@
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Design" FromVersion="5.0.0.0" To="System.Windows.Forms.Design" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Design" FromVersion="6.0.0.0" To="System.Windows.Forms.Design" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Design" FromVersion="4.0.0.0" To="System.Windows.Forms.Design" ToVersion="4.0.0.0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -37,8 +44,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DesignerActionUIStateChangeType Hide = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionUIStateChangeType.Hide" />
       <MemberSignature Language="VB.NET" Value="Hide" />
-      <MemberSignature Language="C++ CLI" Value="Hide" />
       <MemberSignature Language="F#" Value="Hide = 1" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeType.Hide" />
+      <MemberSignature Language="C++ CLI" Value="Hide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +55,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
@@ -62,8 +71,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DesignerActionUIStateChangeType Refresh = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionUIStateChangeType.Refresh" />
       <MemberSignature Language="VB.NET" Value="Refresh" />
-      <MemberSignature Language="C++ CLI" Value="Refresh" />
       <MemberSignature Language="F#" Value="Refresh = 2" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeType.Refresh" />
+      <MemberSignature Language="C++ CLI" Value="Refresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -73,6 +82,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
@@ -87,8 +98,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DesignerActionUIStateChangeType Show = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionUIStateChangeType.Show" />
       <MemberSignature Language="VB.NET" Value="Show" />
-      <MemberSignature Language="C++ CLI" Value="Show" />
       <MemberSignature Language="F#" Value="Show = 0" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeType.Show" />
+      <MemberSignature Language="C++ CLI" Value="Show" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -98,6 +109,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>

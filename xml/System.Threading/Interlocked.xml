@@ -1,10 +1,14 @@
 <Type Name="Interlocked" FullName="System.Threading.Interlocked">
-  <TypeSignature Language="C#" Value="public static class Interlocked" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Interlocked extends System.Object" />
+  <TypeSignature Language="C#" Value="public static class Interlocked" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Interlocked extends System.Object" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Interlocked" />
-  <TypeSignature Language="VB.NET" Value="Public Class Interlocked" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Interlocked abstract sealed" />
+  <TypeSignature Language="VB.NET" Value="Public Class Interlocked" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <TypeSignature Language="F#" Value="type Interlocked = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Interlocked abstract sealed" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C#" Value="public sealed class Interlocked" FrameworkAlternate="netframework-1.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Interlocked extends System.Object" FrameworkAlternate="netframework-1.1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Interlocked" FrameworkAlternate="netframework-1.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Interlocked sealed" FrameworkAlternate="netframework-1.1" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +16,8 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -25,13 +31,19 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Threading" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute FrameworkAlternate="netframework-4.0">
-      <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+      <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -62,15 +74,15 @@
 ## Examples  
  The following code example shows a thread-safe resource locking mechanism.  
   
- [!code-cpp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CS/class1.cs#1)]
- [!code-vb[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/VB/class1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CPP/class1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CS/class1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/VB/class1.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
-    <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-    <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+    <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+    <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Add">
@@ -89,8 +101,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Add(int32&amp; location1, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.Int32@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (ByRef location1 As Integer, value As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Add(int % location1, int value);" />
       <MemberSignature Language="F#" Value="static member Add : int * int -&gt; int" Usage="System.Threading.Interlocked.Add (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Add(int % location1, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -99,6 +111,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -112,19 +126,21 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int32" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="System.Int32" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="location1">A variable containing the first value to be added. The sum of the two values is stored in <paramref name="location1" />.</param>
@@ -140,8 +156,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -149,8 +165,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Add(int64&amp; location1, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.Int64@,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (ByRef location1 As Long, value As Long) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Add(long % location1, long value);" />
       <MemberSignature Language="F#" Value="static member Add : int64 * int64 -&gt; int64" Usage="System.Threading.Interlocked.Add (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Add(long % location1, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -159,6 +175,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -172,19 +190,21 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="location1">A variable containing the first value to be added. The sum of the two values is stored in <paramref name="location1" />.</param>
@@ -203,8 +223,242 @@
         <altmember cref="Overload:System.Threading.Interlocked.Increment" />
         <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
         <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static uint Add (ref uint location1, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 Add(unsigned int32&amp; location1, unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.UInt32@,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (ByRef location1 As UInteger, value As UInteger) As UInteger" />
+      <MemberSignature Language="F#" Value="static member Add : uint32 * uint32 -&gt; uint32" Usage="System.Threading.Interlocked.Add (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Add(System::UInt32 % location1, System::UInt32 value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt32" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt32" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be added. The sum of the two values is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be added to the integer at <paramref name="location1" />.</param>
+        <summary>Adds two 32-bit unsigned integers and replaces the first integer with the sum, as an atomic operation.</summary>
+        <returns>The new value stored at <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static ulong Add (ref ulong location1, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Add(unsigned int64&amp; location1, unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.UInt64@,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (ByRef location1 As ULong, value As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member Add : uint64 * uint64 -&gt; uint64" Usage="System.Threading.Interlocked.Add (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Add(System::UInt64 % location1, System::UInt64 value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt64" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be added. The sum of the two values is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be added to the integer at <paramref name="location1" />.</param>
+        <summary>Adds two 64-bit unsigned integers and replaces the first integer with the sum, as an atomic operation.</summary>
+        <returns>The new value stored at <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="And">
+      <MemberSignature Language="C#" Value="public static int And (ref int location1, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 And(int32&amp; location1, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.And(System.Int32@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function And (ByRef location1 As Integer, value As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="static member And : int * int -&gt; int" Usage="System.Threading.Interlocked.And (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int And(int % location1, int value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.Int32" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.Int32" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be combined. The result is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be combined with the integer at <paramref name="location1" />.</param>
+        <summary>Bitwise "ands" two 32-bit signed integers and replaces the first integer with the result, as an atomic operation.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="And">
+      <MemberSignature Language="C#" Value="public static long And (ref long location1, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 And(int64&amp; location1, int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.And(System.Int64@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function And (ByRef location1 As Long, value As Long) As Long" />
+      <MemberSignature Language="F#" Value="static member And : int64 * int64 -&gt; int64" Usage="System.Threading.Interlocked.And (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long And(long % location1, long value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be combined. The result is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be combined with the integer at <paramref name="location1" />.</param>
+        <summary>Bitwise "ands" two 64-bit signed integers and replaces the first integer with the result, as an atomic operation.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="And">
+      <MemberSignature Language="C#" Value="public static uint And (ref uint location1, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 And(unsigned int32&amp; location1, unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.And(System.UInt32@,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function And (ByRef location1 As UInteger, value As UInteger) As UInteger" />
+      <MemberSignature Language="F#" Value="static member And : uint32 * uint32 -&gt; uint32" Usage="System.Threading.Interlocked.And (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 And(System::UInt32 % location1, System::UInt32 value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt32" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt32" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be combined. The result is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be combined with the integer at <paramref name="location1" />.</param>
+        <summary>Bitwise "ands" two 32-bit unsigned integers and replaces the first integer with the result, as an atomic operation.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="And">
+      <MemberSignature Language="C#" Value="public static ulong And (ref ulong location1, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 And(unsigned int64&amp; location1, unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.And(System.UInt64@,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function And (ByRef location1 As ULong, value As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member And : uint64 * uint64 -&gt; uint64" Usage="System.Threading.Interlocked.And (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 And(System::UInt64 % location1, System::UInt64 value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt64" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be combined. The result is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be combined with the integer at <paramref name="location1" />.</param>
+        <summary>Bitwise "ands" two 64-bit unsigned integers and replaces the first integer with the result, as an atomic operation.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareExchange">
@@ -223,8 +477,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 CompareExchange(float64&amp; location1, float64 value, float64 comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Double@,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Double, value As Double, comparand As Double) As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double CompareExchange(double % location1, double value, double comparand);" />
       <MemberSignature Language="F#" Value="static member CompareExchange : double * double * double -&gt; double" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double CompareExchange(double % location1, double value, double comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -233,6 +487,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -246,17 +502,18 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Double" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="comparand" Type="System.Double" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="System.Double" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="comparand" Type="System.Double" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="location1">The destination, whose value is compared with <paramref name="comparand" /> and possibly replaced.</param>
@@ -277,14 +534,14 @@
   
  In the thread-safe method, the initial value of the running total is saved, and then the <xref:System.Threading.Interlocked.CompareExchange%2A> method is used to exchange the newly computed total with the old total. If the return value is not equal to the saved value of the running total, then another thread has updated the total in the meantime. In that case, the attempt to update the running total must be repeated.  
   
- [!code-csharp[System.Threading.Interlocked CompareExchange Double#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Double/cs/source.cs#1)]
- [!code-vb[System.Threading.Interlocked CompareExchange Double#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Double/vb/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Double/cs/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Double/vb/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -292,8 +549,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CompareExchange(int32&amp; location1, int32 value, int32 comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Int32@,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Integer, value As Integer, comparand As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareExchange(int % location1, int value, int comparand);" />
       <MemberSignature Language="F#" Value="static member CompareExchange : int * int * int -&gt; int" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareExchange(int % location1, int value, int comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -302,6 +559,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,11 +575,13 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -351,15 +612,15 @@
 > [!NOTE]
 >  The <xref:System.Threading.Interlocked.Add%2A> method, introduced in version 2.0 of the .NET Framework, provides a more convenient way to accumulate thread-safe running totals for integers.  
   
- [!code-cpp[System.Threading.Interlocked CompareExchange0#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/CPP/source.cpp#1)]
- [!code-csharp[System.Threading.Interlocked CompareExchange0#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/CS/source.cs#1)]
- [!code-vb[System.Threading.Interlocked CompareExchange0#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -367,8 +628,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 CompareExchange(int64&amp; location1, int64 value, int64 comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Int64@,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Long, value As Long, comparand As Long) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long CompareExchange(long % location1, long value, long comparand);" />
       <MemberSignature Language="F#" Value="static member CompareExchange : int64 * int64 * int64 -&gt; int64" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long CompareExchange(long % location1, long value, long comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -377,6 +638,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -390,17 +653,18 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="comparand" Type="System.Int64" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="comparand" Type="System.Int64" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="location1">The destination, whose value is compared with <paramref name="comparand" /> and possibly replaced.</param>
@@ -417,8 +681,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -426,8 +690,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CompareExchange(native int&amp; location1, native int value, native int comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.IntPtr@,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As IntPtr, value As IntPtr, comparand As IntPtr) As IntPtr" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr CompareExchange(IntPtr % location1, IntPtr value, IntPtr comparand);" />
       <MemberSignature Language="F#" Value="static member CompareExchange : nativeint * nativeint * nativeint -&gt; nativeint" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr CompareExchange(IntPtr % location1, IntPtr value, IntPtr comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -436,6 +700,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -449,20 +715,22 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.IntPtr" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="System.IntPtr" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="comparand" Type="System.IntPtr" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="System.IntPtr" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.IntPtr" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="comparand" Type="System.IntPtr" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="location1">The destination <see cref="T:System.IntPtr" />, whose value is compared with the value of <paramref name="comparand" /> and possibly replaced by <paramref name="value" />.</param>
@@ -482,17 +750,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
-      <MemberSignature Language="C#" Value="public static object CompareExchange (ref object location1, object value, object comparand);" />
+      <MemberSignature Language="C#" Value="public static object CompareExchange (ref object location1, object value, object comparand);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CompareExchange(object&amp; location1, object value, object comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Object@,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Object, value As Object, comparand As Object) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareExchange(System::Object ^ % location1, System::Object ^ value, System::Object ^ comparand);" />
       <MemberSignature Language="F#" Value="static member CompareExchange : obj * obj * obj -&gt; obj" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareExchange(System::Object ^ % location1, System::Object ^ value, System::Object ^ comparand);" />
+      <MemberSignature Language="C#" Value="public static object? CompareExchange (ref object? location1, object? value, object? comparand);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -501,6 +770,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -515,11 +786,13 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -551,9 +824,9 @@ If `comparand` and the object in `location1` are equal by reference, then `value
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -561,8 +834,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 CompareExchange(float32&amp; location1, float32 value, float32 comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Single@,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Single, value As Single, comparand As Single) As Single" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float CompareExchange(float % location1, float value, float comparand);" />
       <MemberSignature Language="F#" Value="static member CompareExchange : single * single * single -&gt; single" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float CompareExchange(float % location1, float value, float comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -571,6 +844,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -585,8 +860,9 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -616,14 +892,100 @@ If `comparand` and the object in `location1` are equal by reference, then `value
   
  In the thread-safe method, the initial value of the running total is saved, and then the <xref:System.Threading.Interlocked.CompareExchange%2A> method is used to exchange the newly computed total with the old total. If the return value is not equal to the saved value of the running total, then another thread has updated the total in the meantime. In that case, the attempt to update the running total must be repeated.  
   
- [!code-csharp[System.Threading.Interlocked CompareExchange Single#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Single/cs/source.cs#1)]
- [!code-vb[System.Threading.Interlocked CompareExchange Single#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Single/vb/source.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Single/cs/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Single/vb/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareExchange">
+      <MemberSignature Language="C#" Value="public static uint CompareExchange (ref uint location1, uint value, uint comparand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 CompareExchange(unsigned int32&amp; location1, unsigned int32 value, unsigned int32 comparand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.UInt32@,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As UInteger, value As UInteger, comparand As UInteger) As UInteger" />
+      <MemberSignature Language="F#" Value="static member CompareExchange : uint32 * uint32 * uint32 -&gt; uint32" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 CompareExchange(System::UInt32 % location1, System::UInt32 value, System::UInt32 comparand);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt32" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt32" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="comparand" Type="System.UInt32" Index="2" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">The destination, whose value is compared with <paramref name="comparand" /> and possibly replaced.</param>
+        <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
+        <param name="comparand">The value that is compared to the value at <paramref name="location1" />.</param>
+        <summary>Compares two 32-bit unsigned integers for equality and, if they are equal, replaces the first value.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareExchange">
+      <MemberSignature Language="C#" Value="public static ulong CompareExchange (ref ulong location1, ulong value, ulong comparand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 CompareExchange(unsigned int64&amp; location1, unsigned int64 value, unsigned int64 comparand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.UInt64@,System.UInt64,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As ULong, value As ULong, comparand As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member CompareExchange : uint64 * uint64 * uint64 -&gt; uint64" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 CompareExchange(System::UInt64 % location1, System::UInt64 value, System::UInt64 comparand);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt64" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="comparand" Type="System.UInt64" Index="2" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">The destination, whose value is compared with <paramref name="comparand" /> and possibly replaced.</param>
+        <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
+        <param name="comparand">The value that is compared to the value at <paramref name="location1" />.</param>
+        <summary>Compares two 64-bit unsigned integers for equality and, if they are equal, replaces the first value.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange&lt;T&gt;">
@@ -631,8 +993,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T CompareExchange&lt;class T&gt;(!!T&amp; location1, !!T value, !!T comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange``1(``0@,``0,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange(Of T As Class) (ByRef location1 As T, value As T, comparand As T) As T" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T CompareExchange(T % location1, T value, T comparand);" />
       <MemberSignature Language="F#" Value="static member CompareExchange : 'T * 'T * 'T -&gt; 'T (requires 'T : null)" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T CompareExchange(T % location1, T value, T comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -641,6 +1003,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -654,14 +1018,17 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -675,9 +1042,9 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location1" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="comparand" Type="T" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="comparand" Type="T" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type to be used for <paramref name="location1" />, <paramref name="value" />, and <paramref name="comparand" />. This type must be a reference type.</typeparam>
@@ -718,8 +1085,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Decrement(int32&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decrement (ByRef location As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Decrement(int % location);" />
       <MemberSignature Language="F#" Value="static member Decrement : int -&gt; int" Usage="System.Threading.Interlocked.Decrement location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Decrement(int % location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -728,6 +1095,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -742,11 +1111,13 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -770,19 +1141,20 @@ If `comparand` and the object in `location1` are equal by reference, then `value
 ## Examples  
  The following example determines how many random numbers that range from 0 to 1,000 are required to generate 1,000 random numbers with a midpoint value. To keep track of the number of midpoint values, a variable, `midpointCount`, is set equal to 1,000 and decremented each time the random number generator returns a midpoint value. Because three threads generate the random numbers, the <xref:System.Threading.Interlocked.Decrement%28System.Int32%40%29> method is called to ensure that multiple threads don't update `midpointCount` concurrently. Note that a lock is also used to protect the random number generator, and that a <xref:System.Threading.CountdownEvent> object is used to ensure that the `Main` method doesn't finish execution before the three threads.  
   
- [!code-csharp[System.Threading.Interlocked.Decrement#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement1.cs#1)]
- [!code-vb[System.Threading.Interlocked.Decrement#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement1.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement1.vb" id="Snippet1":::  
   
  The following example is similar to the previous one, except that it uses the <xref:System.Threading.Tasks.Task> class instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
   
- [!code-csharp[System.Threading.Interlocked.Decrement#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement2.cs#2)]
- [!code-vb[System.Threading.Interlocked.Decrement#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement2.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement2.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement2.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <Member MemberName="Decrement">
@@ -790,8 +1162,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Decrement(int64&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decrement (ByRef location As Long) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Decrement(long % location);" />
       <MemberSignature Language="F#" Value="static member Decrement : int64 -&gt; int64" Usage="System.Threading.Interlocked.Decrement location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Decrement(long % location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -800,6 +1172,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -815,7 +1189,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -836,12 +1211,91 @@ If `comparand` and the object in `location1` are equal by reference, then `value
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a null pointer.</exception>
+        <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
         <altmember cref="Overload:System.Threading.Interlocked.Increment" />
         <altmember cref="Overload:System.Threading.Interlocked.Add" />
         <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrement">
+      <MemberSignature Language="C#" Value="public static uint Decrement (ref uint location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 Decrement(unsigned int32&amp; location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Decrement (ByRef location As UInteger) As UInteger" />
+      <MemberSignature Language="F#" Value="static member Decrement : uint32 -&gt; uint32" Usage="System.Threading.Interlocked.Decrement location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Decrement(System::UInt32 % location);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="System.UInt32" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location">The variable whose value is to be decremented.</param>
+        <summary>Decrements a specified variable and stores the result, as an atomic operation.</summary>
+        <returns>The decremented value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrement">
+      <MemberSignature Language="C#" Value="public static ulong Decrement (ref ulong location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Decrement(unsigned int64&amp; location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.UInt64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Decrement (ByRef location As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member Decrement : uint64 -&gt; uint64" Usage="System.Threading.Interlocked.Decrement location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Decrement(System::UInt64 % location);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="System.UInt64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location">The variable whose value is to be decremented.</param>
+        <summary>Decrements a specified variable and stores the result, as an atomic operation.</summary>
+        <returns>The decremented value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Exchange">
@@ -860,8 +1314,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Exchange(float64&amp; location1, float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Double@,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Double, value As Double) As Double" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Exchange(double % location1, double value);" />
       <MemberSignature Language="F#" Value="static member Exchange : double * double -&gt; double" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Exchange(double % location1, double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -870,6 +1324,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -883,16 +1339,17 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Double" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="System.Double" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
@@ -900,9 +1357,9 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <summary>Sets a double-precision floating point number to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -910,8 +1367,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Exchange(int32&amp; location1, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Int32@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Integer, value As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Exchange(int % location1, int value);" />
       <MemberSignature Language="F#" Value="static member Exchange : int * int -&gt; int" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Exchange(int % location1, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -920,6 +1377,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -934,11 +1393,13 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -959,15 +1420,16 @@ If `comparand` and the object in `location1` are equal by reference, then `value
 ## Examples  
  The following code example shows a thread-safe resource locking mechanism.  
   
- [!code-cpp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CS/class1.cs#1)]
- [!code-vb[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/VB/class1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CPP/class1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CS/class1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/VB/class1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -975,8 +1437,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Exchange(int64&amp; location1, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Int64@,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Long, value As Long) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Exchange(long % location1, long value);" />
       <MemberSignature Language="F#" Value="static member Exchange : int64 * int64 -&gt; int64" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Exchange(long % location1, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -985,6 +1447,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -998,16 +1462,17 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
@@ -1015,9 +1480,9 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <summary>Sets a 64-bit signed integer to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -1025,8 +1490,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int Exchange(native int&amp; location1, native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.IntPtr@,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As IntPtr, value As IntPtr) As IntPtr" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr Exchange(IntPtr % location1, IntPtr value);" />
       <MemberSignature Language="F#" Value="static member Exchange : nativeint * nativeint -&gt; nativeint" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr Exchange(IntPtr % location1, IntPtr value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1035,6 +1500,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1048,19 +1515,21 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.IntPtr" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="System.IntPtr" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="System.IntPtr" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.IntPtr" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
@@ -1068,18 +1537,19 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <summary>Sets a platform-specific handle or pointer to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
-      <MemberSignature Language="C#" Value="public static object Exchange (ref object location1, object value);" />
+      <MemberSignature Language="C#" Value="public static object Exchange (ref object location1, object value);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Exchange(object&amp; location1, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Object@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Object, value As Object) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Exchange(System::Object ^ % location1, System::Object ^ value);" />
       <MemberSignature Language="F#" Value="static member Exchange : obj * obj -&gt; obj" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Exchange(System::Object ^ % location1, System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public static object? Exchange (ref object? location1, object? value);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1088,6 +1558,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1102,11 +1574,13 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1131,9 +1605,10 @@ If `comparand` and the object in `location1` are equal by reference, then `value
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -1141,8 +1616,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Exchange(float32&amp; location1, float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Single@,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Single, value As Single) As Single" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Exchange(float % location1, float value);" />
       <MemberSignature Language="F#" Value="static member Exchange : single * single -&gt; single" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Exchange(float % location1, float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1151,6 +1626,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1165,8 +1642,9 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1182,9 +1660,91 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <summary>Sets a single-precision floating point number to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+      </Docs>
+    </Member>
+    <Member MemberName="Exchange">
+      <MemberSignature Language="C#" Value="public static uint Exchange (ref uint location1, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 Exchange(unsigned int32&amp; location1, unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.UInt32@,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As UInteger, value As UInteger) As UInteger" />
+      <MemberSignature Language="F#" Value="static member Exchange : uint32 * uint32 -&gt; uint32" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Exchange(System::UInt32 % location1, System::UInt32 value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt32" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt32" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">The variable to set to the specified value.</param>
+        <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
+        <summary>Sets a 32-bit unsigned integer to a specified value and returns the original value, as an atomic operation.</summary>
+        <returns>The original value of <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Exchange">
+      <MemberSignature Language="C#" Value="public static ulong Exchange (ref ulong location1, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Exchange(unsigned int64&amp; location1, unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.UInt64@,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As ULong, value As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member Exchange : uint64 * uint64 -&gt; uint64" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Exchange(System::UInt64 % location1, System::UInt64 value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt64" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">The variable to set to the specified value.</param>
+        <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
+        <summary>Sets a 64-bit unsigned integer to a specified value and returns the original value, as an atomic operation.</summary>
+        <returns>The original value of <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <Member MemberName="Exchange&lt;T&gt;">
@@ -1192,8 +1752,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Exchange&lt;class T&gt;(!!T&amp; location1, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange``1(``0@,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange(Of T As Class) (ByRef location1 As T, value As T) As T" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T Exchange(T % location1, T value);" />
       <MemberSignature Language="F#" Value="static member Exchange : 'T * 'T -&gt; 'T (requires 'T : null)" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T Exchange(T % location1, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1202,6 +1762,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1215,14 +1777,17 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1236,8 +1801,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location1" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location1" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type to be used for <paramref name="location1" /> and <paramref name="value" />. This type must be a reference type.</typeparam>
@@ -1255,7 +1820,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
 >  This method overload is preferable to the <xref:System.Threading.Interlocked.Exchange%28System.Object%40%2CSystem.Object%29> method overload, because the latter requires late-bound access to the destination object .  
  ]]></format>
         </remarks>
-        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Increment">
@@ -1274,8 +1839,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Increment(int32&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Increment (ByRef location As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Increment(int % location);" />
       <MemberSignature Language="F#" Value="static member Increment : int -&gt; int" Usage="System.Threading.Interlocked.Increment location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Increment(int % location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1284,6 +1849,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1298,11 +1865,13 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1326,19 +1895,19 @@ If `comparand` and the object in `location1` are equal by reference, then `value
 ## Examples  
  The following example determines how many random numbers that range from 0 to 1,000 are required to generate 1,000 random numbers with a midpoint value. To keep track of the number of midpoint values, a variable, `midpointCount`, is set equal to 0 and incremented each time the random number generator returns a midpoint value until it reaches 10,000. Because three threads generate the random numbers, the <xref:System.Threading.Interlocked.Increment%28System.Int32%40%29> method is called to ensure that multiple threads don't update `midpointCount` concurrently. Note that a lock is also used to protect the random number generator, and that a <xref:System.Threading.CountdownEvent> object is used to ensure that the `Main` method doesn't finish execution before the three threads.  
   
- [!code-csharp[System.Threading.Interlocked.Increment2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment3.cs#3)]
- [!code-vb[System.Threading.Interlocked.Increment2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment3.vb#3)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment3.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment3.vb" id="Snippet3":::  
   
  The following example is similar to the previous one, except that it uses the <xref:System.Threading.Tasks.Task> class instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
   
- [!code-csharp[System.Threading.Interlocked.Increment2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment4.cs#4)]
- [!code-vb[System.Threading.Interlocked.Increment2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment4.vb#4)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment4.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment4.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a null pointer.</exception>
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Increment">
@@ -1346,8 +1915,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Increment(int64&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Increment (ByRef location As Long) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Increment(long % location);" />
       <MemberSignature Language="F#" Value="static member Increment : int64 -&gt; int64" Usage="System.Threading.Interlocked.Increment location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Increment(long % location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1356,6 +1925,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1370,11 +1941,13 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1395,12 +1968,90 @@ If `comparand` and the object in `location1` are equal by reference, then `value
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a null pointer.</exception>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
         <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
         <altmember cref="Overload:System.Threading.Interlocked.Add" />
         <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+      </Docs>
+    </Member>
+    <Member MemberName="Increment">
+      <MemberSignature Language="C#" Value="public static uint Increment (ref uint location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 Increment(unsigned int32&amp; location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Increment (ByRef location As UInteger) As UInteger" />
+      <MemberSignature Language="F#" Value="static member Increment : uint32 -&gt; uint32" Usage="System.Threading.Interlocked.Increment location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Increment(System::UInt32 % location);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="System.UInt32" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location">The variable whose value is to be incremented.</param>
+        <summary>Increments a specified variable and stores the result, as an atomic operation.</summary>
+        <returns>The incremented value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Increment">
+      <MemberSignature Language="C#" Value="public static ulong Increment (ref ulong location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Increment(unsigned int64&amp; location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.UInt64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Increment (ByRef location As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member Increment : uint64 -&gt; uint64" Usage="System.Threading.Interlocked.Increment location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Increment(System::UInt64 % location);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="System.UInt64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location">The variable whose value is to be incremented.</param>
+        <summary>Increments a specified variable and stores the result, as an atomic operation.</summary>
+        <returns>The incremented value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <Member MemberName="MemoryBarrier">
@@ -1408,8 +2059,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MemoryBarrier() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.MemoryBarrier" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MemoryBarrier ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryBarrier();" />
       <MemberSignature Language="F#" Value="static member MemoryBarrier : unit -&gt; unit" Usage="System.Threading.Interlocked.MemoryBarrier " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryBarrier();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1418,6 +2069,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1431,7 +2084,8 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1444,9 +2098,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method was added to the <xref:System.Threading.Interlocked> class in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] as a convenience; it's a wrapper for the <xref:System.Threading.Thread.MemoryBarrier%2A?displayProperty=nameWithType> method.  
-  
- <xref:System.Threading.Interlocked.MemoryBarrier%2A> is required only on multiprocessor systems that have weak memory ordering (for example, a system that employs multiple Intel Itanium processors).  
+ This method was added to the <xref:System.Threading.Interlocked> class in the .NET Framework 4.5 as a convenience; it's a wrapper for the <xref:System.Threading.Thread.MemoryBarrier%2A?displayProperty=nameWithType> method.  
   
  For most purposes, the C# `lock` statement, the Visual Basic `SyncLock` statement, or the <xref:System.Threading.Monitor> class provide easier ways to synchronize data.  
   
@@ -1459,14 +2111,16 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MemoryBarrierProcessWide() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.MemoryBarrierProcessWide" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MemoryBarrierProcessWide ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryBarrierProcessWide();" />
       <MemberSignature Language="F#" Value="static member MemoryBarrierProcessWide : unit -&gt; unit" Usage="System.Threading.Interlocked.MemoryBarrierProcessWide " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryBarrierProcessWide();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1494,10 +2148,162 @@ The `MemoryBarrierProcessWide` method differs from the "normal" <xref:System.Thr
 
 The `MemoryBarrierProcessWide` method also suffers from all the subtleties of lock-free programming. Nevertheless, this method can be extremely useful when you actually need to call it, which should be rare.
 
-This method wraps a call to [FlushProcessWriteBuffers](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-flushprocesswritebuffers) on Windows and [sys_membarrier](https://lore.kernel.org/patchwork/patch/188708/) on Linux.
+This method wraps a call to [FlushProcessWriteBuffers](/windows/win32/api/processthreadsapi/nf-processthreadsapi-flushprocesswritebuffers) on Windows and [sys_membarrier](https://lore.kernel.org/patchwork/patch/188708/) on Linux.
 
          ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Or">
+      <MemberSignature Language="C#" Value="public static int Or (ref int location1, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Or(int32&amp; location1, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Or(System.Int32@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Or (ByRef location1 As Integer, value As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="static member Or : int * int -&gt; int" Usage="System.Threading.Interlocked.Or (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Or(int % location1, int value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.Int32" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.Int32" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be combined. The result is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be combined with the integer at <paramref name="location1" />.</param>
+        <summary>Bitwise "ors" two 32-bit signed integers and replaces the first integer with the result, as an atomic operation.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Or">
+      <MemberSignature Language="C#" Value="public static long Or (ref long location1, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Or(int64&amp; location1, int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Or(System.Int64@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Or (ByRef location1 As Long, value As Long) As Long" />
+      <MemberSignature Language="F#" Value="static member Or : int64 * int64 -&gt; int64" Usage="System.Threading.Interlocked.Or (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Or(long % location1, long value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be combined. The result is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be combined with the integer at <paramref name="location1" />.</param>
+        <summary>Bitwise "ors" two 64-bit signed integers and replaces the first integer with the result, as an atomic operation.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Or">
+      <MemberSignature Language="C#" Value="public static uint Or (ref uint location1, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 Or(unsigned int32&amp; location1, unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Or(System.UInt32@,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Or (ByRef location1 As UInteger, value As UInteger) As UInteger" />
+      <MemberSignature Language="F#" Value="static member Or : uint32 * uint32 -&gt; uint32" Usage="System.Threading.Interlocked.Or (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 Or(System::UInt32 % location1, System::UInt32 value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt32" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt32" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be combined. The result is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be combined with the integer at <paramref name="location1" />.</param>
+        <summary>Bitwise "ors" two 32-bit unsigned integers and replaces the first integer with the result, as an atomic operation.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Or">
+      <MemberSignature Language="C#" Value="public static ulong Or (ref ulong location1, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Or(unsigned int64&amp; location1, unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Or(System.UInt64@,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Or (ByRef location1 As ULong, value As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member Or : uint64 * uint64 -&gt; uint64" Usage="System.Threading.Interlocked.Or (location1, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Or(System::UInt64 % location1, System::UInt64 value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location1" Type="System.UInt64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+        <Parameter Name="value" Type="System.UInt64" Index="1" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location1">A variable containing the first value to be combined. The result is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be combined with the integer at <paramref name="location1" />.</param>
+        <summary>Bitwise "ors" two 64-bit unsigned integers and replaces the first integer with the result, as an atomic operation.</summary>
+        <returns>The original value in <paramref name="location1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -1505,8 +2311,8 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/desktop/api/proc
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Read(int64&amp; location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Read(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Long) As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Read(long % location);" />
       <MemberSignature Language="F#" Value="static member Read : int64 -&gt; int64" Usage="System.Threading.Interlocked.Read location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Read(long % location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1515,6 +2321,8 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/desktop/api/proc
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1531,7 +2339,7 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/desktop/api/proc
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="location" Type="System.Int64" RefType="ref" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="location">The 64-bit value to be loaded.</param>
@@ -1548,8 +2356,46 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/desktop/api/proc
         <altmember cref="Overload:System.Threading.Interlocked.Increment" />
         <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
         <altmember cref="Overload:System.Threading.Interlocked.Add" />
-        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/">Managed Threading</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public static ulong Read (ref ulong location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Read(unsigned int64&amp; location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Read(System.UInt64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member Read : uint64 -&gt; uint64" Usage="System.Threading.Interlocked.Read location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Read(System::UInt64 % location);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="location" Type="System.UInt64" RefType="ref" Index="0" FrameworkAlternate="net-5.0;net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="location">The 64-bit value to be loaded.</param>
+        <summary>Returns a 64-bit unsigned value, loaded as an atomic operation.</summary>
+        <returns>The loaded value.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SpeculationBarrier">
@@ -1557,8 +2403,8 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/desktop/api/proc
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SpeculationBarrier() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.SpeculationBarrier" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SpeculationBarrier ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SpeculationBarrier();" />
       <MemberSignature Language="F#" Value="static member SpeculationBarrier : unit -&gt; unit" Usage="System.Threading.Interlocked.SpeculationBarrier " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SpeculationBarrier();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1572,10 +2418,12 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/desktop/api/proc
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

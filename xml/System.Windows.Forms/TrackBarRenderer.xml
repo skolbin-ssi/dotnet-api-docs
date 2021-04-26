@@ -1,14 +1,20 @@
 <Type Name="TrackBarRenderer" FullName="System.Windows.Forms.TrackBarRenderer">
-  <TypeSignature Language="C#" Value="public sealed class TrackBarRenderer" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TrackBarRenderer extends System.Object" />
+  <TypeSignature Language="C#" Value="public static class TrackBarRenderer" FrameworkAlternate="net-5.0;net-6.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TrackBarRenderer extends System.Object" FrameworkAlternate="net-5.0;net-6.0" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TrackBarRenderer" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TrackBarRenderer" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TrackBarRenderer sealed" />
+  <TypeSignature Language="VB.NET" Value="Public Class TrackBarRenderer" FrameworkAlternate="net-5.0;net-6.0" />
   <TypeSignature Language="F#" Value="type TrackBarRenderer = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackBarRenderer abstract sealed" FrameworkAlternate="net-5.0;net-6.0" />
+  <TypeSignature Language="C#" Value="public sealed class TrackBarRenderer" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TrackBarRenderer extends System.Object" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TrackBarRenderer" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackBarRenderer sealed" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,16 +30,16 @@
   
  If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods in this class will draw the track bar with the current visual style. Otherwise, the methods in this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property.  
   
- This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=nameWithType> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar?displayProperty=nameWithType> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+ This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=nameWithType> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar?displayProperty=nameWithType> class. For more information, see [Rendering Controls with Visual Styles](/dotnet/framework/winforms/controls/rendering-controls-with-visual-styles).  
   
    
   
 ## Examples  
  The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.TrackBarRenderer> methods to draw a horizontal track bar that responds to mouse clicks.  
   
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#0)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#0)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#0)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp" id="Snippet0":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs" id="Snippet0":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb" id="Snippet0":::  
   
  ]]></format>
     </remarks>
@@ -46,13 +52,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawBottomPointingThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawBottomPointingThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawBottomPointingThumb (g As Graphics, bounds As Rectangle, state As TrackBarThumbState)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBottomPointingThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member DrawBottomPointingThumb : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawBottomPointingThumb (g, bounds, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawBottomPointingThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -91,13 +99,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawHorizontalThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawHorizontalThumb (g As Graphics, bounds As Rectangle, state As TrackBarThumbState)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member DrawHorizontalThumb : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawHorizontalThumb (g, bounds, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -135,13 +145,16 @@
       <MemberSignature Language="C#" Value="public static void DrawHorizontalTicks (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, int numTicks, System.Windows.Forms.VisualStyles.EdgeStyle edgeStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalTicks(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, int32 numTicks, valuetype System.Windows.Forms.VisualStyles.EdgeStyle edgeStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawHorizontalTicks(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.VisualStyles.EdgeStyle)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalTicks(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, int numTicks, System::Windows::Forms::VisualStyles::EdgeStyle edgeStyle);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawHorizontalTicks (g As Graphics, bounds As Rectangle, numTicks As Integer, edgeStyle As EdgeStyle)" />
       <MemberSignature Language="F#" Value="static member DrawHorizontalTicks : System.Drawing.Graphics * System.Drawing.Rectangle * int * System.Windows.Forms.VisualStyles.EdgeStyle -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawHorizontalTicks (g, bounds, numTicks, edgeStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalTicks(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, int numTicks, System::Windows::Forms::VisualStyles::EdgeStyle edgeStyle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -184,13 +197,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalTrack(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawHorizontalTrack(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawHorizontalTrack (g As Graphics, bounds As Rectangle)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalTrack(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds);" />
       <MemberSignature Language="F#" Value="static member DrawHorizontalTrack : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawHorizontalTrack (g, bounds)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalTrack(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -214,9 +229,9 @@
 ## Examples  
  The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.DrawHorizontalTrack%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a track bar. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
   
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#4)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#4)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -236,13 +251,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawLeftPointingThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawLeftPointingThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawLeftPointingThumb (g As Graphics, bounds As Rectangle, state As TrackBarThumbState)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawLeftPointingThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member DrawLeftPointingThumb : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawLeftPointingThumb (g, bounds, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawLeftPointingThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -281,13 +298,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRightPointingThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawRightPointingThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawRightPointingThumb (g As Graphics, bounds As Rectangle, state As TrackBarThumbState)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRightPointingThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member DrawRightPointingThumb : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawRightPointingThumb (g, bounds, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawRightPointingThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -326,13 +345,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawTopPointingThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawTopPointingThumb (g As Graphics, bounds As Rectangle, state As TrackBarThumbState)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawTopPointingThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member DrawTopPointingThumb : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb (g, bounds, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawTopPointingThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -358,9 +379,9 @@
 ## Examples  
  The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw an upward-pointing track bar slider. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
   
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#4)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#4)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -380,13 +401,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawVerticalThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawVerticalThumb (g As Graphics, bounds As Rectangle, state As TrackBarThumbState)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member DrawVerticalThumb : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawVerticalThumb (g, bounds, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalThumb(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -424,13 +447,16 @@
       <MemberSignature Language="C#" Value="public static void DrawVerticalTicks (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, int numTicks, System.Windows.Forms.VisualStyles.EdgeStyle edgeStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalTicks(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, int32 numTicks, valuetype System.Windows.Forms.VisualStyles.EdgeStyle edgeStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawVerticalTicks(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.VisualStyles.EdgeStyle)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalTicks(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, int numTicks, System::Windows::Forms::VisualStyles::EdgeStyle edgeStyle);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawVerticalTicks (g As Graphics, bounds As Rectangle, numTicks As Integer, edgeStyle As EdgeStyle)" />
       <MemberSignature Language="F#" Value="static member DrawVerticalTicks : System.Drawing.Graphics * System.Drawing.Rectangle * int * System.Windows.Forms.VisualStyles.EdgeStyle -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawVerticalTicks (g, bounds, numTicks, edgeStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalTicks(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, int numTicks, System::Windows::Forms::VisualStyles::EdgeStyle edgeStyle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -473,13 +499,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalTrack(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.DrawVerticalTrack(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawVerticalTrack (g As Graphics, bounds As Rectangle)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalTrack(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds);" />
       <MemberSignature Language="F#" Value="static member DrawVerticalTrack : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.TrackBarRenderer.DrawVerticalTrack (g, bounds)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalTrack(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -516,13 +544,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetBottomPointingThumbSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.GetBottomPointingThumbSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBottomPointingThumbSize (g As Graphics, state As TrackBarThumbState) As Size" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetBottomPointingThumbSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member GetBottomPointingThumbSize : System.Drawing.Graphics * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TrackBarRenderer.GetBottomPointingThumbSize (g, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetBottomPointingThumbSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
@@ -562,13 +592,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetLeftPointingThumbSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.GetLeftPointingThumbSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLeftPointingThumbSize (g As Graphics, state As TrackBarThumbState) As Size" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetLeftPointingThumbSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member GetLeftPointingThumbSize : System.Drawing.Graphics * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TrackBarRenderer.GetLeftPointingThumbSize (g, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetLeftPointingThumbSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
@@ -608,13 +640,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetRightPointingThumbSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.GetRightPointingThumbSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRightPointingThumbSize (g As Graphics, state As TrackBarThumbState) As Size" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetRightPointingThumbSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member GetRightPointingThumbSize : System.Drawing.Graphics * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TrackBarRenderer.GetRightPointingThumbSize (g, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetRightPointingThumbSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
@@ -654,13 +688,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetTopPointingThumbSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TrackBarRenderer.GetTopPointingThumbSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.TrackBarThumbState)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTopPointingThumbSize (g As Graphics, state As TrackBarThumbState) As Size" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetTopPointingThumbSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberSignature Language="F#" Value="static member GetTopPointingThumbSize : System.Drawing.Graphics * System.Windows.Forms.VisualStyles.TrackBarThumbState -&gt; System.Drawing.Size" Usage="System.Windows.Forms.TrackBarRenderer.GetTopPointingThumbSize (g, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size GetTopPointingThumbSize(System::Drawing::Graphics ^ g, System::Windows::Forms::VisualStyles::TrackBarThumbState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
@@ -687,9 +723,9 @@
 ## Examples  
  The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.GetTopPointingThumbSize%2A> method to determine the size of the rectangle used by the <xref:System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb%2A> method to draw the slider. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
   
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -709,13 +745,15 @@
       <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TrackBarRenderer.IsSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Windows.Forms.TrackBarRenderer.IsSupported" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -735,9 +773,9 @@
 ## Examples  
  The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property to determine whether to use the <xref:System.Windows.Forms.TrackBarRenderer> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
   
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#4)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#4)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>

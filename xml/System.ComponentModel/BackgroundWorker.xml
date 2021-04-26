@@ -1,16 +1,23 @@
 <Type Name="BackgroundWorker" FullName="System.ComponentModel.BackgroundWorker">
-  <TypeSignature Language="C#" Value="public class BackgroundWorker : System.ComponentModel.Component" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackgroundWorker extends System.ComponentModel.Component" />
+  <TypeSignature Language="C#" Value="public class BackgroundWorker : IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackgroundWorker extends System.Object implements class System.IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BackgroundWorker" />
-  <TypeSignature Language="VB.NET" Value="Public Class BackgroundWorker&#xA;Inherits Component" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BackgroundWorker : System::ComponentModel::Component" />
-  <TypeSignature Language="F#" Value="type BackgroundWorker = class&#xA;    inherit Component" />
+  <TypeSignature Language="VB.NET" Value="Public Class BackgroundWorker&#xA;Implements IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="F#" Value="type BackgroundWorker = class&#xA;    interface IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BackgroundWorker : IDisposable" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="C#" Value="public class BackgroundWorker : System.ComponentModel.Component" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackgroundWorker extends System.ComponentModel.Component" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class BackgroundWorker&#xA;Inherits Component" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="F#" Value="type BackgroundWorker = class&#xA;    inherit Component" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BackgroundWorker : System::ComponentModel::Component" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -23,15 +30,23 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.EventBasedAsync" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.EventBasedAsync" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="netframework-4.5">System.ComponentModel.Component</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">System.ComponentModel.Component</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1">
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netstandard-2.1">
-      <AttributeName>System.ComponentModel.DefaultEvent("DoWork")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.ComponentModel.DefaultEvent("DoWork")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultEvent("DoWork")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -53,7 +68,7 @@
   
  If your background operation requires a parameter, call <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> with your parameter. Inside the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler, you can extract the parameter from the <xref:System.ComponentModel.DoWorkEventArgs.Argument%2A?displayProperty=nameWithType> property.  
   
- For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](~/docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).  
+ For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background).  
   
    
   
@@ -64,8 +79,8 @@
   
  To try this code, create a Windows Forms application. Add a <xref:System.Windows.Forms.Label> control named `resultLabel` and add two <xref:System.Windows.Forms.Button> controls named `startAsyncButton` and `cancelAsyncButton`. Create <xref:System.Windows.Forms.Control.Click> event handlers for both buttons. From the **Components** tab of the Toolbox, add a <xref:System.ComponentModel.BackgroundWorker> component named `backgroundWorker1`. Create <xref:System.ComponentModel.BackgroundWorker.DoWork>, <xref:System.ComponentModel.BackgroundWorker.ProgressChanged>, and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handlers for the <xref:System.ComponentModel.BackgroundWorker>. In the code for the form, replace the existing code with the following code.  
   
- [!code-csharp[System.ComponentModel.BackgroundWorkerSimple#1](~/samples/snippets/csharp/VS_Snippets_Winforms/system.componentmodel.backgroundworkersimple/cs/form1.cs#1)]
- [!code-vb[System.ComponentModel.BackgroundWorkerSimple#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/system.componentmodel.backgroundworkersimple/vb/form1.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/system.componentmodel.backgroundworkersimple/cs/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/system.componentmodel.backgroundworkersimple/vb/form1.vb" id="Snippet1":::  
   
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker> class for executing a time-consuming operation asynchronously. The following illustration shows an example of the output.  
   
@@ -73,15 +88,15 @@
   
  The operation computes the selected Fibonacci number, reports progress updates as the calculation proceeds, and permits a pending calculation to be canceled.  
   
- [!code-cpp[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#1)]
- [!code-csharp[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#1)]
- [!code-vb[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557">Managed Threading Best Practices</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+    <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+    <related type="Article" href="/dotnet/standard/threading/managed-threading-best-practices">Managed Threading Best Practices</related>
+    <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +112,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,8 +137,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="CancelAsync">
@@ -129,8 +146,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.CancelAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync();" />
       <MemberSignature Language="F#" Value="member this.CancelAsync : unit -&gt; unit" Usage="backgroundWorker.CancelAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -138,6 +155,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,23 +184,23 @@
  When you call <xref:System.ComponentModel.BackgroundWorker.CancelAsync%2A>, your worker method has an opportunity to stop its execution and exit. The worker code should periodically check the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property to see if it has been set to `true`.  
   
 > [!CAUTION]
->  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
+>  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
   
    
   
 ## Examples  
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.CancelAsync%2A> method to cancel an asynchronous ("background") operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
   
- [!code-cpp[System.ComponentModel.BackgroundWorker#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#4)]
- [!code-csharp[System.ComponentModel.BackgroundWorker#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#4)]
- [!code-vb[System.ComponentModel.BackgroundWorker#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#4)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs" id="Snippet4":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.BackgroundWorker.WorkerSupportsCancellation" /> is <see langword="false" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="CancellationPending">
@@ -189,8 +208,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CancellationPending" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.CancellationPending" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancellationPending As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CancellationPending { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CancellationPending : bool" Usage="System.ComponentModel.BackgroundWorker.CancellationPending" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CancellationPending { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -198,6 +217,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,11 +232,13 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netstandard-2.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -238,14 +261,14 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property to query a <xref:System.ComponentModel.BackgroundWorker> about its cancellation state. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
   
- [!code-cpp[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#8)]
- [!code-csharp[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#8)]
- [!code-vb[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#8)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp" id="Snippet8":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs" id="Snippet8":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -253,8 +276,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="backgroundWorker.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -266,15 +289,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,32 +303,31 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="backgroundWorker.Dispose disposing" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" FrameworkAlternate="netcore-3.0;netcore-3.1;netstandard-2.1" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" FrameworkAlternate="netcore-3.0;netcore-3.1;netstandard-2.1" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" FrameworkAlternate="netcore-3.0;netcore-3.1;netstandard-2.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" FrameworkAlternate="netcore-3.0;netcore-3.1;netstandard-2.1" />
-      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="backgroundWorker.Dispose disposing" FrameworkAlternate="netcore-3.0;netcore-3.1;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="backgroundWorker.Dispose disposing" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netstandard-2.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-3.0;netcore-3.1;netstandard-2.1" />
+        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-3.0;netcore-3.1;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="disposing">To be added.</param>
@@ -317,12 +336,13 @@
       </Docs>
     </Member>
     <Member MemberName="DoWork">
-      <MemberSignature Language="C#" Value="public event System.ComponentModel.DoWorkEventHandler DoWork;" />
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.DoWorkEventHandler DoWork;" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.DoWorkEventHandler DoWork" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.BackgroundWorker.DoWork" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DoWork As DoWorkEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::DoWorkEventHandler ^ DoWork;" />
       <MemberSignature Language="F#" Value="member this.DoWork : System.ComponentModel.DoWorkEventHandler " Usage="member this.DoWork : System.ComponentModel.DoWorkEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::DoWorkEventHandler ^ DoWork;" />
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.DoWorkEventHandler? DoWork;" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -330,6 +350,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -356,7 +378,7 @@
  Your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler should periodically check the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property value and abort the operation if it is `true`. When this occurs, you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> flag of <xref:System.ComponentModel.DoWorkEventArgs?displayProperty=nameWithType> to `true`, and the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will be set to `true`.  
   
 > [!CAUTION]
->  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
+>  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
   
  If your operation produces a result, you can assign the result to the <xref:System.ComponentModel.DoWorkEventArgs.Result%2A?displayProperty=nameWithType> property. This will be available to the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler in the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> property.  
   
@@ -364,22 +386,22 @@
   
  You must be careful not to manipulate any user-interface objects in your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler. Instead, communicate to the user interface through the <xref:System.ComponentModel.BackgroundWorker> events.  
   
- For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about how to handle events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.DoWork> event to start an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
   
- [!code-cpp[System.ComponentModel.BackgroundWorker#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#5)]
- [!code-csharp[System.ComponentModel.BackgroundWorker#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#5)]
- [!code-vb[System.ComponentModel.BackgroundWorker#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#5)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs" id="Snippet5":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557">Managed Threading Best Practices</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/standard/threading/managed-threading-best-practices">Managed Threading Best Practices</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="IsBusy">
@@ -387,8 +409,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBusy" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.IsBusy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBusy As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBusy { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsBusy : bool" Usage="System.ComponentModel.BackgroundWorker.IsBusy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBusy { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -396,6 +418,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -409,11 +433,13 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netstandard-2.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -432,18 +458,18 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.ComponentModel.BackgroundWorker.IsBusy%2A> property to wait for completion of a <xref:System.ComponentModel.BackgroundWorker> operation. This code example is part of a larger example described in [How to: Download a File in the Background](~/docs/framework/winforms/controls/how-to-download-a-file-in-the-background.md).  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.BackgroundWorker.IsBusy%2A> property to wait for completion of a <xref:System.ComponentModel.BackgroundWorker> operation. This code example is part of a larger example described in [How to: Download a File in the Background](/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background).  
   
- [!code-csharp[System.ComponentModel.BackgroundWorker.IsBusy#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/CS/Form1.cs#2)]
- [!code-vb[System.ComponentModel.BackgroundWorker.IsBusy#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/VB/Form1.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/CS/Form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/VB/Form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
         <altmember cref="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" />
         <altmember cref="T:System.EventArgs" />
         <altmember cref="Overload:System.ComponentModel.BackgroundWorker.RunWorkerAsync" />
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="OnDoWork">
@@ -451,8 +477,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDoWork(class System.ComponentModel.DoWorkEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.OnDoWork(System.ComponentModel.DoWorkEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDoWork (e As DoWorkEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDoWork(System::ComponentModel::DoWorkEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnDoWork : System.ComponentModel.DoWorkEventArgs -&gt; unit&#xA;override this.OnDoWork : System.ComponentModel.DoWorkEventArgs -&gt; unit" Usage="backgroundWorker.OnDoWork e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDoWork(System::ComponentModel::DoWorkEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -460,6 +486,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -489,8 +517,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnProgressChanged(class System.ComponentModel.ProgressChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnProgressChanged (e As ProgressChangedEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnProgressChanged(System::ComponentModel::ProgressChangedEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnProgressChanged : System.ComponentModel.ProgressChangedEventArgs -&gt; unit&#xA;override this.OnProgressChanged : System.ComponentModel.ProgressChangedEventArgs -&gt; unit" Usage="backgroundWorker.OnProgressChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnProgressChanged(System::ComponentModel::ProgressChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -498,6 +526,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -523,7 +553,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.ComponentModel.BackgroundWorker.OnProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -532,8 +562,8 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.OnProgressChanged%2A> method to report the progress of an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager> class.  
   
- [!code-csharp[System.ComponentModel.AsyncOperationManager#24](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#24)]
- [!code-vb[System.ComponentModel.AsyncOperationManager#24](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#24)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs" id="Snippet24":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb" id="Snippet24":::  
   
  ]]></format>
         </remarks>
@@ -541,8 +571,8 @@
           <para>When overriding <see cref="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.ComponentModel.BackgroundWorker.ProgressChanged" />
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="OnRunWorkerCompleted">
@@ -550,8 +580,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRunWorkerCompleted(class System.ComponentModel.RunWorkerCompletedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRunWorkerCompleted (e As RunWorkerCompletedEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRunWorkerCompleted(System::ComponentModel::RunWorkerCompletedEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnRunWorkerCompleted : System.ComponentModel.RunWorkerCompletedEventArgs -&gt; unit&#xA;override this.OnRunWorkerCompleted : System.ComponentModel.RunWorkerCompletedEventArgs -&gt; unit" Usage="backgroundWorker.OnRunWorkerCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRunWorkerCompleted(System::ComponentModel::RunWorkerCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -559,6 +589,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -584,7 +616,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -594,17 +626,18 @@
           <para>When overriding <see cref="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" />
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="ProgressChanged">
-      <MemberSignature Language="C#" Value="public event System.ComponentModel.ProgressChangedEventHandler ProgressChanged;" />
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.ProgressChangedEventHandler ProgressChanged;" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.ProgressChangedEventHandler ProgressChanged" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.BackgroundWorker.ProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ProgressChanged As ProgressChangedEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::ProgressChangedEventHandler ^ ProgressChanged;" />
       <MemberSignature Language="F#" Value="member this.ProgressChanged : System.ComponentModel.ProgressChangedEventHandler " Usage="member this.ProgressChanged : System.ComponentModel.ProgressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::ProgressChangedEventHandler ^ ProgressChanged;" />
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.ProgressChangedEventHandler? ProgressChanged;" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -612,6 +645,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -635,21 +670,21 @@
 ## Remarks  
  This event is raised when you call the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method.  
   
- For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about how to handle events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event to report the progress of an asynchronous operation to the user. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
   
- [!code-cpp[System.ComponentModel.BackgroundWorker#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#7)]
- [!code-csharp[System.ComponentModel.BackgroundWorker#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#7)]
- [!code-vb[System.ComponentModel.BackgroundWorker#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#7)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp" id="Snippet7":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs" id="Snippet7":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReportProgress">
@@ -667,8 +702,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReportProgress(int32 percentProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportProgress (percentProgress As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportProgress(int percentProgress);" />
       <MemberSignature Language="F#" Value="member this.ReportProgress : int -&gt; unit" Usage="backgroundWorker.ReportProgress percentProgress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportProgress(int percentProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -676,6 +711,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -690,7 +727,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -717,24 +755,25 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method to report the progress of an asynchronous operation to the user. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
   
- [!code-cpp[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#8)]
- [!code-csharp[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#8)]
- [!code-vb[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#8)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp" id="Snippet8":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs" id="Snippet8":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.ComponentModel.BackgroundWorker.WorkerReportsProgress" /> property is set to <see langword="false" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="ReportProgress">
-      <MemberSignature Language="C#" Value="public void ReportProgress (int percentProgress, object userState);" />
+      <MemberSignature Language="C#" Value="public void ReportProgress (int percentProgress, object userState);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReportProgress(int32 percentProgress, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportProgress (percentProgress As Integer, userState As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportProgress(int percentProgress, System::Object ^ userState);" />
       <MemberSignature Language="F#" Value="member this.ReportProgress : int * obj -&gt; unit" Usage="backgroundWorker.ReportProgress (percentProgress, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportProgress(int percentProgress, System::Object ^ userState);" />
+      <MemberSignature Language="C#" Value="public void ReportProgress (int percentProgress, object? userState);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -742,6 +781,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -778,14 +819,14 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method to report the progress of an asynchronous operation to the user. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripProgressBar> class.  
   
- [!code-csharp[System.Windows.Forms.ToolStripProgressBar#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripProgressBar/CS/form1.cs#10)]
- [!code-vb[System.Windows.Forms.ToolStripProgressBar#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripProgressBar/VB/form1.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripProgressBar/CS/form1.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripProgressBar/VB/form1.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.ComponentModel.BackgroundWorker.WorkerReportsProgress" /> property is set to <see langword="false" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RunWorkerAsync">
@@ -803,8 +844,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunWorkerAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.RunWorkerAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub RunWorkerAsync ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunWorkerAsync();" />
       <MemberSignature Language="F#" Value="member this.RunWorkerAsync : unit -&gt; unit" Usage="backgroundWorker.RunWorkerAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunWorkerAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -812,6 +853,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -826,7 +869,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -846,28 +890,29 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method to start an asynchronous operation. It is part of a larger example described in [How to: Download a File in the Background](~/docs/framework/winforms/controls/how-to-download-a-file-in-the-background.md).  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method to start an asynchronous operation. It is part of a larger example described in [How to: Download a File in the Background](/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background).  
   
- [!code-csharp[System.ComponentModel.BackgroundWorker.IsBusy#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/CS/Form1.cs#2)]
- [!code-vb[System.ComponentModel.BackgroundWorker.IsBusy#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/VB/Form1.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/CS/Form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/VB/Form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.BackgroundWorker.IsBusy" /> is <see langword="true" />.</exception>
         <altmember cref="E:System.ComponentModel.BackgroundWorker.DoWork" />
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557">Managed Threading Best Practices</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/standard/threading/managed-threading-best-practices">Managed Threading Best Practices</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="RunWorkerAsync">
-      <MemberSignature Language="C#" Value="public void RunWorkerAsync (object argument);" />
+      <MemberSignature Language="C#" Value="public void RunWorkerAsync (object argument);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunWorkerAsync(object argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.RunWorkerAsync(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RunWorkerAsync (argument As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunWorkerAsync(System::Object ^ argument);" />
       <MemberSignature Language="F#" Value="member this.RunWorkerAsync : obj -&gt; unit" Usage="backgroundWorker.RunWorkerAsync argument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunWorkerAsync(System::Object ^ argument);" />
+      <MemberSignature Language="C#" Value="public void RunWorkerAsync (object? argument);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -875,6 +920,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -911,27 +958,28 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method to start an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
   
- [!code-cpp[System.ComponentModel.BackgroundWorker#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#3)]
- [!code-csharp[System.ComponentModel.BackgroundWorker#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#3)]
- [!code-vb[System.ComponentModel.BackgroundWorker#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.BackgroundWorker.IsBusy" /> is <see langword="true" />.</exception>
         <altmember cref="E:System.ComponentModel.BackgroundWorker.DoWork" />
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557">Managed Threading Best Practices</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/standard/threading/managed-threading-best-practices">Managed Threading Best Practices</related>
       </Docs>
     </Member>
     <Member MemberName="RunWorkerCompleted">
-      <MemberSignature Language="C#" Value="public event System.ComponentModel.RunWorkerCompletedEventHandler RunWorkerCompleted;" />
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.RunWorkerCompletedEventHandler RunWorkerCompleted;" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.RunWorkerCompletedEventHandler RunWorkerCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RunWorkerCompleted As RunWorkerCompletedEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::RunWorkerCompletedEventHandler ^ RunWorkerCompleted;" />
       <MemberSignature Language="F#" Value="member this.RunWorkerCompleted : System.ComponentModel.RunWorkerCompletedEventHandler " Usage="member this.RunWorkerCompleted : System.ComponentModel.RunWorkerCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::RunWorkerCompletedEventHandler ^ RunWorkerCompleted;" />
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.RunWorkerCompletedEventHandler? RunWorkerCompleted;" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -939,6 +987,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -969,7 +1019,7 @@
  The <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> indicates whether a cancellation request was processed by the background operation. If your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler detects a cancellation request by checking the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> flag and setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> flag of <xref:System.ComponentModel.DoWorkEventArgs?displayProperty=nameWithType> to `true`, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> also will be set to `true`.  
   
 > [!CAUTION]
->  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
+>  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=nameWithType> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
   
  Your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler should always check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=nameWithType> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A?displayProperty=nameWithType> properties before accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> property. If an exception was raised or if the operation was canceled, accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> property raises an exception.  
   
@@ -978,14 +1028,14 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event to handle the result of an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
   
- [!code-cpp[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#6)]
- [!code-csharp[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#6)]
- [!code-vb[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#6)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp" id="Snippet6":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs" id="Snippet6":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="WorkerReportsProgress">
@@ -993,8 +1043,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool WorkerReportsProgress" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.WorkerReportsProgress" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkerReportsProgress As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WorkerReportsProgress { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.WorkerReportsProgress : bool with get, set" Usage="System.ComponentModel.BackgroundWorker.WorkerReportsProgress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WorkerReportsProgress { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -1002,6 +1052,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1015,14 +1067,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1041,8 +1096,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
     <Member MemberName="WorkerSupportsCancellation">
@@ -1050,8 +1105,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool WorkerSupportsCancellation" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.WorkerSupportsCancellation" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkerSupportsCancellation As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WorkerSupportsCancellation { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.WorkerSupportsCancellation : bool with get, set" Usage="System.ComponentModel.BackgroundWorker.WorkerSupportsCancellation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WorkerSupportsCancellation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -1059,6 +1114,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1072,14 +1129,17 @@
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0;netstandard-2.1;netcore-3.1">
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1098,8 +1158,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.ComponentModel.BackgroundWorker.CancelAsync" />
-        <related type="Article" href="https://msdn.microsoft.com/library/5b56e2aa-dc05-444f-930c-2d7b23f9ad5b">How to: Run an Operation in the Background</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9b7bc5ae-051c-4904-9720-18f6667388bd">How to: Download a File in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-run-an-operation-in-the-background">How to: Run an Operation in the Background</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-download-a-file-in-the-background">How to: Download a File in the Background</related>
       </Docs>
     </Member>
   </Members>

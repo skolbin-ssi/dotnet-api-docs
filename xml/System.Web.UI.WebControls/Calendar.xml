@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Calendar extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Calendar" />
   <TypeSignature Language="VB.NET" Value="Public Class Calendar&#xA;Inherits WebControl&#xA;Implements IPostBackEventHandler" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Calendar : System::Web::UI::WebControls::WebControl, System::Web::UI::IPostBackEventHandler" />
   <TypeSignature Language="F#" Value="type Calendar = class&#xA;    inherit WebControl&#xA;    interface IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Calendar : System::Web::UI::WebControls::WebControl, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -21,34 +21,44 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultEvent("SelectionChanged")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultEvent("SelectionChanged")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultEvent("SelectionChanged")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultProperty("SelectedDate")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CalendarDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Web.UI.ControlValueProperty("SelectedDate", typeof(System.DateTime), "1/1/0001")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.CalendarDataBindingHandler, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultProperty("SelectedDate")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultProperty("SelectedDate")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CalendarDesigner, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CalendarDesigner, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CalendarDesigner, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.CalendarDataBindingHandler, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName Language="C#">[System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.CalendarDataBindingHandler, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.CalendarDataBindingHandler, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CalendarDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CalendarDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CalendarDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.Web.UI.ControlValueProperty("SelectedDate", typeof(System.DateTime), "1/1/0001")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.ControlValueProperty("SelectedDate", typeof(System.DateTime), "1/1/0001")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.CalendarDataBindingHandler, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName Language="C#">[System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.CalendarDataBindingHandler, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.CalendarDataBindingHandler, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.Web.UI.SupportsEventValidation]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.SupportsEventValidation&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CalendarDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CalendarDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.CalendarDataBindingHandler, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.CalendarDataBindingHandler, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -97,11 +107,11 @@
  Although binding to a data source is not supported for the <xref:System.Web.UI.WebControls.Calendar> control, you can modify the content and formatting of the individual date cells. Before the <xref:System.Web.UI.WebControls.Calendar> control is displayed on the Web page, it creates and assembles the components that make up the control. The <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised when each date cell in the <xref:System.Web.UI.WebControls.Calendar> control is created. You can control the contents and formatting of a date cell as it is created by providing code in the event handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event. For more information on customizing the contents of a date cell, see <xref:System.Web.UI.WebControls.Calendar.OnDayRender%2A>.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.Calendar> control renders ECMAScript (JScript, JavaScript) to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
+>  The <xref:System.Web.UI.WebControls.Calendar> control renders ECMAScript (JScript, JavaScript) to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](https://docs.microsoft.com/previous-versions/aspnet/3hc29e2a(v=vs.100)).  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://docs.microsoft.com/previous-versions/ms227996(v=vs.140)).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -184,13 +194,13 @@
 ## Examples  
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Calendar> control on a Web page.  
   
- [!code-aspx-csharp[Classic Calendar Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  The following example shows a <xref:System.Web.UI.WebControls.Calendar> control used when editing one of the columns displayed by a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.Calendar> control is bound to the data source with the `Bind` method. The `Eval` method is used to bind the date value that is displayed by the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[GridViewConcepts#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewConcepts/CS/gridviewcustomcs.aspx#1)]
- [!code-aspx-vb[GridViewConcepts#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewConcepts/VB/gridviewcustomvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewConcepts/CS/gridviewcustomcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewConcepts/VB/gridviewcustomvb.aspx" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -208,7 +218,7 @@
     <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowGridLines" />
     <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth" />
     <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowTitle" />
-    <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/3hc29e2a(v=vs.100)">Client Script in ASP.NET Web Pages</related>
     <related type="Article" href="https://msdn.microsoft.com/library/3a461fdb-6fcc-49f0-b998-92d759890a94">Calendar Web Server Control</related>
   </Docs>
   <Members>
@@ -239,8 +249,8 @@
 ## Examples  
  The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Calendar> class.  
   
- [!code-aspx-csharp[Classic Calendar.Calendar Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.Calendar Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.Calendar Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.Calendar Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.Calendar Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.Calendar Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -251,8 +261,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.Caption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Caption As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Caption : string with get, set" Usage="System.Web.UI.WebControls.Calendar.Caption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,10 +271,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -279,15 +291,15 @@
 ## Remarks  
  A table caption is used to describe the nature of the table in one to three sentences. Use the <xref:System.Web.UI.WebControls.Calendar.CaptionAlign%2A> property to align the caption with the calendar.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://docs.microsoft.com/previous-versions/aspnet/c6zyy3s9(v=vs.100)).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.Caption%2A> property to display a caption for a <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[CalendarCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarCaption/CS/calendarcaptioncs.aspx#1)]
- [!code-aspx-vb[CalendarCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarCaption/VB/calendarcaptionvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarCaption/CS/calendarcaptioncs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarCaption/VB/calendarcaptionvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -299,8 +311,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TableCaptionAlign CaptionAlign" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.CaptionAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CaptionAlign As TableCaptionAlign" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableCaptionAlign CaptionAlign { System::Web::UI::WebControls::TableCaptionAlign get(); void set(System::Web::UI::WebControls::TableCaptionAlign value); };" />
       <MemberSignature Language="F#" Value="member this.CaptionAlign : System.Web.UI.WebControls.TableCaptionAlign with get, set" Usage="System.Web.UI.WebControls.Calendar.CaptionAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableCaptionAlign CaptionAlign { System::Web::UI::WebControls::TableCaptionAlign get(); void set(System::Web::UI::WebControls::TableCaptionAlign value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,7 +321,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -337,8 +350,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.CaptionAlign%2A> property to align a caption for a <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[CalendarCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarCaption/CS/calendarcaptioncs.aspx#1)]
- [!code-aspx-vb[CalendarCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarCaption/VB/calendarcaptionvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarCaption/CS/calendarcaptioncs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarCaption/VB/calendarcaptionvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -351,8 +364,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 CellPadding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.CellPadding" />
       <MemberSignature Language="VB.NET" Value="Public Property CellPadding As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CellPadding { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.CellPadding : int with get, set" Usage="System.Web.UI.WebControls.Calendar.CellPadding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CellPadding { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -361,11 +374,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(2)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -388,11 +403,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.CellPadding%2A> property to pad each cell with 5 pixels.  
   
- [!code-aspx-csharp[Classic Calendar.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.CellPadding Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.CellPadding Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.CellPadding Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.CellPadding Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarCellPadding/CS/calendarcellpaddingcs.aspx#1)]
- [!code-aspx-vb[CalendarCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarCellPadding/VB/calendarcellpaddingvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarCellPadding/CS/calendarcellpaddingcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarCellPadding/VB/calendarcellpaddingvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -405,8 +420,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 CellSpacing" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.CellSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Property CellSpacing As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CellSpacing { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.CellSpacing : int with get, set" Usage="System.Web.UI.WebControls.Calendar.CellSpacing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CellSpacing { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -415,11 +430,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -442,11 +459,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.CellSpacing%2A> property to space the cells 5 pixels apart.  
   
- [!code-aspx-csharp[Classic Calendar.CellSpacing Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.CellSpacing Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.CellSpacing Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.CellSpacing Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.CellSpacing Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.CellSpacing Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarCellPadding/CS/calendarcellpaddingcs.aspx#1)]
- [!code-aspx-vb[CalendarCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarCellPadding/VB/calendarcellpaddingvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarCellPadding/CS/calendarcellpaddingcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarCellPadding/VB/calendarcellpaddingvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -459,8 +476,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="calendar.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -486,11 +503,11 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Calendar.CreateControlCollection%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.EmptyControlCollection> class for the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[CustomCalendarCreateControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarCreateControlCollection/CS/custom_calendar_createcontrolcollectioncs.aspx#1)]
- [!code-aspx-vb[CustomCalendarCreateControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarCreateControlCollection/VB/custom_calendar_createcontrolcollectionvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarCreateControlCollection/CS/custom_calendar_createcontrolcollectioncs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarCreateControlCollection/VB/custom_calendar_createcontrolcollectionvb.aspx" id="Snippet1":::  
   
- [!code-csharp[CustomCalendarCreateControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarCreateControlCollection/CS/custom_calendar_createcontrolcollection.cs#2)]
- [!code-vb[CustomCalendarCreateControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarCreateControlCollection/VB/custom_calendar_createcontrolcollection.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarCreateControlCollection/CS/custom_calendar_createcontrolcollection.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarCreateControlCollection/VB/custom_calendar_createcontrolcollection.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -501,8 +518,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle DayHeaderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.DayHeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayHeaderStyle As TableItemStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ DayHeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DayHeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Calendar.DayHeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ DayHeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -512,13 +529,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -543,11 +563,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.DayHeaderStyle%2A> property to specify a bold font for the section that displays the days of the week.  
   
- [!code-aspx-csharp[Classic Calendar.DayHeaderStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayHeaderStyle Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.DayHeaderStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayHeaderStyle Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayHeaderStyle Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayHeaderStyle Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarDayHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayHeaderStyle/CS/calendardayheaderstylecs.aspx#1)]
- [!code-aspx-vb[CalendarDayHeaderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayHeaderStyle/VB/calendardayheaderstylevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayHeaderStyle/CS/calendardayheaderstylecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayHeaderStyle/VB/calendardayheaderstylevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -561,8 +581,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DayNameFormat DayNameFormat" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.DayNameFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DayNameFormat As DayNameFormat" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DayNameFormat DayNameFormat { System::Web::UI::WebControls::DayNameFormat get(); void set(System::Web::UI::WebControls::DayNameFormat value); };" />
       <MemberSignature Language="F#" Value="member this.DayNameFormat : System.Web.UI.WebControls.DayNameFormat with get, set" Usage="System.Web.UI.WebControls.Calendar.DayNameFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DayNameFormat DayNameFormat { System::Web::UI::WebControls::DayNameFormat get(); void set(System::Web::UI::WebControls::DayNameFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -571,11 +591,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -599,11 +621,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.DayNameFormat%2A> property to specify that days of the week are displayed in full.  
   
- [!code-aspx-csharp[Classic Calendar.DayNameFormat Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayNameFormat Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.DayNameFormat Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayNameFormat Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayNameFormat Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayNameFormat Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarDayNameFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayNameFormat/CS/calendardaynameformatcs.aspx#1)]
- [!code-aspx-vb[CalendarDayNameFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayNameFormat/VB/calendardaynameformatvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayNameFormat/CS/calendardaynameformatcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayNameFormat/VB/calendardaynameformatvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -617,8 +639,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DayRenderEventHandler DayRender" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Calendar.DayRender" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DayRender As DayRenderEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DayRenderEventHandler ^ DayRender;" />
       <MemberSignature Language="F#" Value="member this.DayRender : System.Web.UI.WebControls.DayRenderEventHandler " Usage="member this.DayRender : System.Web.UI.WebControls.DayRenderEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DayRenderEventHandler ^ DayRender;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -642,18 +664,18 @@
 > [!NOTE]
 >  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
   
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType> control to the cell.  
   
- [!code-aspx-csharp[Classic Calendar.DayRender Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.DayRender Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]
- [!code-aspx-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -665,8 +687,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle DayStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.DayStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayStyle As TableItemStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ DayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DayStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Calendar.DayStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ DayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -676,16 +698,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -710,11 +736,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.DayStyle%2A> property to specify that the days in the currently displayed month are shown in gray.  
   
- [!code-aspx-csharp[Classic Calendar.DayStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayStyle Example/CS/sourcecs.aspx#1)]
- [!code-xml[Classic Calendar.DayStyle Example#1](~/samples/snippets/common/VS_Snippets_WebNet/Classic Calendar.DayStyle Example/Common/source.xml#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayStyle Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="xml" source="~/samples/snippets/common/VS_Snippets_WebNet/Classic Calendar.DayStyle Example/Common/source.xml" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarDayStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayStyle/CS/calendardaystylecs.aspx#1)]
- [!code-aspx-vb[CalendarDayStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayStyle/VB/calendardaystylevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayStyle/CS/calendardaystylecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayStyle/VB/calendardaystylevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -729,8 +755,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.FirstDayOfWeek FirstDayOfWeek" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.FirstDayOfWeek" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstDayOfWeek As FirstDayOfWeek" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::FirstDayOfWeek FirstDayOfWeek { System::Web::UI::WebControls::FirstDayOfWeek get(); void set(System::Web::UI::WebControls::FirstDayOfWeek value); };" />
       <MemberSignature Language="F#" Value="member this.FirstDayOfWeek : System.Web.UI.WebControls.FirstDayOfWeek with get, set" Usage="System.Web.UI.WebControls.Calendar.FirstDayOfWeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::FirstDayOfWeek FirstDayOfWeek { System::Web::UI::WebControls::FirstDayOfWeek get(); void set(System::Web::UI::WebControls::FirstDayOfWeek value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -739,11 +765,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -763,11 +791,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.FirstDayOfWeek%2A> property to set the first day column to Monday.  
   
- [!code-aspx-csharp[Classic Calendar.FirstDayOfWeek Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.FirstDayOfWeek Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.FirstDayOfWeek Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.FirstDayOfWeek Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.FirstDayOfWeek Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.FirstDayOfWeek Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarFirstDayOfWeek#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarFirstDayOfWeek/CS/calendarfirstdayofweekcs.aspx#1)]
- [!code-aspx-vb[CalendarFirstDayOfWeek#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarFirstDayOfWeek/VB/calendarfirstdayofweekvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarFirstDayOfWeek/CS/calendarfirstdayofweekcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarFirstDayOfWeek/VB/calendarfirstdayofweekvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -780,8 +808,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool HasWeekSelectors(valuetype System.Web.UI.WebControls.CalendarSelectionMode selectionMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.HasWeekSelectors(System.Web.UI.WebControls.CalendarSelectionMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Function HasWeekSelectors (selectionMode As CalendarSelectionMode) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasWeekSelectors(System::Web::UI::WebControls::CalendarSelectionMode selectionMode);" />
       <MemberSignature Language="F#" Value="member this.HasWeekSelectors : System.Web.UI.WebControls.CalendarSelectionMode -&gt; bool" Usage="calendar.HasWeekSelectors selectionMode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasWeekSelectors(System::Web::UI::WebControls::CalendarSelectionMode selectionMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -811,11 +839,11 @@
 ## Examples  
  The following code example demonstrates how to determine the value of the <xref:System.Web.UI.WebControls.Calendar.HasWeekSelectors%2A> property in a custom <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[CustomCalendarHasWeekSelectors#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarHasWeekSelectors/CS/custom_calendar_hasweekselectorscs.aspx#1)]
- [!code-aspx-vb[CustomCalendarHasWeekSelectors#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarHasWeekSelectors/VB/custom_calendar_hasweekselectorsvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarHasWeekSelectors/CS/custom_calendar_hasweekselectorscs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarHasWeekSelectors/VB/custom_calendar_hasweekselectorsvb.aspx" id="Snippet1":::  
   
- [!code-csharp[CustomCalendarHasWeekSelectors#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarHasWeekSelectors/CS/custom_calendar_hasweekselectors.cs#2)]
- [!code-vb[CustomCalendarHasWeekSelectors#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarHasWeekSelectors/VB/custom_calendar_hasweekselectors.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarHasWeekSelectors/CS/custom_calendar_hasweekselectors.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarHasWeekSelectors/VB/custom_calendar_hasweekselectors.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -826,8 +854,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="calendar.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -852,8 +880,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string NextMonthText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.NextMonthText" />
       <MemberSignature Language="VB.NET" Value="Public Property NextMonthText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextMonthText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.NextMonthText : string with get, set" Usage="System.Web.UI.WebControls.Calendar.NextMonthText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextMonthText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -862,14 +890,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("&amp;gt;")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("&amp;gt;")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("&amp;gt;")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -891,15 +922,15 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth%2A> property is set to `true`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://docs.microsoft.com/previous-versions/aspnet/c6zyy3s9(v=vs.100)).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.NextMonthText%2A> property to specify custom text for the navigation control to the next month.  
   
- [!code-aspx-csharp[Classic Calendar.NextMonthText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.NextMonthText Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.NextMonthText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.NextMonthText Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.NextMonthText Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.NextMonthText Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -912,8 +943,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.NextPrevFormat NextPrevFormat" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.NextPrevFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property NextPrevFormat As NextPrevFormat" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::NextPrevFormat NextPrevFormat { System::Web::UI::WebControls::NextPrevFormat get(); void set(System::Web::UI::WebControls::NextPrevFormat value); };" />
       <MemberSignature Language="F#" Value="member this.NextPrevFormat : System.Web.UI.WebControls.NextPrevFormat with get, set" Usage="System.Web.UI.WebControls.Calendar.NextPrevFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::NextPrevFormat NextPrevFormat { System::Web::UI::WebControls::NextPrevFormat get(); void set(System::Web::UI::WebControls::NextPrevFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -922,11 +953,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -950,11 +983,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.NextPrevFormat%2A> property to specify the short month format for the navigation controls.  
   
- [!code-aspx-csharp[Classic Calendar.NextPrevFormat Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.NextPrevFormat Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.NextPrevFormat Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.NextPrevFormat Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.NextPrevFormat Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.NextPrevFormat Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarNextPrevFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevFormat/CS/calendarnextprevformatcs.aspx#1)]
- [!code-aspx-vb[CalendarNextPrevFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevFormat/VB/calendarnextprevformatvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevFormat/CS/calendarnextprevformatcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevFormat/VB/calendarnextprevformatvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -969,8 +1002,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle NextPrevStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.NextPrevStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextPrevStyle As TableItemStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ NextPrevStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.NextPrevStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Calendar.NextPrevStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ NextPrevStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -980,13 +1013,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1008,11 +1044,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.NextPrevStyle%2A> property to specify blue text for the next month and previous month navigation controls.  
   
- [!code-aspx-csharp[Classic Calendar.NextPrevStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.NextPrevStyle Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.NextPrevStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.NextPrevStyle Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.NextPrevStyle Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.NextPrevStyle Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarNextPrevStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevStyle/CS/calendarnextprevstylecs.aspx#1)]
- [!code-aspx-vb[CalendarNextPrevStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevStyle/VB/calendarnextprevstylevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevStyle/CS/calendarnextprevstylecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevStyle/VB/calendarnextprevstylevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1024,8 +1060,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDayRender(class System.Web.UI.WebControls.TableCell cell, class System.Web.UI.WebControls.CalendarDay day) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.OnDayRender(System.Web.UI.WebControls.TableCell,System.Web.UI.WebControls.CalendarDay)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDayRender (cell As TableCell, day As CalendarDay)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDayRender(System::Web::UI::WebControls::TableCell ^ cell, System::Web::UI::WebControls::CalendarDay ^ day);" />
       <MemberSignature Language="F#" Value="abstract member OnDayRender : System.Web.UI.WebControls.TableCell * System.Web.UI.WebControls.CalendarDay -&gt; unit&#xA;override this.OnDayRender : System.Web.UI.WebControls.TableCell * System.Web.UI.WebControls.CalendarDay -&gt; unit" Usage="calendar.OnDayRender (cell, day)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDayRender(System::Web::UI::WebControls::TableCell ^ cell, System::Web::UI::WebControls::CalendarDay ^ day);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1057,7 +1093,7 @@
 > [!NOTE]
 >  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnDayRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1066,11 +1102,11 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=nameWithType> control to the cell.  
   
- [!code-aspx-csharp[Classic Calendar.DayRender Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.DayRender Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]
- [!code-aspx-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1087,8 +1123,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="calendar.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -1113,7 +1149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1122,11 +1158,11 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Calendar.OnPreRender%2A> method so that it always displays a three-point border in a custom <xref:System.Web.UI.WebControls.Calendar> server control.  
   
- [!code-aspx-csharp[CustomCalendarOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarOnPreRender/CS/custom_calendar_onprerendercs.aspx#1)]
- [!code-aspx-vb[CustomCalendarOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarOnPreRender/VB/custom_calendar_onprerendervb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarOnPreRender/CS/custom_calendar_onprerendercs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarOnPreRender/VB/custom_calendar_onprerendervb.aspx" id="Snippet1":::  
   
- [!code-csharp[CustomCalendarOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarOnPreRender/CS/custom_calendar_onprerender.cs#2)]
- [!code-vb[CustomCalendarOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarOnPreRender/VB/custom_calendar_onprerender.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarOnPreRender/CS/custom_calendar_onprerender.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarOnPreRender/VB/custom_calendar_onprerender.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -1140,8 +1176,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.OnSelectionChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionChanged ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionChanged();" />
       <MemberSignature Language="F#" Value="abstract member OnSelectionChanged : unit -&gt; unit&#xA;override this.OnSelectionChanged : unit -&gt; unit" Usage="calendar.OnSelectionChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1161,7 +1197,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Calendar.SelectionChanged> event is raised when the user selects a day, a week, or an entire month by clicking the date selector controls.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnSelectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1170,11 +1206,11 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.SelectionChanged> event to display the number of items selected in the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[CalendarSelectionChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionChanged/CS/calendarselectionchangedcs.aspx#1)]
- [!code-aspx-vb[CalendarSelectionChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionChanged/VB/calendarselectionchangedvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionChanged/CS/calendarselectionchangedcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionChanged/VB/calendarselectionchangedvb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarSelectionChanged2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionChanged2/CS/calendarselectionchanged2cs.aspx#1)]
- [!code-aspx-vb[CalendarSelectionChanged2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionChanged2/VB/calendarselectionchanged2vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionChanged2/CS/calendarselectionchanged2cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionChanged2/VB/calendarselectionchanged2vb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1189,8 +1225,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnVisibleMonthChanged(valuetype System.DateTime newDate, valuetype System.DateTime previousDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.OnVisibleMonthChanged(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnVisibleMonthChanged (newDate As DateTime, previousDate As DateTime)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnVisibleMonthChanged(DateTime newDate, DateTime previousDate);" />
       <MemberSignature Language="F#" Value="abstract member OnVisibleMonthChanged : DateTime * DateTime -&gt; unit&#xA;override this.OnVisibleMonthChanged : DateTime * DateTime -&gt; unit" Usage="calendar.OnVisibleMonthChanged (newDate, previousDate)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnVisibleMonthChanged(DateTime newDate, DateTime previousDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1215,7 +1251,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event is raised when the user clicks the next or previous month navigation elements on the title section.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnVisibleMonthChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1224,11 +1260,11 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event to display whether the <xref:System.Web.UI.WebControls.Calendar> has moved forward or backward one month.  
   
- [!code-aspx-csharp[CalendarVisibleMonthChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx#1)]
- [!code-aspx-vb[CalendarVisibleMonthChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarVisibleMonthChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx#1)]
- [!code-aspx-vb[CalendarVisibleMonthChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1244,8 +1280,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle OtherMonthDayStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.OtherMonthDayStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OtherMonthDayStyle As TableItemStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ OtherMonthDayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.OtherMonthDayStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Calendar.OtherMonthDayStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ OtherMonthDayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1255,16 +1291,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1286,8 +1326,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.OtherMonthDayStyle%2A> property to specify a light gray foreground color for the days on the <xref:System.Web.UI.WebControls.Calendar> control that are not in the currently displayed month.  
   
- [!code-aspx-csharp[CalendarOtherMonthDayStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarOtherMonthDayStyle/CS/calendarothermonthdaystylecs.aspx#1)]
- [!code-aspx-vb[CalendarOtherMonthDayStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarOtherMonthDayStyle/VB/calendarothermonthdaystylevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarOtherMonthDayStyle/CS/calendarothermonthdaystylecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarOtherMonthDayStyle/VB/calendarothermonthdaystylevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1300,8 +1340,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string PrevMonthText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.PrevMonthText" />
       <MemberSignature Language="VB.NET" Value="Public Property PrevMonthText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrevMonthText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.PrevMonthText : string with get, set" Usage="System.Web.UI.WebControls.Calendar.PrevMonthText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrevMonthText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1310,14 +1350,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("&amp;lt;")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("&amp;lt;")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("&amp;lt;")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1339,15 +1382,15 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth%2A> property is set to `true`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://docs.microsoft.com/previous-versions/aspnet/c6zyy3s9(v=vs.100)).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.PrevMonthText%2A> property to specify custom text for the previous month navigation control.  
   
- [!code-aspx-csharp[Classic Calendar.NextMonthText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.NextMonthText Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.NextMonthText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.NextMonthText Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.NextMonthText Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.NextMonthText Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1360,12 +1403,9 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="calendar.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1395,8 +1435,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="calendar.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -1423,11 +1463,11 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Calendar.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.Calendar> always displays an image.  
   
- [!code-aspx-csharp[CustomCalendarRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarRender/CS/custom_calendar_rendercs.aspx#1)]
- [!code-aspx-vb[CustomCalendarRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarRender/VB/custom_calendar_rendervb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarRender/CS/custom_calendar_rendercs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarRender/VB/custom_calendar_rendervb.aspx" id="Snippet1":::  
   
- [!code-csharp[CustomCalendarRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarRender/CS/custom_calendar_render.cs#2)]
- [!code-vb[CustomCalendarRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarRender/VB/custom_calendar_render.vb#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCalendarRender/CS/custom_calendar_render.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCalendarRender/VB/custom_calendar_render.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -1438,8 +1478,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="calendar.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1462,8 +1502,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime SelectedDate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.SelectedDate" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime SelectedDate { DateTime get(); void set(DateTime value); };" />
       <MemberSignature Language="F#" Value="member this.SelectedDate : DateTime with get, set" Usage="System.Web.UI.WebControls.Calendar.SelectedDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime SelectedDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1472,14 +1512,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.DateTime), "1/1/0001")</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(typeof(System.DateTime), "1/1/0001")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(typeof(System.DateTime), "1/1/0001")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Bindable(true, System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true, System.ComponentModel.BindingDirection.TwoWay)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true, System.ComponentModel.BindingDirection.TwoWay)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1508,8 +1551,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.SelectedDate%2A> property to determine the selected date on the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[Classic Calendar.SelectedDate Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectedDate Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.SelectedDate Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectedDate Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectedDate Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectedDate Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1526,8 +1569,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.SelectedDatesCollection SelectedDates" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.SelectedDates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedDates As SelectedDatesCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SelectedDatesCollection ^ SelectedDates { System::Web::UI::WebControls::SelectedDatesCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SelectedDates : System.Web.UI.WebControls.SelectedDatesCollection" Usage="System.Web.UI.WebControls.Calendar.SelectedDates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SelectedDatesCollection ^ SelectedDates { System::Web::UI::WebControls::SelectedDatesCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1537,10 +1580,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1571,8 +1616,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.SelectedDates%2A> collection to determine the selected dates on the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[Classic Calendar.SelectedDates Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectedDates Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.SelectedDates Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectedDates Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectedDates Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectedDates Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1589,8 +1634,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle SelectedDayStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.SelectedDayStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedDayStyle As TableItemStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SelectedDayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SelectedDayStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Calendar.SelectedDayStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SelectedDayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1600,16 +1645,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1631,11 +1680,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.SelectedDayStyle%2A> property to specify a blue background color for the selected dates on the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[Classic Calendar.SelectedDayStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectedDayStyle Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.SelectedDayStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectedDayStyle Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectedDayStyle Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectedDayStyle Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarSelectedDayStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectedDayStyle/CS/calendarselecteddaystylecs.aspx#1)]
- [!code-aspx-vb[CalendarSelectedDayStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectedDayStyle/VB/calendarselecteddaystylevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectedDayStyle/CS/calendarselecteddaystylecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectedDayStyle/VB/calendarselecteddaystylevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1647,8 +1696,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Calendar.SelectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectionChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
       <MemberSignature Language="F#" Value="member this.SelectionChanged : EventHandler " Usage="member this.SelectionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1667,18 +1716,18 @@
 ## Remarks  
  This event is raised when the user selects a day, a week, or an entire month by clicking the date selector controls.  
   
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.SelectionChanged> event to display the number of items selected in the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[CalendarSelectionChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionChanged/CS/calendarselectionchangedcs.aspx#1)]
- [!code-aspx-vb[CalendarSelectionChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionChanged/VB/calendarselectionchangedvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionChanged/CS/calendarselectionchangedcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionChanged/VB/calendarselectionchangedvb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarSelectionChanged2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionChanged2/CS/calendarselectionchanged2cs.aspx#1)]
- [!code-aspx-vb[CalendarSelectionChanged2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionChanged2/VB/calendarselectionchanged2vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionChanged2/CS/calendarselectionchanged2cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionChanged2/VB/calendarselectionchanged2vb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1690,8 +1739,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.CalendarSelectionMode SelectionMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.SelectionMode" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionMode As CalendarSelectionMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::CalendarSelectionMode SelectionMode { System::Web::UI::WebControls::CalendarSelectionMode get(); void set(System::Web::UI::WebControls::CalendarSelectionMode value); };" />
       <MemberSignature Language="F#" Value="member this.SelectionMode : System.Web.UI.WebControls.CalendarSelectionMode with get, set" Usage="System.Web.UI.WebControls.Calendar.SelectionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::CalendarSelectionMode SelectionMode { System::Web::UI::WebControls::CalendarSelectionMode get(); void set(System::Web::UI::WebControls::CalendarSelectionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1700,11 +1749,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1728,11 +1779,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property to allow date selection by a single day, a week, or an entire month.  
   
- [!code-aspx-csharp[Classic Calendar.SelectionMode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectionMode Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.SelectionMode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectionMode Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectionMode Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectionMode Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarSelectionMode2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionMode2/CS/calendarselectionmodecs.aspx#1)]
- [!code-aspx-vb[CalendarSelectionMode2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionMode2/VB/calendarselectionmodevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarSelectionMode2/CS/calendarselectionmodecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarSelectionMode2/VB/calendarselectionmodevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1746,8 +1797,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string SelectMonthText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.SelectMonthText" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectMonthText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectMonthText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.SelectMonthText : string with get, set" Usage="System.Web.UI.WebControls.Calendar.SelectMonthText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectMonthText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1756,14 +1807,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("&amp;gt;&amp;gt;")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("&amp;gt;&amp;gt;")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("&amp;gt;&amp;gt;")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1785,15 +1839,15 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.DayWeekMonth`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://docs.microsoft.com/previous-versions/aspnet/c6zyy3s9(v=vs.100)).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.SelectMonthText%2A> property to provide custom text for the month selection element.  
   
- [!code-aspx-csharp[Classic Calendar.SelectMonthText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectMonthText Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.SelectMonthText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectMonthText Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectMonthText Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectMonthText Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1805,8 +1859,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle SelectorStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.SelectorStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectorStyle As TableItemStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SelectorStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SelectorStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Calendar.SelectorStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SelectorStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1816,13 +1870,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1844,8 +1901,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.SelectorStyle%2A> property to specify a light gray background color for the selector column.  
   
- [!code-aspx-csharp[Classic Calendar.SelectorStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectorStyle Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.SelectorStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectorStyle Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectorStyle Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectorStyle Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1858,8 +1915,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string SelectWeekText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.SelectWeekText" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectWeekText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectWeekText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.SelectWeekText : string with get, set" Usage="System.Web.UI.WebControls.Calendar.SelectWeekText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectWeekText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1868,14 +1925,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("&amp;gt;")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("&amp;gt;")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("&amp;gt;")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1897,15 +1957,15 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.DayWeek` or `CalendarSelectionMode.DayWeekMonth`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://docs.microsoft.com/previous-versions/aspnet/c6zyy3s9(v=vs.100)).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.SelectWeekText%2A> property to provide custom text for the week selection element.  
   
- [!code-aspx-csharp[Classic Calendar.SelectWeekText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectWeekText Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.SelectWeekText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectWeekText Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.SelectWeekText Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.SelectWeekText Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1917,8 +1977,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowDayHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.ShowDayHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowDayHeader As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowDayHeader { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ShowDayHeader : bool with get, set" Usage="System.Web.UI.WebControls.Calendar.ShowDayHeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowDayHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1927,11 +1987,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1954,11 +2016,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.ShowDayHeader%2A> property to hide the heading for the days of the week.  
   
- [!code-aspx-csharp[Classic Calendar.ShowDayHeader Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.ShowDayHeader Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.ShowDayHeader Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.ShowDayHeader Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.ShowDayHeader Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.ShowDayHeader Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarShowDayHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarShowDayHeader/CS/calendarshowdayheadercs.aspx#1)]
- [!code-aspx-vb[CalendarShowDayHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarShowDayHeader/VB/calendarshowdayheadervb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarShowDayHeader/CS/calendarshowdayheadercs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarShowDayHeader/VB/calendarshowdayheadervb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1970,8 +2032,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowGridLines" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.ShowGridLines" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowGridLines As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowGridLines { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ShowGridLines : bool with get, set" Usage="System.Web.UI.WebControls.Calendar.ShowGridLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowGridLines { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1980,11 +2042,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2005,11 +2069,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.ShowGridLines%2A> property to display the gridlines between days in the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[Classic Calendar.ShowGridLines Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.ShowGridLines Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.ShowGridLines Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.ShowGridLines Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.ShowGridLines Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.ShowGridLines Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarShowGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarShowGridLines/CS/calendarshowgridlinescs.aspx#1)]
- [!code-aspx-vb[CalendarShowGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarShowGridLines/VB/calendarshowgridlinesvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarShowGridLines/CS/calendarshowgridlinescs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarShowGridLines/VB/calendarshowgridlinesvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2020,8 +2084,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowNextPrevMonth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowNextPrevMonth As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowNextPrevMonth { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ShowNextPrevMonth : bool with get, set" Usage="System.Web.UI.WebControls.Calendar.ShowNextPrevMonth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowNextPrevMonth { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2030,11 +2094,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2057,11 +2123,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth%2A> property to hide the next and previous month navigation controls in the title section.  
   
- [!code-aspx-csharp[Classic Calendar.ShowNextPrevMonth Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.ShowNextPrevMonth Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.ShowNextPrevMonth Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.ShowNextPrevMonth Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.ShowNextPrevMonth Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.ShowNextPrevMonth Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarShowNextPrevMonth#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarShowNextPrevMonth/CS/calendarshownextprevmonthcs.aspx#1)]
- [!code-aspx-vb[CalendarShowNextPrevMonth#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarShowNextPrevMonth/VB/calendarshownextprevmonthvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarShowNextPrevMonth/CS/calendarshownextprevmonthcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarShowNextPrevMonth/VB/calendarshownextprevmonthvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2073,8 +2139,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowTitle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.ShowTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowTitle As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowTitle { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ShowTitle : bool with get, set" Usage="System.Web.UI.WebControls.Calendar.ShowTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowTitle { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2083,11 +2149,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2113,8 +2181,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.ShowTitle%2A> property to hide the title header.  
   
- [!code-aspx-csharp[CalendarShowTitle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarShowTitle/CS/calendarshowtitlecs.aspx#1)]
- [!code-aspx-vb[CalendarShowTitle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarShowTitle/VB/calendarshowtitlevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarShowTitle/CS/calendarshowtitlecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarShowTitle/VB/calendarshowtitlevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2126,8 +2194,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.SupportsDisabledAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsDisabledAttribute As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDisabledAttribute { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsDisabledAttribute : bool" Usage="System.Web.UI.WebControls.Calendar.SupportsDisabledAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDisabledAttribute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2158,6 +2226,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="F#" Value="abstract member System.Web.UI.IPostBackEventHandler.RaisePostBackEvent : string -&gt; unit&#xA;override this.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent : string -&gt; unit" Usage="calendar.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent eventArgument" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2171,7 +2240,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2191,8 +2261,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TitleFormat TitleFormat" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.TitleFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property TitleFormat As TitleFormat" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TitleFormat TitleFormat { System::Web::UI::WebControls::TitleFormat get(); void set(System::Web::UI::WebControls::TitleFormat value); };" />
       <MemberSignature Language="F#" Value="member this.TitleFormat : System.Web.UI.WebControls.TitleFormat with get, set" Usage="System.Web.UI.WebControls.Calendar.TitleFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TitleFormat TitleFormat { System::Web::UI::WebControls::TitleFormat get(); void set(System::Web::UI::WebControls::TitleFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2201,11 +2271,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2227,11 +2299,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.TitleFormat%2A> property to display the month and year in the title section.  
   
- [!code-aspx-csharp[Classic Calendar.TitleFormat Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.TitleFormat Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.TitleFormat Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.TitleFormat Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.TitleFormat Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.TitleFormat Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarTitleFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarTitleFormat/CS/calendartitleformatcs.aspx#1)]
- [!code-aspx-vb[CalendarTitleFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarTitleFormat/VB/calendartitleformatvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarTitleFormat/CS/calendartitleformatcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarTitleFormat/VB/calendartitleformatvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2244,8 +2316,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle TitleStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.TitleStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleStyle As TableItemStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ TitleStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.TitleStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Calendar.TitleStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ TitleStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2255,13 +2327,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2283,11 +2358,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.TitleStyle%2A> property to specify a blue background color and a yellow foreground color for the title heading of the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[Classic Calendar.TitleStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.TitleStyle Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.TitleStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.TitleStyle Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.TitleStyle Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.TitleStyle Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarTitleStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarTitleStyle/CS/calendartitlestylecs.aspx#1)]
- [!code-aspx-vb[CalendarTitleStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarTitleStyle/VB/calendartitlestylevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarTitleStyle/CS/calendartitlestylecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarTitleStyle/VB/calendartitlestylevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2300,8 +2375,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle TodayDayStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.TodayDayStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TodayDayStyle As TableItemStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ TodayDayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.TodayDayStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Calendar.TodayDayStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ TodayDayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2311,16 +2386,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2342,11 +2421,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.TodayDayStyle%2A> property to specify a blue background color and a yellow foreground color for today's date.  
   
- [!code-aspx-csharp[Classic Calendar.TodayDayStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.TodayDayStyle Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.TodayDayStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.TodayDayStyle Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.TodayDayStyle Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.TodayDayStyle Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarTodayDayStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarTodayDayStyle/CS/calendartodaydaystylecs.aspx#1)]
- [!code-aspx-vb[CalendarTodayDayStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarTodayDayStyle/VB/calendartodaydaystylevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarTodayDayStyle/CS/calendartodaydaystylecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarTodayDayStyle/VB/calendartodaydaystylevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2359,8 +2438,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TodaysDate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.TodaysDate" />
       <MemberSignature Language="VB.NET" Value="Public Property TodaysDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TodaysDate { DateTime get(); void set(DateTime value); };" />
       <MemberSignature Language="F#" Value="member this.TodaysDate : DateTime with get, set" Usage="System.Web.UI.WebControls.Calendar.TodaysDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TodaysDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2369,14 +2448,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2404,8 +2486,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.TodaysDate%2A> property to programmatically set the value for today's date on the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[Classic Calendar.TodaysDate Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.TodaysDate Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.TodaysDate Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.TodaysDate Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.TodaysDate Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.TodaysDate Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2418,8 +2500,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Calendar.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="calendar.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2441,8 +2523,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool UseAccessibleHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.UseAccessibleHeader" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UseAccessibleHeader As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseAccessibleHeader { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.UseAccessibleHeader : bool with get, set" Usage="System.Web.UI.WebControls.Calendar.UseAccessibleHeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseAccessibleHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2451,7 +2533,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2478,8 +2561,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime VisibleDate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.VisibleDate" />
       <MemberSignature Language="VB.NET" Value="Public Property VisibleDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime VisibleDate { DateTime get(); void set(DateTime value); };" />
       <MemberSignature Language="F#" Value="member this.VisibleDate : DateTime with get, set" Usage="System.Web.UI.WebControls.Calendar.VisibleDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime VisibleDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2489,10 +2572,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.DateTime), "1/1/0001")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(typeof(System.DateTime), "1/1/0001")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(typeof(System.DateTime), "1/1/0001")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2514,8 +2599,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property to programmatically set the value that determines the month that is displayed in the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- [!code-aspx-csharp[Classic Calendar.VisibleDate Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.VisibleDate Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.VisibleDate Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.VisibleDate Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.VisibleDate Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.VisibleDate Example/VB/sourcevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2528,8 +2613,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.MonthChangedEventHandler VisibleMonthChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event VisibleMonthChanged As MonthChangedEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::MonthChangedEventHandler ^ VisibleMonthChanged;" />
       <MemberSignature Language="F#" Value="member this.VisibleMonthChanged : System.Web.UI.WebControls.MonthChangedEventHandler " Usage="member this.VisibleMonthChanged : System.Web.UI.WebControls.MonthChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::MonthChangedEventHandler ^ VisibleMonthChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2548,18 +2633,18 @@
 ## Remarks  
  This event is raised when the user clicks the next or previous month navigation elements on the title heading.  
   
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event to display whether the <xref:System.Web.UI.WebControls.Calendar> control has moved forward or backward one month.  
   
- [!code-aspx-csharp[CalendarVisibleMonthChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx#1)]
- [!code-aspx-vb[CalendarVisibleMonthChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarVisibleMonthChanged2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged2/CS/calendarvisiblemonthchanged2cs.aspx#1)]
- [!code-aspx-vb[CalendarVisibleMonthChanged2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged2/VB/calendarvisiblemonthchanged2vb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged2/CS/calendarvisiblemonthchanged2cs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged2/VB/calendarvisiblemonthchanged2vb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2571,8 +2656,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle WeekendDayStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Calendar.WeekendDayStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WeekendDayStyle As TableItemStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ WeekendDayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WeekendDayStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Calendar.WeekendDayStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ WeekendDayStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2582,13 +2667,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.NotifyParentProperty(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.NotifyParentProperty(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2610,11 +2698,11 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Calendar.WeekendDayStyle%2A> property to specify a blue background color and a yellow foreground color for weekend dates.  
   
- [!code-aspx-csharp[Classic Calendar.WeekendDayStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.WeekendDayStyle Example/CS/sourcecs.aspx#1)]
- [!code-aspx-vb[Classic Calendar.WeekendDayStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.WeekendDayStyle Example/VB/sourcevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.WeekendDayStyle Example/CS/sourcecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.WeekendDayStyle Example/VB/sourcevb.aspx" id="Snippet1":::  
   
- [!code-aspx-csharp[CalendarWeekendDayStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarWeekendDayStyle/CS/calendarweekenddaystylecs.aspx#1)]
- [!code-aspx-vb[CalendarWeekendDayStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarWeekendDayStyle/VB/calendarweekenddaystylevb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarWeekendDayStyle/CS/calendarweekenddaystylecs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarWeekendDayStyle/VB/calendarweekenddaystylevb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>

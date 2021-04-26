@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigurationSectionHandler" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConfigurationSectionHandler" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IConfigurationSectionHandler" />
   <TypeSignature Language="F#" Value="type IConfigurationSectionHandler = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -13,10 +13,11 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -27,9 +28,9 @@
 ## Remarks  
 
  > [!IMPORTANT]
- > <xref:System.Configuration.IConfigurationSectionHandler> is deprecated in .NET Framework 2.0 and above. But, because it is used internally, it has been kept. You can find an example at [How to: Create Custom Configuration Sections Using IConfigurationSectionHandler](https://msdn.microsoft.com/library/07f68a3f-2920-4665-a824-47bda744e662). If you use the previous example, please build it with the .NET Framework version 1.0 or 1.1.  
+ > <xref:System.Configuration.IConfigurationSectionHandler> is deprecated in .NET Framework 2.0 and above. But, because it is used internally, it has been kept. You can find an example at [How to: Create Custom Configuration Sections Using IConfigurationSectionHandler](https://docs.microsoft.com/previous-versions/aspnet/ms228056(v=vs.100)). If you use the previous example, please build it with the .NET Framework version 1.0 or 1.1.  
   
- In .NET Framework version 2.0 and above, you must instead derive from the <xref:System.Configuration.ConfigurationSection> class to implement the related configuration section handler. You can find an example at [How to: Create Custom Configuration Sections Using ConfigurationSection](https://msdn.microsoft.com/library/febaca98-c727-4017-95ed-82e2fb6cf234).  
+ In .NET Framework version 2.0 and above, you must instead derive from the <xref:System.Configuration.ConfigurationSection> class to implement the related configuration section handler. You can find an example at [How to: Create Custom Configuration Sections Using ConfigurationSection](https://docs.microsoft.com/previous-versions/aspnet/2tw134k3(v=vs.100)).  
   
  Instances of the <xref:System.Configuration.IConfigurationSectionHandler> class must be thread safe and stateless. The <xref:System.Configuration.IConfigurationSectionHandler.Create%2A> method must be callable from multiple threads simultaneously.  
   
@@ -44,8 +45,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(object parent, object configContext, class System.Xml.XmlNode section) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (parent As Object, configContext As Object, section As XmlNode) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Create(System::Object ^ parent, System::Object ^ configContext, System::Xml::XmlNode ^ section);" />
       <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="iConfigurationSectionHandler.Create (parent, configContext, section)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Create(System::Object ^ parent, System::Object ^ configContext, System::Xml::XmlNode ^ section);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -55,10 +56,11 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -85,8 +87,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Configuration.ConfigurationSection" />
-        <related type="Article" href="https://msdn.microsoft.com/library/febaca98-c727-4017-95ed-82e2fb6cf234">How to: Create Custom Configuration Sections Using ConfigurationSection</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/07f68a3f-2920-4665-a824-47bda744e662">How to: Create Custom Configuration Sections Using IConfigurationSectionHandler</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/2tw134k3(v=vs.100)">How to: Create Custom Configuration Sections Using ConfigurationSection</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms228056(v=vs.100)">How to: Create Custom Configuration Sections Using IConfigurationSectionHandler</related>
       </Docs>
     </Member>
   </Members>

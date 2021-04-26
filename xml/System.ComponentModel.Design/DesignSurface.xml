@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignSurface extends System.Object implements class System.IDisposable, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignSurface" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignSurface&#xA;Implements IDisposable, IServiceProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DesignSurface : IDisposable, IServiceProvider" />
   <TypeSignature Language="F#" Value="type DesignSurface = class&#xA;    interface IDisposable&#xA;    interface IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignSurface : IDisposable, IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -13,7 +13,14 @@
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Design" FromVersion="5.0.0.0" To="System.Windows.Forms.Design" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Design" FromVersion="6.0.0.0" To="System.Windows.Forms.Design" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Design" FromVersion="4.0.0.0" To="System.Windows.Forms.Design" ToVersion="4.0.0.0" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -27,7 +34,8 @@
   </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
+      <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -81,7 +89,6 @@
   
  ]]></format>
     </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
     <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
     <altmember cref="T:System.IServiceProvider" />
     <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerLoader" />
@@ -112,10 +119,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -130,8 +140,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider parentProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parentProvider As IServiceProvider)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignSurface(IServiceProvider ^ parentProvider);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignSurface : IServiceProvider -&gt; System.ComponentModel.Design.DesignSurface" Usage="new System.ComponentModel.Design.DesignSurface parentProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignSurface(IServiceProvider ^ parentProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -141,6 +151,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parentProvider" Type="System.IServiceProvider" />
@@ -165,8 +177,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type rootComponentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rootComponentType As Type)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignSurface(Type ^ rootComponentType);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignSurface : Type -&gt; System.ComponentModel.Design.DesignSurface" Usage="new System.ComponentModel.Design.DesignSurface rootComponentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignSurface(Type ^ rootComponentType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -176,10 +188,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -209,8 +224,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider parentProvider, class System.Type rootComponentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.#ctor(System.IServiceProvider,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parentProvider As IServiceProvider, rootComponentType As Type)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignSurface(IServiceProvider ^ parentProvider, Type ^ rootComponentType);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignSurface : IServiceProvider * Type -&gt; System.ComponentModel.Design.DesignSurface" Usage="new System.ComponentModel.Design.DesignSurface (parentProvider, rootComponentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignSurface(IServiceProvider ^ parentProvider, Type ^ rootComponentType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -220,6 +235,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parentProvider" Type="System.IServiceProvider" />
@@ -257,8 +274,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginLoad(class System.ComponentModel.Design.Serialization.DesignerLoader loader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.BeginLoad(System.ComponentModel.Design.Serialization.DesignerLoader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginLoad (loader As DesignerLoader)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginLoad(System::ComponentModel::Design::Serialization::DesignerLoader ^ loader);" />
       <MemberSignature Language="F#" Value="member this.BeginLoad : System.ComponentModel.Design.Serialization.DesignerLoader -&gt; unit" Usage="designSurface.BeginLoad loader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginLoad(System::ComponentModel::Design::Serialization::DesignerLoader ^ loader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -268,6 +285,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -300,8 +319,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginLoad(class System.Type rootComponentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.BeginLoad(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginLoad (rootComponentType As Type)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginLoad(Type ^ rootComponentType);" />
       <MemberSignature Language="F#" Value="member this.BeginLoad : Type -&gt; unit" Usage="designSurface.BeginLoad rootComponentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginLoad(Type ^ rootComponentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -311,6 +330,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -344,8 +365,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IContainer ComponentContainer" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurface.ComponentContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComponentContainer As IContainer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IContainer ^ ComponentContainer { System::ComponentModel::IContainer ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ComponentContainer : System.ComponentModel.IContainer" Usage="System.ComponentModel.Design.DesignSurface.ComponentContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IContainer ^ ComponentContainer { System::ComponentModel::IContainer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -355,6 +376,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IContainer</ReturnType>
@@ -378,8 +401,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ComponentModel.IComponent CreateComponent(class System.Type componentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.CreateComponent(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateComponent (componentType As Type) As IComponent" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ComponentModel::IComponent ^ CreateComponent(Type ^ componentType);" />
       <MemberSignature Language="F#" Value="abstract member CreateComponent : Type -&gt; System.ComponentModel.IComponent&#xA;override this.CreateComponent : Type -&gt; System.ComponentModel.IComponent" Usage="designSurface.CreateComponent componentType" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ComponentModel::IComponent ^ CreateComponent(Type ^ componentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -389,10 +412,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("CreateComponent has been replaced by CreateInstance and will be removed after Beta2")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("CreateComponent has been replaced by CreateInstance and will be removed after Beta2")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("CreateComponent has been replaced by CreateInstance and will be removed after Beta2")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -423,8 +449,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ComponentModel.Design.IDesigner CreateDesigner(class System.ComponentModel.IComponent component, bool rootDesigner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.CreateDesigner(System.ComponentModel.IComponent,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateDesigner (component As IComponent, rootDesigner As Boolean) As IDesigner" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ComponentModel::Design::IDesigner ^ CreateDesigner(System::ComponentModel::IComponent ^ component, bool rootDesigner);" />
       <MemberSignature Language="F#" Value="abstract member CreateDesigner : System.ComponentModel.IComponent * bool -&gt; System.ComponentModel.Design.IDesigner&#xA;override this.CreateDesigner : System.ComponentModel.IComponent * bool -&gt; System.ComponentModel.Design.IDesigner" Usage="designSurface.CreateDesigner (component, rootDesigner)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ComponentModel::Design::IDesigner ^ CreateDesigner(System::ComponentModel::IComponent ^ component, bool rootDesigner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -434,6 +460,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.IDesigner</ReturnType>
@@ -469,8 +497,9 @@
       <MemberSignature Language="C#" Value="protected internal virtual object CreateInstance (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object CreateInstance(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.CreateInstance(System.Type)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ CreateInstance(Type ^ type);" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateInstance (type As Type) As Object" />
       <MemberSignature Language="F#" Value="abstract member CreateInstance : Type -&gt; obj&#xA;override this.CreateInstance : Type -&gt; obj" Usage="designSurface.CreateInstance type" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ CreateInstance(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -480,6 +509,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -518,8 +549,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.INestedContainer CreateNestedContainer(class System.ComponentModel.IComponent owningComponent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.CreateNestedContainer(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateNestedContainer (owningComponent As IComponent) As INestedContainer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::INestedContainer ^ CreateNestedContainer(System::ComponentModel::IComponent ^ owningComponent);" />
       <MemberSignature Language="F#" Value="member this.CreateNestedContainer : System.ComponentModel.IComponent -&gt; System.ComponentModel.INestedContainer" Usage="designSurface.CreateNestedContainer owningComponent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::INestedContainer ^ CreateNestedContainer(System::ComponentModel::IComponent ^ owningComponent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -529,10 +560,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -563,8 +597,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.INestedContainer CreateNestedContainer(class System.ComponentModel.IComponent owningComponent, string containerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.CreateNestedContainer(System.ComponentModel.IComponent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateNestedContainer (owningComponent As IComponent, containerName As String) As INestedContainer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::INestedContainer ^ CreateNestedContainer(System::ComponentModel::IComponent ^ owningComponent, System::String ^ containerName);" />
       <MemberSignature Language="F#" Value="member this.CreateNestedContainer : System.ComponentModel.IComponent * string -&gt; System.ComponentModel.INestedContainer" Usage="designSurface.CreateNestedContainer (owningComponent, containerName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::INestedContainer ^ CreateNestedContainer(System::ComponentModel::IComponent ^ owningComponent, System::String ^ containerName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -574,6 +608,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.INestedContainer</ReturnType>
@@ -616,8 +652,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="designSurface.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -630,10 +666,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -651,7 +690,7 @@
 > [!NOTE]
 >  Because <xref:System.ComponentModel.Design.DesignSurface> does not have any native code to clean up, it does not have a finalizer that calls <xref:System.ComponentModel.Design.DesignSurface.Dispose%28System.Boolean%29>. If you need to call <xref:System.ComponentModel.Design.DesignSurface.Dispose%28System.Boolean%29>, you must add a finalizer yourself.  
   
- Call <xref:System.ComponentModel.Design.DesignSurface.Dispose%2A> when you are finished using the <xref:System.ComponentModel.Design.DesignSurface>. The <xref:System.ComponentModel.Design.DesignSurface.Dispose%2A> method leaves the <xref:System.ComponentModel.Design.DesignSurface> in an unusable state. After calling <xref:System.ComponentModel.Design.DesignSurface.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.Design.DesignSurface> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.DesignSurface> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ Call <xref:System.ComponentModel.Design.DesignSurface.Dispose%2A> when you are finished using the <xref:System.ComponentModel.Design.DesignSurface>. The <xref:System.ComponentModel.Design.DesignSurface.Dispose%2A> method leaves the <xref:System.ComponentModel.Design.DesignSurface> in an unusable state. After calling <xref:System.ComponentModel.Design.DesignSurface.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.Design.DesignSurface> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.DesignSurface> was occupying. For more information, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged) and [Implementing a Dispose Method](/dotnet/standard/garbage-collection/implementing-dispose).  
   
 > [!NOTE]
 >  Always call <xref:System.ComponentModel.Design.DesignSurface.Dispose%2A> before you release your last reference to the <xref:System.ComponentModel.Design.DesignSurface>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Design.DesignSurface> object's `Finalize` method.  
@@ -665,8 +704,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="designSurface.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -676,6 +715,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -704,9 +745,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](/dotnet/standard/garbage-collection/implementing-dispose).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>
@@ -714,9 +755,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurface.Disposed" />
-      <MemberSignature Language="VB.NET" Value="Public Event Disposed As EventHandler " FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Disposed;" />
+      <MemberSignature Language="VB.NET" Value="Public Event Disposed As EventHandler " FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="F#" Value="member this.Disposed : EventHandler " Usage="member this.Disposed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Disposed;" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Disposed As EventHandler " FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
@@ -727,6 +768,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -748,8 +791,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool DtelLoading" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurface.DtelLoading" />
       <MemberSignature Language="VB.NET" Value="Public Property DtelLoading As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DtelLoading { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.DtelLoading : bool with get, set" Usage="System.ComponentModel.Design.DesignSurface.DtelLoading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DtelLoading { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -758,13 +801,17 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -775,7 +822,7 @@
         <value>
           <see langword="true" /> if the **Design-time Error List** is loading; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/ad408380-825a-46d8-9a4a-531b130b88ce">Design-Time Errors in the Windows Forms Designer</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/design-time-errors-in-the-windows-forms-designer">Design-Time Errors in the Windows Forms Designer</related>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -783,8 +830,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
       <MemberSignature Language="F#" Value="member this.Flush : unit -&gt; unit" Usage="designSurface.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -794,6 +841,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -815,9 +864,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Flushed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Flushed" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurface.Flushed" />
-      <MemberSignature Language="VB.NET" Value="Public Event Flushed As EventHandler " FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Flushed;" />
+      <MemberSignature Language="VB.NET" Value="Public Event Flushed As EventHandler " FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="F#" Value="member this.Flushed : EventHandler " Usage="member this.Flushed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Flushed;" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Flushed As EventHandler " FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
@@ -828,6 +877,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -849,8 +900,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
       <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="designSurface.GetService serviceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
@@ -863,6 +914,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -889,8 +942,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLoaded" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurface.IsLoaded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoaded As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoaded { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsLoaded : bool" Usage="System.ComponentModel.Design.DesignSurface.IsLoaded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoaded { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -900,10 +953,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -920,9 +976,9 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.LoadedEventHandler Loaded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.LoadedEventHandler Loaded" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurface.Loaded" />
-      <MemberSignature Language="VB.NET" Value="Public Event Loaded As LoadedEventHandler " FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::LoadedEventHandler ^ Loaded;" />
+      <MemberSignature Language="VB.NET" Value="Public Event Loaded As LoadedEventHandler " FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="F#" Value="member this.Loaded : System.ComponentModel.Design.LoadedEventHandler " Usage="member this.Loaded : System.ComponentModel.Design.LoadedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::LoadedEventHandler ^ Loaded;" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Loaded As LoadedEventHandler " FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
@@ -933,6 +989,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.LoadedEventHandler</ReturnType>
@@ -959,8 +1017,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection LoadErrors" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurface.LoadErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoadErrors As ICollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ LoadErrors { System::Collections::ICollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LoadErrors : System.Collections.ICollection" Usage="System.ComponentModel.Design.DesignSurface.LoadErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ LoadErrors { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -970,6 +1028,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
@@ -984,9 +1044,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Loading;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Loading" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurface.Loading" />
-      <MemberSignature Language="VB.NET" Value="Public Event Loading As EventHandler " FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Loading;" />
+      <MemberSignature Language="VB.NET" Value="Public Event Loading As EventHandler " FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="F#" Value="member this.Loading : EventHandler " Usage="member this.Loading : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Loading;" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Loading As EventHandler " FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
@@ -997,6 +1057,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -1011,8 +1073,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoaded(class System.ComponentModel.Design.LoadedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.OnLoaded(System.ComponentModel.Design.LoadedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoaded (e As LoadedEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoaded(System::ComponentModel::Design::LoadedEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnLoaded : System.ComponentModel.Design.LoadedEventArgs -&gt; unit&#xA;override this.OnLoaded : System.ComponentModel.Design.LoadedEventArgs -&gt; unit" Usage="designSurface.OnLoaded e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoaded(System::ComponentModel::Design::LoadedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1022,6 +1084,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1040,8 +1104,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoading(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.OnLoading(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoading (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoading(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnLoading : EventArgs -&gt; unit&#xA;override this.OnLoading : EventArgs -&gt; unit" Usage="designSurface.OnLoading e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoading(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1051,6 +1115,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1069,8 +1135,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUnloaded(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.OnUnloaded(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUnloaded (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnloaded(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnUnloaded : EventArgs -&gt; unit&#xA;override this.OnUnloaded : EventArgs -&gt; unit" Usage="designSurface.OnUnloaded e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnloaded(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1080,6 +1146,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1098,8 +1166,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUnloading(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.OnUnloading(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUnloading (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnloading(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnUnloading : EventArgs -&gt; unit&#xA;override this.OnUnloading : EventArgs -&gt; unit" Usage="designSurface.OnUnloading e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnloading(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1109,6 +1177,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1127,8 +1197,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnViewActivate(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurface.OnViewActivate(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnViewActivate (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnViewActivate(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnViewActivate : EventArgs -&gt; unit&#xA;override this.OnViewActivate : EventArgs -&gt; unit" Usage="designSurface.OnViewActivate e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnViewActivate(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1138,6 +1208,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1156,8 +1228,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.ServiceContainer ServiceContainer" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurface.ServiceContainer" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ServiceContainer As ServiceContainer" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::Design::ServiceContainer ^ ServiceContainer { System::ComponentModel::Design::ServiceContainer ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ServiceContainer : System.ComponentModel.Design.ServiceContainer" Usage="System.ComponentModel.Design.DesignSurface.ServiceContainer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::Design::ServiceContainer ^ ServiceContainer { System::ComponentModel::Design::ServiceContainer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1167,6 +1239,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.ServiceContainer</ReturnType>
@@ -1189,9 +1263,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Unloaded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Unloaded" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurface.Unloaded" />
-      <MemberSignature Language="VB.NET" Value="Public Event Unloaded As EventHandler " FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Unloaded;" />
+      <MemberSignature Language="VB.NET" Value="Public Event Unloaded As EventHandler " FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="F#" Value="member this.Unloaded : EventHandler " Usage="member this.Unloaded : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Unloaded;" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unloaded As EventHandler " FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
@@ -1202,6 +1276,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -1215,9 +1291,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Unloading;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Unloading" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurface.Unloading" />
-      <MemberSignature Language="VB.NET" Value="Public Event Unloading As EventHandler " FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Unloading;" />
+      <MemberSignature Language="VB.NET" Value="Public Event Unloading As EventHandler " FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="F#" Value="member this.Unloading : EventHandler " Usage="member this.Unloading : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Unloading;" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unloading As EventHandler " FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
@@ -1228,6 +1304,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -1249,8 +1327,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object View" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurface.View" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ View { System::Object ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.View : obj" Usage="System.ComponentModel.Design.DesignSurface.View" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ View { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1260,6 +1338,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1299,9 +1379,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ViewActivated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ViewActivated" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurface.ViewActivated" />
-      <MemberSignature Language="VB.NET" Value="Public Event ViewActivated As EventHandler " FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ViewActivated;" />
+      <MemberSignature Language="VB.NET" Value="Public Event ViewActivated As EventHandler " FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="F#" Value="member this.ViewActivated : EventHandler " Usage="member this.ViewActivated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ViewActivated;" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ViewActivated As EventHandler " FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
@@ -1312,6 +1392,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>

@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventOpcode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventOpcode" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventOpcode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class EventOpcode" />
   <TypeSignature Language="F#" Value="type EventOpcode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventOpcode" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +14,8 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -25,6 +27,13 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Diagnostics.Tracing" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.Tracing" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.Tracing" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Diagnostics.Tracing" FromVersion="4.1.2.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.7.1" />
+    <TypeForwarding From="System.Diagnostics.Tracing" FromVersion="4.2.0.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.7.2;netframework-4.8" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -37,13 +46,13 @@
 
 The following example shows how to use the `Start` enumeration member to specify a start operation. This example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.
   
-[!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
-[!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
+:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs" id="Snippet7":::
+:::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb" id="Snippet7":::  
   
 The following example shows how to use the `Stop` enumeration member to specify a stop operation. This example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
   
-[!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
-[!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]
+:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs" id="Snippet8":::
+:::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb" id="Snippet8":::
 
  ]]></format>
     </remarks>
@@ -54,8 +63,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode DataCollectionStart = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.DataCollectionStart" />
       <MemberSignature Language="VB.NET" Value="DataCollectionStart" />
-      <MemberSignature Language="C++ CLI" Value="DataCollectionStart" />
       <MemberSignature Language="F#" Value="DataCollectionStart = 3" Usage="System.Diagnostics.Tracing.EventOpcode.DataCollectionStart" />
+      <MemberSignature Language="C++ CLI" Value="DataCollectionStart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -66,6 +75,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -90,8 +101,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode DataCollectionStop = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.DataCollectionStop" />
       <MemberSignature Language="VB.NET" Value="DataCollectionStop" />
-      <MemberSignature Language="C++ CLI" Value="DataCollectionStop" />
       <MemberSignature Language="F#" Value="DataCollectionStop = 4" Usage="System.Diagnostics.Tracing.EventOpcode.DataCollectionStop" />
+      <MemberSignature Language="C++ CLI" Value="DataCollectionStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -102,6 +113,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,8 +139,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Extension = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Extension" />
       <MemberSignature Language="VB.NET" Value="Extension" />
-      <MemberSignature Language="C++ CLI" Value="Extension" />
       <MemberSignature Language="F#" Value="Extension = 5" Usage="System.Diagnostics.Tracing.EventOpcode.Extension" />
+      <MemberSignature Language="C++ CLI" Value="Extension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -138,6 +151,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,8 +177,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Info = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Info" />
       <MemberSignature Language="VB.NET" Value="Info" />
-      <MemberSignature Language="C++ CLI" Value="Info" />
       <MemberSignature Language="F#" Value="Info = 0" Usage="System.Diagnostics.Tracing.EventOpcode.Info" />
+      <MemberSignature Language="C++ CLI" Value="Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -174,6 +189,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -198,8 +215,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Receive = int32(240)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Receive" />
       <MemberSignature Language="VB.NET" Value="Receive" />
-      <MemberSignature Language="C++ CLI" Value="Receive" />
       <MemberSignature Language="F#" Value="Receive = 240" Usage="System.Diagnostics.Tracing.EventOpcode.Receive" />
+      <MemberSignature Language="C++ CLI" Value="Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -210,6 +227,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -234,8 +253,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Reply = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Reply" />
       <MemberSignature Language="VB.NET" Value="Reply" />
-      <MemberSignature Language="C++ CLI" Value="Reply" />
       <MemberSignature Language="F#" Value="Reply = 6" Usage="System.Diagnostics.Tracing.EventOpcode.Reply" />
+      <MemberSignature Language="C++ CLI" Value="Reply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -246,6 +265,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -270,8 +291,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Resume = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Resume" />
       <MemberSignature Language="VB.NET" Value="Resume" />
-      <MemberSignature Language="C++ CLI" Value="Resume" />
       <MemberSignature Language="F#" Value="Resume = 7" Usage="System.Diagnostics.Tracing.EventOpcode.Resume" />
+      <MemberSignature Language="C++ CLI" Value="Resume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -282,6 +303,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -306,8 +329,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Send = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Send" />
       <MemberSignature Language="VB.NET" Value="Send" />
-      <MemberSignature Language="C++ CLI" Value="Send" />
       <MemberSignature Language="F#" Value="Send = 9" Usage="System.Diagnostics.Tracing.EventOpcode.Send" />
+      <MemberSignature Language="C++ CLI" Value="Send" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -318,6 +341,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -342,8 +367,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Start = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Start" />
       <MemberSignature Language="VB.NET" Value="Start" />
-      <MemberSignature Language="C++ CLI" Value="Start" />
       <MemberSignature Language="F#" Value="Start = 1" Usage="System.Diagnostics.Tracing.EventOpcode.Start" />
+      <MemberSignature Language="C++ CLI" Value="Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -354,6 +379,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -378,8 +405,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Stop = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Stop" />
       <MemberSignature Language="VB.NET" Value="Stop" />
-      <MemberSignature Language="C++ CLI" Value="Stop" />
       <MemberSignature Language="F#" Value="Stop = 2" Usage="System.Diagnostics.Tracing.EventOpcode.Stop" />
+      <MemberSignature Language="C++ CLI" Value="Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -390,6 +417,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -414,8 +443,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Suspend = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Suspend" />
       <MemberSignature Language="VB.NET" Value="Suspend" />
-      <MemberSignature Language="C++ CLI" Value="Suspend" />
       <MemberSignature Language="F#" Value="Suspend = 8" Usage="System.Diagnostics.Tracing.EventOpcode.Suspend" />
+      <MemberSignature Language="C++ CLI" Value="Suspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -426,6 +455,8 @@ The following example shows how to use the `Stop` enumeration member to specify 
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

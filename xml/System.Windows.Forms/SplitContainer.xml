@@ -1,41 +1,54 @@
 <Type Name="SplitContainer" FullName="System.Windows.Forms.SplitContainer">
-  <TypeSignature Language="C#" Value="public class SplitContainer : System.Windows.Forms.ContainerControl, System.ComponentModel.ISupportInitialize" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplitContainer extends System.Windows.Forms.ContainerControl implements class System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="C#" Value="public class SplitContainer : System.Windows.Forms.ContainerControl, System.ComponentModel.ISupportInitialize" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplitContainer extends System.Windows.Forms.ContainerControl implements class System.ComponentModel.ISupportInitialize" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SplitContainer" />
-  <TypeSignature Language="VB.NET" Value="Public Class SplitContainer&#xA;Inherits ContainerControl&#xA;Implements ISupportInitialize" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SplitContainer : System::Windows::Forms::ContainerControl, System::ComponentModel::ISupportInitialize" />
-  <TypeSignature Language="F#" Value="type SplitContainer = class&#xA;    inherit ContainerControl&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="VB.NET" Value="Public Class SplitContainer&#xA;Inherits ContainerControl&#xA;Implements ISupportInitialize" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="F#" Value="type SplitContainer = class&#xA;    inherit ContainerControl&#xA;    interface ISupportInitialize" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SplitContainer : System::Windows::Forms::ContainerControl, System::ComponentModel::ISupportInitialize" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="C#" Value="public class SplitContainer : System.Windows.Forms.ContainerControl" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplitContainer extends System.Windows.Forms.ContainerControl" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+  <TypeSignature Language="VB.NET" Value="Public Class SplitContainer&#xA;Inherits ContainerControl" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+  <TypeSignature Language="F#" Value="type SplitContainer = class&#xA;    inherit ContainerControl" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SplitContainer : System::Windows::Forms::ContainerControl" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Forms.ContainerControl</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultEvent("SplitterMoved")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultEvent("SplitterMoved")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultEvent("SplitterMoved")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.SplitContainerDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Windows.Forms.Design.SplitContainerDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Windows.Forms.Design.SplitContainerDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Windows.Forms.Docking(System.Windows.Forms.DockingBehavior.AutoDock)</AttributeName>
+      <AttributeName Language="C#">[System.Windows.Forms.Docking(System.Windows.Forms.DockingBehavior.AutoDock)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Windows.Forms.Docking(System.Windows.Forms.DockingBehavior.AutoDock)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.SplitContainerDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1">
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Windows.Forms.Design.SplitContainerDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Windows.Forms.Design.SplitContainerDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -49,7 +62,7 @@
  Use the <xref:System.Windows.Forms.SplitContainer> control to divide the display area of a container (such as a <xref:System.Windows.Forms.Form>) and allow the user to resize controls that are added to the <xref:System.Windows.Forms.SplitContainer> panels. When the user passes the mouse pointer over the splitter, the cursor changes to indicate that the controls inside the <xref:System.Windows.Forms.SplitContainer> control can be resized.  
   
 > [!NOTE]
->  Previous versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] only support the <xref:System.Windows.Forms.Splitter> control.  
+>  Previous versions of the .NET Framework only support the <xref:System.Windows.Forms.Splitter> control.  
   
  <xref:System.Windows.Forms.SplitContainer> also eases control placement at design time. For example, to create a window similar to Windows Explorer, add a <xref:System.Windows.Forms.SplitContainer> control to a <xref:System.Windows.Forms.Form> and set its <xref:System.Windows.Forms.Control.Dock%2A> property to `DockStyle.Fill`. Add a <xref:System.Windows.Forms.TreeView> control to the <xref:System.Windows.Forms.Form> and set its <xref:System.Windows.Forms.Control.Dock%2A> property to `DockStyle.Fill`. To complete the layout, add a <xref:System.Windows.Forms.ListView> control and set its <xref:System.Windows.Forms.Control.Dock%2A> property to `DockStyle.Fill` to have the <xref:System.Windows.Forms.ListView> occupy the remaining space on the <xref:System.Windows.Forms.Form>. At run time, the user can then resize the width of both controls using the splitter. Use the <xref:System.Windows.Forms.SplitContainer.FixedPanel%2A> property to specify that a control should not be resized along with the <xref:System.Windows.Forms.Form> or other container.  
   
@@ -66,13 +79,13 @@
 ## Examples  
  The following code example shows both a vertical and horizontal <xref:System.Windows.Forms.SplitContainer>. The vertical splitter moves in 10-pixel increments. The left panel of the vertical <xref:System.Windows.Forms.SplitContainer> contains a <xref:System.Windows.Forms.TreeView> control, and its right panel contains a horizontal <xref:System.Windows.Forms.SplitContainer>. Both panels of the horizontal <xref:System.Windows.Forms.SplitContainer> are filled with <xref:System.Windows.Forms.ListView> controls, and the top panel is defined as a <xref:System.Windows.Forms.SplitContainer.FixedPanel%2A> so that it does not resize when you resize the container. Moving the vertical splitter raises the <xref:System.Windows.Forms.SplitContainer.SplitterMoving> event, signified in this example by a change to the cursor style. The <xref:System.Windows.Forms.SplitContainer.SplitterMoved> event is raised when you stop moving the splitter. This is signified in this example by the cursor style reverting to the default.  
   
- [!code-cpp[BasicSplitContainer#1](~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp#1)]
- [!code-csharp[BasicSplitContainer#1](~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs#1)]
- [!code-vb[BasicSplitContainer#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/2e36f17f-5c39-4fb4-bb09-7ce3ef823402">SplitContainer Control (Windows Forms)</related>
+    <related type="Article" href="/dotnet/framework/winforms/controls/splitcontainer-control-windows-forms">SplitContainer Control (Windows Forms)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,6 +99,8 @@
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -98,26 +113,32 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.AutoScroll" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScroll As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoScroll { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AutoScroll : bool with get, set" Usage="System.Windows.Forms.SplitContainer.AutoScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,23 +163,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size AutoScrollMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.AutoScrollMargin" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMargin As Size" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMargin { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberSignature Language="F#" Value="member this.AutoScrollMargin : System.Drawing.Size with get, set" Usage="System.Windows.Forms.SplitContainer.AutoScrollMargin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMargin { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -187,23 +213,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size AutoScrollMinSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.AutoScrollMinSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMinSize As Size" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMinSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberSignature Language="F#" Value="member this.AutoScrollMinSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.SplitContainer.AutoScrollMinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMinSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -230,23 +261,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point AutoScrollOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.AutoScrollOffset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScrollOffset As Point" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Point AutoScrollOffset { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberSignature Language="F#" Value="member this.AutoScrollOffset : System.Drawing.Point with get, set" Usage="System.Windows.Forms.SplitContainer.AutoScrollOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Point AutoScrollOffset { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Point), "0, 0")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(typeof(System.Drawing.Point), "0, 0")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(typeof(System.Drawing.Point), "0, 0")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -270,23 +306,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point AutoScrollPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.AutoScrollPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollPosition As Point" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point AutoScrollPosition { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberSignature Language="F#" Value="member this.AutoScrollPosition : System.Drawing.Point with get, set" Usage="System.Windows.Forms.SplitContainer.AutoScrollPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point AutoScrollPosition { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -310,23 +351,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.SplitContainer.AutoSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -352,20 +398,24 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AutoSizeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.SplitContainer.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
       <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -377,7 +427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  This event is not relevant to this class.  
   
@@ -390,20 +440,24 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.SplitContainer.BackgroundImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -435,20 +489,24 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.SplitContainer.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -462,7 +520,7 @@
 ## Remarks  
  This event is raised if the <xref:System.Windows.Forms.SplitContainer.BackgroundImage%2A> property is changed by either a programmatic modification or user interaction.  
   
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
@@ -471,8 +529,8 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.SplitContainer> named `SplitContainer1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.SplitContainer.BackgroundImageChanged> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#546](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#546)]
- [!code-vb[System.Windows.Forms.EventExamples#546](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#546)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs" id="Snippet546":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet546":::  
   
  ]]></format>
         </remarks>
@@ -485,20 +543,24 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.SplitContainer.BackgroundImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -522,20 +584,24 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.SplitContainer.BackgroundImageLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -558,8 +624,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="splitContainer.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -567,6 +633,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -582,17 +650,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.BindingContext BindingContext" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.BindingContext" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BindingContext As BindingContext" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::BindingContext ^ BindingContext { System::Windows::Forms::BindingContext ^ get(); void set(System::Windows::Forms::BindingContext ^ value); };" />
       <MemberSignature Language="F#" Value="member this.BindingContext : System.Windows.Forms.BindingContext with get, set" Usage="System.Windows.Forms.SplitContainer.BindingContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::BindingContext ^ BindingContext { System::Windows::Forms::BindingContext ^ get(); void set(System::Windows::Forms::BindingContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -611,23 +682,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BorderStyle BorderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
       <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.BorderStyle with get, set" Usage="System.Windows.Forms.SplitContainer.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(-504)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(-504)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(-504)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -653,20 +729,24 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlAdded" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.SplitContainer.ControlAdded" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ControlAdded As ControlEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlAdded;" />
       <MemberSignature Language="F#" Value="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -689,20 +769,24 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlRemoved" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.SplitContainer.ControlRemoved" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ControlRemoved As ControlEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlRemoved;" />
       <MemberSignature Language="F#" Value="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -725,20 +809,24 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control/ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Controls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As Control.ControlCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control::ControlCollection ^ Controls { System::Windows::Forms::Control::ControlCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Controls : System.Windows.Forms.Control.ControlCollection" Usage="System.Windows.Forms.SplitContainer.Controls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control::ControlCollection ^ Controls { System::Windows::Forms::Control::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -762,17 +850,20 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.Control/ControlCollection CreateControlsInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.CreateControlsInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlsInstance () As Control.ControlCollection" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::Control::ControlCollection ^ CreateControlsInstance();" />
       <MemberSignature Language="F#" Value="override this.CreateControlsInstance : unit -&gt; System.Windows.Forms.Control.ControlCollection" Usage="splitContainer.CreateControlsInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::Control::ControlCollection ^ CreateControlsInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -792,13 +883,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.SplitContainer.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
@@ -822,13 +915,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DockStyle Dock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Dock" />
       <MemberSignature Language="VB.NET" Value="Public Property Dock As DockStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DockStyle Dock { System::Windows::Forms::DockStyle get(); void set(System::Windows::Forms::DockStyle value); };" />
       <MemberSignature Language="F#" Value="member this.Dock : System.Windows.Forms.DockStyle with get, set" Usage="System.Windows.Forms.SplitContainer.Dock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DockStyle Dock { System::Windows::Forms::DockStyle get(); void set(System::Windows::Forms::DockStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
@@ -845,21 +940,21 @@
 > [!NOTE]
 >  The z-order corresponds to the depth dimension of the screen, and the x-order and y-order corresponds to the horizontal and vertical dimensions, respectively. Z-order defines which object appears in front of which, in cases where controls or windows can overlap or occupy the same space on the screen. A control or window at the top of the z-order appears on top of all other controls or windows and is referenced by an index of 0 in the <xref:System.Windows.Forms.SplitContainer.Controls%2A> property. A control or window at the bottom of the z-order appears underneath all other controls or windows and is referenced by an index of `(Controls.Count-1)` in the <xref:System.Windows.Forms.SplitContainer.Controls%2A> property.  
   
- For more information about anchoring and docking controls, see [How to: Create a Multipane User Interface with Windows Forms](~/docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md).  
+ For more information about anchoring and docking controls, see [How to: Create a Multipane User Interface with Windows Forms](/dotnet/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms).  
   
    
   
 ## Examples  
  The following code example shows a vertical splitter whose <xref:System.Windows.Forms.SplitContainer.Dock%2A> property is set to `Fill`. Other basic properties of a vertical splitter are also shown. This example is part of a larger example provided for the <xref:System.Windows.Forms.SplitContainer> class.  
   
- [!code-cpp[BasicSplitContainer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp#2)]
- [!code-csharp[BasicSplitContainer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs#2)]
- [!code-vb[BasicSplitContainer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DockStyle" />
-        <related type="Article" href="https://msdn.microsoft.com/library/e79f6bcc-3740-4d1e-b46a-c5594d9b7327">How to: Create a Multipane User Interface with Windows Forms</related>
+        <related type="Article" href="/dotnet/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms">How to: Create a Multipane User Interface with Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -867,8 +962,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="splitContainer.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -876,6 +971,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -891,20 +988,24 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.FixedPanel FixedPanel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.FixedPanel" />
       <MemberSignature Language="VB.NET" Value="Public Property FixedPanel As FixedPanel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FixedPanel FixedPanel { System::Windows::Forms::FixedPanel get(); void set(System::Windows::Forms::FixedPanel value); };" />
       <MemberSignature Language="F#" Value="member this.FixedPanel : System.Windows.Forms.FixedPanel with get, set" Usage="System.Windows.Forms.SplitContainer.FixedPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FixedPanel FixedPanel { System::Windows::Forms::FixedPanel get(); void set(System::Windows::Forms::FixedPanel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -924,9 +1025,9 @@
 ## Examples  
  The following code example shows a horizontal splitter whose top panel is defined as a <xref:System.Windows.Forms.SplitContainer.FixedPanel%2A> so that it does not resize along with the container. Other basic properties of a horizontal splitter are also shown. This example is part of a larger example provided for the <xref:System.Windows.Forms.SplitContainer> class.  
   
- [!code-cpp[BasicSplitContainer#3](~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp#3)]
- [!code-csharp[BasicSplitContainer#3](~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs#3)]
- [!code-vb[BasicSplitContainer#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -940,26 +1041,32 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSplitterFixed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.IsSplitterFixed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSplitterFixed As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSplitterFixed { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.IsSplitterFixed : bool with get, set" Usage="System.Windows.Forms.SplitContainer.IsSplitterFixed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSplitterFixed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -984,13 +1091,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGotFocus(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnGotFocus(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotFocus (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnGotFocus : EventArgs -&gt; unit" Usage="splitContainer.OnGotFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1005,7 +1114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnGotFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1023,13 +1132,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Forms.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="splitContainer.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1046,7 +1157,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnKeyDown%2A> event handler allows the user to move the splitter down when the DOWN arrow key is pressed. The <xref:System.Windows.Forms.SplitContainer.OnKeyDown%2A> event handler also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnKeyDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1064,13 +1175,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyUp(class System.Windows.Forms.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="splitContainer.OnKeyUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1087,7 +1200,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnKeyUp%2A> event handler allows the user to move the splitter up when the UP arrow key is pressed. The <xref:System.Windows.Forms.SplitContainer.OnKeyUp%2A> event handler also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnKeyUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1105,13 +1218,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (e As LayoutEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="splitContainer.OnLayout e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1126,7 +1241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1143,13 +1258,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostFocus(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnLostFocus(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostFocus (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostFocus(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnLostFocus : EventArgs -&gt; unit" Usage="splitContainer.OnLostFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostFocus(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1164,7 +1281,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnLostFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1181,13 +1298,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseCaptureChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnMouseCaptureChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseCaptureChanged (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseCaptureChanged(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnMouseCaptureChanged : EventArgs -&gt; unit" Usage="splitContainer.OnMouseCaptureChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseCaptureChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1207,13 +1326,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="splitContainer.OnMouseDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1230,7 +1351,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnMouseDown%2A> event handler allows the user to track the splitter position while it is moved down with the mouse. <xref:System.Windows.Forms.SplitContainer.OnMouseDown%2A> also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving. The <xref:System.Windows.Forms.SplitContainer> keeps track of the initial <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> in case the user cancels the move.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1249,13 +1370,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnMouseLeave(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnMouseLeave : EventArgs -&gt; unit" Usage="splitContainer.OnMouseLeave e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1270,7 +1393,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1287,17 +1410,20 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="splitContainer.OnMouseMove e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1315,7 +1441,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnMouseMove%2A> event handler allows the user to track the splitter position while it is moved with the mouse. <xref:System.Windows.Forms.SplitContainer.OnMouseMove%2A> also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving. The <xref:System.Windows.Forms.SplitContainer> keeps track of the initial <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> in case the user cancels the move.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMouseMove%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1334,13 +1460,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="splitContainer.OnMouseUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1357,7 +1485,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnMouseUp%2A> event handler allows the user to track the splitter position while it is moved up with the mouse. <xref:System.Windows.Forms.SplitContainer.OnMouseUp%2A> also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving. The <xref:System.Windows.Forms.SplitContainer> keeps track of the initial <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> in case the user cancels the move.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1376,13 +1504,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMove(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnMove(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMove (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMove(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnMove : EventArgs -&gt; unit" Usage="splitContainer.OnMove e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMove(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1397,7 +1527,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMove%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1413,13 +1543,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="splitContainer.OnPaint e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1434,7 +1566,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1451,17 +1583,20 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRightToLeftChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnRightToLeftChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRightToLeftChanged (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRightToLeftChanged(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnRightToLeftChanged : EventArgs -&gt; unit" Usage="splitContainer.OnRightToLeftChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRightToLeftChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1481,13 +1616,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnSplitterMoved(class System.Windows.Forms.SplitterEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnSplitterMoved(System.Windows.Forms.SplitterEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSplitterMoved (e As SplitterEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSplitterMoved(System::Windows::Forms::SplitterEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="member this.OnSplitterMoved : System.Windows.Forms.SplitterEventArgs -&gt; unit" Usage="splitContainer.OnSplitterMoved e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSplitterMoved(System::Windows::Forms::SplitterEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1504,16 +1641,16 @@
 ## Remarks  
  The <xref:System.Windows.Forms.SplitContainer.SplitterMoved> event is raised after the splitter has been moved. When the <xref:System.Windows.Forms.SplitContainer> is in the process of moving, use the <xref:System.Windows.Forms.SplitContainer.SplitterMoving> event and the <xref:System.Windows.Forms.SplitContainer.OnSplitterMoving%2A> event handler.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example raises the <xref:System.Windows.Forms.SplitContainer.SplitterMoving> event, signified in this example by a change to the cursor style when you move the splitter. The <xref:System.Windows.Forms.SplitContainer.SplitterMoved> event is raised when you stop moving the splitter. This is signified in this example by the cursor style reverting to the default.  
   
- [!code-cpp[SplitContainerEvents#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SplitContainerEvents/CPP/splitcontainerevents.cpp#1)]
- [!code-csharp[SplitContainerEvents#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SplitContainerEvents/CS/splitcontainerevents.cs#1)]
- [!code-vb[SplitContainerEvents#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SplitContainerEvents/VB/splitcontainerevents.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/SplitContainerEvents/CPP/splitcontainerevents.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/SplitContainerEvents/CS/splitcontainerevents.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/SplitContainerEvents/VB/splitcontainerevents.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1528,13 +1665,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnSplitterMoving(class System.Windows.Forms.SplitterCancelEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.OnSplitterMoving(System.Windows.Forms.SplitterCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSplitterMoving (e As SplitterCancelEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSplitterMoving(System::Windows::Forms::SplitterCancelEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="member this.OnSplitterMoving : System.Windows.Forms.SplitterCancelEventArgs -&gt; unit" Usage="splitContainer.OnSplitterMoving e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSplitterMoving(System::Windows::Forms::SplitterCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1551,16 +1690,16 @@
 ## Remarks  
  The <xref:System.Windows.Forms.SplitContainer.SplitterMoving> event is raised while the splitter is in the process of moving. After the <xref:System.Windows.Forms.SplitContainer> has moved, use the <xref:System.Windows.Forms.SplitContainer.SplitterMoved> event and the <xref:System.Windows.Forms.SplitContainer.OnSplitterMoved%2A> event handler.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example raises the <xref:System.Windows.Forms.SplitContainer.SplitterMoving> event, signified in this example by a change to the cursor style when you move the splitter. The <xref:System.Windows.Forms.SplitContainer.SplitterMoved> event is raised when you stop moving the splitter. This is signified in this example by the cursor style reverting to the default.  
   
- [!code-cpp[SplitContainerEvents#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SplitContainerEvents/CPP/splitcontainerevents.cpp#1)]
- [!code-csharp[SplitContainerEvents#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SplitContainerEvents/CS/splitcontainerevents.cs#1)]
- [!code-vb[SplitContainerEvents#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SplitContainerEvents/VB/splitcontainerevents.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/SplitContainerEvents/CPP/splitcontainerevents.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/SplitContainerEvents/CS/splitcontainerevents.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/SplitContainerEvents/VB/splitcontainerevents.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1575,23 +1714,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Orientation Orientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Orientation" />
       <MemberSignature Language="VB.NET" Value="Public Property Orientation As Orientation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Orientation Orientation { System::Windows::Forms::Orientation get(); void set(System::Windows::Forms::Orientation value); };" />
       <MemberSignature Language="F#" Value="member this.Orientation : System.Windows.Forms.Orientation with get, set" Usage="System.Windows.Forms.SplitContainer.Orientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Orientation Orientation { System::Windows::Forms::Orientation get(); void set(System::Windows::Forms::Orientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1611,9 +1755,9 @@
 ## Examples  
  The following code example shows a horizontal splitter whose top and bottom panels contain <xref:System.Windows.Forms.ListView> controls. Other basic properties of a horizontal splitter are also shown. This example is part of a larger example provided for the <xref:System.Windows.Forms.SplitContainer> class.  
   
- [!code-cpp[BasicSplitContainer#3](~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp#3)]
- [!code-csharp[BasicSplitContainer#3](~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs#3)]
- [!code-vb[BasicSplitContainer#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb#3)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs" id="Snippet3":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -1626,23 +1770,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.SplitContainer.Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1666,20 +1815,24 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.SplitContainer.PaddingChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1702,23 +1855,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.SplitterPanel Panel1" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Panel1" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Panel1 As SplitterPanel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SplitterPanel ^ Panel1 { System::Windows::Forms::SplitterPanel ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Panel1 : System.Windows.Forms.SplitterPanel" Usage="System.Windows.Forms.SplitContainer.Panel1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SplitterPanel ^ Panel1 { System::Windows::Forms::SplitterPanel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1751,17 +1909,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Panel1Collapsed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Panel1Collapsed" />
       <MemberSignature Language="VB.NET" Value="Public Property Panel1Collapsed As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Panel1Collapsed { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.Panel1Collapsed : bool with get, set" Usage="System.Windows.Forms.SplitContainer.Panel1Collapsed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Panel1Collapsed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1780,26 +1941,32 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Panel1MinSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Panel1MinSize" />
       <MemberSignature Language="VB.NET" Value="Public Property Panel1MinSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Panel1MinSize { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Panel1MinSize : int with get, set" Usage="System.Windows.Forms.SplitContainer.Panel1MinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Panel1MinSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(25)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(25)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(25)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1821,9 +1988,9 @@
 ## Examples  
  The following code example shows a vertical splitter where the minimum size of <xref:System.Windows.Forms.SplitContainer.Panel1%2A> (the left panel) is set to 30 pixels, which is now the minimum distance the splitter can be from the left edge of the container. Other basic properties of a vertical splitter are also shown. This example is part of a larger example provided for the <xref:System.Windows.Forms.SplitContainer> class.  
   
- [!code-cpp[BasicSplitContainer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp#2)]
- [!code-csharp[BasicSplitContainer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs#2)]
- [!code-vb[BasicSplitContainer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -1837,23 +2004,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.SplitterPanel Panel2" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Panel2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Panel2 As SplitterPanel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SplitterPanel ^ Panel2 { System::Windows::Forms::SplitterPanel ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Panel2 : System.Windows.Forms.SplitterPanel" Usage="System.Windows.Forms.SplitContainer.Panel2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SplitterPanel ^ Panel2 { System::Windows::Forms::SplitterPanel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1884,17 +2056,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Panel2Collapsed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Panel2Collapsed" />
       <MemberSignature Language="VB.NET" Value="Public Property Panel2Collapsed As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Panel2Collapsed { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.Panel2Collapsed : bool with get, set" Usage="System.Windows.Forms.SplitContainer.Panel2Collapsed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Panel2Collapsed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1913,26 +2088,32 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Panel2MinSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Panel2MinSize" />
       <MemberSignature Language="VB.NET" Value="Public Property Panel2MinSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Panel2MinSize { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Panel2MinSize : int with get, set" Usage="System.Windows.Forms.SplitContainer.Panel2MinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Panel2MinSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(25)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(25)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(25)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1954,9 +2135,9 @@
 ## Examples  
  The following code example shows a vertical splitter where the minimum size of <xref:System.Windows.Forms.SplitContainer.Panel2%2A> (the right panel) is set to 20 pixels, which is now the minimum distance the splitter can be from the right edge of the container. Other basic properties of a vertical splitter are also shown. This example is part of a larger example provided for the <xref:System.Windows.Forms.SplitContainer> class.  
   
- [!code-cpp[BasicSplitContainer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp#2)]
- [!code-csharp[BasicSplitContainer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs#2)]
- [!code-vb[BasicSplitContainer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -1970,13 +2151,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessDialogKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.ProcessDialogKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
       <MemberSignature Language="F#" Value="override this.ProcessDialogKey : System.Windows.Forms.Keys -&gt; bool" Usage="splitContainer.ProcessDialogKey keyData" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1997,7 +2180,6 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Windows.Forms.Control.ProcessDialogKey(System.Windows.Forms.Keys)" /> method in a derived class, a control should return <see langword="true" /> to indicate that it has processed the key. For keys that are not processed by the control, the result of calling the base class's <see cref="M:System.Windows.Forms.Control.ProcessDialogChar(System.Char)" /> method should be returned. Controls will seldom, if ever, need to override this method.</para>
         </block>
@@ -2011,13 +2193,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessTabKey(bool forward) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.ProcessTabKey(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessTabKey (forward As Boolean) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessTabKey(bool forward);" />
       <MemberSignature Language="F#" Value="override this.ProcessTabKey : bool -&gt; bool" Usage="splitContainer.ProcessTabKey forward" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessTabKey(bool forward);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2056,17 +2240,20 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ScaleControl(valuetype System.Drawing.SizeF factor, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleControl (factor As SizeF, specified As BoundsSpecified)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleControl(System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberSignature Language="F#" Value="override this.ScaleControl : System.Drawing.SizeF * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="splitContainer.ScaleControl (factor, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleControl(System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2088,13 +2275,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Select(bool directed, bool forward) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.Select(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Select (directed As Boolean, forward As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Select(bool directed, bool forward);" />
       <MemberSignature Language="F#" Value="override this.Select : bool * bool -&gt; unit" Usage="splitContainer.Select (directed, forward)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Select(bool directed, bool forward);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2117,13 +2306,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetBoundsCore(int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="splitContainer.SetBoundsCore (x, y, width, height, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2151,26 +2342,32 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 SplitterDistance" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.SplitterDistance" />
       <MemberSignature Language="VB.NET" Value="Public Property SplitterDistance As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitterDistance { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.SplitterDistance : int with get, set" Usage="System.Windows.Forms.SplitContainer.SplitterDistance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitterDistance { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(50)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(50)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(50)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.SettingsBindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.SettingsBindable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2190,9 +2387,9 @@
 ## Examples  
  The following code example specifies that the initial distance of the vertical splitter from the left edge of the container is 79 pixels. Other basic properties of a vertical splitter are also shown. This example is part of a larger example provided for the <xref:System.Windows.Forms.SplitContainer> class.  
   
- [!code-cpp[BasicSplitContainer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp#2)]
- [!code-csharp[BasicSplitContainer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs#2)]
- [!code-vb[BasicSplitContainer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -2206,23 +2403,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 SplitterIncrement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.SplitterIncrement" />
       <MemberSignature Language="VB.NET" Value="Public Property SplitterIncrement As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitterIncrement { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.SplitterIncrement : int with get, set" Usage="System.Windows.Forms.SplitContainer.SplitterIncrement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitterIncrement { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(1)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2242,9 +2444,9 @@
 ## Examples  
  The following code example specifies that the vertical splitter moves in 10-pixel increments. Other basic properties of a vertical splitter are also shown. This example is part of a larger example provided for the <xref:System.Windows.Forms.SplitContainer> class.  
   
- [!code-cpp[BasicSplitContainer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp#2)]
- [!code-csharp[BasicSplitContainer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs#2)]
- [!code-vb[BasicSplitContainer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -2256,13 +2458,15 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.SplitterEventHandler SplitterMoved" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.SplitContainer.SplitterMoved" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SplitterMoved As SplitterEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::SplitterEventHandler ^ SplitterMoved;" />
       <MemberSignature Language="F#" Value="member this.SplitterMoved : System.Windows.Forms.SplitterEventHandler " Usage="member this.SplitterMoved : System.Windows.Forms.SplitterEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::SplitterEventHandler ^ SplitterMoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SplitterEventHandler</ReturnType>
@@ -2273,16 +2477,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example raises the <xref:System.Windows.Forms.SplitContainer.SplitterMoving> event, signified in this example by a change to the cursor style when you move the splitter. The <xref:System.Windows.Forms.SplitContainer.SplitterMoved> event is raised when you stop moving the splitter. This is signified in this example by the cursor style reverting to the default.  
   
- [!code-cpp[SplitContainerEvents#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SplitContainerEvents/CPP/splitcontainerevents.cpp#1)]
- [!code-csharp[SplitContainerEvents#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SplitContainerEvents/CS/splitcontainerevents.cs#1)]
- [!code-vb[SplitContainerEvents#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SplitContainerEvents/VB/splitcontainerevents.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/SplitContainerEvents/CPP/splitcontainerevents.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/SplitContainerEvents/CS/splitcontainerevents.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/SplitContainerEvents/VB/splitcontainerevents.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2297,13 +2501,15 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.SplitterCancelEventHandler SplitterMoving" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.SplitContainer.SplitterMoving" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SplitterMoving As SplitterCancelEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::SplitterCancelEventHandler ^ SplitterMoving;" />
       <MemberSignature Language="F#" Value="member this.SplitterMoving : System.Windows.Forms.SplitterCancelEventHandler " Usage="member this.SplitterMoving : System.Windows.Forms.SplitterCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::SplitterCancelEventHandler ^ SplitterMoving;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SplitterCancelEventHandler</ReturnType>
@@ -2316,16 +2522,16 @@
 ## Remarks  
  This event occurs only when the user moves the splitter control. It does not occur when you change the <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> property value programmatically.  
   
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
 ## Examples  
  The following code example raises the <xref:System.Windows.Forms.SplitContainer.SplitterMoving> event, signified in this example by a change to the cursor style when you move the splitter. The <xref:System.Windows.Forms.SplitContainer.SplitterMoved> event is raised when you stop moving the splitter. This is signified in this example by the cursor style reverting to the default.  
   
- [!code-cpp[SplitContainerEvents#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SplitContainerEvents/CPP/splitcontainerevents.cpp#1)]
- [!code-csharp[SplitContainerEvents#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SplitContainerEvents/CS/splitcontainerevents.cs#1)]
- [!code-vb[SplitContainerEvents#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SplitContainerEvents/VB/splitcontainerevents.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/SplitContainerEvents/CPP/splitcontainerevents.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/SplitContainerEvents/CS/splitcontainerevents.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/SplitContainerEvents/VB/splitcontainerevents.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -2340,17 +2546,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle SplitterRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.SplitterRectangle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SplitterRectangle As Rectangle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle SplitterRectangle { System::Drawing::Rectangle get(); };" />
       <MemberSignature Language="F#" Value="member this.SplitterRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.SplitContainer.SplitterRectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle SplitterRectangle { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2384,23 +2593,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 SplitterWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.SplitterWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property SplitterWidth As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitterWidth { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.SplitterWidth : int with get, set" Usage="System.Windows.Forms.SplitContainer.SplitterWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitterWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(4)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(4)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(4)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Localizable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Localizable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2420,9 +2634,9 @@
 ## Examples  
  The following code example specifies that the initial width of the vertical splitter is 6 pixels (the default). Other basic properties of a vertical splitter are also shown. This example is part of a larger example provided for the <xref:System.Windows.Forms.SplitContainer> class.  
   
- [!code-cpp[BasicSplitContainer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp#2)]
- [!code-csharp[BasicSplitContainer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs#2)]
- [!code-vb[BasicSplitContainer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/BasicSplitContainer/CPP/basicsplitcontainer.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/BasicSplitContainer/CS/basicsplitcontainer.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/BasicSplitContainer/VB/basicsplitcontainer.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -2434,23 +2648,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool TabStop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.TabStop" />
       <MemberSignature Language="VB.NET" Value="Public Property TabStop As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TabStop { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.TabStop : bool with get, set" Usage="System.Windows.Forms.SplitContainer.TabStop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TabStop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(-516)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(-516)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(-516)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2464,10 +2683,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the user presses the TAB key, the input focus is set to the next control in the tab order of the form. Set <xref:System.Windows.Forms.SplitContainer.TabStop%2A> to `true` to give input focus to a splitter so that it can be moved with the arrow keys as well as with the mouse. Starting in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], setting <xref:System.Windows.Forms.SplitContainer.TabStop%2A> to `false` excludes the splitter and any of the controls that are contained in the <xref:System.Windows.Forms.SplitContainer> from the collection of controls in the tab order. To enable controls to get focus by using the TAB key, create a control that inherits from <xref:System.Windows.Forms.SplitContainer>. Create a new property named `TabStop` and override the <xref:System.Windows.Forms.SplitContainer.ProcessTabKey%2A> method. The following example demonstrates how to accomplish this.  
+ When the user presses the TAB key, the input focus is set to the next control in the tab order of the form. Set <xref:System.Windows.Forms.SplitContainer.TabStop%2A> to `true` to give input focus to a splitter so that it can be moved with the arrow keys as well as with the mouse. Starting in the .NET Framework 4, setting <xref:System.Windows.Forms.SplitContainer.TabStop%2A> to `false` excludes the splitter and any of the controls that are contained in the <xref:System.Windows.Forms.SplitContainer> from the collection of controls in the tab order. To enable controls to get focus by using the TAB key, create a control that inherits from <xref:System.Windows.Forms.SplitContainer>. Create a new property named `TabStop` and override the <xref:System.Windows.Forms.SplitContainer.ProcessTabKey%2A> method. The following example demonstrates how to accomplish this.  
   
- [!code-csharp[SplitContainerTabStop#1](~/samples/snippets/csharp/VS_Snippets_Winforms/splitcontainertabstop/cs/program.cs#1)]
- [!code-vb[SplitContainerTabStop#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/splitcontainertabstop/vb/module1.vb#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/splitcontainertabstop/cs/program.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/splitcontainertabstop/vb/module1.vb" id="Snippet1":::  
   
  You can manipulate the tab order by setting the control's <xref:System.Windows.Forms.Control.TabIndex%2A> property value.  
   
@@ -2481,23 +2700,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitContainer.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.SplitContainer.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2521,20 +2745,24 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.SplitContainer.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2557,13 +2785,15 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef msg As Message)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % msg);" />
       <MemberSignature Language="F#" Value="override this.WndProc : Message -&gt; unit" Usage="splitContainer.WndProc msg" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % msg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2580,11 +2810,10 @@
 ## Remarks  
  All messages are sent to the <xref:System.Windows.Forms.Control.WndProc%2A> method after getting filtered through the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method.  
   
- The <xref:System.Windows.Forms.Control.WndProc%2A> method corresponds exactly to the Windows `WindowProc` function. For more information about processing Windows messages, see the `WindowProc` function in the Platform SDK documentation at https://msdn.microsoft.com.  
+ The <xref:System.Windows.Forms.Control.WndProc%2A> method corresponds exactly to the Windows `WindowProc` function. For more information about processing Windows messages, see the [WindowProc function](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)).  
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for inheriting classes to call unmanaged code or for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <block subset="none" type="overrides">
           <para>Inheriting controls should call the base class's <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" /> method to process any messages that they do not handle.</para>
         </block>

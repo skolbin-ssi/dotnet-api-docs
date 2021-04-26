@@ -3,14 +3,16 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LingerOption extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.LingerOption" />
   <TypeSignature Language="VB.NET" Value="Public Class LingerOption" />
-  <TypeSignature Language="C++ CLI" Value="public ref class LingerOption" />
   <TypeSignature Language="F#" Value="type LingerOption = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LingerOption" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -24,6 +26,10 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -43,9 +49,9 @@
 ## Examples  
  The following example sets a previously created <xref:System.Net.Sockets.Socket> to linger one second after calling the <xref:System.Net.Sockets.Socket.Close%2A> method.  
   
- [!code-cpp[Classic LingerOption Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic LingerOption Example/CPP/source.cpp#1)]
- [!code-csharp[Classic LingerOption Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic LingerOption Example/CS/source.cs#1)]
- [!code-vb[Classic LingerOption Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic LingerOption Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Classic LingerOption Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Classic LingerOption Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic LingerOption Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -56,8 +62,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enable, int32 seconds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.LingerOption.#ctor(System.Boolean,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enable As Boolean, seconds As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; LingerOption(bool enable, int seconds);" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.LingerOption : bool * int -&gt; System.Net.Sockets.LingerOption" Usage="new System.Net.Sockets.LingerOption (enable, seconds)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LingerOption(bool enable, int seconds);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -65,6 +71,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,9 +118,9 @@
 ## Examples  
  The following example sets a previously created <xref:System.Net.Sockets.Socket> to linger one second after calling the <xref:System.Net.Sockets.Socket.Close%2A> method.  
   
- [!code-cpp[Classic LingerOption Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic LingerOption Example/CPP/source.cpp#1)]
- [!code-csharp[Classic LingerOption Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic LingerOption Example/CS/source.cs#1)]
- [!code-vb[Classic LingerOption Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic LingerOption Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Classic LingerOption Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Classic LingerOption Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic LingerOption Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -123,8 +131,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.LingerOption.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Net.Sockets.LingerOption.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -132,6 +140,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,10 +157,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -187,8 +199,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 LingerTime" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.LingerOption.LingerTime" />
       <MemberSignature Language="VB.NET" Value="Public Property LingerTime As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LingerTime { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.LingerTime : int with get, set" Usage="System.Net.Sockets.LingerOption.LingerTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LingerTime { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -196,6 +208,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,10 +225,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -248,9 +264,9 @@
 ## Examples  
  The following example displays the value of this property.  
   
- [!code-cpp[Socket_Socket_Options#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Socket_Options/CPP/source.cpp#2)]
- [!code-csharp[Socket_Socket_Options#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Socket_Options/CS/source.cs#2)]
- [!code-vb[Socket_Socket_Options#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Socket_Options/VB/source.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Socket_Options/CPP/source.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Socket_Options/CS/source.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Socket_Options/VB/source.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>

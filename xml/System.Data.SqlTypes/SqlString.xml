@@ -1,10 +1,16 @@
 <Type Name="SqlString" FullName="System.Data.SqlTypes.SqlString">
-  <TypeSignature Language="C#" Value="public struct SqlString : IComparable, System.Data.SqlTypes.INullable, System.Xml.Serialization.IXmlSerializable" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SqlString extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable, class System.Xml.Serialization.IXmlSerializable" />
+  <TypeSignature Language="C#" Value="public struct SqlString : IComparable, System.Data.SqlTypes.INullable, System.Xml.Serialization.IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SqlString extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable, class System.Xml.Serialization.IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlString" />
-  <TypeSignature Language="VB.NET" Value="Public Structure SqlString&#xA;Implements IComparable, INullable, IXmlSerializable" />
-  <TypeSignature Language="C++ CLI" Value="public value class SqlString : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" />
-  <TypeSignature Language="F#" Value="type SqlString = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SqlString&#xA;Implements IComparable, INullable, IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="F#" Value="type SqlString = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C++ CLI" Value="public value class SqlString : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C#" Value="public struct SqlString : IComparable, System.Data.SqlTypes.INullable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SqlString extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SqlString&#xA;Implements IComparable, INullable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="F#" Value="type SqlString = struct&#xA;    interface INullable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="C++ CLI" Value="public value class SqlString : IComparable, System::Data::SqlTypes::INullable" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SqlString extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable, class System.Xml.Serialization.IXmlSerializable" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -26,7 +32,18 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.4.0.0" To="System.Data.Common" ToVersion="4.2.1.0" FrameworkAlternate="dotnet-plat-ext-2.1" />
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.5.0.0" To="System.Data.Common" ToVersion="4.2.1.0" FrameworkAlternate="dotnet-plat-ext-2.2" />
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.6.0.0" To="System.Data.Common" ToVersion="4.2.1.0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.6.1.0" To="System.Data.Common" ToVersion="4.2.2.0" FrameworkAlternate="dotnet-plat-ext-3.1" />
+    <TypeForwarding From="System.Data.SqlClient" FromVersion="4.6.1.1" To="System.Data.Common" ToVersion="4.2.1.0" FrameworkAlternate="dotnet-plat-ext-5.0;dotnet-plat-ext-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -37,20 +54,22 @@
     <Interface>
       <InterfaceName>System.IComparable</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.Xml.Serialization.IXmlSerializable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netstandard-2.1;dotnet-plat-ext-3.1;netcore-3.1">
-      <AttributeName>System.Xml.Serialization.XmlSchemaProvider("GetXsdType")</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName Language="C#">[System.Xml.Serialization.XmlSchemaProvider("GetXsdType")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlSchemaProvider("GetXsdType")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a variable-length stream of characters to be stored in or retrieved from the database. <see cref="T:System.Data.SqlTypes.SqlString" /> has a different underlying data structure from its corresponding .NET Framework <see cref="T:System.String" /> data type.</summary>
+    <summary>Represents a variable-length stream of characters to be stored in or retrieved from the database. <see cref="T:System.Data.SqlTypes.SqlString" /> has a different underlying data structure from its corresponding .NET <see cref="T:System.String" /> data type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -72,7 +91,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
  ]]></format>
     </remarks>
     <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
-    <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+    <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -82,16 +101,17 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> class.</summary>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SqlString (string data);" />
+      <MemberSignature Language="C#" Value="public SqlString (string data);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (data As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(System::String ^ data);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : string -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(System::String ^ data);" />
+      <MemberSignature Language="C#" Value="public SqlString (string? data);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -114,6 +134,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="data" Type="System.String" />
@@ -122,16 +144,17 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="data">The string to store.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> structure using the specified string.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SqlString (string data, int lcid);" />
+      <MemberSignature Language="C#" Value="public SqlString (string data, int lcid);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string data, int32 lcid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (data As String, lcid As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(System::String ^ data, int lcid);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : string * int -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (data, lcid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(System::String ^ data, int lcid);" />
+      <MemberSignature Language="C#" Value="public SqlString (string? data, int lcid);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -154,6 +177,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="data" Type="System.String" />
@@ -164,7 +189,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="lcid">Specifies the geographical locale and language for the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> structure using the specified string and locale id values.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,8 +197,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 lcid, valuetype System.Data.SqlTypes.SqlCompareOptions compareOptions, unsigned int8[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lcid As Integer, compareOptions As SqlCompareOptions, data As Byte())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : int * System.Data.SqlTypes.SqlCompareOptions * byte[] -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (lcid, compareOptions, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -196,6 +221,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lcid" Type="System.Int32" />
@@ -208,16 +235,17 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="data">The data array to store.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> structure using the specified locale id, compare options, and data.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SqlString (string data, int lcid, System.Data.SqlTypes.SqlCompareOptions compareOptions);" />
+      <MemberSignature Language="C#" Value="public SqlString (string data, int lcid, System.Data.SqlTypes.SqlCompareOptions compareOptions);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string data, int32 lcid, valuetype System.Data.SqlTypes.SqlCompareOptions compareOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.String,System.Int32,System.Data.SqlTypes.SqlCompareOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (data As String, lcid As Integer, compareOptions As SqlCompareOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(System::String ^ data, int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : string * int * System.Data.SqlTypes.SqlCompareOptions -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (data, lcid, compareOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(System::String ^ data, int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions);" />
+      <MemberSignature Language="C#" Value="public SqlString (string? data, int lcid, System.Data.SqlTypes.SqlCompareOptions compareOptions);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -240,6 +268,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="data" Type="System.String" />
@@ -252,7 +282,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="compareOptions">Specifies the compare options for the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> structure using the specified string, locale id, and compare option values.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -260,8 +290,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 lcid, valuetype System.Data.SqlTypes.SqlCompareOptions compareOptions, unsigned int8[] data, bool fUnicode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lcid As Integer, compareOptions As SqlCompareOptions, data As Byte(), fUnicode As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data, bool fUnicode);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : int * System.Data.SqlTypes.SqlCompareOptions * byte[] * bool -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (lcid, compareOptions, data, fUnicode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data, bool fUnicode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -284,6 +314,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lcid" Type="System.Int32" />
@@ -299,16 +331,17 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
           <see langword="true" /> if Unicode encoded. Otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SqlString (int lcid, System.Data.SqlTypes.SqlCompareOptions compareOptions, byte[] data, int index, int count);" />
+      <MemberSignature Language="C#" Value="public SqlString (int lcid, System.Data.SqlTypes.SqlCompareOptions compareOptions, byte[] data, int index, int count);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 lcid, valuetype System.Data.SqlTypes.SqlCompareOptions compareOptions, unsigned int8[] data, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lcid As Integer, compareOptions As SqlCompareOptions, data As Byte(), index As Integer, count As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data, int index, int count);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : int * System.Data.SqlTypes.SqlCompareOptions * byte[] * int * int -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (lcid, compareOptions, data, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data, int index, int count);" />
+      <MemberSignature Language="C#" Value="public SqlString (int lcid, System.Data.SqlTypes.SqlCompareOptions compareOptions, byte[]? data, int index, int count);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -331,6 +364,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lcid" Type="System.Int32" />
@@ -347,16 +382,17 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <param name="count">The number of characters from index to copy.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SqlString (int lcid, System.Data.SqlTypes.SqlCompareOptions compareOptions, byte[] data, int index, int count, bool fUnicode);" />
+      <MemberSignature Language="C#" Value="public SqlString (int lcid, System.Data.SqlTypes.SqlCompareOptions compareOptions, byte[] data, int index, int count, bool fUnicode);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 lcid, valuetype System.Data.SqlTypes.SqlCompareOptions compareOptions, unsigned int8[] data, int32 index, int32 count, bool fUnicode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[],System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lcid As Integer, compareOptions As SqlCompareOptions, data As Byte(), index As Integer, count As Integer, fUnicode As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data, int index, int count, bool fUnicode);" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : int * System.Data.SqlTypes.SqlCompareOptions * byte[] * int * int * bool -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (lcid, compareOptions, data, index, count, fUnicode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data, int index, int count, bool fUnicode);" />
+      <MemberSignature Language="C#" Value="public SqlString (int lcid, System.Data.SqlTypes.SqlCompareOptions compareOptions, byte[]? data, int index, int count, bool fUnicode);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -379,6 +415,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lcid" Type="System.Int32" />
@@ -398,7 +436,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
           <see langword="true" /> if Unicode encoded. Otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlString" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -406,8 +444,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlString Add(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Add(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (x As SqlString, y As SqlString) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlString Add(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member Add : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.Add (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlString Add(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -429,13 +467,15 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -450,7 +490,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySort">
@@ -458,8 +498,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 BinarySort" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.BinarySort" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BinarySort As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int BinarySort;" />
       <MemberSignature Language="F#" Value=" staticval mutable BinarySort : int" Usage="System.Data.SqlTypes.SqlString.BinarySort" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int BinarySort;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -482,6 +522,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -496,7 +538,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySort2">
@@ -504,8 +546,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 BinarySort2" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.BinarySort2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BinarySort2 As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int BinarySort2;" />
       <MemberSignature Language="F#" Value=" staticval mutable BinarySort2 : int" Usage="System.Data.SqlTypes.SqlString.BinarySort2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int BinarySort2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -527,6 +569,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -534,7 +578,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <Docs>
         <summary>Specifies that sorts should be based on a character's numeric value instead of its alphabetical value.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -542,8 +586,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlString Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString Clone();" />
       <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Data.SqlTypes.SqlString" Usage="sqlString.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -566,6 +610,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -575,7 +621,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Creates a copy of this <see cref="T:System.Data.SqlTypes.SqlString" /> object.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlString" /> object in which all property values are the same as the original.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CompareInfo">
@@ -583,8 +629,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CompareInfo CompareInfo" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.CompareInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompareInfo As CompareInfo" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CompareInfo ^ CompareInfo { System::Globalization::CompareInfo ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CompareInfo : System.Globalization.CompareInfo" Usage="System.Data.SqlTypes.SqlString.CompareInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CompareInfo ^ CompareInfo { System::Globalization::CompareInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -607,6 +653,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CompareInfo</ReturnType>
@@ -615,15 +663,16 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets the <see cref="T:System.Globalization.CompareInfo" /> object that defines how string comparisons should be performed for this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</summary>
         <value>A <see langword="CompareInfo" /> object that defines string comparison for this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CompareOptionsFromSqlCompareOptions">
       <MemberSignature Language="C#" Value="public static System.Globalization.CompareOptions CompareOptionsFromSqlCompareOptions (System.Data.SqlTypes.SqlCompareOptions compareOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Globalization.CompareOptions CompareOptionsFromSqlCompareOptions(valuetype System.Data.SqlTypes.SqlCompareOptions compareOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.CompareOptionsFromSqlCompareOptions(System.Data.SqlTypes.SqlCompareOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CompareOptions CompareOptionsFromSqlCompareOptions(System::Data::SqlTypes::SqlCompareOptions compareOptions);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareOptionsFromSqlCompareOptions (compareOptions As SqlCompareOptions) As CompareOptions" />
       <MemberSignature Language="F#" Value="static member CompareOptionsFromSqlCompareOptions : System.Data.SqlTypes.SqlCompareOptions -&gt; System.Globalization.CompareOptions" Usage="System.Data.SqlTypes.SqlString.CompareOptionsFromSqlCompareOptions compareOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CompareOptions CompareOptionsFromSqlCompareOptions(System::Data::SqlTypes::SqlCompareOptions compareOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -646,6 +695,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
@@ -658,7 +709,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets the <see cref="T:System.Globalization.CompareOptions" /> enumeration equivalent of the specified <see cref="T:System.Data.SqlTypes.SqlCompareOptions" /> value.</summary>
         <returns>A <see langword="CompareOptions" /> value that corresponds to the <see langword="SqlCompareOptions" /> for this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareTo">
@@ -668,7 +719,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       </AssemblyInfo>
       <Docs>
         <summary>Compares this instance to a specified object and returns an indication of their relative values.</summary>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CompareTo">
@@ -676,8 +727,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CompareTo(valuetype System.Data.SqlTypes.SqlString value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.CompareTo(System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As SqlString) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlString value);" />
       <MemberSignature Language="F#" Value="member this.CompareTo : System.Data.SqlTypes.SqlString -&gt; int" Usage="sqlString.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlString value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -699,12 +750,14 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Data.SqlTypes.SqlString" /> to be compared.</param>
@@ -733,16 +786,17 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
-      <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
+      <MemberSignature Language="C#" Value="public int CompareTo (object value);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="sqlString.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public int CompareTo (object? value);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -768,6 +822,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -802,7 +858,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  </description></item></list></returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Concat">
@@ -810,8 +866,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlString Concat(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Concat(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (x As SqlString, y As SqlString) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlString Concat(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member Concat : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.Concat (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlString Concat(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -834,6 +890,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -848,7 +906,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Concatenates the two specified <see cref="T:System.Data.SqlTypes.SqlString" /> structures.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlString" /> that contains the newly concatenated value representing the contents of the two <see cref="T:System.Data.SqlTypes.SqlString" /> parameters.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="CultureInfo">
@@ -856,8 +914,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo CultureInfo" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.CultureInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureInfo As CultureInfo" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CultureInfo { System::Globalization::CultureInfo ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CultureInfo : System.Globalization.CultureInfo" Usage="System.Data.SqlTypes.SqlString.CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CultureInfo { System::Globalization::CultureInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -880,6 +938,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
@@ -888,7 +948,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets the <see cref="T:System.Globalization.CultureInfo" /> structure that represents information about the culture of this <see cref="T:System.Data.SqlTypes.SqlString" /> object.</summary>
         <value>A <see cref="T:System.Globalization.CultureInfo" /> structure that describes information about the culture of this SqlString structure including the names of the culture, the writing system, and the calendar used, and also access to culture-specific objects that provide methods for common operations, such as formatting dates and sorting strings.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">
@@ -898,16 +958,17 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       </AssemblyInfo>
       <Docs>
         <summary>Performs a logical comparison of two structures to determine whether they are equal.</summary>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sqlString.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? value);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -930,6 +991,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -943,7 +1006,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <returns>
           <see langword="true" /> if the object is an instance of <see cref="T:System.Data.SqlTypes.SqlString" /> and the two are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -951,8 +1014,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean Equals(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Equals(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member Equals : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.Equals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -975,6 +1038,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -990,7 +1055,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <returns>
           <see langword="true" /> if the two values are equal. Otherwise, <see langword="false" />. If either instance is null, then the <see langword="SqlString" /> will be null.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -998,8 +1063,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sqlString.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1022,6 +1087,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1031,16 +1098,17 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetNonUnicodeBytes">
-      <MemberSignature Language="C#" Value="public byte[] GetNonUnicodeBytes ();" />
+      <MemberSignature Language="C#" Value="public byte[] GetNonUnicodeBytes ();" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetNonUnicodeBytes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GetNonUnicodeBytes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNonUnicodeBytes () As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetNonUnicodeBytes();" />
       <MemberSignature Language="F#" Value="member this.GetNonUnicodeBytes : unit -&gt; byte[]" Usage="sqlString.GetNonUnicodeBytes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetNonUnicodeBytes();" />
+      <MemberSignature Language="C#" Value="public byte[]? GetNonUnicodeBytes ();" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1063,6 +1131,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -1072,16 +1142,17 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets an array of bytes, that contains the contents of the <see cref="T:System.Data.SqlTypes.SqlString" /> in ANSI format.</summary>
         <returns>An byte array, that contains the contents of the <see cref="T:System.Data.SqlTypes.SqlString" /> in ANSI format.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetUnicodeBytes">
-      <MemberSignature Language="C#" Value="public byte[] GetUnicodeBytes ();" />
+      <MemberSignature Language="C#" Value="public byte[] GetUnicodeBytes ();" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetUnicodeBytes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GetUnicodeBytes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnicodeBytes () As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetUnicodeBytes();" />
       <MemberSignature Language="F#" Value="member this.GetUnicodeBytes : unit -&gt; byte[]" Usage="sqlString.GetUnicodeBytes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetUnicodeBytes();" />
+      <MemberSignature Language="C#" Value="public byte[]? GetUnicodeBytes ();" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1104,6 +1175,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -1113,7 +1186,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Gets an array of bytes, that contains the contents of the <see cref="T:System.Data.SqlTypes.SqlString" /> in Unicode format.</summary>
         <returns>An byte array, that contains the contents of the <see cref="T:System.Data.SqlTypes.SqlString" /> in Unicode format.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GetXsdType">
@@ -1121,8 +1194,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlQualifiedName GetXsdType(class System.Xml.Schema.XmlSchemaSet schemaSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
       <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlString.GetXsdType schemaSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1140,6 +1213,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1148,7 +1223,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="schemaSet">A <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</param>
@@ -1162,8 +1237,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean GreaterThan(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GreaterThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.GreaterThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1186,6 +1261,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1200,7 +1277,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether the first is greater than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEqual">
@@ -1208,8 +1285,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GreaterThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.GreaterThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1232,6 +1309,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1246,7 +1325,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether the first is greater than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoreCase">
@@ -1254,8 +1333,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 IgnoreCase" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IgnoreCase As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreCase;" />
       <MemberSignature Language="F#" Value=" staticval mutable IgnoreCase : int" Usage="System.Data.SqlTypes.SqlString.IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreCase;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1278,6 +1357,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1292,7 +1373,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoreKanaType">
@@ -1300,8 +1381,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 IgnoreKanaType" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.IgnoreKanaType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IgnoreKanaType As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreKanaType;" />
       <MemberSignature Language="F#" Value=" staticval mutable IgnoreKanaType : int" Usage="System.Data.SqlTypes.SqlString.IgnoreKanaType" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreKanaType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1324,6 +1405,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1340,7 +1423,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoreNonSpace">
@@ -1348,8 +1431,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 IgnoreNonSpace" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.IgnoreNonSpace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IgnoreNonSpace As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreNonSpace;" />
       <MemberSignature Language="F#" Value=" staticval mutable IgnoreNonSpace : int" Usage="System.Data.SqlTypes.SqlString.IgnoreNonSpace" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreNonSpace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1372,6 +1455,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1388,7 +1473,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoreWidth">
@@ -1396,8 +1481,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 IgnoreWidth" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.IgnoreWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IgnoreWidth As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreWidth;" />
       <MemberSignature Language="F#" Value=" staticval mutable IgnoreWidth : int" Usage="System.Data.SqlTypes.SqlString.IgnoreWidth" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreWidth;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1420,6 +1505,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1436,7 +1523,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="IsNull">
@@ -1444,8 +1531,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNull" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlString.IsNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -1471,6 +1558,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1483,12 +1572,12 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ For more information, see [Handling Null Values](/dotnet/framework/data/adonet/sql/handling-null-values).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/f18b288f-b265-4bbe-957f-c6833c0645ef">Handling Null Values (ADO.NET)</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/handling-null-values">Handling Null Values (ADO.NET)</related>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -1496,8 +1585,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".property instance int32 LCID" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.LCID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LCID As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); };" />
       <MemberSignature Language="F#" Value="member this.LCID : int" Usage="System.Data.SqlTypes.SqlString.LCID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1520,6 +1609,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1528,7 +1619,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Specifies the geographical locale and language for the <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</summary>
         <value>The locale id for the string stored in the <see cref="P:System.Data.SqlTypes.SqlString.Value" /> property.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -1536,8 +1627,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean LessThan(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.LessThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member LessThan : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.LessThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1560,6 +1651,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1574,7 +1667,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether the first is less than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEqual">
@@ -1582,8 +1675,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean LessThanOrEqual(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.LessThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.LessThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1606,6 +1699,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1620,7 +1715,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether the first is less than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -1628,8 +1723,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean NotEquals(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.NotEquals(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member NotEquals : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.NotEquals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1652,6 +1747,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1666,7 +1763,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlString" /> operands to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlString" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -1674,8 +1771,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlString Null" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As SqlString " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlString Null;" />
       <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlString Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1698,6 +1795,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -1708,11 +1807,11 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `Null` functions as a constant for the <xref:System.Data.SqlTypes.SqlString> structure.  For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ `Null` functions as a constant for the <xref:System.Data.SqlTypes.SqlString> structure.  For more information, see [Handling Null Values](/dotnet/framework/data/adonet/sql/handling-null-values).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -1720,8 +1819,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Addition(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Addition(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (x As SqlString, y As SqlString) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlString operator +(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member ( + ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlString" Usage="x + y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlString operator +(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1744,6 +1843,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -1760,7 +1861,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Concat%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1768,8 +1869,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Equality(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Equality(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x = y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1792,6 +1893,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -1808,7 +1911,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Equals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="op_Explicit">
@@ -1818,7 +1921,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       </AssemblyInfo>
       <Docs>
         <summary>Converts to and from a <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Explicit">
@@ -1826,8 +1929,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlBoolean) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlBoolean x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlBoolean -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlBoolean x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1850,6 +1953,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -1864,7 +1969,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1872,8 +1977,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlByte x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlByte) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlByte x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlByte -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlByte x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1896,6 +2001,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -1910,7 +2017,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlByte.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1918,8 +2025,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlDateTime x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlDateTime)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDateTime) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlDateTime x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlDateTime x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1942,6 +2049,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -1956,7 +2065,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDateTime.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1964,8 +2073,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDecimal) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlDecimal x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlDecimal x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1988,6 +2097,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2002,7 +2113,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2010,8 +2121,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlDouble x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDouble) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlDouble x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDouble -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlDouble x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2034,6 +2145,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2048,7 +2161,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDouble.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2056,8 +2169,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlGuid x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlGuid)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlGuid) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlGuid x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlGuid x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2080,6 +2193,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2094,7 +2209,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlGuid.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2102,8 +2217,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlInt16) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlInt16 x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlInt16 -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlInt16 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2126,6 +2241,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2140,7 +2257,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt16.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2148,8 +2265,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlInt32 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlInt32) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlInt32 x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlInt32 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2172,6 +2289,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2186,7 +2305,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt32.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2194,8 +2313,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlInt64) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlInt64 x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlInt64 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2218,6 +2337,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2232,7 +2353,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlInt64.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2240,8 +2361,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlMoney x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlMoney) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlMoney x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlMoney -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlMoney x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2264,6 +2385,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2278,7 +2401,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlMoney.ToSqlString?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2286,8 +2409,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Explicit(valuetype System.Data.SqlTypes.SqlSingle x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlSingle) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlSingle x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlSingle -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlSingle x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2310,6 +2433,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2324,7 +2449,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlSingle.ToSqlString?displayProperty=nameWithType>.]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2332,8 +2457,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlString)~System.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlString) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::String ^(System::Data::SqlTypes::SqlString x);" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlString -&gt; string" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::String ^(System::Data::SqlTypes::SqlString x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2356,6 +2481,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2368,7 +2495,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlString" /> to a <see cref="T:System.String" /></summary>
         <returns>A <see langword="String" />, whose contents are the same as the <see cref="P:System.Data.SqlTypes.SqlString.Value" /> property of the <see cref="T:System.Data.SqlTypes.SqlString" /> parameter.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -2376,8 +2503,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_GreaterThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2400,6 +2527,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -2416,7 +2545,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.GreaterThan%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -2424,8 +2553,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2448,6 +2577,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -2464,7 +2595,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.GreaterThanOrEqual%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2472,8 +2603,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlString op_Implicit(string x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Implicit(System.String)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As String) As SqlString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlString(System::String ^ x);" />
       <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Implicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlString(System::String ^ x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2496,6 +2627,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
@@ -2508,7 +2641,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts the <see cref="T:System.String" /> parameter to a <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlString" /> that contains the value of the specified <see langword="String" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -2516,8 +2649,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Inequality(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.op_Inequality (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2540,6 +2673,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -2556,7 +2691,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.NotEquals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -2564,8 +2699,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThan(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_LessThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2588,6 +2723,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -2604,7 +2741,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.LessThan%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -2612,8 +2749,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlString x, valuetype System.Data.SqlTypes.SqlString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_LessThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As SqlString, y As SqlString) As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2636,6 +2773,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -2652,7 +2791,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.LessThanOrEqual%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="SqlCompareOptions">
@@ -2660,8 +2799,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlTypes.SqlCompareOptions SqlCompareOptions" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.SqlCompareOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SqlCompareOptions As SqlCompareOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlTypes::SqlCompareOptions SqlCompareOptions { System::Data::SqlTypes::SqlCompareOptions get(); };" />
       <MemberSignature Language="F#" Value="member this.SqlCompareOptions : System.Data.SqlTypes.SqlCompareOptions" Usage="System.Data.SqlTypes.SqlString.SqlCompareOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlTypes::SqlCompareOptions SqlCompareOptions { System::Data::SqlTypes::SqlCompareOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2684,6 +2823,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlCompareOptions</ReturnType>
@@ -2692,7 +2833,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>A combination of one or more of the <see cref="T:System.Data.SqlTypes.SqlCompareOptions" /> enumeration values that represent the way in which this <see cref="T:System.Data.SqlTypes.SqlString" /> should be compared to other <see cref="T:System.Data.SqlTypes.SqlString" /> structures.</summary>
         <value>A value specifying how this <see cref="T:System.Data.SqlTypes.SqlString" /> should be compared to other <see cref="T:System.Data.SqlTypes.SqlString" /> structures.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -2700,6 +2841,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#GetSchema" />
       <MemberSignature Language="VB.NET" Value="Function GetSchema () As XmlSchema Implements IXmlSerializable.GetSchema" />
+      <MemberSignature Language="F#" Value="abstract member System.Xml.Serialization.IXmlSerializable.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.System.Xml.Serialization.IXmlSerializable.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="sqlString.System.Xml.Serialization.IXmlSerializable.GetSchema " />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Xml::Schema::XmlSchema ^ System.Xml.Serialization.IXmlSerializable.GetSchema() = System::Xml::Serialization::IXmlSerializable::GetSchema;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2721,6 +2863,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2740,6 +2884,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Sub ReadXml (reader As XmlReader) Implements IXmlSerializable.ReadXml" />
+      <MemberSignature Language="F#" Value="abstract member System.Xml.Serialization.IXmlSerializable.ReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.System.Xml.Serialization.IXmlSerializable.ReadXml : System.Xml.XmlReader -&gt; unit" Usage="sqlString.System.Xml.Serialization.IXmlSerializable.ReadXml reader" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.ReadXml(System::Xml::XmlReader ^ reader) = System::Xml::Serialization::IXmlSerializable::ReadXml;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2761,6 +2906,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2769,7 +2916,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">
@@ -2784,6 +2931,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Sub WriteXml (writer As XmlWriter) Implements IXmlSerializable.WriteXml" />
+      <MemberSignature Language="F#" Value="abstract member System.Xml.Serialization.IXmlSerializable.WriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.System.Xml.Serialization.IXmlSerializable.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="sqlString.System.Xml.Serialization.IXmlSerializable.WriteXml writer" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.WriteXml(System::Xml::XmlWriter ^ writer) = System::Xml::Serialization::IXmlSerializable::WriteXml;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2805,6 +2953,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2813,7 +2963,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">
@@ -2828,8 +2978,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlBoolean ToSqlBoolean() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlBoolean" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlBoolean () As SqlBoolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlBoolean ToSqlBoolean();" />
       <MemberSignature Language="F#" Value="member this.ToSqlBoolean : unit -&gt; System.Data.SqlTypes.SqlBoolean" Usage="sqlString.ToSqlBoolean " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlBoolean ToSqlBoolean();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2852,6 +3002,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
@@ -2862,7 +3014,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <returns>
           <see langword="true" /> if the <see cref="P:System.Data.SqlTypes.SqlString.Value" /> is non-zero; <see langword="false" /> if zero; otherwise Null.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlByte">
@@ -2870,8 +3022,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlByte ToSqlByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlByte" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlByte () As SqlByte" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlByte ToSqlByte();" />
       <MemberSignature Language="F#" Value="member this.ToSqlByte : unit -&gt; System.Data.SqlTypes.SqlByte" Usage="sqlString.ToSqlByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlByte ToSqlByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2894,6 +3046,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlByte</ReturnType>
@@ -2903,7 +3057,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlByte" />.</summary>
         <returns>A new <see langword="SqlByte" /> structure whose <see cref="P:System.Data.SqlTypes.SqlByte.Value" /> equals the number represented by this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDateTime">
@@ -2911,8 +3065,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlDateTime ToSqlDateTime() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlDateTime () As SqlDateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDateTime ToSqlDateTime();" />
       <MemberSignature Language="F#" Value="member this.ToSqlDateTime : unit -&gt; System.Data.SqlTypes.SqlDateTime" Usage="sqlString.ToSqlDateTime " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDateTime ToSqlDateTime();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2935,6 +3089,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
@@ -2944,7 +3100,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlDateTime" />.</summary>
         <returns>A new <see langword="SqlDateTime" /> structure that contains the date value represented by this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDecimal">
@@ -2952,8 +3108,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlDecimal ToSqlDecimal() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlDecimal () As SqlDecimal" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDecimal ToSqlDecimal();" />
       <MemberSignature Language="F#" Value="member this.ToSqlDecimal : unit -&gt; System.Data.SqlTypes.SqlDecimal" Usage="sqlString.ToSqlDecimal " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDecimal ToSqlDecimal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2976,6 +3132,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
@@ -2985,7 +3143,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlDecimal" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> that contains the value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlDouble">
@@ -2993,8 +3151,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlDouble ToSqlDouble() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlDouble" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlDouble () As SqlDouble" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDouble ToSqlDouble();" />
       <MemberSignature Language="F#" Value="member this.ToSqlDouble : unit -&gt; System.Data.SqlTypes.SqlDouble" Usage="sqlString.ToSqlDouble " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDouble ToSqlDouble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3017,6 +3175,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
@@ -3026,7 +3186,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlDouble" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDouble" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlGuid">
@@ -3034,8 +3194,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlGuid ToSqlGuid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlGuid" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlGuid () As SqlGuid" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlGuid ToSqlGuid();" />
       <MemberSignature Language="F#" Value="member this.ToSqlGuid : unit -&gt; System.Data.SqlTypes.SqlGuid" Usage="sqlString.ToSqlGuid " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlGuid ToSqlGuid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3058,6 +3218,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlGuid</ReturnType>
@@ -3067,7 +3229,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlGuid" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlGuid" /> structure whose <see cref="P:System.Data.SqlTypes.SqlGuid.Value" /> is the <see langword="Guid" /> represented by this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt16">
@@ -3075,8 +3237,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlInt16 ToSqlInt16() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlInt16" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt16 () As SqlInt16" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt16 ToSqlInt16();" />
       <MemberSignature Language="F#" Value="member this.ToSqlInt16 : unit -&gt; System.Data.SqlTypes.SqlInt16" Usage="sqlString.ToSqlInt16 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt16 ToSqlInt16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3099,6 +3261,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlInt16</ReturnType>
@@ -3108,7 +3272,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt16" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlInt16" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt32">
@@ -3116,8 +3280,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlInt32 ToSqlInt32() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt32 () As SqlInt32" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt32 ToSqlInt32();" />
       <MemberSignature Language="F#" Value="member this.ToSqlInt32 : unit -&gt; System.Data.SqlTypes.SqlInt32" Usage="sqlString.ToSqlInt32 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt32 ToSqlInt32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3140,6 +3304,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlInt32</ReturnType>
@@ -3149,7 +3315,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt32" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlInt32" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlInt64">
@@ -3157,8 +3323,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlInt64 ToSqlInt64() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlInt64" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt64 () As SqlInt64" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt64 ToSqlInt64();" />
       <MemberSignature Language="F#" Value="member this.ToSqlInt64 : unit -&gt; System.Data.SqlTypes.SqlInt64" Usage="sqlString.ToSqlInt64 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt64 ToSqlInt64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3181,6 +3347,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlInt64</ReturnType>
@@ -3190,7 +3358,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlInt64" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlInt64" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlMoney">
@@ -3198,8 +3366,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlMoney ToSqlMoney() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlMoney" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlMoney () As SqlMoney" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlMoney ToSqlMoney();" />
       <MemberSignature Language="F#" Value="member this.ToSqlMoney : unit -&gt; System.Data.SqlTypes.SqlMoney" Usage="sqlString.ToSqlMoney " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlMoney ToSqlMoney();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3222,6 +3390,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlMoney</ReturnType>
@@ -3231,7 +3401,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlMoney" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlMoney" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToSqlSingle">
@@ -3239,8 +3409,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlSingle ToSqlSingle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlSingle" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlSingle () As SqlSingle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlSingle ToSqlSingle();" />
       <MemberSignature Language="F#" Value="member this.ToSqlSingle : unit -&gt; System.Data.SqlTypes.SqlSingle" Usage="sqlString.ToSqlSingle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlSingle ToSqlSingle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3263,6 +3433,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
@@ -3272,7 +3444,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3280,8 +3452,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlString.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3304,6 +3476,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -3313,7 +3487,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <summary>Converts a <see cref="T:System.Data.SqlTypes.SqlString" /> object to a <see cref="T:System.String" />.</summary>
         <returns>A <see cref="T:System.String" /> with the same value as this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -3321,8 +3495,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Data.SqlTypes.SqlString.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3345,6 +3519,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -3354,7 +3530,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <value>The string that is stored.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The value of the string is <see cref="F:System.Data.SqlTypes.SqlString.Null" />.</exception>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/sql-server-data-types.md">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/sql-server-data-types">SQL Server Data Types and ADO.NET</related>
       </Docs>
     </Member>
   </Members>

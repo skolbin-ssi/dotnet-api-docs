@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HatchBrush extends System.Drawing.Brush" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.HatchBrush" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HatchBrush&#xA;Inherits Brush" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HatchBrush sealed : System::Drawing::Brush" />
   <TypeSignature Language="F#" Value="type HatchBrush = class&#xA;    inherit Brush" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HatchBrush sealed : System::Drawing::Brush" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -17,6 +17,8 @@
     <AssemblyVersion>4.0.0.1</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Drawing.Brush</BaseTypeName>
@@ -39,8 +41,8 @@
 ## Examples  
  The following example shows how to create the <xref:System.Drawing.Drawing2D.HatchBrush> shown in the previous illustration.  
   
- [!code-csharp[System.Drawing.UsingABrush#41](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingABrush/CS/Class1.cs#41)]
- [!code-vb[System.Drawing.UsingABrush#41](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb#41)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingABrush/CS/Class1.cs" id="Snippet41":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb" id="Snippet41":::  
   
  ]]></format>
     </remarks>
@@ -59,8 +61,9 @@
       <MemberSignature Language="C#" Value="public HatchBrush (System.Drawing.Drawing2D.HatchStyle hatchstyle, System.Drawing.Color foreColor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Drawing2D.HatchStyle hatchstyle, valuetype System.Drawing.Color foreColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.HatchBrush.#ctor(System.Drawing.Drawing2D.HatchStyle,System.Drawing.Color)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; HatchBrush(System::Drawing::Drawing2D::HatchStyle hatchstyle, System::Drawing::Color foreColor);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (hatchstyle As HatchStyle, foreColor As Color)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.HatchBrush : System.Drawing.Drawing2D.HatchStyle * System.Drawing.Color -&gt; System.Drawing.Drawing2D.HatchBrush" Usage="new System.Drawing.Drawing2D.HatchBrush (hatchstyle, foreColor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HatchBrush(System::Drawing::Drawing2D::HatchStyle hatchstyle, System::Drawing::Color foreColor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +77,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="hatchstyle" Type="System.Drawing.Drawing2D.HatchStyle" />
@@ -97,8 +102,9 @@
       <MemberSignature Language="C#" Value="public HatchBrush (System.Drawing.Drawing2D.HatchStyle hatchstyle, System.Drawing.Color foreColor, System.Drawing.Color backColor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Drawing2D.HatchStyle hatchstyle, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.HatchBrush.#ctor(System.Drawing.Drawing2D.HatchStyle,System.Drawing.Color,System.Drawing.Color)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; HatchBrush(System::Drawing::Drawing2D::HatchStyle hatchstyle, System::Drawing::Color foreColor, System::Drawing::Color backColor);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (hatchstyle As HatchStyle, foreColor As Color, backColor As Color)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.HatchBrush : System.Drawing.Drawing2D.HatchStyle * System.Drawing.Color * System.Drawing.Color -&gt; System.Drawing.Drawing2D.HatchBrush" Usage="new System.Drawing.Drawing2D.HatchBrush (hatchstyle, foreColor, backColor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HatchBrush(System::Drawing::Drawing2D::HatchStyle hatchstyle, System::Drawing::Color foreColor, System::Drawing::Color backColor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -112,6 +118,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="hatchstyle" Type="System.Drawing.Drawing2D.HatchStyle" />
@@ -136,8 +144,8 @@
 ## Examples  
  The following example shows how to use the  <xref:System.Drawing.Drawing2D.HatchBrush.%23ctor%2A> to create the <xref:System.Drawing.Drawing2D.HatchBrush> shown in the previous illustration.  
   
- [!code-csharp[System.Drawing.UsingABrush#41](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingABrush/CS/Class1.cs#41)]
- [!code-vb[System.Drawing.UsingABrush#41](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb#41)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingABrush/CS/Class1.cs" id="Snippet41":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb" id="Snippet41":::  
   
  ]]></format>
         </remarks>
@@ -148,8 +156,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.HatchBrush.BackgroundColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackgroundColor As Color" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackgroundColor { System::Drawing::Color get(); };" />
       <MemberSignature Language="F#" Value="member this.BackgroundColor : System.Drawing.Color" Usage="System.Drawing.Drawing2D.HatchBrush.BackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackgroundColor { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -163,6 +171,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
@@ -178,8 +188,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.HatchBrush.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="hatchBrush.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -193,6 +203,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -209,8 +221,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForegroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.HatchBrush.ForegroundColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForegroundColor As Color" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForegroundColor { System::Drawing::Color get(); };" />
       <MemberSignature Language="F#" Value="member this.ForegroundColor : System.Drawing.Color" Usage="System.Drawing.Drawing2D.HatchBrush.ForegroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForegroundColor { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -224,6 +236,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
@@ -239,8 +253,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.HatchStyle HatchStyle" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.HatchBrush.HatchStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HatchStyle As HatchStyle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::HatchStyle HatchStyle { System::Drawing::Drawing2D::HatchStyle get(); };" />
       <MemberSignature Language="F#" Value="member this.HatchStyle : System.Drawing.Drawing2D.HatchStyle" Usage="System.Drawing.Drawing2D.HatchBrush.HatchStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::HatchStyle HatchStyle { System::Drawing::Drawing2D::HatchStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -254,6 +268,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>

@@ -1,10 +1,11 @@
 <Type Name="EncoderParameter" FullName="System.Drawing.Imaging.EncoderParameter">
   <TypeSignature Language="C#" Value="public sealed class EncoderParameter : IDisposable" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit EncoderParameter extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncoderParameter extends System.Object implements class System.IDisposable" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EncoderParameter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncoderParameter&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EncoderParameter sealed : IDisposable" />
   <TypeSignature Language="F#" Value="type EncoderParameter = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncoderParameter sealed : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit EncoderParameter extends System.Object implements class System.IDisposable" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -17,6 +18,8 @@
     <AssemblyVersion>4.0.0.1</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,24 +32,24 @@
   <Docs>
     <summary>Used to pass a value, or an array of values, to an image encoder.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can also use an <xref:System.Drawing.Imaging.EncoderParameter> object to receive a list of possible values supported by a particular parameter of a particular image encoder.  
-  
-   
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Drawing.Imaging.EncoderParameter> using the <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
-  
- [!code-csharp[UsingImageEncodersDecoders#8](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#8)]
- [!code-vb[UsingImageEncodersDecoders#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#8)]  
-[!code-csharp[UsingImageEncodersDecoders#6](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#6)]
-[!code-vb[UsingImageEncodersDecoders#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#6)]  
-  
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+ You can also use an <xref:System.Drawing.Imaging.EncoderParameter> object to receive a list of possible values supported by a particular parameter of a particular image encoder.
+
+
+
+## Examples
+ The following code example demonstrates how to create a <xref:System.Drawing.Imaging.EncoderParameter> using the <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.
+
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs" id="Snippet8":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb" id="Snippet8":::
+:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs" id="Snippet6":::
+:::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb" id="Snippet6":::
+
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/0e838ea1-4e7e-4334-b882-ab25df607b8b">Using Image Encoders and Decoders in Managed GDI+</related>
+    <related type="Article" href="/dotnet/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi">Using Image Encoders and Decoders in Managed GDI+</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -62,8 +65,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Byte)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, System::Byte value);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, value As Byte)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * byte -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, System::Byte value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -77,6 +81,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -93,8 +99,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Byte[])" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, value As Byte())" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * byte[] -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -108,6 +115,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -124,8 +133,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, short value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int16)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, short value);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, value As Short)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int16 -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, short value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -139,6 +149,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -155,8 +167,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, short[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int16[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int16[])" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;short&gt; ^ value);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, value As Short())" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int16[] -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;short&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -170,6 +183,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -186,8 +201,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int64)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, long value);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, value As Long)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int64 -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, long value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -201,6 +217,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -211,16 +229,16 @@
         <param name="value">A 64-bit integer that specifies the value stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object. Must be nonnegative. This parameter is converted to a 32-bit integer before it is stored in the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and one 64-bit integer. Sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.ValueType" /> property to <see cref="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeLong" /> (32 bits), and sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.NumberOfValues" /> property to 1.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to create a <xref:System.Drawing.Imaging.EncoderParameter> using the <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
-  
- [!code-csharp[UsingImageEncodersDecoders#8](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#8)]
- [!code-vb[UsingImageEncodersDecoders#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#8)]  
-[!code-csharp[UsingImageEncodersDecoders#6](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#6)]
-[!code-vb[UsingImageEncodersDecoders#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#6)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Examples
+ The following code example demonstrates how to create a <xref:System.Drawing.Imaging.EncoderParameter> using the <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.
+
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs" id="Snippet8":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb" id="Snippet8":::
+:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs" id="Snippet6":::
+:::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb" id="Snippet6":::
+
  ]]></format>
         </remarks>
       </Docs>
@@ -229,8 +247,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, long[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int64[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int64[])" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;long&gt; ^ value);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, value As Long())" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int64[] -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;long&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -244,6 +263,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -260,8 +281,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, System::String ^ value);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, value As String)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * string -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -275,6 +297,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -291,8 +315,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, byte value, bool undefined);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, unsigned int8 value, bool undefined) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Byte,System.Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, System::Byte value, bool undefined);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, value As Byte, undefined As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * byte * bool -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, value, undefined)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, System::Byte value, bool undefined);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -306,6 +331,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -324,8 +351,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, byte[] value, bool undefined);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, unsigned int8[] value, bool undefined) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Byte[],System.Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;System::Byte&gt; ^ value, bool undefined);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, value As Byte(), undefined As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * byte[] * bool -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, value, undefined)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;System::Byte&gt; ^ value, bool undefined);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -339,6 +367,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -357,8 +387,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int[] numerator, int[] denominator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32[] numerator, int32[] denominator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32[],System.Int32[])" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;int&gt; ^ numerator, cli::array &lt;int&gt; ^ denominator);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, numerator As Integer(), denominator As Integer())" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int[] * int[] -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator, denominator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;int&gt; ^ numerator, cli::array &lt;int&gt; ^ denominator);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -372,6 +403,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -390,8 +423,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, long rangebegin, long rangeend);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int64 rangebegin, int64 rangeend) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int64,System.Int64)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, long rangebegin, long rangeend);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, rangebegin As Long, rangeend As Long)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int64 * int64 -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, rangebegin, rangeend)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, long rangebegin, long rangeend);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -405,6 +439,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -423,8 +459,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, long[] rangebegin, long[] rangeend);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int64[] rangebegin, int64[] rangeend) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int64[],System.Int64[])" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;long&gt; ^ rangebegin, cli::array &lt;long&gt; ^ rangeend);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, rangebegin As Long(), rangeend As Long())" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int64[] * int64[] -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, rangebegin, rangeend)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;long&gt; ^ rangebegin, cli::array &lt;long&gt; ^ rangeend);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -438,6 +475,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -456,8 +495,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int numberValues, System.Drawing.Imaging.EncoderParameterValueType type, IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32 numberValues, valuetype System.Drawing.Imaging.EncoderParameterValueType type, native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32,System.Drawing.Imaging.EncoderParameterValueType,System.IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numberValues, System::Drawing::Imaging::EncoderParameterValueType type, IntPtr value);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, numberValues As Integer, type As EncoderParameterValueType, value As IntPtr)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * System.Drawing.Imaging.EncoderParameterValueType * nativeint -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numberValues, type, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numberValues, System::Drawing::Imaging::EncoderParameterValueType type, IntPtr value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -469,12 +509,14 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="numberValues" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="type" Type="System.Drawing.Imaging.EncoderParameterValueType" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="value" Type="System.IntPtr" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="numberValues" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.EncoderParameterValueType" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.IntPtr" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
@@ -489,8 +531,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int NumberOfValues, int Type, int Value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32 NumberOfValues, int32 Type, int32 Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32,System.Int32,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int NumberOfValues, int Type, int Value);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, NumberOfValues As Integer, Type As Integer, Value As Integer)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * int * int -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, NumberOfValues, Type, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int NumberOfValues, int Type, int Value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -504,16 +547,17 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2;dotnet-plat-ext-3.0;netcore-3.0;dotnet-plat-ext-3.1;netcore-3.1">
-          <AttributeName>System.Obsolete("This constructor has been deprecated. Use EncoderParameter(Encoder encoder, int numberValues, EncoderParameterValueType type, IntPtr value) instead.  https://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0">
-          <AttributeName>System.Obsolete("This constructor has been deprecated. Use EncoderParameter(Encoder encoder, int numberValues, EncoderParameterValueType type, IntPtr value) instead.  https://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Obsolete("This constructor has been deprecated. Use EncoderParameter(Encoder encoder, int numberValues, EncoderParameterValueType type, IntPtr value) instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This constructor has been deprecated. Use EncoderParameter(Encoder encoder, int numberValues, EncoderParameterValueType type, IntPtr value) instead.  http://go.microsoft.com/fwlink/?linkid=14202")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This constructor has been deprecated. Use EncoderParameter(Encoder encoder, int numberValues, EncoderParameterValueType type, IntPtr value) instead.  http://go.microsoft.com/fwlink/?linkid=14202")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1">
+          <AttributeName Language="C#">[System.Obsolete("This constructor has been deprecated. Use EncoderParameter(Encoder encoder, int numberValues, EncoderParameterValueType type, IntPtr value) instead.  https://go.microsoft.com/fwlink/?linkid=14202")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This constructor has been deprecated. Use EncoderParameter(Encoder encoder, int numberValues, EncoderParameterValueType type, IntPtr value) instead.  https://go.microsoft.com/fwlink/?linkid=14202")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -533,15 +577,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int numerator, int denominator);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32 numerator, int32 denominator) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int numerator, int denominator);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32 numerator, int32 denominator) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numerator, int denominator);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * int -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator, denominator)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, numerator As Integer, denominator As Integer)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * int -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator, denominator)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numerator, int denominator);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int numerator, int demoninator);" FrameworkAlternate="netframework-1.1;netframework-4.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32 numerator, int32 demoninator) cil managed" FrameworkAlternate="netframework-1.1;netframework-4.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numerator, int demoninator);" FrameworkAlternate="netframework-1.1;netframework-4.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, numerator As Integer, demoninator As Integer)" FrameworkAlternate="netframework-1.1;netframework-4.0" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * int -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator, demoninator)" FrameworkAlternate="netframework-1.1;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numerator, int demoninator);" FrameworkAlternate="netframework-1.1;netframework-4.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -555,11 +601,13 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" Index="0" />
         <Parameter Name="numerator" Type="System.Int32" Index="1" />
-        <Parameter Name="denominator" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="denominator" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="demoninator" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-4.0" />
       </Parameters>
       <Docs>
@@ -575,8 +623,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int numerator1, int demoninator1, int numerator2, int demoninator2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32 numerator1, int32 demoninator1, int32 numerator2, int32 demoninator2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32,System.Int32,System.Int32,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numerator1, int demoninator1, int numerator2, int demoninator2);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, numerator1 As Integer, demoninator1 As Integer, numerator2 As Integer, demoninator2 As Integer)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int * int * int * int -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator1, demoninator1, numerator2, demoninator2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, int numerator1, int demoninator1, int numerator2, int demoninator2);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -590,6 +639,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -612,8 +663,9 @@
       <MemberSignature Language="C#" Value="public EncoderParameter (System.Drawing.Imaging.Encoder encoder, int[] numerator1, int[] denominator1, int[] numerator2, int[] denominator2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Imaging.Encoder encoder, int32[] numerator1, int32[] denominator1, int32[] numerator2, int32[] denominator2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.#ctor(System.Drawing.Imaging.Encoder,System.Int32[],System.Int32[],System.Int32[],System.Int32[])" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;int&gt; ^ numerator1, cli::array &lt;int&gt; ^ denominator1, cli::array &lt;int&gt; ^ numerator2, cli::array &lt;int&gt; ^ denominator2);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (encoder As Encoder, numerator1 As Integer(), denominator1 As Integer(), numerator2 As Integer(), denominator2 As Integer())" />
       <MemberSignature Language="F#" Value="new System.Drawing.Imaging.EncoderParameter : System.Drawing.Imaging.Encoder * int[] * int[] * int[] * int[] -&gt; System.Drawing.Imaging.EncoderParameter" Usage="new System.Drawing.Imaging.EncoderParameter (encoder, numerator1, denominator1, numerator2, denominator2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderParameter(System::Drawing::Imaging::Encoder ^ encoder, cli::array &lt;int&gt; ^ numerator1, cli::array &lt;int&gt; ^ denominator1, cli::array &lt;int&gt; ^ numerator2, cli::array &lt;int&gt; ^ denominator2);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -627,6 +679,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoder" Type="System.Drawing.Imaging.Encoder" />
@@ -643,11 +697,11 @@
         <param name="denominator2">An array of 32-bit integers that specifies the denominators of the maximum values for the ranges. The integers in the array must be nonnegative.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and four arrays of 32-bit integers. The four arrays represent an array rational ranges. A rational range is the set of all fractions from a minimum fractional value through a maximum fractional value. Sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.ValueType" /> property to <see cref="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeRationalRange" />, and sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.NumberOfValues" /> property to the number of elements in the <paramref name="numerator1" /> array, which must be the same as the number of elements in the other three arrays.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ith range consists of all fractional numbers from numerator1[i]/denominator1[i] through numerator2[i]/denominator2[i].  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The ith range consists of all fractional numbers from numerator1[i]/denominator1[i] through numerator2[i]/denominator2[i].
+
  ]]></format>
         </remarks>
       </Docs>
@@ -657,8 +711,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="encoderParameter.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -675,6 +729,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -683,11 +739,11 @@
       <Docs>
         <summary>Releases all resources used by this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling <xref:System.Drawing.Imaging.EncoderParameter.Dispose%2A> allows the resources used by this <xref:System.Drawing.Imaging.EncoderParameter> object to be reallocated for other purposes.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ Calling <xref:System.Drawing.Imaging.EncoderParameter.Dispose%2A> allows the resources used by this <xref:System.Drawing.Imaging.EncoderParameter> object to be reallocated for other purposes.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -697,8 +753,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Imaging.Encoder Encoder" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.EncoderParameter.Encoder" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoder As Encoder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::Encoder ^ Encoder { System::Drawing::Imaging::Encoder ^ get(); void set(System::Drawing::Imaging::Encoder ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Encoder : System.Drawing.Imaging.Encoder with get, set" Usage="System.Drawing.Imaging.EncoderParameter.Encoder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::Encoder ^ Encoder { System::Drawing::Imaging::Encoder ^ get(); void set(System::Drawing::Imaging::Encoder ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -712,6 +768,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.Encoder</ReturnType>
@@ -727,8 +785,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.EncoderParameter.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
-      <MemberSignature Language="C++ CLI" Value="!EncoderParameter ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="encoderParameter.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!EncoderParameter ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -742,6 +800,8 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -757,8 +817,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfValues" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.EncoderParameter.NumberOfValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfValues As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfValues { int get(); };" />
       <MemberSignature Language="F#" Value="member this.NumberOfValues : int" Usage="System.Drawing.Imaging.EncoderParameter.NumberOfValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfValues { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -772,10 +832,13 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -792,8 +855,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Imaging.EncoderParameterValueType Type" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.EncoderParameter.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As EncoderParameterValueType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::EncoderParameterValueType Type { System::Drawing::Imaging::EncoderParameterValueType get(); };" />
       <MemberSignature Language="F#" Value="member this.Type : System.Drawing.Imaging.EncoderParameterValueType" Usage="System.Drawing.Imaging.EncoderParameter.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::EncoderParameterValueType Type { System::Drawing::Imaging::EncoderParameterValueType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -807,10 +870,13 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -827,8 +893,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Imaging.EncoderParameterValueType ValueType" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.EncoderParameter.ValueType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueType As EncoderParameterValueType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::EncoderParameterValueType ValueType { System::Drawing::Imaging::EncoderParameterValueType get(); };" />
       <MemberSignature Language="F#" Value="member this.ValueType : System.Drawing.Imaging.EncoderParameterValueType" Usage="System.Drawing.Imaging.EncoderParameter.ValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::EncoderParameterValueType ValueType { System::Drawing::Imaging::EncoderParameterValueType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -842,10 +908,13 @@
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

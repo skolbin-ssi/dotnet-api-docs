@@ -3,12 +3,14 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BitmapPalettes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapPalettes" />
   <TypeSignature Language="VB.NET" Value="Public Class BitmapPalettes" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BitmapPalettes abstract sealed" />
   <TypeSignature Language="F#" Value="type BitmapPalettes = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapPalettes abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,15 +24,15 @@
 ## Remarks  
  <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
   
- Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] image formats support palettes.  
+ Only Tagged Image File Format (TIFF) and Graphics Interchange Format (GIF) image formats support palettes.  
   
    
   
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
     </remarks>
@@ -43,17 +45,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette BlackAndWhite" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.BlackAndWhite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlackAndWhite As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ BlackAndWhite { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.BlackAndWhite : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.BlackAndWhite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ BlackAndWhite { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -68,8 +73,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class.  Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -82,17 +87,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette BlackAndWhiteTransparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.BlackAndWhiteTransparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BlackAndWhiteTransparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ BlackAndWhiteTransparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.BlackAndWhiteTransparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.BlackAndWhiteTransparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ BlackAndWhiteTransparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -112,8 +120,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -126,17 +134,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray16" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray16" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray16 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray16 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Gray16 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Gray16" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray16 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -151,8 +162,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -165,17 +176,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray16Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray16Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray16Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray16Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Gray16Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Gray16Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray16Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -195,8 +209,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -209,17 +223,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray256" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray256" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray256 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray256 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Gray256 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Gray256" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray256 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -234,8 +251,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -248,17 +265,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray256Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray256Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray256Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray256Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Gray256Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Gray256Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray256Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -278,8 +298,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -292,17 +312,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray4" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray4 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray4 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Gray4 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Gray4" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray4 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -317,8 +340,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -331,17 +354,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Gray4Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Gray4Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Gray4Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray4Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Gray4Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Gray4Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Gray4Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -361,8 +387,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -375,17 +401,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone125" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone125" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone125 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone125 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone125 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone125" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone125 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -400,8 +429,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -414,17 +443,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone125Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone125Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone125Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone125Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone125Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone125Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone125Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -444,8 +476,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -458,17 +490,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone216" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone216" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone216 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone216 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone216 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone216" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone216 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -483,8 +518,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -497,17 +532,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone216Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone216Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone216Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone216Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone216Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone216Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone216Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -527,8 +565,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -541,17 +579,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone252" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone252" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone252 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone252 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone252 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone252" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone252 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -566,8 +607,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -580,17 +621,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone252Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone252Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone252Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone252Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone252Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone252Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone252Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -610,8 +654,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -624,17 +668,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone256" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone256" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone256 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone256 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone256 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone256" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone256 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -649,8 +696,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -663,17 +710,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone256Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone256Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone256Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone256Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone256Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone256Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone256Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -693,8 +743,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -707,17 +757,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone27" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone27" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone27 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone27 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone27 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone27" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone27 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -732,8 +785,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -746,17 +799,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone27Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone27Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone27Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone27Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone27Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone27Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone27Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -776,8 +832,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -790,17 +846,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone64" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone64" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone64 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone64 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone64 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone64" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone64 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -815,8 +874,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -829,17 +888,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone64Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone64Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone64Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone64Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone64Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone64Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone64Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -859,8 +921,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -873,17 +935,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone8" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone8 As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone8 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone8 : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone8 { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -898,8 +963,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -912,17 +977,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette Halftone8Transparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.Halftone8Transparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Halftone8Transparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone8Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Halftone8Transparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.Halftone8Transparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ Halftone8Transparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -942,8 +1010,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -956,17 +1024,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette WebPalette" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.WebPalette" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WebPalette As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ WebPalette { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WebPalette : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.WebPalette" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ WebPalette { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -986,8 +1057,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -1000,17 +1071,20 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Imaging.BitmapPalette WebPaletteTransparent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapPalettes.WebPaletteTransparent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WebPaletteTransparent As BitmapPalette" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ WebPaletteTransparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WebPaletteTransparent : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapPalettes.WebPaletteTransparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Imaging::BitmapPalette ^ WebPaletteTransparent { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1032,8 +1106,8 @@
 ## Examples  
  The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
   
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs" id="Snippet10":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>

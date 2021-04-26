@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlForm extends System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlForm" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlForm&#xA;Inherits HtmlContainerControl" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HtmlForm : System::Web::UI::HtmlControls::HtmlContainerControl" />
   <TypeSignature Language="F#" Value="type HtmlForm = class&#xA;    inherit HtmlContainerControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlForm : System::Web::UI::HtmlControls::HtmlContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -31,7 +31,7 @@
 > [!CAUTION]
 >  By default, the <xref:System.Web.UI.HtmlControls.HtmlForm.Method%2A> property is set to `POST`. You can modify the value of this property to `GET`, but this might break the built-in state and postback services provided by the ASP.NET page framework.  
   
- You can configure controls that implement the <xref:System.Web.UI.WebControls.IButtonControl> interface to post to a different target page. This is referred to as cross-page posting. For more information, see [Cross-Page Posting in ASP.NET Web Forms](https://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b).  
+ You can configure controls that implement the <xref:System.Web.UI.WebControls.IButtonControl> interface to post to a different target page. This is referred to as cross-page posting. For more information, see [Cross-Page Posting in ASP.NET Web Forms](https://docs.microsoft.com/previous-versions/aspnet/ms178139(v=vs.100)).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlForm>, see the <xref:System.Web.UI.HtmlControls.HtmlForm.%23ctor%2A> constructor.  
   
@@ -40,15 +40,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm> class to create a simple form.  
   
- [!code-aspx-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]
- [!code-aspx-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx" id="Snippet1":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
     <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
     <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Method" />
-    <related type="Article" href="https://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b">Cross-Page Posting in an ASP.NET Web Page</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178139(v=vs.100)">Cross-Page Posting in an ASP.NET Web Page</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,8 +84,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlForm> control and place it on the Web page.  
   
- [!code-aspx-csharp[HtmlFormCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormCtor/CS/htmlformctorcs.aspx#1)]
- [!code-aspx-vb[HtmlFormCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormCtor/VB/htmlformctorvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormCtor/CS/htmlformctorcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormCtor/VB/htmlformctorvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -97,8 +97,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,10 +107,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,8 +137,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ClientID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.ClientID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ClientID As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ClientID : string" Usage="System.Web.UI.HtmlControls.HtmlForm.ClientID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,17 +148,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the control identifier that is generated by [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] for the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control.</summary>
-        <value>The control identifier generated by [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] for the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control.</value>
+        <summary>Gets the control identifier that is generated by ASP.NET for the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control.</summary>
+        <value>The control identifier generated by ASP.NET for the <see cref="T:System.Web.UI.HtmlControls.HtmlForm" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To prevent naming conflicts when multiple instances of a control are rendered, [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] automatically generates a unique <xref:System.Web.UI.HtmlControls.HtmlForm.ClientID%2A> value for each control on a page. For more information, see the <xref:System.Web.UI.Control.ClientID%2A?displayProperty=nameWithType> property.  
+ To prevent naming conflicts when multiple instances of a control are rendered, ASP.NET automatically generates a unique <xref:System.Web.UI.HtmlControls.HtmlForm.ClientID%2A> value for each control on a page. For more information, see the <xref:System.Web.UI.Control.ClientID%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/1d04y8ss(v=vs.140)">ASP.NET Control Identification</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -164,8 +166,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="htmlForm.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,8 +190,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.DefaultButton" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultButton As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.DefaultButton : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.DefaultButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,10 +200,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -216,7 +220,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property lets you specify that users can cause a postback by pressing ENTER in an input control in the form (such as a text box). You can specify as a default button any control that derives from the <xref:System.Web.UI.WebControls.IButtonControl> interface except the <xref:System.Web.UI.WebControls.LinkButton> control. If the control that is referenced by the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property does not derive from <xref:System.Web.UI.WebControls.IButtonControl>, an <xref:System.InvalidOperationException> exception is thrown.  
   
- If you are using master pages and you set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property from a content page, use the <xref:System.Web.UI.Control.UniqueID%2A> property of the <xref:System.Web.UI.WebControls.IButtonControl> button. For more information about master pages, see [ASP.NET Master Pages](https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
+ If you are using master pages and you set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property from a content page, use the <xref:System.Web.UI.Control.UniqueID%2A> property of the <xref:System.Web.UI.WebControls.IButtonControl> button. For more information about master pages, see [ASP.NET Master Pages](https://docs.microsoft.com/previous-versions/aspnet/wtxbf3hh(v=vs.100)).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property might not cause a postback in the following scenarios:  
   
@@ -226,15 +230,15 @@
   
 -   Specifying a <xref:System.Web.UI.WebControls.LinkButton> control as a default button. Only <xref:System.Web.UI.WebControls.Button> and <xref:System.Web.UI.WebControls.ImageButton> controls are supported.  
   
--   Changing the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property programmatically during an asynchronous postback. Asynchronous postbacks can be enabled on a page by adding one or more <xref:System.Web.UI.UpdatePanel> controls to the page. For more information, see [UpdatePanel Control Overview](https://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+-   Changing the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property programmatically during an asynchronous postback. Asynchronous postbacks can be enabled on a page by adding one or more <xref:System.Web.UI.UpdatePanel> controls to the page. For more information, see [UpdatePanel Control Overview](https://docs.microsoft.com/previous-versions/aspnet/bb386454(v=vs.100)) and [Partial-Page Rendering Overview](https://docs.microsoft.com/previous-versions/aspnet/bb386573(v=vs.100)).  
   
    
   
 ## Examples  
  The following example shows how to set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property to set the default control that causes a postback.  
   
- [!code-aspx-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]
- [!code-aspx-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -243,7 +247,7 @@
         <altmember cref="P:System.Web.UI.Control.ID" />
         <altmember cref="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wtxbf3hh(v=vs.100)">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultFocus">
@@ -251,8 +255,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultFocus" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultFocus As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultFocus { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.DefaultFocus : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.DefaultFocus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultFocus { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,10 +265,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -286,8 +292,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus%2A> property to display a specified control on a form as the control with input focus when the form loads. When `Form1` renders, notice that the insertion point is positioned in `TextBox1`, indicating that `TextBox1` is the control with focus.  
   
- [!code-aspx-csharp[HtmlForm.DefaultButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx#1)]
- [!code-aspx-vb[HtmlForm.DefaultButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.DefaultButton/CS/htmlform.defaultbuttoncs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.DefaultButton/VB/htmlform.defaultbuttonvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -302,8 +308,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Enctype" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
       <MemberSignature Language="VB.NET" Value="Public Property Enctype As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Enctype { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Enctype : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Enctype" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Enctype { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -313,10 +319,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -346,8 +354,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.Enctype%2A> property to specify the encoding type the browser uses to send data back to the server.  
   
- [!code-aspx-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]
- [!code-aspx-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -359,8 +367,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Method" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Method" />
       <MemberSignature Language="VB.NET" Value="Public Property Method As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Method : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -370,10 +378,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -396,8 +406,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.Method%2A> property to specify that form data is posted back to the server.  
   
- [!code-aspx-csharp[HtmlForm#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx#1)]
- [!code-aspx-vb[HtmlForm#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm/CS/htmlformcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm/VB/htmlformvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -409,8 +419,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -420,10 +430,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -444,7 +456,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.UniqueID" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/exc57y7e(v=vs.100)">ASP.NET and XHTML Compliance</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -452,8 +464,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="htmlForm.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -480,7 +492,7 @@
 ## Remarks  
  When notified by the <xref:System.Web.UI.HtmlControls.HtmlForm.OnInit%2A> method, Web server controls must perform any initialization steps that are required to create and set up an instance. In this stage of the server control's life cycle, the control's view state has yet to be populated. Additionally, you cannot access other server controls when this method is called, regardless of whether it is a child or parent to this control. Other server controls are not guaranteed to be created and ready for access.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -499,8 +511,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlForm.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -535,8 +547,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter output) cil managed" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (output As HtmlTextWriter)" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ output);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlForm.Render output" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ output);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter output);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter output) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (output As HtmlTextWriter)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -581,8 +593,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlForm.RenderAttributes writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -627,8 +639,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.RenderChildren(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderChildren (writer As HtmlTextWriter)" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderChildren(System::Web::UI::HtmlTextWriter ^ writer);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="F#" Value="override this.RenderChildren : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlForm.RenderChildren writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderChildren(System::Web::UI::HtmlTextWriter ^ writer);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="protected internal override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderChildren (writer As HtmlTextWriter)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -674,8 +686,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RenderControl(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.RenderControl(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderControl (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderControl(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="override this.RenderControl : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlForm.RenderControl writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderControl(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -704,8 +716,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool SubmitDisabledControls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SubmitDisabledControls As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SubmitDisabledControls { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.SubmitDisabledControls : bool with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SubmitDisabledControls { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -714,13 +726,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -741,8 +756,8 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls%2A> property on a form to `true` to cause controls disabled by client script to maintain their values after the page posts back to the server. In this example, if you set the <xref:System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls%2A> property to `false` and then click the **Post back** button, the text in the HTML text box is lost and the HTML check box is no longer selected.  
   
- [!code-aspx-csharp[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/CS/htmlform.submitdisabledcontrolscs.aspx#1)]
- [!code-aspx-vb[HtmlForm.SubmitDisabledControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/VB/htmlform.submitdisabledcontrolsvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/CS/htmlform.submitdisabledcontrolscs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.SubmitDisabledControls/VB/htmlform.submitdisabledcontrolsvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -753,8 +768,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -764,10 +779,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -783,7 +800,7 @@
  Use the <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property to specify the target window or frame that displays the results of the information that is posted to the server. Redirecting the results of the information posted to the server is an advanced task. Using this property simply to post back is not recommended.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property renders as a `target` attribute. The `target` attribute on `form` elements is not allowed in XHTML 1.1. Therefore, if the rendered markup must conform to XHTML standards or must conform to accessibility standards, do not set the <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97) and [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
+> The <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property renders as a `target` attribute. The `target` attribute on `form` elements is not allowed in XHTML 1.1. Therefore, if the rendered markup must conform to XHTML standards or must conform to accessibility standards, do not set the <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/exc57y7e(v=vs.100)) and [Accessibility in Visual Studio and ASP.NET](https://docs.microsoft.com/previous-versions/ms228004(v=vs.140)).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> value must begin with a letter in the range of A to Z (case-insensitive), except for the following special values, which begin with an underscore.  
   
@@ -803,13 +820,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property to specify a new, unframed window to display the results of the information posted back to the server.  
   
- [!code-aspx-csharp[HtmlFormTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormTarget/CS/htmlformtargetcs.aspx#1)]
- [!code-aspx-vb[HtmlFormTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormTarget/VB/htmlformtargetvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlFormTarget/CS/htmlformtargetcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlFormTarget/VB/htmlformtargetvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13">Accessibility in Visual Studio 2010 and ASP.NET 4</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/exc57y7e(v=vs.100)">ASP.NET and XHTML Compliance</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/ms228004(v=vs.140)">Accessibility in Visual Studio 2010 and ASP.NET 4</related>
       </Docs>
     </Member>
     <Member MemberName="UniqueID">
@@ -817,8 +834,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string UniqueID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.UniqueID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UniqueID As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UniqueID { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.UniqueID : string" Usage="System.Web.UI.HtmlControls.HtmlForm.UniqueID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UniqueID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -848,13 +865,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlForm.UniqueID%2A> property to retrieve the unique identifier for an <xref:System.Web.UI.HtmlControls.HtmlForm> control.  
   
- [!code-aspx-csharp[HtmlForm.UniqueID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.UniqueID/CS/htmlform.uniqueidcs.aspx#1)]
- [!code-aspx-vb[HtmlForm.UniqueID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.UniqueID/VB/htmlform.uniqueidvb.aspx#1)]  
+ :::code language="aspx-csharp" source="~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlForm.UniqueID/CS/htmlform.uniqueidcs.aspx" id="Snippet1":::
+ :::code language="aspx-vb" source="~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlForm.UniqueID/VB/htmlform.uniqueidvb.aspx" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Name" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/exc57y7e(v=vs.100)">ASP.NET and XHTML Compliance</related>
       </Docs>
     </Member>
   </Members>

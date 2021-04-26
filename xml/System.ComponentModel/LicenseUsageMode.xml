@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LicenseUsageMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseUsageMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum LicenseUsageMode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class LicenseUsageMode" />
   <TypeSignature Language="F#" Value="type LicenseUsageMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LicenseUsageMode" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -22,7 +22,13 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -34,7 +40,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.LicenseManager> and the <xref:System.ComponentModel.LicenseContext> classes use this enumeration. It is used to set a component's <xref:System.ComponentModel.LicenseManager.CurrentContext%2A>. See the <xref:System.ComponentModel.LicenseManager> class for details.  
   
- For more information on licensing, see [How to: License Components and Controls](https://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).  
+ For more information on licensing, see [How to: License Components and Controls](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fe8b1eh9(v=vs.120)).  
   
  ]]></format>
     </remarks>
@@ -52,8 +58,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.LicenseUsageMode Designtime = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LicenseUsageMode.Designtime" />
       <MemberSignature Language="VB.NET" Value="Designtime" />
-      <MemberSignature Language="C++ CLI" Value="Designtime" />
       <MemberSignature Language="F#" Value="Designtime = 1" Usage="System.ComponentModel.LicenseUsageMode.Designtime" />
+      <MemberSignature Language="C++ CLI" Value="Designtime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +78,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.LicenseUsageMode</ReturnType>
@@ -86,8 +94,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.LicenseUsageMode Runtime = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.LicenseUsageMode.Runtime" />
       <MemberSignature Language="VB.NET" Value="Runtime" />
-      <MemberSignature Language="C++ CLI" Value="Runtime" />
       <MemberSignature Language="F#" Value="Runtime = 0" Usage="System.ComponentModel.LicenseUsageMode.Runtime" />
+      <MemberSignature Language="C++ CLI" Value="Runtime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +114,8 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.LicenseUsageMode</ReturnType>

@@ -1,16 +1,24 @@
 <Type Name="ServiceNameCollection" FullName="System.Security.Authentication.ExtendedProtection.ServiceNameCollection">
-  <TypeSignature Language="C#" Value="public class ServiceNameCollection : System.Collections.ReadOnlyCollectionBase" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ServiceNameCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="C#" Value="public class ServiceNameCollection : System.Collections.ReadOnlyCollectionBase" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceNameCollection extends System.Collections.ReadOnlyCollectionBase" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" />
-  <TypeSignature Language="VB.NET" Value="Public Class ServiceNameCollection&#xA;Inherits ReadOnlyCollectionBase" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ServiceNameCollection : System::Collections::ReadOnlyCollectionBase" />
-  <TypeSignature Language="F#" Value="type ServiceNameCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceNameCollection&#xA;Inherits ReadOnlyCollectionBase" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="F#" Value="type ServiceNameCollection = class&#xA;    inherit ReadOnlyCollectionBase" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceNameCollection : System::Collections::ReadOnlyCollectionBase" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C#" Value="public class ServiceNameCollection : System.Collections.ICollection" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceNameCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceNameCollection&#xA;Implements ICollection" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="F#" Value="type ServiceNameCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceNameCollection : System::Collections::ICollection" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ServiceNameCollection extends System.Collections.ReadOnlyCollectionBase" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -23,15 +31,26 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Security" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Security" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
-    <BaseTypeName>System.Object</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netcore-1.0;netcore-1.1">System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -51,8 +70,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (items As ICollection)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceNameCollection(System::Collections::ICollection ^ items);" />
       <MemberSignature Language="F#" Value="new System.Security.Authentication.ExtendedProtection.ServiceNameCollection : System.Collections.ICollection -&gt; System.Security.Authentication.ExtendedProtection.ServiceNameCollection" Usage="new System.Security.Authentication.ExtendedProtection.ServiceNameCollection items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceNameCollection(System::Collections::ICollection ^ items);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -60,6 +79,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,12 +114,13 @@
       </Docs>
     </Member>
     <Member MemberName="Contains">
-      <MemberSignature Language="C#" Value="public bool Contains (string searchServiceName);" />
+      <MemberSignature Language="C#" Value="public bool Contains (string? searchServiceName);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string searchServiceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (searchServiceName As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ searchServiceName);" />
       <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="serviceNameCollection.Contains searchServiceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ searchServiceName);" />
+      <MemberSignature Language="C#" Value="public bool Contains (string searchServiceName);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -106,6 +128,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,7 +145,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="searchServiceName" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="searchServiceName" Type="System.String" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="searchServiceName">The string to seek.</param>
@@ -137,8 +161,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -157,8 +181,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements contained in the <see cref="T:System.Collections.ICollection" />.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +191,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="serviceNameCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -188,8 +212,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +232,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Authentication.ExtendedProtection.ServiceNameCollection Merge(class System.Collections.IEnumerable serviceNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Merge(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Function Merge (serviceNames As IEnumerable) As ServiceNameCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Authentication::ExtendedProtection::ServiceNameCollection ^ Merge(System::Collections::IEnumerable ^ serviceNames);" />
       <MemberSignature Language="F#" Value="member this.Merge : System.Collections.IEnumerable -&gt; System.Security.Authentication.ExtendedProtection.ServiceNameCollection" Usage="serviceNameCollection.Merge serviceNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Authentication::ExtendedProtection::ServiceNameCollection ^ Merge(System::Collections::IEnumerable ^ serviceNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -217,6 +241,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -258,8 +284,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Authentication.ExtendedProtection.ServiceNameCollection Merge(string serviceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Merge(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Merge (serviceName As String) As ServiceNameCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Authentication::ExtendedProtection::ServiceNameCollection ^ Merge(System::String ^ serviceName);" />
       <MemberSignature Language="F#" Value="member this.Merge : string -&gt; System.Security.Authentication.ExtendedProtection.ServiceNameCollection" Usage="serviceNameCollection.Merge serviceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Authentication::ExtendedProtection::ServiceNameCollection ^ Merge(System::String ^ serviceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -267,6 +293,8 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -307,6 +335,8 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As Array, index As Integer) Implements ICollection.CopyTo" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.ICollection.CopyTo : Array * int -&gt; unit&#xA;override this.System.Collections.ICollection.CopyTo : Array * int -&gt; unit" Usage="serviceNameCollection.System.Collections.ICollection.CopyTo (array, index)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -330,9 +360,9 @@
         <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array as the destination for the elements copied from <see cref="T:System.Collections.ICollection" />. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,8 +371,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.IsSynchronized : bool" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -361,9 +391,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> instance is cast to an <xref:System.Collections.ICollection> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -371,8 +410,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.ServiceNameCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.SyncRoot : obj" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -391,9 +430,17 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> instance is cast to an <xref:System.Collections.ICollection> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

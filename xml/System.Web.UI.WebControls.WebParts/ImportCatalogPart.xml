@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImportCatalogPart extends System.Web.UI.WebControls.WebParts.CatalogPart" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImportCatalogPart&#xA;Inherits CatalogPart" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ImportCatalogPart sealed : System::Web::UI::WebControls::WebParts::CatalogPart" />
   <TypeSignature Language="F#" Value="type ImportCatalogPart = class&#xA;    inherit CatalogPart" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImportCatalogPart sealed : System::Web::UI::WebControls::WebParts::CatalogPart" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -48,7 +48,7 @@
   
  There are some inherent risks associated with using the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control. One example is the possibility of importing malicious data into your Web application through the description files used for importing. If someone has placed malicious script code as the value of a string property in the description file, then that script could potentially be executed when a user imports the description file and adds the referenced server control to a Web page. To minimize the risk of importing description files with malicious data, server controls that have string-typed properties should always encode the property data. Another risk involves importing types through description files (see [Web Parts Control Description Files](https://msdn.microsoft.com/library/480992e4-8fc7-43f8-bffc-ae97bbdfe5b8)). A malicious user could submit requests to load many assemblies into the <xref:System.AppDomain>, resulting in an excessive amount of memory being consumed.  
   
- To avoid the risks associated with import, you can disable the feature altogether by not using the import feature or the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control. Or you can limit what users have access to the control. You could do this programmatically, using role management (see [Managing Authorization Using Roles](https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195)). For instance, when the page loads, you could test to see whether a user is in a certain role, such as the administrator role. If the user is in the role, you could programmatically add the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control to the page for that user. You could also use a declarative approach to limit the set of users that can use the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control.  Within your web page that contains a catalog, you could place two <xref:System.Web.UI.WebControls.WebParts.CatalogZone> controls: one for users who can import, and one for those who cannot. The zone for users who can import would contain the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control. The zone itself could be placed inside of a <xref:System.Web.UI.WebControls.LoginView> control, which would enable you to limit use of the control in the zone to only those authenticated users or roles that you specify.  
+ To avoid the risks associated with import, you can disable the feature altogether by not using the import feature or the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control. Or you can limit what users have access to the control. You could do this programmatically, using role management (see [Managing Authorization Using Roles](https://docs.microsoft.com/previous-versions/aspnet/9ab2fxh0(v=vs.100))). For instance, when the page loads, you could test to see whether a user is in a certain role, such as the administrator role. If the user is in the role, you could programmatically add the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control to the page for that user. You could also use a declarative approach to limit the set of users that can use the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control.  Within your web page that contains a catalog, you could place two <xref:System.Web.UI.WebControls.WebParts.CatalogZone> controls: one for users who can import, and one for those who cannot. The zone for users who can import would contain the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control. The zone itself could be placed inside of a <xref:System.Web.UI.WebControls.LoginView> control, which would enable you to limit use of the control in the zone to only those authenticated users or roles that you specify.  
   
    
   
@@ -117,7 +117,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -141,8 +142,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string BrowseHelpText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.BrowseHelpText" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowseHelpText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BrowseHelpText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.BrowseHelpText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.BrowseHelpText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BrowseHelpText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,8 +189,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="importCatalogPart.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,8 +211,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.DefaultButton" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultButton As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.DefaultButton : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.DefaultButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,13 +221,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.Themeable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.Themeable(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -241,7 +245,7 @@
 ## Remarks  
  The code for this property overrides the base property inherited from the <xref:System.Web.UI.WebControls.Panel> class to hide the property from designers and prevent it from being affected by themes. Though it is public, this property is used internally by the Web Parts control set for default rendering of this control and is not intended to be used by page developers.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://docs.microsoft.com/previous-versions/aspnet/ykzx33wh(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -254,8 +258,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.WebControls.WebParts.WebPartDescriptionCollection GetAvailableWebPartDescriptions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.GetAvailableWebPartDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAvailableWebPartDescriptions () As WebPartDescriptionCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::WebPartDescriptionCollection ^ GetAvailableWebPartDescriptions();" />
       <MemberSignature Language="F#" Value="override this.GetAvailableWebPartDescriptions : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartDescriptionCollection" Usage="importCatalogPart.GetAvailableWebPartDescriptions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::WebPartDescriptionCollection ^ GetAvailableWebPartDescriptions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -331,8 +335,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.WebControls.WebParts.WebPart GetWebPart(class System.Web.UI.WebControls.WebParts.WebPartDescription description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.GetWebPart(System.Web.UI.WebControls.WebParts.WebPartDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetWebPart (description As WebPartDescription) As WebPart" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::WebPart ^ GetWebPart(System::Web::UI::WebControls::WebParts::WebPartDescription ^ description);" />
       <MemberSignature Language="F#" Value="override this.GetWebPart : System.Web.UI.WebControls.WebParts.WebPartDescription -&gt; System.Web.UI.WebControls.WebParts.WebPart" Usage="importCatalogPart.GetWebPart description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::WebPart ^ GetWebPart(System::Web::UI::WebControls::WebParts::WebPartDescription ^ description);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -409,8 +413,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ImportedPartLabelText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.ImportedPartLabelText" />
       <MemberSignature Language="VB.NET" Value="Public Property ImportedPartLabelText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImportedPartLabelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ImportedPartLabelText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.ImportedPartLabelText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImportedPartLabelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -456,8 +460,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadControlState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="importCatalogPart.LoadControlState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -481,8 +485,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="importCatalogPart.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -506,8 +510,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string PartImportErrorLabelText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.PartImportErrorLabelText" />
       <MemberSignature Language="VB.NET" Value="Public Property PartImportErrorLabelText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PartImportErrorLabelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.PartImportErrorLabelText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.PartImportErrorLabelText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PartImportErrorLabelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -553,8 +557,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="importCatalogPart.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -578,8 +582,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="importCatalogPart.RenderContents writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -603,8 +607,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveControlState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="importCatalogPart.SaveControlState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -626,8 +630,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.Title" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Title As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -673,8 +677,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string UploadButtonText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.UploadButtonText" />
       <MemberSignature Language="VB.NET" Value="Public Property UploadButtonText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UploadButtonText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.UploadButtonText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.UploadButtonText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UploadButtonText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -720,8 +724,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string UploadHelpText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.UploadHelpText" />
       <MemberSignature Language="VB.NET" Value="Public Property UploadHelpText As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UploadHelpText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.UploadHelpText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.UploadHelpText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UploadHelpText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -3,12 +3,14 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InputGesture extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputGesture" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InputGesture" />
-  <TypeSignature Language="C++ CLI" Value="public ref class InputGesture abstract" />
   <TypeSignature Language="F#" Value="type InputGesture = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InputGesture abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,7 +24,7 @@
 ## Remarks  
  Implementations of <xref:System.Windows.Input.InputGesture> in Windows Presentation Foundation are <xref:System.Windows.Input.KeyGesture> and <xref:System.Windows.Input.MouseGesture>.  
   
- An input gesture can be associated with a command so that when the gesture is performed the command is invoked.  For more information, see <xref:System.Windows.Input.InputBinding> and the [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
+ An input gesture can be associated with a command so that when the gesture is performed the command is invoked.  For more information, see <xref:System.Windows.Input.InputBinding> and the [Commanding Overview](/dotnet/framework/wpf/advanced/commanding-overview).  
   
  ]]></format>
     </remarks>
@@ -41,10 +43,13 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -57,13 +62,16 @@
       <MemberSignature Language="C#" Value="public abstract bool Matches (object targetElement, System.Windows.Input.InputEventArgs inputEventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Matches(object targetElement, class System.Windows.Input.InputEventArgs inputEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Matches(System::Object ^ targetElement, System::Windows::Input::InputEventArgs ^ inputEventArgs);" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Matches (targetElement As Object, inputEventArgs As InputEventArgs) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Matches : obj * System.Windows.Input.InputEventArgs -&gt; bool" Usage="inputGesture.Matches (targetElement, inputEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Matches(System::Object ^ targetElement, System::Windows::Input::InputEventArgs ^ inputEventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
