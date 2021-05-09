@@ -938,7 +938,7 @@
  The following code example illustrates the use of <xref:System.Double.IsInfinity%2A>:  
   
  :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Double/CPP/doublesample.cpp" id="Snippet11":::
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double/CS/doublesample.cs" id="Snippet11":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double/CS/doublesample.cs" interactive="try-dotnet-method" id="Snippet11":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Double/VB/doublesample.vb" id="Snippet11":::  
   
  ]]></format>
@@ -1519,7 +1519,7 @@
  The following code example illustrates the use of <xref:System.Double.NegativeInfinity>:  
   
  :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Double/CPP/doublesample.cpp" id="Snippet9":::
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double/CS/doublesample.cs" id="Snippet9":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Double/CS/doublesample.cs" interactive="try-dotnet-method" id="Snippet9":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Double/VB/doublesample.vb" id="Snippet9":::  
   
  ]]></format>
@@ -2744,7 +2744,7 @@ This member is an explicit interface member implementation. It can be used only 
       </Parameters>
       <Docs>
         <param name="provider">This parameter is ignored.</param>
-        <summary>This conversion is not supported. Attempting to use this method throws an <see cref="T:System.InvalidCastException" /></summary>
+        <summary>This conversion is not supported. Attempting to use this method throws an <see cref="T:System.InvalidCastException" />.</summary>
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">In all cases.</exception>

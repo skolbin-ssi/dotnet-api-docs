@@ -87,17 +87,17 @@
 ## Remarks  
  The <xref:System.Single> value type represents a single-precision 32-bit number with values ranging from negative 3.402823e38 to positive 3.402823e38, as well as positive or negative zero, <xref:System.Single.PositiveInfinity>, <xref:System.Single.NegativeInfinity>, and not a number (<xref:System.Single.NaN>). It is intended to represent values that are extremely large (such as distances between planets or galaxies) or extremely small (such as the molecular mass of a substance in kilograms) and that often are imprecise (such as the distance from earth to another solar system). The <xref:System.Single> type complies with the IEC 60559:1989 (IEEE 754) standard for binary floating-point arithmetic.  
   
- This topic consists of the following sections:  
+ This article consists of the following sections:  
   
--   [Floating-point representation and precision](#Precision)  
+- [Floating-point representation and precision](#Precision)  
   
--   [Testing for equality](#Equality)  
+- [Testing for equality](#Equality)  
   
--   [Floating-point values and exceptions](#Exceptions)  
+- [Floating-point values and exceptions](#Exceptions)  
   
--   [Type conversion and the Single structure](#Conversion)  
+- [Type conversion and the Single structure](#Conversion)  
   
--   [Floating-point functionality](#Functionality)  
+- [Floating-point functionality](#Functionality)  
   
  <xref:System.Single?displayProperty=nameWithType> provides methods to compare instances of this type, to convert the value of an instance to its string representation, and to convert the string representation of a number to an instance of this type. For information about how format specification codes control the string representation of value types, see [Formatting Types](/dotnet/standard/base-types/formatting-types), [Standard Numeric Format Strings](/dotnet/standard/base-types/standard-numeric-format-strings), and [Custom Numeric Format Strings](/dotnet/standard/base-types/custom-numeric-format-strings).  
   
@@ -1334,7 +1334,7 @@
   
  The result of an operation that exceeds <xref:System.Single.MaxValue?displayProperty=nameWithType> is <xref:System.Single.PositiveInfinity?displayProperty=nameWithType>. In the following example, <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> results from addition, multiplication, and exponentiation operations when the result exceeds <xref:System.Single.MaxValue?displayProperty=nameWithType>.  
   
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.maxvalue/cs/maxvalueex.cs" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.maxvalue/cs/maxvalueex.cs" interactive="try-dotnet" id="Snippet1":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.maxvalue/vb/maxvalueex.vb" id="Snippet1":::  
   
    
@@ -4031,7 +4031,7 @@ If a separator is encountered in the `s` parameter during a parse operation, and
         <Parameter Name="result" Type="System.Single" RefType="out" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0" />
       </Parameters>
       <Docs>
-        <param name="s">A read-only character span that contains the number to convert. The span is interpreted using the style specified by <paramref name="style" /></param>
+        <param name="s">A read-only character span that contains the number to convert. The span is interpreted using the style specified by <paramref name="style" />.</param>
         <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="s" />. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Float" /> combined with <see cref="F:System.Globalization.NumberStyles.AllowThousands" />.</param>
         <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.</param>
         <param name="result">When this method returns, contains the single-precision floating-point number equivalent to the numeric value or symbol contained in <paramref name="s" />, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not in a format compliant with <paramref name="style" />, represents a number less than <see cref="F:System.Single.MinValue" /> or greater than <see cref="F:System.Single.MaxValue" />, or if <paramref name="style" /> is not a valid combination of <see cref="T:System.Globalization.NumberStyles" /> enumerated constants. This parameter is passed uninitialized; any value originally supplied in <paramref name="result" /> will be overwritten.</param>
