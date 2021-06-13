@@ -66,8 +66,8 @@
       <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("Count = {Count}")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.System_StackDebugView`1))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.System_StackDebugView`1))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.System_StackDebugView&lt;&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.System_StackDebugView&lt;&gt;))&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
@@ -388,7 +388,7 @@
   
  The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
   
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs" interactive="try-dotnet" id="Snippet1":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb" id="Snippet1":::  
   
  ]]></format>
@@ -456,7 +456,7 @@
   
  The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
   
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs" interactive="try-dotnet" id="Snippet1":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb" id="Snippet1":::  
   
  ]]></format>
@@ -525,7 +525,7 @@
   
  The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
   
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs" interactive="try-dotnet" id="Snippet1":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb" id="Snippet1":::  
   
  ]]></format>
@@ -1336,7 +1336,7 @@ finally {
   
  The <xref:System.Collections.Generic.Stack%601.Contains%2A> method is used to show that the string "four" is in the first copy of the stack, after which the <xref:System.Collections.Generic.Stack%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Stack%601.Count%2A> property shows that the stack is empty.  
   
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Stack/cs/source.cs" interactive="try-dotnet" id="Snippet1":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Stack/vb/source.vb" id="Snippet1":::  
   
  ]]></format>

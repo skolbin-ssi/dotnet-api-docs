@@ -4,18 +4,18 @@
   <TypeSignature Language="DocId" Value="T:System.Single" />
   <TypeSignature Language="VB.NET" Value="Public Structure Single&#xA;Implements IComparable, IComparable(Of Single), IConvertible, IEquatable(Of Single), IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <TypeSignature Language="F#" Value="type single = struct&#xA;    interface IConvertible&#xA;    interface IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
-  <TypeSignature Language="C++ CLI" Value="public value class Single : IComparable, IComparable&lt;float&gt;, IConvertible, IEquatable&lt;float&gt;, IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+  <TypeSignature Language="C++ CLI" Value="public value class float : IComparable, IComparable&lt;float&gt;, IConvertible, IEquatable&lt;float&gt;, IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <TypeSignature Language="C#" Value="public struct Single : IComparable, IConvertible, IFormattable" FrameworkAlternate="netframework-1.1" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit float32 extends System.ValueType implements class System.IComparable, class System.IConvertible, class System.IFormattable" FrameworkAlternate="netframework-1.1" />
   <TypeSignature Language="VB.NET" Value="Public Structure Single&#xA;Implements IComparable, IConvertible, IFormattable" FrameworkAlternate="netframework-1.1" />
   <TypeSignature Language="F#" Value="type single = struct&#xA;    interface IFormattable&#xA;    interface IConvertible" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-  <TypeSignature Language="C++ CLI" Value="public value class Single : IComparable, IConvertible, IFormattable" FrameworkAlternate="netframework-1.1" />
+  <TypeSignature Language="C++ CLI" Value="public value class float : IComparable, IConvertible, IFormattable" FrameworkAlternate="netframework-1.1" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit float32 extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;float32&gt;, class System.IConvertible, class System.IEquatable`1&lt;float32&gt;, class System.IFormattable" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <TypeSignature Language="C#" Value="public struct Single : IComparable, IComparable&lt;float&gt;, IEquatable&lt;float&gt;, IFormattable" FrameworkAlternate="netstandard-1.0;netstandard-1.1;netstandard-1.2" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit float32 extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;float32&gt;, class System.IEquatable`1&lt;float32&gt;, class System.IFormattable" FrameworkAlternate="netstandard-1.0;netstandard-1.1;netstandard-1.2" />
   <TypeSignature Language="VB.NET" Value="Public Structure Single&#xA;Implements IComparable, IComparable(Of Single), IEquatable(Of Single), IFormattable" FrameworkAlternate="netstandard-1.0;netstandard-1.1;netstandard-1.2" />
   <TypeSignature Language="F#" Value="type single = struct&#xA;    interface IFormattable" FrameworkAlternate="netstandard-1.0;netstandard-1.1;netstandard-1.2" />
-  <TypeSignature Language="C++ CLI" Value="public value class Single : IComparable, IComparable&lt;float&gt;, IEquatable&lt;float&gt;, IFormattable" FrameworkAlternate="netstandard-1.0;netstandard-1.1;netstandard-1.2" />
+  <TypeSignature Language="C++ CLI" Value="public value class float : IComparable, IComparable&lt;float&gt;, IEquatable&lt;float&gt;, IFormattable" FrameworkAlternate="netstandard-1.0;netstandard-1.1;netstandard-1.2" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -172,7 +172,7 @@
      :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/comparison3.cs" interactive="try-dotnet" id="Snippet11":::
      :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/comparison3.vb" id="Snippet11":::
 
-     Note that the problem of precision still applies to rounding of midpoint values. For more information, see the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29?displayProperty=nameWithType> method.  
+     The problem of precision still applies to rounding of midpoint values. For more information, see the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29?displayProperty=nameWithType> method.  
   
 -   Test for approximate equality instead of equality. This technique requires that you define either an absolute amount by which the two values can differ but still be equal, or that you define a relative amount by which the smaller value can diverge from the larger value.  
   
@@ -380,7 +380,7 @@
   
  Values must be identical to be considered equal. Particularly when floating-point values depend on multiple mathematical operations, it is common for them to lose precision and for their values to be nearly identical except for their least significant digits. Because of this, the return value of the <xref:System.Single.CompareTo%2A> method may seem surprising at times. For example, multiplication by a particular value followed by division by the same value should produce the original value, but in the following example, the computed value turns out to be greater than the original value. Showing all significant digits of the two values by using the "R" [standard numeric format string](/dotnet/standard/base-types/standard-numeric-format-strings) indicates that the computed value differs from the original value in its least significant digits. For information about handling such comparisons, see the Remarks section of the <xref:System.Single.Equals%28System.Single%29> method.  
   
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.compareto/cs/compareto3.cs" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.compareto/cs/compareto3.cs" interactive="try-dotnet" id="Snippet2":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.compareto/vb/compareto3.vb" id="Snippet2":::  
   
  This method is implemented to support the <xref:System.IComparable> interface. Note that, although a <xref:System.Single.NaN> is not considered to be equal to another <xref:System.Single.NaN> (even itself), the <xref:System.IComparable> interface requires that `A.CompareTo(A)` return zero.  
@@ -472,7 +472,7 @@
 ## Remarks  
  Values must be identical to be considered equal. It is common for floating-point values to lose precision and to become nearly identical except for their least significant digits, especially when the values depend on multiple mathematical operations. Because of this, the return value of the <xref:System.Single.CompareTo%2A> method at times may seem surprising. For example, multiplication by any value followed by division by the same value should produce the original value. However, in the following example, the computed value turns out to be greater than the original value. Showing all significant digits of the two values by using the "R" [standard numeric format string](/dotnet/standard/base-types/standard-numeric-format-strings) indicates that the computed value differs from the original value in its least significant digits. For information about handling such comparisons, see the Remarks section of the <xref:System.Single.Equals%28System.Single%29> method.  
   
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.compareto/cs/compareto2.cs" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.compareto/cs/compareto2.cs" interactive="try-dotnet" id="Snippet1":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.compareto/vb/compareto2.vb" id="Snippet1":::  
   
  This method implements the <xref:System.IComparable%601?displayProperty=nameWithType> interface and performs slightly better than the <xref:System.Single.CompareTo%2A?displayProperty=nameWithType> method because it does not have to convert the `value` parameter to an object.  
@@ -949,7 +949,7 @@
  The following code example demonstrates the <xref:System.Single.IsInfinity%2A> method.  
   
  :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Single/CPP/singlesample.cpp" id="Snippet11":::
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single/CS/singlesample.cs" id="Snippet11":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single/CS/singlesample.cs" interactive="try-dotnet-method" id="Snippet11":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Single/VB/singlesample.vb" id="Snippet11":::  
   
  ]]></format>
@@ -1397,7 +1397,7 @@
   
  The result of an operation that is less than <xref:System.Single.MinValue?displayProperty=nameWithType> is <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>. In the following example, <xref:System.Single.NegativeInfinity?displayProperty=nameWithType> results from subtraction and multiplication operations when the result is less than <xref:System.Single.MinValue?displayProperty=nameWithType>.  
   
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.minvalue/cs/minvalueex.cs" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.minvalue/cs/minvalueex.cs" interactive="try-dotnet" id="Snippet1":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.minvalue/vb/minvalueex.vb" id="Snippet1":::  
   
    
@@ -1539,7 +1539,7 @@
  The following code example demonstrates the <xref:System.Single.NegativeInfinity> constant.  
   
  :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Single/CPP/singlesample.cpp" id="Snippet9":::
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single/CS/singlesample.cs" id="Snippet9":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single/CS/singlesample.cs" interactive="try-dotnet-method" id="Snippet9":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Single/VB/singlesample.vb" id="Snippet9":::  
   
  ]]></format>
@@ -2228,12 +2228,12 @@ Some examples of `s` are "100", "-123,456,789", "123.45e+6", "+500", "5e2", "3.1
       </Docs>
     </Member>
     <Member MemberName="Parse">
-      <MemberSignature Language="C#" Value="public static float Parse (ReadOnlySpan&lt;char&gt; s, System.Globalization.NumberStyles style = System.Globalization.NumberStyles.AllowDecimalPoint | System.Globalization.NumberStyles.AllowExponent | System.Globalization.NumberStyles.AllowLeadingSign | System.Globalization.NumberStyles.AllowLeadingWhite | System.Globalization.NumberStyles.AllowThousands | System.Globalization.NumberStyles.AllowTrailingWhite | System.Globalization.NumberStyles.Float | System.Globalization.NumberStyles.Integer, IFormatProvider? provider = default);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="C#" Value="public static float Parse (ReadOnlySpan&lt;char&gt; s, System.Globalization.NumberStyles style = System.Globalization.NumberStyles.AllowThousands | System.Globalization.NumberStyles.Float, IFormatProvider? provider = default);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Parse(valuetype System.ReadOnlySpan`1&lt;char&gt; s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As ReadOnlySpan(Of Char), Optional style As NumberStyles = System.Globalization.NumberStyles.AllowDecimalPoint | System.Globalization.NumberStyles.AllowExponent | System.Globalization.NumberStyles.AllowLeadingSign | System.Globalization.NumberStyles.AllowLeadingWhite | System.Globalization.NumberStyles.AllowThousands | System.Globalization.NumberStyles.AllowTrailingWhite | System.Globalization.NumberStyles.Float | System.Globalization.NumberStyles.Integer, Optional provider As IFormatProvider = Nothing) As Single" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As ReadOnlySpan(Of Char), Optional style As NumberStyles = System.Globalization.NumberStyles.AllowThousands | System.Globalization.NumberStyles.Float, Optional provider As IFormatProvider = Nothing) As Single" />
       <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; * System.Globalization.NumberStyles * IFormatProvider -&gt; single" Usage="System.single.Parse (s, style, provider)" />
-      <MemberSignature Language="C#" Value="public static float Parse (ReadOnlySpan&lt;char&gt; s, System.Globalization.NumberStyles style = System.Globalization.NumberStyles.AllowDecimalPoint | System.Globalization.NumberStyles.AllowExponent | System.Globalization.NumberStyles.AllowLeadingSign | System.Globalization.NumberStyles.AllowLeadingWhite | System.Globalization.NumberStyles.AllowThousands | System.Globalization.NumberStyles.AllowTrailingWhite | System.Globalization.NumberStyles.Float | System.Globalization.NumberStyles.Integer, IFormatProvider provider = default);" FrameworkAlternate="netcore-2.1;netcore-2.2;netstandard-2.1" />
+      <MemberSignature Language="C#" Value="public static float Parse (ReadOnlySpan&lt;char&gt; s, System.Globalization.NumberStyles style = System.Globalization.NumberStyles.AllowThousands | System.Globalization.NumberStyles.Float, IFormatProvider provider = default);" FrameworkAlternate="netcore-2.1;netcore-2.2;netstandard-2.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2473,7 +2473,7 @@ If a separator is encountered in the `s` parameter during a parse operation, and
  The following code example demonstrates the <xref:System.Single.PositiveInfinity> constant.  
   
  :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Single/CPP/singlesample.cpp" id="Snippet10":::
- :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single/CS/singlesample.cs" id="Snippet10":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single/CS/singlesample.cs" interactive="try-dotnet-method" id="Snippet10":::
  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Single/VB/singlesample.vb" id="Snippet10":::  
   
  ]]></format>
